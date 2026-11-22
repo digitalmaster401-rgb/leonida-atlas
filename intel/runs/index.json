@@ -1,5 +1,105 @@
 [
  {
+  "id": "run-20261122-115556",
+  "startedAt": "2026-11-22T11:55:56.611Z",
+  "finishedAt": "2026-11-22T11:55:57.965Z",
+  "trigger": "schedule",
+  "environment": "github-actions (digitalmaster401-rgb/leonida-atlas)",
+  "status": "ok",
+  "classifierMode": "heuristico",
+  "sources": [
+   {
+    "sourceId": "rockstar-vi-pagina",
+    "ok": true,
+    "httpStatus": 200,
+    "items": 8,
+    "relevant": 8,
+    "newFindings": 0,
+    "updatedFindings": 0,
+    "skipped": 0,
+    "attempts": 1,
+    "durationMs": 186,
+    "error": null
+   },
+   {
+    "sourceId": "gtaboom",
+    "ok": true,
+    "httpStatus": 200,
+    "items": 25,
+    "relevant": 25,
+    "newFindings": 3,
+    "updatedFindings": 0,
+    "skipped": 0,
+    "attempts": 1,
+    "durationMs": 93,
+    "error": null
+   },
+   {
+    "sourceId": "powerpyx",
+    "ok": true,
+    "httpStatus": 200,
+    "items": 10,
+    "relevant": 10,
+    "newFindings": 4,
+    "updatedFindings": 0,
+    "skipped": 0,
+    "attempts": 1,
+    "durationMs": 534,
+    "error": null
+   },
+   {
+    "sourceId": "vgc",
+    "ok": true,
+    "httpStatus": 200,
+    "items": 10,
+    "relevant": 10,
+    "newFindings": 0,
+    "updatedFindings": 0,
+    "skipped": 0,
+    "attempts": 1,
+    "durationMs": 189,
+    "error": null
+   },
+   {
+    "sourceId": "gamespot",
+    "ok": true,
+    "httpStatus": 200,
+    "items": 25,
+    "relevant": 19,
+    "newFindings": 0,
+    "updatedFindings": 0,
+    "skipped": 6,
+    "attempts": 1,
+    "durationMs": 137,
+    "error": null
+   }
+  ],
+  "totals": {
+   "itemsSeen": 78,
+   "relevant": 72,
+   "newFindings": 7,
+   "updatedFindings": 0,
+   "statusChanges": 0,
+   "patchesDetected": 0,
+   "submissionsIngested": 0
+  },
+  "budget": {
+   "aiCalls": 0,
+   "aiCallsLimit": 40,
+   "inputTokens": 0,
+   "outputTokens": 0,
+   "estimatedCostUsd": 0,
+   "costLimitUsd": 0.25,
+   "stoppedByBudget": false
+  },
+  "errors": [],
+  "proposalId": "prop-run-20261122-115556",
+  "nextScheduledHintUtc": [
+   "11:17",
+   "23:17"
+  ]
+ },
+ {
   "id": "run-20261122-040859",
   "startedAt": "2026-11-22T04:08:59.708Z",
   "finishedAt": "2026-11-22T04:09:00.673Z",
