@@ -9,12 +9,13 @@ test.describe('ATLAS INTELLIGENCE', () => {
     await expect(page.getByTestId('intel-summary')).toContainText('última investigación real');
     await expect(page.getByTestId('finding').first()).toBeVisible();
     await noHorizontalOverflow(page);
-    await shot(page, info, '06-intel-novedades');
     await page.getByRole('tab', { name: 'Bitácora' }).click();
     await expect(page.getByTestId('last-run')).toContainText('Última investigación real');
     await expect(page.getByText('YouTube Data API (búsqueda de videos recientes)')).toBeVisible();
     await noHorizontalOverflow(page);
     expect(errors).toEqual([]);
+    await page.getByRole('tab', { name: 'Novedades' }).click();
+    await shot(page, info, '06-intel-novedades'); // después de verificar la consola (ver helpers.shot)
   });
 
   test('filtro por plataforma y categoría en observación (móvil)', async ({ page }, info) => {

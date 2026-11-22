@@ -10,10 +10,11 @@ test.describe('LEONIDA ATLAS', () => {
     await expect(page.getByText('Guía independiente de fans. Sin afiliación con Rockstar Games.')).toBeVisible();
     await expect(page.locator('.hero img')).toHaveCount(0); // la portada es una composición SVG propia
     await noHorizontalOverflow(page);
-    await shot(page, info, '01-inicio');
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.waitForLoadState('networkidle');
     expect(errors).toEqual([]);
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await shot(page, info, '01-inicio'); // después de verificar la consola (ver helpers.shot)
   });
 
   test('navegación entre todas las secciones', async ({ page }) => {
@@ -180,7 +181,6 @@ test.describe('LEONIDA ATLAS', () => {
     const panel = page.getByTestId('pin-panel');
     await expect(panel).toContainText('Ambrosia');
     await expect(panel).toContainText('Precisión: región');
-    await shot(page, info, '03-mapa');
     await panel.getByRole('link', { name: /Ambrosia/ }).first().click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Ambrosia');
     await page.getByRole('link', { name: /Ver Ambrosia en el mapa interactivo/ }).click();
@@ -194,6 +194,7 @@ test.describe('LEONIDA ATLAS', () => {
     await page.keyboard.press('+');
     await expect(vp).not.toHaveAttribute('data-scale', '1.00');
     expect(errors).toEqual([]);
+    await shot(page, info, '03-mapa'); // después de verificar la consola (ver helpers.shot)
   });
 
   test('calculadora de dinero con fórmulas y estimación', async ({ page }) => {

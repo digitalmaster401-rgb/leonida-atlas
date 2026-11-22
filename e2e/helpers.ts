@@ -1,24 +1,10 @@
 import { expect, type Page, type TestInfo } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 
-/**
- * Mensaje exacto de WebKit cuando la CSP bloquea una hoja de estilos inline. Playwright 1.63 inserta
- * `<style>body {}</style>` en cada captura de pantalla en WebKit (screenshotter.ts →
- * inPagePrepareForScreenshots, porque shouldToggleStyleSheetToSyncAnimations() es true en WebKit).
- * Esa hoja la añade la herramienta de pruebas, no la app, y la CSP estricta (style-src 'self') la
- * bloquea como debe. Solo se descarta ese mensaje y solo mientras dura una captura en WebKit.
- */
-const WEBKIT_SCREENSHOT_CSP = "Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.";
-
-const capturing = new WeakMap<Page, boolean>();
-
 export function watchConsole(page: Page) {
   const errors: string[] = [];
-  const isWebKit = page.context().browser()?.browserType().name() === 'webkit';
   page.on('console', (m) => {
-    if (m.type() !== 'error') return;
-    if (isWebKit && capturing.get(page) && m.text() === WEBKIT_SCREENSHOT_CSP) return;
-    errors.push(m.text());
+    if (m.type() === 'error') errors.push(m.text());
   });
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('requestfailed', (r) => errors.push(`requestfailed ${r.url()}`));
@@ -33,17 +19,16 @@ export async function noHorizontalOverflow(page: Page) {
   expect(overflow, 'desbordamiento horizontal en px').toBeLessThanOrEqual(1);
 }
 
+/**
+ * Captura para el reporte de QA. Úsala DESPUÉS de verificar los errores de consola: en WebKit,
+ * Playwright 1.63 inserta `<style>body {}</style>` en cada captura (screenshotter.ts →
+ * inPagePrepareForScreenshots, porque shouldToggleStyleSheetToSyncAnimations() es true) y la CSP
+ * estricta del sitio la bloquea, como debe. Ver e2e/csp-webkit.spec.ts. No se filtra ningún mensaje.
+ */
 export async function shot(page: Page, info: TestInfo, name: string) {
   const dir = `qa/screenshots/${info.project.name}`;
   mkdirSync(dir, { recursive: true });
-  capturing.set(page, true);
-  try {
-    await page.screenshot({ path: `${dir}/${name}.png`, caret: 'initial', animations: 'allow' });
-    // los mensajes de consola llegan de forma asíncrona: margen breve antes de cerrar la ventana
-    await page.waitForTimeout(50);
-  } finally {
-    capturing.set(page, false);
-  }
+  await page.screenshot({ path: `${dir}/${name}.png`, caret: 'initial', animations: 'allow' });
 }
 
 export const isMobile = (page: Page) => (page.viewportSize()?.width ?? 1280) < 1024;
