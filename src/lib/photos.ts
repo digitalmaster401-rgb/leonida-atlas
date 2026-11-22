@@ -10,6 +10,17 @@ export interface Photo {
   blob: Blob;
 }
 
+/** Lo que se guarda en IndexedDB: bytes (ArrayBuffer) y tipo, no un Blob. WebKit/Safari no siempre
+ * permite guardar Blobs en IndexedDB (navegación privada y contextos efímeros), pero sí ArrayBuffers. */
+interface StoredPhoto {
+  id: string;
+  entryId: string | null;
+  caption: string;
+  createdAt: string;
+  type: string;
+  data: ArrayBuffer;
+}
+
 const DB = 'leonida-atlas-photos';
 const STORE = 'photos';
 export const MAX_SIDE = 1600;
@@ -36,21 +47,67 @@ async function tx<T>(mode: IDBTransactionMode, fn: (s: IDBObjectStore) => IDBReq
   const db = await open();
   try {
     return await new Promise<T | undefined>((resolve, reject) => {
+      // si el navegador no responde, se informa en lugar de quedar «Guardando…» para siempre
+      const timer = setTimeout(() => reject(new Error('El almacenamiento del navegador no respondió. Intenta de nuevo.')), 15000);
       const t = db.transaction(STORE, mode);
       const req = fn(t.objectStore(STORE));
-      t.oncomplete = () => resolve(req ? req.result : undefined);
-      t.onerror = () => reject(t.error);
-      t.onabort = () => reject(t.error ?? new Error('Transacción cancelada'));
+      t.oncomplete = () => {
+        clearTimeout(timer);
+        resolve(req ? req.result : undefined);
+      };
+      t.onerror = () => {
+        clearTimeout(timer);
+        reject(t.error ?? new Error('No se pudo guardar la foto en este navegador.'));
+      };
+      t.onabort = () => {
+        clearTimeout(timer);
+        reject(t.error ?? new Error('Transacción cancelada'));
+      };
     });
   } finally {
     db.close();
   }
 }
 
+function withTimeout<T>(p: Promise<T>, ms: number, fallback: T): Promise<T> {
+  return new Promise((resolve) => {
+    const t = setTimeout(() => resolve(fallback), ms);
+    p.then(
+      (v) => {
+        clearTimeout(t);
+        resolve(v);
+      },
+      () => {
+        clearTimeout(t);
+        resolve(fallback);
+      },
+    );
+  });
+}
+
+function toPhoto(r: StoredPhoto | (Omit<StoredPhoto, 'data' | 'type'> & { blob: Blob })): Photo {
+  const blob = 'blob' in r ? r.blob : new Blob([r.data], { type: r.type });
+  return { id: r.id, entryId: r.entryId, caption: r.caption, createdAt: r.createdAt, blob };
+}
+
+async function bytes(b: Blob): Promise<ArrayBuffer> {
+  if (typeof b.arrayBuffer === 'function') return b.arrayBuffer();
+  return new Response(b).arrayBuffer();
+}
+
+async function putPhoto(p: Photo): Promise<void> {
+  const rec: StoredPhoto = { id: p.id, entryId: p.entryId, caption: p.caption, createdAt: p.createdAt, type: p.blob.type || 'image/jpeg', data: await bytes(p.blob) };
+  await tx('readwrite', (s) => s.put(rec));
+}
+
 const newId = () => `foto-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 
-/** Reduce la imagen a MAX_SIDE px (JPEG). Si el navegador no puede decodificarla, guarda el original. */
-export async function shrink(file: Blob): Promise<Blob> {
+/** Reduce la imagen a MAX_SIDE px (JPEG). Si el navegador no puede decodificarla (o tarda más de 8 s), guarda el original. */
+export function shrink(file: Blob): Promise<Blob> {
+  return withTimeout(shrinkInner(file), 8000, file);
+}
+
+async function shrinkInner(file: Blob): Promise<Blob> {
   if (typeof createImageBitmap !== 'function' || typeof document === 'undefined') return file;
   try {
     const bmp = await createImageBitmap(file);
@@ -75,18 +132,18 @@ export async function addPhoto(file: Blob, entryId: string | null, caption = '')
   if (!ACCEPTED.includes(file.type)) throw new Error('Formato no admitido. Usa JPG, PNG o WebP.');
   if (file.size > MAX_INPUT_BYTES) throw new Error('La imagen es demasiado grande (máx. 25 MB).');
   const photo: Photo = { id: newId(), entryId, caption: caption.slice(0, 200), createdAt: new Date().toISOString(), blob: await shrink(file) };
-  await tx('readwrite', (s) => s.put(photo));
+  await putPhoto(photo);
   return photo;
 }
 
 export async function listPhotos(entryId?: string): Promise<Photo[]> {
-  const all = (await tx<Photo[]>('readonly', (s) => (entryId ? s.index('entryId').getAll(entryId) : s.getAll()))) ?? [];
-  return all.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
+  const all = (await tx<StoredPhoto[]>('readonly', (s) => (entryId ? s.index('entryId').getAll(entryId) : s.getAll()))) ?? [];
+  return all.map(toPhoto).sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
 }
 
 export async function updateCaption(id: string, caption: string): Promise<void> {
-  const db = await tx<Photo>('readonly', (s) => s.get(id));
-  if (db) await tx('readwrite', (s) => s.put({ ...db, caption: caption.slice(0, 200) }));
+  const rec = await tx<StoredPhoto>('readonly', (s) => s.get(id));
+  if (rec) await tx('readwrite', (s) => s.put({ ...rec, caption: caption.slice(0, 200) }));
 }
 
 export async function deletePhoto(id: string): Promise<void> {
@@ -98,9 +155,9 @@ export async function clearPhotos(): Promise<void> {
 }
 
 async function blobToDataUrl(b: Blob): Promise<string> {
-  const bytes = new Uint8Array(await b.arrayBuffer());
+  const u8 = new Uint8Array(await bytes(b));
   let bin = '';
-  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  for (let i = 0; i < u8.length; i += 0x8000) bin += String.fromCharCode(...u8.subarray(i, i + 0x8000));
   return `data:${b.type || 'image/jpeg'};base64,${btoa(bin)}`;
 }
 
@@ -124,7 +181,7 @@ export async function importPhotos(list: ExportedPhoto[]): Promise<number> {
   let n = 0;
   for (const p of list) {
     if (existing.has(p.id)) continue;
-    await tx('readwrite', (s) => s.put({ id: p.id, entryId: p.entryId, caption: p.caption, createdAt: p.createdAt, blob: dataUrlToBlob(p.dataUrl) }));
+    await putPhoto({ id: p.id, entryId: p.entryId, caption: p.caption, createdAt: p.createdAt, blob: dataUrlToBlob(p.dataUrl) });
     n++;
   }
   return n;

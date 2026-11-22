@@ -32,4 +32,23 @@ describe('fotos personales (IndexedDB)', () => {
     expect(await importPhotos(exp)).toBe(1);
     expect((await listPhotos())[0].blob.size).toBe(7);
   });
+
+  it('guarda bytes (ArrayBuffer) y tipo, no un Blob, para compatibilidad con Safari/WebKit', async () => {
+    const p = await addPhoto(img(), 'col-orca');
+    const raw = await new Promise<Record<string, unknown>>((resolve, reject) => {
+      const req = indexedDB.open('leonida-atlas-photos', 1);
+      req.onsuccess = () => {
+        const g = req.result.transaction('photos').objectStore('photos').get(p.id);
+        g.onsuccess = () => {
+          req.result.close();
+          resolve(g.result);
+        };
+        g.onerror = () => reject(g.error);
+      };
+    });
+    expect(raw.data).toBeInstanceOf(ArrayBuffer);
+    expect(raw.type).toBe('image/png');
+    expect('blob' in raw).toBe(false);
+    expect((await listPhotos('col-orca'))[0].blob.type).toBe('image/png');
+  });
 });

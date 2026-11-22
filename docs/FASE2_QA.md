@@ -50,6 +50,7 @@ WebKit real solo corre en CI (`PW_WEBKIT=1`). En este entorno el iPhone se emula
 1. **Comparar equipamientos.** El selector guardaba el estado inicial vacío si el segundo equipamiento se guardaba después, y la tabla no aparecía. Ahora usa los dos primeros cuando la selección no existe.
 2. **Enlace compartido.** El aviso aparecía 3 veces porque el efecto se repetía durante la transición de React Router 7. Se añadió una guarda.
 3. **Minimapa (axe `label-content-name-mismatch`).** El nombre accesible no contenía el texto visible. Ahora empieza con «Precisión: … · Ver en el mapa».
+5. **Fotos en WebKit real (CI).** La subida quedaba en «Guardando…» porque WebKit, en contextos efímeros y en navegación privada de Safari, no guarda bien `Blob` en IndexedDB. Ahora se guardan los bytes (`ArrayBuffer`) con su tipo, la reducción de tamaño tiene un límite de 8 s y cada transacción de 15 s; si se agota, la app muestra un error en vez de quedarse esperando.
 4. **Evidencia de consola.** Resolución y estabilidad venían de un mismo análisis técnico citado por dos guías. Se bajaron de «contrastado» a «reportado».
 
 ## Límites (no probado)
