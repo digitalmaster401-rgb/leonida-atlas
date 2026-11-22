@@ -174,6 +174,11 @@ export function Home() {
           <Link to="/fuentes" className="link-more">
             Ver fuentes y registro de cambios →
           </Link>
+          <p>
+            <Link to="/intel" className="btn btn-sm">
+              Novedades de ATLAS INTELLIGENCE
+            </Link>
+          </p>
         </div>
       </section>
 

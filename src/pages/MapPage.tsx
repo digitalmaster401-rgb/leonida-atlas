@@ -5,6 +5,7 @@ import { entries } from '../data';
 import { groupPins, MapLegend, MapView, PinPanel } from '../components/MapView';
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
+import { setQueryParam } from '../lib/query';
 
 export function MapPage() {
   const [params, setParams] = useSearchParams();
@@ -14,12 +15,7 @@ export function MapPage() {
   const [active, setActive] = useState<Set<Category>>(() => new Set(cats));
   const list = useMemo(() => located.filter((e) => active.has(e.category) || e.id === selectedId), [located, active, selectedId]);
   const group = groupPins(list).find((g) => g.entries.some((e) => e.id === selectedId));
-  const select = (id: string | null) => {
-    const next = new URLSearchParams(params);
-    if (id) next.set('id', id);
-    else next.delete('id');
-    setParams(next, { replace: true, preventScrollReset: true });
-  };
+  const select = (id: string | null) => setQueryParam(setParams, 'id', id);
   return (
     <div className="page page-map">
       <Seo title="Mapa de Leonida" description="Visor del mapa oficial de Leonida con puntos de precisión declarada enlazados a cada ficha." />

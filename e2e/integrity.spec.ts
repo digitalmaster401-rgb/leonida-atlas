@@ -18,7 +18,7 @@ test.describe('integridad del sitio publicado', () => {
 
   test('sin enlaces internos rotos ni imágenes rotas', async ({ page, request }) => {
     const seen = new Set<string>();
-    const queue = ['/', '/mapa', '/dinero', '/armas', '/vehiculos', '/negocios', '/rutas', '/lugares', '/personajes', '/galeria', '/fuentes', '/legal', '/mi-partida'];
+    const queue = ['/', '/intel', '/mapa', '/dinero', '/armas', '/vehiculos', '/negocios', '/rutas', '/lugares', '/personajes', '/galeria', '/fuentes', '/legal', '/mi-partida'];
     const broken: string[] = [];
     for (const path of queue) {
       await page.goto(path);

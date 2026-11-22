@@ -1,0 +1,147 @@
+# REQUISITOS ACUMULATIVOS — LEONIDA ATLAS
+
+Fuente de verdad: `docs/MATRIZ_FUNCIONAL.csv` (este archivo se genera con `python3 scripts/gen_matrix.py`).
+Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Anexo II), la especificación V3 (A–E) y ATLAS INTELLIGENCE.
+
+**Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
+
+Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendiente **9** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 63
+
+
+## A. Conservación y proceso
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| A1 | Conservar todo el desarrollo previo; trabajar en la rama del PR #1 sin fusionar | ✅ implementado_testeado | rama ccr-fb7ab394-lollmi | CI + suite completa | PR #1 abierto, no fusionado |
+| A2 | Matriz de requisitos acumulativos como fuente de verdad | ✅ implementado_testeado | docs/MATRIZ_FUNCIONAL.csv | tests/intel/repo-guards.test.ts | Generada y verificada |
+| A3 | No afirmar pruebas en partida/consola/Safari físico inexistentes | ✅ implementado_testeado | QA_REPORT.md, ATLAS_INTELLIGENCE_QA.md | revisión editorial | Límites declarados |
+| A4 | Confirmación única del propietario antes de fusionar | 🟡 parcial | PR #1 | — | Se pedirá al terminar QA |
+
+## B1. Mapas
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B1.1 | Mapa principal sobre cartografía oficial, sin coordenadas inventadas | ✅ implementado_testeado | src/components/MapView.tsx | e2e mapa | Póster oficial; coordenadas medidas sobre rótulos |
+| B1.2 | Zoom/pan con gestos, teclado, botones | ✅ implementado_testeado | MapView | e2e mapa | Pellizco implementado; gesto real Android no probado en dispositivo físico |
+| B1.3 | Pines exactos solo con prueba; aproximados diferenciados | ✅ implementado_testeado | schema mapPosition.precision | tests/data.test.ts | Ningún pin «exacta» |
+| B1.4 | Capas: región, barrio, carretera, agua, interior/exterior, comercios, misiones, coleccionables, glitches | 🟡 parcial | MapLegend (por categoría) | e2e mapa | Solo capas por categoría; faltan capas temáticas |
+| B1.5 | Clustering y filtros guardados | 🟡 parcial | groupPins | tests unit pendientes | Agrupa pines coincidentes; sin clustering por zoom ni filtros guardados |
+| B1.6 | Ocultar completados y antiespoilers en mapa | ⬜ pendiente | — | — |  |
+| B1.7 | Mis rutas / rutas temáticas sobre el mapa | 🟡 parcial | fichas de rutas | e2e rutas | Rutas como fichas; sin trazado sobre el mapa ni rutas personales |
+| B1.8 | URL compartible por lugar (/mapa?id=) | ✅ implementado_testeado | MapPage | e2e mapa |  |
+
+## B2. Dinero
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B2.1 | Métodos con capítulo, requisitos, pasos, bruto/neto, duración, riesgo, fuentes | 🟡 parcial | content/entries.json (dinero) | tests/data.test.ts | 14 métodos; neto real no publicado por ninguna fuente |
+| B2.2 | Comparador/calculadora con unidades y supuestos visibles | ✅ implementado_testeado | MoneyCalculator | tests/components + e2e |  |
+| B2.3 | Historial por versión | 🟡 parcial | intel findings versionHistory | tests/intel | Nuevo en esta fase vía ATLAS INTELLIGENCE |
+
+## B3. Glitches
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B3.1 | Estados por plataforma/versión (comprobado, reportado, pendiente_revalidacion, parcheado, refutado, desconocido) | ✅ implementado_testeado | src/intel/schema.ts, status.ts | tests/intel/status.test.ts | Nuevo en esta fase |
+| B3.2 | Parche nuevo ⇒ pendiente_revalidacion, nunca «parcheado» sin prueba | ✅ implementado_testeado | src/intel/versionWatch.ts | tests/intel/version-watch.test.ts | Nuevo en esta fase |
+| B3.3 | Fichas de glitches con consola, build, fecha de prueba, guardado, próximo chequeo | 🟡 parcial | intel findings + pestaña Glitches | e2e intel | Estructura lista; ningún glitch comprobado publicado |
+
+## B4. Trucos PS/Xbox
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B4.1 | Directorio por PS5/PS5 Pro/Xbox con secuencia de botones accesible | ⬜ pendiente | — | — | Pendiente: datos verificados por plataforma |
+| B4.2 | «Secuencia desconocida» si solo se conoce el efecto; no trasladar de GTA V | ⬜ pendiente | — | — |  |
+
+## B5. Armas
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B5.1 | Catálogo con precios, ubicaciones y fuentes | 🟡 parcial | fichas armas (20) | tests/data.test.ts | Precios de una sola fuente (reportado) |
+| B5.2 | Constructor/comparador de loadouts | ⬜ pendiente | — | — |  |
+
+## B6. Vehículos
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B6.1 | Clasificación por tipo, spawns, precios, talleres, garajes | 🟡 parcial | fichas vehículos (7) | tests/data.test.ts | Solo vehículos oficiales; sin spawns documentados |
+| B6.2 | Comparador y lista personal de vehículos conseguidos | 🟡 parcial | Mi partida (completados) | e2e progreso | Lista vía completados; sin comparador |
+
+## B7. Coleccionables
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B7.1 | Colecciones con checklist, mapa, perdibles, exportar/importar | ⬜ pendiente | — | — | Sin datos verificados aún |
+
+## B8. Ropa y joyería
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B8.1 | Tiendas, ropa, joyería, tatuajes, peluquería con fuentes | 🟡 parcial | fichas negocios (Stock 305, Electric Fang, Sara's) | tests/data.test.ts | Solo tiendas oficiales de Ultimate Edition |
+
+## B9. Configuración de consola
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B9.1 | Guías PS5/PS5 Pro/Xbox: controles, HDR, FPS, accesibilidad, rutas de menú | ⬜ pendiente | — | — | Requiere fuentes oficiales/pruebas |
+
+## B10. Mi espacio
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B10.1 | Favoritos, completados, notas, progreso local con esquema versionado | ✅ implementado_testeado | src/lib/storage.ts, MyGamePage | tests/storage + e2e |  |
+| B10.2 | Exportar/importar JSON con validación y respaldo | ✅ implementado_testeado | ProgressManager | tests/storage + e2e |  |
+| B10.3 | Estados Encontrado/Pendiente/No disponible/Revisar, fecha, plataforma, puntuación | ⬜ pendiente | — | — |  |
+| B10.4 | Fotos personales, avatar, diario, rutas, lista para hoy | ⬜ pendiente | — | — | Fotos requieren IndexedDB |
+| B10.5 | Sincronización multi-dispositivo con cuentas | ⛔ bloqueado | — | — | Requiere infraestructura autorizada (auth/BD) |
+| B10.6 | Compartir ficha sin exponer notas privadas | ✅ implementado_testeado | ShareAction | e2e compartir | Solo comparte URL |
+| B10.7 | Reporte de errores con moderación y antispam | 🟡 parcial | ReportError → GitHub Issues | e2e (enlace) | Moderación = revisión humana del issue; antispam lo aporta GitHub |
+
+## B11. Motor editorial
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B11.1 | Por dato: fuente, URL, fechas, plataforma, build, evidencia, revisión, derechos | ✅ implementado_testeado | schema facts + intel SourceRef | tests/data + tests/intel |  |
+| B11.2 | Niveles oficial/test independiente/guía/comunidad/contradictorio/refutado explicados en UI | 🟡 parcial | EvidenceBadge + intel status | tests/components | Niveles de fichas + estados intel; falta unificar en una sola leyenda |
+| B11.3 | Automatización GitHub Actions: RSS/APIs, diff, PR de revisión, changelog, alertas de parche | 🟡 parcial | .github/workflows/atlas-intelligence.yml | tests/intel/pipeline.test.ts | Código y workflow listos; activación real requiere fusionar a main y permisos de Actions |
+| B11.4 | Si fallan fuentes: conservar datos y marcar revisión; logs accesibles | ✅ implementado_testeado | scripts/intel/run.ts + RunReport | tests/intel/pipeline.test.ts |  |
+
+## B12. Producto y publicación
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| B12.1 | Marca original, PWA, offline, accesibilidad AA, SEO | ✅ implementado_testeado | app completa | e2e + axe + Lighthouse |  |
+| B12.2 | Imágenes con derechos registrados, sin marcas de agua | ✅ implementado_testeado | media-manifest.json | tests/data.test.ts |  |
+| B12.3 | Pruebas en Safari/WebKit real | ⛔ bloqueado | — | — | Entorno sin WebKit; requiere dispositivo o CI con WebKit |
+| B12.4 | URL pública real y prueba del enlace compartido en WhatsApp | ⛔ bloqueado | DEPLOY.md | — | Requiere conectar Netlify con la cuenta del propietario |
+
+## Anexo II. Referencia funcional
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| AX2.1 | Analizar UX pública de vicerepere.com sin copiar | ⬜ pendiente | — | — | Respondió HTTP 200 el 22-nov-2026; análisis pendiente para la fase de mapa/espacio |
+| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Actual: Inicio · Mapa · Dinero · Mi partida · Menú (Novedades dentro del menú) |
+| AX2.3 | Comunidad: proponer marcadores, votos, reputación, historial | 🟡 parcial | Enviar hallazgo → cola de revisión | tests/intel/submissions.test.ts | Envío y cola real vía GitHub Issues; sin votos ni reputación |
+
+## ATLAS INTELLIGENCE
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| AI.1 | Registro configurable de fuentes (URL, idioma, categoría, frecuencia, derechos, API, confiabilidad) | ✅ implementado_testeado | intel/sources.json + schema | tests/intel/schema.test.ts |  |
+| AI.2 | discover: RSS/APIs autorizadas, metadatos, fecha real, dedup por URL/ID/hash | ✅ implementado_testeado | src/intel/feeds.ts, normalize.ts, scripts/intel/run.ts | tests/intel/dedup.test.ts, feeds.test.ts | Respeta robots.txt; sin scraping de páginas que prohíben bots |
+| AI.3 | extract/classify con IA validada por Zod; sin inventar valores; antiinyección | ✅ implementado_testeado | src/intel/classify.ts | tests/intel/classify.test.ts | Sin clave usa el clasificador heurístico; con ANTHROPIC_API_KEY usa Claude (no probado con clave real) |
+| AI.4 | crosscheck: independencia real, contradicciones, republicaciones cuentan una vez | ✅ implementado_testeado | src/intel/crosscheck.ts | tests/intel/crosscheck.test.ts |  |
+| AI.5 | version-watch: parche ⇒ revalidación sin borrar historial | ✅ implementado_testeado | src/intel/versionWatch.ts | tests/intel/version-watch.test.ts |  |
+| AI.6 | review: propuesta (PR) con diff, fuentes, riesgos; cambios sensibles requieren humano | ✅ implementado_testeado | src/intel/proposal.ts + workflow | tests/intel/pipeline.test.ts | El PR automático necesita permiso de Actions para crear PRs |
+| AI.7 | publish tras aprobación: datos versionados, validación, build | 🟡 parcial | workflow ci.yml + Netlify | CI | La publicación depende del hosting conectado |
+| AI.8 | notify dentro de la PWA (sin fingir push/WhatsApp/email) | ✅ implementado_testeado | /intel Novedades | e2e intel | Push no implementado (requiere autorización) |
+| AI.9 | Workflow 2 veces al día + manual, límites, timeouts, concurrencia, reintentos | 🟡 parcial | .github/workflows/atlas-intelligence.yml | tests/intel/repo-guards.test.ts | Se activa solo cuando el archivo esté en main |
+| AI.10 | Estados editoriales nuevo/reportado/contrastado/comprobado_en_version/pendiente/parcheado/refutado por plataforma | ✅ implementado_testeado | src/intel/status.ts | tests/intel/status.test.ts |  |
+| AI.11 | Modelo Source/Finding/Evidence/Patch/VerificationReport/RunReport/ReviewProposal; migración preservando IDs | ✅ implementado_testeado | src/intel/schema.ts, scripts/intel/migrate.ts | tests/intel/schema.test.ts | Hallazgos de dinero migrados con entryId |
+| AI.12 | Pregúntale a ATLAS: solo datos respaldados, fuente/fecha/versión/certeza; «No puedo confirmarlo» | ✅ implementado_testeado | src/intel/ask.ts + IntelPage | tests/intel/ask.test.ts + e2e | Recuperación local sin IA en el navegador |
+| AI.13 | Claves solo en secretos del servidor; nunca en el navegador | ✅ implementado_testeado | workflow secrets, redact() | tests/intel/secrets.test.ts |  |
+| AI.14 | Topes diarios de llamadas, tokens, tiempo; registro de costo estimado | ✅ implementado_testeado | src/intel/budget.ts | tests/intel/pipeline.test.ts |  |
+| AI.15 | Enviar hallazgo: formulario a cola de revisión, nunca autopublica | ✅ implementado_testeado | IntelPage + .github/ISSUE_TEMPLATE/hallazgo.yml | tests/intel/submissions.test.ts + e2e | Requiere repositorio con Issues activos |
+| AI.16 | Bitácora: última ejecución real, fuentes, errores, propuestas | ✅ implementado_testeado | intel/runs + IntelPage | e2e intel | Primera corrida real: ejecución manual local del 22-nov-2026, no de Actions |
+| AI.17 | TikTok/YouTube/Reddit por APIs autorizadas | ⛔ bloqueado | intel/sources.json (desactivadas) | — | La Research API de esa red de videos cortos y Reddit OAuth requieren aprobación; YouTube por API con clave |
+| AI.18 | Resguardo de archivos privados (PDF/video de referencia fuera de git y del build) | ✅ implementado_testeado | .gitignore + guardas | tests/intel/repo-guards.test.ts |  |

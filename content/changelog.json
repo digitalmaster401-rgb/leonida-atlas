@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-11-22",
+    "version": "1.1.0",
+    "title": "ATLAS INTELLIGENCE (infraestructura)",
+    "items": [
+      "Pipeline de investigación: fuentes RSS y página oficial con robots.txt respetado, deduplicación, cruce de fuentes independientes, revalidación por parches e historial sin sobrescrituras.",
+      "Panel /intel: novedades, hallazgos en observación con estado por plataforma, parches, bitácora con la hora real de cada corrida, «Pregúntale a ATLAS» y «Enviar hallazgo» con cola de revisión.",
+      "Workflow de GitHub Actions dos veces al día que abre un PR para revisión humana (se activa al fusionar a main).",
+      "Primera corrida real (manual local): 72 hallazgos de 5 fuentes; ninguno marcado como comprobado."
+    ]
+  },
+  {
+    "date": "2026-11-22",
     "version": "1.0.0",
     "title": "Lanzamiento de LEONIDA ATLAS",
     "items": [

@@ -22,3 +22,12 @@ LEONIDA ATLAS: guía de GTA VI (es-MX), Vite + React + TS, PWA, hosting estátic
 - Componentes en `src/components`, páginas en `src/pages`, lógica pura testeable en `src/lib`.
 - El navegador no carga Zod (excepto /editor, diferido). El progreso usa validación manual en `src/lib/storage.ts` con `schemaVersion` y migraciones.
 - Accesibilidad: objetivos táctiles ≥ 44 px, foco visible, `prefers-reduced-motion`, sin errores serios de axe.
+
+## ATLAS INTELLIGENCE
+- Datos en `intel/` (sources, findings, patches, submissions, runs, proposals). Esquemas en `src/intel/schema.ts`.
+- Ejecutar: `npm run intel:run` (escribe) o `npm run intel:dry` (no escribe). Corridas locales se registran como `manual_local`; nunca las presentes como programadas.
+- Estados: nuevo_sin_verificar | reportado | contrastado | comprobado_en_version | pendiente_revalidacion | parcheado | refutado, por plataforma. Comprobado/parcheado solo con `evidence` (fecha, plataforma, versión) añadida por una persona.
+- Solo parches de fuentes `oficial` (o añadidos a mano en `intel/patches.json` con `official: true`) disparan revalidación.
+- Respeta robots.txt; fuentes con `aiProcessingAllowed: false` nunca se envían a la IA. Claves solo como secretos de Actions.
+- El workflow abre PR; jamás escribe contenido en main. Módulos de servidor (pipeline, engine, classify, redact, budget, robots) no deben importarse desde el navegador.
+- Matriz de requisitos: actualizar `docs/MATRIZ_FUNCIONAL.csv` y regenerar con `python3 scripts/gen_matrix.py`.

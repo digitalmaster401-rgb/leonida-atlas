@@ -1,0 +1,220 @@
+[
+ {
+  "id": "rockstar-youtube",
+  "name": "Rockstar Games (canal oficial de YouTube)",
+  "url": "https://www.youtube.com/feeds/videos.xml?user=RockstarGames",
+  "homepage": "https://www.youtube.com/@RockstarGames",
+  "kind": "youtube_rss",
+  "tier": "oficial",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche"
+  ],
+  "independenceGroup": "rockstar",
+  "frequencyHours": 12,
+  "reliability": 1,
+  "enabled": false,
+  "aiProcessingAllowed": false,
+  "rights": "Feed público de YouTube. Solo título, enlace y fecha; videos de Rockstar Games.",
+  "checkedRobotsAt": "2026-11-22",
+  "disabledReason": "El robots.txt de YouTube prohíbe leer /feeds/videos.xml a agentes automáticos (verificado el 22-nov-2026). Para videos oficiales usar la YouTube Data API con una clave de API guardada como secreto del repositorio."
+ },
+ {
+  "id": "rockstar-vi-pagina",
+  "name": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+  "url": "https://www.rockstargames.com/VI",
+  "homepage": "https://www.rockstargames.com/VI",
+  "kind": "page_watch",
+  "tier": "oficial",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche"
+  ],
+  "independenceGroup": "rockstar",
+  "frequencyHours": 12,
+  "reliability": 1,
+  "enabled": true,
+  "aiProcessingAllowed": false,
+  "rights": "Se leen titulares y fechas de noticias destacadas. robots.txt de Rockstar bloquea bots de IA: no se envía contenido a ningún modelo.",
+  "checkedRobotsAt": "2026-11-22"
+ },
+ {
+  "id": "gtaboom",
+  "name": "GTA BOOM",
+  "url": "https://www.gtaboom.com/feed.xml",
+  "homepage": "https://www.gtaboom.com",
+  "kind": "rss",
+  "tier": "guia_tercero",
+  "language": "en",
+  "categories": [
+   "dinero",
+   "glitch",
+   "truco",
+   "coleccionable",
+   "mision",
+   "vehiculo",
+   "arma",
+   "noticia"
+  ],
+  "independenceGroup": "gtaboom",
+  "frequencyHours": 12,
+  "reliability": 0.7,
+  "enabled": true,
+  "aiProcessingAllowed": true,
+  "rights": "Feed RSS público. Solo titular, enlace, fecha y resumen propio.",
+  "checkedRobotsAt": "2026-11-22"
+ },
+ {
+  "id": "powerpyx",
+  "name": "PowerPyx",
+  "url": "https://www.powerpyx.com/feed/",
+  "homepage": "https://www.powerpyx.com",
+  "kind": "rss",
+  "tier": "guia_tercero",
+  "language": "en",
+  "categories": [
+   "dinero",
+   "coleccionable",
+   "mision",
+   "truco",
+   "glitch"
+  ],
+  "independenceGroup": "powerpyx",
+  "frequencyHours": 12,
+  "reliability": 0.75,
+  "enabled": true,
+  "aiProcessingAllowed": true,
+  "rights": "Feed RSS público. Solo titular, enlace, fecha y resumen propio.",
+  "checkedRobotsAt": "2026-11-22"
+ },
+ {
+  "id": "vgc",
+  "name": "Video Games Chronicle",
+  "url": "https://www.videogameschronicle.com/feed/",
+  "homepage": "https://www.videogameschronicle.com",
+  "kind": "rss",
+  "tier": "medio",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche"
+  ],
+  "independenceGroup": "vgc",
+  "frequencyHours": 12,
+  "reliability": 0.8,
+  "enabled": true,
+  "aiProcessingAllowed": true,
+  "rights": "Feed RSS público. Solo titular, enlace, fecha y resumen propio.",
+  "checkedRobotsAt": "2026-11-22"
+ },
+ {
+  "id": "eurogamer",
+  "name": "Eurogamer",
+  "url": "https://www.eurogamer.net/feed",
+  "homepage": "https://www.eurogamer.net",
+  "kind": "rss",
+  "tier": "medio",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche",
+   "configuracion"
+  ],
+  "independenceGroup": "gamer-network",
+  "frequencyHours": 24,
+  "reliability": 0.8,
+  "enabled": false,
+  "aiProcessingAllowed": false,
+  "rights": "Feed RSS público. Su robots.txt bloquea agentes de IA: solo metadatos, clasificación heurística.",
+  "checkedRobotsAt": "2026-11-22",
+  "disabledReason": "El sitio responde HTTP 403 a clientes automatizados (incluido robots.txt) desde el 22-nov-2026; no se intenta evadir el bloqueo."
+ },
+ {
+  "id": "ign",
+  "name": "IGN",
+  "url": "https://www.ign.com/rss/articles/feed",
+  "homepage": "https://www.ign.com",
+  "kind": "rss",
+  "tier": "medio",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche",
+   "dinero",
+   "coleccionable"
+  ],
+  "independenceGroup": "ign",
+  "frequencyHours": 24,
+  "reliability": 0.75,
+  "enabled": false,
+  "aiProcessingAllowed": false,
+  "rights": "Feed RSS público. Su robots.txt bloquea agentes de IA: solo metadatos, clasificación heurística.",
+  "checkedRobotsAt": "2026-11-22",
+  "disabledReason": "El sitio responde HTTP 403 a clientes automatizados (incluido robots.txt) desde el 22-nov-2026; no se intenta evadir el bloqueo."
+ },
+ {
+  "id": "gamespot",
+  "name": "GameSpot",
+  "url": "https://www.gamespot.com/feeds/news/",
+  "homepage": "https://www.gamespot.com",
+  "kind": "rss",
+  "tier": "medio",
+  "language": "en",
+  "categories": [
+   "noticia",
+   "parche"
+  ],
+  "independenceGroup": "gamespot",
+  "frequencyHours": 24,
+  "reliability": 0.75,
+  "enabled": true,
+  "aiProcessingAllowed": false,
+  "rights": "Feed RSS público. Su robots.txt bloquea ClaudeBot: solo metadatos, clasificación heurística.",
+  "checkedRobotsAt": "2026-11-22"
+ },
+ {
+  "id": "youtube-busqueda",
+  "name": "YouTube Data API (búsqueda de videos recientes)",
+  "url": "https://www.googleapis.com/youtube/v3/search",
+  "homepage": "https://developers.google.com/youtube/v3",
+  "kind": "api",
+  "tier": "creador_video",
+  "language": "multi",
+  "categories": [
+   "glitch",
+   "dinero",
+   "truco",
+   "coleccionable"
+  ],
+  "independenceGroup": "youtube-por-canal",
+  "frequencyHours": 12,
+  "reliability": 0.4,
+  "enabled": false,
+  "aiProcessingAllowed": true,
+  "rights": "API oficial de YouTube. Solo título, canal, fecha y enlace; nunca se descargan ni republican videos. Cada canal cuenta como fuente independiente.",
+  "disabledReason": "Requiere una clave de la YouTube Data API guardada como secreto del repositorio (cuota gratuita de Google Cloud). Se activa sola cuando el secreto existe."
+ },
+ {
+  "id": "reddit-gta6",
+  "name": "Reddit r/GTA6",
+  "url": "https://www.reddit.com/r/GTA6/.rss",
+  "homepage": "https://www.reddit.com/r/GTA6",
+  "kind": "rss",
+  "tier": "comunidad",
+  "language": "en",
+  "categories": [
+   "glitch",
+   "dinero",
+   "truco"
+  ],
+  "independenceGroup": "reddit",
+  "frequencyHours": 12,
+  "reliability": 0.3,
+  "enabled": false,
+  "aiProcessingAllowed": false,
+  "rights": "Requiere acceso autorizado a la API de Reddit.",
+  "disabledReason": "El feed respondió HTTP 429 y la API HTTP 403 el 22-nov-2026 sin credenciales OAuth. Requiere registrar una app de Reddit y aceptar sus términos."
+ }
+]

@@ -222,7 +222,7 @@ test.describe('LEONIDA ATLAS', () => {
 
   test('accesibilidad automática (axe, WCAG 2 AA) en páginas clave', async ({ page }) => {
     test.skip(!['chromium-390', 'chromium-1280'].includes(test.info().project.name), 'se ejecuta en dos anchos representativos');
-    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria']) {
+    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora']) {
       await page.goto(path);
       await page.waitForLoadState('networkidle');
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();

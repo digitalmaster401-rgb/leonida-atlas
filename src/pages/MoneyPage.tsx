@@ -1,4 +1,4 @@
-import { useSearchParams } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { entriesBy } from '../data';
 import { applyFilters, readFilters } from '../lib/filters';
 import { FilterBar } from '../components/FilterBar';
@@ -74,6 +74,11 @@ export function MoneyPage() {
             <p>
               Solo publicamos glitches con dos fuentes independientes, paso a paso reproducible, consola, parche y riesgo de que deje de funcionar. Hasta hoy ninguno cumple ese criterio.
               Tampoco publicaremos trucos que afecten servicios en línea o eviten sanciones.
+            </p>
+            <p>
+              <Link to="/intel?seccion=observacion&categoria=glitch" className="btn">
+                Ver glitches en observación en ATLAS INTELLIGENCE
+              </Link>
             </p>
           </EmptyState>
         )}

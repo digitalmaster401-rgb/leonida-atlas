@@ -4,6 +4,7 @@ import { CATEGORY_META, CATEGORY_ORDER, EDITION_LABEL, REGION_LABEL, STATUS_META
 import { chaptersOf } from '../data';
 import { FILTER_KEYS, readFilters, type Filters } from '../lib/filters';
 import { Icon } from './Icon';
+import { setQueryParam } from '../lib/query';
 
 interface Props {
   source: Entry[];
@@ -22,12 +23,7 @@ const DEFAULT_SORT = [
 export function FilterBar({ source, showCategory = false, resultCount, sortOptions = DEFAULT_SORT }: Props) {
   const [params, setParams] = useSearchParams();
   const f = readFilters(params);
-  const set = (k: keyof Filters, v: string) => {
-    const next = new URLSearchParams(params);
-    if (v) next.set(k, v);
-    else next.delete(k);
-    setParams(next, { replace: true, preventScrollReset: true });
-  };
+  const set = (k: keyof Filters, v: string) => setQueryParam(setParams, k, v);
   const regions = [...new Set(source.map((e) => e.region))];
   const statuses = [...new Set(source.map((e) => e.status))];
   const editions = [...new Set(source.map((e) => e.edition))];

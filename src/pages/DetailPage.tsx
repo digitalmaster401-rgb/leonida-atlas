@@ -129,7 +129,7 @@ export function DetailPage({ category }: { category: Category }) {
             {entry.facts.length > 0 && (
               <section className="panel">
                 <h2>Datos y evidencia</h2>
-                <div className="table-wrap">
+                <div className="table-wrap" tabIndex={0} role="region" aria-label="Tabla de datos y evidencia">
                   <table className="facts">
                     <thead>
                       <tr>

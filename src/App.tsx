@@ -17,6 +17,9 @@ import type { Category } from './data/schema';
 
 const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ default: m.EditorPage })));
 
+const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
+const loading = <p className="page muted">Cargando…</p>;
+
 const LISTS: Category[] = ['lugares', 'personajes', 'armas', 'vehiculos', 'negocios', 'rutas'];
 
 export function App() {
@@ -32,6 +35,22 @@ export function App() {
         {(Object.keys(CATEGORY_META) as Category[]).map((c) => (
           <Route key={c + '-d'} path={`${CATEGORY_META[c].path}/:slug`} element={<DetailPage category={c} />} />
         ))}
+        <Route
+          path="/intel"
+          element={
+            <Suspense fallback={loading}>
+              <IntelPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/novedades"
+          element={
+            <Suspense fallback={loading}>
+              <IntelPage initial="novedades" />
+            </Suspense>
+          }
+        />
         <Route path="/buscar" element={<SearchPage />} />
         <Route path="/mi-partida" element={<MyGamePage />} />
         <Route path="/fuentes" element={<SourcesPage />} />

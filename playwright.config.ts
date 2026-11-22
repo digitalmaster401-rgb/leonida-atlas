@@ -25,6 +25,8 @@ export default defineConfig({
     { name: 'android-pixel-7', testIgnore: /offline\.spec\.ts/, use: { ...devices['Pixel 7'] } },
     // WebKit no está instalado en este entorno: se emula el iPhone (viewport, UA, táctil) sobre Chromium.
     { name: 'iphone-14-emulado', testIgnore: /offline\.spec\.ts/, use: { ...devices['iPhone 14'], browserName: 'chromium', defaultBrowserType: 'chromium' } },
+    // Solo en CI (PW_WEBKIT=1, con `playwright install webkit`): Safari/WebKit real con perfil de iPhone.
+    ...(process.env.PW_WEBKIT ? [{ name: 'iphone-14-webkit', testIgnore: /offline\.spec\.ts/, use: { ...devices['iPhone 14'] } }] : []),
     { name: 'offline-pwa', testMatch: /offline\.spec\.ts/, use: { ...devices['Pixel 7'], serviceWorkers: 'allow' } },
   ],
   webServer: {

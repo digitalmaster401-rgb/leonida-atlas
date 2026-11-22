@@ -8,3 +8,10 @@ test-results
 .DS_Store
 .env
 .env.*
+# Referencias privadas del propietario (videos/PDF): nunca al repositorio ni al build público
+*PRIVADA*
+*privada*
+*PRIVADAS*
+referencias-privadas/
+*.mp4
+*.mov

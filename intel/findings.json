@@ -1,0 +1,4970 @@
+[
+ {
+  "id": "fnd-no-farmees-en-el-capitulo-1",
+  "dedupKey": "entry:din-regla-capitulo-1",
+  "title": "Regla clave: el efectivo del Capítulo 1 se pierde",
+  "summary": "Dos guías coinciden: el efectivo que llevas encima se pierde al terminar el Capítulo 1.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [
+   "Avanza la historia sin dedicar tiempo a farmear durante el Capítulo 1.",
+   "Cuando se desbloquee la cuenta BuckMe, deposita tu efectivo antes de actividades riesgosas.",
+   "Si quieres conservar algo, cumple la primera meta de Family Savings antes de terminar el capítulo (cifra reportada por una sola guía)."
+  ],
+  "entryIds": [
+   "din-regla-capitulo-1"
+  ],
+  "risks": [
+   "No confirmado por Rockstar; dos guías independientes lo describen igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-regla-capitulo-1 (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-vender-autos-a-moses",
+  "dedupKey": "entry:din-moses",
+  "title": "Vender autos a Moses",
+  "summary": "Roba autos sin rastreador y véndelos a Moses: ~$1,000+ por auto en 1–2 minutos.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [
+   "Capítulo 2 de la historia.",
+   "Auto sin rastreador."
+  ],
+  "steps": [
+   "Desbloquea el encargo «Moses (Take A Vehicle to Moses)» en el Capítulo 2.",
+   "Roba un auto sin rastreador lejos del taller (por ejemplo, en la avenida principal de Port Gellhorn).",
+   "Entrégalo a Moses y espera el enfriamiento (~2 min) antes del siguiente."
+  ],
+  "entryIds": [
+   "din-moses"
+  ],
+  "risks": [
+   "Robar autos puede generar nivel de búsqueda.",
+   "El pago varía según el vehículo."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-moses (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 2"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-robos-a-joyerias-yasmani",
+  "dedupKey": "entry:din-joyerias-yasmani",
+  "title": "Robos a joyerías (Yasmani)",
+  "summary": "Robos relámpago a joyerías: $10,000–$25,000 por golpe según dos guías.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [
+   "Capítulo 3."
+  ],
+  "steps": [
+   "Avanza hasta el Capítulo 3 y completa la introducción «Yasmani's Jewelry Jobs».",
+   "Realiza el robo rápido (smash-and-grab) y escapa.",
+   "Vende o deposita el botín según indique el juego antes de arriesgarte de nuevo."
+  ],
+  "entryIds": [
+   "din-joyerias-yasmani"
+  ],
+  "risks": [
+   "Nivel de búsqueda al escapar.",
+   "Las guías no aclaran si el botín se recibe íntegro tras venderlo."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-joyerias-yasmani (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 3"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-lista-de-deseos-de-randy",
+  "dedupKey": "entry:din-randy",
+  "title": "Lista de deseos de Randy (superdeportivos)",
+  "summary": "Entrega superdeportivos con rastreador avanzado: $30,000+ por auto en perfecto estado.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [
+   "Capítulo 3.",
+   "Key Cloner."
+  ],
+  "steps": [
+   "Completa «Clonin' Keys, Makin' GS» para obtener el Key Cloner.",
+   "Localiza un auto de la Wish List de Randy.",
+   "Entrégalo sin daños para cobrar el pago completo."
+  ],
+  "entryIds": [
+   "din-randy"
+  ],
+  "risks": [
+   "Los daños reducen el pago."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-randy (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 3"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-autos-rastreados-pay-n-spray",
+  "dedupKey": "entry:din-pay-n-spray",
+  "title": "Autos con rastreador estándar en Pay 'n' Spray",
+  "summary": "Vende autos con rastreador estándar: $2,500–$4,000+ según dos guías.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-pay-n-spray"
+  ],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-pay-n-spray (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 3"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-operaciones-ilegales",
+  "dedupKey": "entry:din-operaciones-ilegales",
+  "title": "Operaciones ilegales (escondites de pandillas)",
+  "summary": "Escondites marcados en el mapa: ~$1,000–$2,000+ por sitio (pago reportado).",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-operaciones-ilegales"
+  ],
+  "risks": [
+   "Combate armado.",
+   "Cifra de pago de fuente única."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   },
+   {
+    "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-all-unique-weapons-where-to-get-them/",
+    "canonicalUrl": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-all-unique-weapons-where-to-get-them",
+    "sourceId": "gamesgg-unique",
+    "publisher": "GAMES.GG",
+    "title": "Grand Theft Auto 6 Guide: All Unique Weapons and Where to Get Them",
+    "publishedAt": "2026-11-21T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "games.gg",
+    "originId": null,
+    "contentHash": "56b1947f4ce768ab"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-operaciones-ilegales (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-asaltos-a-tiendas",
+  "dedupKey": "entry:din-asaltos-a-tiendas",
+  "title": "Asaltos a tiendas",
+  "summary": "Apunta al cajero y saquea la caja: «unos cientos» de dólares.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-asaltos-a-tiendas"
+  ],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   },
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "contrastado",
+    "to": "contrastado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-asaltos-a-tiendas (estado editorial «contrastado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-carreras",
+  "dedupKey": "entry:din-carreras",
+  "title": "Carreras callejeras",
+  "summary": "40 ubicaciones de carrera reportadas; pago no publicado.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-carreras"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-carreras (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-paquetes-de-donnie",
+  "dedupKey": "entry:din-paquetes-de-donnie",
+  "title": "Paquetes de droga para Donnie",
+  "summary": "Entrega paquetes recuperados: ~$900 cada uno (4 ubicaciones).",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-19T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-paquetes-de-donnie"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-paquetes-de-donnie (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-tesoros-de-kenton",
+  "dedupKey": "entry:din-tesoros-de-kenton",
+  "title": "Inmersiones de tesoro (Kenton)",
+  "summary": "Naufragios con botín: ~$1,400+ los primeros.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-19T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-tesoros-de-kenton"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-tesoros-de-kenton (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 1"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-casas-de-empeno",
+  "dedupKey": "entry:din-casas-de-empeno",
+  "title": "Casas de empeño",
+  "summary": "Vende objetos robados: ~$1,000–$12,000.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-19T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-casas-de-empeno"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-casas-de-empeno (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 2"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-bancos-pequenos",
+  "dedupKey": "entry:din-bancos-pequenos",
+  "title": "Bancos pequeños y préstamos (Payday Loans)",
+  "summary": "~$5,000–$45,000; los billetes marcados requieren Dye Pack Jammer.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-19T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-bancos-pequenos"
+  ],
+  "risks": [
+   "Nivel de búsqueda alto."
+  ],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "canonicalUrl": "https://gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+    "sourceId": "gtaboom-money",
+    "publisher": "GTA BOOM",
+    "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gta-boom",
+    "originId": null,
+    "contentHash": "701a05d6d75452c6"
+   },
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-bancos-pequenos (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Capítulo 3"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-bovedas-bancarias",
+  "dedupKey": "entry:din-bovedas-bancarias",
+  "title": "Bóvedas de bancos grandes",
+  "summary": "Hasta $205,000 por golpe (fuente única); da 4 estrellas al instante.",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-bovedas-bancarias"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual.",
+   "Nivel de búsqueda alto."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-bovedas-bancarias (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Final del Capítulo 4"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-recompensa-capitulo-3",
+  "dedupKey": "entry:din-recompensa-capitulo-3",
+  "title": "Recompensa de historia del Capítulo 3",
+  "summary": "$120,000 automáticos al terminar el Capítulo 3 (fuente única).",
+  "category": "dinero",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T00:00:00.000Z",
+  "sourcePublishedAt": "2026-11-18T00:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T00:00:00.000Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [
+   "din-recompensa-capitulo-3"
+  ],
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-money-guide-how-to-get-money-fast",
+    "sourceId": "powerpyx-money",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Money Guide - How to Get Money Fast",
+    "publishedAt": "2026-11-18T00:00:00.000Z",
+    "accessedAt": "2026-11-22T00:00:00.000Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "d6be671fe28a331f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T00:00:00.000Z",
+    "type": "migrado",
+    "from": "reportado",
+    "to": "reportado",
+    "platform": null,
+    "reason": "Migrado desde la ficha din-recompensa-capitulo-3 (estado editorial «reportado»). Las fuentes no indican plataforma ni versión.",
+    "runId": null
+   }
+  ],
+  "classifier": "migracion",
+  "flags": [
+   "capitulo:Final del Capítulo 3"
+  ],
+  "rights": "Datos atribuidos a las fuentes citadas en la ficha."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-now-available",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-now-available",
+  "title": "Grand Theft Auto VI Now Available",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.907Z",
+  "sourcePublishedAt": "2026-11-19T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.907Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI Now Available",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.907Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "fdb8ae77efa1defe"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.907Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-pre-load-grand-theft-auto-vi-now",
+  "dedupKey": "page:rockstar-vi-pagina:pre-load-grand-theft-auto-vi-now",
+  "title": "Pre-Load Grand Theft Auto VI Now",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
+  "sourcePublishedAt": "2026-11-10T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.909Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Pre-Load Grand Theft Auto VI Now",
+    "publishedAt": "2026-11-10T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.909Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "803999f1e17b4219"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.909Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-explore-the-grand-theft-auto-vi-launch-gallery",
+  "dedupKey": "page:rockstar-vi-pagina:explore-the-grand-theft-auto-vi-launch-gallery",
+  "title": "Explore the Grand Theft Auto VI Launch Gallery",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
+  "sourcePublishedAt": "2026-11-05T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.909Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Explore the Grand Theft Auto VI Launch Gallery",
+    "publishedAt": "2026-11-05T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.909Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "cbe4a1eab36fa687"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.909Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-out-now",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-out-now",
+  "title": "Grand Theft Auto VI: Out Now",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
+  "sourcePublishedAt": "2026-11-19T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.909Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI: Out Now",
+    "publishedAt": "2026-11-19T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.909Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "95ef0719e9b5d78f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.909Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-launch-trailer",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-launch-trailer",
+  "title": "Grand Theft Auto VI Launch Trailer",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
+  "sourcePublishedAt": "2026-10-15T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.910Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI Launch Trailer",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.910Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "16c36e2058ceb073"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.910Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-an-extended-look",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-an-extended-look",
+  "title": "Grand Theft Auto VI: An Extended Look",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
+  "sourcePublishedAt": "2026-08-27T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.910Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI: An Extended Look",
+    "publishedAt": "2026-08-27T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.910Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "e05ecf71e380ae2a"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.910Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-trailer-2",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-trailer-2",
+  "title": "Grand Theft Auto VI Trailer 2",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
+  "sourcePublishedAt": "2025-05-06T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.910Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI Trailer 2",
+    "publishedAt": "2025-05-06T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.910Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "b758ce52fd317624"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.910Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-grand-theft-auto-vi-trailer-1",
+  "dedupKey": "page:rockstar-vi-pagina:grand-theft-auto-vi-trailer-1",
+  "title": "Grand Theft Auto VI Trailer 1",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "contrastado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
+  "sourcePublishedAt": "2023-12-04T12:00:00.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:08:59.910Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.rockstargames.com/VI",
+    "canonicalUrl": "https://rockstargames.com/VI",
+    "sourceId": "rockstar-vi-pagina",
+    "publisher": "Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "title": "Grand Theft Auto VI Trailer 1",
+    "publishedAt": "2023-12-04T12:00:00.000Z",
+    "accessedAt": "2026-11-22T04:08:59.910Z",
+    "tier": "oficial",
+    "independenceGroup": "rockstar",
+    "originId": null,
+    "contentHash": "500e8c9e9f9a4e73"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:08:59.910Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "fuente_oficial"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-player-got-banned-for-30-days-for-texting-a-gta",
+  "dedupKey": "url:https://gtaboom.com/player-got-banned-for-30-days-for-texting-a-gta-6-nude-screenshot-430f",
+  "title": "Player Got Banned for 30 Days for Texting a GTA 6 Nude Screenshot",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.039Z",
+  "sourcePublishedAt": "2026-11-22T01:01:28.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.039Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/player-got-banned-for-30-days-for-texting-a-gta-6-nude-screenshot-430f",
+    "canonicalUrl": "https://gtaboom.com/player-got-banned-for-30-days-for-texting-a-gta-6-nude-screenshot-430f",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "Player Got Banned for 30 Days for Texting a GTA 6 Nude Screenshot",
+    "publishedAt": "2026-11-22T01:01:28.000Z",
+    "accessedAt": "2026-11-22T04:09:00.039Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "cfacdda4343c94db"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.039Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-helped-turn-game-ownership-into-a-politica",
+  "dedupKey": "url:https://gtaboom.com/gta-6-helped-turn-game-ownership-into-a-political-fight-9a31",
+  "title": "GTA 6 Helped Turn Game Ownership Into a Political Fight",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.040Z",
+  "sourcePublishedAt": "2026-11-22T00:30:30.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.040Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-helped-turn-game-ownership-into-a-political-fight-9a31",
+    "canonicalUrl": "https://gtaboom.com/gta-6-helped-turn-game-ownership-into-a-political-fight-9a31",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Helped Turn Game Ownership Into a Political Fight",
+    "publishedAt": "2026-11-22T00:30:30.000Z",
+    "accessedAt": "2026-11-22T04:09:00.040Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "3588851f136819be"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.040Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-french-retirement-home-residents-are-trading-scr",
+  "dedupKey": "url:https://gtaboom.com/french-retirement-home-residents-are-trading-scrabble-for-gta-6-dcec",
+  "title": "French Retirement Home Residents Are Trading Scrabble for GTA 6",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.040Z",
+  "sourcePublishedAt": "2026-11-21T23:55:23.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.040Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/french-retirement-home-residents-are-trading-scrabble-for-gta-6-dcec",
+    "canonicalUrl": "https://gtaboom.com/french-retirement-home-residents-are-trading-scrabble-for-gta-6-dcec",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "French Retirement Home Residents Are Trading Scrabble for GTA 6",
+    "publishedAt": "2026-11-21T23:55:23.000Z",
+    "accessedAt": "2026-11-22T04:09:00.040Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "d7ead61e55557bd7"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.040Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-your-xbox-can-ban-you-for-auto-uploading-gta-6-n",
+  "dedupKey": "url:https://gtaboom.com/your-xbox-can-ban-you-for-auto-uploading-gta-6-nude-clips-8930",
+  "title": "Your Xbox Can Ban You for Auto-Uploading GTA 6 Nude Clips",
+  "summary": "",
+  "category": "noticia",
+  "tags": [
+   "xbox"
+  ],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.040Z",
+  "sourcePublishedAt": "2026-11-21T23:05:09.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.040Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/your-xbox-can-ban-you-for-auto-uploading-gta-6-nude-clips-8930",
+    "canonicalUrl": "https://gtaboom.com/your-xbox-can-ban-you-for-auto-uploading-gta-6-nude-clips-8930",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "Your Xbox Can Ban You for Auto-Uploading GTA 6 Nude Clips",
+    "publishedAt": "2026-11-21T23:05:09.000Z",
+    "accessedAt": "2026-11-22T04:09:00.040Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "6f3f36eb07afa1e3"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.040Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-is-too-big-for-borders-but-not-for-a-black",
+  "dedupKey": "url:https://gtaboom.com/gta-6-is-too-big-for-borders-but-not-for-a-black-friday-discount-f9fa",
+  "title": "GTA 6 Is Too Big for Borders but Not for a Black Friday Discount",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "xbox_series_x"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.040Z",
+  "sourcePublishedAt": "2026-11-21T22:31:21.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.040Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-is-too-big-for-borders-but-not-for-a-black-friday-discount-f9fa",
+    "canonicalUrl": "https://gtaboom.com/gta-6-is-too-big-for-borders-but-not-for-a-black-friday-discount-f9fa",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Is Too Big for Borders but Not for a Black Friday Discount",
+    "publishedAt": "2026-11-21T22:31:21.000Z",
+    "accessedAt": "2026-11-22T04:09:00.040Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "0866b8438814fdff"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.040Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-the-dexter-apartment-is-the-best-proof-yet-of-ho",
+  "dedupKey": "url:https://gtaboom.com/the-dexter-apartment-is-the-best-proof-yet-of-how-gta-6-builds-its-world-3cdd",
+  "title": "The Dexter Apartment Is the Best Proof Yet of How GTA 6 Builds Its World",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.040Z",
+  "sourcePublishedAt": "2026-11-21T21:56:50.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.040Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/the-dexter-apartment-is-the-best-proof-yet-of-how-gta-6-builds-its-world-3cdd",
+    "canonicalUrl": "https://gtaboom.com/the-dexter-apartment-is-the-best-proof-yet-of-how-gta-6-builds-its-world-3cdd",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "The Dexter Apartment Is the Best Proof Yet of How GTA 6 Builds Its World",
+    "publishedAt": "2026-11-21T21:56:50.000Z",
+    "accessedAt": "2026-11-22T04:09:00.040Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "9aa4c1aba402b068"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.040Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-moses-vehicle-theft-guide-all-five-cars-an",
+  "dedupKey": "url:https://gtaboom.com/gta-6-moses-vehicle-theft-guide-2d3f",
+  "title": "GTA 6 Moses Vehicle Theft Guide: All Five Cars and Where to Find Them",
+  "summary": "",
+  "category": "vehiculo",
+  "tags": [
+   "moses"
+  ],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.041Z",
+  "sourcePublishedAt": "2026-11-21T21:27:48.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.041Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.041Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-moses-vehicle-theft-guide-2d3f",
+    "canonicalUrl": "https://gtaboom.com/gta-6-moses-vehicle-theft-guide-2d3f",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Moses Vehicle Theft Guide: All Five Cars and Where to Find Them",
+    "publishedAt": "2026-11-21T21:27:48.000Z",
+    "accessedAt": "2026-11-22T04:09:00.041Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "025678217c3bbefd"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.041Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-dunk-robbery-guide-lost-vista-pills-and-sc",
+  "dedupKey": "url:https://gtaboom.com/gta-6-dunk-robbery-guide-ce47",
+  "title": "GTA 6 Dunk Robbery Guide: Lost Vista Pills and Scattered Pines Crystal",
+  "summary": "",
+  "category": "dinero",
+  "tags": [
+   "robbery"
+  ],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.041Z",
+  "sourcePublishedAt": "2026-11-21T21:26:48.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.041Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.041Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-dunk-robbery-guide-ce47",
+    "canonicalUrl": "https://gtaboom.com/gta-6-dunk-robbery-guide-ce47",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Dunk Robbery Guide: Lost Vista Pills and Scattered Pines Crystal",
+    "publishedAt": "2026-11-21T21:26:48.000Z",
+    "accessedAt": "2026-11-22T04:09:00.041Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "47fa2f48acbef33d"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.041Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-circana-says-gta-6-attracted-casual-gamers-and-h",
+  "dedupKey": "url:https://gtaboom.com/circana-says-gta-6-attracted-casual-gamers-and-had-them-play-it-for-8-hours-a-day-d5e9",
+  "title": "Circana Says GTA 6 Attracted Casual Gamers and Had Them Play It for 8 Hours a Day",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "xbox_series_x"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.041Z",
+  "sourcePublishedAt": "2026-11-21T21:12:48.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.041Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/circana-says-gta-6-attracted-casual-gamers-and-had-them-play-it-for-8-hours-a-day-d5e9",
+    "canonicalUrl": "https://gtaboom.com/circana-says-gta-6-attracted-casual-gamers-and-had-them-play-it-for-8-hours-a-day-d5e9",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "Circana Says GTA 6 Attracted Casual Gamers and Had Them Play It for 8 Hours a Day",
+    "publishedAt": "2026-11-21T21:12:48.000Z",
+    "accessedAt": "2026-11-22T04:09:00.041Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "435c9d48798cbf51"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.041Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-watson-bay-safehouse-guide-where-to-find-t",
+  "dedupKey": "url:https://gtaboom.com/gta-6-watson-bay-safehouse-guide-b746",
+  "title": "GTA 6 Watson Bay Safehouse Guide: Where to Find the VF-G1 and Open the Safe",
+  "summary": "",
+  "category": "dinero",
+  "tags": [
+   "safehouse"
+  ],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.041Z",
+  "sourcePublishedAt": "2026-11-21T09:09:28.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.041Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.041Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-watson-bay-safehouse-guide-b746",
+    "canonicalUrl": "https://gtaboom.com/gta-6-watson-bay-safehouse-guide-b746",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Watson Bay Safehouse Guide: Where to Find the VF-G1 and Open the Safe",
+    "publishedAt": "2026-11-21T09:09:28.000Z",
+    "accessedAt": "2026-11-22T04:09:00.041Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "77280f4e88164fc9"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.041Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-moses-walkthrough-and-how-to-register-a-ca",
+  "dedupKey": "url:https://gtaboom.com/gta-6-moses-walkthrough-3093",
+  "title": "GTA 6 Moses Walkthrough and How to Register a Car for Free",
+  "summary": "",
+  "category": "vehiculo",
+  "tags": [
+   "moses"
+  ],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T07:48:02.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.042Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-moses-walkthrough-3093",
+    "canonicalUrl": "https://gtaboom.com/gta-6-moses-walkthrough-3093",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Moses Walkthrough and How to Register a Car for Free",
+    "publishedAt": "2026-11-21T07:48:02.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "172cb4f4e991a310"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-girls-trip-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-girls-trip-walkthrough-a927",
+  "title": "GTA 6 Girls' Trip Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T07:41:07.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.042Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-girls-trip-walkthrough-a927",
+    "canonicalUrl": "https://gtaboom.com/gta-6-girls-trip-walkthrough-a927",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Girls' Trip Walkthrough",
+    "publishedAt": "2026-11-21T07:41:07.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "37c23f8ab2b1fd15"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-got-pills-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-got-pills-walkthrough-f6e2",
+  "title": "GTA 6 Got Pills? Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T07:40:45.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.042Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-got-pills-walkthrough-f6e2",
+    "canonicalUrl": "https://gtaboom.com/gta-6-got-pills-walkthrough-f6e2",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Got Pills? Walkthrough",
+    "publishedAt": "2026-11-21T07:40:45.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "d85be217fe6a8bc0"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-how-to-complete-just-moved-in-in-gta-6",
+  "dedupKey": "url:https://gtaboom.com/gta-6-just-moved-in-walkthrough-0df9",
+  "title": "How to Complete Just Moved In in GTA 6",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T07:40:17.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-just-moved-in-walkthrough-0df9",
+    "canonicalUrl": "https://gtaboom.com/gta-6-just-moved-in-walkthrough-0df9",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "How to Complete Just Moved In in GTA 6",
+    "publishedAt": "2026-11-21T07:40:17.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "97b7daf6e498b88e"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-overnight-charges-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-overnight-charges-walkthrough-c32e",
+  "title": "GTA 6 Overnight Charges Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T07:39:48.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.042Z",
+  "claims": [
+   {
+    "text": "La fuente menciona $900",
+    "quote": "Lucia can finish Overnight Charges by leaving her necklace with Linda as collateral for the $900 bill, then get it back by paying off the balance.",
+    "sourceUrl": "https://www.gtaboom.com/gta-6-overnight-charges-walkthrough-c32e",
+    "amount": 900,
+    "unit": "USD (dinero del juego)"
+   }
+  ],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-overnight-charges-walkthrough-c32e",
+    "canonicalUrl": "https://gtaboom.com/gta-6-overnight-charges-walkthrough-c32e",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Overnight Charges Walkthrough",
+    "publishedAt": "2026-11-21T07:39:48.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "2b33851db19181ef"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-starfish-island-garage-where-to-find-the-v",
+  "dedupKey": "url:https://gtaboom.com/gta-6-starfish-island-mansion-garage-4cf3",
+  "title": "GTA 6 Starfish Island Garage: Where to Find the Vitello, Itali RSX and Dubsta",
+  "summary": "",
+  "category": "vehiculo",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.042Z",
+  "sourcePublishedAt": "2026-11-21T06:57:06.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.042Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.042Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-starfish-island-mansion-garage-4cf3",
+    "canonicalUrl": "https://gtaboom.com/gta-6-starfish-island-mansion-garage-4cf3",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Starfish Island Garage: Where to Find the Vitello, Itali RSX and Dubsta",
+    "publishedAt": "2026-11-21T06:57:06.000Z",
+    "accessedAt": "2026-11-22T04:09:00.042Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "f8bb4d1468dadcfd"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.042Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-how-to-get-paul-walker-s-mitsubishi-eclipse-in-g",
+  "dedupKey": "url:https://gtaboom.com/how-to-get-paul-walkers-mitsubishi-eclipse-in-gta-6-36b8",
+  "title": "How to Get Paul Walker’s Mitsubishi Eclipse in GTA 6",
+  "summary": "",
+  "category": "vehiculo",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.043Z",
+  "sourcePublishedAt": "2026-11-21T00:46:11.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.043Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.043Z",
+  "claims": [
+   {
+    "text": "La fuente menciona $6,750",
+    "quote": "Get GTA 6's Paul Walker inspired Penumbra FF before finishing Moses' mission, then use his one time offer to save $6,750 on registration.",
+    "sourceUrl": "https://www.gtaboom.com/how-to-get-paul-walkers-mitsubishi-eclipse-in-gta-6-36b8",
+    "amount": 6750,
+    "unit": "USD (dinero del juego)"
+   }
+  ],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/how-to-get-paul-walkers-mitsubishi-eclipse-in-gta-6-36b8",
+    "canonicalUrl": "https://gtaboom.com/how-to-get-paul-walkers-mitsubishi-eclipse-in-gta-6-36b8",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "How to Get Paul Walker’s Mitsubishi Eclipse in GTA 6",
+    "publishedAt": "2026-11-21T00:46:11.000Z",
+    "accessedAt": "2026-11-22T04:09:00.043Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "3dcc28c45a2e8df3"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.043Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-collectible-card-locations-six-pickups",
+  "dedupKey": "url:https://gtaboom.com/gta-6-collectible-card-locations-bbf1",
+  "title": "GTA 6 Collectible Card Locations: Six Pickups",
+  "summary": "",
+  "category": "coleccionable",
+  "tags": [
+   "collectible"
+  ],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.043Z",
+  "sourcePublishedAt": "2026-11-21T00:16:38.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.043Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.043Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-collectible-card-locations-bbf1",
+    "canonicalUrl": "https://gtaboom.com/gta-6-collectible-card-locations-bbf1",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Collectible Card Locations: Six Pickups",
+    "publishedAt": "2026-11-21T00:16:38.000Z",
+    "accessedAt": "2026-11-22T04:09:00.043Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "5507b812ee07da77"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.043Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-what-s-in-the-bag-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-whats-in-the-bag-walkthrough-74c7",
+  "title": "GTA 6 What's in the Bag? Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.043Z",
+  "sourcePublishedAt": "2026-11-20T23:10:22.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.043Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.043Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-whats-in-the-bag-walkthrough-74c7",
+    "canonicalUrl": "https://gtaboom.com/gta-6-whats-in-the-bag-walkthrough-74c7",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 What's in the Bag? Walkthrough",
+    "publishedAt": "2026-11-20T23:10:22.000Z",
+    "accessedAt": "2026-11-22T04:09:00.043Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "c1be1902cf653667"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.043Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-discharge-time-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-discharge-time-walkthrough-05d7",
+  "title": "GTA 6 Discharge Time Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.043Z",
+  "sourcePublishedAt": "2026-11-20T23:10:18.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.043Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.043Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-discharge-time-walkthrough-05d7",
+    "canonicalUrl": "https://gtaboom.com/gta-6-discharge-time-walkthrough-05d7",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Discharge Time Walkthrough",
+    "publishedAt": "2026-11-20T23:10:18.000Z",
+    "accessedAt": "2026-11-22T04:09:00.043Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "d44b080bd61936da"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.043Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-home-sweet-home-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-home-sweet-home-walkthrough-e4ac",
+  "title": "GTA 6 Home Sweet Home Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.043Z",
+  "sourcePublishedAt": "2026-11-20T23:10:15.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.043Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.043Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-home-sweet-home-walkthrough-e4ac",
+    "canonicalUrl": "https://gtaboom.com/gta-6-home-sweet-home-walkthrough-e4ac",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Home Sweet Home Walkthrough",
+    "publishedAt": "2026-11-20T23:10:15.000Z",
+    "accessedAt": "2026-11-22T04:09:00.043Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "2289704421c4308c"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.043Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-tourist-trap-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-tourist-trap-walkthrough-f032",
+  "title": "GTA 6 Tourist Trap Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.044Z",
+  "sourcePublishedAt": "2026-11-20T23:10:11.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.044Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.044Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-tourist-trap-walkthrough-f032",
+    "canonicalUrl": "https://gtaboom.com/gta-6-tourist-trap-walkthrough-f032",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Tourist Trap Walkthrough",
+    "publishedAt": "2026-11-20T23:10:11.000Z",
+    "accessedAt": "2026-11-22T04:09:00.044Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "0cd90f2c00afcfad"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.044Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-recalibration-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-recalibration-walkthrough-9838",
+  "title": "GTA 6 Recalibration Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.044Z",
+  "sourcePublishedAt": "2026-11-20T23:10:08.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.044Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.044Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-recalibration-walkthrough-9838",
+    "canonicalUrl": "https://gtaboom.com/gta-6-recalibration-walkthrough-9838",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Recalibration Walkthrough",
+    "publishedAt": "2026-11-20T23:10:08.000Z",
+    "accessedAt": "2026-11-22T04:09:00.044Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "36b4b3a30ffd71c9"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.044Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-don-gone-walkthrough",
+  "dedupKey": "url:https://gtaboom.com/gta-6-don-gone-walkthrough-35e0",
+  "title": "GTA 6 Don Gone Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.044Z",
+  "sourcePublishedAt": "2026-11-20T23:10:05.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.044Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.044Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-don-gone-walkthrough-35e0",
+    "canonicalUrl": "https://gtaboom.com/gta-6-don-gone-walkthrough-35e0",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Don Gone Walkthrough",
+    "publishedAt": "2026-11-20T23:10:05.000Z",
+    "accessedAt": "2026-11-22T04:09:00.044Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "4c3846638f3087dd"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.044Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-skunk-ape-walkthrough-part-3-of-3-help-kir",
+  "dedupKey": "url:https://gtaboom.com/gta-6-help-kirk-find-mr-mangrove-walkthrough-198d",
+  "title": "GTA 6 Skunk Ape Walkthrough (Part 3 of 3): Help Kirk Find Mr. Mangrove",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.044Z",
+  "sourcePublishedAt": "2026-11-20T23:06:52.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.044Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.044Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gtaboom.com/gta-6-help-kirk-find-mr-mangrove-walkthrough-198d",
+    "canonicalUrl": "https://gtaboom.com/gta-6-help-kirk-find-mr-mangrove-walkthrough-198d",
+    "sourceId": "gtaboom",
+    "publisher": "GTA BOOM",
+    "title": "GTA 6 Skunk Ape Walkthrough (Part 3 of 3): Help Kirk Find Mr. Mangrove",
+    "publishedAt": "2026-11-20T23:06:52.000Z",
+    "accessedAt": "2026-11-22T04:09:00.044Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "gtaboom",
+    "originId": null,
+    "contentHash": "b280f402230d4495"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.044Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GTA BOOM",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-all-knife-flight-locations",
+  "dedupKey": "url:https://powerpyx.com/gta-6-all-knife-flight-locations",
+  "title": "GTA 6 All Knife Flight Locations",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.283Z",
+  "sourcePublishedAt": "2026-11-21T20:35:13.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.283Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-all-knife-flight-locations/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-all-knife-flight-locations",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 All Knife Flight Locations",
+    "publishedAt": "2026-11-21T20:35:13.000Z",
+    "accessedAt": "2026-11-22T04:09:00.283Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "9cb42f6e2b5c3101"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.283Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-vc-baby-talk-to-mattia-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-vc-baby-talk-to-mattia-walkthrough",
+  "title": "GTA 6 VC Baby (Talk to Mattia) Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.283Z",
+  "sourcePublishedAt": "2026-11-21T18:46:50.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.283Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.283Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-vc-baby-talk-to-mattia-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-vc-baby-talk-to-mattia-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 VC Baby (Talk to Mattia) Walkthrough",
+    "publishedAt": "2026-11-21T18:46:50.000Z",
+    "accessedAt": "2026-11-22T04:09:00.283Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "4265c79271b21615"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.283Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-doggie-bag-meet-vinny-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-doggie-bag-meet-vinny-walkthrough",
+  "title": "GTA 6 Doggie Bag (Meet Vinny) Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.284Z",
+  "sourcePublishedAt": "2026-11-21T18:43:49.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.284Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.284Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-doggie-bag-meet-vinny-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-doggie-bag-meet-vinny-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Doggie Bag (Meet Vinny) Walkthrough",
+    "publishedAt": "2026-11-21T18:43:49.000Z",
+    "accessedAt": "2026-11-22T04:09:00.284Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "9f62d75bed7d76fb"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.284Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-honest-abe-negotiate-a-deal-with-abe-walkt",
+  "dedupKey": "url:https://powerpyx.com/gta-6-honest-abe-negotiate-a-deal-with-abe-walkthrough",
+  "title": "GTA 6 Honest Abe (Negotiate a Deal with Abe) Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.284Z",
+  "sourcePublishedAt": "2026-11-21T18:28:52.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.284Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.284Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-honest-abe-negotiate-a-deal-with-abe-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-honest-abe-negotiate-a-deal-with-abe-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Honest Abe (Negotiate a Deal with Abe) Walkthrough",
+    "publishedAt": "2026-11-21T18:28:52.000Z",
+    "accessedAt": "2026-11-22T04:09:00.284Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "8c4dc1052dc2d8b4"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.284Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-operation-savage-glory-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-operation-savage-glory-walkthrough",
+  "title": "GTA 6 Operation Savage Glory Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.284Z",
+  "sourcePublishedAt": "2026-11-21T18:27:51.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.284Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.284Z",
+  "claims": [
+   {
+    "text": "La fuente menciona $50,000",
+    "quote": "Starting Location: Vice City > Tequesta Retreat Chapter: Chapter 5 Quest Giver: Vinny Requirement: Complete Chapter 5 “Doggie Bag” & “VC Baby“ Can Be Started By: Lucia/Jason Reward: $50,000 + Pegassi Residences penthouse + all weapons/equipment/outfits etc are […] This article GTA 6 Operation Savage Glory Walkthrough appeared first on PowerPyx .",
+    "sourceUrl": "https://www.powerpyx.com/gta-6-operation-savage-glory-walkthrough/",
+    "amount": 50000,
+    "unit": "USD (dinero del juego)"
+   }
+  ],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-operation-savage-glory-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-operation-savage-glory-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Operation Savage Glory Walkthrough",
+    "publishedAt": "2026-11-21T18:27:51.000Z",
+    "accessedAt": "2026-11-22T04:09:00.284Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "00d0e565c380c6d9"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.284Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-taking-liberties-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-taking-liberties-walkthrough",
+  "title": "GTA 6 Taking Liberties Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.284Z",
+  "sourcePublishedAt": "2026-11-21T16:46:48.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.284Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.284Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-taking-liberties-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-taking-liberties-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Taking Liberties Walkthrough",
+    "publishedAt": "2026-11-21T16:46:48.000Z",
+    "accessedAt": "2026-11-22T04:09:00.284Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "a5ae2f97a4da9adc"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.284Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-bird-in-the-hand-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-bird-in-the-hand-walkthrough",
+  "title": "GTA 6 Bird in the Hand Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.285Z",
+  "sourcePublishedAt": "2026-11-21T16:45:47.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.285Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.285Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-bird-in-the-hand-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-bird-in-the-hand-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Bird in the Hand Walkthrough",
+    "publishedAt": "2026-11-21T16:45:47.000Z",
+    "accessedAt": "2026-11-22T04:09:00.285Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "b7fe4f14c7a4dd1b"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.285Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-starting-from-zero-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-starting-from-zero-walkthrough",
+  "title": "GTA 6 Starting From Zero Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.285Z",
+  "sourcePublishedAt": "2026-11-21T15:45:46.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.285Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.285Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-starting-from-zero-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-starting-from-zero-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Starting From Zero Walkthrough",
+    "publishedAt": "2026-11-21T15:45:46.000Z",
+    "accessedAt": "2026-11-22T04:09:00.285Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "6cea83d9e3f23e34"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.285Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-sunset-stop-by-the-front-desk-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-sunset-stop-by-the-front-desk-walkthrough",
+  "title": "GTA 6 Sunset (Stop by the Front Desk) Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.285Z",
+  "sourcePublishedAt": "2026-11-21T15:16:45.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.285Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.285Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-sunset-stop-by-the-front-desk-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-sunset-stop-by-the-front-desk-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Sunset (Stop by the Front Desk) Walkthrough",
+    "publishedAt": "2026-11-21T15:16:45.000Z",
+    "accessedAt": "2026-11-22T04:09:00.285Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "6042d5afd851e658"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.285Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-call-valentina-back-walkthrough",
+  "dedupKey": "url:https://powerpyx.com/gta-6-call-valentina-back-walkthrough",
+  "title": "GTA 6 Call Valentina Back Walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.285Z",
+  "sourcePublishedAt": "2026-11-21T14:43:44.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.285Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.285Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.powerpyx.com/gta-6-call-valentina-back-walkthrough/",
+    "canonicalUrl": "https://powerpyx.com/gta-6-call-valentina-back-walkthrough",
+    "sourceId": "powerpyx",
+    "publisher": "PowerPyx",
+    "title": "GTA 6 Call Valentina Back Walkthrough",
+    "publishedAt": "2026-11-21T14:43:44.000Z",
+    "accessedAt": "2026-11-22T04:09:00.285Z",
+    "tier": "guia_tercero",
+    "independenceGroup": "powerpyx",
+    "originId": null,
+    "contentHash": "4c5bb8b63e5a4b13"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.285Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en PowerPyx",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-meet-the-heders-walkthrough-find-and-open",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container",
+  "title": "GTA 6 Meet the Heders walkthrough: Find and open the SCOOP container",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.536Z",
+  "sourcePublishedAt": "2026-11-21T22:55:42.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.536Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.536Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Meet the Heders walkthrough: Find and open the SCOOP container",
+    "publishedAt": "2026-11-21T22:55:42.000Z",
+    "accessedAt": "2026-11-22T04:09:00.536Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "100ae6758414f1ec"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.536Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-radio-djs-and-podcast-hosts-every-famous-v",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio",
+  "title": "GTA 6 radio DJs and podcast hosts: Every famous voice on GTA 6’s radio",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.537Z",
+  "sourcePublishedAt": "2026-11-21T22:17:19.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.537Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 radio DJs and podcast hosts: Every famous voice on GTA 6’s radio",
+    "publishedAt": "2026-11-21T22:17:19.000Z",
+    "accessedAt": "2026-11-22T04:09:00.537Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "18e5b5dd63fe2a74"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.537Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-avery-pawn-shop-safe-code-how-to-find-and",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe",
+  "title": "GTA 6 Avery Pawn Shop Safe Code: How to Find and Open the Safe",
+  "summary": "",
+  "category": "dinero",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.537Z",
+  "sourcePublishedAt": "2026-11-21T20:41:28.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.537Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.537Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Avery Pawn Shop Safe Code: How to Find and Open the Safe",
+    "publishedAt": "2026-11-21T20:41:28.000Z",
+    "accessedAt": "2026-11-22T04:09:00.537Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "ce6f2d104628141b"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.537Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-dealer-s-choice-walkthrough-should-you-cho",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure",
+  "title": "GTA 6 Dealer’s Choice walkthrough: Should you choose Cut or Pure?",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.537Z",
+  "sourcePublishedAt": "2026-11-21T20:10:07.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.537Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.537Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Dealer’s Choice walkthrough: Should you choose Cut or Pure?",
+    "publishedAt": "2026-11-21T20:10:07.000Z",
+    "accessedAt": "2026-11-22T04:09:00.537Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "731f80d6d319cc8e"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.537Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-slim-jim-location-how-to-get-it-and-unlock",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-car-alarms-explained-how-to-steal-cars-with-alarms-in-gta-6",
+  "title": "GTA 6 Slim Jim Location: How to Get It and Unlock Cars Quietly",
+  "summary": "",
+  "category": "vehiculo",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.537Z",
+  "sourcePublishedAt": "2026-11-21T20:00:53.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.537Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.537Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-car-alarms-explained-how-to-steal-cars-with-alarms-in-gta-6/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-car-alarms-explained-how-to-steal-cars-with-alarms-in-gta-6",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Slim Jim Location: How to Get It and Unlock Cars Quietly",
+    "publishedAt": "2026-11-21T20:00:53.000Z",
+    "accessedAt": "2026-11-22T04:09:00.537Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "d340b778e810dce1"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.537Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-chapter-3-laptop-password-how-to-unlock-th",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-chapter-3-laptop-password-how-to-unlock-the-laptop-in-boobies-apartment",
+  "title": "GTA 6 Chapter 3 laptop password: How to unlock the laptop in Boobie’s apartment",
+  "summary": "",
+  "category": "mision",
+  "tags": [
+   "chapter"
+  ],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.537Z",
+  "sourcePublishedAt": "2026-11-21T17:50:46.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.537Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.537Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-chapter-3-laptop-password-how-to-unlock-the-laptop-in-boobies-apartment/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-chapter-3-laptop-password-how-to-unlock-the-laptop-in-boobies-apartment",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Chapter 3 laptop password: How to unlock the laptop in Boobie’s apartment",
+    "publishedAt": "2026-11-21T17:50:46.000Z",
+    "accessedAt": "2026-11-22T04:09:00.537Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "11be7a99491422a2"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.537Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-welcome-to-vice-city-mission-walkthrough",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-welcome-to-vice-city-mission-walkthrough",
+  "title": "GTA 6 Welcome to Vice City mission walkthrough",
+  "summary": "",
+  "category": "mision",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.538Z",
+  "sourcePublishedAt": "2026-11-21T17:39:31.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.538Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.538Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-welcome-to-vice-city-mission-walkthrough/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-welcome-to-vice-city-mission-walkthrough",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Welcome to Vice City mission walkthrough",
+    "publishedAt": "2026-11-21T17:39:31.000Z",
+    "accessedAt": "2026-11-22T04:09:00.538Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "df6953a6a273569b"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.538Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-kingpin-bowling-alley-safe-code-and-locati",
+  "dedupKey": "url:https://videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe",
+  "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
+  "summary": "",
+  "category": "dinero",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.538Z",
+  "sourcePublishedAt": "2026-11-21T17:00:16.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.538Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.538Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Kingpin Bowling Alley safe code and location: How to find and open the safe",
+    "publishedAt": "2026-11-21T17:00:16.000Z",
+    "accessedAt": "2026-11-22T04:09:00.538Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "f4db0787bb6c1dd4"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.538Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-brooks-boatworks-safe-code-and-location-ho",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe",
+  "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
+  "summary": "",
+  "category": "dinero",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "reportado",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.538Z",
+  "sourcePublishedAt": "2026-11-21T16:36:11.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.538Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": "2026-11-29T04:09:00.538Z",
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Brooks Boatworks safe code and location: How to find and open the safe",
+    "publishedAt": "2026-11-21T16:36:11.000Z",
+    "accessedAt": "2026-11-22T04:09:00.538Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "8e4e70cb2b587dd1"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.538Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-xbox-psa-how-to-stop-automatic-clip-upload",
+  "dedupKey": "url:https://videogameschronicle.com/guide/gta-6-xbox-psa-how-to-stop-automatic-clip-uploads-and-avoid-bans",
+  "title": "GTA 6 Xbox PSA: How to Stop Automatic Clip Uploads and Avoid Bans",
+  "summary": "",
+  "category": "noticia",
+  "tags": [
+   "xbox"
+  ],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.538Z",
+  "sourcePublishedAt": "2026-11-21T15:25:08.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.538Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.videogameschronicle.com/guide/gta-6-xbox-psa-how-to-stop-automatic-clip-uploads-and-avoid-bans/",
+    "canonicalUrl": "https://videogameschronicle.com/guide/gta-6-xbox-psa-how-to-stop-automatic-clip-uploads-and-avoid-bans",
+    "sourceId": "vgc",
+    "publisher": "Video Games Chronicle",
+    "title": "GTA 6 Xbox PSA: How to Stop Automatic Clip Uploads and Avoid Bans",
+    "publishedAt": "2026-11-21T15:25:08.000Z",
+    "accessedAt": "2026-11-22T04:09:00.538Z",
+    "tier": "medio",
+    "independenceGroup": "vgc",
+    "originId": null,
+    "contentHash": "e3d146128045ae09"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.538Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en Video Games Chronicle",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-players-captivated-by-mandy-apparently-inc",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-players-captivated-by-mandy-apparently-include-a-former-nintendo-president",
+  "title": "GTA 6 Players Captivated By Mandy Apparently Include A Former Nintendo President",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.670Z",
+  "sourcePublishedAt": "2026-11-20T23:33:14.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.670Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-players-captivated-by-mandy-apparently-include-a-former-nintendo-president/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-players-captivated-by-mandy-apparently-include-a-former-nintendo-president",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Players Captivated By Mandy Apparently Include A Former Nintendo President",
+    "publishedAt": "2026-11-20T23:33:14.000Z",
+    "accessedAt": "2026-11-22T04:09:00.670Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "d99e7d942f5122f6"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.670Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-has-dexter-references-and-now-dexter-himse",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-has-dexter-references-and-now-dexter-himself-has-reacted",
+  "title": "GTA 6 Has Dexter References, And Now Dexter Himself Has Reacted",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5",
+   "xbox_series_x"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.670Z",
+  "sourcePublishedAt": "2026-11-20T20:50:55.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.670Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-has-dexter-references-and-now-dexter-himself-has-reacted/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-has-dexter-references-and-now-dexter-himself-has-reacted",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Has Dexter References, And Now Dexter Himself Has Reacted",
+    "publishedAt": "2026-11-20T20:50:55.000Z",
+    "accessedAt": "2026-11-22T04:09:00.670Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "b18efb9df6639745"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.670Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-sets-even-more-records",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-sets-even-more-records",
+  "title": "GTA 6 Sets Even More Records",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5",
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T19:52:51.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-sets-even-more-records/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-sets-even-more-records",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Sets Even More Records",
+    "publishedAt": "2026-11-20T19:52:51.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "5a323f0f604e3b2d"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-s-astonishing-4-billion-day-one-includes-3",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-hit-32-5-million-copies-sold-and-almost-4-billion-on-day-one",
+  "title": "GTA 6’s Astonishing $4 Billion Day One Includes 32.5 Million Copies Sold",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T19:30:17.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-hit-32-5-million-copies-sold-and-almost-4-billion-on-day-one/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-hit-32-5-million-copies-sold-and-almost-4-billion-on-day-one",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6’s Astonishing $4 Billion Day One Includes 32.5 Million Copies Sold",
+    "publishedAt": "2026-11-20T19:30:17.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "01498514b8f72c8f"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-is-crashing-on-some-ps5s-with-ce-108255-1",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code",
+  "title": "GTA 6 Is Crashing On Some PS5s With CE-108255-1 Error Code",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [
+   "ps5",
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T17:11:20.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Is Crashing On Some PS5s With CE-108255-1 Error Code",
+    "publishedAt": "2026-11-20T17:11:20.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "8c4ae7b025007e32"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-doesn-t-have-any-doja-cat-music-and-she-di",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-doesnt-have-any-doja-cat-music-and-she-didnt-censor-her-message-to-rockstar",
+  "title": "GTA 6 Doesn’t Have Any Doja Cat Music, And She Didn’t Censor Her Message To Rockstar",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T16:41:04.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-doesnt-have-any-doja-cat-music-and-she-didnt-censor-her-message-to-rockstar/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-doesnt-have-any-doja-cat-music-and-she-didnt-censor-her-message-to-rockstar",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Doesn’t Have Any Doja Cat Music, And She Didn’t Censor Her Message To Rockstar",
+    "publishedAt": "2026-11-20T16:41:04.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "7ea88aba0ef9a96e"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-7-please-let-gta-6-cook-first-take-two-ceo-s",
+  "dedupKey": "url:https://gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says",
+  "title": "GTA 7? Please, Let GTA 6 Cook First, Take-Two CEO Says",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T15:36:04.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 7? Please, Let GTA 6 Cook First, Take-Two CEO Says",
+    "publishedAt": "2026-11-20T15:36:04.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "84eb30d750b7b103"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-is-a-british-success-story-prime-minister",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-is-a-british-success-story-prime-minister-says-but-he-wont-play-it",
+  "title": "GTA 6 Is A British Success Story, Prime Minister Says, But He Won’t Play It",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "online",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.671Z",
+  "sourcePublishedAt": "2026-11-20T14:59:27.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.671Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-is-a-british-success-story-prime-minister-says-but-he-wont-play-it/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-is-a-british-success-story-prime-minister-says-but-he-wont-play-it",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Is A British Success Story, Prime Minister Says, But He Won’t Play It",
+    "publishedAt": "2026-11-20T14:59:27.000Z",
+    "accessedAt": "2026-11-22T04:09:00.671Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "6406e737ea647eeb"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.671Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-hacker-threatens-to-leak-free-version-of-gta-6-i",
+  "dedupKey": "url:https://gamespot.com/articles/a-playable-gta-6-build-could-leak-but-theres-a-15-million-catch",
+  "title": "Hacker Threatens To Leak Free Version Of GTA 6 In Crypto Grift",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5",
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-20T14:07:35.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/a-playable-gta-6-build-could-leak-but-theres-a-15-million-catch/",
+    "canonicalUrl": "https://gamespot.com/articles/a-playable-gta-6-build-could-leak-but-theres-a-15-million-catch",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "Hacker Threatens To Leak Free Version Of GTA 6 In Crypto Grift",
+    "publishedAt": "2026-11-20T14:07:35.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "1b6223333c75db64"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-s-console-wars-are-already-over-and-xbox-l",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-console-wars-are-already-over-and-xbox-lost",
+  "title": "GTA 6’s Console Wars Are Already Over, And Xbox Lost",
+  "summary": "",
+  "category": "noticia",
+  "tags": [
+   "xbox"
+  ],
+  "mode": "historia",
+  "platforms": [
+   "ps5",
+   "xbox_series_x",
+   "xbox_series_s"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-20T12:35:47.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-console-wars-are-already-over-and-xbox-lost/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-console-wars-are-already-over-and-xbox-lost",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6’s Console Wars Are Already Over, And Xbox Lost",
+    "publishedAt": "2026-11-20T12:35:47.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "441e1e2fc34aac6e"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-nearing-25-million-copies-sold-and-2-4-bil",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-has-sold-almost-8-million-copies-so-far-and-ps5-is-dominating-the-split-of-course",
+  "title": "GTA 6 Nearing 25 Million Copies Sold And $2.4 Billion In Revenue On Day 1, Report Says; Take-Two To Reveal Official Sales Data Soon",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5",
+   "xbox_series_x"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-04T14:15:31.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-has-sold-almost-8-million-copies-so-far-and-ps5-is-dominating-the-split-of-course/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-has-sold-almost-8-million-copies-so-far-and-ps5-is-dominating-the-split-of-course",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Nearing 25 Million Copies Sold And $2.4 Billion In Revenue On Day 1, Report Says; Take-Two To Reveal Official Sales Data Soon",
+    "publishedAt": "2026-11-04T14:15:31.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "051f7ce00b20181b"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-dog-who-saves-you-is-seemingly-based-on-a",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-dog-who-saves-you-is-seemingly-based-on-a-very-cool-real-life-dog",
+  "title": "GTA 6 Dog Who Saves You Is Seemingly Based On A Very Cool Real-Life Dog",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [
+   "ps5",
+   "xbox_series_x"
+  ],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-19T20:40:11.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-dog-who-saves-you-is-seemingly-based-on-a-very-cool-real-life-dog/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-dog-who-saves-you-is-seemingly-based-on-a-very-cool-real-life-dog",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Dog Who Saves You Is Seemingly Based On A Very Cool Real-Life Dog",
+    "publishedAt": "2026-11-19T20:40:11.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "1cdfde260f7a3211"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-want-to-start-lifting-effectively-gta-6-is-a-goo",
+  "dedupKey": "url:https://gamespot.com/articles/want-to-start-lifting-effectively-gta-6-is-a-good-teacher",
+  "title": "Want To Start Lifting Effectively? GTA 6 Is A Good Teacher",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-19T19:21:27.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/want-to-start-lifting-effectively-gta-6-is-a-good-teacher/",
+    "canonicalUrl": "https://gamespot.com/articles/want-to-start-lifting-effectively-gta-6-is-a-good-teacher",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "Want To Start Lifting Effectively? GTA 6 Is A Good Teacher",
+    "publishedAt": "2026-11-19T19:21:27.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "66a52cc6fb1c9b56"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-you-can-play-grand-theft-auto-6-at-60fps-using-t",
+  "dedupKey": "url:https://gamespot.com/articles/you-can-play-grand-theft-auto-6-at-60fps-using-this-absurdly-complicated-method",
+  "title": "You Can Play Grand Theft Auto 6 At 60fps Using This Absurdly Complicated Method",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.672Z",
+  "sourcePublishedAt": "2026-11-19T19:05:04.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.672Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/you-can-play-grand-theft-auto-6-at-60fps-using-this-absurdly-complicated-method/",
+    "canonicalUrl": "https://gamespot.com/articles/you-can-play-grand-theft-auto-6-at-60fps-using-this-absurdly-complicated-method",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "You Can Play Grand Theft Auto 6 At 60fps Using This Absurdly Complicated Method",
+    "publishedAt": "2026-11-19T19:05:04.000Z",
+    "accessedAt": "2026-11-22T04:09:00.672Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "fc6ba122f9912f38"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.672Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-has-a-surprise-cameo-from-someone-you-prob",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-has-a-surprise-cameo-from-someone-you-probably-didnt-expect",
+  "title": "GTA 6 Has A Surprise Cameo From Someone You Probably Didn’t Expect",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.673Z",
+  "sourcePublishedAt": "2026-11-19T16:26:12.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.673Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-has-a-surprise-cameo-from-someone-you-probably-didnt-expect/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-has-a-surprise-cameo-from-someone-you-probably-didnt-expect",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Has A Surprise Cameo From Someone You Probably Didn’t Expect",
+    "publishedAt": "2026-11-19T16:26:12.000Z",
+    "accessedAt": "2026-11-22T04:09:00.673Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "c0556156b277da3c"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.673Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-cast-list-includes-potentially-huge-spoile",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6-cast-list-includes-potentially-huge-spoiler-so-be-warned",
+  "title": "GTA 6 Cast List Includes Potentially Huge Spoiler, So Be Warned",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.673Z",
+  "sourcePublishedAt": "2026-11-19T16:20:09.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.673Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6-cast-list-includes-potentially-huge-spoiler-so-be-warned/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6-cast-list-includes-potentially-huge-spoiler-so-be-warned",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6 Cast List Includes Potentially Huge Spoiler, So Be Warned",
+    "publishedAt": "2026-11-19T16:20:09.000Z",
+    "accessedAt": "2026-11-22T04:09:00.673Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "1cd2d7472e5b5b30"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.673Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-gta-6-s-stars-release-a-very-nice-statement-as-g",
+  "dedupKey": "url:https://gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live",
+  "title": "GTA 6’s Stars Release A Very Nice Statement As Game Goes Live",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.673Z",
+  "sourcePublishedAt": "2026-11-19T16:09:30.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.673Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live/",
+    "canonicalUrl": "https://gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "GTA 6’s Stars Release A Very Nice Statement As Game Goes Live",
+    "publishedAt": "2026-11-19T16:09:30.000Z",
+    "accessedAt": "2026-11-22T04:09:00.673Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "af1a6873e6a776a7"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.673Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-the-gta-6-map-is-truly-truly-massive-of-course",
+  "dedupKey": "url:https://gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course",
+  "title": "The GTA 6 Map Is Truly, Truly Massive (Of Course)",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "sin_confirmar",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.673Z",
+  "sourcePublishedAt": "2026-11-18T14:08:31.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.673Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course/",
+    "canonicalUrl": "https://gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "The GTA 6 Map Is Truly, Truly Massive (Of Course)",
+    "publishedAt": "2026-11-18T14:08:31.000Z",
+    "accessedAt": "2026-11-22T04:09:00.673Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "9c62338b399d5406"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.673Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ },
+ {
+  "id": "fnd-why-gta-6-doesn-t-include-disney-world",
+  "dedupKey": "url:https://gamespot.com/articles/why-gta-6-doesnt-include-disney-world",
+  "title": "Why GTA 6 Doesn’t Include Disney World",
+  "summary": "",
+  "category": "noticia",
+  "tags": [],
+  "mode": "historia",
+  "platforms": [],
+  "gameVersion": null,
+  "status": "nuevo_sin_verificar",
+  "platformStatus": {},
+  "firstDiscoveredAt": "2026-11-22T04:09:00.673Z",
+  "sourcePublishedAt": "2026-11-19T14:46:06.000Z",
+  "lastSourceCheckedAt": "2026-11-22T04:09:00.673Z",
+  "lastInGameTestAt": null,
+  "lastValidatedAt": null,
+  "nextCheckAt": null,
+  "claims": [],
+  "requirements": [],
+  "steps": [],
+  "entryIds": [],
+  "risks": [
+   "Promete ganancias extraordinarias: tratar como afirmación sin prueba."
+  ],
+  "sources": [
+   {
+    "url": "https://www.gamespot.com/articles/why-gta-6-doesnt-include-disney-world/",
+    "canonicalUrl": "https://gamespot.com/articles/why-gta-6-doesnt-include-disney-world",
+    "sourceId": "gamespot",
+    "publisher": "GameSpot",
+    "title": "Why GTA 6 Doesn’t Include Disney World",
+    "publishedAt": "2026-11-19T14:46:06.000Z",
+    "accessedAt": "2026-11-22T04:09:00.673Z",
+    "tier": "medio",
+    "independenceGroup": "gamespot",
+    "originId": null,
+    "contentHash": "9a187f387eba4b4a"
+   }
+  ],
+  "evidence": [],
+  "history": [
+   {
+    "at": "2026-11-22T04:09:00.673Z",
+    "type": "creado",
+    "from": null,
+    "to": null,
+    "platform": null,
+    "reason": "Descubierto en GameSpot",
+    "runId": "run-20261122-040859"
+   }
+  ],
+  "classifier": "heuristico",
+  "flags": [
+   "promesa_extraordinaria"
+  ],
+  "rights": "Solo titular, enlace y resumen propio; el contenido pertenece a la fuente."
+ }
+]

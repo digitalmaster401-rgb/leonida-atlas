@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.1.0 — 2026-11-22 — ATLAS INTELLIGENCE (infraestructura)
+
+- Auditoría acumulativa: `docs/REQUISITOS_ACUMULATIVOS.md` y `docs/MATRIZ_FUNCIONAL.csv` (63 requisitos con estado real).
+- `src/intel/`: esquemas Zod, lector RSS/Atom, normalización y deduplicación, robots.txt, clasificador heurístico y con IA opcional (Claude, citas literales obligatorias), crosscheck, version-watch, propuestas de revisión, topes de costo y ocultación de secretos.
+- `scripts/intel/run.ts` y `migrate.ts`; datos en `intel/` (fuentes, hallazgos, parches, aportes, bitácora, propuestas).
+- Workflows `atlas-intelligence.yml` (2×/día + manual, abre PR) y `ci.yml` (incluye e2e con WebKit real); formulario de issues «hallazgo».
+- Panel `/intel` y ruta `/novedades`; enlace desde Glitches e Inicio.
+- Corrección: filtros que «revivían» al cambiar opciones rápido (React Router 7) en catálogo, mapa y panel.
+- Pruebas: 97 unitarias y 121 e2e en verde. Informe: `docs/ATLAS_INTELLIGENCE_QA.md`.
+
 ## 1.0.0 — 2026-11-22
 
 Primera edición pública de LEONIDA ATLAS, reconstruida desde cero.

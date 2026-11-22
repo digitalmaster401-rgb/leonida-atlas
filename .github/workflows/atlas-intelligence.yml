@@ -1,0 +1,96 @@
+# ATLAS INTELLIGENCE: investigación automática dos veces al día.
+# GitHub solo ejecuta horarios desde la rama por defecto (main) y puede retrasarlos; la app muestra
+# la hora REAL de cada corrida (intel/runs), nunca una hora supuesta.
+name: ATLAS INTELLIGENCE
+
+on:
+  schedule:
+    - cron: '17 11 * * *' # 05:17 en Ciudad de México
+    - cron: '17 23 * * *' # 17:17 en Ciudad de México
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Solo probar (no abre PR)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: atlas-intelligence
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  investigate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Ejecutar pipeline
+        id: run
+        env:
+          # Opcionales: sin ellos el pipeline funciona en modo heurístico y sin YouTube.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          ATLAS_AI_MODEL: ${{ vars.ATLAS_AI_MODEL }}
+          ATLAS_MAX_AI_CALLS: ${{ vars.ATLAS_MAX_AI_CALLS || '40' }}
+          ATLAS_MAX_COST_USD: ${{ vars.ATLAS_MAX_COST_USD || '0.25' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRIGGER: ${{ github.event_name }}
+        run: npx tsx scripts/intel/run.ts --trigger=$TRIGGER
+
+      - name: Validar datos y pruebas
+        if: steps.run.outputs.changes != '0'
+        run: |
+          npx vitest run tests/intel tests/data.test.ts
+          npm run build
+
+      - name: Guardar reporte de la corrida
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-run-${{ steps.run.outputs.run_id || github.run_id }}
+          path: intel/runs/
+          retention-days: 30
+
+      - name: Abrir PR de revisión
+        if: steps.run.outputs.changes != '0' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_ID: ${{ steps.run.outputs.run_id }}
+          BASE: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "atlas-intelligence[bot]"
+          git config user.email "atlas-intelligence@users.noreply.github.com"
+          BRANCH="atlas-intelligence/$RUN_ID"
+          git checkout -b "$BRANCH"
+          git add intel/
+          git commit -m "ATLAS INTELLIGENCE: propuesta de la corrida $RUN_ID"
+          git push origin "$BRANCH"
+          gh label create atlas-intelligence --color 22d3ee --description "Propuestas automáticas de ATLAS INTELLIGENCE" 2>/dev/null || true
+          gh pr create --base "$BASE" --head "$BRANCH" \
+            --title "ATLAS INTELLIGENCE: revisión de la corrida $RUN_ID" \
+            --body-file intel/proposals/LATEST.md \
+            --label atlas-intelligence
+
+      - name: Guardar bitácora sin novedades en main (opcional)
+        if: steps.run.outputs.changes == '0' && vars.ATLAS_COMMIT_LOGS_TO_MAIN == 'true' && inputs.dry_run != true
+        run: |
+          git config user.name "atlas-intelligence[bot]"
+          git config user.email "atlas-intelligence@users.noreply.github.com"
+          git add intel/runs/
+          git commit -m "ATLAS INTELLIGENCE: bitácora ${{ steps.run.outputs.run_id }} (sin novedades)" || exit 0
+          git push

@@ -1750,3 +1750,30 @@ textarea:focus {
     height: 64vh;
   }
 }
+
+/* ---------- ATLAS INTELLIGENCE ---------- */
+.intel-nuevo_sin_verificar { color: #cbd5e1; background: rgb(148 163 184 / 0.1); border-style: dotted; }
+.intel-reportado { color: #fcd34d; background: rgb(251 191 36 / 0.1); border-style: dashed; }
+.intel-contrastado { color: #c4b5fd; background: rgb(167 139 250 / 0.12); }
+.intel-comprobado_en_version { color: var(--lime); background: rgb(198 255 61 / 0.1); }
+.intel-pendiente_revalidacion { color: #fdba74; background: rgb(251 146 60 / 0.12); border-style: dashed; }
+.intel-parcheado { color: #fca5a5; background: rgb(248 113 113 / 0.1); }
+.intel-refutado { color: #fca5a5; background: rgb(248 113 113 / 0.1); text-decoration: line-through; }
+.finding-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); margin-top: 12px; }
+.finding { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.finding-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.finding-title { font-size: 1.15rem; margin: 0; overflow-wrap: anywhere; }
+.finding a, .finding q, .finding p { overflow-wrap: anywhere; }
+.finding details summary { cursor: pointer; min-height: 32px; display: flex; align-items: center; color: var(--cyan); }
+.finding-claims { padding-left: 18px; margin: 0; }
+.history { padding-left: 18px; margin: 6px 0; }
+.platform-status { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.85rem; }
+.ask-form { display: flex; gap: 8px; margin: 10px 0; }
+.ask-form input { flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); }
+@media (max-width: 420px) { .ask-form { flex-direction: column; } }
+.submit-form { display: grid; gap: 8px; max-width: 640px; }
+.submit-form input { width: 100%; min-height: 44px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); }
+.submit-form label { font-weight: 600; font-size: 0.9rem; color: var(--muted); margin-top: 6px; }
+.source-status, .patch-list { list-style: none; padding: 0; display: grid; gap: 8px; }
+.source-status .panel, .patch-list .panel { margin: 0; }
+.block { display: block; }

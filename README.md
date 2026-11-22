@@ -12,6 +12,7 @@ Guía interactiva **independiente** de *Grand Theft Auto VI* en español de Méx
 - **Armas, Vehículos, Negocios y propiedades, Rutas y tutoriales, Lugares, Personajes, Galería**.
 - **Mi partida**: guardados, completados, notas y progreso en el dispositivo; exportar/importar JSON con validación y respaldo; preferencia de spoilers.
 - **Fuentes y cambios**: fuentes con fecha, criterios y registro de cambios; botón para reportar errores.
+- **ATLAS INTELLIGENCE** (`/intel`): investigación automatizada de fuentes autorizadas con cruce de evidencias, revalidación por parches, bitácora real, «Pregúntale a ATLAS» y envío de hallazgos a revisión. Ver [docs/ATLAS_INTELLIGENCE_QA.md](docs/ATLAS_INTELLIGENCE_QA.md).
 - **PWA instalable**, funciona sin conexión, aviso de actualización.
 - Cada ficha tiene URL propia (`/armas/duke-556`, `/dinero/vender-autos-a-moses`, …) con vista previa para WhatsApp, Discord y Facebook.
 
@@ -42,6 +43,7 @@ npm run build        # valida datos, compila y prerenderiza en dist/
 npm run test:e2e     # Playwright contra dist/ (360, 390, 768, 1280, 1920 px, Pixel 7, iPhone emulado, offline)
 npm run audit:legacy # busca material ajeno (video de terceros, fotogramas, marcas)
 npm run zip          # ZIPs de distribución en release/
+npm run intel:run    # corrida de ATLAS INTELLIGENCE (intel:dry no escribe)
 ```
 
 Requisitos: Node 22. Decisiones técnicas: Vite + React 18 + TypeScript, React Router 7 (modo librería), CSS propio con variables (sin framework para mantener el peso bajo), Zod solo en pruebas/build y en el editor (carga diferida), visor de mapa propio sin Leaflet (una sola imagen, menos dependencias), vite-plugin-pwa (Workbox).
@@ -52,6 +54,8 @@ Ver **[DEPLOY.md](DEPLOY.md)** (Netlify desde el celular, en un solo paso con tu
 
 ## Documentos
 
+- [docs/REQUISITOS_ACUMULATIVOS.md](docs/REQUISITOS_ACUMULATIVOS.md) — matriz de requisitos acumulados (fuente: `docs/MATRIZ_FUNCIONAL.csv`).
+- [docs/ATLAS_INTELLIGENCE_QA.md](docs/ATLAS_INTELLIGENCE_QA.md) — estado real de la investigación automatizada y activación desde Android.
 - [AUDITORIA_DATOS.md](AUDITORIA_DATOS.md) — decisión y fuentes de cada ficha.
 - [QA_REPORT.md](QA_REPORT.md) — resultados de pruebas, Lighthouse y capturas.
 - [ATTRIBUTIONS.md](ATTRIBUTIONS.md) — derechos de imágenes, guías citadas y licencias.

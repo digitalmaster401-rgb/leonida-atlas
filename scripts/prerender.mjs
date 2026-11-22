@@ -23,6 +23,8 @@ const pages = [
   { path: '/rutas', title: `Rutas y tutoriales · ${NAME}`, desc: 'Recorridos y guías elaboradas para LEONIDA ATLAS.' },
   { path: '/lugares', title: `Lugares · ${NAME}`, desc: 'Las seis regiones oficiales de Leonida y sus zonas.' },
   { path: '/personajes', title: `Personajes · ${NAME}`, desc: 'Protagonistas y personajes de GTA VI presentados por Rockstar.' },
+  { path: '/intel', title: `ATLAS INTELLIGENCE · ${NAME}`, desc: 'Investigación automatizada de GTA VI: novedades, hallazgos con estado por plataforma, parches, bitácora y preguntas con fuentes.' },
+  { path: '/novedades', title: `Novedades · ${NAME}`, desc: 'Qué cambió en GTA VI según las fuentes vigiladas por ATLAS INTELLIGENCE, con fecha real de investigación.' },
   { path: '/galeria', title: `Galería · ${NAME}`, desc: 'Imágenes oficiales de GTA VI con procedencia.' },
   { path: '/mi-partida', title: `Mi partida · ${NAME}`, desc: 'Tus fichas guardadas, completadas y notas.' },
   { path: '/fuentes', title: `Fuentes y cambios · ${NAME}`, desc: 'Fuentes, criterios de evidencia y registro de cambios.' },

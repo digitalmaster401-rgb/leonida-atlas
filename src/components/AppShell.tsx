@@ -15,6 +15,7 @@ const NAV = [
   { to: '/rutas', label: 'Rutas y tutoriales', icon: 'route' },
   { to: '/lugares', label: 'Lugares', icon: 'pin' },
   { to: '/personajes', label: 'Personajes', icon: 'user' },
+  { to: '/intel', label: 'ATLAS Intelligence', icon: 'eye' },
   { to: '/galeria', label: 'Galería', icon: 'image' },
   { to: '/mi-partida', label: 'Mi partida', icon: 'star' },
   { to: '/fuentes', label: 'Fuentes y cambios', icon: 'book' },
