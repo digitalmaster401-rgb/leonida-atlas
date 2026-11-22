@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Las PR que abre ATLAS INTELLIGENCE con GITHUB_TOKEN no disparan `pull_request` sin aprobación manual
+  # (quedan en «action_required»); el workflow de ATLAS lanza este CI con workflow_dispatch sobre su rama.
+  workflow_dispatch:
 
 permissions:
   contents: read

@@ -4971,13 +4971,17 @@
   "id": "fnd-how-to-find-the-vercetti-estate-in-gta-6",
   "dedupKey": "url:https://gtaboom.com/how-to-find-the-vercetti-estate-in-gta-6-a2d6",
   "title": "How to Find the Vercetti Estate in GTA 6",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
-  "mode": "sin_confirmar",
+  "summary": "Guía de GTA BOOM (22-nov-2026): la Vercetti Estate está en Starfish Island, Vice City. Se recorren los jardines, pero la casa está cerrada; no es refugio ni propiedad comprable. Una sola fuente, sin prueba propia.",
+  "category": "ubicacion",
+  "tags": [
+   "ubicacion",
+   "vice-city",
+   "starfish-island"
+  ],
+  "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:56.888Z",
   "sourcePublishedAt": "2026-11-22T10:42:09.000Z",
@@ -4985,11 +4989,28 @@
   "lastInGameTestAt": null,
   "lastValidatedAt": null,
   "nextCheckAt": null,
-  "claims": [],
+  "claims": [
+   {
+    "text": "La Vercetti Estate está en Starfish Island, Vice City",
+    "quote": "Starfish Island, Vice City",
+    "sourceUrl": "https://www.gtaboom.com/how-to-find-the-vercetti-estate-in-gta-6-a2d6",
+    "amount": null,
+    "unit": null
+   },
+   {
+    "text": "No es un refugio ni una propiedad comprable",
+    "quote": "It is not a safehouse you can claim and not a property you can buy",
+    "sourceUrl": "https://www.gtaboom.com/how-to-find-the-vercetti-estate-in-gta-6-a2d6",
+    "amount": null,
+    "unit": null
+   }
+  ],
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "La fuente no cita pruebas externas; describe una visita propia."
+  ],
   "sources": [
    {
     "url": "https://www.gtaboom.com/how-to-find-the-vercetti-estate-in-gta-6-a2d6",
@@ -5015,6 +5036,15 @@
     "platform": null,
     "reason": "Descubierto en GTA BOOM",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora ubicacion/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5025,17 +5055,15 @@
   "id": "fnd-janelle-james-bullied-her-way-into-gta-6-then-ro",
   "dedupKey": "url:https://gtaboom.com/janelle-james-bullied-her-way-into-gta-6-then-rockstar-sent-her-a-custom-ps5-pro-ad55",
   "title": "Janelle James Bullied Her Way Into GTA 6, Then Rockstar Sent Her a Custom PS5 Pro",
-  "summary": "",
-  "category": "configuracion",
+  "summary": "Noticia promocional (GTA BOOM, 22-nov-2026): la actriz Janelle James, voz de Tish en un programa de radio del juego, recibió una PS5 Pro personalizada que no está a la venta. No aporta datos de juego ni de configuración.",
+  "category": "noticia",
   "tags": [
-   "ps5"
+   "noticia"
   ],
   "mode": "sin_confirmar",
-  "platforms": [
-   "ps5_pro"
-  ],
+  "platforms": [],
   "gameVersion": null,
-  "status": "reportado",
+  "status": "nuevo_sin_verificar",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:56.889Z",
   "sourcePublishedAt": "2026-11-22T10:09:03.000Z",
@@ -5047,7 +5075,9 @@
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "Noticia de celebridad: no se convierte en ficha de la guía."
+  ],
   "sources": [
    {
     "url": "https://www.gtaboom.com/janelle-james-bullied-her-way-into-gta-6-then-rockstar-sent-her-a-custom-ps5-pro-ad55",
@@ -5073,6 +5103,15 @@
     "platform": null,
     "reason": "Descubierto en GTA BOOM",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "nuevo_sin_verificar",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes configuracion/reportado (error del clasificador por la mención «PS5 Pro»); ahora noticia/nuevo_sin_verificar. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5083,13 +5122,17 @@
   "id": "fnd-how-to-find-dexter-s-apartment-in-gta-6",
   "dedupKey": "url:https://gtaboom.com/how-to-find-dexters-apartment-in-gta-6-23b7",
   "title": "How to Find Dexter's Apartment in GTA 6",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
-  "mode": "sin_confirmar",
+  "summary": "Guía de GTA BOOM (22-nov-2026): referencia a Dexter en Trinity Apartments, Vice Beach (la misma página también dice Washington Island). No se puede entrar; hay un kit en la azotea y una lancha. Una sola fuente, sin prueba propia.",
+  "category": "ubicacion",
+  "tags": [
+   "ubicacion",
+   "vice-city",
+   "easter-egg"
+  ],
+  "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:56.889Z",
   "sourcePublishedAt": "2026-11-22T09:47:32.000Z",
@@ -5097,11 +5140,29 @@
   "lastInGameTestAt": null,
   "lastValidatedAt": null,
   "nextCheckAt": null,
-  "claims": [],
+  "claims": [
+   {
+    "text": "Está en Trinity Apartments, Vice Beach",
+    "quote": "Trinity Apartments in Vice Beach",
+    "sourceUrl": "https://www.gtaboom.com/how-to-find-dexters-apartment-in-gta-6-23b7",
+    "amount": null,
+    "unit": null
+   },
+   {
+    "text": "La puerta está cerrada y no hay personaje con quien hablar",
+    "quote": "The door is locked and there is no Dexter to meet",
+    "sourceUrl": "https://www.gtaboom.com/how-to-find-dexters-apartment-in-gta-6-23b7",
+    "amount": null,
+    "unit": null
+   }
+  ],
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "La fuente da dos nombres de zona (Vice Beach y Washington Island): falta precisar el barrio.",
+   "La «zona de descarte» en el mar es especulación de la propia fuente."
+  ],
   "sources": [
    {
     "url": "https://www.gtaboom.com/how-to-find-dexters-apartment-in-gta-6-23b7",
@@ -5127,6 +5188,15 @@
     "platform": null,
     "reason": "Descubierto en GTA BOOM",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora ubicacion/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5137,13 +5207,15 @@
   "id": "fnd-gta-6-all-characters",
   "dedupKey": "url:https://powerpyx.com/gta-6-all-characters",
   "title": "GTA 6 All Characters",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
+  "summary": "Índice de PowerPyx (22-nov-2026) con todos los personajes en orden alfabético y de historia. Es una lista sin roles ni ubicaciones; el orden de historia revela la secuencia de la trama.",
+  "category": "personaje",
+  "tags": [
+   "personajes"
+  ],
   "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:57.424Z",
   "sourcePublishedAt": "2026-11-22T07:33:07.000Z",
@@ -5155,7 +5227,10 @@
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "Contiene spoilers: el orden de aparición revela la trama.",
+   "Algunos enlaces internos de la fuente apuntan a páginas equivocadas."
+  ],
   "sources": [
    {
     "url": "https://www.powerpyx.com/gta-6-all-characters/",
@@ -5181,6 +5256,15 @@
     "platform": null,
     "reason": "Descubierto en PowerPyx",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora personaje/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5191,13 +5275,15 @@
   "id": "fnd-gta-6-ian-character",
   "dedupKey": "url:https://powerpyx.com/gta-6-ian-character",
   "title": "GTA 6 Ian (Character)",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
+  "summary": "Perfil breve de PowerPyx (22-nov-2026): Ian es un motociclista secundario de la banda de Billy. Personaje menor; la página nombra la misión y el capítulo donde aparece.",
+  "category": "personaje",
+  "tags": [
+   "personajes"
+  ],
   "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:57.424Z",
   "sourcePublishedAt": "2026-11-22T05:55:21.000Z",
@@ -5205,11 +5291,22 @@
   "lastInGameTestAt": null,
   "lastValidatedAt": null,
   "nextCheckAt": null,
-  "claims": [],
+  "claims": [
+   {
+    "text": "Ian forma parte de la banda de motociclistas de Billy",
+    "quote": "He's part of Billy's thrillbilly biker gang",
+    "sourceUrl": "https://www.powerpyx.com/gta-6-ian-character/",
+    "amount": null,
+    "unit": null
+   }
+  ],
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "Contiene spoilers (capítulo 2 y nombre de misión).",
+   "La fuente se contradice: el menú lateral la lista como misión secundaria y el texto como capítulo 2."
+  ],
   "sources": [
    {
     "url": "https://www.powerpyx.com/gta-6-ian-character/",
@@ -5235,6 +5332,15 @@
     "platform": null,
     "reason": "Descubierto en PowerPyx",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora personaje/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5245,13 +5351,16 @@
   "id": "fnd-gta-6-joey-character",
   "dedupKey": "url:https://powerpyx.com/gta-6-joey-character",
   "title": "GTA 6 Joey (Character)",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
+  "summary": "Perfil breve de PowerPyx (22-nov-2026): Joey tiene un taller en Key Lento y pasa a ser contacto telefónico. Personaje de historia; la página nombra la misión del capítulo 1.",
+  "category": "personaje",
+  "tags": [
+   "personajes",
+   "key-lento"
+  ],
   "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:57.424Z",
   "sourcePublishedAt": "2026-11-22T01:41:50.000Z",
@@ -5259,11 +5368,28 @@
   "lastInGameTestAt": null,
   "lastValidatedAt": null,
   "nextCheckAt": null,
-  "claims": [],
+  "claims": [
+   {
+    "text": "Jason lleva su auto al taller de Joey en Key Lento",
+    "quote": "Jason goes to his garage in Key Lento to get his car fixed up",
+    "sourceUrl": "https://www.powerpyx.com/gta-6-joey-character/",
+    "amount": null,
+    "unit": null
+   },
+   {
+    "text": "Joey se vuelve contacto telefónico",
+    "quote": "He becomes a phone contact afterward",
+    "sourceUrl": "https://www.powerpyx.com/gta-6-joey-character/",
+    "amount": null,
+    "unit": null
+   }
+  ],
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "Spoiler leve (capítulo 1 y nombre de misión)."
+  ],
   "sources": [
    {
     "url": "https://www.powerpyx.com/gta-6-joey-character/",
@@ -5289,6 +5415,15 @@
     "platform": null,
     "reason": "Descubierto en PowerPyx",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora personaje/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",
@@ -5299,13 +5434,15 @@
   "id": "fnd-gta-6-celine-character",
   "dedupKey": "url:https://powerpyx.com/gta-6-celine-character",
   "title": "GTA 6 Celine (Character)",
-  "summary": "",
-  "category": "noticia",
-  "tags": [],
+  "summary": "Perfil breve de PowerPyx (22-nov-2026): Celine es una huésped del Y Hotel sin misiones; no cuenta como «Stranger & Freak». Personaje sin importancia; la página menciona el capítulo 4.",
+  "category": "personaje",
+  "tags": [
+   "personajes"
+  ],
   "mode": "historia",
   "platforms": [],
   "gameVersion": null,
-  "status": "nuevo_sin_verificar",
+  "status": "reportado",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T11:55:57.424Z",
   "sourcePublishedAt": "2026-11-21T22:30:36.000Z",
@@ -5313,11 +5450,21 @@
   "lastInGameTestAt": null,
   "lastValidatedAt": null,
   "nextCheckAt": null,
-  "claims": [],
+  "claims": [
+   {
+    "text": "Celine no ofrece misiones",
+    "quote": "doesn't count as a Stranger & Freak and doesn't offer any quests",
+    "sourceUrl": "https://www.powerpyx.com/gta-6-celine-character/",
+    "amount": null,
+    "unit": null
+   }
+  ],
   "requirements": [],
   "steps": [],
   "entryIds": [],
-  "risks": [],
+  "risks": [
+   "Spoiler leve (capítulo 4)."
+  ],
   "sources": [
    {
     "url": "https://www.powerpyx.com/gta-6-celine-character/",
@@ -5343,6 +5490,15 @@
     "platform": null,
     "reason": "Descubierto en PowerPyx",
     "runId": "run-20261122-115556"
+   },
+   {
+    "at": "2026-11-22T14:10:00.000Z",
+    "type": "nota",
+    "from": null,
+    "to": "reportado",
+    "platform": null,
+    "reason": "Revisión asistida del PR #3: fuente leída el 22-nov-2026 (página carga, fecha coincide). Antes noticia/nuevo_sin_verificar; ahora personaje/reportado. Sin prueba en juego.",
+    "runId": null
    }
   ],
   "classifier": "heuristico",

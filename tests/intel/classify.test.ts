@@ -24,6 +24,14 @@ describe('clasificación', () => {
     expect(isRelevant('GTA 5 Online update', 'not about it')).toBe(false);
     expect(classifyCategory('Grand Theft Auto VI Now Available', '')).toBe('noticia');
     expect(classifyCategory('GTA 6 Starfish Island Garage: Where to Find the Vitello', '')).toBe('vehiculo');
+    // casos reales de la corrida run-20261122-115556 (PR #3)
+    expect(classifyCategory('Janelle James Bullied Her Way Into GTA 6, Then Rockstar Sent Her a Custom PS5 Pro', '')).toBe('noticia');
+    expect(classifyCategory('How to Find the Vercetti Estate in GTA 6', '')).toBe('ubicacion');
+    expect(classifyCategory("How to Find Dexter's Apartment in GTA 6", '')).toBe('ubicacion');
+    expect(classifyCategory('GTA 6 All Characters', '')).toBe('personaje');
+    expect(classifyCategory('GTA 6 Ian (Character)', '')).toBe('personaje');
+    expect(classifyCategory('GTA 6 PS5 Pro Settings: PSSR and Ray Tracing Explained', '')).toBe('configuracion');
+    expect(classifyCategory('GTA 6 Collectible Card Locations', '')).toBe('coleccionable');
     expect(detectPlatforms('Works on Xbox Series X|S and PS5 Pro')).toEqual(expect.arrayContaining(['ps5_pro', 'xbox_series_x', 'xbox_series_s']));
   });
   it('heurística: cifras con cita literal; las de industria (billion) se ignoran', () => {

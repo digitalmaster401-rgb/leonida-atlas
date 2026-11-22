@@ -34,6 +34,8 @@ const CATEGORY_LABEL: Record<FindingCategory, string> = {
   parche: 'Parche',
   noticia: 'Noticia',
   configuracion: 'Configuración',
+  ubicacion: 'Ubicación',
+  personaje: 'Personaje',
   otro: 'Otro',
 };
 const PLATFORMS: Platform[] = ['ps5', 'ps5_pro', 'xbox_series_x', 'xbox_series_s'];
