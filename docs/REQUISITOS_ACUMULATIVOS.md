@@ -5,7 +5,7 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **38** · 🟡 parcial **20** · ⬜ pendiente **1** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 63
+Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendiente **1** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **3** · total 63
 
 
 ## A. Conservación y proceso
@@ -112,7 +112,7 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **20** · ⬜ pendien
 |---|---|---|---|---|---|
 | B12.1 | Marca original, PWA, offline, accesibilidad AA, SEO | ✅ implementado_testeado | app completa | e2e + axe + Lighthouse |  |
 | B12.2 | Imágenes con derechos registrados, sin marcas de agua | ✅ implementado_testeado | media-manifest.json | tests/data.test.ts |  |
-| B12.3 | Pruebas en Safari/WebKit real | ⛔ bloqueado | — | — | Entorno sin WebKit; requiere dispositivo o CI con WebKit |
+| B12.3 | Pruebas en Safari/WebKit real | 🟡 parcial | .github/workflows/ci.yml (PW_WEBKIT=1) | e2e en CI con WebKit real + e2e/csp-webkit.spec.ts | WebKit real pasa en GitHub Actions (CSP estricta intacta); sin prueba en iPhone/Safari físico |
 | B12.4 | URL pública real y prueba del enlace compartido en WhatsApp | ⛔ bloqueado | DEPLOY.md | — | Requiere conectar Netlify con la cuenta del propietario |
 
 ## Anexo II. Referencia funcional

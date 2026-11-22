@@ -39,7 +39,7 @@ B11. Motor editorial,B11.3,"Automatización GitHub Actions: RSS/APIs, diff, PR d
 B11. Motor editorial,B11.4,Si fallan fuentes: conservar datos y marcar revisión; logs accesibles,implementado_testeado,scripts/intel/run.ts + RunReport,tests/intel/pipeline.test.ts,
 B12. Producto y publicación,B12.1,"Marca original, PWA, offline, accesibilidad AA, SEO",implementado_testeado,app completa,e2e + axe + Lighthouse,
 B12. Producto y publicación,B12.2,"Imágenes con derechos registrados, sin marcas de agua",implementado_testeado,media-manifest.json,tests/data.test.ts,
-B12. Producto y publicación,B12.3,Pruebas en Safari/WebKit real,bloqueado,—,—,Entorno sin WebKit; requiere dispositivo o CI con WebKit
+B12. Producto y publicación,B12.3,Pruebas en Safari/WebKit real,parcial,.github/workflows/ci.yml (PW_WEBKIT=1),e2e en CI con WebKit real + e2e/csp-webkit.spec.ts,WebKit real pasa en GitHub Actions (CSP estricta intacta); sin prueba en iPhone/Safari físico
 B12. Producto y publicación,B12.4,URL pública real y prueba del enlace compartido en WhatsApp,bloqueado,DEPLOY.md,—,Requiere conectar Netlify con la cuenta del propietario
 Anexo II. Referencia funcional,AX2.1,Analizar UX pública de vicerepere.com sin copiar,pendiente,—,—,Respondió HTTP 200 el 22-nov-2026; análisis pendiente para la fase de mapa/espacio
 Anexo II. Referencia funcional,AX2.2,Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades,parcial,AppShell,e2e navegación,Actual: Inicio · Mapa · Dinero · Mi espacio · Menú (Novedades dentro del menú)
