@@ -14,9 +14,22 @@ export function watchConsole(page: Page) {
   return errors;
 }
 
+/**
+ * Compara contra el ancho configurado del viewport, no contra window.innerWidth: con isMobile, Chromium
+ * agranda el viewport de diseño para que quepa el contenido (innerWidth crece) y ocultaba desbordamientos
+ * que Safari/WebKit sí muestra. Si falla, el mensaje nombra los elementos que sobresalen.
+ */
 export async function noHorizontalOverflow(page: Page) {
-  const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-  expect(overflow, 'desbordamiento horizontal en px').toBeLessThanOrEqual(1);
+  const width = page.viewportSize()?.width ?? (await page.evaluate(() => window.innerWidth));
+  const res = await page.evaluate((w) => {
+    const over = [...document.querySelectorAll('body *')]
+      .map((el) => ({ el, r: el.getBoundingClientRect().right + window.scrollX }))
+      .filter(({ el, r }) => r > w + 1 && !el.closest('.table-wrap, .map-viewport, .minimap-frame, .photo-grid, .region-strip'))
+      .slice(0, 5)
+      .map(({ el, r }) => `${el.tagName.toLowerCase()}.${String(el.className).split(' ')[0]} → ${Math.round(r)}px`);
+    return { overflow: document.documentElement.scrollWidth - w, over };
+  }, width);
+  expect(res.overflow, `desbordamiento horizontal en px (${res.over.join(', ') || 'sin elemento identificado'})`).toBeLessThanOrEqual(1);
 }
 
 /**

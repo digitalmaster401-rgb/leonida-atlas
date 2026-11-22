@@ -27,7 +27,13 @@ test.describe('CSP de estilos', () => {
       await page.waitForLoadState('networkidle');
     }
     await page.goto('/mapa');
-    await page.getByRole('button', { name: 'Acercar' }).click();
+    await page.getByRole('button', { name: 'Acercar', exact: true }).click();
+    // desde la fase 3 los puntos cercanos se agrupan: se toca un grupo (también es interacción)
+    // y luego se desactiva la agrupación desde el panel de filtros para usar el pin de Ambrosia
+    await page.getByTestId('map-cluster').first().click();
+    await page.getByTestId('map-filters').locator('summary').click();
+    await page.getByTestId('map-cluster-toggle').uncheck();
+    await page.getByRole('button', { name: 'Restablecer vista' }).click();
     await page.getByRole('button', { name: /^Ambrosia\. Precisión/ }).focus();
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('pin-panel')).toContainText('Ambrosia');

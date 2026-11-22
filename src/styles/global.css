@@ -1134,6 +1134,9 @@ textarea:focus {
 }
 .table-wrap {
   overflow-x: auto;
+  /* contiene a los descendientes con position:absolute (p. ej. .sr-only): sin esto escapan del
+     contenedor con scroll y ensanchan la página (WebKit lo mostró en el comparador de vehículos) */
+  position: relative;
 }
 .facts {
   width: 100%;
