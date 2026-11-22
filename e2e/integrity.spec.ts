@@ -68,3 +68,18 @@ test.describe('integridad del sitio publicado', () => {
     expect(res.headers()['x-content-type-options']).toBe('nosniff');
   });
 });
+
+test('la CSP bloquea estilos inline inyectados y el detector de consola los reporta fuera de capturas', async ({ page }) => {
+  test.skip(test.info().project.name !== 'chromium-1280' && test.info().project.name !== 'iphone-14-webkit', 'un Chromium y el WebKit real');
+  const { watchConsole } = await import('./helpers');
+  const errors = watchConsole(page);
+  await page.goto('/');
+  const applied = await page.evaluate(() => {
+    const s = document.createElement('style');
+    s.textContent = 'body { outline: 7px solid rgb(1, 2, 3); }';
+    document.head.appendChild(s);
+    return getComputedStyle(document.body).outlineWidth;
+  });
+  expect(applied).not.toBe('7px'); // la CSP no aplicó el estilo inyectado
+  await expect.poll(() => errors.some((e) => /Content Security Policy|style-src/i.test(e))).toBe(true);
+});
