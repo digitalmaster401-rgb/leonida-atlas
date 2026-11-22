@@ -21,6 +21,6 @@ test('funciona sin conexión tras la primera visita (service worker)', async ({ 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Empieza aquí');
   await page.evaluate(() => window.dispatchEvent(new Event('offline')));
   await expect(page.getByTestId('offline-banner')).toBeVisible();
-  await page.screenshot({ path: `qa/screenshots/${info.project.name}-sin-conexion.png` });
+  await page.screenshot({ path: `qa/screenshots/${info.project.name}-sin-conexion.png`, caret: 'initial' });
   await context.setOffline(false);
 });

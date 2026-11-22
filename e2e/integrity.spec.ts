@@ -59,7 +59,12 @@ test.describe('integridad del sitio publicado', () => {
 
   test('cabeceras de seguridad aplicadas', async ({ request }) => {
     const res = await request.get('/');
-    expect(res.headers()['content-security-policy']).toContain("default-src 'self'");
+    const csp = res.headers()['content-security-policy'];
+    expect(csp).toContain("default-src 'self'");
+    // La CSP debe seguir estricta: sin 'unsafe-inline' ni 'unsafe-eval' en estilos ni scripts.
+    expect(csp).toMatch(/style-src 'self';/);
+    expect(csp).toMatch(/script-src 'self';/);
+    expect(csp).not.toMatch(/unsafe-inline|unsafe-eval/);
     expect(res.headers()['x-content-type-options']).toBe('nosniff');
   });
 });

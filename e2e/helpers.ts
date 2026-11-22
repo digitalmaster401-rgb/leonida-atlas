@@ -22,7 +22,10 @@ export async function noHorizontalOverflow(page: Page) {
 export async function shot(page: Page, info: TestInfo, name: string) {
   const dir = `qa/screenshots/${info.project.name}`;
   mkdirSync(dir, { recursive: true });
-  await page.screenshot({ path: `${dir}/${name}.png` });
+  // caret: 'initial' evita que Playwright inyecte una <style> para ocultar el cursor de texto.
+  // En WebKit esa hoja inyectada pasa por la CSP real del sitio (style-src 'self') y se bloquea,
+  // lo que generaba un error de consola ajeno a la app. Así la CSP se mantiene estricta.
+  await page.screenshot({ path: `${dir}/${name}.png`, caret: 'initial', animations: 'allow' });
 }
 
 export const isMobile = (page: Page) => (page.viewportSize()?.width ?? 1280) < 1024;

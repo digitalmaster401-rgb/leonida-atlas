@@ -128,7 +128,7 @@ test.describe('LEONIDA ATLAS', () => {
     await expect(page.getByRole('alert')).toContainText('no tiene el formato');
   });
 
-  test('compartir: Web Share API y alternativa de copiar enlace', async ({ page, context }) => {
+  test('compartir: Web Share API y alternativa de copiar enlace', async ({ page, context, browserName }) => {
     await page.addInitScript(() => {
       (window as unknown as { __shared: unknown[] }).__shared = [];
       Object.defineProperty(navigator, 'share', { value: (d: unknown) => ((window as unknown as { __shared: unknown[] }).__shared.push(d), Promise.resolve()), configurable: true });
@@ -140,11 +140,13 @@ test.describe('LEONIDA ATLAS', () => {
     expect(shared[0].title).toContain('Stock 305');
 
     const p2 = await context.newPage();
-    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    // Solo Chromium reconoce los permisos de portapapeles; WebKit permite escribir con el gesto del usuario.
+    if (browserName === 'chromium') await context.grantPermissions(['clipboard-read', 'clipboard-write']);
     await p2.addInitScript(() => Object.defineProperty(navigator, 'share', { value: undefined, configurable: true }));
     await p2.goto('/negocios/stock-305');
     await p2.getByRole('button', { name: 'Compartir' }).click();
     await expect(p2.getByText('Enlace copiado')).toBeVisible();
+    if (browserName === 'chromium') expect(await p2.evaluate(() => navigator.clipboard.readText())).toBe('http://localhost:4173/negocios/stock-305');
   });
 
   test('galería con visor: zoom, navegación y cierre con Escape', async ({ page }, info) => {
