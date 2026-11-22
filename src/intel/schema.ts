@@ -24,6 +24,8 @@ export const FINDING_CATEGORIES = [
   'parche',
   'noticia',
   'configuracion',
+  'ubicacion',
+  'personaje',
   'otro',
 ] as const;
 export const SOURCE_KINDS = ['rss', 'atom', 'youtube_rss', 'page_watch', 'api', 'manual'] as const;

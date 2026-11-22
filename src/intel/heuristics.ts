@@ -23,8 +23,11 @@ const CATS: [FindingCategory, RegExp][] = [
   ['arma', /\b(weapon|weapons|gun|rifle|pistol|shotgun|ammu-?nation|arma|armas)\b/i],
   ['vehiculo', /\b(car|cars|vehicle|vehicles|bike|boat|plane|helicopter|garage|veh[ií]culo|auto|coche|moses)\b/i],
   ['ropa_joyeria', /\b(outfit|clothing|clothes|jewel|watch|tattoo|haircut|ropa|joya|reloj|tatuaje)\b/i],
-  ['configuracion', /\b(settings|hdr|fps|performance mode|resolution|ps5 pro|graphics|configuraci[oó]n|ajustes)\b/i],
+  // «PS5 Pro» por sí solo no es un ajuste (p. ej. «le regalaron una PS5 Pro»): hace falta una palabra de configuración.
+  ['configuracion', /\b(settings|hdr|fps|performance mode|quality mode|resolution|graphics|pssr|ray tracing|configuraci[oó]n|ajustes)\b/i],
   ['mision', /\b(mission|walkthrough|quest|side quest|chapter|misi[oó]n|cap[ií]tulo)\b/i],
+  ['personaje', /\(character\)|\b(all characters|characters? guide|character profile|personajes?)\b/i],
+  ['ubicacion', /\b(how to find|where to find|where is|locations?|apartment|estate|mansion|safehouse|hideout|ubicaci[oó]n|d[oó]nde (est[aá]|encontrar))\b/i],
 ];
 
 /** Quita el nombre del juego para que «Grand Theft Auto» no active la categoría de vehículos. */

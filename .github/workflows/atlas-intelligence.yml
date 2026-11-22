@@ -22,6 +22,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: read
+  actions: write # para lanzar el CI sobre la rama de la propuesta (ver abajo)
 
 jobs:
   investigate:
@@ -85,6 +86,9 @@ jobs:
             --title "ATLAS INTELLIGENCE: revisión de la corrida $RUN_ID" \
             --body-file intel/proposals/LATEST.md \
             --label atlas-intelligence
+          # GitHub no ejecuta el CI de una PR abierta con GITHUB_TOKEN sin aprobación («action_required»).
+          # workflow_dispatch sí está permitido: el resultado aparece en las comprobaciones de la PR (mismo commit).
+          gh workflow run ci.yml --ref "$BRANCH"
 
       - name: Guardar bitácora sin novedades en main (opcional)
         if: steps.run.outputs.changes == '0' && vars.ATLAS_COMMIT_LOGS_TO_MAIN == 'true' && inputs.dry_run != true
