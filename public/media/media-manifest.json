@@ -1485,6 +1485,39 @@
    "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
    "kind": "official-map",
    "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mapa-oficial-leonida-v2",
+   "files": {
+    "1200": {
+     "src": "/media/official/mapa-oficial-leonida-v2-1200.webp",
+     "width": 1200,
+     "height": 1642,
+     "bytes": 310878
+    },
+    "2400": {
+     "src": "/media/official/mapa-oficial-leonida-v2-2400.webp",
+     "width": 2400,
+     "height": 3283,
+     "bytes": 1048198
+    },
+    "3840": {
+     "src": "/media/official/mapa-oficial-leonida-v2-3840.webp",
+     "width": 3840,
+     "height": 5253,
+     "bytes": 2285250
+    }
+   },
+   "captionEs": "Mapa oficial del estado de Leonida, versión para imprimir del póster «Leonida Map & Cover Art Poster» de Rockstar Games.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/media",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "5775x7900",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de descarga de Rockstar Games. Uso no comercial de fans con atribución; la descarga pública no es licencia para vender, comercializar ni redistribuir comercialmente el mapa.",
+   "treatment": "Archivo para imprimir (JPEG CMYK 5775×7900, 300 ppp, SHA-256 7ef9038e…aa2) aportado por el propietario del proyecto. Conversión de perfil CMYK (GRACoL2013) a sRGB, redimensionado completo y recompresión WebP. Sin recortes, sin retoques, sin eliminación de textos, leyenda ni marcas.",
+   "kind": "official-map",
+   "sinMarcaDeAgua": true
   }
  ]
 }

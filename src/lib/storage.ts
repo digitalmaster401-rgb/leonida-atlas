@@ -3,10 +3,12 @@
 
 export const STORAGE_KEY = 'leonida-atlas:progress';
 export const BACKUP_KEY = 'leonida-atlas:progress-backup';
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 const MAX_IDS = 2000;
 const MAX_NOTE = 5000;
 const MAX_LOADOUTS = 30;
+export const MAX_ROUTES = 30;
+export const MAX_STOPS = 40;
 
 export interface Note {
   text: string;
@@ -37,8 +39,21 @@ export interface Loadout {
 }
 export const AVATARS = ['flamenco', 'palmera', 'ola', 'sol', 'estrella', 'rayo'] as const;
 export type Avatar = (typeof AVATARS)[number];
+/** Parada de una ruta personal: siempre una ficha documentada (nunca coordenadas libres). */
+export interface RouteStop {
+  entryId: string;
+  note: string;
+  visited: boolean;
+}
+export interface PersonalRoute {
+  id: string;
+  name: string;
+  objective: string;
+  stops: RouteStop[];
+  updatedAt: string;
+}
 export interface Progress {
-  schemaVersion: 3;
+  schemaVersion: 4;
   favorites: string[];
   completed: string[];
   notes: Record<string, Note>;
@@ -48,6 +63,10 @@ export interface Progress {
   /** Lista para hoy (ids de fichas). */
   today: string[];
   loadouts: Loadout[];
+  /** Rutas personales sobre el mapa (v4). */
+  routes: PersonalRoute[];
+  /** Colección personal de vehículos: ids de fichas de vehículos (v4). */
+  garage: string[];
   profile: { name: string; avatar: Avatar; platform: Platform | null };
   settings: { spoilerLevel: 0 | 1 | 2; hideFound: boolean };
   updatedAt: string;
@@ -70,6 +89,8 @@ export function emptyProgress(): Progress {
     counters: {},
     today: [],
     loadouts: [],
+    routes: [],
+    garage: [],
     profile: { name: '', avatar: 'flamenco', platform: null },
     settings: { spoilerLevel: 1, hideFound: false },
     updatedAt: new Date(0).toISOString(),
@@ -130,6 +151,31 @@ function cleanLoadout(l: unknown): Loadout | null {
   };
 }
 
+function cleanRoute(r: unknown): PersonalRoute | null {
+  if (!isObj(r) || !isId(r.id) || typeof r.name !== 'string' || r.name.length > 60 || typeof r.objective !== 'string' || r.objective.length > 300) return null;
+  if (typeof r.updatedAt !== 'string' || !Array.isArray(r.stops) || r.stops.length > MAX_STOPS) return null;
+  const stops: RouteStop[] = [];
+  for (const st of r.stops) {
+    if (!isObj(st) || !isId(st.entryId) || typeof st.note !== 'string' || st.note.length > 200 || typeof st.visited !== 'boolean') return null;
+    stops.push({ entryId: st.entryId, note: st.note, visited: st.visited });
+  }
+  return { id: r.id, name: r.name, objective: r.objective, stops, updatedAt: r.updatedAt };
+}
+
+/** v4 = v3 + rutas personales + colección de vehículos. */
+function cleanV4(v: unknown): Progress | null {
+  if (!isObj(v) || v.schemaVersion !== 4) return null;
+  const core = cleanV3({ ...v, schemaVersion: 3 });
+  if (!core || !Array.isArray(v.routes) || v.routes.length > MAX_ROUTES || !isIdList(v.garage)) return null;
+  const routes: PersonalRoute[] = [];
+  for (const r of v.routes) {
+    const c = cleanRoute(r);
+    if (!c) return null;
+    routes.push(c);
+  }
+  return { ...core, routes, garage: [...new Set(v.garage)] };
+}
+
 function cleanV3(v: unknown): Progress | null {
   if (!isObj(v) || v.schemaVersion !== 3) return null;
   if (!isIdList(v.favorites) || !isIdList(v.completed) || !isIdList(v.today) || !validNotes(v.notes)) return null;
@@ -157,7 +203,7 @@ function cleanV3(v: unknown): Progress | null {
     loadouts.push(c);
   }
   return {
-    schemaVersion: 3,
+    schemaVersion: 4,
     favorites: [...new Set(v.favorites)],
     completed: [...new Set(v.completed)],
     notes: Object.fromEntries(Object.entries(v.notes).map(([k, n]) => [k, { text: n.text, updatedAt: n.updatedAt }])),
@@ -165,6 +211,8 @@ function cleanV3(v: unknown): Progress | null {
     counters,
     today: [...new Set(v.today)],
     loadouts,
+    routes: [],
+    garage: [],
     profile: { name: v.profile.name, avatar: v.profile.avatar as Avatar, platform: v.profile.platform as Platform | null },
     settings: { spoilerLevel: v.settings.spoilerLevel, hideFound: v.settings.hideFound },
     updatedAt: v.updatedAt,
@@ -180,8 +228,10 @@ function validV1(v: unknown): v is { version: 1; favorites?: string[]; completed
   return true;
 }
 
-/** Acepta cualquier versión conocida (v1, v2, v3) y devuelve el esquema actual, o null si no es válido. */
+/** Acepta cualquier versión conocida (v1, v2, v3, v4) y devuelve el esquema actual, o null si no es válido. */
 export function migrate(input: unknown): Progress | null {
+  const v4 = cleanV4(input);
+  if (v4) return v4;
   const v3 = cleanV3(input);
   if (v3) return v3;
   if (validV2(input)) {
@@ -298,8 +348,26 @@ export function parseImport(text: string, knownIds: Set<string>): ImportResult {
   const rawPhotos = isObj(json) && Array.isArray(json.photos) ? json.photos : [];
   if (rawPhotos.length > MAX_PHOTOS) return { ok: false, error: `El archivo trae demasiadas fotos (máx. ${MAX_PHOTOS}).` };
   if (!rawPhotos.every(validPhoto)) return { ok: false, error: 'Una de las fotos del archivo no es una imagen válida.' };
-  const ids = new Set([...data.favorites, ...data.completed, ...Object.keys(data.notes), ...Object.keys(data.records), ...data.today]);
+  const ids = new Set([
+    ...data.favorites,
+    ...data.completed,
+    ...Object.keys(data.notes),
+    ...Object.keys(data.records),
+    ...data.today,
+    ...data.garage,
+    ...data.routes.flatMap((r) => r.stops.map((st) => st.entryId)),
+  ]);
   return { ok: true, data, unknownIds: [...ids].filter((id) => !knownIds.has(id)), photos: rawPhotos };
+}
+
+function mergeById<T extends { id: string; updatedAt: string }>(a: T[], b: T[]): T[] {
+  const out = [...a];
+  for (const x of b) {
+    const i = out.findIndex((y) => y.id === x.id);
+    if (i < 0) out.push(x);
+    else if (out[i].updatedAt < x.updatedAt) out[i] = x;
+  }
+  return out;
 }
 
 export function mergeProgress(a: Progress, b: Progress): Progress {
@@ -322,6 +390,8 @@ export function mergeProgress(a: Progress, b: Progress): Progress {
     counters,
     today: [...new Set([...a.today, ...b.today])],
     loadouts: loadouts.slice(0, MAX_LOADOUTS),
+    routes: mergeById(a.routes, b.routes).slice(0, MAX_ROUTES),
+    garage: [...new Set([...a.garage, ...b.garage])],
     profile: a.profile,
     settings: a.settings,
     updatedAt: new Date().toISOString(),

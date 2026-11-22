@@ -21,6 +21,7 @@ const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default:
 const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
 const CollectiblesPage = lazy(() => import('./pages/CollectiblesPage').then((m) => ({ default: m.CollectiblesPage })));
 const ConsolePage = lazy(() => import('./pages/ConsolePage').then((m) => ({ default: m.ConsolePage })));
+const RoutesPage = lazy(() => import('./pages/RoutesPage').then((m) => ({ default: m.RoutesPage })));
 const LoadoutPage = lazy(() => import('./pages/LoadoutPage').then((m) => ({ default: m.LoadoutPage })));
 const loading = <p className="page muted">Cargando…</p>;
 const lazyEl = (el: ReactNode) => <Suspense fallback={loading}>{el}</Suspense>;
@@ -61,6 +62,7 @@ export function App() {
         <Route path="/trucos" element={lazyEl(<CheatsPage />)} />
         <Route path="/consola" element={lazyEl(<ConsolePage />)} />
         <Route path="/equipamiento" element={lazyEl(<LoadoutPage />)} />
+        <Route path="/mis-rutas" element={lazyEl(<RoutesPage />)} />
         <Route path="/mi-espacio" element={<MyGamePage />} />
         <Route path="/mi-partida" element={<MyGamePage />} />
         <Route path="/fuentes" element={<SourcesPage />} />
