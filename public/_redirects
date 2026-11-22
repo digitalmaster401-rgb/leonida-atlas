@@ -1,0 +1,3 @@
+# Las rutas conocidas ya existen como archivos (prerender). Cualquier otra cae en la SPA,
+# que muestra la página «No encontramos esta página».
+/*    /index.html   200
