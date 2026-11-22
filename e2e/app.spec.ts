@@ -30,7 +30,9 @@ test.describe('LEONIDA ATLAS', () => {
       ['Lugares', /Lugares/i],
       ['Personajes', /Personajes/i],
       ['Galería', /Galería/i],
-      ['Mi partida', /Mi partida/i],
+      ['Mi espacio', /Mi espacio/i],
+      ['Trucos y códigos', /Trucos y códigos/i],
+      ['Coleccionables', /Coleccionables/i],
       ['Fuentes y cambios', /Fuentes y cambios/i],
       ['Inicio', /Leonida/i],
     ];
@@ -183,7 +185,7 @@ test.describe('LEONIDA ATLAS', () => {
     await expect(panel).toContainText('Precisión: región');
     await panel.getByRole('link', { name: /Ambrosia/ }).first().click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Ambrosia');
-    await page.getByRole('link', { name: /Ver Ambrosia en el mapa interactivo/ }).click();
+    await page.getByRole('link', { name: /Ver en el mapa: Ambrosia/ }).click();
     await expect(page).toHaveURL(/\/mapa\?id=lug-ambrosia/);
     await expect(page.getByTestId('pin-panel')).toContainText('Ambrosia');
     await expect(vp).not.toHaveAttribute('data-scale', '1.00');
@@ -225,7 +227,7 @@ test.describe('LEONIDA ATLAS', () => {
 
   test('accesibilidad automática (axe, WCAG 2 AA) en páginas clave', async ({ page }) => {
     test.skip(!['chromium-390', 'chromium-1280'].includes(test.info().project.name), 'se ejecuta en dos anchos representativos');
-    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora']) {
+    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio']) {
       await page.goto(path);
       await page.waitForLoadState('networkidle');
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();

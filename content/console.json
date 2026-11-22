@@ -71,7 +71,7 @@
     },
     {
      "label": "Resolución interna",
-     "value": "≈1440p en PS5, PS5 Pro (reconstruida con PSSR) y Series X; ≈720p en Series S con reescalado.",
+     "value": "≈1440p en PS5, PS5 Pro (reconstruida con PSSR) y Series X; ≈720p en Series S con reescalado. Ambas guías citan el mismo análisis técnico de lanzamiento (Digital Foundry), así que cuenta como una sola fuente.",
      "platforms": [
       "ps5",
       "ps5_pro",
@@ -79,7 +79,7 @@
       "xbox_series_s"
      ],
      "path": null,
-     "status": "contrastado",
+     "status": "reportado",
      "sources": [
       "outputlag-settings",
       "sixcheats-performance"
@@ -87,7 +87,7 @@
     },
     {
      "label": "Estabilidad observada",
-     "value": "PS5 Pro casi fija en 30; PS5 y Series X con caídas puntuales; Series S con caídas más frecuentes (análisis técnico citado por las guías).",
+     "value": "PS5 Pro casi fija en 30; PS5 y Series X con caídas puntuales; Series S con caídas más frecuentes. Ambas guías citan el mismo análisis técnico de lanzamiento (Digital Foundry), así que cuenta como una sola fuente.",
      "platforms": [
       "ps5",
       "ps5_pro",
@@ -95,7 +95,7 @@
       "xbox_series_s"
      ],
      "path": null,
-     "status": "contrastado",
+     "status": "reportado",
      "sources": [
       "outputlag-settings",
       "sixcheats-performance"

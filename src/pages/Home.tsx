@@ -116,6 +116,26 @@ export function Home() {
         </div>
       </section>
 
+      <section className="section" aria-labelledby="tools-h">
+        <h2 id="tools-h" className="section-title">
+          Herramientas
+        </h2>
+        <div className="cat-grid">
+          {[
+            { to: '/trucos', icon: 'gamepad', name: 'Trucos y códigos', desc: 'Secuencias para PS5 y Xbox, requisitos y consecuencias.' },
+            { to: '/equipamiento', icon: 'layers', name: 'Equipamiento de armas', desc: 'Arma tu carga con las reglas documentadas y compártela.' },
+            { to: '/consola', icon: 'sliders', name: 'Ajustes de consola', desc: 'Qué se puede ajustar en PS5, PS5 Pro y Xbox Series X|S.' },
+            { to: '/mi-espacio', icon: 'star', name: 'Mi espacio', desc: 'Progreso, fotos, encontrados y pendientes en tu teléfono.' },
+          ].map((t) => (
+            <Link key={t.to} to={t.to} className="cat-tile">
+              <Icon name={t.icon} size={26} />
+              <span className="cat-name">{t.name}</span>
+              <span className="cat-desc">{t.desc}</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="section" aria-labelledby="reg-h">
         <div className="section-head">
           <h2 id="reg-h" className="section-title">

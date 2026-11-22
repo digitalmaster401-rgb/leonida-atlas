@@ -5,17 +5,17 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendiente **9** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 63
+Resumen: ✅ implementado y probado **38** · 🟡 parcial **20** · ⬜ pendiente **1** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 63
 
 
 ## A. Conservación y proceso
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| A1 | Conservar todo el desarrollo previo; trabajar en la rama del PR #1 sin fusionar | ✅ implementado_testeado | rama ccr-fb7ab394-lollmi | CI + suite completa | PR #1 abierto, no fusionado |
+| A1 | Conservar todo el desarrollo previo; trabajar en rama nueva sin fusionar | ✅ implementado_testeado | rama claude/fase2-trucos-coleccionables-espacio | CI + suite completa | PR #1 fusionado por el propietario; fase 2 en rama nueva y PR nuevo sin fusionar |
 | A2 | Matriz de requisitos acumulativos como fuente de verdad | ✅ implementado_testeado | docs/MATRIZ_FUNCIONAL.csv | tests/intel/repo-guards.test.ts | Generada y verificada |
 | A3 | No afirmar pruebas en partida/consola/Safari físico inexistentes | ✅ implementado_testeado | QA_REPORT.md, ATLAS_INTELLIGENCE_QA.md | revisión editorial | Límites declarados |
-| A4 | Confirmación única del propietario antes de fusionar | 🟡 parcial | PR #1 | — | Se pedirá al terminar QA |
+| A4 | Confirmación única del propietario antes de fusionar | 🟡 parcial | PR de fase 2 | — | El propietario decide la fusión; Claude no fusiona |
 
 ## B1. Mapas
 
@@ -24,9 +24,9 @@ Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendien
 | B1.1 | Mapa principal sobre cartografía oficial, sin coordenadas inventadas | ✅ implementado_testeado | src/components/MapView.tsx | e2e mapa | Póster oficial; coordenadas medidas sobre rótulos |
 | B1.2 | Zoom/pan con gestos, teclado, botones | ✅ implementado_testeado | MapView | e2e mapa | Pellizco implementado; gesto real Android no probado en dispositivo físico |
 | B1.3 | Pines exactos solo con prueba; aproximados diferenciados | ✅ implementado_testeado | schema mapPosition.precision | tests/data.test.ts | Ningún pin «exacta» |
-| B1.4 | Capas: región, barrio, carretera, agua, interior/exterior, comercios, misiones, coleccionables, glitches | 🟡 parcial | MapLegend (por categoría) | e2e mapa | Solo capas por categoría; faltan capas temáticas |
+| B1.4 | Capas: región, barrio, carretera, agua, interior/exterior, comercios, misiones, coleccionables, glitches | 🟡 parcial | MapLegend (por categoría, incl. coleccionables) | e2e mapa | Capa de coleccionables añadida; faltan capas temáticas (carreteras, agua, interiores) |
 | B1.5 | Clustering y filtros guardados | 🟡 parcial | groupPins | tests unit pendientes | Agrupa pines coincidentes; sin clustering por zoom ni filtros guardados |
-| B1.6 | Ocultar completados y antiespoilers en mapa | ⬜ pendiente | — | — |  |
+| B1.6 | Ocultar completados y antiespoilers en mapa | ✅ implementado_testeado | MapPage + PinPanel (settings.hideFound, spoilerLevel) | e2e/fase2.spec.ts | «Ocultar encontrados» compartido con Coleccionables; el panel del punto vela nombres con spoilers |
 | B1.7 | Mis rutas / rutas temáticas sobre el mapa | 🟡 parcial | fichas de rutas | e2e rutas | Rutas como fichas; sin trazado sobre el mapa ni rutas personales |
 | B1.8 | URL compartible por lugar (/mapa?id=) | ✅ implementado_testeado | MapPage | e2e mapa |  |
 
@@ -50,28 +50,28 @@ Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B4.1 | Directorio por PS5/PS5 Pro/Xbox con secuencia de botones accesible | ⬜ pendiente | — | — | Pendiente: datos verificados por plataforma |
-| B4.2 | «Secuencia desconocida» si solo se conoce el efecto; no trasladar de GTA V | ⬜ pendiente | — | — |  |
+| B4.1 | Directorio por PS5/PS5 Pro/Xbox con secuencia de botones accesible | ✅ implementado_testeado | /trucos (CheatsPage, ButtonSequence) + content/cheats.json | tests/fase2.test.ts + e2e/fase2.spec.ts | 61 trucos; 19 secuencias (18 contrastadas, 1 reportada); PS5/PS5 Pro y Xbox Series X|S; texto accesible y copiar. PS5 Pro usa el mismo método según las fuentes (no distinguido) |
+| B4.2 | «Secuencia desconocida» si solo se conoce el efecto; no trasladar de GTA V | ✅ implementado_testeado | cheats.json sequenceStatus=desconocida | tests/fase2.test.ts + e2e | 42 trucos con «Secuencia desconocida»; el validador impide publicar pasos sin fuente; consecuencias (guardado, trofeos, en línea) visibles |
 
 ## B5. Armas
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | B5.1 | Catálogo con precios, ubicaciones y fuentes | 🟡 parcial | fichas armas (20) | tests/data.test.ts | Precios de una sola fuente (reportado) |
-| B5.2 | Constructor/comparador de loadouts | ⬜ pendiente | — | — |  |
+| B5.2 | Constructor/comparador de loadouts | ✅ implementado_testeado | /equipamiento (LoadoutPage, src/lib/loadout.ts) + content/loadout.json | tests/loadout.test.ts + e2e/fase2.spec.ts | 2 cortas + 2 largas + 1 cuerpo a cuerpo; armas únicas sin accesorios; guardar, comparar y compartir por enlace. Compatibilidad exacta de accesorios y precios no publicados |
 
 ## B6. Vehículos
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | B6.1 | Clasificación por tipo, spawns, precios, talleres, garajes | 🟡 parcial | fichas vehículos (7) | tests/data.test.ts | Solo vehículos oficiales; sin spawns documentados |
-| B6.2 | Comparador y lista personal de vehículos conseguidos | 🟡 parcial | Mi partida (completados) | e2e progreso | Lista vía completados; sin comparador |
+| B6.2 | Comparador y lista personal de vehículos conseguidos | 🟡 parcial | Mi espacio (Encontrados/estados) | e2e/fase2.spec.ts | Lista personal con estados; sin comparador de vehículos |
 
 ## B7. Coleccionables
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B7.1 | Colecciones con checklist, mapa, perdibles, exportar/importar | ⬜ pendiente | — | — | Sin datos verificados aún |
+| B7.1 | Colecciones con checklist, mapa, perdibles, exportar/importar | 🟡 parcial | /coleccionables + 24 fichas (6 colecciones, 18 objetos con ubicación) | tests/fase2.test.ts + e2e/fase2.spec.ts | Checklist individual, estados, contadores, mapa y exportar/importar funcionan; solo 18 objetos tienen ubicación publicada (16 de 27 lecturas, 2 de ≈480 tarjetas) |
 
 ## B8. Ropa y joyería
 
@@ -83,16 +83,16 @@ Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B9.1 | Guías PS5/PS5 Pro/Xbox: controles, HDR, FPS, accesibilidad, rutas de menú | ⬜ pendiente | — | — | Requiere fuentes oficiales/pruebas |
+| B9.1 | Guías PS5/PS5 Pro/Xbox: controles, HDR, FPS, accesibilidad, rutas de menú | ✅ implementado_testeado | /consola (ConsolePage) + content/console.json | tests/fase2.test.ts + e2e/fase2.spec.ts | PS5, PS5 Pro, Series X y S; juego vs. consola; 30 fps y PS5 Pro desde Newswire oficial; rutas de menú de guías (reportado). No probado en consola física |
 
 ## B10. Mi espacio
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B10.1 | Favoritos, completados, notas, progreso local con esquema versionado | ✅ implementado_testeado | src/lib/storage.ts, MyGamePage | tests/storage + e2e |  |
-| B10.2 | Exportar/importar JSON con validación y respaldo | ✅ implementado_testeado | ProgressManager | tests/storage + e2e |  |
-| B10.3 | Estados Encontrado/Pendiente/No disponible/Revisar, fecha, plataforma, puntuación | ⬜ pendiente | — | — |  |
-| B10.4 | Fotos personales, avatar, diario, rutas, lista para hoy | ⬜ pendiente | — | — | Fotos requieren IndexedDB |
+| B10.1 | Favoritos, completados, notas, progreso local con esquema versionado | ✅ implementado_testeado | src/lib/storage.ts (v3), MyGamePage (/mi-espacio) | tests/storage + e2e | Migración v1→v3 y v2→v3 probada |
+| B10.2 | Exportar/importar JSON con validación y respaldo | ✅ implementado_testeado | ProgressManager | tests/storage + e2e/fase2.spec.ts | Exportar/importar incluye registros, equipamientos y fotos opcionales |
+| B10.3 | Estados Encontrado/Pendiente/No disponible/Revisar, fecha, plataforma, puntuación | ✅ implementado_testeado | MyRecord + CollectiblesPage + storage records | tests/storage + e2e/fase2.spec.ts | Encontrado/Pendiente/Revisar/No disponible, fecha, plataforma y valoración 1–5 |
+| B10.4 | Fotos personales, avatar, diario, rutas, lista para hoy | 🟡 parcial | PhotoGallery (IndexedDB), avatar, lista para hoy | tests/photos.test.ts + e2e/fase2.spec.ts | Fotos, avatar y lista para hoy funcionan; faltan diario y rutas personales |
 | B10.5 | Sincronización multi-dispositivo con cuentas | ⛔ bloqueado | — | — | Requiere infraestructura autorizada (auth/BD) |
 | B10.6 | Compartir ficha sin exponer notas privadas | ✅ implementado_testeado | ShareAction | e2e compartir | Solo comparte URL |
 | B10.7 | Reporte de errores con moderación y antispam | 🟡 parcial | ReportError → GitHub Issues | e2e (enlace) | Moderación = revisión humana del issue; antispam lo aporta GitHub |
@@ -120,7 +120,7 @@ Resumen: ✅ implementado y probado **32** · 🟡 parcial **18** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | AX2.1 | Analizar UX pública de vicerepere.com sin copiar | ⬜ pendiente | — | — | Respondió HTTP 200 el 22-nov-2026; análisis pendiente para la fase de mapa/espacio |
-| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Actual: Inicio · Mapa · Dinero · Mi partida · Menú (Novedades dentro del menú) |
+| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Actual: Inicio · Mapa · Dinero · Mi espacio · Menú (Novedades dentro del menú) |
 | AX2.3 | Comunidad: proponer marcadores, votos, reputación, historial | 🟡 parcial | Enviar hallazgo → cola de revisión | tests/intel/submissions.test.ts | Envío y cola real vía GitHub Issues; sin votos ni reputación |
 
 ## ATLAS INTELLIGENCE
