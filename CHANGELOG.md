@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.3.0 — 2026-11-22 — Fase 3: ATLAS EXPLORER + mapa oficial v2
+
+- Póster oficial v2 (5775×7900, «print-ready» de rockstargames.com/VI/media) en WebP 1200/2400/3840 con nombres `-v2-`; encuadre idéntico verificado (desplazamiento 0 px, escala 1.000); proporción derivada del archivo; carga por niveles y respaldo al póster anterior (`docs/MAPA_OFICIAL_V2.md`).
+- Mapa: capas temáticas y por precisión, agrupación por zoom (`src/lib/mapgeo.ts`), preferencias persistentes (`src/lib/mapprefs.ts`), lista «Sin ubicación documentada», panel de filtros plegable.
+- `/mis-rutas`: rutas personales con paradas documentadas, orden, objetivos, visitados; capa de ruta en `/mapa?ruta=` con encuadre automático; «Añadir a una ruta» en las fichas.
+- Vehículos: campo `vehicle` en el esquema (clase, registro, venta, rastreador, evidencia del precio); 9 vehículos nuevos (reportados, una sola fuente de origen); `/comparar-vehiculos` con selección en la URL y garaje personal.
+- Progreso local v4 (rutas y garaje) con migración v1/v2/v3→v4 y exportación/importación.
+- Correcciones: grupos del mapa táctiles, desbordamiento a 360 px en mapa y fichas, `npm run images` conserva el póster v2.
+- Investigación: `sources/INVESTIGACION_FASE3.md`; QA: `docs/FASE3_QA.md`.
+
 ## 1.2.0 — 2026-11-22 — Fase 2: trucos, coleccionables, consola, equipamiento y Mi espacio
 
 - `/trucos`: 61 trucos (`content/cheats.json`) con método PS5/Xbox, secuencia visual y texto accesible, copiar, requisitos y consecuencias; 42 «Secuencia desconocida» sin pasos inventados.

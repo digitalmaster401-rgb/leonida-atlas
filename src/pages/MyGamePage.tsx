@@ -11,7 +11,8 @@ import { PhotoGallery } from '../components/PhotoGallery';
 import { STATE_LABEL } from '../components/MyRecord';
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
-import { formatDate } from '../lib/calc';
+import { formatDate, money } from '../lib/calc';
+import { routeProgress } from '../lib/routes';
 import { AVATARS, PLATFORM_LABEL, PLATFORMS, type Avatar, type Platform, type Progress } from '../lib/storage';
 
 const AVATAR_LABEL: Record<Avatar, string> = { flamenco: 'Flamenco', palmera: 'Palmera', ola: 'Ola', sol: 'Sol', estrella: 'Estrella', rayo: 'Rayo' };
@@ -123,6 +124,7 @@ export function MyGamePage() {
   const today = progress.today.map((id) => entryById.get(id)).filter((e): e is Entry => !!e);
   const cols = entries.filter((e) => e.tracking);
   const name = progress.profile.name.trim();
+  const garage = progress.garage.map((id) => entryById.get(id)).filter((e): e is Entry => !!e);
   return (
     <div className="page">
       <Seo title="Mi espacio" description="Tu progreso, fotos, encontrados y pendientes, guardados solo en tu dispositivo." />
@@ -164,8 +166,61 @@ export function MyGamePage() {
           ))}
         </ul>
         <p className="small">
-          <Link to="/coleccionables">Abrir seguimiento de coleccionables</Link> · <Link to="/equipamiento">Mis equipamientos ({progress.loadouts.length})</Link>
+          <Link to="/coleccionables">Abrir seguimiento de coleccionables</Link> · <Link to="/equipamiento">Mis equipamientos ({progress.loadouts.length})</Link> ·{' '}
+          <Link to="/mis-rutas">Mis rutas ({progress.routes.length})</Link> · <Link to="/comparar-vehiculos">Mi garaje ({garage.length})</Link>
         </p>
+      </section>
+
+      <section className="panel" aria-labelledby="routes-h" data-testid="my-routes">
+        <h2 id="routes-h">
+          <Icon name="flag" size={20} /> Mis rutas ({progress.routes.length})
+        </h2>
+        {progress.routes.length ? (
+          <ul className="entry-rows">
+            {progress.routes.map((r) => {
+              const pr = routeProgress(r);
+              return (
+                <li key={r.id}>
+                  <span className="entry-row-body">
+                    <Link to={`/mapa?ruta=${r.id}`}>{r.name}</Link>
+                    <span className="muted small">
+                      {r.stops.length} paradas · {pr.visited} visitadas ({pr.pct} %){r.objective ? ` · ${r.objective}` : ''}
+                    </span>
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <p className="muted">
+            Crea rutas con puntos documentados en <Link to="/mis-rutas">Mis rutas</Link>.
+          </p>
+        )}
+      </section>
+
+      <section className="panel" aria-labelledby="garage-h" data-testid="my-garage">
+        <h2 id="garage-h">
+          <Icon name="car" size={20} /> Mi garaje ({garage.length})
+        </h2>
+        {garage.length ? (
+          <ul className="entry-rows">
+            {garage.map((v) => (
+              <li key={v.id}>
+                <span className="entry-row-body">
+                  <Link to={entryPath(v)}>{v.name}</Link>
+                  <span className="muted small">
+                    {v.vehicle?.class ?? 'Vehículo'}
+                    {v.vehicle?.sellValue ? ` · venta reportada ${money(v.vehicle.sellValue)}` : ''}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted">
+            Añade vehículos con «Añadir a mi garaje» en su ficha o en <Link to="/comparar-vehiculos">Comparar vehículos</Link>.
+          </p>
+        )}
       </section>
 
       <section className="panel" aria-labelledby="today-h">

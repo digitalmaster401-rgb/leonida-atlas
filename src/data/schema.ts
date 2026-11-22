@@ -49,6 +49,19 @@ export const moneySchema = z.object({
   note: z.string(),
 });
 
+export const TRACKERS = ['ninguno', 'estandar', 'avanzado', 'militar'] as const;
+/** Datos comparables de un vehículo. Los precios son del juego (registro y venta) y llevan su propia evidencia. */
+export const vehicleSchema = z.object({
+  class: z.string().min(2),
+  manufacturer: z.string().nullable(),
+  registration: z.number().int().positive().nullable(),
+  sellValue: z.number().int().positive().nullable(),
+  tracker: z.enum(TRACKERS).nullable(),
+  priceStatus: statusSchema.nullable(),
+  priceSources: z.array(z.string()),
+  acquisition: z.string().min(3),
+});
+
 export const entrySchema = z
   .object({
     id: z.string().regex(/^[a-z]{2,3}-[a-z0-9-]+$/),
@@ -91,6 +104,7 @@ export const entrySchema = z
     tracking: z
       .object({ total: z.number().int().positive().nullable(), totalStatus: statusSchema, unit: z.string().min(2) })
       .optional(),
+    vehicle: vehicleSchema.optional(),
   })
   .superRefine((e, ctx) => {
     if (e.money && e.money.grossMax < e.money.grossMin) {
@@ -98,6 +112,12 @@ export const entrySchema = z
     }
     if (e.tracking && e.category !== 'coleccionables') {
       ctx.addIssue({ code: 'custom', path: ['tracking'], message: 'Solo las colecciones llevan seguimiento' });
+    }
+    if (e.vehicle && e.category !== 'vehiculos') {
+      ctx.addIssue({ code: 'custom', path: ['vehicle'], message: 'Solo los vehículos llevan datos de vehículo' });
+    }
+    if (e.vehicle && (e.vehicle.registration !== null || e.vehicle.sellValue !== null) && (!e.vehicle.priceStatus || !e.vehicle.priceSources.length)) {
+      ctx.addIssue({ code: 'custom', path: ['vehicle', 'priceStatus'], message: 'Un precio publicado necesita estado y fuentes' });
     }
     if (e.tracking && e.tracking.total === null && e.tracking.totalStatus !== 'pendiente') {
       ctx.addIssue({ code: 'custom', path: ['tracking', 'totalStatus'], message: 'Un total desconocido debe marcarse como pendiente' });
@@ -138,6 +158,7 @@ export type Edition = (typeof EDITIONS)[number];
 export type Source = z.infer<typeof sourceSchema>;
 export type Fact = z.infer<typeof factSchema>;
 export type Entry = z.infer<typeof entrySchema>;
+export type VehicleData = z.infer<typeof vehicleSchema>;
 export type MediaItem = z.infer<typeof mediaItemSchema>;
 export type Changelog = z.infer<typeof changelogSchema>;
 
@@ -180,6 +201,11 @@ export function validateDataset(
     }
     for (const img of e.images) if (!mediaIds.has(img)) errors.push(`${e.id}: imagen desconocida «${img}»`);
     for (const rel of e.related) if (!ids.has(rel)) errors.push(`${e.id}: relacionado desconocido «${rel}»`);
+    if (e.vehicle) {
+      for (const s of e.vehicle.priceSources) if (!srcIds.has(s)) errors.push(`${e.id}: precio cita fuente desconocida «${s}»`);
+      if (e.vehicle.priceStatus === 'contrastado' && independentGroups(e.vehicle.priceSources, sources) < 2)
+        errors.push(`${e.id}: precio marcado como contrastado con menos de dos fuentes independientes`);
+    }
     if (e.collection && !entries.some((x) => x.id === e.collection && x.category === 'coleccionables'))
       errors.push(`${e.id}: colección desconocida «${e.collection}»`);
     if (e.status === 'oficial' && !e.sources.some((s) => sources.find((x) => x.id === s)?.type === 'oficial'))

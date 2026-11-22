@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { loadProgress, saveProgress, STORAGE_KEY, type EntryRecord, type Loadout, type Progress, migrate } from '../lib/storage';
+import { loadProgress, MAX_ROUTES, saveProgress, STORAGE_KEY, type EntryRecord, type Loadout, type PersonalRoute, type Progress, migrate } from '../lib/storage';
 
 interface ProgressApi {
   progress: Progress;
@@ -20,6 +20,10 @@ interface ProgressApi {
   deleteLoadout: (id: string) => void;
   setProfile: (patch: Partial<Progress['profile']>) => void;
   setHideFound: (v: boolean) => void;
+  saveRoute: (r: PersonalRoute) => void;
+  deleteRoute: (id: string) => void;
+  toggleGarage: (id: string) => void;
+  inGarage: (id: string) => boolean;
 }
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -89,6 +93,15 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       deleteLoadout: (id) => update((p) => ({ ...p, loadouts: p.loadouts.filter((x) => x.id !== id) })),
       setProfile: (patch) => update((p) => ({ ...p, profile: { ...p.profile, ...patch, name: (patch.name ?? p.profile.name).slice(0, 40) } })),
       setHideFound: (v) => update((p) => ({ ...p, settings: { ...p.settings, hideFound: v } })),
+      saveRoute: (r) =>
+        update((p) => {
+          const next = { ...r, name: r.name.slice(0, 60), objective: r.objective.slice(0, 300), stops: r.stops.slice(0, 40), updatedAt: new Date().toISOString() };
+          const i = p.routes.findIndex((x) => x.id === r.id);
+          return { ...p, routes: i < 0 ? [...p.routes, next].slice(-MAX_ROUTES) : p.routes.map((x, j) => (j === i ? next : x)) };
+        }),
+      deleteRoute: (id) => update((p) => ({ ...p, routes: p.routes.filter((x) => x.id !== id) })),
+      toggleGarage: (id) => update((p) => ({ ...p, garage: toggle(p.garage, id) })),
+      inGarage: (id) => progress.garage.includes(id),
       setNote: (id, text) =>
         update((p) => {
           const notes = { ...p.notes };

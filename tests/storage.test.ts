@@ -9,7 +9,7 @@ describe('almacenamiento del progreso', () => {
   it('devuelve progreso vacío sin datos o con datos corruptos', () => {
     expect(loadProgress().favorites).toEqual([]);
     localStorage.setItem(STORAGE_KEY, '{no json');
-    expect(loadProgress().schemaVersion).toBe(3);
+    expect(loadProgress().schemaVersion).toBe(4);
   });
 
   it('guarda y restaura', () => {
@@ -18,9 +18,9 @@ describe('almacenamiento del progreso', () => {
     expect(loadProgress().favorites).toEqual(['din-moses']);
   });
 
-  it('migra el esquema v1 a v3', () => {
+  it('migra el esquema v1 a v4', () => {
     const m = migrate({ version: 1, favorites: ['a', 'a'], completed: [], notes: { a: 'hola', b: '  ' } });
-    expect(m?.schemaVersion).toBe(3);
+    expect(m?.schemaVersion).toBe(4);
     expect(m?.favorites).toEqual(['a']);
     expect(m?.notes.a.text).toBe('hola');
     expect(m?.notes.b).toBeUndefined();
@@ -60,10 +60,10 @@ describe('almacenamiento del progreso', () => {
     expect(restoreBackup()?.completed).toEqual(['arm-duke-556']);
   });
 
-  it('migra el esquema v2 a v3 sin perder datos', () => {
+  it('migra el esquema v2 a v4 sin perder datos', () => {
     const v2 = { schemaVersion: 2, favorites: ['a'], completed: ['b', 'b'], notes: { a: { text: 'x', updatedAt: '2026-11-20' } }, settings: { spoilerLevel: 2 }, updatedAt: '2026-11-20' };
     const m = migrate(v2)!;
-    expect(m.schemaVersion).toBe(3);
+    expect(m.schemaVersion).toBe(4);
     expect(m.completed).toEqual(['b']);
     expect(m.notes.a.text).toBe('x');
     expect(m.settings).toEqual({ spoilerLevel: 2, hideFound: false });
@@ -105,5 +105,45 @@ describe('almacenamiento del progreso', () => {
     const m = mergeProgress(a, b);
     expect(m.counters.c).toBe(9);
     expect(m.loadouts[0].name).toBe('B');
+  });
+
+  it('migra v3 a v4 conservando fotos-ref, registros, contadores y equipamientos', () => {
+    const v3 = {
+      ...emptyProgress(),
+      schemaVersion: 3,
+      records: { 'col-orca': { state: 'revisar', rating: 4 } },
+      counters: { 'col-tarjetas': 12 },
+      loadouts: [{ id: 'l1', name: 'A', sidearm: [null, null], longarm: [null, null], melee: [null], attachments: {}, updatedAt: '2026-11-22' }],
+    } as Record<string, unknown>;
+    delete v3.routes;
+    delete v3.garage;
+    const m = migrate(v3)!;
+    expect(m.schemaVersion).toBe(4);
+    expect(m.records['col-orca'].rating).toBe(4);
+    expect(m.counters['col-tarjetas']).toBe(12);
+    expect(m.loadouts).toHaveLength(1);
+    expect(m.routes).toEqual([]);
+    expect(m.garage).toEqual([]);
+  });
+
+  it('valida rutas personales y colección de vehículos (v4)', () => {
+    const route = { id: 'ruta-1', name: 'Keys', objective: 'Lecturas', stops: [{ entryId: 'col-orca', note: '', visited: true }], updatedAt: '2026-11-22' };
+    const ok = { ...emptyProgress(), routes: [route], garage: ['veh-shitzu-squalo', 'veh-shitzu-squalo'] };
+    const m = migrate(ok)!;
+    expect(m.routes[0].stops[0].visited).toBe(true);
+    expect(m.garage).toEqual(['veh-shitzu-squalo']);
+    expect(migrate({ ...ok, routes: [{ ...route, stops: [{ entryId: 'x', note: '', visited: 'si' }] }] })).toBeNull();
+    expect(migrate({ ...ok, routes: [{ ...route, stops: [{ x: 0.5, y: 0.5 }] }] })).toBeNull(); // nunca coordenadas libres
+    expect(migrate({ ...ok, routes: [{ ...route, stops: Array(41).fill(route.stops[0]) }] })).toBeNull();
+    expect(migrate({ ...ok, garage: 'veh' })).toBeNull();
+    const res = parseImport(JSON.stringify(makeExport(ok)), new Set(['col-orca']));
+    expect(res.ok && res.unknownIds).toEqual(['veh-shitzu-squalo']);
+  });
+
+  it('al combinar une garajes y conserva la ruta editada más recientemente', () => {
+    const r = { id: 'r', name: 'vieja', objective: '', stops: [], updatedAt: '2026-11-01' };
+    const m = mergeProgress({ ...emptyProgress(), routes: [r], garage: ['a'] }, { ...emptyProgress(), routes: [{ ...r, name: 'nueva', updatedAt: '2026-11-20' }], garage: ['b'] });
+    expect(m.routes[0].name).toBe('nueva');
+    expect(m.garage.sort()).toEqual(['a', 'b']);
   });
 });

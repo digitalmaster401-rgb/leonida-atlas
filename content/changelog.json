@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-11-22",
+    "version": "1.3.0",
+    "title": "ATLAS EXPLORER: mapa oficial en alta resolución, rutas personales y comparador de vehículos",
+    "items": [
+      "Mapa con el póster oficial para imprimir de Rockstar (hasta 3840 px, carga por niveles y respaldo al póster anterior). Mismo encuadre comprobado: los puntos conservan su posición.",
+      "Capas por categoría y por precisión, agrupación de puntos según el zoom, filtros que se recuerdan y lista de fichas sin ubicación documentada.",
+      "Mis rutas: crea recorridos con puntos documentados, ordénalos, marca visitados y míralos en el mapa (sin caminos ni distancias inventados).",
+      "Comparador de vehículos con valores de registro y venta reportados, rastreador y evidencia; 9 vehículos nuevos; garaje personal.",
+      "Mi espacio integra rutas y garaje; progreso local v4 con migración segura y exportación/importación."
+    ]
+  },
+  {
+    "date": "2026-11-22",
     "version": "1.2.0",
     "title": "Trucos, coleccionables, ajustes de consola, equipamiento y Mi espacio",
     "items": [

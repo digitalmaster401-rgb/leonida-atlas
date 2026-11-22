@@ -8,6 +8,7 @@ import { usingOverride } from '../data';
 const NAV = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
   { to: '/mapa', label: 'Mapa', icon: 'map' },
+  { to: '/mis-rutas', label: 'Mis rutas', icon: 'flag' },
   { to: '/dinero', label: 'Dinero y glitches', icon: 'cash' },
   { to: '/trucos', label: 'Trucos y códigos', icon: 'gamepad' },
   { to: '/coleccionables', label: 'Coleccionables', icon: 'grid' },

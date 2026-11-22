@@ -1246,6 +1246,33 @@
     "sources": [
      "rs-vi"
     ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$32,750",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$16,775",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Avanzado (avisa a la policía salvo a alta velocidad)",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
    }
   ],
   "verifiedAt": "2026-11-22",
@@ -1259,8 +1286,23 @@
   "description": "El deportivo emblemático de Grotti de mediados de los 90 y un homenaje a Shore Drive. Incluye una librea minimalista retrofuturista y, según Rockstar, está disponible para «rematar la acción de etapas avanzadas» de la historia.",
   "sources": [
    "rs-vi",
-   "rs-media"
-  ]
+   "rs-media",
+   "gurugamer-cars",
+   "gta6supercars-cars"
+  ],
+  "vehicle": {
+   "class": "Superdeportivo",
+   "manufacturer": "Grotti",
+   "registration": 32750,
+   "sellValue": 16775,
+   "tracker": "avanzado",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Ultimate Edition (etapa avanzada de la historia)"
+  }
  },
  {
   "subzone": null,
@@ -1334,7 +1376,17 @@
   "sources": [
    "rs-vi",
    "rs-media"
-  ]
+  ],
+  "vehicle": {
+   "class": "Buggy todoterreno",
+   "manufacturer": "Vapid",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Ultimate Edition (Paradise Garage, Watson Bay)"
+  }
  },
  {
   "subzone": null,
@@ -1405,7 +1457,17 @@
   "sources": [
    "rs-vi",
    "rs-media"
-  ]
+  ],
+  "vehicle": {
+   "class": "Sedán clásico",
+   "manufacturer": "Vapid",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Vintage Vice City Pack (garaje de Shore Court)"
+  }
  },
  {
   "subzone": null,
@@ -1472,7 +1534,17 @@
   "description": "Rockstar describe la Vapid Ganado como la pickup lowrider «muy usada» de Jason. Ultimate Edition añade el Ganado Retro Build: modificaciones exclusivas con más músculo y estilo clásico.",
   "sources": [
    "rs-vi"
-  ]
+  ],
+  "vehicle": {
+   "class": "Pickup lowrider",
+   "manufacturer": "Vapid",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Vehículo de Jason en la historia"
+  }
  },
  {
   "subzone": null,
@@ -1534,7 +1606,17 @@
   "description": "Parte de «Jason's Safehouse Vehicles»: una Dinka Enduro con un tono inspirado en los uniformes del Ejército, disponible junto a la casa de Jason.",
   "sources": [
    "rs-vi"
-  ]
+  ],
+  "vehicle": {
+   "class": "Motocicleta",
+   "manufacturer": "Dinka",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Ultimate Edition (casa de Jason)"
+  }
  },
  {
   "subzone": null,
@@ -1595,7 +1677,17 @@
   "description": "El otro vehículo de «Jason's Safehouse Vehicles»: un Crest Kayak para remar bajo el sol.",
   "sources": [
    "rs-vi"
-  ]
+  ],
+  "vehicle": {
+   "class": "Kayak",
+   "manufacturer": "Crest",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Ultimate Edition (casa de Jason)"
+  }
  },
  {
   "subzone": "Washington Beach",
@@ -1671,7 +1763,17 @@
   "sources": [
    "rs-vi",
    "rs-map"
-  ]
+  ],
+  "vehicle": {
+   "class": "Lancha",
+   "manufacturer": "Shitzu",
+   "registration": null,
+   "sellValue": null,
+   "tracker": null,
+   "priceStatus": null,
+   "priceSources": [],
+   "acquisition": "Ultimate Edition (atracadero de Washington Beach)"
+  }
  },
  {
   "subzone": null,
@@ -7390,5 +7492,976 @@
   "sources": [
    "playguide-collectibles"
   ]
+ },
+ {
+  "subzone": "Crosstown",
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.698,
+   "y": 0.496,
+   "precision": "barrio",
+   "basis": "Ubicación reportada (estación de policía de Crosstown, Vice City); punto sobre el rótulo «Crosstown» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "pegassi",
+   "superdeportivo"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "vice-city",
+  "id": "veh-pegassi-infernus-96",
+  "slug": "pegassi-infernus-96",
+  "name": "Pegassi Infernus ’96",
+  "status": "reportado",
+  "summary": "Superdeportivo con registro $34,750 y venta $17,160 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Séptimo piso del estacionamiento de la estación de policía de Crosstown (NW 9th St), Vice City. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Superdeportivo",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$34,750",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$17,160",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Avanzado (avisa a la policía salvo a alta velocidad)",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Séptimo piso del estacionamiento de la estación de policía de Crosstown (NW 9th St), Vice City.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Nota",
+    "value": "Aparece en la lista de deseos de Randy (22 autos), según la misma fuente.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Superdeportivo",
+   "manufacturer": "Pegassi",
+   "registration": 34750,
+   "sellValue": 17160,
+   "tracker": "avanzado",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "pfister",
+   "deportivo"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "vice-city",
+  "id": "veh-pfister-comet-88",
+  "slug": "pfister-comet-88",
+  "name": "Pfister Comet ’88",
+  "status": "reportado",
+  "summary": "Deportivo con registro $34,250 y venta $17,050 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Sin punto fijo confirmado; la fuente sugiere calles de Vice City. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Deportivo",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$34,250",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$17,050",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Avanzado (avisa a la policía salvo a alta velocidad)",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Sin punto fijo confirmado; la fuente sugiere calles de Vice City.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Deportivo",
+   "manufacturer": "Pfister",
+   "registration": 34250,
+   "sellValue": 17050,
+   "tracker": "avanzado",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": "Waning Sands",
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "invetero",
+   "muscle"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-invetero-coquette-64",
+  "slug": "invetero-coquette-64",
+  "name": "Invetero Coquette ’64",
+  "status": "reportado",
+  "summary": "Muscle con registro $29,150 y venta $12,320 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Uno rojo reportado en Waning Sands («Standout Vehicle #71»). Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Muscle",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$29,150",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$12,320",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Estándar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Uno rojo reportado en Waning Sands («Standout Vehicle #71»).",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Muscle",
+   "manufacturer": "Invetero",
+   "registration": 29150,
+   "sellValue": 12320,
+   "tracker": "estandar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "mammoth",
+   "militar"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-mammoth-patriot-92",
+  "slug": "mammoth-patriot-92",
+  "name": "Mammoth Patriot ’92",
+  "status": "reportado",
+  "summary": "Militar con registro no publicado y venta $10,835 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Alrededor de complejos y bases militares de Leonida, como Mile Zero Air Station. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Militar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "No publicado",
+    "status": "pendiente",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$10,835",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Militar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Alrededor de complejos y bases militares de Leonida, como Mile Zero Air Station.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Nota",
+    "value": "Registro no publicado.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Militar",
+   "manufacturer": "Mammoth",
+   "registration": null,
+   "sellValue": 10835,
+   "tracker": "militar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "bravado",
+   "muscle"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-bravado-gauntlet-custom-69",
+  "slug": "bravado-gauntlet-custom-69",
+  "name": "Bravado Gauntlet Custom ’69",
+  "status": "reportado",
+  "summary": "Muscle con registro $23,750 y venta $7,095 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Sin punto fijo confirmado. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Muscle",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$23,750",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$7,095",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Estándar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Sin punto fijo confirmado.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Muscle",
+   "manufacturer": "Bravado",
+   "registration": 23750,
+   "sellValue": 7095,
+   "tracker": "estandar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": "Capri",
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "vapid",
+   "cupé"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-vapid-hustler-32",
+  "slug": "vapid-hustler-32",
+  "name": "Vapid Hustler ’32",
+  "status": "reportado",
+  "summary": "Cupé con registro $21,900 y venta $6,545 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). En Capri y en un encuentro de la historia (según la fuente). Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Cupé",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$21,900",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$6,545",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Estándar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "En Capri y en un encuentro de la historia (según la fuente).",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Cupé",
+   "manufacturer": "Vapid",
+   "registration": 21900,
+   "sellValue": 6545,
+   "tracker": "estandar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "albany",
+   "muscle"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-albany-devanity-59",
+  "slug": "albany-devanity-59",
+  "name": "Albany DeVanity ’59",
+  "status": "reportado",
+  "summary": "Muscle / lowrider con registro $21,750 y venta $6,490 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Por Leonida, incluidos Ambrosia y cerca de la casa de Jason. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Muscle / lowrider",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$21,750",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$6,490",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Estándar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Por Leonida, incluidos Ambrosia y cerca de la casa de Jason.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Muscle / lowrider",
+   "manufacturer": "Albany",
+   "registration": 21750,
+   "sellValue": 6490,
+   "tracker": "estandar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "vehiculo",
+   "albany",
+   "muscle"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "leonida",
+  "id": "veh-albany-hermes-50",
+  "slug": "albany-hermes-50",
+  "name": "Albany Hermes ’50",
+  "status": "reportado",
+  "summary": "Muscle con registro $21,650 y venta $6,435 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). Sin punto fijo confirmado. Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Muscle",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$21,650",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$6,435",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Estándar",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "Sin punto fijo confirmado.",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Muscle",
+   "manufacturer": "Albany",
+   "registration": 21650,
+   "sellValue": 6435,
+   "tracker": "estandar",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Robo y registro"
+  }
+ },
+ {
+  "subzone": "Port Gellhorn",
+  "howTo": [
+   "Escanea el vehículo con la app WAINK para ver su valor de registro y de venta.",
+   "Si tiene rastreador, regístralo o véndelo en un Pay 'n' Spray cuando la historia lo desbloquee."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Precios de una sola fuente de origen; pueden cambiar con parches.",
+   "El daño reduce el valor de venta (según la fuente)."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.305,
+   "y": 0.358,
+   "precision": "zona",
+   "basis": "Ubicación reportada (Port Gellhorn y alrededores); punto sobre el rótulo «Port Gellhorn» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "vehiculo",
+   "sirius",
+   "muscle"
+  ],
+  "related": [],
+  "money": null,
+  "verifiedAt": "2026-11-22",
+  "category": "vehiculos",
+  "region": "port-gellhorn",
+  "id": "veh-sirius-transgressor-67",
+  "slug": "sirius-transgressor-67",
+  "name": "Sirius Transgressor ’67",
+  "status": "reportado",
+  "summary": "Muscle con registro $21,500 y venta $6,060 según escaneos publicados tras el lanzamiento.",
+  "description": "Datos de una sola fuente de origen (escaneos WAINK que publican GTABase y medios que los citan). En Port Gellhorn y alrededores, en la misión secundaria de la colección de autos clásicos de Wyman (solo Ultimate Edition, según la fuente). Los valores pueden variar con el estado del auto y con parches; compruébalos con el escáner WAINK del juego.",
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Muscle",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de registro",
+    "value": "$21,500",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Valor de venta",
+    "value": "$6,060",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Rastreador",
+    "value": "Ninguno",
+    "status": "reportado",
+    "sources": [
+     "gurugamer-cars",
+     "gta6supercars-cars"
+    ]
+   },
+   {
+    "label": "Dónde encontrarlo",
+    "value": "En Port Gellhorn y alrededores, en la misión secundaria de la colección de autos clásicos de Wyman (solo Ultimate Edition, según la fuente).",
+    "status": "reportado",
+    "sources": [
+     "gta6supercars-cars"
+    ]
+   }
+  ],
+  "sources": [
+   "gurugamer-cars",
+   "gta6supercars-cars",
+   "gtabase-car-stealing"
+  ],
+  "vehicle": {
+   "class": "Muscle",
+   "manufacturer": "Sirius",
+   "registration": 21500,
+   "sellValue": 6060,
+   "tracker": "ninguno",
+   "priceStatus": "reportado",
+   "priceSources": [
+    "gurugamer-cars",
+    "gta6supercars-cars"
+   ],
+   "acquisition": "Misión de Ultimate Edition"
+  }
  }
 ]

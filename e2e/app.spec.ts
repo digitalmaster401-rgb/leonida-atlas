@@ -177,7 +177,10 @@ test.describe('LEONIDA ATLAS', () => {
     await expect(vp).not.toHaveAttribute('data-scale', '1.00');
     await page.getByRole('button', { name: 'Restablecer vista' }).click();
     await expect(vp).toHaveAttribute('data-scale', '1.00');
-    // activación por teclado (accesible y sin depender de la densidad de pines en pantalla)
+    // activación por teclado (accesible y sin depender de la densidad de pines en pantalla):
+    // se desactiva la agrupación para que Ambrosia sea un pin individual
+    await page.getByTestId('map-filters').locator('summary').click();
+    await page.getByTestId('map-cluster-toggle').uncheck();
     await page.getByRole('button', { name: /^Ambrosia\. Precisión/ }).focus();
     await page.keyboard.press('Enter');
     const panel = page.getByTestId('pin-panel');
@@ -227,7 +230,7 @@ test.describe('LEONIDA ATLAS', () => {
 
   test('accesibilidad automática (axe, WCAG 2 AA) en páginas clave', async ({ page }) => {
     test.skip(!['chromium-390', 'chromium-1280'].includes(test.info().project.name), 'se ejecuta en dos anchos representativos');
-    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio']) {
+    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio', '/mis-rutas', '/comparar-vehiculos', '/vehiculos/pegassi-infernus-96']) {
       await page.goto(path);
       await page.waitForLoadState('networkidle');
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
@@ -239,6 +242,9 @@ test.describe('LEONIDA ATLAS', () => {
   test('teclado: enlace para saltar al contenido y foco visible', async ({ page }) => {
     test.skip(isMobile(page), 'teclado físico en escritorio');
     await page.goto('/');
+    // espera a que la app esté montada: con la máquina cargada, un Tab antes del montaje no enfoca nada
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Saltar al contenido' })).toBeAttached();
     await page.keyboard.press('Tab');
     const skip = page.getByRole('link', { name: 'Saltar al contenido' });
     await expect(skip).toBeFocused();

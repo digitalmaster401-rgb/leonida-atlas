@@ -77,7 +77,7 @@ export function ProgressManager() {
     <section className="panel" aria-labelledby="pm-h">
       <h2 id="pm-h">Respaldo de tu progreso</h2>
       <p className="muted small">
-        Tus favoritos, completados, notas, registros, contadores, equipamientos y fotos se guardan solo en este dispositivo (almacenamiento local, esquema v{progress.schemaVersion}). Nadie más los ve. Exporta un archivo para
+        Tus favoritos, completados, notas, registros, contadores, equipamientos, rutas, garaje y fotos se guardan solo en este dispositivo (almacenamiento local, esquema v{progress.schemaVersion}). Nadie más los ve. Exporta un archivo para
         pasarlos a otro teléfono.
       </p>
       {!persisted && (
@@ -114,7 +114,7 @@ export function ProgressManager() {
           type="button"
           className="btn btn-ghost btn-danger"
           onClick={() => {
-            if (window.confirm('¿Borrar favoritos, completados, notas, registros y equipamientos de este dispositivo? Se guardará un respaldo (las fotos se conservan).')) {
+            if (window.confirm('¿Borrar favoritos, completados, notas, registros, equipamientos, rutas y garaje de este dispositivo? Se guardará un respaldo (las fotos se conservan).')) {
               backupCurrent();
               replace({ ...emptyProgress(), settings: progress.settings, profile: progress.profile });
               toast.show('Datos borrados. Puedes restaurar el respaldo.');
@@ -148,7 +148,7 @@ export function ProgressManager() {
         <div className="import-preview" role="dialog" aria-label="Confirmar importación">
           <p>
             Archivo válido: {pending.data.favorites.length} guardados, {pending.data.completed.length} completados, {Object.keys(pending.data.notes).length} notas,{' '}
-            {pending.data.loadouts.length} equipamientos y {pending.photos.length} fotos.
+            {pending.data.loadouts.length} equipamientos, {pending.data.routes.length} rutas, {pending.data.garage.length} vehículos en el garaje y {pending.photos.length} fotos.
             {pending.unknown.length > 0 && ` ${pending.unknown.length} elementos no existen en esta versión de la guía y se conservarán sin mostrarse.`}
           </p>
           <div className="btn-row">

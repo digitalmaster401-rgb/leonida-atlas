@@ -123,6 +123,8 @@ export function Home() {
         <div className="cat-grid">
           {[
             { to: '/trucos', icon: 'gamepad', name: 'Trucos y códigos', desc: 'Secuencias para PS5 y Xbox, requisitos y consecuencias.' },
+            { to: '/mis-rutas', icon: 'flag', name: 'Mis rutas', desc: 'Arma recorridos con puntos documentados del mapa y marca lo visitado.' },
+            { to: '/comparar-vehiculos', icon: 'car', name: 'Comparar vehículos', desc: 'Registro, venta y rastreador con evidencia; guarda tu garaje.' },
             { to: '/equipamiento', icon: 'layers', name: 'Equipamiento de armas', desc: 'Arma tu carga con las reglas documentadas y compártela.' },
             { to: '/consola', icon: 'sliders', name: 'Ajustes de consola', desc: 'Qué se puede ajustar en PS5, PS5 Pro y Xbox Series X|S.' },
             { to: '/mi-espacio', icon: 'star', name: 'Mi espacio', desc: 'Progreso, fotos, encontrados y pendientes en tu teléfono.' },

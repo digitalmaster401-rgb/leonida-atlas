@@ -69,6 +69,13 @@ def main():
             "kind": "official-map" if is_map else "official-screenshot",
             "sinMarcaDeAgua": True,
         })
+    # Recursos oficiales aportados localmente (no descargables por URL directa), p. ej. el póster para imprimir v2.
+    # Se conservan tal cual si sus archivos existen; así esta herramienta nunca los borra del manifiesto.
+    local = os.path.join(ROOT, "sources", "local-media.json")
+    if os.path.exists(local):
+        for it in json.load(open(local, encoding="utf8")):
+            if all(os.path.exists(os.path.join(ROOT, "public", f["src"].lstrip("/"))) for f in it["files"].values()):
+                manifest.append(it)
     json.dump({"generated": "build", "items": manifest}, open(os.path.join(ROOT, "public", "media", "media-manifest.json"), "w", encoding="utf8"), ensure_ascii=False, indent=1)
     print("ok", len(manifest))
 

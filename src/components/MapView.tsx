@@ -1,15 +1,29 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router';
 import type { Category, Entry } from '../data/schema';
-import { entryPath, imageOf, MAP_MEDIA_ID } from '../data';
+import { entryPath, imageOf } from '../data';
 import { CATEGORY_META, PRECISION_LABEL } from '../data/meta';
 import { EvidenceBadge } from './EvidenceBadge';
 import { Icon } from './Icon';
 import { useProgress } from '../hooks/progress';
+import { clusterPoints, pickFile, POSTER_MEDIA, posterFiles, posterRatio, type PosterId } from '../lib/mapgeo';
 
-const RATIO = 2805 / 3840; // ancho / alto del póster oficial
 const MIN = 1;
-const MAX = 6;
+const MAX = 8;
+/** Radio de agrupación en píxeles de pantalla (≈ un objetivo táctil). */
+const CLUSTER_RADIUS = 34;
+
+export function posterOf(id: PosterId) {
+  const item = imageOf(POSTER_MEDIA[id]) ?? imageOf(POSTER_MEDIA.v1)!;
+  const files = posterFiles(item);
+  return { item, files, ratio: posterRatio(files) };
+}
+
+/** Paradas de una ruta personal: se dibujan en orden con líneas rectas (no son caminos reales). */
+export interface RouteOverlay {
+  name: string;
+  stops: { x: number; y: number; label: string; visited: boolean }[];
+}
 
 /** Marcador en forma de gota; la punta inferior (18, 46) es el punto exacto. */
 function PinShape() {
@@ -45,20 +59,37 @@ interface View {
   ty: number;
 }
 
-export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selectedId: string | null; onSelect: (id: string | null) => void }) {
+export function MapView({
+  list,
+  selectedId,
+  onSelect,
+  poster = 'v2',
+  cluster = true,
+  route = null,
+  onPosterError,
+}: {
+  list: Entry[];
+  selectedId: string | null;
+  onSelect: (id: string | null) => void;
+  poster?: PosterId;
+  cluster?: boolean;
+  route?: RouteOverlay | null;
+  onPosterError?: () => void;
+}) {
   const wrap = useRef<HTMLDivElement>(null);
   const [box, setBox] = useState({ w: 360, h: 480 });
   const [view, setView] = useState<View>({ s: 1, tx: 0, ty: 0 });
   const pointers = useRef(new Map<number, { x: number; y: number }>());
   const gesture = useRef<{ dist: number; s: number; mid: { x: number; y: number }; tx: number; ty: number; start: { x: number; y: number } } | null>(null);
   const groups = useMemo(() => groupPins(list), [list]);
-  const mapImg = imageOf(MAP_MEDIA_ID)!;
+  const { files, ratio } = useMemo(() => posterOf(poster), [poster]);
+  const [hiReady, setHiReady] = useState<string | null>(null);
 
-  // tamaño base del póster ajustado al contenedor
+  // tamaño base del póster ajustado al contenedor (proporción tomada del archivo, no fija)
   const base = useMemo(() => {
-    const h = Math.min(box.h, box.w / RATIO);
-    return { w: h * RATIO, h };
-  }, [box]);
+    const h = Math.min(box.h, box.w / ratio);
+    return { w: h * ratio, h };
+  }, [box, ratio]);
 
   useLayoutEffect(() => {
     const el = wrap.current;
@@ -112,7 +143,19 @@ export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selecte
     if (g) centerOn(g.x, g.y, 2.6);
   }, [selectedId, groups, centerOn]);
 
-  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin');
+  // encuadra la ruta: todas sus paradas visibles (con margen), sin pasar del zoom máximo
+  const routeKey = route ? route.stops.map((p) => `${p.x},${p.y}`).join(';') : '';
+  useEffect(() => {
+    if (!route || !route.stops.length || selectedId) return;
+    const xs = route.stops.map((p) => p.x);
+    const ys = route.stops.map((p) => p.y);
+    const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+    const fit = Math.min(box.w / Math.max((x1 - x0) * base.w, 1), box.h / Math.max((y1 - y0) * base.h, 1)) * 0.6;
+    centerOn((x0 + x1) / 2, (y0 + y1) / 2, Math.min(4, Math.max(MIN, fit)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeKey, base.w, base.h]);
+
+  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin, .map-cluster');
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (isPin(e.target)) return;
@@ -176,8 +219,23 @@ export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selecte
 
   // pines más compactos cuando el mapa completo se ve pequeño (evita que se encimen en teléfonos)
   const pinScale = (base.w < 520 ? 0.72 : base.w < 800 ? 0.85 : 1) / view.s;
-  const hi = view.s > 1.6;
-  const file = hi ? mapImg.files['2400'] : mapImg.files['1200'];
+  // la base ligera siempre está; encima se carga solo la resolución que la pantalla necesita
+  const dpr = typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 2) : 1;
+  const lowFile = files[0];
+  const hiFile = pickFile(files, base.w * view.s * dpr);
+  const showHi = hiFile.src !== lowFile.src;
+  // paradas en el mismo punto (misma zona) se muestran juntas en vez de desplazarlas: no se inventan posiciones
+  const stopGroups: { x: number; y: number; nums: number[]; labels: string[]; visited: boolean }[] = [];
+  route?.stops.forEach((p, i) => {
+    const g = stopGroups.find((s) => s.x === p.x && s.y === p.y);
+    if (g) {
+      g.nums.push(i + 1);
+      g.labels.push(p.label);
+      g.visited = g.visited && p.visited;
+    } else stopGroups.push({ x: p.x, y: p.y, nums: [i + 1], labels: [p.label], visited: p.visited });
+  });
+  const selectedKeys = new Set(groups.filter((g) => g.entries.some((e) => e.id === selectedId)).map((g) => g.key));
+  const clusters = cluster && view.s < MAX ? clusterPoints(groups, base.w * view.s, base.h * view.s, CLUSTER_RADIUS, selectedKeys) : groups.map((g) => ({ key: g.key, x: g.x, y: g.y, items: [g] }));
 
   return (
     <div className="map-shell">
@@ -197,8 +255,66 @@ export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selecte
         data-scale={view.s.toFixed(2)}
       >
         <div className="map-layer" style={{ width: base.w, height: base.h, transform: `translate(${view.tx}px, ${view.ty}px) scale(${view.s})` }}>
-          <img src={file.src} width={base.w} height={base.h} alt="Mapa oficial del estado de Leonida publicado por Rockstar Games" draggable={false} />
-          {groups.map((g) => {
+          <img
+            src={lowFile.src}
+            width={base.w}
+            height={base.h}
+            alt="Mapa oficial del estado de Leonida publicado por Rockstar Games"
+            draggable={false}
+            onError={onPosterError}
+            data-testid="map-image"
+            data-poster={poster}
+          />
+          {showHi && (
+            <img
+              key={hiFile.src}
+              src={hiFile.src}
+              width={base.w}
+              height={base.h}
+              alt=""
+              draggable={false}
+              decoding="async"
+              className={`map-hi${hiReady === hiFile.src ? ' is-ready' : ''}`}
+              onLoad={() => setHiReady(hiFile.src)}
+              data-testid="map-image-hi"
+              data-width={hiFile.width}
+            />
+          )}
+          {route && route.stops.length > 0 && (
+            <svg className="map-route" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false" data-testid="map-route">
+              <polyline points={route.stops.map((p) => `${p.x},${p.y}`).join(' ')} fill="none" vectorEffect="non-scaling-stroke" />
+            </svg>
+          )}
+          {stopGroups.map((g) => (
+            <span
+              key={`stop-${g.nums.join('-')}`}
+              className={`map-stop${g.visited ? ' is-visited' : ''}${g.nums.length > 1 ? ' is-multi' : ''}`}
+              style={{ left: `${g.x * 100}%`, top: `${g.y * 100}%`, transform: `translate(-50%, -50%) scale(${1 / view.s})` }}
+              title={g.labels.map((l, i) => `${g.nums[i]}. ${l}`).join('\n')}
+              data-testid="map-stop"
+              data-stops={g.nums.length}
+            >
+              {g.nums.join('·')}
+            </span>
+          ))}
+          {clusters.map((c) => {
+            if (c.items.length > 1) {
+              const n = c.items.reduce((s, g) => s + g.entries.length, 0);
+              return (
+                <button
+                  key={c.key}
+                  type="button"
+                  className="map-cluster"
+                  style={{ left: `${c.x * 100}%`, top: `${c.y * 100}%`, transform: `translate(-50%, -50%) scale(${1 / view.s})` }}
+                  aria-label={`Grupo de ${n} fichas: ${c.items.flatMap((g) => g.entries.map((e) => e.name)).slice(0, 4).join(', ')}${n > 4 ? '…' : ''}. Toca para verlas de cerca.`}
+                  onClick={() => centerOn(c.x, c.y, Math.min(MAX, view.s * 2.2))}
+                  data-testid="map-cluster"
+                >
+                  {n}
+                </button>
+              );
+            }
+            const g = c.items[0];
             const first = g.entries[0];
             const sel = g.entries.some((e) => e.id === selectedId);
             return (
@@ -233,6 +349,11 @@ export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selecte
           <Icon name="reset" />
         </button>
       </div>
+      {route && route.stops.length > 1 && (
+        <p className="map-route-note small" role="note">
+          Ruta «{route.name}»: las líneas solo unen las paradas en orden. No son caminos ni distancias reales.
+        </p>
+      )}
     </div>
   );
 }
@@ -294,16 +415,16 @@ export function MapLegend({ active, onToggle, cats }: { active: Set<Category>; o
 /** Miniatura estática del mapa centrada en una ficha. */
 export function MiniMap({ entry }: { entry: Entry }) {
   const p = entry.mapPosition!;
-  const m = imageOf(MAP_MEDIA_ID)!;
+  const { files, ratio } = posterOf('v2');
   const zoom = 3;
   return (
     <Link to={`/mapa?id=${entry.id}`} className="minimap" aria-label={`${PRECISION_LABEL[p.precision]} · Ver en el mapa: ${entry.name}`}>
       <div className="minimap-frame">
         <img
-          src={m.files['1200'].src}
+          src={files[0].src}
           alt=""
           loading="lazy"
-          style={{ width: `${zoom * 100}%`, left: `${50 - p.x * zoom * 100}%`, top: `calc(50% - ${p.y * zoom * 100 * (3840 / 2805)}cqw)` }}
+          style={{ width: `${zoom * 100}%`, left: `${50 - p.x * zoom * 100}%`, top: `calc(50% - ${(p.y * zoom * 100) / ratio}cqw)` }}
         />
         <span className={`map-pin pin-${entry.category} is-selected minimap-pin`} aria-hidden="true">
           <PinShape />
