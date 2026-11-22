@@ -266,5 +266,41 @@
   "type": "guia",
   "group": "progamer",
   "note": "Publicada un día antes del lanzamiento general y sin citar fuentes para varios datos: se usa solo para contrastar."
+ },
+ {
+  "id": "gurugamer-cars",
+  "title": "Top 10 Highest Value Cars in GTA 6 and What They Actually Cost",
+  "url": "https://gurugamer.com/pc-console/top-10-highest-value-cars-in-gta-6-and-what-they-actually-cost-27605",
+  "publisher": "GuruGamer",
+  "author": "John Drake",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Valores de registro y venta «de escaneos en el juego»; lista idéntica a la de GTA6Supercars (mismo origen: escaneos WAINK de GTABase). Se cuenta en el mismo grupo editorial.",
+  "group": "gtabase"
+ },
+ {
+  "id": "gta6supercars-cars",
+  "title": "Most Expensive Cars In GTA 6: Top 10",
+  "url": "https://gta6supercars.com/most-expensive-cars-in-gta-6/",
+  "publisher": "GTA 6 Supercars",
+  "author": "Sabih",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Declara que sus precios vienen de los escaneos WAINK de GTABase (grupo gtabase). Aporta ubicaciones reportadas de algunos vehículos.",
+  "group": "gtabase"
+ },
+ {
+  "id": "gtabase-car-stealing",
+  "title": "GTA 6 Car Stealing Guide: Hotwiring, Trackers & Selling Cars",
+  "url": "https://www.gtabase.com/articles/gta-6/gta-6-car-stealing-guide-how-to-steal-sell-keep-vehicles",
+  "publisher": "GTA BASE",
+  "author": "Andy",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Rastreadores (estándar/avanzado), registro y venta en Pay 'n' Spray; maletero de vehículos no propios. Sin precios.",
+  "group": "gtabase"
  }
 ]

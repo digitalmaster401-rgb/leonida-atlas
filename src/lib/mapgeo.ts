@@ -4,7 +4,7 @@ import type { MediaItem } from '../data/schema';
 
 export type PosterId = 'v2' | 'v1';
 export const POSTER_MEDIA: Record<PosterId, string> = { v2: 'mapa-oficial-leonida-v2', v1: 'mapa-oficial-leonida' };
-export const POSTER_LABEL: Record<PosterId, string> = { v2: 'Póster para imprimir (alta resolución)', v1: 'Póster anterior' };
+export const POSTER_LABEL: Record<PosterId, string> = { v2: 'Alta resolución', v1: 'Anterior' };
 
 export interface PosterFile {
   src: string;

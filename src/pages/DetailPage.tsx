@@ -11,6 +11,7 @@ import { Illustration } from '../components/Illustration';
 import { ItemCard } from '../components/ItemCard';
 import { MiniMap } from '../components/MapView';
 import { MyRecord } from '../components/MyRecord';
+import { AddToRoute } from '../components/AddToRoute';
 import { PhotoGallery } from '../components/PhotoGallery';
 import { ReportError } from '../components/ReportError';
 import { Seo } from '../components/Seo';
@@ -48,7 +49,7 @@ function Notes({ id }: { id: string }) {
 export function DetailPage({ category }: { category: Category }) {
   const { slug = '' } = useParams();
   const entry = getEntry(category, slug);
-  const { isFavorite, isCompleted, toggleFavorite, toggleCompleted, progress } = useProgress();
+  const { isFavorite, isCompleted, toggleFavorite, toggleCompleted, progress, inGarage, toggleGarage } = useProgress();
   const [reveal, setReveal] = useState(false);
   if (!entry) return <NotFound />;
   const meta = CATEGORY_META[entry.category];
@@ -93,6 +94,16 @@ export function DetailPage({ category }: { category: Category }) {
           <button type="button" className={`btn${done ? ' is-on' : ''}`} aria-pressed={done} onClick={() => toggleCompleted(entry.id)} data-testid="btn-done">
             <Icon name="check" size={18} /> {entry.category === 'coleccionables' ? (done ? 'Encontrado' : 'Marcar encontrado') : done ? 'Completado' : 'Marcar completado'}
           </button>
+          {entry.category === 'vehiculos' && (
+            <>
+              <button type="button" className={`btn${inGarage(entry.id) ? ' is-on' : ''}`} aria-pressed={inGarage(entry.id)} onClick={() => toggleGarage(entry.id)} data-testid="btn-garage">
+                <Icon name="car" size={18} /> {inGarage(entry.id) ? 'En mi garaje' : 'Añadir a mi garaje'}
+              </button>
+              <Link to={`/comparar-vehiculos?v=${entry.id}`} className="btn">
+                <Icon name="layers" size={18} /> Comparar
+              </Link>
+            </>
+          )}
           <ShareAction title={`${entry.name} · LEONIDA ATLAS`} text={entry.summary} path={entryPath(entry)} />
         </div>
       </header>
@@ -211,6 +222,7 @@ export function DetailPage({ category }: { category: Category }) {
                 <h2>Ubicación</h2>
                 <MiniMap entry={entry} />
                 <p className="small muted">{entry.mapPosition.basis}</p>
+                <AddToRoute entry={entry} />
               </section>
             ) : (
               <section className="panel">

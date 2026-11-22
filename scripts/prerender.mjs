@@ -29,6 +29,7 @@ const pages = [
   { path: '/trucos', title: `Trucos y códigos · ${NAME}`, desc: 'Trucos de GTA VI para PS5 y Xbox Series X|S: secuencias, efectos, requisitos y consecuencias, con evidencia.' },
   { path: '/consola', title: `Ajustes de consola · ${NAME}`, desc: 'Configuración documentada de GTA VI en PS5, PS5 Pro y Xbox Series X|S: rendimiento, pantalla, controles y accesibilidad.' },
   { path: '/equipamiento', title: `Equipamiento de armas · ${NAME}`, desc: 'Arma tu carga de armas de GTA VI con las reglas documentadas: 2 cortas, 2 largas y cuerpo a cuerpo.' },
+  { path: '/comparar-vehiculos', title: `Comparar vehículos · ${NAME}`, desc: 'Compara vehículos de GTA VI por clase, registro, venta y rastreador, con evidencia.' },
   { path: '/mis-rutas', title: `Mis rutas · ${NAME}`, desc: 'Rutas personales con puntos documentados del mapa oficial de Leonida, guardadas en tu dispositivo.' },
   { path: '/mi-espacio', title: `Mi espacio · ${NAME}`, desc: 'Tu progreso, fotos, encontrados y pendientes, guardados solo en tu dispositivo.' },
   { path: '/galeria', title: `Galería · ${NAME}`, desc: 'Imágenes oficiales de GTA VI con procedencia.' },

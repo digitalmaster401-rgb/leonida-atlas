@@ -143,7 +143,19 @@ export function MapView({
     if (g) centerOn(g.x, g.y, 2.6);
   }, [selectedId, groups, centerOn]);
 
-  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin');
+  // encuadra la ruta: todas sus paradas visibles (con margen), sin pasar del zoom máximo
+  const routeKey = route ? route.stops.map((p) => `${p.x},${p.y}`).join(';') : '';
+  useEffect(() => {
+    if (!route || !route.stops.length || selectedId) return;
+    const xs = route.stops.map((p) => p.x);
+    const ys = route.stops.map((p) => p.y);
+    const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+    const fit = Math.min(box.w / Math.max((x1 - x0) * base.w, 1), box.h / Math.max((y1 - y0) * base.h, 1)) * 0.6;
+    centerOn((x0 + x1) / 2, (y0 + y1) / 2, Math.min(4, Math.max(MIN, fit)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [routeKey, base.w, base.h]);
+
+  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin, .map-cluster');
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (isPin(e.target)) return;
@@ -212,6 +224,16 @@ export function MapView({
   const lowFile = files[0];
   const hiFile = pickFile(files, base.w * view.s * dpr);
   const showHi = hiFile.src !== lowFile.src;
+  // paradas en el mismo punto (misma zona) se muestran juntas en vez de desplazarlas: no se inventan posiciones
+  const stopGroups: { x: number; y: number; nums: number[]; labels: string[]; visited: boolean }[] = [];
+  route?.stops.forEach((p, i) => {
+    const g = stopGroups.find((s) => s.x === p.x && s.y === p.y);
+    if (g) {
+      g.nums.push(i + 1);
+      g.labels.push(p.label);
+      g.visited = g.visited && p.visited;
+    } else stopGroups.push({ x: p.x, y: p.y, nums: [i + 1], labels: [p.label], visited: p.visited });
+  });
   const selectedKeys = new Set(groups.filter((g) => g.entries.some((e) => e.id === selectedId)).map((g) => g.key));
   const clusters = cluster && view.s < MAX ? clusterPoints(groups, base.w * view.s, base.h * view.s, CLUSTER_RADIUS, selectedKeys) : groups.map((g) => ({ key: g.key, x: g.x, y: g.y, items: [g] }));
 
@@ -263,15 +285,16 @@ export function MapView({
               <polyline points={route.stops.map((p) => `${p.x},${p.y}`).join(' ')} fill="none" vectorEffect="non-scaling-stroke" />
             </svg>
           )}
-          {route?.stops.map((p, i) => (
+          {stopGroups.map((g) => (
             <span
-              key={`stop-${i}`}
-              className={`map-stop${p.visited ? ' is-visited' : ''}`}
-              style={{ left: `${p.x * 100}%`, top: `${p.y * 100}%`, transform: `translate(-50%, -50%) scale(${1 / view.s})` }}
-              title={`${i + 1}. ${p.label}`}
+              key={`stop-${g.nums.join('-')}`}
+              className={`map-stop${g.visited ? ' is-visited' : ''}${g.nums.length > 1 ? ' is-multi' : ''}`}
+              style={{ left: `${g.x * 100}%`, top: `${g.y * 100}%`, transform: `translate(-50%, -50%) scale(${1 / view.s})` }}
+              title={g.labels.map((l, i) => `${g.nums[i]}. ${l}`).join('\n')}
               data-testid="map-stop"
+              data-stops={g.nums.length}
             >
-              {i + 1}
+              {g.nums.join('·')}
             </span>
           ))}
           {clusters.map((c) => {
