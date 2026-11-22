@@ -85,7 +85,8 @@
   "publishedAt": "2026-11-18",
   "accessedAt": "2026-11-22",
   "type": "guia",
-  "note": "Guía con nombres de misiones y ubicaciones. Fechada un día antes del lanzamiento general; no indica parche."
+  "note": "Guía con nombres de misiones y ubicaciones. Fechada un día antes del lanzamiento general; no indica parche.",
+  "group": "powerpyx"
  },
  {
   "id": "gtaboom-money",
@@ -96,7 +97,8 @@
   "publishedAt": "2026-11-19",
   "accessedAt": "2026-11-22",
   "type": "guia",
-  "note": "Afirma basarse en su propia partida; algunas cifras se presentan como «reportadas»."
+  "note": "Afirma basarse en su propia partida; algunas cifras se presentan como «reportadas».",
+  "group": "gtaboom"
  },
  {
   "id": "gamesgg-ammu",
@@ -107,7 +109,8 @@
   "publishedAt": "2026-11-21",
   "accessedAt": "2026-11-22",
   "type": "guia",
-  "note": "Lista de tiendas y precios con capturas del menú. Sin número de parche."
+  "note": "Lista de tiendas y precios con capturas del menú. Sin número de parche.",
+  "group": "gamesgg"
  },
  {
   "id": "gamesgg-unique",
@@ -118,6 +121,150 @@
   "publishedAt": "2026-11-21",
   "accessedAt": "2026-11-22",
   "type": "guia",
-  "note": "Armas únicas en tiendas y ubicaciones gratuitas. Fuente única: todo se marca como «reportado»."
+  "note": "Armas únicas en tiendas y ubicaciones gratuitas. Fuente única: todo se marca como «reportado».",
+  "group": "gamesgg"
+ },
+ {
+  "id": "rs-preload",
+  "title": "Pre-Load Grand Theft Auto VI Now",
+  "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+  "publisher": "Rockstar Games Newswire",
+  "author": null,
+  "publishedAt": "2026-11-10",
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Rendimiento objetivo de 30 fps, PSSR y sombras con trazado de rayos solo en PS5 Pro, hápticos ajustables en accesibilidad, Tempest 3D, Xbox Cloud Gaming con ajustes de Series S y Remote Play."
+ },
+ {
+  "id": "gtabase-cheats",
+  "title": "GTA 6 Cheats PS5: Cheat Codes Guide for PlayStation 5",
+  "url": "https://www.gtabase.com/gta-6/gta-6-cheats-ps5-cheat-codes",
+  "publisher": "GTA BASE",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gtabase",
+  "note": "61 trucos; combinaciones no publicadas marcadas como «Combo TBA»."
+ },
+ {
+  "id": "vice-cheats",
+  "title": "All GTA 6 Cheat Codes for PS5 and Xbox",
+  "url": "https://www.vice.com/en/article/gta-6-cheat-codes-list/",
+  "publisher": "VICE",
+  "author": "Brent Koepp",
+  "publishedAt": "2026-11-19",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gtabase",
+  "note": "Declara haberse compilado «con ayuda de GTA Base»: se cuenta en el mismo grupo editorial que GTA BASE. Marca como «Unconfirmed» las secuencias sin publicar."
+ },
+ {
+  "id": "beebom-cheats",
+  "title": "GTA 6 Cheat Codes: All Cheats for PS5 and Xbox",
+  "url": "https://beebom.com/gta-6-cheat-codes/",
+  "publisher": "Beebom",
+  "author": "Rishabh Sabarwal",
+  "publishedAt": "2026-11-20",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "beebom",
+  "note": "Actualizada el 20-nov-2026. Marca como TBA/TBD las secuencias sin publicar."
+ },
+ {
+  "id": "gamertweak-cheats",
+  "title": "GTA 6 Cheat Codes List (November 2026)",
+  "url": "https://gamertweak.com/cheat-codes-gta-6/",
+  "publisher": "Gamer Tweak",
+  "author": "Nikita Hariname",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gamertweak",
+  "note": "Actualizada el 21-nov-2026. Marca como «Not discovered» las secuencias sin publicar."
+ },
+ {
+  "id": "pushsquare-mags",
+  "title": "GTA 6: Magazines, Books, & Comics Locations (WIP)",
+  "url": "https://www.pushsquare.com/guides/gta-6-magazines-books-and-comics-locations",
+  "publisher": "Push Square",
+  "author": "Sammy Barker",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "pushsquare",
+  "note": "Guía en progreso: 16 de 27 ubicaciones documentadas al consultarla."
+ },
+ {
+  "id": "gta6cm-mags",
+  "title": "GTA 6 magazines, books and comics: all 34, and 30 for 100%",
+  "url": "https://gta6collectiblesmap.com/articles/gta-6-magazines-books-comics",
+  "publisher": "GTA6 Collectibles Map",
+  "author": null,
+  "publishedAt": "2026-11-18",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gta6collectiblesmap",
+  "note": "Totales por tipo; no publica la lista de ubicaciones, salvo «Remote Strike» (Ajax Gym, piso Trauma)."
+ },
+ {
+  "id": "playguide-collectibles",
+  "title": "GTA 6 Collectibles: All 18 Card Sets, Key Lento Locations and 100% Checklist",
+  "url": "https://gta6playguide.com/gta-6-collectibles/",
+  "publisher": "GTA 6 Play Guide",
+  "author": null,
+  "publishedAt": "2026-11-20",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gta6playguide",
+  "note": "18 sets de tarjetas (~480), umbrales de relojes y otros coleccionables, trofeos."
+ },
+ {
+  "id": "outputlag-settings",
+  "title": "GTA 6 Best Settings: Graphics, Controls and First Person",
+  "url": "https://outputlag.com/guides/gta-6-best-settings-controls/",
+  "publisher": "Output Lag",
+  "author": "Steven Mills",
+  "publishedAt": "2026-11-22",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "outputlag",
+  "note": "Nombres de menús leídos del juego según el autor; rendimiento según análisis técnico de lanzamiento."
+ },
+ {
+  "id": "sixcheats-performance",
+  "title": "GTA 6 30 or 60 FPS? No Performance Mode on PS5, PS5 Pro or Xbox",
+  "url": "https://www.6cheats.com/en/guides/gta-6-performance-mode-quality-mode-ps5-pro-xbox",
+  "publisher": "6cheats",
+  "author": null,
+  "publishedAt": "2026-11-19",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "6cheats",
+  "note": "Actualizada el 21-nov-2026; cita a Rockstar y a Digital Foundry."
+ },
+ {
+  "id": "gtabase-loadout",
+  "title": "GTA 6 Weapons & Loadout Guide: Ammu-Nation, Trunk, Stash Bags & Mods",
+  "url": "https://www.gtabase.com/gta-6/articles/gta-6-weapons-loadout-guide",
+  "publisher": "GTA BASE",
+  "author": null,
+  "publishedAt": "2026-11-20",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "gtabase",
+  "note": "Límites de carga, almacenamiento y dónde se cambian los accesorios."
+ },
+ {
+  "id": "progamer-weapons",
+  "title": "How Do Weapons Work in GTA 6? Buying, Trunk Storage, Lockers, and Customization Guide",
+  "url": "https://pro-gamer.gg/how-do-weapons-work-in-gta-6-buying-storing-guns-customization-guide/",
+  "publisher": "Pro-Gamer.gg",
+  "author": "Charles «Grimtag»",
+  "publishedAt": "2026-11-18",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "group": "progamer",
+  "note": "Publicada un día antes del lanzamiento general y sin citar fuentes para varios datos: se usa solo para contrastar."
  }
 ]

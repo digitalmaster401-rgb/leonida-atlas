@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.2.0 — 2026-11-22 — Fase 2: trucos, coleccionables, consola, equipamiento y Mi espacio
+
+- `/trucos`: 61 trucos (`content/cheats.json`) con método PS5/Xbox, secuencia visual y texto accesible, copiar, requisitos y consecuencias; 42 «Secuencia desconocida» sin pasos inventados.
+- `/coleccionables`: categoría nueva con 6 colecciones y 18 objetos con ubicación; estados, contadores, filtros, ocultar encontrados (también en el mapa).
+- `/consola`: ajustes por PS5, PS5 Pro, Series X y S (`content/console.json`), juego vs. consola.
+- `/equipamiento`: constructor con reglas de `content/loadout.json` (`src/lib/loadout.ts`), guardar, comparar y compartir por enlace.
+- `/mi-espacio` (alias `/mi-partida`): perfil, avatar, listas Encontrados/Pendientes/Revisar/No disponible, lista para hoy, fotos en IndexedDB (`src/lib/photos.ts`); «Mi registro» en cada ficha.
+- Progreso local v3 (registros, contadores, equipamientos, perfil) con migración desde v1 y v2; exportar/importar con fotos opcionales.
+- Validación: `group` editorial en fuentes; «contrastado» exige ≥2 grupos; esquemas Zod de la fase 2 (`src/data/schema-fase2.ts`) dentro de `npm run validate:data`.
+- Las páginas nuevas se cargan bajo demanda; el paquete principal bajó de 560 kB a 278 kB.
+- Investigación: `sources/INVESTIGACION_FASE2.md`.
+
 ## 1.1.0 — 2026-11-22 — ATLAS INTELLIGENCE (infraestructura)
 
 - Auditoría acumulativa: `docs/REQUISITOS_ACUMULATIVOS.md` y `docs/MATRIZ_FUNCIONAL.csv` (63 requisitos con estado real).

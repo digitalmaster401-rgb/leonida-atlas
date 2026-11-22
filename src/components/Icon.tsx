@@ -32,6 +32,14 @@ const PATHS: Record<string, string> = {
   note: 'M5 4h14v12l-4 4H5zm10 12v4m0-4h4M8 9h8M8 13h5',
   arrow_left: 'M15 6l-6 6 6 6',
   arrow_right: 'M9 6l6 6-6 6',
+  grid: 'M4 4h7v7H4zm9 0h7v7h-7zM4 13h7v7H4zm9 0h7v7h-7z',
+  gamepad: 'M7 8h10a5 5 0 0 1 4.6 7l-.8 2a2.5 2.5 0 0 1-4.3.6L15 16H9l-1.5 1.6a2.5 2.5 0 0 1-4.3-.6l-.8-2A5 5 0 0 1 7 8zm1 3v3m-1.5-1.5h3M15.5 12h.01M17.5 14h.01',
+  sliders: 'M4 6h10m4 0h2M4 12h4m4 0h8M4 18h12m4 0h0M14 4v4M8 10v4M16 16v4',
+  layers: 'M12 3 2 8l10 5 10-5zM2 13l10 5 10-5M2 17.5l10 5 10-5',
+  camera: 'M4 7h3l2-3h6l2 3h3v13H4zm8 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8z',
+  trash: 'M4 7h16M10 11v6m4-6v6M6 7l1 13h10l1-13M9 7V4h6v3',
+  copy: 'M9 9h11v11H9zM5 15H4V4h11v1',
+  list: 'M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01',
 };
 
 export function Icon({ name, size = 20, title, className }: { name: string; size?: number; title?: string; className?: string }) {

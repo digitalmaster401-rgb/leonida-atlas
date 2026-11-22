@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 
 const entries = JSON.parse(readFileSync('content/entries.json', 'utf8'));
 
-const CAT: Record<string, string> = { lugares: '/lugares', personajes: '/personajes', dinero: '/dinero', armas: '/armas', vehiculos: '/vehiculos', negocios: '/negocios', rutas: '/rutas' };
+const CAT: Record<string, string> = { lugares: '/lugares', personajes: '/personajes', dinero: '/dinero', armas: '/armas', vehiculos: '/vehiculos', negocios: '/negocios', rutas: '/rutas', coleccionables: '/coleccionables' };
 
 test.describe('integridad del sitio publicado', () => {
   test.skip(() => test.info().project.name !== 'chromium-1280', 'una sola pasada basta');
@@ -18,7 +18,7 @@ test.describe('integridad del sitio publicado', () => {
 
   test('sin enlaces internos rotos ni imágenes rotas', async ({ page, request }) => {
     const seen = new Set<string>();
-    const queue = ['/', '/intel', '/mapa', '/dinero', '/armas', '/vehiculos', '/negocios', '/rutas', '/lugares', '/personajes', '/galeria', '/fuentes', '/legal', '/mi-partida'];
+    const queue = ['/', '/intel', '/mapa', '/dinero', '/armas', '/vehiculos', '/negocios', '/rutas', '/lugares', '/personajes', '/galeria', '/fuentes', '/legal', '/mi-partida', '/mi-espacio', '/trucos', '/coleccionables', '/consola', '/equipamiento'];
     const broken: string[] = [];
     for (const path of queue) {
       await page.goto(path);

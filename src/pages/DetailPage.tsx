@@ -10,6 +10,8 @@ import { Icon } from '../components/Icon';
 import { Illustration } from '../components/Illustration';
 import { ItemCard } from '../components/ItemCard';
 import { MiniMap } from '../components/MapView';
+import { MyRecord } from '../components/MyRecord';
+import { PhotoGallery } from '../components/PhotoGallery';
 import { ReportError } from '../components/ReportError';
 import { Seo } from '../components/Seo';
 import { ShareAction } from '../components/ShareAction';
@@ -75,6 +77,12 @@ export function DetailPage({ category }: { category: Category }) {
         </div>
         <h1>{entry.name}</h1>
         <p className="lead">{entry.summary}</p>
+        {entry.collection && entryById.get(entry.collection) && (
+          <p className="small">
+            Parte de la colección <Link to={entryPath(entryById.get(entry.collection)!)}>{entryById.get(entry.collection)!.name}</Link> ·{' '}
+            <Link to="/coleccionables">ver mi seguimiento</Link>
+          </p>
+        )}
         <p className="muted small">
           Última revisión: <strong>{formatDate(entry.verifiedAt)}</strong> · Actualizado para: {entry.patch} · Plataformas: {entry.platform.join(', ')}
         </p>
@@ -83,7 +91,7 @@ export function DetailPage({ category }: { category: Category }) {
             <Icon name="star" size={18} /> {fav ? 'Guardada' : 'Guardar'}
           </button>
           <button type="button" className={`btn${done ? ' is-on' : ''}`} aria-pressed={done} onClick={() => toggleCompleted(entry.id)} data-testid="btn-done">
-            <Icon name="check" size={18} /> {done ? 'Completado' : 'Marcar completado'}
+            <Icon name="check" size={18} /> {entry.category === 'coleccionables' ? (done ? 'Encontrado' : 'Marcar encontrado') : done ? 'Completado' : 'Marcar completado'}
           </button>
           <ShareAction title={`${entry.name} · LEONIDA ATLAS`} text={entry.summary} path={entryPath(entry)} />
         </div>
@@ -98,7 +106,7 @@ export function DetailPage({ category }: { category: Category }) {
           <button type="button" className="btn btn-cta" onClick={() => setReveal(true)}>
             Mostrar contenido
           </button>{' '}
-          <Link to="/mi-partida" className="btn btn-ghost">
+          <Link to="/mi-espacio" className="btn btn-ghost">
             Cambiar preferencia
           </Link>
         </div>
@@ -215,6 +223,8 @@ export function DetailPage({ category }: { category: Category }) {
         </div>
       )}
 
+      <MyRecord entry={entry} />
+      <PhotoGallery entryId={entry.id} title="Mis fotos de esta ficha" />
       <Notes id={entry.id} />
       <ReportError subject={entry.name} path={entryPath(entry)} />
 

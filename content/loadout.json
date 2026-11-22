@@ -1,0 +1,138 @@
+{
+ "verifiedAt": "2026-11-22",
+ "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+ "slots": {
+  "sidearm": 2,
+  "longarm": 2,
+  "melee": 1
+ },
+ "rules": [
+  {
+   "label": "Carga a pie",
+   "value": "Hasta 2 armas cortas y 2 armas largas.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "label": "Cuerpo a cuerpo, explosivos y equipo",
+   "value": "Además: explosivos, 1 arma cuerpo a cuerpo y equipo como binoculares o linterna.",
+   "status": "reportado",
+   "sources": [
+    "gtabase-loadout"
+   ]
+  },
+  {
+   "label": "Almacenamiento",
+   "value": "El resto se guarda en la cajuela de tu vehículo personal o en un casillero de armas de Ammu-Nation.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "label": "Armas compradas",
+   "value": "Quedan disponibles para Jason y Lucia; cada uno las modifica por separado.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "label": "Armas únicas",
+   "value": "No se pueden modificar; se desbloquean para ambos.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons",
+    "gamesgg-unique"
+   ]
+  },
+  {
+   "label": "Armas no propias",
+   "value": "Las recogidas del suelo no se modifican y se pierden al morir o ser arrestado.",
+   "status": "reportado",
+   "sources": [
+    "gtabase-loadout"
+   ]
+  }
+ ],
+ "attachments": [
+  {
+   "id": "suppressor",
+   "label": "Silenciador",
+   "where": "loadout",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "id": "flashlight",
+   "label": "Linterna táctica",
+   "where": "loadout",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "id": "grip",
+   "label": "Empuñadura",
+   "where": "ammunation",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "id": "magazine",
+   "label": "Cargador",
+   "where": "ammunation",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  },
+  {
+   "id": "optic",
+   "label": "Mira óptica",
+   "where": "ammunation",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-loadout",
+    "progamer-weapons"
+   ]
+  }
+ ],
+ "compatibilityNote": "Ninguna fuente revisada publica qué accesorios acepta cada arma ni sus precios: el constructor no los inventa.",
+ "classes": {
+  "sidearm": [
+   "pistola",
+   "revólver",
+   "revolver"
+  ],
+  "longarm": [
+   "escopeta",
+   "rifle",
+   "carabina",
+   "francotirador"
+  ],
+  "melee": [
+   "cuchillo"
+  ],
+  "unclassified": [
+   "subfusil",
+   "smg"
+  ]
+ },
+ "classNote": "La guía no clasifica cada arma. Pistolas y revólveres se tratan como armas cortas y escopetas, rifles y carabinas como largas; los subfusiles quedan sin clasificar y puedes asignarlos tú."
+}

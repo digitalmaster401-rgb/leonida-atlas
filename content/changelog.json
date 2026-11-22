@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-11-22",
+    "version": "1.2.0",
+    "title": "Trucos, coleccionables, ajustes de consola, equipamiento y Mi espacio",
+    "items": [
+      "Trucos y códigos para PS5 y Xbox Series X|S: 61 trucos, 19 secuencias publicadas (18 contrastadas) y «Secuencia desconocida» en el resto; consecuencias visibles (guardado, trofeos, en línea).",
+      "Coleccionables con seguimiento individual: 6 colecciones, 18 objetos con ubicación publicada, contadores y estados Encontrado/Pendiente/Revisar/No disponible.",
+      "Ajustes de consola documentados por plataforma (PS5, PS5 Pro, Series X y S), separando menú del juego y de la consola.",
+      "Constructor de equipamiento: 2 armas cortas, 2 largas y cuerpo a cuerpo; avisos de reglas, armas únicas sin accesorios, guardar, comparar y compartir.",
+      "Mi espacio: perfil y avatar, Mi registro por ficha (estado, fecha, plataforma, valoración), lista para hoy y fotos personales guardadas en el teléfono.",
+      "Mapa: «Ocultar encontrados» y nombres con spoilers velados en el panel del punto.",
+      "«Contrastado» ahora exige dos grupos editoriales independientes (un medio que reutiliza datos de otro cuenta una sola vez)."
+    ]
+  },
+  {
+    "date": "2026-11-22",
     "version": "1.1.0",
     "title": "ATLAS INTELLIGENCE (infraestructura)",
     "items": [

@@ -5561,5 +5561,1834 @@
    "rs-news-launch",
    "rs-media"
   ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Abre el mapa y entra en Progreso → Colecciones para ver tu avance (ruta reportada por una guía).",
+   "Registra cuántas tarjetas llevas con el contador de esta ficha."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "tarjetas",
+   "cartas"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Sets",
+    "value": "18",
+    "status": "contrastado",
+    "sources": [
+     "playguide-collectibles",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Total aproximado",
+    "value": "≈480 (algunas guías cuentan 481)",
+    "status": "contrastado",
+    "sources": [
+     "playguide-collectibles",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Vice City Flamingos",
+    "value": "24 tarjetas; completarlo desbloquea el filtro «Bubblegum»",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats",
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Sets necesarios para el 100 %",
+    "value": "15 de 18",
+    "status": "reportado",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Trofeo «Don't Touch My Deck»",
+    "value": "Completar 3 sets",
+    "status": "reportado",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Ruta de progreso",
+    "value": "Progreso → Colecciones → Collectible Cards",
+    "status": "reportado",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-tarjetas",
+  "slug": "tarjetas-coleccionables",
+  "name": "Tarjetas coleccionables",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "18 sets de tarjetas, alrededor de 480 en total; el set Vice City Flamingos tiene 24.",
+  "description": "Las guías revisadas coinciden en 18 sets de tarjetas con unas 480 tarjetas (algunas cuentan 481). Los temas incluyen equipos como los Vice City Flamingos, personajes y cómics. Completar los 24 Vice City Flamingos desbloquea el filtro de pantalla «Bubblegum». Lleva tu conteo aquí: el juego no publica una lista oficial.",
+  "sources": [
+   "playguide-collectibles",
+   "gta6cm-mags",
+   "gtabase-cheats",
+   "beebom-cheats",
+   "gamertweak-cheats"
+  ],
+  "tracking": {
+   "total": 480,
+   "totalStatus": "contrastado",
+   "unit": "tarjetas"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Lee cada título interactuando con él.",
+   "Consulta el avance en Progreso → Colecciones → Exploración.",
+   "Marca cada título como encontrado en su ficha."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "revistas",
+   "libros",
+   "comics"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Revistas, libros y cómics",
+    "value": "27",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Intercambios de libros",
+    "value": "7",
+    "status": "reportado",
+    "sources": [
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Necesarios para el 100 %",
+    "value": "30 de 34",
+    "status": "reportado",
+    "sources": [
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Ruta de progreso",
+    "value": "Progreso → Colecciones → Exploración",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Copias duplicadas",
+    "value": "Leer el mismo título dos veces no cuenta doble",
+    "status": "reportado",
+    "sources": [
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Ubicaciones publicadas",
+    "value": "16 de 27 (guía en progreso)",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-lecturas",
+  "slug": "revistas-libros-y-comics",
+  "name": "Revistas, libros y cómics",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "27 revistas, libros y cómics para leer, más 7 intercambios de libros.",
+  "description": "Dos guías coinciden en 27 revistas, libros y cómics. Una de ellas suma 7 intercambios de libros (34 en total, 30 necesarios para el 100 %). Algunas copias están en edificios de la historia a los que no se vuelve, pero esas guías indican que no afectan el 100 %. Abajo están los 16 títulos con ubicación publicada hasta ahora.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ],
+  "tracking": {
+   "total": 27,
+   "totalStatus": "contrastado",
+   "unit": "lecturas"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "relojes",
+   "joyeria"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "10 relojes",
+    "value": "Desbloquea el truco Move Time Forward",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats"
+    ]
+   },
+   {
+    "label": "20 relojes",
+    "value": "Desbloquea el truco Pause Time of Day",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats"
+    ]
+   },
+   {
+    "label": "Total",
+    "value": "No publicado",
+    "status": "pendiente",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-relojes",
+  "slug": "relojes-coleccionables",
+  "name": "Relojes coleccionables",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Encontrar 10 y 20 relojes desbloquea trucos de tiempo; el total no está publicado.",
+  "description": "Las guías de trucos coinciden en que encontrar 10 relojes desbloquea «Move Time Forward» y 20 desbloquea «Pause Time of Day». Ninguna fuente revisada publica el total de relojes ni sus ubicaciones.",
+  "sources": [
+   "gtabase-cheats",
+   "beebom-cheats",
+   "gamertweak-cheats",
+   "playguide-collectibles"
+  ],
+  "tracking": {
+   "total": null,
+   "totalStatus": "pendiente",
+   "unit": "relojes"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "flamencos"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "50 destruidos",
+    "value": "Desbloquea el truco Inflatable Flamingo",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats"
+    ]
+   },
+   {
+    "label": "Total",
+    "value": "No publicado en las fuentes leídas",
+    "status": "pendiente",
+    "sources": [
+     "gtabase-cheats"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-flamencos",
+  "slug": "flamencos-de-cocaina",
+  "name": "Flamencos de cocaína",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Destruir 50 flamencos de cocaína desbloquea el truco del flamenco inflable.",
+  "description": "Las guías de trucos coinciden en que destruir 50 flamencos de cocaína desbloquea el truco «Inflatable Flamingo». El total no aparece en las fuentes leídas.",
+  "sources": [
+   "gtabase-cheats",
+   "beebom-cheats",
+   "gamertweak-cheats"
+  ],
+  "tracking": {
+   "total": null,
+   "totalStatus": "pendiente",
+   "unit": "flamencos"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "vehiculos",
+   "girlypop"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Total",
+    "value": "16",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats",
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Recompensa",
+    "value": "Filtro de pantalla Neon Jungle",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-girlypop",
+  "slug": "vehiculos-girlypop",
+  "name": "Vehículos Girlypop",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "16 vehículos Girlypop; descubrirlos todos desbloquea el filtro «Neon Jungle».",
+  "description": "Las guías de trucos y de coleccionables coinciden en 16 vehículos Girlypop; descubrirlos todos desbloquea el filtro de pantalla «Neon Jungle».",
+  "sources": [
+   "gtabase-cheats",
+   "beebom-cheats",
+   "gamertweak-cheats",
+   "playguide-collectibles"
+  ],
+  "tracking": {
+   "total": 16,
+   "totalStatus": "contrastado",
+   "unit": "vehículos"
+  }
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccion",
+   "saltos",
+   "stunt"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "50 saltos",
+    "value": "Desbloquea el truco Unlimited Nitrous",
+    "status": "contrastado",
+    "sources": [
+     "gtabase-cheats",
+     "beebom-cheats",
+     "gamertweak-cheats"
+    ]
+   },
+   {
+    "label": "Total",
+    "value": "No confirmado",
+    "status": "pendiente",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-saltos",
+  "slug": "saltos-acrobaticos",
+  "name": "Saltos acrobáticos",
+  "category": "coleccionables",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Completar 50 saltos acrobáticos desbloquea el truco de nitro ilimitado.",
+  "description": "Las guías de trucos coinciden en que completar 50 saltos acrobáticos desbloquea «Unlimited Nitrous». El total de saltos no está confirmado en las fuentes leídas.",
+  "sources": [
+   "gtabase-cheats",
+   "beebom-cheats",
+   "gamertweak-cheats",
+   "playguide-collectibles"
+  ],
+  "tracking": {
+   "total": null,
+   "totalStatus": "pendiente",
+   "unit": "saltos"
+  }
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Mesa del lado este de la casa de Jason, Peach Palm Dr, Key Lento, Mariana County.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Mesa del lado este de la casa de Jason, Peach Palm Dr, Key Lento, Mariana County.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 1",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-orca",
+  "slug": "orca",
+  "name": "Orca: A Whole Different Animal",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento. Antes del final del Capítulo 1.",
+  "description": "Ubicación según la fuente: Mesa del lado este de la casa de Jason, Peach Palm Dr, Key Lento, Mariana County. Antes del final del Capítulo 1. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Mesa circular del lado noreste de la casa de Jason, Key Lento.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Mesa circular del lado noreste de la casa de Jason, Key Lento.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 1",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-lethal-by-design",
+  "slug": "lethal-by-design",
+  "name": "Lethal by Design: A Liberty City Memoir",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento. Antes del final del Capítulo 1.",
+  "description": "Ubicación según la fuente: Mesa circular del lado noreste de la casa de Jason, Key Lento. Antes del final del Capítulo 1. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Balcón de la casa de Jason, junto a la zona de ejercicio.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Balcón de la casa de Jason, junto a la zona de ejercicio.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 1",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-body-copy",
+  "slug": "body-copy",
+  "name": "Body Copy: America's Fittest Bodybuilding Magazine",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento. Antes del final del Capítulo 1.",
+  "description": "Ubicación según la fuente: Balcón de la casa de Jason, junto a la zona de ejercicio. Antes del final del Capítulo 1. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Banco de trabajo del cobertizo bajo la casa de Jason.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Banco de trabajo del cobertizo bajo la casa de Jason.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 1",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-off-the-hook",
+  "slug": "off-the-hook",
+  "name": "Off the Hook: America's No. 1 Fishing Magazine",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento. Antes del final del Capítulo 1.",
+  "description": "Ubicación según la fuente: Banco de trabajo del cobertizo bajo la casa de Jason. Antes del final del Capítulo 1. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Cómoda junto a la cama de Jason.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Cómoda junto a la cama de Jason.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 1",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-ashes-of-glory",
+  "slug": "ashes-of-glory",
+  "name": "Ashes of Glory",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento. Antes del final del Capítulo 1.",
+  "description": "Ubicación según la fuente: Cómoda junto a la cama de Jason. Antes del final del Capítulo 1. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Port Gellhorn",
+  "howTo": [
+   "Ve a: Recepción del Starlet Motel, US-183, Port Gellhorn, Kelly County.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.305,
+   "y": 0.358,
+   "precision": "zona",
+   "basis": "Dirección reportada (Starlet Motel, Port Gellhorn); punto sobre el rótulo «Port Gellhorn» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Recepción del Starlet Motel, US-183, Port Gellhorn, Kelly County.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 2",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-help-me-help-you",
+  "slug": "help-me-help-you",
+  "name": "Help Me, Help You, Help Me: The Pyramid of Success",
+  "category": "coleccionables",
+  "region": "port-gellhorn",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Port Gellhorn. Antes del final del Capítulo 2.",
+  "description": "Ubicación según la fuente: Recepción del Starlet Motel, US-183, Port Gellhorn, Kelly County. Antes del final del Capítulo 2. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Port Gellhorn",
+  "howTo": [
+   "Ve a: Cocina del Starlet Motel, en el mostrador junto a la ventana y la radio.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.305,
+   "y": 0.358,
+   "precision": "zona",
+   "basis": "Dirección reportada (Starlet Motel, Port Gellhorn); punto sobre el rótulo «Port Gellhorn» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Cocina del Starlet Motel, en el mostrador junto a la ventana y la radio.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 2",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-children-of-wizard-wang",
+  "slug": "children-of-wizard-wang",
+  "name": "Children of Wizard Wang",
+  "category": "coleccionables",
+  "region": "port-gellhorn",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Port Gellhorn. Antes del final del Capítulo 2.",
+  "description": "Ubicación según la fuente: Cocina del Starlet Motel, en el mostrador junto a la ventana y la radio. Antes del final del Capítulo 2. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Bayside",
+  "howTo": [
+   "Ve a: Bayside Apartments 201, Catalan Blvd, Vice City; mesa frente a la TV.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.7237,
+   "y": 0.472,
+   "precision": "barrio",
+   "basis": "Dirección reportada (Bayside, Vice City); punto sobre el rótulo «Bayside» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Bayside Apartments 201, Catalan Blvd, Vice City; mesa frente a la TV.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 3",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-two-pricks-in-the-bush",
+  "slug": "two-pricks-in-the-bush",
+  "name": "Two Pricks in the Bush",
+  "category": "coleccionables",
+  "region": "vice-city",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Bayside. Antes del final del Capítulo 3.",
+  "description": "Ubicación según la fuente: Bayside Apartments 201, Catalan Blvd, Vice City; mesa frente a la TV. Antes del final del Capítulo 3. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Bayside",
+  "howTo": [
+   "Ve a: Bayside Apartments, mesa pequeña a la derecha del jacuzzi.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.7237,
+   "y": 0.472,
+   "precision": "barrio",
+   "basis": "Dirección reportada (Bayside, Vice City); punto sobre el rótulo «Bayside» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Bayside Apartments, mesa pequeña a la derecha del jacuzzi.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Antes del final del Capítulo 3",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-passion-bc",
+  "slug": "passion-bc",
+  "name": "Passion B.C.",
+  "category": "coleccionables",
+  "region": "vice-city",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Bayside. Antes del final del Capítulo 3.",
+  "description": "Ubicación según la fuente: Bayside Apartments, mesa pequeña a la derecha del jacuzzi. Antes del final del Capítulo 3. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Crosstown",
+  "howTo": [
+   "Ve a: Pasillo del estudio de grabación en el piso superior de Jack of Hearts, Mirimar Dr, Crosstown; mesa junto al teclado.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.698,
+   "y": 0.496,
+   "precision": "barrio",
+   "basis": "Dirección reportada (Crosstown, Vice City); punto sobre el rótulo «Crosstown» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Pasillo del estudio de grabación en el piso superior de Jack of Hearts, Mirimar Dr, Crosstown; mesa junto al teclado.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-high-roller",
+  "slug": "high-roller",
+  "name": "High Roller Magazine",
+  "category": "coleccionables",
+  "region": "vice-city",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Crosstown.",
+  "description": "Ubicación según la fuente: Pasillo del estudio de grabación en el piso superior de Jack of Hearts, Mirimar Dr, Crosstown; mesa junto al teclado. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Oldby Island",
+  "howTo": [
+   "Ve a: Ajax Gym, piso Trauma, Vickery Dr, Oldby Island; mesa de billar junto a los casilleros.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.837,
+   "y": 0.4576,
+   "precision": "barrio",
+   "basis": "Dirección reportada (Oldby Island); punto sobre el rótulo «Oldby Island» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Ajax Gym, piso Trauma, Vickery Dr, Oldby Island; mesa de billar junto a los casilleros.",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   },
+   {
+    "label": "Momento",
+    "value": "Disponible tras la misión «Blood Sweat and Gear»",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-remote-strike",
+  "slug": "remote-strike",
+  "name": "Remote Strike: A Modern Military Memoir",
+  "category": "coleccionables",
+  "region": "vice-city",
+  "status": "contrastado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Oldby Island. Disponible tras la misión «Blood Sweat and Gear».",
+  "description": "Ubicación según la fuente: Ajax Gym, piso Trauma, Vickery Dr, Oldby Island; mesa de billar junto a los casilleros. Disponible tras la misión «Blood Sweat and Gear». Confirmado por una segunda guía.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Mount Kalaga National Park",
+  "howTo": [
+   "Ve a: Bosque al este de Kalaga Reservoir, cerca de Dawson Dam; sube la escalera del mirador donde está el rifle Twin's Laird 350.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Bosque al este de Kalaga Reservoir, cerca de Dawson Dam; sube la escalera del mirador donde está el rifle Twin's Laird 350.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-1159-survivalist",
+  "slug": "1159-survivalist",
+  "name": "11:59 Survivalist Culture",
+  "category": "coleccionables",
+  "region": "mount-kalaga",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Mount Kalaga National Park.",
+  "description": "Ubicación según la fuente: Bosque al este de Kalaga Reservoir, cerca de Dawson Dam; sube la escalera del mirador donde está el rifle Twin's Laird 350. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Moreau",
+  "howTo": [
+   "Ve a: Recepción del Grayson Motel, Rockledge Rd, Moreau, Lummox County; mesa a la derecha.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.516,
+   "y": 0.165,
+   "precision": "zona",
+   "basis": "Dirección reportada (Moreau, Lummox County); punto sobre el rótulo «Moreau» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Recepción del Grayson Motel, Rockledge Rd, Moreau, Lummox County; mesa a la derecha.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-cowboys-prayer",
+  "slug": "cowboys-prayer",
+  "name": "The Cowboy's Prayer Is to Die Young",
+  "category": "coleccionables",
+  "region": "mount-kalaga",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Moreau.",
+  "description": "Ubicación según la fuente: Recepción del Grayson Motel, Rockledge Rd, Moreau, Lummox County; mesa a la derecha. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Casa de fiestas de Dolphin Dr, Key Lento; primera habitación a la izquierda, sobre la cama.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Casa de fiestas de Dolphin Dr, Key Lento; primera habitación a la izquierda, sobre la cama.",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-peche",
+  "slug": "peche",
+  "name": "Pêche Magazine",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "contrastado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento.",
+  "description": "Ubicación según la fuente: Casa de fiestas de Dolphin Dr, Key Lento; primera habitación a la izquierda, sobre la cama. Confirmado por una segunda guía.",
+  "sources": [
+   "pushsquare-mags",
+   "playguide-collectibles",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Casa de playa de Sunset Dr, Key Lento; esquina de la mesa del comedor, subiendo las escaleras.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Casa de playa de Sunset Dr, Key Lento; esquina de la mesa del comedor, subiendo las escaleras.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-trigger-happy",
+  "slug": "trigger-happy",
+  "name": "Trigger Happy",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Key Lento.",
+  "description": "Ubicación según la fuente: Casa de playa de Sunset Dr, Key Lento; esquina de la mesa del comedor, subiendo las escaleras. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Gullet Marsh",
+  "howTo": [
+   "Ve a: Muelle de un complejo de pesca al oeste de Gullet Marsh, Grassrivers; en el suelo frente a una choza con estatua de Bigfoot.",
+   "Interactúa con el objeto para leerlo.",
+   "Marca la ficha como «Encontrado»."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "revista",
+   "libro",
+   "lectura"
+  ],
+  "related": [
+   "col-lecturas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Muelle de un complejo de pesca al oeste de Gullet Marsh, Grassrivers; en el suelo frente a una choza con estatua de Bigfoot.",
+    "status": "reportado",
+    "sources": [
+     "pushsquare-mags"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Revistas, libros y cómics",
+    "status": "contrastado",
+    "sources": [
+     "pushsquare-mags",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-foiled",
+  "slug": "foiled",
+  "name": "Foiled",
+  "category": "coleccionables",
+  "region": "grassrivers",
+  "status": "reportado",
+  "collection": "col-lecturas",
+  "summary": "Lectura coleccionable en Gullet Marsh.",
+  "description": "Ubicación según la fuente: Muelle de un complejo de pesca al oeste de Gullet Marsh, Grassrivers; en el suelo frente a una choza con estatua de Bigfoot. Fuente única: compruébalo en tu partida.",
+  "sources": [
+   "pushsquare-mags",
+   "gta6cm-mags"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Baño de la casa de fiestas de Dolphin Drive, Key Lento.",
+   "Recoge la tarjeta.",
+   "Marca la ficha como «Encontrado» y suma 1 al contador de tarjetas."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "tarjeta",
+   "carta"
+  ],
+  "related": [
+   "col-tarjetas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Baño de la casa de fiestas de Dolphin Drive, Key Lento.",
+    "status": "reportado",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Tarjetas coleccionables",
+    "status": "contrastado",
+    "sources": [
+     "playguide-collectibles",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-tarjeta-lionel-taber",
+  "slug": "tarjeta-lionel-taber",
+  "name": "Tarjeta de Lionel Taber",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-tarjetas",
+  "summary": "Tarjeta coleccionable reportada en Key Lento: Baño de la casa de fiestas de Dolphin Drive, Key Lento.",
+  "description": "Ubicación según una guía: Baño de la casa de fiestas de Dolphin Drive, Key Lento. Fuente única.",
+  "sources": [
+   "playguide-collectibles"
+  ]
+ },
+ {
+  "subzone": "Key Lento",
+  "howTo": [
+   "Ve a: Cerca de la cima de la Badger R&D Tower, Key Lento.",
+   "Recoge la tarjeta.",
+   "Marca la ficha como «Encontrado» y suma 1 al contador de tarjetas."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Dirección reportada por la fuente (Key Lento); punto sobre el rótulo «Key Lento» del mapa oficial, no sobre el edificio."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "coleccionable",
+   "tarjeta",
+   "carta"
+  ],
+  "related": [
+   "col-tarjetas"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicación",
+    "value": "Cerca de la cima de la Badger R&D Tower, Key Lento.",
+    "status": "reportado",
+    "sources": [
+     "playguide-collectibles"
+    ]
+   },
+   {
+    "label": "Colección",
+    "value": "Tarjetas coleccionables",
+    "status": "contrastado",
+    "sources": [
+     "playguide-collectibles",
+     "gta6cm-mags"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "col-tarjeta-thelma",
+  "slug": "tarjeta-thelma",
+  "name": "Tarjeta de Thelma",
+  "category": "coleccionables",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "collection": "col-tarjetas",
+  "summary": "Tarjeta coleccionable reportada en Key Lento: Cerca de la cima de la Badger R&D Tower, Key Lento.",
+  "description": "Ubicación según una guía: Cerca de la cima de la Badger R&D Tower, Key Lento. Fuente única.",
+  "sources": [
+   "playguide-collectibles"
+  ]
  }
 ]

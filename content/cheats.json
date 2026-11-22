@@ -1,0 +1,1424 @@
+{
+ "verifiedAt": "2026-11-22",
+ "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+ "entry": {
+  "ps5": {
+   "label": "PS5 y PS5 Pro",
+   "hold": "L1",
+   "press": "R1",
+   "steps": [
+    "Pulsa ↑ en la cruceta para sacar el teléfono.",
+    "Mantén L1 y pulsa R1.",
+    "Sin soltar, introduce la secuencia con la cruceta."
+   ],
+   "status": "contrastado",
+   "sources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": "Las fuentes hablan de PS5; ninguna distingue la PS5 Pro, que usa el mismo mando DualSense."
+  },
+  "xbox": {
+   "label": "Xbox Series X|S",
+   "hold": "LB",
+   "press": "RB",
+   "steps": [
+    "Pulsa ↑ en la cruceta para sacar el teléfono.",
+    "Mantén LB y pulsa RB.",
+    "Sin soltar, introduce la secuencia con la cruceta."
+   ],
+   "status": "contrastado",
+   "sources": [
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "note": "Las secuencias de la cruceta son las mismas en ambas consolas según las fuentes."
+  }
+ },
+ "rules": [
+  {
+   "label": "Requisito general",
+   "value": "Terminar la historia principal; después, cada truco tiene su propio requisito (Progreso → Trucos).",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ]
+  },
+  {
+   "label": "Guardado",
+   "value": "Usar un truco desactiva el guardado durante esa sesión; lo avanzado después se pierde al salir.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ]
+  },
+  {
+   "label": "Trofeos y logros",
+   "value": "Se bloquean durante la sesión en la que usas un truco.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ]
+  },
+  {
+   "label": "Modo",
+   "value": "Solo para un jugador; no funcionan en línea.",
+   "status": "contrastado",
+   "sources": [
+    "gtabase-cheats",
+    "beebom-cheats"
+   ]
+  },
+  {
+   "label": "Consejo",
+   "value": "Haz un guardado manual antes de usar trucos y vuelve a cargarlo después.",
+   "status": "contrastado",
+   "sources": [
+    "gamertweak-cheats",
+    "vice-cheats"
+   ]
+  },
+  {
+   "label": "Dinero del truco",
+   "value": "Los $250,000 no se conservan en tu partida guardada.",
+   "status": "reportado",
+   "sources": [
+    "vice-cheats"
+   ]
+  },
+  {
+   "label": "Desactivar",
+   "value": "Volver a introducir el código lo cancela.",
+   "status": "reportado",
+   "sources": [
+    "beebom-cheats"
+   ]
+  }
+ ],
+ "cheats": [
+  {
+   "id": "dinero-250k",
+   "name": "$250,000 Money",
+   "category": "jugador",
+   "effect": "Añade $250,000 en la sesión actual.",
+   "sequence": [
+    "up",
+    "right",
+    "down",
+    "left",
+    "up",
+    "left",
+    "down",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Terminar la historia principal.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "borracho",
+   "name": "Drunk",
+   "category": "jugador",
+   "effect": "Tú y tu pareja quedan ebrios.",
+   "sequence": [
+    "up",
+    "left",
+    "right",
+    "up",
+    "up",
+    "left",
+    "right",
+    "up",
+    "left",
+    "right"
+   ],
+   "sequenceStatus": "reportado",
+   "sequenceSources": [
+    "gtabase-cheats"
+   ],
+   "unlock": "Gastar $2,500 en alcohol.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": "Solo GTA BASE publica esta secuencia; VICE (que usa datos de GTA BASE) la marca como no confirmada y Beebom como «TBA»."
+  },
+  {
+   "id": "subir-heat",
+   "name": "Raise Heat Level",
+   "category": "jugador",
+   "effect": "Sube el nivel de «heat» en el mapa.",
+   "sequence": [
+    "left",
+    "down",
+    "right",
+    "down",
+    "up",
+    "down",
+    "up"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Perder un nivel de búsqueda de 3 estrellas 25 veces.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "subir-busqueda",
+   "name": "Raise Wanted Level",
+   "category": "jugador",
+   "effect": "Sube el nivel de búsqueda.",
+   "sequence": [
+    "left",
+    "down",
+    "right",
+    "down",
+    "up",
+    "right",
+    "up"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Perder un nivel de búsqueda de 3 estrellas 50 veces.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": "Gamer Tweak aún la marca como «Not discovered»."
+  },
+  {
+   "id": "focus-ilimitado",
+   "name": "Unlimited Focus",
+   "category": "jugador",
+   "effect": "La barra de Focus no se agota.",
+   "sequence": [
+    "down",
+    "up",
+    "up",
+    "down",
+    "up",
+    "down",
+    "up",
+    "down",
+    "up",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Terminar la historia principal.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "sin-caidas",
+   "name": "No Fall Damage",
+   "category": "jugador",
+   "effect": "Sin daño por caídas.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Sobrevivir 20 caídas libres de 40 pies.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "paracaidas",
+   "name": "Parachute",
+   "category": "jugador",
+   "effect": "Te da un paracaídas.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Hacer 50 saltos en paracaídas o BASE desde 300 pies o más.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "chaleco",
+   "name": "Body Armor",
+   "category": "jugador",
+   "effect": "Te da chaleco antibalas.",
+   "sequence": [
+    "down",
+    "up",
+    "left",
+    "up",
+    "up",
+    "up",
+    "up",
+    "up",
+    "down",
+    "down"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Completar 100 entrenamientos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "reparar",
+   "name": "Repair Vehicle",
+   "category": "jugador",
+   "effect": "Repara el vehículo actual.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Ganar 10 carreras en Gellhorn Raceway, Thrillbilly Mud Club y Boone Speedway.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "nitro",
+   "name": "Unlimited Nitrous",
+   "category": "jugador",
+   "effect": "Nitro y combustible no se agotan.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 50 saltos acrobáticos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "max-municion",
+   "name": "Max Ammo",
+   "category": "combate",
+   "effect": "Llena la munición de todas tus armas.",
+   "sequence": [
+    "down",
+    "up",
+    "right",
+    "down",
+    "left",
+    "left",
+    "up",
+    "up",
+    "down",
+    "left"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Ganar 25 medallas de bronce o mejores en campos de tiro.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats"
+   ],
+   "note": "Gamer Tweak indica que el número de medallas varía entre guías."
+  },
+  {
+   "id": "municion-infinita",
+   "name": "Infinite Ammo",
+   "category": "combate",
+   "effect": "La munición no se agota.",
+   "sequence": [
+    "down",
+    "up",
+    "right",
+    "down",
+    "left",
+    "left",
+    "up",
+    "down",
+    "down",
+    "down"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Ganar 25 medallas de plata o mejores en campos de tiro.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "sin-recarga",
+   "name": "No Reload",
+   "category": "combate",
+   "effect": "Munición infinita sin recargar.",
+   "sequence": [
+    "down",
+    "up",
+    "right",
+    "down",
+    "left",
+    "left",
+    "up",
+    "down",
+    "down",
+    "up"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Ganar 25 medallas de oro en campos de tiro.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "explosivos",
+   "name": "All Explosive Weapons",
+   "category": "combate",
+   "effect": "Te da todas las armas explosivas.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Lanzar 100 granadas.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "incendiaria",
+   "name": "Incendiary Ammo",
+   "category": "combate",
+   "effect": "Munición incendiaria.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Quemar a 100 enemigos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "botellas",
+   "name": "Exploding Bottles",
+   "category": "combate",
+   "effect": "Botellas explosivas.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Lanzar 100 molotov.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "escopeta-explosiva",
+   "name": "Explosive Shotgun",
+   "category": "combate",
+   "effect": "Escopeta explosiva.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Dañar a 100 enemigos con explosivos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hauners-hat",
+   "name": "Hauners H-AT",
+   "category": "combate",
+   "effect": "Te da el lanzacohetes Hauners H-AT.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Destruir 100 vehículos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "attack-force",
+   "name": "Attack Force",
+   "category": "combate",
+   "effect": "Balas y golpes mandan a volar a los objetivos.",
+   "sequence": [
+    "down",
+    "up",
+    "left",
+    "left",
+    "right",
+    "down",
+    "down",
+    "up",
+    "down"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Terminar la historia principal.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "balones",
+   "name": "Exploding Balls",
+   "category": "combate",
+   "effect": "Los balones deportivos explotan.",
+   "sequence": [
+    "down",
+    "up",
+    "left",
+    "left",
+    "right",
+    "down",
+    "down",
+    "up",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Dañar a 20 enemigos con explosivos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "vehicle-force",
+   "name": "Vehicle Force",
+   "category": "combate",
+   "effect": "Los atropellos lanzan por los aires a las personas.",
+   "sequence": [
+    "down",
+    "up",
+    "left",
+    "left",
+    "right",
+    "down",
+    "left",
+    "up",
+    "down"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Matar a 25 enemigos con un vehículo.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-ambulancia",
+   "name": "Interstate Ambulance",
+   "category": "vehiculo",
+   "effect": "Aparece un Interstate Ambulance.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Descubrirla en el menú Progreso.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-airboat",
+   "name": "Airboat 09",
+   "category": "vehiculo",
+   "effect": "Aparece un Airboat 09.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Supervivencia.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-banshee",
+   "name": "Bravado Banshee",
+   "category": "vehiculo",
+   "effect": "Aparece un Bravado Banshee.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Combate.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-bmx",
+   "name": "Tuff BMX",
+   "category": "vehiculo",
+   "effect": "Aparece un Tuff BMX.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Fitness.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-boomazoom",
+   "name": "Maibatsu Boomazoom",
+   "category": "vehiculo",
+   "effect": "Aparece un Maibatsu Boomazoom.",
+   "sequence": [
+    "left",
+    "up",
+    "right",
+    "down",
+    "left",
+    "left",
+    "up",
+    "left"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Completar 5 desafíos de Compras.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-carbon-rs",
+   "name": "Nagasaki Carbon RS",
+   "category": "vehiculo",
+   "effect": "Aparece un Nagasaki Carbon RS.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Exploración.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-dominator-65",
+   "name": "'65 Vapid Dominator",
+   "category": "vehiculo",
+   "effect": "Aparece un '65 Vapid Dominator.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Fitness.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-emerus",
+   "name": "Progen Emerus",
+   "category": "vehiculo",
+   "effect": "Aparece un Progen Emerus.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Vehículos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-flamenco",
+   "name": "Inflatable Flamingo",
+   "category": "vehiculo",
+   "effect": "Aparece un Inflatable Flamingo.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Destruir 50 flamencos de cocaína.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-pumper",
+   "name": "MTL Pumper",
+   "category": "vehiculo",
+   "effect": "Aparece un MTL Pumper.",
+   "sequence": [
+    "left",
+    "up",
+    "right",
+    "down",
+    "left",
+    "right",
+    "right",
+    "up"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Descubrirlo en el menú Progreso.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-taxi",
+   "name": "Vapid Stanier G2 Taxi",
+   "category": "vehiculo",
+   "effect": "Aparece un Vapid Stanier G2 Taxi.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Deportes.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-lazer",
+   "name": "Hauners P-996 Lazer",
+   "category": "vehiculo",
+   "effect": "Aparece un Hauners P-996 Lazer.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-bulldozer",
+   "name": "HVY Bulldozer",
+   "category": "vehiculo",
+   "effect": "Aparece un HVY Bulldozer.",
+   "sequence": [
+    "left",
+    "up",
+    "right",
+    "down",
+    "left",
+    "right",
+    "right",
+    "down"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Descubrirlo en el menú Progreso.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-mallard",
+   "name": "Lapwing Mallard",
+   "category": "vehiculo",
+   "effect": "Aparece un Lapwing Mallard.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Vehículos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-golfer",
+   "name": "Brimstone Golfer",
+   "category": "vehiculo",
+   "effect": "Aparece un Brimstone Golfer.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Deportes.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-rhino",
+   "name": "Hauners Rhino Tank",
+   "category": "vehiculo",
+   "effect": "Aparece un Hauners Rhino Tank.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Supervivencia.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-sanchez",
+   "name": "Maibatsu Sanchez",
+   "category": "vehiculo",
+   "effect": "Aparece un Maibatsu Sanchez.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos Criminales.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-sea-sparrow",
+   "name": "Nagasaki Sea Sparrow",
+   "category": "vehiculo",
+   "effect": "Aparece un Nagasaki Sea Sparrow.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Exploración.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-speeder",
+   "name": "Speeder 700 GT",
+   "category": "vehiculo",
+   "effect": "Aparece un Speeder 700 GT.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 5 desafíos de Combate.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-thrax",
+   "name": "Truffade Thrax",
+   "category": "vehiculo",
+   "effect": "Aparece un Truffade Thrax.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos de Compras.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "veh-zombie-bobber",
+   "name": "Western Zombie Bobber",
+   "category": "vehiculo",
+   "effect": "Aparece un Western Zombie Bobber.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar todos los desafíos Criminales.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "tiempo-adelante",
+   "name": "Move Time Forward",
+   "category": "entorno",
+   "effect": "Adelanta la hora del día.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Encontrar 10 relojes coleccionables.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pausar-tiempo",
+   "name": "Pause Time of Day",
+   "category": "entorno",
+   "effect": "Detiene la hora del día.",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Encontrar 20 relojes coleccionables.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "clima",
+   "name": "Cycle Weather",
+   "category": "entorno",
+   "effect": "Cambia el clima.",
+   "sequence": [
+    "down",
+    "right",
+    "up",
+    "down",
+    "right",
+    "up",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Terminar la historia principal.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-golden-hour",
+   "name": "Golden Hour",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Golden Hour».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Pasar 4 horas tomados de la mano.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-powdered-sugar",
+   "name": "Powdered Sugar",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Powdered Sugar».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Escanear toda la basura espacial con WAiNK.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-pinhole",
+   "name": "Pinhole",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Pinhole».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Despejar 25 operaciones de pandillas con tu pareja.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-neon-jungle",
+   "name": "Neon Jungle",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Neon Jungle».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Descubrir los 16 vehículos Girlypop.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-yesteryear",
+   "name": "Yesteryear",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Yesteryear».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Descubrir el Ridgeway.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-cataclysm",
+   "name": "Cataclysm",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Cataclysm».",
+   "sequence": [
+    "down",
+    "down",
+    "up",
+    "right",
+    "right",
+    "up",
+    "left",
+    "left",
+    "right",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Descubrir el Vamos de Martha en el menú Progreso.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-videotape",
+   "name": "Videotape",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Videotape».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 50 actividades con tu pareja.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-dark-mirror",
+   "name": "Dark Mirror",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Dark Mirror».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Ganar $500,000 vendiendo vehículos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-migraine",
+   "name": "Migraine",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Migraine».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Sobrevivir 6 minutos con 6 estrellas de búsqueda.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-dollhouse",
+   "name": "Dollhouse",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Dollhouse».",
+   "sequence": [
+    "down",
+    "down",
+    "up",
+    "right",
+    "right",
+    "up",
+    "left",
+    "left",
+    "down",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Pasar 8 horas con tu pareja.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-bubblegum",
+   "name": "Bubblegum",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Bubblegum».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Encontrar las 24 tarjetas Vice City Flamingos.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-fast-forward",
+   "name": "Fast Forward",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Fast Forward».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Completar 50 meditaciones.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-fisheye",
+   "name": "Fisheye",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Fisheye».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Pescar 100 peces.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-faded-glory",
+   "name": "Faded Glory",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Faded Glory».",
+   "sequence": [
+    "down",
+    "down",
+    "up",
+    "right",
+    "right",
+    "up",
+    "left",
+    "left",
+    "left",
+    "right"
+   ],
+   "sequenceStatus": "contrastado",
+   "sequenceSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats",
+    "vice-cheats"
+   ],
+   "unlock": "Robar 50 tiendas con tu pareja.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-pixel-art",
+   "name": "Pixel Art",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Pixel Art».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Ganar $250,000 vendiendo coleccionables.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  },
+  {
+   "id": "filtro-hellscape",
+   "name": "Hellscape",
+   "category": "filtro",
+   "effect": "Aplica el filtro de pantalla «Hellscape».",
+   "sequence": null,
+   "sequenceStatus": "desconocida",
+   "sequenceSources": [],
+   "unlock": "Robar 100 vehículos de policía.",
+   "unlockStatus": "contrastado",
+   "unlockSources": [
+    "gtabase-cheats",
+    "beebom-cheats",
+    "gamertweak-cheats"
+   ],
+   "note": ""
+  }
+ ]
+}

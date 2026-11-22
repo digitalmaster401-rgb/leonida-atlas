@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const STATUSES = ['oficial', 'comprobado', 'contrastado', 'reportado', 'pendiente', 'obsoleto'] as const;
-export const CATEGORIES = ['lugares', 'personajes', 'dinero', 'armas', 'vehiculos', 'negocios', 'rutas'] as const;
+export const CATEGORIES = ['lugares', 'personajes', 'dinero', 'armas', 'vehiculos', 'negocios', 'rutas', 'coleccionables'] as const;
 export const REGIONS = ['leonida', 'vice-city', 'leonida-keys', 'grassrivers', 'port-gellhorn', 'ambrosia', 'mount-kalaga'] as const;
 export const MODES = ['historia', 'online', 'sin-confirmar'] as const;
 export const EDITIONS = ['base', 'ultimate', 'vintage'] as const;
@@ -21,6 +21,8 @@ export const sourceSchema = z.object({
   accessedAt: isoDate,
   type: z.enum(['oficial', 'guia', 'comunidad', 'partida']),
   note: z.string(),
+  /** Grupo editorial: fuentes del mismo grupo (p. ej. un medio que reutiliza datos de otro) cuentan como una sola. */
+  group: z.string().optional(),
 });
 
 export const factSchema = z.object({
@@ -83,10 +85,22 @@ export const entrySchema = z
     related: z.array(z.string()),
     money: moneySchema.nullable(),
     facts: z.array(factSchema),
+    /** Colección a la que pertenece un coleccionable (id de otra ficha de la categoría «coleccionables»). */
+    collection: z.string().optional(),
+    /** Seguimiento de una colección: total conocido (o null si no está publicado) y su evidencia. */
+    tracking: z
+      .object({ total: z.number().int().positive().nullable(), totalStatus: statusSchema, unit: z.string().min(2) })
+      .optional(),
   })
   .superRefine((e, ctx) => {
     if (e.money && e.money.grossMax < e.money.grossMin) {
       ctx.addIssue({ code: 'custom', path: ['money', 'grossMax'], message: 'grossMax no puede ser menor que grossMin' });
+    }
+    if (e.tracking && e.category !== 'coleccionables') {
+      ctx.addIssue({ code: 'custom', path: ['tracking'], message: 'Solo las colecciones llevan seguimiento' });
+    }
+    if (e.tracking && e.tracking.total === null && e.tracking.totalStatus !== 'pendiente') {
+      ctx.addIssue({ code: 'custom', path: ['tracking', 'totalStatus'], message: 'Un total desconocido debe marcarse como pendiente' });
     }
     if (e.mapPosition?.precision === 'exacta' && !['oficial', 'comprobado'].includes(e.status)) {
       ctx.addIssue({
@@ -127,6 +141,11 @@ export type Entry = z.infer<typeof entrySchema>;
 export type MediaItem = z.infer<typeof mediaItemSchema>;
 export type Changelog = z.infer<typeof changelogSchema>;
 
+/** Número de grupos editoriales independientes entre las fuentes citadas. */
+export function independentGroups(ids: string[], sources: Pick<Source, 'id' | 'group'>[]): number {
+  return new Set(ids.map((id) => sources.find((s) => s.id === id)?.group ?? id)).size;
+}
+
 /** Valida el conjunto completo: esquema + integridad referencial (fuentes, imágenes, relacionados, slugs únicos). */
 export function validateDataset(
   rawEntries: unknown,
@@ -156,11 +175,13 @@ export function validateDataset(
     for (const s of e.sources) if (!srcIds.has(s)) errors.push(`${e.id}: fuente desconocida «${s}»`);
     for (const f of e.facts) for (const s of f.sources) if (!srcIds.has(s)) errors.push(`${e.id}: dato «${f.label}» cita fuente desconocida «${s}»`);
     for (const f of e.facts) {
-      if (f.status === 'contrastado' && new Set(f.sources).size < 2)
-        errors.push(`${e.id}: dato «${f.label}» marcado como contrastado con menos de dos fuentes`);
+      if (f.status === 'contrastado' && independentGroups(f.sources, sources) < 2)
+        errors.push(`${e.id}: dato «${f.label}» marcado como contrastado con menos de dos fuentes independientes`);
     }
     for (const img of e.images) if (!mediaIds.has(img)) errors.push(`${e.id}: imagen desconocida «${img}»`);
     for (const rel of e.related) if (!ids.has(rel)) errors.push(`${e.id}: relacionado desconocido «${rel}»`);
+    if (e.collection && !entries.some((x) => x.id === e.collection && x.category === 'coleccionables'))
+      errors.push(`${e.id}: colección desconocida «${e.collection}»`);
     if (e.status === 'oficial' && !e.sources.some((s) => sources.find((x) => x.id === s)?.type === 'oficial'))
       errors.push(`${e.id}: marcada como oficial sin fuente oficial`);
   }
