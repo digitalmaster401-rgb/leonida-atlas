@@ -5,14 +5,14 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendiente **1** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **3** · total 63
+Resumen: ✅ implementado y probado **42** · 🟡 parcial **18** · ⬜ pendiente **0** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **3** · total 63
 
 
 ## A. Conservación y proceso
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| A1 | Conservar todo el desarrollo previo; trabajar en rama nueva sin fusionar | ✅ implementado_testeado | rama claude/fase2-trucos-coleccionables-espacio | CI + suite completa | PR #1 fusionado por el propietario; fase 2 en rama nueva y PR nuevo sin fusionar |
+| A1 | Conservar todo el desarrollo previo; trabajar en rama nueva sin fusionar | ✅ implementado_testeado | rama claude/fase3-explorer-mapa | CI + suite completa | PR #1, #2 y #3 fusionados por el propietario; fase 3 en rama nueva y un solo PR sin fusionar |
 | A2 | Matriz de requisitos acumulativos como fuente de verdad | ✅ implementado_testeado | docs/MATRIZ_FUNCIONAL.csv | tests/intel/repo-guards.test.ts | Generada y verificada |
 | A3 | No afirmar pruebas en partida/consola/Safari físico inexistentes | ✅ implementado_testeado | QA_REPORT.md, ATLAS_INTELLIGENCE_QA.md | revisión editorial | Límites declarados |
 | A4 | Confirmación única del propietario antes de fusionar | 🟡 parcial | PR de fase 2 | — | El propietario decide la fusión; Claude no fusiona |
@@ -21,13 +21,13 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B1.1 | Mapa principal sobre cartografía oficial, sin coordenadas inventadas | ✅ implementado_testeado | src/components/MapView.tsx | e2e mapa | Póster oficial; coordenadas medidas sobre rótulos |
-| B1.2 | Zoom/pan con gestos, teclado, botones | ✅ implementado_testeado | MapView | e2e mapa | Pellizco implementado; gesto real Android no probado en dispositivo físico |
+| B1.1 | Mapa principal sobre cartografía oficial, sin coordenadas inventadas | ✅ implementado_testeado | MapView + póster oficial v2 (mapa-oficial-leonida-v2) | tests/mapgeo.test.ts + e2e/fase3.spec.ts | Póster para imprimir 5775×7900; encuadre idéntico al anterior verificado (0 px, escala 1.000); respaldo al póster anterior |
+| B1.2 | Zoom/pan con gestos, teclado, botones | ✅ implementado_testeado | MapView (pellizco, arrastre, rueda, teclado, botones; grupos táctiles) | e2e mapa + fase3 | Pellizco con eventos simulados; sin prueba en dispositivo físico |
 | B1.3 | Pines exactos solo con prueba; aproximados diferenciados | ✅ implementado_testeado | schema mapPosition.precision | tests/data.test.ts | Ningún pin «exacta» |
-| B1.4 | Capas: región, barrio, carretera, agua, interior/exterior, comercios, misiones, coleccionables, glitches | 🟡 parcial | MapLegend (por categoría, incl. coleccionables) | e2e mapa | Capa de coleccionables añadida; faltan capas temáticas (carreteras, agua, interiores) |
-| B1.5 | Clustering y filtros guardados | 🟡 parcial | groupPins | tests unit pendientes | Agrupa pines coincidentes; sin clustering por zoom ni filtros guardados |
+| B1.4 | Capas: región, barrio, carretera, agua, interior/exterior, comercios, misiones, coleccionables, glitches | 🟡 parcial | MapPage: capas por categoría y por precisión; capa de ruta | e2e/fase3.spec.ts | Faltan capas cartográficas (carreteras, agua, interiores): el póster no trae datos vectoriales |
+| B1.5 | Clustering y filtros guardados | ✅ implementado_testeado | src/lib/mapgeo.ts clusterPoints + src/lib/mapprefs.ts | tests/mapgeo.test.ts + e2e/fase3.spec.ts | Agrupación según el zoom en píxeles de pantalla; filtros, póster y agrupación persistentes |
 | B1.6 | Ocultar completados y antiespoilers en mapa | ✅ implementado_testeado | MapPage + PinPanel (settings.hideFound, spoilerLevel) | e2e/fase2.spec.ts | «Ocultar encontrados» compartido con Coleccionables; el panel del punto vela nombres con spoilers |
-| B1.7 | Mis rutas / rutas temáticas sobre el mapa | 🟡 parcial | fichas de rutas | e2e rutas | Rutas como fichas; sin trazado sobre el mapa ni rutas personales |
+| B1.7 | Mis rutas / rutas temáticas sobre el mapa | ✅ implementado_testeado | /mis-rutas + /mapa?ruta= (src/lib/routes.ts) | tests/routes.test.ts + e2e/fase3.spec.ts | Rutas personales con paradas documentadas, orden, objetivos y visitados; líneas solo de orden, sin caminos ni distancias |
 | B1.8 | URL compartible por lugar (/mapa?id=) | ✅ implementado_testeado | MapPage | e2e mapa |  |
 
 ## B2. Dinero
@@ -64,8 +64,8 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B6.1 | Clasificación por tipo, spawns, precios, talleres, garajes | 🟡 parcial | fichas vehículos (7) | tests/data.test.ts | Solo vehículos oficiales; sin spawns documentados |
-| B6.2 | Comparador y lista personal de vehículos conseguidos | 🟡 parcial | Mi espacio (Encontrados/estados) | e2e/fase2.spec.ts | Lista personal con estados; sin comparador de vehículos |
+| B6.1 | Clasificación por tipo, spawns, precios, talleres, garajes | 🟡 parcial | 16 fichas de vehículos con campo vehicle | tests/vehicles.test.ts | 9 vehículos nuevos con registro/venta/rastreador reportados (una sola fuente de origen); ubicaciones reportadas; sin precios de garajes (fuentes bloqueadas) |
+| B6.2 | Comparador y lista personal de vehículos conseguidos | ✅ implementado_testeado | /comparar-vehiculos + garaje (Progress v4) | tests/vehicles.test.ts + e2e/fase3.spec.ts | Comparador de hasta 3 con evidencia por precio y colección personal en Mi espacio |
 
 ## B7. Coleccionables
 
@@ -89,10 +89,10 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B10.1 | Favoritos, completados, notas, progreso local con esquema versionado | ✅ implementado_testeado | src/lib/storage.ts (v3), MyGamePage (/mi-espacio) | tests/storage + e2e | Migración v1→v3 y v2→v3 probada |
-| B10.2 | Exportar/importar JSON con validación y respaldo | ✅ implementado_testeado | ProgressManager | tests/storage + e2e/fase2.spec.ts | Exportar/importar incluye registros, equipamientos y fotos opcionales |
+| B10.1 | Favoritos, completados, notas, progreso local con esquema versionado | ✅ implementado_testeado | src/lib/storage.ts (v4), MyGamePage | tests/storage + e2e | Migraciones v1/v2/v3→v4 probadas |
+| B10.2 | Exportar/importar JSON con validación y respaldo | ✅ implementado_testeado | ProgressManager | tests/storage + e2e | Exportar/importar incluye rutas, garaje y fotos opcionales |
 | B10.3 | Estados Encontrado/Pendiente/No disponible/Revisar, fecha, plataforma, puntuación | ✅ implementado_testeado | MyRecord + CollectiblesPage + storage records | tests/storage + e2e/fase2.spec.ts | Encontrado/Pendiente/Revisar/No disponible, fecha, plataforma y valoración 1–5 |
-| B10.4 | Fotos personales, avatar, diario, rutas, lista para hoy | 🟡 parcial | PhotoGallery (IndexedDB), avatar, lista para hoy | tests/photos.test.ts + e2e/fase2.spec.ts | Fotos, avatar y lista para hoy funcionan; faltan diario y rutas personales |
+| B10.4 | Fotos personales, avatar, diario, rutas, lista para hoy | 🟡 parcial | PhotoGallery, avatar, lista para hoy, rutas personales | tests/photos + tests/routes + e2e | Fotos, avatar, lista para hoy y rutas listos; falta diario |
 | B10.5 | Sincronización multi-dispositivo con cuentas | ⛔ bloqueado | — | — | Requiere infraestructura autorizada (auth/BD) |
 | B10.6 | Compartir ficha sin exponer notas privadas | ✅ implementado_testeado | ShareAction | e2e compartir | Solo comparte URL |
 | B10.7 | Reporte de errores con moderación y antispam | 🟡 parcial | ReportError → GitHub Issues | e2e (enlace) | Moderación = revisión humana del issue; antispam lo aporta GitHub |
@@ -110,7 +110,7 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| B12.1 | Marca original, PWA, offline, accesibilidad AA, SEO | ✅ implementado_testeado | app completa | e2e + axe + Lighthouse |  |
+| B12.1 | Marca original, PWA, offline, accesibilidad AA, SEO | ✅ implementado_testeado | app completa | e2e + axe + Lighthouse | Se corrigió el desbordamiento a 360 px en el mapa y las fichas |
 | B12.2 | Imágenes con derechos registrados, sin marcas de agua | ✅ implementado_testeado | media-manifest.json | tests/data.test.ts |  |
 | B12.3 | Pruebas en Safari/WebKit real | 🟡 parcial | .github/workflows/ci.yml (PW_WEBKIT=1) | e2e en CI con WebKit real + e2e/csp-webkit.spec.ts | WebKit real pasa en GitHub Actions (CSP estricta intacta); sin prueba en iPhone/Safari físico |
 | B12.4 | URL pública real y prueba del enlace compartido en WhatsApp | ⛔ bloqueado | DEPLOY.md | — | Requiere conectar Netlify con la cuenta del propietario |
@@ -119,8 +119,8 @@ Resumen: ✅ implementado y probado **38** · 🟡 parcial **21** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| AX2.1 | Analizar UX pública de vicerepere.com sin copiar | ⬜ pendiente | — | — | Respondió HTTP 200 el 22-nov-2026; análisis pendiente para la fase de mapa/espacio |
-| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Actual: Inicio · Mapa · Dinero · Mi espacio · Menú (Novedades dentro del menú) |
+| AX2.1 | Analizar UX pública de vicerepere.com sin copiar | ✅ implementado_testeado | sources/INVESTIGACION_FASE3.md | revisión editorial | Análisis de usabilidad sin copiar diseño, textos ni datos |
+| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Inferior: Inicio · Mapa · Dinero · Mi espacio · Menú; Mis rutas y Novedades en el menú |
 | AX2.3 | Comunidad: proponer marcadores, votos, reputación, historial | 🟡 parcial | Enviar hallazgo → cola de revisión | tests/intel/submissions.test.ts | Envío y cola real vía GitHub Issues; sin votos ni reputación |
 
 ## ATLAS INTELLIGENCE

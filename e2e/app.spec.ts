@@ -242,6 +242,9 @@ test.describe('LEONIDA ATLAS', () => {
   test('teclado: enlace para saltar al contenido y foco visible', async ({ page }) => {
     test.skip(isMobile(page), 'teclado físico en escritorio');
     await page.goto('/');
+    // espera a que la app esté montada: con la máquina cargada, un Tab antes del montaje no enfoca nada
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Saltar al contenido' })).toBeAttached();
     await page.keyboard.press('Tab');
     const skip = page.getByRole('link', { name: 'Saltar al contenido' });
     await expect(skip).toBeFocused();
