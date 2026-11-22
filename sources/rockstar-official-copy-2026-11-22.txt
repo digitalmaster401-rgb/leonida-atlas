@@ -1,0 +1,661 @@
+===== vi.html
+if (typeof history !== undefined) { history.scrollRestoration = 'manual'; }
+404: This page could not be found.
+This page could not be found.
+Now Available
+Welcome to Leonida
+Launch Trailer
+Vice City, USA.
+Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.
+Featured News
+Grand Theft Auto VI Now Available
+November 19, 2026
+In-Game Radio, Soundtrack, and Score
+Listen to the Official Score and Soundtrack, plus select in-game radio stations.
+Explore More
+Screenshots
+The Launch Gallery
+Get a stunning look inside Leonida with a collection of new screenshots.
+Downloads
+Media \u0026 Artwork
+Download and share official videos, screenshots, and more.
+People \u0026 Places
+Only in Leonida
+Vice City, USA. The darkest side of the sunniest place in America.
+Members on console get optional benefits for Jason and Lucia.
+Explore Benefits
+Pre-Load Grand Theft Auto VI Now
+November 10, 2026
+Explore the Grand Theft Auto VI Launch Gallery
+November 5, 2026
+Corporate
+Cookie Settings
+Cookie Policy
+Do Not Sell or Share My Personal Information
+Merchandise
+Premium apparel, collectibles, and more
+Plays Best On
+Ultimate Edition
+Welcome to Leonida, the state where anything goes. Seize everything this massive world has to offer with the Grand Theft Auto VI: Ultimate Edition, an exclusive collection of premium vehicles, weapons, apparel, and action around every corner.
+Ultimate Edition bonuses are threaded across all aspects of Jason and Lucia’s story, with new items uncovered behind each chapter.
+Buy Add-On
+Digital Add-On
+Featuring a timeless ’55 Vapid Stanier sedan and garage alongside Ocean Beach, decadent outfits and hairstyles for both Jason and Lucia, and an iconic weapon pattern that echoes the excess of the past.
+Get Rockstar Propaganda
+Get the latest game announcements, updates on special events and offers, and much more from Rockstar Games.
+Yes, Subscribe
+Manage Preferences
+Blood and Gore, Intense Violence, Mature Humor, Nudity, Strong Language, Strong Sexual Content, Use of Drugs and Alcohol.
+In-Game Purchases.
+’95 GROTTI CHEETAH
+Grotti's signature mid '90s sports car and ode to Shore Drive, the ’95 Grotti Cheetah is complete with a minimalist, retro-futuristic livery and available to punctuate later-stage action.
+HAWK \u0026 LITTLE MORGAN REVOLVERS
+His and hers versions of this powerful revolver with classic Vice City stylings sourced from the Vercetti Estate, including palm-tree-etched grips, engraved detailing, and high-performance scope.
+Vice City Style
+Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.
+JASON’S SAFEHOUSE VEHICLES
+Switch gears and soak up the sun in an Army fatigue-tinged Dinka Enduro motorcycle or Crest Kayak.
+RIDEOUT CUSTOMS
+Transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings. Only open for business with the Ultimate Edition.
+Hair salon
+SARA'S UNISEX SALON
+Get signature salon styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia. Only open for business with the Ultimate Edition.
+Watercraft
+SHITZU SQUALO
+Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.
+Clothing Store
+Stock 305
+Style various unique and exclusive looks for Jason and Lucia at Stockyard’s premier destination for elevated streetwear. Only open for business with the Ultimate Edition.
+VEHICLE \u0026 GARAGE
+'67 VAPID DOMINATOR BUGGY
+A Mud Club monster offering impressive off-road handling for the backwoods of Mount Kalaga and beyond. Conveniently store it at the Paradise Garage in Watson Bay, which features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+tattoo Shop
+ELECTRIC FANG TATTOO
+Stockyard’s most iconic ink bar, with over 50 signature tattoos for both Jason and Lucia — all designed by the artist collective FAILE. Only open for business with the Ultimate Edition.
+ONE-EYED WILLIE’S
+This mod shop in Lake Leonida specializes in off-road modifications and hand-painted automotive artistry. Only open for business with the Ultimate Edition.
+GOODTIME GEAR
+A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator.
+Gang Compound
+PTT YOUNGIN$ Illegal Goods Store
+Raid the compound of one of Southside Vice City’s loudest and most socially active gangs and escape safely to score some special items and distinct contraband.
+SPECIAL COMMISSION
+Classic Car Collection
+Track down a variety of abandoned classic and work-in-progress project cars and revitalize them to their former glory in this special commission from eccentric collector and local fixer, Wyman.
+Vehicle \u0026 Garage
+’55 Vapid Stanier
+Cruise Shore Drive in this classic sedan and store it in the Shore Court personal garage that's just a stone's throw from the glistening sands of Ocean Beach. It features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+Outfits \u0026 hairstyles
+Dress for excess with Jason’s effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence. Show everyone the world is yours in Lucia’s red sequin mini dress and curls.
+Weapon Pattern
+Channel the Original Kingpin
+Adorn most guns with a tropical pattern inspired by Tommy Vercetti's iconic palm tree button-up.
+An Extended Look
+Trailer 2
+Trailer 1
+An exclusive collection of items threaded across all aspects of Jason and Lucia’s story.
+Learn More
+PERSONALIZED VARIANTS
+Personalized sidearms with detailed engravings for Jason's Girardi ES9 pistol and Lucia's Klose K17 pistol.
+Ganado Retro Build
+Inject some muscle and classic stylings into Jason's well-worn Vapid Ganado low-riding pickup with exclusive mods.
+Purchase this add-on to get unique benefits that flash back to when the neon burned brightest.
+Vice City Collection
+A premium Collector’s Box featuring all the essentials for a good time, inspired by Leonida’s hit TV show, Macca the Gator.
+Macca the Gator Figure
+Stash your valuables in the twist-open base of this figurine of Macca enjoying a smoke and a flamingo blood martini.
+New Era® 9FORTY Snapback Hat
+Look like a local in a New Era® 9FORTY A-Frame snapback hat with Vice City Leonida embellishments, embroidery, and appliques.
+Oakley® Frogskins™ Sunglasses
+Block out the Leonida sun with a pair of matte black Oakley® Frogskins™ sunglasses, featuring Prizm Sapphire lenses and a Vice City pink GTAVI logo.
+Leonida Keys Crossbody Bag
+Stow all your essentials in a ripstop crossbody bag with patterned black and pink lining, woven patches, and a custom debossed YKK zipper pull.
+Macca the Gator Magnetic Mirror
+Reflect on your life choices in this electroplated pink glass mirror. Use as a tray or hang as artwork with two large rear-mounted magnets.
+Stay sharp with a metallic razor-blade-style keychain featuring embossed GTAVI and Vice City logos.
+VICE CITY COLLECTIBLE SWIZZLE SPOON
+Stir things up with a decorative spoon featuring a debossed enamel Vice City logo and a Rockstar Games logo tip.
+Chunkee the Manatee Shot Glass
+Knock one back with this shot glass featuring Chunkee the Manatee on the front and a laser-etched Rockstar Games logo on the bottom.
+Leonida Keys Sticker Pack in Stash Bag
+Slap a little Leonida on laptops, water bottles, and anywhere else your heart desires with nine crack-and-peel vinyl stickers in a stash bag.
+Double-Sided Souvenir Poster with Map of Leonida
+An illustrated Vice City Leonida poster featuring characters from the hit Leonida TV show Macca the Gator on the front. Plan a road trip to every corner of the Goodtime State with a full view of the Leonida map featured on the back.
+Leonida Keys Enamel Pin Set in Metal Tin
+Add Vice City flair anywhere with nine enamel pins in a custom tin.
+Collector’s Box
+The Vice City Collection
+Explore Now
+Video Player
+Catch up on the latest videos from Rockstar Games
+Grand Theft Auto VI: Out Now
+Experience the biggest, most immersive evolution of the series yet. Grand Theft Auto VI is now available worldwide for PlayStation 5 and XBOX Series X|S.
+Grand Theft Auto VI Launch Trailer
+October 15, 2026
+Check out the Launch Trailer, featuring the debut of “Flower in a Hurricane” from original score composers Justice feat. Tame Impala, SZA, and King Gizzard \u0026 The Lizard Wizard.
+Grand Theft Auto VI: An Extended Look
+August 27, 2026
+Captured entirely from in-game footage on the PlayStation 5, this extended look at Grand Theft Auto VI showcases the biggest, most immersive evolution of the series yet.
+Grand Theft Auto VI Trailer 2
+May 6, 2025
+Grand Theft Auto VI Trailer 1
+December 4, 2023
+Watch More
+Now Playing
+Skip to Main Content
+Edition Comparison
+Compare the benefits across different editions of GTA VI
+Navigation menu
+Use the navigation menu to directly navigate sections of the page, view trailers, or access media.
+PlayStation 5
+Grand Theft Auto VI
+Only In Leonida
+Explore All
+Vice City
+Leonida Keys
+Grassrivers
+Port Gellhorn
+Mount Kalaga
+Jason Duval
+Lucia Caminos
+Cal Hampton
+Boobie Ike
+Xbox Series X|S
+Dre'Quan Priest
+Real Dimez
+Raul Bautista
+Brian Heder
+Choose Your Edition
+Standard Edition
+Digital or Code in Box
+Get the standard edition of Grand Theft Auto VI.
+Choose Your Add-On
+Ultimate Edition Upgrade
+Vintage Vice City Pack
+Upgrade the standard edition with an exclusive collection of items threaded across Jason and Lucia’s story.
+Flash back to when the neon burned brightest with the Vintage Vice City pack.
+’95 Grotti Cheetah
+Hawk \u0026 Little Morgan Revolvers
+Personalized Weapon Variants
+Jason’s Safehouse Vehicles
+Rideout Customs Mod Shop
+Sara’s Unisex Salon
+Shitzu Squalo
+Stock 305 Clothing Store
+’67 Vapid Dominator Buggy
+Electric Fang Tattoo Parlor
+One-Eyed Willie’s Mod Shop
+Goodtime Gear
+PTT Youngin$ Illegal Goods Store
+'55 Vapid Stanier and Personal Garage
+Outfits \u0026 Hairstyles
+Accessibility configuration
+Use the accessibility options to define if you want to minimize animations, motion effects, and visual movement, adjusting system performance.
+Enables full-motion experience with rich animations, dynamic transitions, and immersive visual effects.
+Minimizes animations, motion effects, and visual movement for improved performance.
+This Edition Includes
+This Add-On Includes
+Personalized sidearms with detailed engravings for Jason’s Girardi ES9 pistol and Lucia’s Klose K17 pistol.
+Inject some muscle and classic stylings into Jason’s well-worn Vapid Ganado low-riding pickup with exclusive mods.
+Transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.
+A Mud Club monster offering impressive offroad handling for the backwoods of Mount Kalaga and beyond. Conveniently store it at the Paradise Garage in Watson Bay which features a weapon locker, plus a secure place to deposit stolen goods to be fenced.
+Cruise Shore Drive in this classic sedan and store it in the Shore Court personal garage that’s just a stone’s throw from the glistening sands of Ocean Beach. It features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+Adorn most guns with a tropical pattern inspired by Tommy Vercetti’s iconic palm tree button-up.
+Code in Box
+Grand Theft Auto VI - Rockstar Games
+===== oil.html
+if (typeof history !== undefined) { history.scrollRestoration = 'manual'; }
+404: This page could not be found.
+This page could not be found.
+if (typeof history
+When the sun fades and the neon glows, everyone has something to gain — and more to lose.
+Jason Duval
+Jason wants an easy life, but things just keep getting harder.
+Jason grew up around grifters and crooks. After a stint in the Army trying to shake off his troubled teens, he found himself in the Keys doing what he knows best, working for local drug runners. It might be time to try something new.
+Lucia Caminos
+Lucia’s father taught her to fight as soon as she could walk.
+Life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary. Sheer luck got her out. Lucia’s learned her lesson — only smart moves from here.
+Only in Leonida
+Home to the neon-soaked streets of Vice City and beyond.
+Cal Hampton
+What if everything on the internet was true?
+Jason’s friend and a fellow associate of Brian’s, Cal feels safest hanging at home, snooping on Coast Guard comms with a few beers and some private browser tabs open.
+Tour a few of the must-see destinations across the sunshine state.
+Explore Vice City
+Everything in Excess
+We're a long way from the '80s, but Vice City is still the sun and fun capital of America.
+The glamour, hustle, and greed of America captured in a single city. Each neighborhood has something to offer, from the pastel art deco hotels and bright white sands of Ocean Beach, to the bustling panaderías of Little Cuba and the bootleg brands of the Tisha-Wocka flea market, out to the VC Port, the cruise ship capital of the world.
+Boobie Ike
+It's all about heart — the Jack of Hearts.
+Boobie is a local Vice City legend — and acts like it. One of the few to transform his time in the streets into a legitimate empire spanning real estate, a strip club, and a recording studio — Boobie's all smiles until it's time to talk business.
+Explore Leonida Keys
+Gateway to Paradise
+The dress code is casual, the bars are loaded.
+Life in this tropical archipelago isn’t flashy but it’s easy. Get your buzz on and pull up a deck chair but look out — you are right on the doorstep of some of the most beautiful and dangerous waters in all of America.
+Dre'Quan Priest
+Only Raw... Records
+Dre'Quan was always more of a hustler than a gangster. Even when he was dealing on the streets to make ends meet, breaking into music was the goal.
+Explore Grassrivers
+Welcome to the Wetlands
+The untamable jewel of Leonida’s crown.
+You never know what lies beneath the surface of this primordial expanse. The gators may be the most famous attraction, but there are far deadlier predators and weirder discoveries among the mangroves.
+Real Dimez
+Viral videos. Viral hooks.
+Bae-Luxe and Roxy aka Real Dimez have been friends since high school — girls with the savvy to turn their time shaking down local dealers into cold, hard cash via spicy rap tracks and a relentless social media presence.
+Explore Port Gellhorn
+Live Hard
+This is Leonida’s forgotten coast.
+Cheap motels, shut-down attractions, and empty strip malls won’t bring the tourists back, but there’s a new economy in this once-popular vacation spot. It’s fueled by malt liquor, painkillers, and truck stop energy drinks. Jump on a dirt bike and hold onto your wallet.
+Raul Bautista
+Experience counts.
+Confidence, charm, and cunning — Raul’s a seasoned bank robber always on the hunt for talent ready to take the risks that bring the biggest rewards.
+Life is full of surprises, my friend. I think we'd all be wise to remember that.
+Explore Ambrosia
+The battle for the health and wealth of Leonida begins here.
+In the heart of Leonida, American industry and old school values still reign supreme — whatever the cost. The Allied Crystal sugar refinery provides the jobs, while the local biker gang provides almost everything else.
+Brian Heder
+Nothing better than a Mudslide at sunset.
+Brian's a classic drug runner from the golden age of smuggling in the Keys. Still moving product through his boat yard with his third wife, Lori, Brian's been around long enough to let others do his dirty work.
+Explore Mount Kalaga
+Wild, Wild Country
+Room to breathe on the state's northern fringes.
+A national landmark up against the state’s northern border, Mount Kalaga offers prime hunting, fishing, and off-road trails. In the lush surrounding backwoods, hillbilly mystics and paranoid radicals live far from the prying eyes of the government.
+If anything happens, I'm right behind you.
+Another day in paradise, right?
+Meeting Lucia could be the best or worst thing to ever happen to him. Jason knows how he'd like it to turn out but right now, it's hard to tell.
+More than anything, Lucia wants the good life her mom has dreamed of since their days in Liberty City — but instead of half-baked fantasies, Lucia is prepared to take matters into her own hands.
+The only thing that matters is who you know and what you got.
+Fresh out of prison and ready to change the odds in her favor, Lucia’s committed to her plan — no matter what it takes.
+A life with Jason could be her way out.
+There are way too many birds flying around in perfect formation.
+The psychopaths are in charge. Get used to it.
+Cal is at the low tide of America and happy there. Casual paranoia loves company, but his friend Jason has bigger plans.
+The club money pay for the studio, and the drug money pay for it all.
+Top quality cuts.
+Boobie might seem like he's just out for himself, but it's his partnership with the young aspiring music mogul Dre'Quan for Only Raw Records that he's most invested in — now they just need a hit.
+Dancers are like my A\u0026Rs. If the record's a hit, DJs gonna be spinnin' it.
+You're with the label now.
+Now that he's signed the Real Dimez, Dre'Quan's days of booking acts into Boobie's strip club might be numbered as he sets his sights on the Vice City scene.
+All my dimes in this club. Meet my twin, make it a dub.
+One hit away from fame.
+An early hit single with local rapper DWNPLY took Real Dimez to new heights. Now, after five years and a whole lot of trouble, they’re signed to Only Raw Records, hoping lightning can strike twice.
+A professional adapts.
+Raul's recklessness raises the stakes with every score. Sooner or later, his crew will have to double down or pul
+Raul's recklessness raises the stakes with every score. Sooner or later, his crew will have to double down or pull their chips from the table.
+I hauled so much grass in that plane, I could make the state of Leonida levitate.
+Looks like a Leonida beach bum — moves like a great white shark.
+Brian’s letting Jason live rent-free at one of his properties — so long as he helps with local shakedowns, and stops by for Lori’s sangria once in a while.
+Available
+Corporate
+Cookie Settings
+Cookie Policy
+Do Not Sell or Share My Personal Information
+Get Rockstar Propaganda
+Get the latest game announcements, updates on special events and offers, and much more from Rockstar Games.
+Yes, Subscribe
+Manage Preferences
+Blood and Gore, Intense Violence, Mature Humor, Nudity, Strong Language, Strong Sexual Content, Use of Drugs and Alcohol.
+In-Game Purchases.
+Video Player
+Catch up on the latest videos from Rockstar Games
+Grand Theft Auto VI: Out Now
+November 19, 2026
+Experience the biggest, most immersive evolution of the series yet. Grand Theft Auto VI is now available worldwide for PlayStation 5 and XBOX Series X|S.
+Grand Theft Auto VI Launch Trailer
+October 15, 2026
+Check out the Launch Trailer, featuring the debut of “Flower in a Hurricane” from original score composers Justice feat. Tame Impala, SZA, and King Gizzard \u0026 The Lizard Wizard.
+Grand Theft Auto VI: An Extended Look
+August 27, 2026
+Captured entirely from in-game footage on the PlayStation 5, this extended look at Grand Theft Auto VI showcases the biggest, most immersive evolution of the series yet.
+Grand Theft Auto VI Trailer 2
+May 6, 2025
+Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.
+Grand Theft Auto VI Trailer 1
+December 4, 2023
+Watch More
+Now Playing
+Skip to Main Content
+Edition Comparison
+Compare the benefits across different editions of GTA VI
+Navigation menu
+Use the navigation menu to directly navigate sections of the page, view trailers, or access media.
+Now Available
+Welcome to Leonida
+PlayStation 5
+Plays Best On
+Grand Theft Auto VI
+Ultimate Edition
+Only In Leonida
+Explore All
+Vice City
+Leonida Keys
+Grassrivers
+Port Gellhorn
+Mount Kalaga
+Xbox Series X|S
+Screenshots
+Choose Your Edition
+Standard Edition
+Digital or Code in Box
+An exclusive collection of items threaded across all aspects of Jason and Lucia’s story.
+Get the standard edition of Grand Theft Auto VI.
+Choose Your Add-On
+Ultimate Edition Upgrade
+Vintage Vice City Pack
+Upgrade the standard edition with an exclusive collection of items threaded across Jason and Lucia’s story.
+Flash back to when the neon burned brightest with the Vintage Vice City pack.
+’95 Grotti Cheetah
+Hawk \u0026 Little Morgan Revolvers
+Personalized Weapon Variants
+Vice City Style
+Jason’s Safehouse Vehicles
+Ganado Retro Build
+Rideout Customs Mod Shop
+Sara’s Unisex Salon
+Shitzu Squalo
+Stock 305 Clothing Store
+’67 Vapid Dominator Buggy
+Electric Fang Tattoo Parlor
+One-Eyed Willie’s Mod Shop
+Goodtime Gear
+PTT Youngin$ Illegal Goods Store
+Classic Car Collection
+'55 Vapid Stanier and Personal Garage
+Outfits \u0026 Hairstyles
+Weapon Pattern
+Accessibility configuration
+Use the accessibility options to define if you want to minimize animations, motion effects, and visual movement, adjusting system performance.
+Enables full-motion experience with rich animations, dynamic transitions, and immersive visual effects.
+Minimizes animations, motion effects, and visual movement for improved performance.
+This Edition Includes
+Grotti's signature mid '90s sports car and ode to Shore Drive, the ’95 Grotti Cheetah is complete with a minimalist, retro-futuristic livery and available to punctuate later-stage action.
+His and hers versions of this powerful revolver with classic Vice City stylings sourced from the Vercetti Estate, including palm-tree-etched grips, engraved detailing, and high-performance scope.
+This Add-On Includes
+Personalized sidearms with detailed engravings for Jason’s Girardi ES9 pistol and Lucia’s Klose K17 pistol.
+Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.
+Digital Add-On
+Switch gears and soak up the sun in an Army fatigue-tinged Dinka Enduro motorcycle or Crest Kayak.
+Inject some muscle and classic stylings into Jason’s well-worn Vapid Ganado low-riding pickup with exclusive mods.
+Transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.
+Get signature salon styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia. Only open for business with the Ultimate Edition.
+Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.
+Style various unique and exclusive looks for Jason and Lucia at Stockyard’s premier destination for elevated streetwear. Only open for business with the Ultimate Edition.
+A Mud Club monster offering impressive offroad handling for the backwoods of Mount Kalaga and beyond. Conveniently store it at the Paradise Garage in Watson Bay which features a weapon locker, plus a secure place to deposit stolen goods to be fenced.
+Stockyard’s most iconic ink bar, with over 50 signature tattoos for both Jason and Lucia — all designed by the artist collective FAILE. Only open for business with the Ultimate Edition.
+This mod shop in Lake Leonida specializes in off-road modifications and hand-painted automotive artistry. Only open for business with the Ultimate Edition.
+A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator.
+Raid the compound of one of Southside Vice City’s loudest and most socially active gangs and escape safely to score some special items and distinct contraband.
+Track down a variety of abandoned classic and work-in-progress project cars and revitalize them to their former glory in this special commission from eccentric collector and local fixer, Wyman.
+Cruise Shore Drive in this classic sedan and store it in the Shore Court personal garage that’s just a stone’s throw from the glistening sands of Ocean Beach. It features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+Dress for excess with Jason’s effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence. Show everyone the world is yours in Lucia’s red sequin mini dress and curls.
+Adorn most guns with a tropical pattern inspired by Tommy Vercetti’s iconic palm tree button-up.
+Code in Box
+Grand Theft Auto VI - Rockstar Games
+===== page.html
+404: This page could not be found.
+This page could not be found.
+Screenshots
+Video Player
+Catch up on the latest videos from Rockstar Games
+Grand Theft Auto VI: Out Now
+November 19, 2026
+Experience the biggest, most immersive evolution of the series yet. Grand Theft Auto VI is now available worldwide for PlayStation 5 and XBOX Series X|S.
+Grand Theft Auto VI Launch Trailer
+October 15, 2026
+Check out the Launch Trailer, featuring the debut of “Flower in a Hurricane” from original score composers Justice feat. Tame Impala, SZA, and King Gizzard \u0026 The Lizard Wizard.
+Grand Theft Auto VI: An Extended Look
+August 27, 2026
+Captured entirely from in-game footage on the PlayStation 5, this extended look at Grand Theft Auto VI showcases the biggest, most immersive evolution of the series yet.
+Grand Theft Auto VI Trailer 2
+May 6, 2025
+Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.
+Grand Theft Auto VI Trailer 1
+December 4, 2023
+Watch More
+Now Playing
+Skip to Main Content
+Edition Comparison
+Compare the benefits across different editions of GTA VI
+Navigation menu
+Use the navigation menu to directly navigate sections of the page, view trailers, or access media.
+Now Available
+Welcome to Leonida
+PlayStation 5
+Plays Best On
+Grand Theft Auto VI
+Ultimate Edition
+Only in Leonida
+Only In Leonida
+Explore All
+Vice City
+Leonida Keys
+Grassrivers
+Port Gellhorn
+Mount Kalaga
+Jason Duval
+Lucia Caminos
+Cal Hampton
+Boobie Ike
+Xbox Series X|S
+Dre'Quan Priest
+Real Dimez
+Raul Bautista
+Brian Heder
+Choose Your Edition
+Standard Edition
+Digital or Code in Box
+An exclusive collection of items threaded across all aspects of Jason and Lucia’s story.
+Get the standard edition of Grand Theft Auto VI.
+Choose Your Add-On
+Ultimate Edition Upgrade
+Vintage Vice City Pack
+Upgrade the standard edition with an exclusive collection of items threaded across Jason and Lucia’s story.
+Flash back to when the neon burned brightest with the Vintage Vice City pack.
+’95 Grotti Cheetah
+Hawk \u0026 Little Morgan Revolvers
+Personalized Weapon Variants
+Vice City Style
+Jason’s Safehouse Vehicles
+Ganado Retro Build
+Rideout Customs Mod Shop
+Sara’s Unisex Salon
+Shitzu Squalo
+Stock 305 Clothing Store
+’67 Vapid Dominator Buggy
+Electric Fang Tattoo Parlor
+One-Eyed Willie’s Mod Shop
+Goodtime Gear
+PTT Youngin$ Illegal Goods Store
+Classic Car Collection
+'55 Vapid Stanier and Personal Garage
+Outfits \u0026 Hairstyles
+Weapon Pattern
+Accessibility configuration
+Use the accessibility options to define if you want to minimize animations, motion effects, and visual movement, adjusting system performance.
+Enables full-motion experience with rich animations, dynamic transitions, and immersive visual effects.
+Minimizes animations, motion effects, and visual movement for improved performance.
+This Edition Includes
+Grotti's signature mid '90s sports car and ode to Shore Drive, the ’95 Grotti Cheetah is complete with a minimalist, retro-futuristic livery and available to punctuate later-stage action.
+His and hers versions of this powerful revolver with classic Vice City stylings sourced from the Vercetti Estate, including palm-tree-etched grips, engraved detailing, and high-performance scope.
+This Add-On Includes
+Personalized sidearms with detailed engravings for Jason’s Girardi ES9 pistol and Lucia’s Klose K17 pistol.
+Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.
+Digital Add-On
+Switch gears and soak up the sun in an Army fatigue-tinged Dinka Enduro motorcycle or Crest Kayak.
+Inject some muscle and classic stylings into Jason’s well-worn Vapid Ganado low-riding pickup with exclusive mods.
+Transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.
+Get signature salon styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia. Only open for business with the Ultimate Edition.
+Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.
+Style various unique and exclusive looks for Jason and Lucia at Stockyard’s premier destination for elevated streetwear. Only open for business with the Ultimate Edition.
+A Mud Club monster offering impressive offroad handling for the backwoods of Mount Kalaga and beyond. Conveniently store it at the Paradise Garage in Watson Bay which features a weapon locker, plus a secure place to deposit stolen goods to be fenced.
+Stockyard’s most iconic ink bar, with over 50 signature tattoos for both Jason and Lucia — all designed by the artist collective FAILE. Only open for business with the Ultimate Edition.
+This mod shop in Lake Leonida specializes in off-road modifications and hand-painted automotive artistry. Only open for business with the Ultimate Edition.
+A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator.
+Raid the compound of one of Southside Vice City’s loudest and most socially active gangs and escape safely to score some special items and distinct contraband.
+Track down a variety of abandoned classic and work-in-progress project cars and revitalize them to their former glory in this special commission from eccentric collector and local fixer, Wyman.
+Cruise Shore Drive in this classic sedan and store it in the Shore Court personal garage that’s just a stone’s throw from the glistening sands of Ocean Beach. It features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+Dress for excess with Jason’s effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence. Show everyone the world is yours in Lucia’s red sequin mini dress and curls.
+Adorn most guns with a tropical pattern inspired by Tommy Vercetti’s iconic palm tree button-up.
+Code in Box
+Download All
+Leonida Map \u0026 Cover Art Poster
+Get print-ready formats of the official game map and cover art poster.
+View Options
+Artwork \u0026 Wallpapers
+Please Verify Your Age
+You may not view this content at this time
+Select a variant
+1 variant
+Ultimate Edition 02
+Ultimate Edition Benefits
+’95 Grotti Cheetah 01
+Hawk \u0026 Little Morgan Revolvers 01
+Vintage Vice City Pack 01
+’55 Vapid Stanier 01
+Vintage Vice City Outfits and Hairstyles 03
+Official Cover Art Animation
+Jason Duval Video Clip
+Lucia Caminos Video Clip
+Jason and Lucia 14
+Lucia Caminos 12
+Vice City 27
+Jason and Lucia Rooftop
+6 variants
+Jason and Lucia Lock and Load
+The Album Cover Art
+3 variants
+Corporate
+Cookie Settings
+Cookie Policy
+Do Not Sell or Share My Personal Information
+Get Rockstar Propa
+Get the latest game announcements, updates on special events and offers, and much more from Rockstar Games.
+Yes, Subscribe
+Manage Preferences
+Blood and Gore, Intense Violence, Mature Humor, Nudity, Strong Language, Strong Sexual Content, Use of Drugs and Alcohol.
+In-Game Purchases.
+Grand Theft Auto VI - Rockstar Games
+===== gallery.html
+404: This page could not be found.
+This page could not be found.
+Explore Vice City and beyond through new screenshots.
+Explore More
+Corporate
+Cookie Settings
+Cookie Policy
+Do Not Sell or Share My Personal Information
+Downloads
+Media \u0026 Artwork
+Download and share official videos, screenshots, and more.
+People \u0026 Places
+Only in Leonida
+Vice City, USA. The darkest side of the sunniest place in America.
+Get Rockstar Propaganda
+Get the latest game announcements, updates on special events and offers, and much more from Rockstar Games.
+Yes, Subscribe
+Manage Preferences
+Blood and Gore, Intense Violence, Mature Humor, Nudity, Strong Language, Strong Sexual Content, Use of Drugs and Alcohol.
+In-Game Purchases.
+Video Player
+Catch up on the latest videos from Rockstar Games
+Grand Theft Auto VI: Out Now
+November 19, 2026
+Experience the biggest, most immersive evolution of the series yet. Grand Theft Auto VI is now available worldwide for PlayStation 5 and XBOX Series X|S.
+Grand Theft Auto VI Launch Trailer
+October 15, 2026
+Check out the Launch Trailer, featuring the debut of “Flower in a Hurricane” from original score composers Justice feat. Tame Impala, SZA, and King Gizzard \u0026 The Lizard Wizard.
+Grand Theft Auto VI: An Extended Look
+August 27, 2026
+Captured entirely from in-game footage on the PlayStation 5, this extended look at Grand Theft Auto VI showcases the biggest, most immersive evolution of the series yet.
+Grand Theft Auto VI Trailer 2
+May 6, 2025
+Jason and Lucia have always known the deck is stacked against them. But when an easy score goes wrong, they find themselves on the darkest side of the sunniest place in America, in the middle of a criminal conspiracy stretching across the state of Leonida — forced to rely on each other more than ever if they want to make it out alive.
+Grand Theft Auto VI Trailer 1
+December 4, 2023
+Watch More
+Now Playing
+Skip to Main Content
+Edition Comparison
+Compare the benefits across different editions of GTA VI
+Navigation menu
+Use the navigation menu to directly navigate sections of the page, view trailers, or access media.
+Now Available
+Welcome to Leonida
+PlayStation 5
+Plays Best On
+Grand Theft Auto VI
+Ultimate Edition
+Only In Leonida
+Explore All
+Vice City
+Leonida Keys
+Grassrivers
+Port Gellhorn
+Mount Kalaga
+Jason Duval
+Lucia Caminos
+Cal Hampton
+Boobie Ike
+Xbox Series X|S
+Dre'Quan Priest
+Real Dimez
+Raul Bautista
+Brian Heder
+Screenshots
+Choose Your Edition
+Standard Edition
+Digital or Code in Box
+An exclusive collection of items threaded across all aspects of Jason and Lucia’s story.
+Get the standard edition of Grand Theft Auto VI.
+Choose Your Add-On
+Ultimate Edition Upgrade
+Vintage Vice City Pack
+Upgrade the standard edition with an exclusive collection of items threaded across Jason and Lucia’s story.
+Flash back to when the neon burned brightest with the Vintage Vice City pack.
+’95 Grotti Cheetah
+Hawk \u0026 Little Morgan Revolvers
+Personalized Weapon Variants
+Vice City Style
+Jason’s Safehouse Vehicles
+Ganado Retro Build
+Rideout Customs Mod Shop
+Sara’s Unisex Salon
+Shitzu Squalo
+Stock 305 Clothing Store
+’67 Vapid Dominator Buggy
+Electric Fang Tattoo Parlor
+One-Eyed Willie’s Mod Shop
+Goodtime Gear
+PTT Youngin$ Illegal Goods Store
+Classic Car Collection
+'55 Vapid Stanier and Personal Garage
+Outfits \u0026 Hairstyles
+Weapon Pattern
+Accessibility configuration
+Use the accessibility options to define if you want to minimize animations, motion effects, and visual movement, adjusting system performance.
+Enables full-motion experience with rich animations, dynamic transitions, and immersive visual effects.
+Minimizes animations, motion effects, and visual movement for improved performance.
+This Edition Includes
+Grotti's signature mid '90s sports car and ode to Shore Drive, the ’95 Grotti Cheetah is complete with a minimalist, retro-futuristic livery and available to punctuate later-stage action.
+His and hers versions of this powerful revolver with classic Vice City stylings sourced from the Vercetti Estate, including palm-tree-etched grips, engraved detailing, and high-performance scope.
+This Add-On Includes
+Personalized sidearms with detailed engravings for Jason’s Girardi ES9 pistol and Lucia’s Klose K17 pistol.
+Whether poolside or side by side, Jason and Lucia can look the part with exclusive outfits, tattoos, and more.
+Digital Add-On
+Switch gears and soak up the sun in an Army fatigue-tinged Dinka Enduro motorcycle or Crest Kayak.
+Inject some muscle and classic stylings into Jason’s well-worn Vapid Ganado low-riding pickup with exclusive mods.
+Transform vanilla vehicles into magnificent works of art with detailed interiors, exquisite rims, and donk stylings.
+Get signature salon styles for both Jason and Lucia, including facial hair for Jason and makeup and nails for Lucia. Only open for business with the Ultimate Edition.
+Perfect for casting in Gambit Bay and reeling in catches of all sorts, this gradient pink and blue Squalo docked at Washington Beach is made open-ocean-ready with an explosives-laden weapons crate.
+Style various unique and exclusive looks for Jason and Lucia at Stockyard’s premier destination for elevated streetwear. Only open for business with the Ultimate Edition.
+A Mud Club monster offering impressive offroad handling for the backwoods of Mount Kalaga and beyond. Conveniently store it at the Paradise Garage in Watson Bay which features a weapon locker, plus a secure place to deposit stolen goods to be fenced.
+Stockyard’s most iconic ink bar, with over 50 signature tattoos for both Jason and Lucia — all designed by the artist collective FAILE. Only open for business with the Ultimate Edition.
+This mod shop in Lake Leonida specializes in off-road modifications and hand-painted automotive artistry. Only open for business with the Ultimate Edition.
+A capsule collection of apparel and accessories inspired by the Goodtime State’s hit TV show character, Macca the Gator.
+Raid the compound of one of Southside Vice City’s loudest and most socially active gangs and escape safely to score some special items and distinct contraband.
+Track down a variety of abandoned classic and work-in-progress project cars and revitalize them to their former glory in this special commission from eccentric collector and local fixer, Wyman.
+Cruise Shore Drive in this classic sedan and store it in the Shore Court personal garage that’s just a stone’s throw from the glistening sands of Ocean Beach. It features a weapon locker plus a secure place to deposit stolen goods to be fenced.
+Dress for excess with Jason’s effortlessly chic linen suit in vintage pastel, complemented by the cut and coif of the decade of decadence. Show everyone the world is yours in Lucia’s red sequin mini dress and curls.
+Adorn most guns with a tropical pattern inspired by Tommy Vercetti’s iconic palm tree button-up.
+Code in Box
+Grand Theft Auto VI - Rockstar Games

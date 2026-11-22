@@ -1,0 +1,488 @@
+[
+ {
+  "id": "vc-skyline-noche",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_08.0bbg_xp4hqdvz.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A Vice City skyline at night featuring a ferris wheel, cars driving, and tall buildings.",
+  "captionEs": "Skyline de Vice City de noche, con una rueda de la fortuna y edificios altos.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-puente-levadizo",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "A wide shot of Vice City at twilight: Traffic waits on both sides of a drawbridge as a speedboat skims toward the city's skyline.",
+  "captionEs": "Vice City al atardecer: tráfico detenido en un puente levadizo mientras una lancha avanza hacia el skyline.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-playa",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_05.0~r~o0jzpp4a-.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "People near a lifeguard stand on the beach in Vice City. In the foreground a woman in a bikini lays down tanning while men walk by and look. In the background a couple holds hands, a woman jogs, a woman sits on her phone, and two men play catch with a football.",
+  "captionEs": "Playa de Vice City junto a una caseta de salvavidas.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-marina",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_15.11tb0mz68edqo.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "An exterior shot of a marina: boats, glittering water reflecting the sunlight against a backdrop of the Vice City skyline, a lone airliner in flight.",
+  "captionEs": "Marina con barcos frente al skyline de Vice City.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-letrero",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A jet flying over a sign that says Vice City.",
+  "captionEs": "Un jet sobrevuela un letrero que dice Vice City.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-gasolinera",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_22.0--9jlb822n~g.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "A wide shot of a neon-lit gas station at dusk featuring a lowrider with underglow, a man siccing his dog on another man, and motorbikes riding by on the adjacent road.",
+  "captionEs": "Gasolinera con neón al anochecer, con un lowrider y motos en la avenida.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-car-meet",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_24.0r9tor5-x.p75.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "A group shot of a daytime car meet: A young woman in streetwear and sneakers poses on the hood of a heavily customized pink muscle car while other figures mill around tuned-up cars in the background.",
+  "captionEs": "Reunión diurna de autos modificados.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-calles",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_03.0nqz~lrqdmlze.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A view of Vice City with roads, palm trees, a basketball court, and more buildings in the background.",
+  "captionEs": "Vista de Vice City con calles, palmeras y una cancha de basquetbol.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vc-hotel-alberca",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_26.0.bvvu2216_mj.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "A birds-eye view of a hotel pool and cabanas. Flamingos and gulls fly by.",
+  "captionEs": "Vista aérea de la alberca y cabañas de un hotel; pasan flamencos y gaviotas.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "keys-hidroavion",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A seaplane flying over water in the Leonida Keys. In the background a bridge with cars connects two islands.",
+  "captionEs": "Hidroavión sobre el agua en Leonida Keys; al fondo, un puente une dos islas.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "keys-buceo",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_04.0hce1rw1s8pd9.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Two scuba divers swimming underwater in the Leonida Keys surrounded by aquatic life including coral, fish, an eel, and a sea turtle.",
+  "captionEs": "Dos buzos entre corales, peces, una morena y una tortuga marina en Leonida Keys.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "keys-bar",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_03.0v_3~-9ceyixc.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "The exterior of a beach bar in the Leonida Keys with many people: a man sits at a picnic table passed out surrounded by empty bottles, a couple is kissing, people are walking into the entrance, and others are hanging out on the front porch.",
+  "captionEs": "Bar de playa en Leonida Keys.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "keys-pez-leon",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_07.0z9tb69ssp4rq.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "A lionfish swims among seaplants with a diver shining a flashlight in the background; a boat idles on the surface.",
+  "captionEs": "Un pez león nada entre plantas marinas; al fondo un buzo con linterna.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "keys-iguana",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_02.0~ptk-53gl0lq.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "An iguana walks in front of a mobility scooter in the Leonida Keys as people pass by in the background.",
+  "captionEs": "Una iguana cruza frente a un scooter de movilidad en Leonida Keys.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "gr-aerodeslizador",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_03.14cuv-vg9orw4.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A topdown view of two people in an airboat surrounded by alligators in the Grassrivers. One holds a gun aiming at the alligator closest to him.",
+  "captionEs": "Vista cenital de un aerodeslizador rodeado de caimanes en Grassrivers.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "gr-pantano-noche",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_08.0x-z0h-he35zo.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "An alligator's eye glows red, reflecting off swamp water in the foreground as an airboat carrying three men approaches. One of them totes a longarm while a flashlight cuts through the mist. A crescent moon hangs above the mangrove trees.",
+  "captionEs": "Ojo de un caimán reflejado en el pantano mientras se acerca un aerodeslizador entre manglares.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "gr-persecucion",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_04.01ckpqbhxyz76.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A helicopter and two police cars chase a pick-up truck through a swamp with alligators in the Grassrivers. An airboat is seen in the background.",
+  "captionEs": "Persecución policial en el pantano de Grassrivers.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "pg-motel",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_01.0fmisvza-5-cq.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "The outside of a motel in Port Gellhorn with the vacancy sign lit up at night.",
+  "captionEs": "Motel de Port Gellhorn de noche con el letrero de vacantes encendido.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "pg-fogata",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_05.0nsv0ou54n-t3.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "People gathered at a bonfire in Port Gellhorn. One couple is off to the side with the man leaning back on the hood of a truck and the woman putting her finger to his mouth while reaching for his belt.",
+  "captionEs": "Reunión alrededor de una fogata en Port Gellhorn.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "pg-club",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_04.0hd-7kzfi51q..jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "The outside parking lot of a club in Port Gellhorn at night with signs lit up advertising the cabaret. Several cars are parked, a few people linger outside of the club, and two people walk under the sign, one pushing a shopping cart.",
+  "captionEs": "Estacionamiento de un club en Port Gellhorn de noche.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "amb-skyline",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_02.0wtqs05ozl.ym.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "The Ambrosia skyline at night featuring smoke stacks in the distance.",
+  "captionEs": "Skyline de Ambrosia de noche con chimeneas industriales al fondo.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "amb-cultivos",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_04.0.2cefoguu-tt.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A field of crops burning at sunset in Ambrosia.",
+  "captionEs": "Campo de cultivo en llamas al atardecer en Ambrosia.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "amb-bikers",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_01.0rqphs0gazkm..jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A motorcycle gang riding together in matching leather vests down a road in Ambrosia.",
+  "captionEs": "Pandilla de motociclistas con chalecos de cuero en una carretera de Ambrosia.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "mk-carretera",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_04.0e1sxnp1mln2u.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A winding road goes between two steep hills with greenery at the top in Mount Kalaga National Park.",
+  "captionEs": "Carretera sinuosa entre cerros en Mount Kalaga National Park.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "mk-kayak",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_06.166ouq5pjd7h0.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A person wearing a life vest kayaks toward a bridge in Mount Kalaga National Park.",
+  "captionEs": "Persona en kayak con chaleco salvavidas rumbo a un puente en Mount Kalaga National Park.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "mk-puma",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_05.0_~vto-o2zxok.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "A cougar stalks a herd of deer drinking from a stream in Mount Kalaga National Park.",
+  "captionEs": "Un puma acecha a una manada de venados junto a un arroyo en Mount Kalaga National Park.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "mk-dirtbikes",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_01.0v5fl0f83hjv_.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Four people riding dirt bikes through the mud in Mount Kalaga National Park. An ATV jumps behind them.",
+  "captionEs": "Motos de terracería y una cuatrimoto en el lodo de Mount Kalaga National Park.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-jason",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Jason sitting on a motorcycle holding a handgun.",
+  "captionEs": "Jason sentado en una motocicleta con una pistola.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-lucia",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_01.0a7yqvewctkfp.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Lucia punching a heavy bag in a gym.",
+  "captionEs": "Lucia golpea un costal en un gimnasio.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-cal",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_02.05r2t_mck65fe.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "People hanging out at a bar. Jason and Cal play pool in the foreground.",
+  "captionEs": "Jason y Cal juegan billar en un bar.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-boobie",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Boobie_Ike_01.0-wji2pg5anfs.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Boobie holding a stack of cash sitting back in a chair in front of a desk with a handgun on top of it.",
+  "captionEs": "Boobie con un fajo de billetes, sentado detrás de un escritorio.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-drequan",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/DreQuan_Priest_02.02u69e~nkk3eo.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Dre'Quan leaning against a bar wearing a suit at a nighttime pool party. Guests in the background are wearing swimsuits.",
+  "captionEs": "Dre'Quan recargado en una barra durante una fiesta nocturna en alberca.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-dimez",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Real_Dimez_02.1366u9.x.yp0_.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "The Real Dimez dancing on top of the hood of a car with a group of people cheering them on with their phones held up.",
+  "captionEs": "Real Dimez bailan sobre el cofre de un auto rodeadas de gente.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-raul",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Raul_Bautista_01.0md1ii-yrn96r.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Raul holding a phone to his ear. In the background a person is sitting in front of two computer monitors.",
+  "captionEs": "Raul habla por teléfono; al fondo alguien frente a dos monitores.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "p-brian",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Brian_Heder_02.0kmg6iw38f-9o.jpg",
+  "page": "https://www.rockstargames.com/VI/only-in-leonida",
+  "officialAltEn": "Brian leaning against a railing with two cans in front of him. He is wearing a sleevless shirt and a bandana.",
+  "captionEs": "Brian recargado en un barandal con dos latas frente a él.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "jl-banco",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_15.0m-_zb~mcy2zr.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "Jason and Lucia robbing a Fleeca bank branch, both wearing bandanas and duffel bags, armed with SMGs.",
+  "captionEs": "Jason y Lucia asaltan una sucursal Fleeca con paliacates, maletas y subfusiles.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "jl-mirador",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_16.05-d133mx68ku.jpg",
+  "page": "https://www.rockstargames.com/VI/launch-gallery",
+  "officialAltEn": "Jason and Lucia sitting on the hood of a pickup truck parked on a hill overlooking Vice City. A pack of birds are taking flight in the distance, and a family of deer are grazing in the tall grass.",
+  "captionEs": "Atardecer en una colina con vista lejana al skyline de Vice City.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-cheetah",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_02.0rkrlsu_dg~ww.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "’95 Grotti Cheetah blanco con librea retrofuturista y faros levantados.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-revolveres",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_02.04e_9jco7lluf.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Revólveres Hawk & Little Morgan con mira, navaja y munición.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-pistolas",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_WEAPON_VARIANTS_01.12licq0_o7mb5.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Variantes personalizadas de la Girardi ES9 de Jason y la Klose K17 de Lucia junto a una alberca.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-safehouse",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Exterior de la casa de Jason con la Vapid Ganado, la Dinka Enduro y el Crest Kayak.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-ganado",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_GANADO_RETRO_BUILD_01.062dgvkwdynw5.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Jason maneja su Vapid Ganado amarilla con franja roja.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-rideout",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_01.065-ms8~k8vbq.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Vehículo dorado personalizado con rines de diseño de pica.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-sara",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SARAS_SALON_01.0gn7dwlvcgz17.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Jason y Lucia en la entrada de Sara's Unisex Salon.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-squalo",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Shitzu Squalo degradado rosa y azul de noche, con el skyline iluminado.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-stock305",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_STOCK_305_03.00wltke54q_n0.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Exterior de la tienda Stock 305.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-buggy",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_04.0_29d.bgfvon7.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "El ’67 Vapid Dominator Buggy sale del Paradise Garage.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-electricfang",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_ELECTRIC_FANG_01.04tsytu7qp2b-.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Letrero de neón de Electric Fang Tattoo con un lobo.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-willie",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_ONE_EYED_WILLIE_01.0n7-__or5f.b6.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Imagen oficial de One-Eyed Willie's: vehículo todoterreno verde con barra de luces.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-goodtime",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GOODTIME_GEAR_01.0t7de8dow381q.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Jason y Lucia con gorras y playeras de Macca the Gator.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-ptt",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_PTT_STORE_01.0seuocb~7b1-q.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Imagen oficial del beneficio PTT Youngin$ Illegal Goods Store: un grupo dentro de un complejo de pandilla.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "ue-wyman",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01.0swhrm__iu~6b.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Imagen oficial de la Classic Car Collection: un hombre posa en un taller rodeado de autos clásicos.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vv-stanier",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.004m_8d1~qngy.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "’55 Vapid Stanier amarillo y blanco frente a letreros de neón.",
+  "width": 3840,
+  "height": 2160
+ },
+ {
+  "id": "vv-patron",
+  "remote": "https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.0gybtumgwdcoi.jpg",
+  "page": "https://www.rockstargames.com/VI/media",
+  "officialAltEn": null,
+  "captionEs": "Armas con patrón tropical y una bolsa con dinero en el asiento trasero del ’55 Vapid Stanier.",
+  "width": 3840,
+  "height": 2160
+ }
+]

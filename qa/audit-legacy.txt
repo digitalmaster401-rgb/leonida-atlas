@@ -1,0 +1,14 @@
+Archivos revisados: 549 (incluye dist: true)
+Términos: tiktok, creator, watermark, video-guia, assets/frames, assets/hd, portada-1920x1080, video_stops, timg(, LEONIDA_ATLAS_GTA6
+Coincidencias no permitidas: 0 · en el build público (dist/): 0
+Menciones internas aceptadas (código que reconoce enlaces de esa plataforma, pruebas y docs; nunca en dist/): 10
+   · docs/ATLAS_INTELLIGENCE_QA.md :: «tiktok»
+   · docs/ATLAS_INTELLIGENCE_QA.md :: «tiktok»
+   · docs/ATLAS_INTELLIGENCE_QA.md :: «tiktok»
+   · docs/REQUISITOS_ACUMULATIVOS.md :: «tiktok»
+   · src/intel/normalize.ts :: «tiktok»
+   · src/intel/normalize.ts :: «tiktok»
+   · src/intel/schema.ts :: «tiktok»
+   · tests/intel/dedup.test.ts :: «tiktok»
+   · tests/intel/dedup.test.ts :: «tiktok»
+   · tests/intel/submissions.test.ts :: «tiktok»

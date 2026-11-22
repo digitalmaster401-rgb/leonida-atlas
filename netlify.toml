@@ -1,0 +1,13 @@
+# Netlify: conecta el repositorio y no cambies nada más. La variable URL de Netlify
+# se usa en el prerender para las etiquetas og:url, canonical y el sitemap.
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

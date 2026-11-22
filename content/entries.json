@@ -1,0 +1,5565 @@
+[
+ {
+  "subzone": null,
+  "howTo": [
+   "Abre el mapa de LEONIDA ATLAS y toca el punto «Vice City» para ver su ubicación en el mapa oficial.",
+   "Explora las subzonas con ficha propia: Ocean Beach, Little Cuba, Stockyard y Washington Beach."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "vc-skyline-noche",
+   "vc-puente-levadizo",
+   "vc-playa",
+   "vc-marina",
+   "vc-letrero",
+   "vc-calles",
+   "vc-hotel-alberca"
+  ],
+  "mapPosition": {
+   "x": 0.668,
+   "y": 0.52,
+   "precision": "region",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ciudad",
+   "playa",
+   "vida nocturna",
+   "miami"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Ciudad principal del estado de Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Barrios mencionados oficialmente",
+    "value": "Ocean Beach, Little Cuba, mercado Tisha-Wocka, VC Port",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Condado en el mapa oficial",
+    "value": "Vice-Dale County",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-vice-city",
+  "slug": "vice-city",
+  "name": "Vice City",
+  "category": "lugares",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "La gran ciudad de Leonida: playas, art déco, vida nocturna y el puerto de cruceros.",
+  "description": "Rockstar la presenta como «la capital del sol y la diversión de Estados Unidos»: glamour, ajetreo y ambición en una sola ciudad. La descripción oficial menciona los hoteles art déco en tonos pastel y la arena blanca de Ocean Beach, las panaderías de Little Cuba, las marcas piratas del mercado de pulgas Tisha-Wocka y el VC Port, «la capital mundial de los cruceros».",
+  "sources": [
+   "rs-oil",
+   "rs-map",
+   "rs-gallery"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "En el mapa oficial, la cadena de cayos va de Key Lento hacia Southwind y Mile Zero Air Station siguiendo la ruta 1A.",
+   "Consulta la ruta orientativa «Por la 1A hasta Mile Zero» en Rutas y tutoriales."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "keys-hidroavion",
+   "keys-bar",
+   "keys-buceo",
+   "keys-pez-leon",
+   "keys-iguana"
+  ],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "region",
+   "basis": "Punto colocado sobre el rótulo «Key Lento» del mapa oficial; la región abarca toda la cadena de cayos del sur."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "islas",
+   "buceo",
+   "bares",
+   "cayos"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Archipiélago tropical",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Lugares rotulados en el mapa",
+    "value": "Key Lento, Southwind, Mile Zero Air Station, Permit Keys, Riquezas Keys",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-leonida-keys",
+  "slug": "leonida-keys",
+  "name": "Leonida Keys",
+  "category": "lugares",
+  "region": "leonida-keys",
+  "status": "oficial",
+  "summary": "Archipiélago tropical: bares relajados y aguas tan bellas como peligrosas.",
+  "description": "«Puerta al paraíso». Según Rockstar, la vida en este archipiélago tropical no es ostentosa pero sí fácil: el código de vestir es casual y los bares están llenos, aunque estás a las puertas de algunas de las aguas más hermosas y peligrosas de Estados Unidos. Aquí trabajaba Jason para narcotraficantes locales y aquí opera Brian Heder.",
+  "sources": [
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fauna agresiva (caimanes) según el material oficial."
+  ],
+  "images": [
+   "gr-aerodeslizador",
+   "gr-pantano-noche",
+   "gr-persecucion"
+  ],
+  "mapPosition": {
+   "x": 0.45,
+   "y": 0.662,
+   "precision": "region",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "pantano",
+   "caimanes",
+   "everglades",
+   "aerodeslizador"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Humedales y manglares",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Fauna mostrada oficialmente",
+    "value": "Caimanes; en capturas oficiales aparecen aerodeslizadores",
+    "status": "oficial",
+    "sources": [
+     "rs-oil",
+     "rs-gallery"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-grassrivers",
+  "slug": "grassrivers",
+  "name": "Grassrivers",
+  "category": "lugares",
+  "region": "grassrivers",
+  "status": "oficial",
+  "summary": "Humedales salvajes: caimanes, manglares y depredadores aún más peligrosos.",
+  "description": "«Bienvenido a los humedales»: la joya indomable de la corona de Leonida. Rockstar advierte que nunca sabes qué hay bajo la superficie de esta extensión primigenia; los caimanes son la atracción más famosa, pero entre los manglares hay depredadores más letales y descubrimientos extraños.",
+  "sources": [
+   "rs-oil",
+   "rs-map",
+   "rs-gallery"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "pg-motel",
+   "pg-club",
+   "pg-fogata"
+  ],
+  "mapPosition": {
+   "x": 0.305,
+   "y": 0.358,
+   "precision": "region",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "costa",
+   "moteles",
+   "golfo"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Antiguo destino vacacional en decadencia",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Ubicación",
+    "value": "Costa oeste, sobre Kelly County en el mapa oficial",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-port-gellhorn",
+  "slug": "port-gellhorn",
+  "name": "Port Gellhorn",
+  "category": "lugares",
+  "region": "port-gellhorn",
+  "status": "oficial",
+  "summary": "La costa olvidada de Leonida: moteles baratos, plazas vacías y motos de terracería.",
+  "description": "«Vive duro». Rockstar la describe como la costa olvidada del estado: moteles baratos, atracciones cerradas y centros comerciales vacíos que no traerán de vuelta a los turistas, aunque hay una nueva economía alimentada por licor de malta, analgésicos y bebidas energéticas de parador.",
+  "sources": [
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "amb-skyline",
+   "amb-cultivos",
+   "amb-bikers"
+  ],
+  "mapPosition": {
+   "x": 0.555,
+   "y": 0.356,
+   "precision": "region",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "industria",
+   "azucar",
+   "bikers",
+   "lago"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Empleador principal",
+    "value": "Refinería de azúcar Allied Crystal",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Ubicación",
+    "value": "Junto a Lake Leonida, Leonard County (mapa oficial)",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-ambrosia",
+  "slug": "ambrosia",
+  "name": "Ambrosia",
+  "category": "lugares",
+  "region": "ambrosia",
+  "status": "oficial",
+  "summary": "Corazón industrial de Leonida: la refinería Allied Crystal y una pandilla de motociclistas.",
+  "description": "«La batalla por la salud y la riqueza de Leonida empieza aquí». En el corazón del estado, la industria estadounidense y los valores de la vieja escuela siguen mandando, cueste lo que cueste. La refinería de azúcar Allied Crystal da los empleos; la pandilla local de motociclistas, casi todo lo demás.",
+  "sources": [
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "mk-carretera",
+   "mk-kayak",
+   "mk-puma",
+   "mk-dirtbikes"
+  ],
+  "mapPosition": {
+   "x": 0.5,
+   "y": 0.226,
+   "precision": "region",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "bosque",
+   "caza",
+   "pesca",
+   "offroad"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Actividades mencionadas oficialmente",
+    "value": "Caza, pesca y senderos todoterreno",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Condado",
+    "value": "Lummox County (mapa oficial)",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-mount-kalaga",
+  "slug": "mount-kalaga",
+  "name": "Mount Kalaga National Park",
+  "category": "lugares",
+  "region": "mount-kalaga",
+  "status": "oficial",
+  "summary": "Parque nacional en la frontera norte: caza, pesca y senderos todoterreno.",
+  "description": "«Tierra salvaje». Un monumento nacional pegado a la frontera norte del estado, con caza, pesca y senderos todoterreno de primera. En los bosques que lo rodean viven místicos montañeses y radicales paranoicos, lejos de la mirada del gobierno.",
+  "sources": [
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Ocean Beach",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.862,
+   "y": 0.5225,
+   "precision": "barrio",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "lug-vice-city",
+   "neg-shore-court"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-ocean-beach",
+  "slug": "ocean-beach",
+  "name": "Ocean Beach",
+  "category": "lugares",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Hoteles art déco en tonos pastel y arena blanca.",
+  "description": "Rockstar destaca los hoteles art déco pastel y la arena blanca de Ocean Beach. Junto a esta playa está el garaje Shore Court del Vintage Vice City Pack.",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Little Cuba",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.661,
+   "y": 0.533,
+   "precision": "barrio",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "lug-vice-city"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-little-cuba",
+  "slug": "little-cuba",
+  "name": "Little Cuba",
+  "category": "lugares",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Barrio de Vice City conocido por sus panaderías.",
+  "description": "La descripción oficial de Vice City menciona «las concurridas panaderías de Little Cuba».",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Stockyard",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.724,
+   "y": 0.4497,
+   "precision": "barrio",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "neg-stock-305",
+   "neg-electric-fang"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-stockyard",
+  "slug": "stockyard",
+  "name": "Stockyard",
+  "category": "lugares",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Zona de Vice City con la tienda Stock 305 y Electric Fang Tattoo.",
+  "description": "Rockstar sitúa en Stockyard la tienda de streetwear Stock 305 y el estudio Electric Fang Tattoo (ambos exclusivos de Ultimate Edition).",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Washington Beach",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.865,
+   "y": 0.4445,
+   "precision": "barrio",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "veh-shitzu-squalo"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-washington-beach",
+  "slug": "washington-beach",
+  "name": "Washington Beach",
+  "category": "lugares",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Playa donde está atracado el Shitzu Squalo de Ultimate Edition.",
+  "description": "Según la descripción oficial del Shitzu Squalo, la lancha está atracada en Washington Beach.",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Watson Bay",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.432,
+   "y": 0.703,
+   "precision": "barrio",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "neg-paradise-garage"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-watson-bay",
+  "slug": "watson-bay",
+  "name": "Watson Bay",
+  "category": "lugares",
+  "region": "grassrivers",
+  "status": "oficial",
+  "summary": "Bahía donde está el Paradise Garage.",
+  "description": "El ’67 Vapid Dominator Buggy se guarda en el Paradise Garage de Watson Bay, según Rockstar.",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Lake Leonida",
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": {
+   "x": 0.608,
+   "y": 0.314,
+   "precision": "zona",
+   "basis": "Rótulo visible en el mapa oficial de Leonida (póster de Rockstar Games)."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "subzona"
+  ],
+  "related": [
+   "neg-one-eyed-willies"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Mencionado por",
+    "value": "Textos oficiales de Rockstar Games",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Rótulo en el mapa oficial",
+    "value": "Sí",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "lug-lake-leonida",
+  "slug": "lake-leonida",
+  "name": "Lake Leonida",
+  "category": "lugares",
+  "region": "ambrosia",
+  "status": "oficial",
+  "summary": "Lago central donde está el taller One-Eyed Willie's.",
+  "description": "Rockstar ubica el taller de modificaciones todoterreno One-Eyed Willie's en Lake Leonida.",
+  "sources": [
+   "rs-vi",
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-jason"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-jason-duval",
+  "slug": "jason-duval",
+  "name": "Jason Duval",
+  "category": "personajes",
+  "region": "leonida-keys",
+  "status": "oficial",
+  "summary": "Quiere una vida fácil, pero todo se le complica.",
+  "description": "Creció entre estafadores y delincuentes. Tras pasar por el Ejército intentando dejar atrás una adolescencia problemática, terminó en los Keys haciendo lo que mejor sabe: trabajar para narcotraficantes locales. Brian le presta una de sus propiedades a cambio de ayuda con «extorsiones locales».",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-lucia"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-lucia-caminos",
+  "slug": "lucia-caminos",
+  "name": "Lucia Caminos",
+  "category": "personajes",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Su padre le enseñó a pelear desde que aprendió a caminar.",
+  "description": "Pelear por su familia la llevó a la Leonida Penitentiary; la pura suerte la sacó. Quiere la buena vida que su mamá soñó desde sus días en Liberty City y está dispuesta a tomar el control de su destino.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-cal"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-cal-hampton",
+  "slug": "cal-hampton",
+  "name": "Cal Hampton",
+  "category": "personajes",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "¿Y si todo lo que dice internet fuera cierto?",
+  "description": "Amigo de Jason y socio de Brian. Se siente más seguro en casa, espiando las comunicaciones de la Guardia Costera con unas cervezas y pestañas privadas abiertas.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-boobie"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-boobie-ike",
+  "slug": "boobie-ike",
+  "name": "Boobie Ike",
+  "category": "personajes",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Leyenda local de Vice City: bienes raíces, club y estudio de grabación.",
+  "description": "Uno de los pocos que convirtió su pasado en las calles en un imperio legítimo de bienes raíces, un club de striptease y un estudio de grabación. Su apuesta más importante es Only Raw Records, junto a Dre'Quan.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-drequan"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-drequan-priest",
+  "slug": "drequan-priest",
+  "name": "Dre'Quan Priest",
+  "category": "personajes",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Más buscavidas que gánster; su meta siempre fue la música.",
+  "description": "Incluso cuando vendía en la calle, su objetivo era entrar a la industria musical. Firmó a Real Dimez para Only Raw Records.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-dimez"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-real-dimez",
+  "slug": "real-dimez",
+  "name": "Real Dimez",
+  "category": "personajes",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Bae-Luxe y Roxy: videos virales y ganchos virales.",
+  "description": "Amigas desde la prepa, convirtieron en dinero sus tiempos de extorsionar a dealers locales con rap picante y una presencia constante en redes. Tras un éxito temprano con el rapero local DWNPLY, firmaron con Only Raw Records.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-raul"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-raul-bautista",
+  "slug": "raul-bautista",
+  "name": "Raul Bautista",
+  "category": "personajes",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Asaltabancos veterano siempre en busca de talento.",
+  "description": "Confianza, encanto y astucia: un ladrón de bancos experimentado que busca talento dispuesto a asumir los riesgos que traen las mayores recompensas. Su imprudencia sube la apuesta con cada golpe.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-brian"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "personaje"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de la biografía",
+    "value": "Página oficial Only in Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "pj-brian-heder",
+  "slug": "brian-heder",
+  "name": "Brian Heder",
+  "category": "personajes",
+  "region": "leonida-keys",
+  "status": "oficial",
+  "summary": "Contrabandista clásico de la época dorada en los Keys.",
+  "description": "Sigue moviendo mercancía desde su astillero con su tercera esposa, Lori. Lleva suficiente tiempo en el negocio como para dejar que otros hagan el trabajo sucio.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Se obtiene como beneficio de Ultimate Edition.",
+   "Rockstar indica que se desbloquea en una etapa avanzada de la historia; el capítulo exacto no está confirmado en las fuentes revisadas."
+  ],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-cheetah"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "ultimate",
+  "tags": [
+   "deportivo",
+   "ultimate",
+   "grotti"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Deportivo",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Edición",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Desbloqueo",
+    "value": "Etapa avanzada de la historia (sin capítulo exacto)",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-grotti-cheetah-95",
+  "slug": "grotti-cheetah-95",
+  "name": "’95 Grotti Cheetah",
+  "category": "vehiculos",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Deportivo insignia de Grotti de mediados de los 90, con librea retrofuturista.",
+  "description": "El deportivo emblemático de Grotti de mediados de los 90 y un homenaje a Shore Drive. Incluye una librea minimalista retrofuturista y, según Rockstar, está disponible para «rematar la acción de etapas avanzadas» de la historia.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Recógelo en el Paradise Garage de Watson Bay (incluido con Ultimate Edition)."
+  ],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-buggy"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "offroad",
+   "ultimate",
+   "vapid"
+  ],
+  "related": [
+   "neg-paradise-garage",
+   "lug-watson-bay"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Buggy todoterreno",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Garaje",
+    "value": "Paradise Garage, Watson Bay",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Extras del garaje",
+    "value": "Armario de armas y depósito de bienes robados",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-vapid-dominator-buggy-67",
+  "slug": "vapid-dominator-buggy-67",
+  "name": "’67 Vapid Dominator Buggy",
+  "category": "vehiculos",
+  "region": "grassrivers",
+  "status": "oficial",
+  "summary": "Monstruo del Mud Club para terracería, con garaje propio en Watson Bay.",
+  "description": "Un monstruo del Mud Club con gran manejo todoterreno para los bosques de Mount Kalaga y más allá. Se guarda en el Paradise Garage de Watson Bay, que incluye armario de armas y un lugar seguro para depositar bienes robados que luego se venden.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere el complemento digital Vintage Vice City Pack."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "vv-stanier"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "vintage",
+  "tags": [
+   "clasico",
+   "vintage",
+   "vapid"
+  ],
+  "related": [
+   "neg-shore-court"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Sedán clásico",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Garaje",
+    "value": "Shore Court, junto a Ocean Beach",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Paquete",
+    "value": "Vintage Vice City Pack",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-vapid-stanier-55",
+  "slug": "vapid-stanier-55",
+  "name": "’55 Vapid Stanier",
+  "category": "vehiculos",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Sedán clásico con garaje personal Shore Court junto a Ocean Beach.",
+  "description": "Sedán clásico para recorrer Shore Drive. Se guarda en el garaje personal Shore Court, a un paso de la arena de Ocean Beach, con armario de armas y depósito seguro para bienes robados.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-ganado",
+   "ue-safehouse"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "pickup",
+   "jason",
+   "vapid"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Pickup lowrider",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Propietario en la historia",
+    "value": "Jason",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Mejora exclusiva",
+    "value": "Ganado Retro Build (Ultimate Edition)",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-vapid-ganado",
+  "slug": "vapid-ganado",
+  "name": "Vapid Ganado",
+  "category": "vehiculos",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "La pickup baja y muy usada de Jason; Ultimate Edition añade el Ganado Retro Build.",
+  "description": "Rockstar describe la Vapid Ganado como la pickup lowrider «muy usada» de Jason. Ultimate Edition añade el Ganado Retro Build: modificaciones exclusivas con más músculo y estilo clásico.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-safehouse"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "moto",
+   "ultimate",
+   "dinka"
+  ],
+  "related": [
+   "neg-casa-jason"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Motocicleta",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Ubicación",
+    "value": "Casa de Jason",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-dinka-enduro",
+  "slug": "dinka-enduro",
+  "name": "Dinka Enduro",
+  "category": "vehiculos",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Motocicleta con tono militar, estacionada en la casa de Jason (Ultimate Edition).",
+  "description": "Parte de «Jason's Safehouse Vehicles»: una Dinka Enduro con un tono inspirado en los uniformes del Ejército, disponible junto a la casa de Jason.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-safehouse"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "agua",
+   "ultimate"
+  ],
+  "related": [
+   "neg-casa-jason"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Kayak",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Ubicación",
+    "value": "Casa de Jason",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-crest-kayak",
+  "slug": "crest-kayak",
+  "name": "Crest Kayak",
+  "category": "vehiculos",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Kayak naranja disponible en la casa de Jason (Ultimate Edition).",
+  "description": "El otro vehículo de «Jason's Safehouse Vehicles»: un Crest Kayak para remar bajo el sol.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": "Washington Beach",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-squalo"
+  ],
+  "mapPosition": {
+   "x": 0.865,
+   "y": 0.4445,
+   "precision": "barrio",
+   "basis": "Atracadero indicado por Rockstar (Washington Beach); punto sobre el rótulo del mapa oficial, no sobre el muelle exacto."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "lancha",
+   "pesca",
+   "ultimate"
+  ],
+  "related": [
+   "lug-washington-beach"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Lancha",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Atracadero",
+    "value": "Washington Beach",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Extra",
+    "value": "Caja de armas con explosivos",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "veh-shitzu-squalo",
+  "slug": "shitzu-squalo",
+  "name": "Shitzu Squalo",
+  "category": "vehiculos",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Lancha degradada rosa y azul, atracada en Washington Beach, con caja de armas explosivas.",
+  "description": "Perfecta para pescar en Gambit Bay. Esta Squalo en degradado rosa y azul está atracada en Washington Beach y viene lista para mar abierto con una caja de armas cargada de explosivos.",
+  "sources": [
+   "rs-vi",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-pistolas"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "pistola",
+   "jason"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Portador oficial",
+    "value": "Jason",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Variante personalizada",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Variantes únicas reportadas",
+    "value": "Sand Storm ES9 (Big Shots, East Hamlet, $1,470); Quarter Mile ES9 (gratis)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-girardi-es9",
+  "slug": "girardi-es9",
+  "name": "Girardi ES9",
+  "category": "armas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Pistola de Jason; Ultimate Edition incluye una variante personalizada con grabados.",
+  "description": "Rockstar confirma la Girardi ES9 como la pistola de Jason y ofrece en Ultimate Edition una variante personalizada con grabados detallados. GAMES.GG reporta variantes únicas como la «Sand Storm ES9» y la «Quarter Mile ES9».",
+  "sources": [
+   "rs-vi",
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 975,
+    "max": 975
+   },
+   "note": "Precio de tienda; fuente única."
+  },
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-pistolas"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "pistola",
+   "lucia"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Portadora oficial",
+    "value": "Lucia",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Variante personalizada",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Precio en Ammu-Nation",
+    "value": "$975",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Variante única reportada",
+    "value": "Nite Raptor K17 (Black Eagle, Balsero, $2,050)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-klose-k17",
+  "slug": "klose-k17",
+  "name": "Klose K17",
+  "category": "armas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Pistola de servicio de Lucia; precio en Ammu-Nation reportado: $975.",
+  "description": "Rockstar confirma la Klose K17 como la pistola de Lucia y ofrece en Ultimate Edition una variante personalizada. GAMES.GG reporta que la versión estándar cuesta $975 en Ammu-Nation.",
+  "sources": [
+   "rs-vi",
+   "gamesgg-ammu",
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-revolveres"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "revolver",
+   "ultimate"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Revólver",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Edición",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-hawk-little-morgan",
+  "slug": "hawk-little-morgan",
+  "name": "Hawk & Little Morgan Revolvers",
+  "category": "armas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Revólveres «de él y de ella» con estilo clásico de Vice City y mira de alto rendimiento.",
+  "description": "Versiones de él y de ella de este potente revólver, con estilo clásico de Vice City procedente de la Vercetti Estate: cachas grabadas con palmeras, grabados detallados y mira de alto rendimiento.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere el complemento digital Vintage Vice City Pack."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "vv-patron"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "vintage",
+  "tags": [
+   "cosmetico",
+   "vintage"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Aplicable a",
+    "value": "La mayoría de las armas",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Paquete",
+    "value": "Vintage Vice City Pack",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-patron-tropical",
+  "slug": "patron-tropical-vintage",
+  "name": "Patrón de armas tropical",
+  "category": "armas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Patrón para la mayoría de las armas inspirado en la camisa de palmeras de Tommy Vercetti.",
+  "description": "«Channel the Original Kingpin»: decora la mayoría de las armas con un patrón tropical inspirado en la icónica camisa de palmeras de Tommy Vercetti.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 550,
+    "max": 550
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Pistola compacta",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$550",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-scorpio-nipper-38",
+  "slug": "scorpio-nipper-38",
+  "name": "Scorpio Nipper .38",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Pistola compacta a la venta en Ammu-Nation; precio reportado: $550.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $550. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 700,
+    "max": 700
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Escopeta de bombeo",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$700",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-fortune-son-moreland-850",
+  "slug": "fortune-son-moreland-850",
+  "name": "Fortune & Son Moreland 850",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Escopeta de bombeo a la venta en Ammu-Nation; precio reportado: $700.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $700. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 850,
+    "max": 850
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Escopeta corta (stubby)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$850",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-fortune-son-gorse-425",
+  "slug": "fortune-son-gorse-425",
+  "name": "Fortune & Son Gorse 425",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Escopeta corta (stubby) a la venta en Ammu-Nation; precio reportado: $850.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $850. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 950,
+    "max": 950
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Rifle de francotirador deportivo",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$950",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-fortune-son-laird-350",
+  "slug": "fortune-son-laird-350",
+  "name": "Fortune & Son Laird 350",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Rifle de francotirador deportivo a la venta en Ammu-Nation; precio reportado: $950.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $950. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [
+   "Requiere cuenta bancaria (abre una cuenta bancaria en la historia)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 1150,
+    "max": 1150
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Escopeta de doble cañón",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$1,150",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Requisito",
+    "value": "Requiere cuenta bancaria",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-shrewsbury-drifter",
+  "slug": "shrewsbury-drifter",
+  "name": "Shrewsbury Drifter",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Escopeta de doble cañón a la venta en Ammu-Nation; precio reportado: $1,150.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $1,150. El menú muestra «Requires a bank account» hasta abrir una cuenta bancaria. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [
+   "Requiere cuenta bancaria (abre una cuenta bancaria en la historia)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 1325,
+    "max": 1325
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Escopeta recortada de doble cañón",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$1,325",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Requisito",
+    "value": "Requiere cuenta bancaria",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-shrewsbury-hobo",
+  "slug": "shrewsbury-hobo",
+  "name": "Shrewsbury Hobo",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Escopeta recortada de doble cañón a la venta en Ammu-Nation; precio reportado: $1,325.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $1,325. El menú muestra «Requires a bank account» hasta abrir una cuenta bancaria. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [
+   "Requiere cuenta bancaria (abre una cuenta bancaria en la historia)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 1400,
+    "max": 1400
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Rifle de combate",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$1,400",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Requisito",
+    "value": "Requiere cuenta bancaria",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-wortham-w-14",
+  "slug": "wortham-w-14",
+  "name": "Wortham W-14",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Rifle de combate a la venta en Ammu-Nation; precio reportado: $1,400.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $1,400. El menú muestra «Requires a bank account» hasta abrir una cuenta bancaria. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Visita cualquier Ammu-Nation (ver ficha «Red de tiendas Ammu-Nation»).",
+   "Compra en el mostrador; puedes cargar hasta dos armas cortas y dos largas, según la misma fuente."
+  ],
+  "requirements": [
+   "Requiere cuenta bancaria (abre una cuenta bancaria en la historia)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 1450,
+    "max": 1450
+   },
+   "note": "Fuente única; puede cambiar con parches."
+  },
+  "time": null,
+  "risks": [
+   "Precio de fuente única: puede variar por parche o por tienda."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ammu-nation",
+   "tienda"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Carabina",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$1,450",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Requisito",
+    "value": "Requiere cuenta bancaria",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-duke-556",
+  "slug": "duke-556",
+  "name": "Duke 556",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Carabina a la venta en Ammu-Nation; precio reportado: $1,450.",
+  "description": "Arma estándar de Ammu-Nation según el inventario publicado por GAMES.GG con capturas del menú de compra. Precio reportado: $1,450. El menú muestra «Requires a bank account» hasta abrir una cuenta bancaria. Dato de fuente única: verifica el precio en tu partida.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Ve a Phil's Ammu-Nation, Southside.",
+   "Compra el arma por $3,050 (precio reportado)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 3050,
+    "max": 3050
+   },
+   "note": "Fuente única."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: disponibilidad y precio sin verificar de forma independiente."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.623,
+   "y": 0.65,
+   "precision": "barrio",
+   "basis": "Tienda reportada en Southside; punto sobre el rótulo «Southside» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "unica",
+   "ammu-nation"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Carabina de asalto (única)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Tienda",
+    "value": "Phil's Ammu-Nation, Southside",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$3,050",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Modificable",
+    "value": "No (según la fuente)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-star-spangled-556",
+  "slug": "star-spangled-556",
+  "name": "Star Spangled 556",
+  "category": "armas",
+  "region": "vice-city",
+  "status": "reportado",
+  "summary": "Carabina de asalto (única). Reportada en Phil's Ammu-Nation, Southside por $3,050.",
+  "description": "Arma única reportada por GAMES.GG a la venta en Phil's Ammu-Nation, Southside. La misma fuente indica que las armas únicas no se pueden modificar y que, una vez obtenidas, quedan disponibles para Jason y Lucia.",
+  "sources": [
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Ve a Phil's Ammu-Nation, Southside.",
+   "Compra el arma por $3,780 (precio reportado)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 3780,
+    "max": 3780
+   },
+   "note": "Fuente única."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: disponibilidad y precio sin verificar de forma independiente."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.623,
+   "y": 0.65,
+   "precision": "barrio",
+   "basis": "Tienda reportada en Southside; punto sobre el rótulo «Southside» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "unica",
+   "ammu-nation"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Revólver mágnum (único)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Tienda",
+    "value": "Phil's Ammu-Nation, Southside",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$3,780",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Modificable",
+    "value": "No (según la fuente)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-honky-tonk-mustang-357",
+  "slug": "honky-tonk-mustang-357",
+  "name": "Honky Tonk Mustang .357",
+  "category": "armas",
+  "region": "vice-city",
+  "status": "reportado",
+  "summary": "Revólver mágnum (único). Reportada en Phil's Ammu-Nation, Southside por $3,780.",
+  "description": "Arma única reportada por GAMES.GG a la venta en Phil's Ammu-Nation, Southside. La misma fuente indica que las armas únicas no se pueden modificar y que, una vez obtenidas, quedan disponibles para Jason y Lucia.",
+  "sources": [
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Ve a Prestige Firearms, Ocean Beach.",
+   "Compra el arma por $5,150 (precio reportado)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 5150,
+    "max": 5150
+   },
+   "note": "Fuente única."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: disponibilidad y precio sin verificar de forma independiente."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.862,
+   "y": 0.5225,
+   "precision": "barrio",
+   "basis": "Tienda reportada en Ocean Beach; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "unica",
+   "ammu-nation"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Rifle de asalto bullpup (único)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Tienda",
+    "value": "Prestige Firearms, Ocean Beach",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$5,150",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Modificable",
+    "value": "No (según la fuente)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-vice-city-heathen",
+  "slug": "vice-city-heathen",
+  "name": "Vice City Heathen",
+  "category": "armas",
+  "region": "vice-city",
+  "status": "reportado",
+  "summary": "Rifle de asalto bullpup (único). Reportada en Prestige Firearms, Ocean Beach por $5,150.",
+  "description": "Arma única reportada por GAMES.GG a la venta en Prestige Firearms, Ocean Beach. La misma fuente indica que las armas únicas no se pueden modificar y que, una vez obtenidas, quedan disponibles para Jason y Lucia.",
+  "sources": [
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Ve a Martez Empeños, Little Cuba.",
+   "Compra el arma por $3,570 (precio reportado)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Precio reportado",
+   "amount": {
+    "min": 3570,
+    "max": 3570
+   },
+   "note": "Fuente única."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: disponibilidad y precio sin verificar de forma independiente."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.661,
+   "y": 0.533,
+   "precision": "barrio",
+   "basis": "Tienda reportada en Little Cuba; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "unica",
+   "ammu-nation"
+  ],
+  "related": [
+   "neg-ammu-nation"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Rifle de asalto compacto (único)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Tienda",
+    "value": "Martez Empeños, Little Cuba",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "$3,570",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Modificable",
+    "value": "No (según la fuente)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-little-cuba-hind",
+  "slug": "little-cuba-hind",
+  "name": "Little Cuba Hind",
+  "category": "armas",
+  "region": "vice-city",
+  "status": "reportado",
+  "summary": "Rifle de asalto compacto (único). Reportada en Martez Empeños, Little Cuba por $3,570.",
+  "description": "Arma única reportada por GAMES.GG a la venta en Martez Empeños, Little Cuba. La misma fuente indica que las armas únicas no se pueden modificar y que, una vez obtenidas, quedan disponibles para Jason y Lucia.",
+  "sources": [
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Viaja a la zona marcada en el mapa (precisión: zona).",
+   "Busca el punto descrito por la fuente y recoge el arma."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única.",
+   "Equipo de buceo recomendado: el arma está bajo el agua."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.218,
+   "y": 0.829,
+   "precision": "zona",
+   "basis": "Ubicación reportada; punto sobre el rótulo «Riquezas Keys» del mapa oficial, no sobre el barco."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "gratis",
+   "unica",
+   "secreto"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Rifle de asalto (único, gratis)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Ubicación descrita",
+    "value": "Bajo el agua junto a un barco hundido, costa norte de Riquezas Keys.",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Coste",
+    "value": "Gratis",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-drug-mule-kz-59",
+  "slug": "drug-mule-kz-59",
+  "name": "Drug Mule KZ-59",
+  "category": "armas",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "summary": "Rifle de asalto (único, gratis). Bajo el agua junto a un barco hundido, costa norte de Riquezas Keys.",
+  "description": "Arma única gratuita reportada por GAMES.GG. Ubicación descrita por la fuente: Bajo el agua junto a un barco hundido, costa norte de Riquezas Keys. No hay una segunda fuente independiente; el punto del mapa indica la zona, no la posición exacta.",
+  "sources": [
+   "gamesgg-unique",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Viaja a la zona marcada en el mapa (precisión: zona).",
+   "Busca el punto descrito por la fuente y recoge el arma."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.37,
+   "y": 0.844,
+   "precision": "zona",
+   "basis": "Ubicación reportada; punto sobre el rótulo «Permit Keys» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "gratis",
+   "unica",
+   "secreto"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Pistola compacta (única, gratis)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Ubicación descrita",
+    "value": "Escotilla de un barco naufragado al sureste de Permit Keys.",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Coste",
+    "value": "Gratis",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-assassin-nipper-38",
+  "slug": "assassin-nipper-38",
+  "name": "Assassin Nipper .38",
+  "category": "armas",
+  "region": "leonida-keys",
+  "status": "reportado",
+  "summary": "Pistola compacta (única, gratis). Escotilla de un barco naufragado al sureste de Permit Keys.",
+  "description": "Arma única gratuita reportada por GAMES.GG. Ubicación descrita por la fuente: Escotilla de un barco naufragado al sureste de Permit Keys. No hay una segunda fuente independiente; el punto del mapa indica la zona, no la posición exacta.",
+  "sources": [
+   "gamesgg-unique",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Viaja a la zona marcada en el mapa (precisión: zona).",
+   "Busca el punto descrito por la fuente y recoge el arma."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única.",
+   "Zona submarina: lleva equipo de buceo."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.53,
+   "y": 0.131,
+   "precision": "zona",
+   "basis": "Ubicación reportada; punto sobre el rótulo «Saint Attaway Islands» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "gratis",
+   "unica",
+   "secreto"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Cuchillo (único, gratis)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Ubicación descrita",
+    "value": "Lecho marino junto a una jaula para tiburones, al norte de Saint Attaway Islands.",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Coste",
+    "value": "Gratis",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-shark-knife",
+  "slug": "shark-knife",
+  "name": "Shark Knife",
+  "category": "armas",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Cuchillo (único, gratis). Lecho marino junto a una jaula para tiburones, al norte de Saint Attaway Islands.",
+  "description": "Arma única gratuita reportada por GAMES.GG. Ubicación descrita por la fuente: Lecho marino junto a una jaula para tiburones, al norte de Saint Attaway Islands. No hay una segunda fuente independiente; el punto del mapa indica la zona, no la posición exacta.",
+  "sources": [
+   "gamesgg-unique",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Viaja a la zona marcada en el mapa (precisión: zona).",
+   "Busca el punto descrito por la fuente y recoge el arma."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única."
+  ],
+  "images": [],
+  "mapPosition": {
+   "x": 0.522,
+   "y": 0.733,
+   "precision": "zona",
+   "basis": "Ubicación reportada; punto sobre el rótulo «Pelican Valley» del mapa oficial."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "gratis",
+   "unica",
+   "secreto"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Clase",
+    "value": "Subfusil militar (único, gratis)",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Ubicación descrita",
+    "value": "Cabaña para botes del puesto de investigación de Pelican Valley.",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   },
+   {
+    "label": "Coste",
+    "value": "Gratis",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-unique"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "arm-crabshack-vf5",
+  "slug": "crabshack-vf5",
+  "name": "Crabshack VF5",
+  "category": "armas",
+  "region": "grassrivers",
+  "status": "reportado",
+  "summary": "Subfusil militar (único, gratis). Cabaña para botes del puesto de investigación de Pelican Valley.",
+  "description": "Arma única gratuita reportada por GAMES.GG. Ubicación descrita por la fuente: Cabaña para botes del puesto de investigación de Pelican Valley. No hay una segunda fuente independiente; el punto del mapa indica la zona, no la posición exacta.",
+  "sources": [
+   "gamesgg-unique",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-rideout"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "taller de modificación"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Taller de modificación",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-rideout-customs",
+  "slug": "rideout-customs",
+  "name": "Rideout Customs",
+  "category": "negocios",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Convierte vehículos comunes en obras de arte con interiores detallados, rines exquisitos y estilo donk.",
+  "description": "Transforma vehículos «de vainilla» en obras de arte con interiores detallados, rines exquisitos y estilo donk. Solo abre con Ultimate Edition. Rockstar no publica su ubicación en el mapa.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-sara"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "salón de belleza"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Salón de belleza",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-saras-unisex-salon",
+  "slug": "saras-unisex-salon",
+  "name": "Sara's Unisex Salon",
+  "category": "negocios",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Estilos de salón para Jason (vello facial) y Lucia (maquillaje y uñas).",
+  "description": "Estilos exclusivos para ambos protagonistas, incluido vello facial para Jason y maquillaje y uñas para Lucia. Solo abre con Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": "Stockyard",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-stock305"
+  ],
+  "mapPosition": {
+   "x": 0.724,
+   "y": 0.4497,
+   "precision": "barrio",
+   "basis": "Rockstar ubica la tienda en Stockyard; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "tienda de ropa"
+  ],
+  "related": [
+   "lug-stockyard"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Tienda de ropa",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Stockyard",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-stock-305",
+  "slug": "stock-305",
+  "name": "Stock 305",
+  "category": "negocios",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "El destino de streetwear premium de Stockyard.",
+  "description": "Looks únicos y exclusivos para Jason y Lucia en «el destino principal de streetwear elevado de Stockyard». Solo abre con Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Stockyard",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-electricfang"
+  ],
+  "mapPosition": {
+   "x": 0.724,
+   "y": 0.4497,
+   "precision": "barrio",
+   "basis": "Rockstar ubica el estudio en Stockyard; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "estudio de tatuajes"
+  ],
+  "related": [
+   "lug-stockyard"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Estudio de tatuajes",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Stockyard",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-electric-fang",
+  "slug": "electric-fang",
+  "name": "Electric Fang Tattoo",
+  "category": "negocios",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Más de 50 tatuajes exclusivos diseñados por el colectivo FAILE.",
+  "description": "El bar de tinta más icónico de Stockyard, con más de 50 tatuajes de autor para Jason y Lucia, todos diseñados por el colectivo artístico FAILE. Solo abre con Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Lake Leonida",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-willie"
+  ],
+  "mapPosition": {
+   "x": 0.608,
+   "y": 0.314,
+   "precision": "zona",
+   "basis": "Rockstar ubica el taller en Lake Leonida; punto sobre el rótulo del lago en el mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "taller todoterreno"
+  ],
+  "related": [
+   "lug-lake-leonida"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Taller todoterreno",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Lake Leonida",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-one-eyed-willies",
+  "slug": "one-eyed-willies",
+  "name": "One-Eyed Willie's",
+  "category": "negocios",
+  "region": "ambrosia",
+  "status": "oficial",
+  "summary": "Modificaciones todoterreno y pintura automotriz a mano en Lake Leonida.",
+  "description": "Este taller de Lake Leonida se especializa en modificaciones todoterreno y arte automotriz pintado a mano. Solo abre con Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Southside",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-ptt"
+  ],
+  "mapPosition": {
+   "x": 0.623,
+   "y": 0.65,
+   "precision": "barrio",
+   "basis": "Rockstar lo sitúa en Southside Vice City; punto sobre el rótulo «Southside» del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "complejo de pandilla"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Complejo de pandilla",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Southside",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-ptt-youngins",
+  "slug": "ptt-youngins",
+  "name": "PTT Youngin$ Illegal Goods Store",
+  "category": "negocios",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Asalta el complejo de una de las pandillas más ruidosas de Southside.",
+  "description": "Asalta el complejo de una de las pandillas más escandalosas y activas en redes de Southside Vice City y escapa a salvo para conseguir artículos especiales y contrabando distintivo. Beneficio de Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Watson Bay",
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-buggy"
+  ],
+  "mapPosition": {
+   "x": 0.432,
+   "y": 0.703,
+   "precision": "barrio",
+   "basis": "Rockstar lo sitúa en Watson Bay; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "garaje"
+  ],
+  "related": [
+   "veh-vapid-dominator-buggy-67",
+   "lug-watson-bay"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Garaje",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Watson Bay",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-paradise-garage",
+  "slug": "paradise-garage",
+  "name": "Paradise Garage",
+  "category": "negocios",
+  "region": "grassrivers",
+  "status": "oficial",
+  "summary": "Garaje en Watson Bay con armario de armas y depósito de bienes robados.",
+  "description": "Garaje incluido con el ’67 Vapid Dominator Buggy. Incluye armario de armas y un lugar seguro para depositar bienes robados que se venden después.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": "Ocean Beach",
+  "howTo": [],
+  "requirements": [
+   "Requiere el complemento digital Vintage Vice City Pack."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "vv-stanier"
+  ],
+  "mapPosition": {
+   "x": 0.862,
+   "y": 0.5225,
+   "precision": "barrio",
+   "basis": "Rockstar lo sitúa junto a Ocean Beach; punto sobre el rótulo del mapa oficial."
+  },
+  "spoilerLevel": 0,
+  "edition": "vintage",
+  "tags": [
+   "negocio",
+   "garaje personal"
+  ],
+  "related": [
+   "veh-vapid-stanier-55",
+   "lug-ocean-beach"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Garaje personal",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Ocean Beach",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Vintage Vice City Pack",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-shore-court",
+  "slug": "shore-court",
+  "name": "Garaje Shore Court",
+  "category": "negocios",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "Garaje personal a un paso de Ocean Beach (Vintage Vice City Pack).",
+  "description": "Garaje personal incluido con el ’55 Vapid Stanier, «a un paso de la arena de Ocean Beach». Incluye armario de armas y depósito seguro de bienes robados.",
+  "sources": [
+   "rs-vi",
+   "rs-media",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-safehouse"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "negocio",
+   "propiedad (historia)"
+  ],
+  "related": [
+   "veh-dinka-enduro",
+   "veh-crest-kayak",
+   "pj-brian-heder"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Propiedad (historia)",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Juego base (historia)",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-casa-jason",
+  "slug": "casa-jason",
+  "name": "Casa de Jason",
+  "category": "negocios",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Brian deja que Jason viva sin pagar renta en una de sus propiedades.",
+  "description": "Según Rockstar, Brian deja que Jason viva sin pagar renta en una de sus propiedades, siempre que le ayude con extorsiones locales. Con Ultimate Edition, afuera hay una Dinka Enduro y un Crest Kayak. La ubicación exacta no está publicada oficialmente, por eso no tiene punto en el mapa.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "p-drequan"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "negocio",
+   "disquera (historia)"
+  ],
+  "related": [
+   "pj-boobie-ike",
+   "pj-drequan-priest",
+   "pj-real-dimez"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Disquera (historia)",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Juego base (historia)",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-only-raw-records",
+  "slug": "only-raw-records",
+  "name": "Only Raw Records",
+  "category": "negocios",
+  "region": "vice-city",
+  "status": "oficial",
+  "summary": "La disquera de Boobie Ike y Dre'Quan Priest.",
+  "description": "Sociedad de Boobie Ike y el aspirante a magnate musical Dre'Quan Priest. Real Dimez firmaron con el sello. Rockstar no publica su ubicación.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "amb-skyline"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "negocio",
+   "industria"
+  ],
+  "related": [
+   "lug-ambrosia"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Industria",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Juego base (historia)",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-allied-crystal",
+  "slug": "allied-crystal",
+  "name": "Refinería Allied Crystal",
+  "category": "negocios",
+  "region": "ambrosia",
+  "status": "oficial",
+  "summary": "La refinería de azúcar que da empleo en Ambrosia.",
+  "description": "Según Rockstar, la refinería de azúcar Allied Crystal proporciona los empleos de Ambrosia. Ubicación exacta no publicada; ver la región Ambrosia en el mapa.",
+  "sources": [
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-goodtime"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "negocio",
+   "colección de ropa"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Colección de ropa",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Disponibilidad",
+    "value": "Ultimate Edition",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-goodtime-gear",
+  "slug": "goodtime-gear",
+  "name": "Goodtime Gear",
+  "category": "negocios",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Ropa inspirada en Macca the Gator, el personaje de TV del «Goodtime State».",
+  "description": "Colección cápsula de ropa y accesorios inspirada en Macca the Gator, personaje de un exitoso programa de TV del «Goodtime State». Beneficio de Ultimate Edition.",
+  "sources": [
+   "rs-vi",
+   "rs-media"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Vice City y alrededores (reportado): Phil's Ammu-Nation (Southside, Expanded), Prestige Firearms (Ocean Beach, Expanded), Iron & Oak (Stockyard, Expanded), Black Eagle (Balsero, Expanded), Jackson Firearms (Balsero), Quickscope (Downtown), Martez Empeños (Little Cuba), Vice City Gun & Pawn (Rockridge), Pawn & Gun (Crosstown), Zenon's Pawn Shop (La Perle), Tequesta Guns & Ammo (Tequesta), Vice City Firearms (Salton).",
+   "Keys, Hamlet y Mariana County (reportado): Chuck's Tackle & Shot (Key Lento, Limited), Barrage Gun Supply (Southwind), Guns Aplenty! (Watson Bay, Hunting), Richardson Hunting Supplies (North Mariana County), Woodhatch (Capri, Expanded), Big Shots (East Hamlet, Expanded), Hamlet Traders (Hamlet).",
+   "Norte e interior (reportado): Gellhorn Outfitters y Pawn & Gun (Port Gellhorn), Biff's Gun Supply (Ambrosia), Tactical Outlet Guns (Belville), Rusty Willis Jr. Hunting Supplies (Lummox County, Hunting)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única; los inventarios pueden cambiar con parches."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "armas",
+   "tiendas"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Número de tiendas",
+    "value": "24",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Niveles",
+    "value": "Expanded 6 · Standard 15 · Hunting 2 · Limited 1",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   },
+   {
+    "label": "Equipo",
+    "value": "Parachute Bag $300 · Ammo Pack $950 · Explosives Pack $1,500",
+    "status": "reportado",
+    "sources": [
+     "gamesgg-ammu"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "neg-ammu-nation",
+  "slug": "ammu-nation",
+  "name": "Red de tiendas Ammu-Nation",
+  "category": "negocios",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "24 armerías reportadas en Leonida, con cuatro niveles de inventario.",
+  "description": "GAMES.GG reporta 24 Ammu-Nation repartidas por Leonida, clasificadas por inventario: 6 «Expanded», 15 «Standard», 2 «Hunting» y 1 «Limited». Las Expanded venden lanzacohetes, lanzagranadas y rifles de francotirador de gama alta. Fuente única: no publicamos puntos exactos en el mapa.",
+  "sources": [
+   "gamesgg-ammu"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Avanza la historia sin dedicar tiempo a farmear durante el Capítulo 1.",
+   "Cuando se desbloquee la cuenta BuckMe, deposita tu efectivo antes de actividades riesgosas.",
+   "Si quieres conservar algo, cumple la primera meta de Family Savings antes de terminar el capítulo (cifra reportada por una sola guía)."
+  ],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "No confirmado por Rockstar; dos guías independientes lo describen igual."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "capitulo 1",
+   "banco",
+   "family savings"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Pérdida de efectivo al final del Cap. 1",
+    "value": "Sí",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Cuenta bancaria",
+    "value": "BuckMe, se desbloquea a mitad del Cap. 1",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Primera meta de Family Savings",
+    "value": "~$5,000",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Máximo de Family Savings (misión «Save for the Future»)",
+    "value": "$2,000,000",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-regla-capitulo-1",
+  "slug": "no-farmees-en-el-capitulo-1",
+  "name": "Regla clave: el efectivo del Capítulo 1 se pierde",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Dos guías coinciden: el efectivo que llevas encima se pierde al terminar el Capítulo 1.",
+  "description": "PowerPyx afirma que acumular dinero en el Capítulo 1 «no tiene sentido» porque se pierde al final del capítulo; GTA BOOM indica que el cierre del Capítulo 1 borra el efectivo que llevas encima y recomienda depositar en BuckMe (cuenta bancaria) y alcanzar la primera meta de Family Savings (unos $5,000) antes de la transición. GTA BOOM también señala que el efectivo en mano se pierde al morir o ser arrestado y que los bienes robados no se gastan hasta venderlos.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Desbloquea el encargo «Moses (Take A Vehicle to Moses)» en el Capítulo 2.",
+   "Roba un auto sin rastreador lejos del taller (por ejemplo, en la avenida principal de Port Gellhorn).",
+   "Entrégalo a Moses y espera el enfriamiento (~2 min) antes del siguiente."
+  ],
+  "requirements": [
+   "Capítulo 2 de la historia.",
+   "Auto sin rastreador."
+  ],
+  "chapter": "Capítulo 2",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago por entrega",
+   "amount": {
+    "min": 1000,
+    "max": 3000
+   },
+   "note": "Rango combinado de dos guías."
+  },
+  "time": "1–2 min + ~2 min de enfriamiento (reportado)",
+  "risks": [
+   "Robar autos puede generar nivel de búsqueda.",
+   "El pago varía según el vehículo."
+  ],
+  "images": [
+   "vc-car-meet"
+  ],
+  "mapPosition": {
+   "x": 0.305,
+   "y": 0.358,
+   "precision": "region",
+   "basis": "Ambas guías sitúan el método en Port Gellhorn; el punto marca la región, no el taller."
+  },
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "autos",
+   "capitulo 2",
+   "repetible"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 1000,
+   "grossMax": 3000,
+   "costs": 0,
+   "minutesPerRun": 2,
+   "cooldownMinutes": 2,
+   "estimate": true,
+   "note": "El pago depende del auto y su estado."
+  },
+  "facts": [
+   {
+    "label": "Pago por auto",
+    "value": "$1,000+ (PowerPyx) · $1,000–$3,000 (GTA BOOM)",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Duración",
+    "value": "1–2 minutos",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Enfriamiento",
+    "value": "~2 minutos",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Zona",
+    "value": "Port Gellhorn",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-moses",
+  "slug": "vender-autos-a-moses",
+  "name": "Vender autos a Moses",
+  "category": "dinero",
+  "region": "port-gellhorn",
+  "status": "contrastado",
+  "summary": "Roba autos sin rastreador y véndelos a Moses: ~$1,000+ por auto en 1–2 minutos.",
+  "description": "Ambas guías lo señalan como el método repetible del Capítulo 2. Moses solo acepta autos sin rastreador (los que tienen rastreador estándar se venden en Pay 'n' Spray). PowerPyx indica pagos típicos de $1,000+, 1–2 minutos de trabajo y un enfriamiento de unos 2 minutos; GTA BOOM reporta $1,000–$3,000 por auto. Rechaza vehículos robados demasiado cerca del taller: PowerPyx sugiere ir a la avenida principal de Port Gellhorn.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Avanza hasta el Capítulo 3 y completa la introducción «Yasmani's Jewelry Jobs».",
+   "Realiza el robo rápido (smash-and-grab) y escapa.",
+   "Vende o deposita el botín según indique el juego antes de arriesgarte de nuevo."
+  ],
+  "requirements": [
+   "Capítulo 3."
+  ],
+  "chapter": "Capítulo 3",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Botín por robo",
+   "amount": {
+    "min": 10000,
+    "max": 25000
+   },
+   "note": "Valor del botín reportado; ninguna guía detalla el neto tras la venta."
+  },
+  "time": null,
+  "risks": [
+   "Nivel de búsqueda al escapar.",
+   "Las guías no aclaran si el botín se recibe íntegro tras venderlo."
+  ],
+  "images": [
+   "jl-banco"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "robo",
+   "capitulo 3"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 10000,
+   "grossMax": 25000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": "Las guías no indican duración ni si el botín es valor nominal o efectivo neto."
+  },
+  "facts": [
+   {
+    "label": "Botín por robo",
+    "value": "$10,000–$25,000",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Introducción",
+    "value": "Yasmani's Jewelry Jobs",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-joyerias-yasmani",
+  "slug": "robos-a-joyerias-yasmani",
+  "name": "Robos a joyerías (Yasmani)",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Robos relámpago a joyerías: $10,000–$25,000 por golpe según dos guías.",
+  "description": "PowerPyx y GTA BOOM coinciden en el rango de $10,000–$25,000 por robo. PowerPyx indica que se introducen en «Yasmani's Jewelry Jobs».",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Completa «Clonin' Keys, Makin' GS» para obtener el Key Cloner.",
+   "Localiza un auto de la Wish List de Randy.",
+   "Entrégalo sin daños para cobrar el pago completo."
+  ],
+  "requirements": [
+   "Capítulo 3.",
+   "Key Cloner."
+  ],
+  "chapter": "Capítulo 3",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago por auto",
+   "amount": {
+    "min": 30000,
+    "max": 30000
+   },
+   "note": "«$30,000+»: mínimo reportado; el máximo no se publica."
+  },
+  "time": null,
+  "risks": [
+   "Los daños reducen el pago."
+  ],
+  "images": [
+   "ue-cheetah"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "autos",
+   "capitulo 3"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 30000,
+   "grossMax": 30000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": "El pago baja si el auto llega dañado."
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "$30,000+ en perfecto estado",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Autos en la lista",
+    "value": "18",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Herramienta",
+    "value": "Key Cloner",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-randy",
+  "slug": "lista-de-deseos-de-randy",
+  "name": "Lista de deseos de Randy (superdeportivos)",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Entrega superdeportivos con rastreador avanzado: $30,000+ por auto en perfecto estado.",
+  "description": "Ambas guías dan $30,000+ por auto de la lista de Randy. PowerPyx indica que necesitas el Key Cloner de la misión «Clonin' Keys, Makin' GS» y que la lista tiene 18 autos; el pago exige que el auto llegue en perfecto estado.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 3",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago por auto",
+   "amount": {
+    "min": 2500,
+    "max": 4000
+   },
+   "note": "Rango combinado."
+  },
+  "time": null,
+  "risks": [],
+  "images": [
+   "vc-gasolinera"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "autos"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 2500,
+   "grossMax": 4000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "$2,500–$4,000+",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-pay-n-spray",
+  "slug": "autos-rastreados-pay-n-spray",
+  "name": "Autos con rastreador estándar en Pay 'n' Spray",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Vende autos con rastreador estándar: $2,500–$4,000+ según dos guías.",
+  "description": "PowerPyx reporta alrededor de $4,000+ por un buen auto; GTA BOOM, $2,500–$4,000 para autos estándar.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Botín por sitio",
+   "amount": {
+    "min": 1000,
+    "max": 2000
+   },
+   "note": "Fuente única para la cifra."
+  },
+  "time": null,
+  "risks": [
+   "Combate armado.",
+   "Cifra de pago de fuente única."
+  ],
+  "images": [
+   "gr-aerodeslizador"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "pandillas",
+   "capitulo 1"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 1000,
+   "grossMax": 2000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": "Cifra de una sola guía."
+  },
+  "facts": [
+   {
+    "label": "Existencia e icono en el mapa",
+    "value": "Sí (iconos amarillos)",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Mencionadas por",
+    "value": "PowerPyx y GTA BOOM",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Número de ubicaciones",
+    "value": "39",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Pago por sitio",
+    "value": "~$1,000–$2,000+",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-operaciones-ilegales",
+  "slug": "operaciones-ilegales",
+  "name": "Operaciones ilegales (escondites de pandillas)",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Escondites marcados en el mapa: ~$1,000–$2,000+ por sitio (pago reportado).",
+  "description": "PowerPyx indica que los «Gang Operations» son iconos amarillos en el mapa (39 ubicaciones). GTA BOOM los llama «Illegal Operations» y reporta ~$1,000–$2,000+ por sitio saqueado por completo, mencionando las cabañas de pesca de los Kingfishers al noroeste de Key Lento. GAMES.GG reporta que varias de estas operaciones esconden armas únicas.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money",
+   "gamesgg-unique"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "vc-gasolinera"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Método",
+    "value": "Apuntar al dependiente y saquear la caja",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Pago",
+    "value": "«Low hundreds» (unos cientos)",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-asaltos-a-tiendas",
+  "slug": "asaltos-a-tiendas",
+  "name": "Asaltos a tiendas",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Apunta al cajero y saquea la caja: «unos cientos» de dólares.",
+  "description": "PowerPyx describe el método (apuntar al dependiente y saquear la caja); GTA BOOM reporta pagos de «unos cientos» y recomienda mantener a los civiles quietos y guardar el arma.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "images": [
+   "vc-car-meet"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Ubicaciones",
+    "value": "40",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Pago",
+    "value": "No publicado",
+    "status": "pendiente",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-carreras",
+  "slug": "carreras",
+  "name": "Carreras callejeras",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "40 ubicaciones de carrera reportadas; pago no publicado.",
+  "description": "PowerPyx menciona ganar carreras desde el Capítulo 1 y cuenta 40 ubicaciones únicas, sin publicar el pago.",
+  "sources": [
+   "powerpyx-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 900,
+    "max": 900
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 900,
+   "grossMax": 900,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "~$900 por paquete",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Ubicaciones",
+    "value": "4",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-paquetes-de-donnie",
+  "slug": "paquetes-de-donnie",
+  "name": "Paquetes de droga para Donnie",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Entrega paquetes recuperados: ~$900 cada uno (4 ubicaciones).",
+  "description": "GTA BOOM reporta que, tras la misión «Lab Fees», Donnie compra paquetes recuperados por ~$900 cada uno en cuatro ubicaciones.",
+  "sources": [
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 1",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 1400,
+    "max": 1400
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "images": [
+   "keys-buceo"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 1400,
+   "grossMax": 1400,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "~$1,400+",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Requisito",
+    "value": "Equipo de buceo",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-tesoros-de-kenton",
+  "slug": "tesoros-de-kenton",
+  "name": "Inmersiones de tesoro (Kenton)",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Naufragios con botín: ~$1,400+ los primeros.",
+  "description": "GTA BOOM reporta que, tras la misión «Island Dreams» en Leonida Keys, las inmersiones a naufragios pagan ~$1,400 en adelante; requiere equipo de buceo.",
+  "sources": [
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 2",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 1000,
+    "max": 12000
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 1000,
+   "grossMax": 12000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "~$1,000–$12,000",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-casas-de-empeno",
+  "slug": "casas-de-empeno",
+  "name": "Casas de empeño",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Vende objetos robados: ~$1,000–$12,000.",
+  "description": "GTA BOOM reporta ventas de ~$1,000 a $12,000 en casas de empeño desde mediados del Capítulo 2.",
+  "sources": [
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Capítulo 3",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 5000,
+    "max": 45000
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Nivel de búsqueda alto."
+  ],
+  "images": [
+   "jl-banco"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 5000,
+   "grossMax": 45000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "~$5,000–$45,000",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Herramienta",
+    "value": "Dye Pack Jammer",
+    "status": "reportado",
+    "sources": [
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Datos de Yasmani (camiones de valores)",
+    "value": "Cuestan $10,000",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-bancos-pequenos",
+  "slug": "bancos-pequenos",
+  "name": "Bancos pequeños y préstamos (Payday Loans)",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "~$5,000–$45,000; los billetes marcados requieren Dye Pack Jammer.",
+  "description": "GTA BOOM reporta ~$5,000–$45,000 desde mediados del Capítulo 3 («Credit Check») y que el Dye Pack Jammer es necesario para los billetes marcados (con un caso reportado de $45,000). PowerPyx menciona que Yasmani vende datos de camiones de valores por $10,000 tras dos robos Payday Loan.",
+  "sources": [
+   "gtaboom-money",
+   "powerpyx-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Final del Capítulo 4",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 100000,
+    "max": 205000
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual.",
+   "Nivel de búsqueda alto."
+  ],
+  "images": [
+   "jl-banco"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 2,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 100000,
+   "grossMax": 205000,
+   "costs": 0,
+   "minutesPerRun": 5,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "Hasta $205,000",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Ritmo tras la historia",
+    "value": "~$100,000–$200,000 cada 5 min",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   },
+   {
+    "label": "Búsqueda",
+    "value": "4 estrellas al instante",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-bovedas-bancarias",
+  "slug": "bovedas-bancarias",
+  "name": "Bóvedas de bancos grandes",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "Hasta $205,000 por golpe (fuente única); da 4 estrellas al instante.",
+  "description": "PowerPyx reporta que la misión opcional «That's Where The Money Is…» al final del Capítulo 4 (antes del punto de no retorno) desbloquea robos a bóvedas grandes de hasta $205,000, con unos $100,000–$200,000 cada 5 minutos tras la historia. Activan 4 estrellas de búsqueda al instante. GTA BOOM no lo confirma y dice que los mayores robos se retienen por diseño.",
+  "sources": [
+   "powerpyx-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [],
+  "chapter": "Final del Capítulo 3",
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": {
+   "label": "Pago reportado",
+   "amount": {
+    "min": 120000,
+    "max": 120000
+   },
+   "note": "Ver nivel de evidencia de cada dato."
+  },
+  "time": null,
+  "risks": [
+   "Fuente única: puede no reproducirse igual."
+  ],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 2,
+  "edition": "base",
+  "tags": [
+   "dinero"
+  ],
+  "related": [],
+  "money": {
+   "grossMin": 120000,
+   "grossMax": 120000,
+   "costs": 0,
+   "minutesPerRun": null,
+   "cooldownMinutes": null,
+   "estimate": true,
+   "note": ""
+  },
+  "facts": [
+   {
+    "label": "Pago",
+    "value": "$120,000",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "din-recompensa-capitulo-3",
+  "slug": "recompensa-capitulo-3",
+  "name": "Recompensa de historia del Capítulo 3",
+  "category": "dinero",
+  "region": "leonida",
+  "status": "reportado",
+  "summary": "$120,000 automáticos al terminar el Capítulo 3 (fuente única).",
+  "description": "PowerPyx indica que recibes $120,000 automáticamente al final del Capítulo 3 por avanzar la historia.",
+  "sources": [
+   "powerpyx-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Usa el buscador (tolera acentos y errores leves).",
+   "Filtra por región, categoría, capítulo, evidencia y nivel de spoiler.",
+   "Guarda fichas con ★ y marca tu progreso con ✓; tus datos se quedan en tu dispositivo.",
+   "Comparte una ficha: el enlace abre directamente esa página."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "tutorial",
+   "inicio"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Fuente de los niveles",
+    "value": "Política editorial de LEONIDA ATLAS",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-empieza-aqui",
+  "slug": "empieza-aqui",
+  "name": "Empieza aquí: cómo leer LEONIDA ATLAS",
+  "category": "rutas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Qué significa cada nivel de evidencia y cómo sacarle provecho a la guía.",
+  "description": "LEONIDA ATLAS separa lo confirmado de lo reportado. Cada ficha y cada dato llevan una etiqueta: «Oficial» (Rockstar Games/Take-Two), «Comprobado» (reproducido en una partida documentada), «Contrastado» (dos fuentes independientes coinciden), «Reportado» (una sola fuente no oficial), «Pendiente» (falta información) y «Obsoleto» (ya no aplica). Los puntos del mapa declaran su precisión: región, zona o barrio. Nada se presenta como coordenada exacta.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Capítulo 1 → lee «Regla clave: el efectivo del Capítulo 1 se pierde».",
+   "Capítulo 2 → «Vender autos a Moses» (contrastado).",
+   "Capítulo 3 → «Robos a joyerías» y «Lista de deseos de Randy» (contrastados).",
+   "Final del Capítulo 4 → «Bóvedas de bancos grandes» (reportado, spoiler)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Lanzamiento (19-nov-2026). La fuente no indica número de parche.",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [],
+  "mapPosition": null,
+  "spoilerLevel": 1,
+  "edition": "base",
+  "tags": [
+   "dinero",
+   "ruta"
+  ],
+  "related": [
+   "din-regla-capitulo-1",
+   "din-moses",
+   "din-joyerias-yasmani",
+   "din-randy",
+   "din-bovedas-bancarias"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Coincidencia entre guías",
+    "value": "Capítulos 1–3",
+    "status": "contrastado",
+    "sources": [
+     "powerpyx-money",
+     "gtaboom-money"
+    ]
+   },
+   {
+    "label": "Bóvedas del Capítulo 4",
+    "value": "Solo PowerPyx",
+    "status": "reportado",
+    "sources": [
+     "powerpyx-money"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-dinero-por-capitulo",
+  "slug": "ruta-de-dinero-por-capitulo",
+  "name": "Ruta de dinero por capítulo (modo historia)",
+  "category": "rutas",
+  "region": "leonida",
+  "status": "contrastado",
+  "summary": "Qué hacer en cada capítulo según las guías revisadas, sin prometer cifras infinitas.",
+  "description": "Síntesis de PowerPyx y GTA BOOM. Capítulo 1: avanza la historia y protege tu efectivo (se pierde al final del capítulo). Capítulo 2: vende autos sin rastreador a Moses. Capítulo 3: robos a joyerías de Yasmani y autos de la lista de Randy. Final del Capítulo 4: bóvedas grandes (fuente única). Usa la calculadora para comparar con tus propios tiempos.",
+  "sources": [
+   "powerpyx-money",
+   "gtaboom-money"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Sal de Hamlet hacia el sur por la 1A (cuadrícula I–J/6 del mapa oficial).",
+   "Cruza Shoeless Keys y llega a Key Lento (cuadrícula K/5–6).",
+   "Sigue la 1A hacia el oeste por Maroon Key y Abismo Key (cuadrícula L/4–5).",
+   "Termina en Southwind y Mile Zero Air Station (cuadrícula L/3)."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "keys-hidroavion"
+  ],
+  "mapPosition": {
+   "x": 0.568,
+   "y": 0.833,
+   "precision": "zona",
+   "basis": "Punto de referencia en Key Lento; la ruta completa se describe por cuadrícula."
+  },
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ruta",
+   "paseo",
+   "cayos"
+  ],
+  "related": [
+   "lug-leonida-keys"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Trazado",
+    "value": "Ruta 1A visible en el mapa oficial",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   },
+   {
+    "label": "Puntos rotulados",
+    "value": "Hamlet, Shoeless Keys, Key Lento, Maroon Key, Abismo Key, Southwind, Mile Zero Air Station",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-ruta-1a-keys",
+  "slug": "por-la-1a-hasta-mile-zero",
+  "name": "Por la 1A hasta Mile Zero (ruta orientativa)",
+  "category": "rutas",
+  "region": "leonida-keys",
+  "status": "oficial",
+  "summary": "Recorrido escénico por los cayos trazado sobre el mapa oficial: Hamlet → Key Lento → Southwind.",
+  "description": "Ruta editorial trazada a partir del mapa oficial de Leonida, donde la ruta 1A baja desde la zona de Hamlet, pasa por Shoeless Keys y Key Lento, y continúa hacia el oeste por Maroon Key y Abismo Key hasta Southwind y Mile Zero Air Station. Es una sugerencia turística: no indica tiempos ni eventos garantizados.",
+  "sources": [
+   "rs-map",
+   "rs-oil"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Mount Kalaga National Park — caza, pesca y senderos.",
+   "Port Gellhorn — la costa olvidada.",
+   "Ambrosia — refinería Allied Crystal.",
+   "Vice City — playas y vida nocturna.",
+   "Grassrivers — humedales y caimanes.",
+   "Leonida Keys — bares y buceo."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "mk-carretera"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ruta",
+   "regiones"
+  ],
+  "related": [
+   "lug-mount-kalaga",
+   "lug-port-gellhorn",
+   "lug-ambrosia",
+   "lug-vice-city",
+   "lug-grassrivers",
+   "lug-leonida-keys"
+  ],
+  "money": null,
+  "facts": [
+   {
+    "label": "Regiones oficiales",
+    "value": "6",
+    "status": "oficial",
+    "sources": [
+     "rs-oil"
+    ]
+   },
+   {
+    "label": "Ubicación relativa",
+    "value": "Según el mapa oficial",
+    "status": "oficial",
+    "sources": [
+     "rs-map"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-tour-6-regiones",
+  "slug": "tour-por-las-6-regiones",
+  "name": "Tour por las 6 regiones de Leonida",
+  "category": "rutas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Un recorrido de norte a sur basado en las descripciones oficiales de cada región.",
+  "description": "Recorre Leonida de norte a sur: Mount Kalaga (frontera norte), Port Gellhorn (costa oeste), Ambrosia (centro, junto a Lake Leonida), Vice City (costa este), Grassrivers (humedales del sur) y Leonida Keys (cayos). Cada parada enlaza con su ficha y su punto en el mapa.",
+  "sources": [
+   "rs-oil",
+   "rs-map"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [],
+  "requirements": [
+   "Requiere Grand Theft Auto VI: Ultimate Edition (o la mejora Ultimate Edition Upgrade)."
+  ],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-wyman"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "ultimate",
+  "tags": [
+   "autos",
+   "coleccionable",
+   "ultimate"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Tipo",
+    "value": "Encargo especial (Special Commission)",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Cliente",
+    "value": "Wyman",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Ubicaciones de los autos",
+    "value": "Sin verificar",
+    "status": "pendiente",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-classic-car-collection",
+  "slug": "classic-car-collection-wyman",
+  "name": "Encargo especial: Classic Car Collection",
+  "category": "rutas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Encuentra autos clásicos abandonados y restáuralos para el coleccionista Wyman.",
+  "description": "Encargo especial de Ultimate Edition: localiza diversos autos clásicos abandonados y proyectos a medio terminar, y devuélvelos a su gloria original para Wyman, coleccionista excéntrico y «fixer» local. Rockstar no publica la lista de autos ni sus ubicaciones; no publicamos ubicaciones hasta verificarlas.",
+  "sources": [
+   "rs-vi"
+  ]
+ },
+ {
+  "subzone": null,
+  "howTo": [
+   "Ultimate Edition: ’95 Grotti Cheetah, Hawk & Little Morgan Revolvers, variantes personalizadas de armas, Vice City Style, vehículos de la casa de Jason, Ganado Retro Build, Rideout Customs, Sara's Unisex Salon, Shitzu Squalo, Stock 305, ’67 Vapid Dominator Buggy, Electric Fang Tattoo, One-Eyed Willie's, Goodtime Gear, PTT Youngin$ y Classic Car Collection.",
+   "Vintage Vice City Pack: ’55 Vapid Stanier y garaje personal, atuendos y peinados, patrón de armas."
+  ],
+  "requirements": [],
+  "chapter": null,
+  "mode": "historia",
+  "platform": [
+   "PS5",
+   "Xbox Series X|S"
+  ],
+  "patch": "Contenido oficial de lanzamiento (19-nov-2026).",
+  "reward": null,
+  "time": null,
+  "risks": [],
+  "images": [
+   "ue-goodtime"
+  ],
+  "mapPosition": null,
+  "spoilerLevel": 0,
+  "edition": "base",
+  "tags": [
+   "ediciones",
+   "ultimate",
+   "vintage"
+  ],
+  "related": [],
+  "money": null,
+  "facts": [
+   {
+    "label": "Plataformas",
+    "value": "PlayStation 5 y Xbox Series X|S",
+    "status": "oficial",
+    "sources": [
+     "rs-vi",
+     "rs-news-launch"
+    ]
+   },
+   {
+    "label": "Fecha de lanzamiento",
+    "value": "19 de noviembre de 2026",
+    "status": "oficial",
+    "sources": [
+     "rs-news-launch",
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Clasificación",
+    "value": "ESRB Mature 17+ con compras dentro del juego",
+    "status": "oficial",
+    "sources": [
+     "rs-vi"
+    ]
+   },
+   {
+    "label": "Precio",
+    "value": "No mostrado en la página oficial revisada",
+    "status": "pendiente",
+    "sources": [
+     "rs-vi"
+    ]
+   }
+  ],
+  "verifiedAt": "2026-11-22",
+  "id": "rut-ediciones",
+  "slug": "ediciones-y-complementos",
+  "name": "Ediciones y complementos de GTA VI",
+  "category": "rutas",
+  "region": "leonida",
+  "status": "oficial",
+  "summary": "Qué incluyen Standard, Ultimate Edition y el Vintage Vice City Pack.",
+  "description": "Rockstar ofrece la Standard Edition (digital o código en caja), la Ultimate Edition —una colección exclusiva de vehículos, armas, ropa y acción repartida por todos los capítulos de la historia de Jason y Lucia— y el complemento digital Vintage Vice City Pack (’55 Vapid Stanier con garaje junto a Ocean Beach, atuendos y peinados retro y patrón de armas tropical). La Ultimate Edition Upgrade mejora una Standard. Los miembros de GTA+ en consola reciben beneficios opcionales.",
+  "sources": [
+   "rs-vi",
+   "rs-news-launch",
+   "rs-media"
+  ]
+ }
+]

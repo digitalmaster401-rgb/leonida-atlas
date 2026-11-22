@@ -1,0 +1,123 @@
+[
+ {
+  "id": "rs-vi",
+  "title": "Grand Theft Auto VI — sitio oficial",
+  "url": "https://www.rockstargames.com/VI",
+  "publisher": "Rockstar Games",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Textos de ediciones, beneficios de Ultimate Edition, Vintage Vice City Pack, plataformas y clasificación ESRB."
+ },
+ {
+  "id": "rs-news-launch",
+  "title": "Grand Theft Auto VI ya está disponible",
+  "url": "https://www.rockstargames.com/mx/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+  "publisher": "Rockstar Games Newswire",
+  "author": null,
+  "publishedAt": "2026-11-19",
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Anuncio de lanzamiento. Fecha confirmada también en la portada oficial de /VI."
+ },
+ {
+  "id": "rs-oil",
+  "title": "Only in Leonida — personajes y lugares",
+  "url": "https://www.rockstargames.com/VI/only-in-leonida",
+  "publisher": "Rockstar Games",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Descripciones oficiales de las seis regiones y de los personajes principales."
+ },
+ {
+  "id": "rs-media",
+  "title": "Media & Artwork (descargas oficiales)",
+  "url": "https://www.rockstargames.com/VI/media",
+  "publisher": "Rockstar Games",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "La página invita a «descargar y compartir» videos, capturas, arte y el póster del mapa de Leonida."
+ },
+ {
+  "id": "rs-gallery",
+  "title": "The Launch Gallery",
+  "url": "https://www.rockstargames.com/VI/launch-gallery",
+  "publisher": "Rockstar Games",
+  "author": null,
+  "publishedAt": "2026-11-05",
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Capturas oficiales con descripciones (alt) publicadas por Rockstar."
+ },
+ {
+  "id": "rs-map",
+  "title": "Leonida Map & Cover Art Poster",
+  "url": "https://www.rockstargames.com/VI/media",
+  "publisher": "Rockstar Games",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Póster oficial del mapa de Leonida con cuadrícula A–M / 1–9. Base del visor de mapa."
+ },
+ {
+  "id": "rs-policy",
+  "title": "Policy on posting copyrighted Rockstar Games material",
+  "url": "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material",
+  "publisher": "Rockstar Games Support",
+  "author": null,
+  "publishedAt": null,
+  "accessedAt": "2026-11-22",
+  "type": "oficial",
+  "note": "Política de uso de material por fans (uso no comercial y sin spoilers intencionales). La página respondió HTTP 503 al consultarla el 22-nov-2026; el resumen se tomó del índice público de la misma URL. Revisar de nuevo."
+ },
+ {
+  "id": "powerpyx-money",
+  "title": "GTA 6 Money Guide - How to Get Money Fast",
+  "url": "https://www.powerpyx.com/gta-6-money-guide-how-to-get-money-fast/",
+  "publisher": "PowerPyx",
+  "author": "PowerPyx",
+  "publishedAt": "2026-11-18",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Guía con nombres de misiones y ubicaciones. Fechada un día antes del lanzamiento general; no indica parche."
+ },
+ {
+  "id": "gtaboom-money",
+  "title": "10 Early GTA 6 Money Making Methods Compared by Payout and Chapter",
+  "url": "https://www.gtaboom.com/how-to-make-money-fast-and-early-in-gta-6-725c",
+  "publisher": "GTA BOOM",
+  "author": "Ray Ampoloquio",
+  "publishedAt": "2026-11-19",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Afirma basarse en su propia partida; algunas cifras se presentan como «reportadas»."
+ },
+ {
+  "id": "gamesgg-ammu",
+  "title": "Grand Theft Auto 6: All 24 Ammu-Nation Locations and Stock",
+  "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-all-24-ammu-nation-locations-and-stock/",
+  "publisher": "GAMES.GG",
+  "author": "Abdalla",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Lista de tiendas y precios con capturas del menú. Sin número de parche."
+ },
+ {
+  "id": "gamesgg-unique",
+  "title": "Grand Theft Auto 6 Guide: All Unique Weapons and Where to Get Them",
+  "url": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-all-unique-weapons-where-to-get-them/",
+  "publisher": "GAMES.GG",
+  "author": "Abdalla",
+  "publishedAt": "2026-11-21",
+  "accessedAt": "2026-11-22",
+  "type": "guia",
+  "note": "Armas únicas en tiendas y ubicaciones gratuitas. Fuente única: todo se marca como «reportado»."
+ }
+]

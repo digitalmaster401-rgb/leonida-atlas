@@ -1,0 +1,810 @@
+{
+ "id": "prop-run-20261122-040859",
+ "runId": "run-20261122-040859",
+ "createdAt": "2026-11-22T04:09:00.673Z",
+ "title": "ATLAS INTELLIGENCE: 72 nuevos, 0 actualizaciones",
+ "requiresHumanReview": true,
+ "changes": [
+  {
+   "findingId": "fnd-grand-theft-auto-vi-now-available",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-pre-load-grand-theft-auto-vi-now",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-explore-the-grand-theft-auto-vi-launch-gallery",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-vi-out-now",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-vi-launch-trailer",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-vi-an-extended-look",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-vi-trailer-2",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-vi-trailer-1",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-player-got-banned-for-30-days-for-texting-a-gta",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/player-got-banned-for-30-days-for-texting-a-gta-6-nude-screenshot-430f"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-helped-turn-game-ownership-into-a-politica",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-helped-turn-game-ownership-into-a-political-fight-9a31"
+   ]
+  },
+  {
+   "findingId": "fnd-french-retirement-home-residents-are-trading-scr",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/french-retirement-home-residents-are-trading-scrabble-for-gta-6-dcec"
+   ]
+  },
+  {
+   "findingId": "fnd-your-xbox-can-ban-you-for-auto-uploading-gta-6-n",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/your-xbox-can-ban-you-for-auto-uploading-gta-6-nude-clips-8930"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-is-too-big-for-borders-but-not-for-a-black",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-is-too-big-for-borders-but-not-for-a-black-friday-discount-f9fa"
+   ]
+  },
+  {
+   "findingId": "fnd-the-dexter-apartment-is-the-best-proof-yet-of-ho",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-dexter-apartment-is-the-best-proof-yet-of-how-gta-6-builds-its-world-3cdd"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-moses-vehicle-theft-guide-all-five-cars-an",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-moses-vehicle-theft-guide-2d3f"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-dunk-robbery-guide-lost-vista-pills-and-sc",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-dunk-robbery-guide-ce47"
+   ]
+  },
+  {
+   "findingId": "fnd-circana-says-gta-6-attracted-casual-gamers-and-h",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/circana-says-gta-6-attracted-casual-gamers-and-had-them-play-it-for-8-hours-a-day-d5e9"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-watson-bay-safehouse-guide-where-to-find-t",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-watson-bay-safehouse-guide-b746"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-moses-walkthrough-and-how-to-register-a-ca",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-moses-walkthrough-3093"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-girls-trip-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-girls-trip-walkthrough-a927"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-got-pills-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-got-pills-walkthrough-f6e2"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-just-moved-in-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-just-moved-in-walkthrough-0df9"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-overnight-charges-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-overnight-charges-walkthrough-c32e"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-starfish-island-garage-where-to-find-the-v",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-starfish-island-mansion-garage-4cf3"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-paul-walker-s-mitsubishi-eclipse-in-g",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-get-paul-walkers-mitsubishi-eclipse-in-gta-6-36b8"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-collectible-card-locations-six-pickups",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-collectible-card-locations-bbf1"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-what-s-in-the-bag-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-whats-in-the-bag-walkthrough-74c7"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-discharge-time-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-discharge-time-walkthrough-05d7"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-home-sweet-home-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-home-sweet-home-walkthrough-e4ac"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-tourist-trap-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-tourist-trap-walkthrough-f032"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-recalibration-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-recalibration-walkthrough-9838"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-don-gone-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-don-gone-walkthrough-35e0"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-skunk-ape-walkthrough-part-3-of-3-help-kir",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-help-kirk-find-mr-mangrove-walkthrough-198d"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-knife-flight-locations",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-knife-flight-locations/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-vc-baby-talk-to-mattia-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-vc-baby-talk-to-mattia-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-doggie-bag-meet-vinny-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-doggie-bag-meet-vinny-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-honest-abe-negotiate-a-deal-with-abe-walkt",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-honest-abe-negotiate-a-deal-with-abe-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-operation-savage-glory-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-operation-savage-glory-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-taking-liberties-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-taking-liberties-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-bird-in-the-hand-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-bird-in-the-hand-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-starting-from-zero-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-starting-from-zero-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-sunset-stop-by-the-front-desk-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-sunset-stop-by-the-front-desk-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-call-valentina-back-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-call-valentina-back-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-meet-the-heders-walkthrough-find-and-open",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-meet-the-heders-walkthrough-find-and-open-the-scoop-container/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-radio-djs-and-podcast-hosts-every-famous-v",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-radio-djs-and-podcast-hosts-every-famous-voice-on-gta-6s-radio/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-avery-pawn-shop-safe-code-how-to-find-and",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-avery-pawn-shop-safe-code-how-to-find-and-open-the-safe/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-dealer-s-choice-walkthrough-should-you-cho",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-dealers-choice-walkthrough-should-you-choose-cut-or-pure/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-slim-jim-location-how-to-get-it-and-unlock",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-car-alarms-explained-how-to-steal-cars-with-alarms-in-gta-6/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-chapter-3-laptop-password-how-to-unlock-th",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-chapter-3-laptop-password-how-to-unlock-the-laptop-in-boobies-apartment/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-welcome-to-vice-city-mission-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-welcome-to-vice-city-mission-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-kingpin-bowling-alley-safe-code-and-locati",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-brooks-boatworks-safe-code-and-location-ho",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-brooks-boatworks-safe-code-and-location-how-to-find-and-open-the-safe/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-xbox-psa-how-to-stop-automatic-clip-upload",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-xbox-psa-how-to-stop-automatic-clip-uploads-and-avoid-bans/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-players-captivated-by-mandy-apparently-inc",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-players-captivated-by-mandy-apparently-include-a-former-nintendo-president/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-has-dexter-references-and-now-dexter-himse",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-has-dexter-references-and-now-dexter-himself-has-reacted/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-sets-even-more-records",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-sets-even-more-records/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-astonishing-4-billion-day-one-includes-3",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-hit-32-5-million-copies-sold-and-almost-4-billion-on-day-one/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-is-crashing-on-some-ps5s-with-ce-108255-1",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-doesn-t-have-any-doja-cat-music-and-she-di",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-doesnt-have-any-doja-cat-music-and-she-didnt-censor-her-message-to-rockstar/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-7-please-let-gta-6-cook-first-take-two-ceo-s",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-7-please-let-gta-6-cook-first-take-two-ceo-says/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-is-a-british-success-story-prime-minister",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-is-a-british-success-story-prime-minister-says-but-he-wont-play-it/"
+   ]
+  },
+  {
+   "findingId": "fnd-hacker-threatens-to-leak-free-version-of-gta-6-i",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/a-playable-gta-6-build-could-leak-but-theres-a-15-million-catch/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-console-wars-are-already-over-and-xbox-l",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-console-wars-are-already-over-and-xbox-lost/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-nearing-25-million-copies-sold-and-2-4-bil",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-has-sold-almost-8-million-copies-so-far-and-ps5-is-dominating-the-split-of-course/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-dog-who-saves-you-is-seemingly-based-on-a",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-dog-who-saves-you-is-seemingly-based-on-a-very-cool-real-life-dog/"
+   ]
+  },
+  {
+   "findingId": "fnd-want-to-start-lifting-effectively-gta-6-is-a-goo",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/want-to-start-lifting-effectively-gta-6-is-a-good-teacher/"
+   ]
+  },
+  {
+   "findingId": "fnd-you-can-play-grand-theft-auto-6-at-60fps-using-t",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/you-can-play-grand-theft-auto-6-at-60fps-using-this-absurdly-complicated-method/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-has-a-surprise-cameo-from-someone-you-prob",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-has-a-surprise-cameo-from-someone-you-probably-didnt-expect/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-cast-list-includes-potentially-huge-spoile",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-cast-list-includes-potentially-huge-spoiler-so-be-warned/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-stars-release-a-very-nice-statement-as-g",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6s-stars-release-a-very-nice-statement-as-game-goes-live/"
+   ]
+  },
+  {
+   "findingId": "fnd-the-gta-6-map-is-truly-truly-massive-of-course",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/the-gta-6-map-is-truly-truly-massive-of-course/"
+   ]
+  },
+  {
+   "findingId": "fnd-why-gta-6-doesn-t-include-disney-world",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/why-gta-6-doesnt-include-disney-world/"
+   ]
+  }
+ ],
+ "risks": [
+  "Los hallazgos provienen de titulares y resúmenes de feeds: verifica la fuente antes de convertirlos en fichas públicas.",
+  "Incluye cambios de estado, cifras o glitches/trucos: requieren revisión humana o prueba documentada."
+ ],
+ "tests": [
+  "npm run validate:data",
+  "npx vitest run tests/intel",
+  "npm run build"
+ ]
+}

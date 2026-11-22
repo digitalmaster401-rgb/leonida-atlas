@@ -1,0 +1,46 @@
+name: Enviar hallazgo a ATLAS INTELLIGENCE
+description: Comparte un enlace (video, artículo, publicación o captura propia) sobre GTA VI para revisión.
+title: "Hallazgo: "
+labels: ["hallazgo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tu aporte entra a una **cola de revisión**. No se publica automáticamente ni se marca como confirmado sin pruebas.
+        No pegues contraseñas, datos personales ni enlaces a descargas de terceros.
+  - type: input
+    id: enlace
+    attributes:
+      label: Enlace
+      description: URL https del video, artículo o publicación.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoría
+      options: [Glitch, Dinero, Truco, Arma, Vehículo, Coleccionable, Ropa o joyería, Misión, Parche, Otro]
+    validations:
+      required: true
+  - type: dropdown
+    id: plataforma
+    attributes:
+      label: Plataforma
+      options: [PS5, PS5 Pro, Xbox Series X, Xbox Series S, No lo sé]
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Qué muestra, en qué capítulo o versión del juego, y si lo probaste tú (fecha y versión).
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmaciones
+    attributes:
+      label: Confirmaciones
+      options:
+        - label: Entiendo que el aporte se revisará antes de publicarse y puede rechazarse.
+          required: true

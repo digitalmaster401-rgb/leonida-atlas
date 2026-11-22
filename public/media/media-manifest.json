@@ -1,0 +1,1490 @@
+{
+ "generated": "build",
+ "items": [
+  {
+   "id": "vc-skyline-noche",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-skyline-noche-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 28440
+    },
+    "1280": {
+     "src": "/media/official/vc-skyline-noche-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 96434
+    }
+   },
+   "captionEs": "Skyline de Vice City de noche, con una rueda de la fortuna y edificios altos.",
+   "officialAltEn": "A Vice City skyline at night featuring a ferris wheel, cars driving, and tall buildings.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_08.0bbg_xp4hqdvz.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-puente-levadizo",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-puente-levadizo-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 36456
+    },
+    "1280": {
+     "src": "/media/official/vc-puente-levadizo-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 129422
+    }
+   },
+   "captionEs": "Vice City al atardecer: tráfico detenido en un puente levadizo mientras una lancha avanza hacia el skyline.",
+   "officialAltEn": "A wide shot of Vice City at twilight: Traffic waits on both sides of a drawbridge as a speedboat skims toward the city's skyline.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_27.0d2e~w_r93hmh.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-playa",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-playa-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 26552
+    },
+    "1280": {
+     "src": "/media/official/vc-playa-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 75494
+    }
+   },
+   "captionEs": "Playa de Vice City junto a una caseta de salvavidas.",
+   "officialAltEn": "People near a lifeguard stand on the beach in Vice City. In the foreground a woman in a bikini lays down tanning while men walk by and look. In the background a couple holds hands, a woman jogs, a woman sits on her phone, and two men play catch with a football.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_05.0~r~o0jzpp4a-.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-marina",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-marina-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 27070
+    },
+    "1280": {
+     "src": "/media/official/vc-marina-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 101250
+    }
+   },
+   "captionEs": "Marina con barcos frente al skyline de Vice City.",
+   "officialAltEn": "An exterior shot of a marina: boats, glittering water reflecting the sunlight against a backdrop of the Vice City skyline, a lone airliner in flight.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_15.11tb0mz68edqo.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-letrero",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-letrero-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 16524
+    },
+    "1280": {
+     "src": "/media/official/vc-letrero-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 52660
+    }
+   },
+   "captionEs": "Un jet sobrevuela un letrero que dice Vice City.",
+   "officialAltEn": "A jet flying over a sign that says Vice City.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_01.135x56yoeu.6t.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-gasolinera",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-gasolinera-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 29344
+    },
+    "1280": {
+     "src": "/media/official/vc-gasolinera-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 99106
+    }
+   },
+   "captionEs": "Gasolinera con neón al anochecer, con un lowrider y motos en la avenida.",
+   "officialAltEn": "A wide shot of a neon-lit gas station at dusk featuring a lowrider with underglow, a man siccing his dog on another man, and motorbikes riding by on the adjacent road.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_22.0--9jlb822n~g.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-car-meet",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-car-meet-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 44036
+    },
+    "1280": {
+     "src": "/media/official/vc-car-meet-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 169282
+    }
+   },
+   "captionEs": "Reunión diurna de autos modificados.",
+   "officialAltEn": "A group shot of a daytime car meet: A young woman in streetwear and sneakers poses on the hood of a heavily customized pink muscle car while other figures mill around tuned-up cars in the background.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_24.0r9tor5-x.p75.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-calles",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-calles-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 41830
+    },
+    "1280": {
+     "src": "/media/official/vc-calles-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 159090
+    }
+   },
+   "captionEs": "Vista de Vice City con calles, palmeras y una cancha de basquetbol.",
+   "officialAltEn": "A view of Vice City with roads, palm trees, a basketball court, and more buildings in the background.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_03.0nqz~lrqdmlze.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vc-hotel-alberca",
+   "files": {
+    "640": {
+     "src": "/media/official/vc-hotel-alberca-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 59982
+    },
+    "1280": {
+     "src": "/media/official/vc-hotel-alberca-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 219952
+    }
+   },
+   "captionEs": "Vista aérea de la alberca y cabañas de un hotel; pasan flamencos y gaviotas.",
+   "officialAltEn": "A birds-eye view of a hotel pool and cabanas. Flamingos and gulls fly by.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Vice_City_26.0.bvvu2216_mj.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "keys-hidroavion",
+   "files": {
+    "640": {
+     "src": "/media/official/keys-hidroavion-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 23540
+    },
+    "1280": {
+     "src": "/media/official/keys-hidroavion-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 94648
+    }
+   },
+   "captionEs": "Hidroavión sobre el agua en Leonida Keys; al fondo, un puente une dos islas.",
+   "officialAltEn": "A seaplane flying over water in the Leonida Keys. In the background a bridge with cars connects two islands.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_01.0zgz7tveur6y8.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "keys-buceo",
+   "files": {
+    "640": {
+     "src": "/media/official/keys-buceo-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 16802
+    },
+    "1280": {
+     "src": "/media/official/keys-buceo-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 63914
+    }
+   },
+   "captionEs": "Dos buzos entre corales, peces, una morena y una tortuga marina en Leonida Keys.",
+   "officialAltEn": "Two scuba divers swimming underwater in the Leonida Keys surrounded by aquatic life including coral, fish, an eel, and a sea turtle.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_04.0hce1rw1s8pd9.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "keys-bar",
+   "files": {
+    "640": {
+     "src": "/media/official/keys-bar-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 48930
+    },
+    "1280": {
+     "src": "/media/official/keys-bar-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 168232
+    }
+   },
+   "captionEs": "Bar de playa en Leonida Keys.",
+   "officialAltEn": "The exterior of a beach bar in the Leonida Keys with many people: a man sits at a picnic table passed out surrounded by empty bottles, a couple is kissing, people are walking into the entrance, and others are hanging out on the front porch.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_03.0v_3~-9ceyixc.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "keys-pez-leon",
+   "files": {
+    "640": {
+     "src": "/media/official/keys-pez-leon-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 18446
+    },
+    "1280": {
+     "src": "/media/official/keys-pez-leon-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 56174
+    }
+   },
+   "captionEs": "Un pez león nada entre plantas marinas; al fondo un buzo con linterna.",
+   "officialAltEn": "A lionfish swims among seaplants with a diver shining a flashlight in the background; a boat idles on the surface.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_07.0z9tb69ssp4rq.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "keys-iguana",
+   "files": {
+    "640": {
+     "src": "/media/official/keys-iguana-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 42342
+    },
+    "1280": {
+     "src": "/media/official/keys-iguana-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 158166
+    }
+   },
+   "captionEs": "Una iguana cruza frente a un scooter de movilidad en Leonida Keys.",
+   "officialAltEn": "An iguana walks in front of a mobility scooter in the Leonida Keys as people pass by in the background.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Keys_02.0~ptk-53gl0lq.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "gr-aerodeslizador",
+   "files": {
+    "640": {
+     "src": "/media/official/gr-aerodeslizador-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 32404
+    },
+    "1280": {
+     "src": "/media/official/gr-aerodeslizador-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 130130
+    }
+   },
+   "captionEs": "Vista cenital de un aerodeslizador rodeado de caimanes en Grassrivers.",
+   "officialAltEn": "A topdown view of two people in an airboat surrounded by alligators in the Grassrivers. One holds a gun aiming at the alligator closest to him.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_03.14cuv-vg9orw4.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "gr-pantano-noche",
+   "files": {
+    "640": {
+     "src": "/media/official/gr-pantano-noche-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 7944
+    },
+    "1280": {
+     "src": "/media/official/gr-pantano-noche-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 22354
+    }
+   },
+   "captionEs": "Ojo de un caimán reflejado en el pantano mientras se acerca un aerodeslizador entre manglares.",
+   "officialAltEn": "An alligator's eye glows red, reflecting off swamp water in the foreground as an airboat carrying three men approaches. One of them totes a longarm while a flashlight cuts through the mist. A crescent moon hangs above the mangrove trees.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_08.0x-z0h-he35zo.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "gr-persecucion",
+   "files": {
+    "640": {
+     "src": "/media/official/gr-persecucion-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 37096
+    },
+    "1280": {
+     "src": "/media/official/gr-persecucion-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 158618
+    }
+   },
+   "captionEs": "Persecución policial en el pantano de Grassrivers.",
+   "officialAltEn": "A helicopter and two police cars chase a pick-up truck through a swamp with alligators in the Grassrivers. An airboat is seen in the background.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Grassrivers_04.01ckpqbhxyz76.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "pg-motel",
+   "files": {
+    "640": {
+     "src": "/media/official/pg-motel-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 21158
+    },
+    "1280": {
+     "src": "/media/official/pg-motel-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 90398
+    }
+   },
+   "captionEs": "Motel de Port Gellhorn de noche con el letrero de vacantes encendido.",
+   "officialAltEn": "The outside of a motel in Port Gellhorn with the vacancy sign lit up at night.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_01.0fmisvza-5-cq.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "pg-fogata",
+   "files": {
+    "640": {
+     "src": "/media/official/pg-fogata-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 17262
+    },
+    "1280": {
+     "src": "/media/official/pg-fogata-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 64850
+    }
+   },
+   "captionEs": "Reunión alrededor de una fogata en Port Gellhorn.",
+   "officialAltEn": "People gathered at a bonfire in Port Gellhorn. One couple is off to the side with the man leaning back on the hood of a truck and the woman putting her finger to his mouth while reaching for his belt.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_05.0nsv0ou54n-t3.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "pg-club",
+   "files": {
+    "640": {
+     "src": "/media/official/pg-club-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 23926
+    },
+    "1280": {
+     "src": "/media/official/pg-club-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 97268
+    }
+   },
+   "captionEs": "Estacionamiento de un club en Port Gellhorn de noche.",
+   "officialAltEn": "The outside parking lot of a club in Port Gellhorn at night with signs lit up advertising the cabaret. Several cars are parked, a few people linger outside of the club, and two people walk under the sign, one pushing a shopping cart.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Port_Gellhorn_04.0hd-7kzfi51q..jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "amb-skyline",
+   "files": {
+    "640": {
+     "src": "/media/official/amb-skyline-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 12840
+    },
+    "1280": {
+     "src": "/media/official/amb-skyline-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 48320
+    }
+   },
+   "captionEs": "Skyline de Ambrosia de noche con chimeneas industriales al fondo.",
+   "officialAltEn": "The Ambrosia skyline at night featuring smoke stacks in the distance.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_02.0wtqs05ozl.ym.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "amb-cultivos",
+   "files": {
+    "640": {
+     "src": "/media/official/amb-cultivos-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 11592
+    },
+    "1280": {
+     "src": "/media/official/amb-cultivos-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 39474
+    }
+   },
+   "captionEs": "Campo de cultivo en llamas al atardecer en Ambrosia.",
+   "officialAltEn": "A field of crops burning at sunset in Ambrosia.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_04.0.2cefoguu-tt.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "amb-bikers",
+   "files": {
+    "640": {
+     "src": "/media/official/amb-bikers-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 26082
+    },
+    "1280": {
+     "src": "/media/official/amb-bikers-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 89142
+    }
+   },
+   "captionEs": "Pandilla de motociclistas con chalecos de cuero en una carretera de Ambrosia.",
+   "officialAltEn": "A motorcycle gang riding together in matching leather vests down a road in Ambrosia.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Ambrosia_01.0rqphs0gazkm..jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mk-carretera",
+   "files": {
+    "640": {
+     "src": "/media/official/mk-carretera-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 32788
+    },
+    "1280": {
+     "src": "/media/official/mk-carretera-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 152066
+    }
+   },
+   "captionEs": "Carretera sinuosa entre cerros en Mount Kalaga National Park.",
+   "officialAltEn": "A winding road goes between two steep hills with greenery at the top in Mount Kalaga National Park.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_04.0e1sxnp1mln2u.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mk-kayak",
+   "files": {
+    "640": {
+     "src": "/media/official/mk-kayak-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 36418
+    },
+    "1280": {
+     "src": "/media/official/mk-kayak-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 159486
+    }
+   },
+   "captionEs": "Persona en kayak con chaleco salvavidas rumbo a un puente en Mount Kalaga National Park.",
+   "officialAltEn": "A person wearing a life vest kayaks toward a bridge in Mount Kalaga National Park.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_06.166ouq5pjd7h0.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mk-puma",
+   "files": {
+    "640": {
+     "src": "/media/official/mk-puma-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 43496
+    },
+    "1280": {
+     "src": "/media/official/mk-puma-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 132168
+    }
+   },
+   "captionEs": "Un puma acecha a una manada de venados junto a un arroyo en Mount Kalaga National Park.",
+   "officialAltEn": "A cougar stalks a herd of deer drinking from a stream in Mount Kalaga National Park.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_05.0_~vto-o2zxok.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mk-dirtbikes",
+   "files": {
+    "640": {
+     "src": "/media/official/mk-dirtbikes-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 34394
+    },
+    "1280": {
+     "src": "/media/official/mk-dirtbikes-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 128046
+    }
+   },
+   "captionEs": "Motos de terracería y una cuatrimoto en el lodo de Mount Kalaga National Park.",
+   "officialAltEn": "Four people riding dirt bikes through the mud in Mount Kalaga National Park. An ATV jumps behind them.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Mount_Kalaga_National_Park_01.0v5fl0f83hjv_.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-jason",
+   "files": {
+    "640": {
+     "src": "/media/official/p-jason-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 22312
+    },
+    "1280": {
+     "src": "/media/official/p-jason-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 59538
+    }
+   },
+   "captionEs": "Jason sentado en una motocicleta con una pistola.",
+   "officialAltEn": "Jason sitting on a motorcycle holding a handgun.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_01.07m377xeb6jhq.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-lucia",
+   "files": {
+    "640": {
+     "src": "/media/official/p-lucia-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 11832
+    },
+    "1280": {
+     "src": "/media/official/p-lucia-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 32086
+    }
+   },
+   "captionEs": "Lucia golpea un costal en un gimnasio.",
+   "officialAltEn": "Lucia punching a heavy bag in a gym.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Lucia_Caminos_01.0a7yqvewctkfp.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-cal",
+   "files": {
+    "640": {
+     "src": "/media/official/p-cal-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 24414
+    },
+    "1280": {
+     "src": "/media/official/p-cal-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 72372
+    }
+   },
+   "captionEs": "Jason y Cal juegan billar en un bar.",
+   "officialAltEn": "People hanging out at a bar. Jason and Cal play pool in the foreground.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Cal_Hampton_02.05r2t_mck65fe.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-boobie",
+   "files": {
+    "640": {
+     "src": "/media/official/p-boobie-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 25204
+    },
+    "1280": {
+     "src": "/media/official/p-boobie-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 88288
+    }
+   },
+   "captionEs": "Boobie con un fajo de billetes, sentado detrás de un escritorio.",
+   "officialAltEn": "Boobie holding a stack of cash sitting back in a chair in front of a desk with a handgun on top of it.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Boobie_Ike_01.0-wji2pg5anfs.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-drequan",
+   "files": {
+    "640": {
+     "src": "/media/official/p-drequan-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 17236
+    },
+    "1280": {
+     "src": "/media/official/p-drequan-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 44986
+    }
+   },
+   "captionEs": "Dre'Quan recargado en una barra durante una fiesta nocturna en alberca.",
+   "officialAltEn": "Dre'Quan leaning against a bar wearing a suit at a nighttime pool party. Guests in the background are wearing swimsuits.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/DreQuan_Priest_02.02u69e~nkk3eo.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-dimez",
+   "files": {
+    "640": {
+     "src": "/media/official/p-dimez-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 22412
+    },
+    "1280": {
+     "src": "/media/official/p-dimez-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 71634
+    }
+   },
+   "captionEs": "Real Dimez bailan sobre el cofre de un auto rodeadas de gente.",
+   "officialAltEn": "The Real Dimez dancing on top of the hood of a car with a group of people cheering them on with their phones held up.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Real_Dimez_02.1366u9.x.yp0_.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-raul",
+   "files": {
+    "640": {
+     "src": "/media/official/p-raul-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 9134
+    },
+    "1280": {
+     "src": "/media/official/p-raul-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 27336
+    }
+   },
+   "captionEs": "Raul habla por teléfono; al fondo alguien frente a dos monitores.",
+   "officialAltEn": "Raul holding a phone to his ear. In the background a person is sitting in front of two computer monitors.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Raul_Bautista_01.0md1ii-yrn96r.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "p-brian",
+   "files": {
+    "640": {
+     "src": "/media/official/p-brian-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 16852
+    },
+    "1280": {
+     "src": "/media/official/p-brian-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 49466
+    }
+   },
+   "captionEs": "Brian recargado en un barandal con dos latas frente a él.",
+   "officialAltEn": "Brian leaning against a railing with two cans in front of him. He is wearing a sleevless shirt and a bandana.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Brian_Heder_02.0kmg6iw38f-9o.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/only-in-leonida",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "jl-banco",
+   "files": {
+    "640": {
+     "src": "/media/official/jl-banco-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 21864
+    },
+    "1280": {
+     "src": "/media/official/jl-banco-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 60786
+    }
+   },
+   "captionEs": "Jason y Lucia asaltan una sucursal Fleeca con paliacates, maletas y subfusiles.",
+   "officialAltEn": "Jason and Lucia robbing a Fleeca bank branch, both wearing bandanas and duffel bags, armed with SMGs.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_15.0m-_zb~mcy2zr.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "jl-mirador",
+   "files": {
+    "640": {
+     "src": "/media/official/jl-mirador-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 28458
+    },
+    "1280": {
+     "src": "/media/official/jl-mirador-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 117898
+    }
+   },
+   "captionEs": "Atardecer en una colina con vista lejana al skyline de Vice City.",
+   "officialAltEn": "Jason and Lucia sitting on the hood of a pickup truck parked on a hill overlooking Vice City. A pack of birds are taking flight in the distance, and a family of deer are grazing in the tall grass.",
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Jason_and_Lucia_16.05-d133mx68ku.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/launch-gallery",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-cheetah",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-cheetah-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 24118
+    },
+    "1280": {
+     "src": "/media/official/ue-cheetah-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 73248
+    }
+   },
+   "captionEs": "’95 Grotti Cheetah blanco con librea retrofuturista y faros levantados.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GROTTI_CHEETAH_02.0rkrlsu_dg~ww.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-revolveres",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-revolveres-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 18732
+    },
+    "1280": {
+     "src": "/media/official/ue-revolveres-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 58646
+    }
+   },
+   "captionEs": "Revólveres Hawk & Little Morgan con mira, navaja y munición.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_02.04e_9jco7lluf.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-pistolas",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-pistolas-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 23046
+    },
+    "1280": {
+     "src": "/media/official/ue-pistolas-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 86802
+    }
+   },
+   "captionEs": "Variantes personalizadas de la Girardi ES9 de Jason y la Klose K17 de Lucia junto a una alberca.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_WEAPON_VARIANTS_01.12licq0_o7mb5.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-safehouse",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-safehouse-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 30502
+    },
+    "1280": {
+     "src": "/media/official/ue-safehouse-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 119344
+    }
+   },
+   "captionEs": "Exterior de la casa de Jason con la Vapid Ganado, la Dinka Enduro y el Crest Kayak.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.0wv6pw3t-mky3.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-ganado",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-ganado-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 34280
+    },
+    "1280": {
+     "src": "/media/official/ue-ganado-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 131706
+    }
+   },
+   "captionEs": "Jason maneja su Vapid Ganado amarilla con franja roja.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_GANADO_RETRO_BUILD_01.062dgvkwdynw5.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-rideout",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-rideout-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 24726
+    },
+    "1280": {
+     "src": "/media/official/ue-rideout-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 85830
+    }
+   },
+   "captionEs": "Vehículo dorado personalizado con rines de diseño de pica.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_01.065-ms8~k8vbq.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-sara",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-sara-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 27004
+    },
+    "1280": {
+     "src": "/media/official/ue-sara-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 78934
+    }
+   },
+   "captionEs": "Jason y Lucia en la entrada de Sara's Unisex Salon.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SARAS_SALON_01.0gn7dwlvcgz17.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-squalo",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-squalo-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 29136
+    },
+    "1280": {
+     "src": "/media/official/ue-squalo-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 97354
+    }
+   },
+   "captionEs": "Shitzu Squalo degradado rosa y azul de noche, con el skyline iluminado.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_SQUALO_01.0cim7hj58ypb1.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-stock305",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-stock305-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 40518
+    },
+    "1280": {
+     "src": "/media/official/ue-stock305-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 124432
+    }
+   },
+   "captionEs": "Exterior de la tienda Stock 305.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_STOCK_305_03.00wltke54q_n0.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-buggy",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-buggy-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 33868
+    },
+    "1280": {
+     "src": "/media/official/ue-buggy-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 125396
+    }
+   },
+   "captionEs": "El ’67 Vapid Dominator Buggy sale del Paradise Garage.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_VAPID_BUGGY_04.0_29d.bgfvon7.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-electricfang",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-electricfang-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 22814
+    },
+    "1280": {
+     "src": "/media/official/ue-electricfang-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 78378
+    }
+   },
+   "captionEs": "Letrero de neón de Electric Fang Tattoo con un lobo.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_ELECTRIC_FANG_01.04tsytu7qp2b-.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-willie",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-willie-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 43314
+    },
+    "1280": {
+     "src": "/media/official/ue-willie-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 132518
+    }
+   },
+   "captionEs": "Imagen oficial de One-Eyed Willie's: vehículo todoterreno verde con barra de luces.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_ONE_EYED_WILLIE_01.0n7-__or5f.b6.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-goodtime",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-goodtime-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 24836
+    },
+    "1280": {
+     "src": "/media/official/ue-goodtime-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 69162
+    }
+   },
+   "captionEs": "Jason y Lucia con gorras y playeras de Macca the Gator.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_GOODTIME_GEAR_01.0t7de8dow381q.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-ptt",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-ptt-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 26690
+    },
+    "1280": {
+     "src": "/media/official/ue-ptt-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 101676
+    }
+   },
+   "captionEs": "Imagen oficial del beneficio PTT Youngin$ Illegal Goods Store: un grupo dentro de un complejo de pandilla.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_PTT_STORE_01.0seuocb~7b1-q.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "ue-wyman",
+   "files": {
+    "640": {
+     "src": "/media/official/ue-wyman-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 33340
+    },
+    "1280": {
+     "src": "/media/official/ue-wyman-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 92090
+    }
+   },
+   "captionEs": "Imagen oficial de la Classic Car Collection: un hombre posa en un taller rodeado de autos clásicos.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01.0swhrm__iu~6b.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vv-stanier",
+   "files": {
+    "640": {
+     "src": "/media/official/vv-stanier-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 26858
+    },
+    "1280": {
+     "src": "/media/official/vv-stanier-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 92072
+    }
+   },
+   "captionEs": "’55 Vapid Stanier amarillo y blanco frente a letreros de neón.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.004m_8d1~qngy.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "vv-patron",
+   "files": {
+    "640": {
+     "src": "/media/official/vv-patron-640.webp",
+     "width": 640,
+     "height": 360,
+     "bytes": 17628
+    },
+    "1280": {
+     "src": "/media/official/vv-patron-1280.webp",
+     "width": 1280,
+     "height": 720,
+     "bytes": 52314
+    }
+   },
+   "captionEs": "Armas con patrón tropical y una bolsa con dinero en el asiento trasero del ’55 Vapid Stanier.",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.0gybtumgwdcoi.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "3840x2160",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-screenshot",
+   "sinMarcaDeAgua": true
+  },
+  {
+   "id": "mapa-oficial-leonida",
+   "files": {
+    "1200": {
+     "src": "/media/official/mapa-oficial-leonida-1200.webp",
+     "width": 1200,
+     "height": 1643,
+     "bytes": 219588
+    },
+    "2400": {
+     "src": "/media/official/mapa-oficial-leonida-2400.webp",
+     "width": 2400,
+     "height": 3286,
+     "bytes": 688730
+    }
+   },
+   "captionEs": "Mapa oficial del estado de Leonida (póster descargable de Rockstar Games).",
+   "officialAltEn": null,
+   "sourceUrl": "https://www.rockstargames.com/VI/_next/static/media/Leonida_Map_Poster.08ir77j-.26ny.jpg",
+   "sourcePage": "https://www.rockstargames.com/VI/media",
+   "originalSize": "2805x3840",
+   "copyright": "© Rockstar Games / Take-Two Interactive",
+   "license": "Material oficial de prensa/descarga de Rockstar Games. Uso no comercial de fans con atribución; sin licencia de redistribución comercial.",
+   "treatment": "Redimensionado y recompresión WebP. Sin recortes, sin retoques, sin eliminación de marcas.",
+   "kind": "official-map",
+   "sinMarcaDeAgua": true
+  }
+ ]
+}
