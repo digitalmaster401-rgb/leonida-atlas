@@ -9,7 +9,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
 const entries = JSON.parse(readFileSync(join(root, 'content/entries.json'), 'utf8'));
 const SITE = (process.env.SITE_URL || process.env.URL || process.env.CF_PAGES_URL || '').replace(/\/$/, '');
-const CAT_PATH = { lugares: '/lugares', personajes: '/personajes', dinero: '/dinero', armas: '/armas', vehiculos: '/vehiculos', negocios: '/negocios', rutas: '/rutas' };
+const CAT_PATH = { lugares: '/lugares', personajes: '/personajes', dinero: '/dinero', armas: '/armas', vehiculos: '/vehiculos', negocios: '/negocios', rutas: '/rutas', coleccionables: '/coleccionables' };
 const NAME = 'LEONIDA ATLAS';
 const DEFAULT_DESC = 'Guía independiente de GTA VI en español de México: mapa oficial, dinero, armas, vehículos y negocios con fuentes verificables.';
 
@@ -25,8 +25,13 @@ const pages = [
   { path: '/personajes', title: `Personajes · ${NAME}`, desc: 'Protagonistas y personajes de GTA VI presentados por Rockstar.' },
   { path: '/intel', title: `ATLAS INTELLIGENCE · ${NAME}`, desc: 'Investigación automatizada de GTA VI: novedades, hallazgos con estado por plataforma, parches, bitácora y preguntas con fuentes.' },
   { path: '/novedades', title: `Novedades · ${NAME}`, desc: 'Qué cambió en GTA VI según las fuentes vigiladas por ATLAS INTELLIGENCE, con fecha real de investigación.' },
+  { path: '/coleccionables', title: `Coleccionables · ${NAME}`, desc: 'Tarjetas, revistas, libros y otras colecciones de GTA VI con seguimiento individual y fuentes.' },
+  { path: '/trucos', title: `Trucos y códigos · ${NAME}`, desc: 'Trucos de GTA VI para PS5 y Xbox Series X|S: secuencias, efectos, requisitos y consecuencias, con evidencia.' },
+  { path: '/consola', title: `Ajustes de consola · ${NAME}`, desc: 'Configuración documentada de GTA VI en PS5, PS5 Pro y Xbox Series X|S: rendimiento, pantalla, controles y accesibilidad.' },
+  { path: '/equipamiento', title: `Equipamiento de armas · ${NAME}`, desc: 'Arma tu carga de armas de GTA VI con las reglas documentadas: 2 cortas, 2 largas y cuerpo a cuerpo.' },
+  { path: '/mi-espacio', title: `Mi espacio · ${NAME}`, desc: 'Tu progreso, fotos, encontrados y pendientes, guardados solo en tu dispositivo.' },
   { path: '/galeria', title: `Galería · ${NAME}`, desc: 'Imágenes oficiales de GTA VI con procedencia.' },
-  { path: '/mi-partida', title: `Mi partida · ${NAME}`, desc: 'Tus fichas guardadas, completadas y notas.' },
+  { path: '/mi-partida', title: `Mi espacio · ${NAME}`, desc: 'Tu progreso, fotos, encontrados y pendientes, guardados solo en tu dispositivo.' },
   { path: '/fuentes', title: `Fuentes y cambios · ${NAME}`, desc: 'Fuentes, criterios de evidencia y registro de cambios.' },
   { path: '/buscar', title: `Buscar · ${NAME}`, desc: DEFAULT_DESC },
   { path: '/legal', title: `Aviso legal y créditos · ${NAME}`, desc: 'Aviso legal, derechos de imágenes y privacidad.' },

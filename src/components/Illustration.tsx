@@ -8,6 +8,7 @@ const PALETTE: Record<Category, [string, string]> = {
   vehiculos: ['#22d3ee', '#3b0764'],
   negocios: ['#ff3ea5', '#0f3b4a'],
   rutas: ['#facc15', '#1e1b4b'],
+  coleccionables: ['#a78bfa', '#2e1065'],
 };
 
 function hash(s: string) {

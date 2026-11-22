@@ -1458,6 +1458,7 @@ textarea:focus {
 .pin-dinero { color: var(--lime); }
 .pin-rutas { color: var(--amber); }
 .pin-personajes { color: var(--violet); }
+.pin-coleccionables { color: #c4b5fd; }
 .dot-lugares { background: var(--magenta); }
 .dot-armas { background: #fb923c; }
 .dot-vehiculos { background: var(--cyan); }
@@ -1465,6 +1466,7 @@ textarea:focus {
 .dot-dinero { background: var(--lime); }
 .dot-rutas { background: var(--amber); }
 .dot-personajes { background: var(--violet); }
+.dot-coleccionables { background: #c4b5fd; }
 .dot {
   display: inline-block;
   width: 12px;

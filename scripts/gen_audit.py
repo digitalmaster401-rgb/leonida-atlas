@@ -6,8 +6,8 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 E = json.load(open(os.path.join(ROOT, "content/entries.json"), encoding="utf8"))
 S = {s["id"]: s for s in json.load(open(os.path.join(ROOT, "content/sources.json"), encoding="utf8"))}
-CAT = {"lugares": "Lugares", "personajes": "Personajes", "dinero": "Dinero", "armas": "Armas", "vehiculos": "Vehículos", "negocios": "Negocios y propiedades", "rutas": "Rutas y tutoriales"}
-PATH = {"lugares": "/lugares", "personajes": "/personajes", "dinero": "/dinero", "armas": "/armas", "vehiculos": "/vehiculos", "negocios": "/negocios", "rutas": "/rutas"}
+CAT = {"lugares": "Lugares", "personajes": "Personajes", "dinero": "Dinero", "armas": "Armas", "vehiculos": "Vehículos", "negocios": "Negocios y propiedades", "rutas": "Rutas y tutoriales", "coleccionables": "Coleccionables"}
+PATH = {"lugares": "/lugares", "personajes": "/personajes", "dinero": "/dinero", "armas": "/armas", "vehiculos": "/vehiculos", "negocios": "/negocios", "rutas": "/rutas", "coleccionables": "/coleccionables"}
 
 def decision(e):
     st = e["status"]
