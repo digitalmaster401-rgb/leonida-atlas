@@ -1,0 +1,419 @@
+{
+ "verifiedAt": "2026-11-22",
+ "patch": "Lanzamiento (19-nov-2026). Las fuentes no indican número de parche.",
+ "platforms": [
+  {
+   "id": "ps5",
+   "name": "PS5"
+  },
+  {
+   "id": "ps5_pro",
+   "name": "PS5 Pro"
+  },
+  {
+   "id": "xbox_series_x",
+   "name": "Xbox Series X"
+  },
+  {
+   "id": "xbox_series_s",
+   "name": "Xbox Series S"
+  }
+ ],
+ "sections": [
+  {
+   "id": "rendimiento",
+   "title": "Rendimiento y modos gráficos",
+   "scope": "juego",
+   "items": [
+    {
+     "label": "Fotogramas por segundo",
+     "value": "El juego apunta a 30 fps en PS5 y Xbox Series X|S.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload"
+     ]
+    },
+    {
+     "label": "Modo rendimiento o calidad",
+     "value": "No existe selector de modo gráfico ni de 60 fps en ninguna consola, tampoco en PS5 Pro.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "contrastado",
+     "sources": [
+      "outputlag-settings",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Mejoras de PS5 Pro",
+     "value": "Imagen más nítida con PSSR y sombras con trazado de rayos exclusivas de PS5 Pro. Se aplican solas; no hay menú extra.",
+     "platforms": [
+      "ps5_pro"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Resolución interna",
+     "value": "≈1440p en PS5, PS5 Pro (reconstruida con PSSR) y Series X; ≈720p en Series S con reescalado. Ambas guías citan el mismo análisis técnico de lanzamiento (Digital Foundry), así que cuenta como una sola fuente.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Estabilidad observada",
+     "value": "PS5 Pro casi fija en 30; PS5 y Series X con caídas puntuales; Series S con caídas más frecuentes. Ambas guías citan el mismo análisis técnico de lanzamiento (Digital Foundry), así que cuenta como una sola fuente.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "VRR y 120 Hz",
+     "value": "No elevan el tope de 30 fps.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "reportado",
+     "sources": [
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Juego en la nube",
+     "value": "Disponible en Xbox Cloud Gaming en Xbox Series X|S y Xbox One, con los ajustes gráficos de Series S; la conexión puede afectar el rendimiento.",
+     "platforms": [
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload"
+     ]
+    },
+    {
+     "label": "Remote Play",
+     "value": "Compatible con Remote Play en PlayStation y Xbox.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pantalla",
+   "title": "Pantalla y HDR (dentro del juego)",
+   "scope": "juego",
+   "items": [
+    {
+     "label": "Calibración de brillo",
+     "value": "Ajusta hasta que el logotipo de Rockstar apenas se vea. No hay menú HDR aparte dentro del juego.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Pausa → Settings → Display → Brightness Calibration",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Desenfoque de movimiento",
+     "value": "Valor predeterminado 3; 0 lo desactiva.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Display → Motion Blur Strength",
+     "status": "contrastado",
+     "sources": [
+      "outputlag-settings",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Opciones de contraste",
+     "value": "Incluye High Contrast Shaders, Brightness Reduction y modo para daltonismo del rastro de Focus.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Display",
+     "status": "contrastado",
+     "sources": [
+      "outputlag-settings",
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Sin opciones de FOV ni viñeta",
+     "value": "No hay campo de visión, viñeta, profundidad de campo ni grano de película ajustables.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "camara",
+   "title": "Cámara y comodidad",
+   "scope": "juego",
+   "items": [
+    {
+     "label": "Sacudida y balanceo de cámara",
+     "value": "Camera Shake y Camera Bob se pueden desactivar; Weapon Sway activado por defecto.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Camera → Comfort",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Primera persona",
+     "value": "No hay vista en primera persona en el lanzamiento; solo la vista del teléfono.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Camera → Comfort → Phone Display",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "controles",
+   "title": "Controles y apuntado",
+   "scope": "juego",
+   "items": [
+    {
+     "label": "Esquemas de control",
+     "value": "Default, Classic y Left-Handed.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Control Scheme",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Sensibilidad",
+     "value": "Look and Aim Sensitivity (predeterminado 7, máximo 14), aceleración, curva de respuesta y zona muerta.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Controller",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Asistencia de apuntado",
+     "value": "Targeting: Lock-On, Partial (predeterminado) o Free Aim; Aim Assist Strength predeterminado 4.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Gameplay → Combat → Targeting",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Hápticos del DualSense",
+     "value": "Retroalimentación háptica integrada y ajustable desde la configuración de accesibilidad.",
+     "platforms": [
+      "ps5",
+      "ps5_pro"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "accesibilidad",
+   "title": "Accesibilidad y audio",
+   "scope": "juego",
+   "items": [
+    {
+     "label": "Opciones de accesibilidad",
+     "value": "Tap Assist, Hold Assist, Simplified Mini Games, Auto Drive, Auto Equip Helmet, Accessible Combat y Reduced Vehicle Damage.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Gameplay → Accessibility",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Narración de pantalla",
+     "value": "Se activa o desactiva en el audio, no en una sección de accesibilidad.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Settings → Audio → Narration → Screen Narration",
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    },
+    {
+     "label": "Audio 3D",
+     "value": "Audio espacial mejorado con Tempest 3D Audio en PS5.",
+     "platforms": [
+      "ps5",
+      "ps5_pro"
+     ],
+     "path": null,
+     "status": "oficial",
+     "sources": [
+      "rs-preload"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "consola-hdr",
+   "title": "Ajustes de la consola (fuera del juego)",
+   "scope": "consola",
+   "items": [
+    {
+     "label": "HDR en PS5",
+     "value": "Calibra el HDR de la consola antes de la calibración del juego.",
+     "platforms": [
+      "ps5",
+      "ps5_pro"
+     ],
+     "path": "Ajustes → Pantalla y video → Salida de video → Ajustar HDR",
+     "status": "reportado",
+     "sources": [
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "HDR en Xbox",
+     "value": "Calibra el HDR para juegos antes de la calibración del juego.",
+     "platforms": [
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": "Configuración → General → Opciones de TV y pantalla → Calibrar HDR para juegos",
+     "status": "reportado",
+     "sources": [
+      "sixcheats-performance"
+     ]
+    },
+    {
+     "label": "Televisor",
+     "value": "Desactiva el suavizado de movimiento del televisor si notas imagen borrosa; usa el modo juego.",
+     "platforms": [
+      "ps5",
+      "ps5_pro",
+      "xbox_series_x",
+      "xbox_series_s"
+     ],
+     "path": null,
+     "status": "reportado",
+     "sources": [
+      "outputlag-settings"
+     ]
+    }
+   ]
+  }
+ ]
+}

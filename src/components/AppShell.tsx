@@ -9,15 +9,19 @@ const NAV = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
   { to: '/mapa', label: 'Mapa', icon: 'map' },
   { to: '/dinero', label: 'Dinero y glitches', icon: 'cash' },
+  { to: '/trucos', label: 'Trucos y códigos', icon: 'gamepad' },
+  { to: '/coleccionables', label: 'Coleccionables', icon: 'grid' },
   { to: '/armas', label: 'Armas', icon: 'target' },
+  { to: '/equipamiento', label: 'Equipamiento', icon: 'layers' },
   { to: '/vehiculos', label: 'Vehículos', icon: 'car' },
   { to: '/negocios', label: 'Negocios y propiedades', icon: 'store' },
   { to: '/rutas', label: 'Rutas y tutoriales', icon: 'route' },
   { to: '/lugares', label: 'Lugares', icon: 'pin' },
   { to: '/personajes', label: 'Personajes', icon: 'user' },
+  { to: '/consola', label: 'Ajustes de consola', icon: 'sliders' },
   { to: '/intel', label: 'ATLAS Intelligence', icon: 'eye' },
   { to: '/galeria', label: 'Galería', icon: 'image' },
-  { to: '/mi-partida', label: 'Mi partida', icon: 'star' },
+  { to: '/mi-espacio', label: 'Mi espacio', icon: 'star' },
   { to: '/fuentes', label: 'Fuentes y cambios', icon: 'book' },
 ];
 
@@ -25,7 +29,7 @@ const BOTTOM = [
   { to: '/', label: 'Inicio', icon: 'home', end: true },
   { to: '/mapa', label: 'Mapa', icon: 'map' },
   { to: '/dinero', label: 'Dinero', icon: 'cash' },
-  { to: '/mi-partida', label: 'Mi partida', icon: 'star' },
+  { to: '/mi-espacio', label: 'Mi espacio', icon: 'star' },
 ];
 
 function HeaderSearch() {

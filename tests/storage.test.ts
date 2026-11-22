@@ -9,7 +9,7 @@ describe('almacenamiento del progreso', () => {
   it('devuelve progreso vacío sin datos o con datos corruptos', () => {
     expect(loadProgress().favorites).toEqual([]);
     localStorage.setItem(STORAGE_KEY, '{no json');
-    expect(loadProgress().schemaVersion).toBe(2);
+    expect(loadProgress().schemaVersion).toBe(3);
   });
 
   it('guarda y restaura', () => {
@@ -18,9 +18,9 @@ describe('almacenamiento del progreso', () => {
     expect(loadProgress().favorites).toEqual(['din-moses']);
   });
 
-  it('migra el esquema v1 a v2', () => {
+  it('migra el esquema v1 a v3', () => {
     const m = migrate({ version: 1, favorites: ['a', 'a'], completed: [], notes: { a: 'hola', b: '  ' } });
-    expect(m?.schemaVersion).toBe(2);
+    expect(m?.schemaVersion).toBe(3);
     expect(m?.favorites).toEqual(['a']);
     expect(m?.notes.a.text).toBe('hola');
     expect(m?.notes.b).toBeUndefined();
@@ -58,5 +58,52 @@ describe('almacenamiento del progreso', () => {
     expect(localStorage.getItem(BACKUP_KEY)).not.toBeNull();
     saveProgress(emptyProgress());
     expect(restoreBackup()?.completed).toEqual(['arm-duke-556']);
+  });
+
+  it('migra el esquema v2 a v3 sin perder datos', () => {
+    const v2 = { schemaVersion: 2, favorites: ['a'], completed: ['b', 'b'], notes: { a: { text: 'x', updatedAt: '2026-11-20' } }, settings: { spoilerLevel: 2 }, updatedAt: '2026-11-20' };
+    const m = migrate(v2)!;
+    expect(m.schemaVersion).toBe(3);
+    expect(m.completed).toEqual(['b']);
+    expect(m.notes.a.text).toBe('x');
+    expect(m.settings).toEqual({ spoilerLevel: 2, hideFound: false });
+    expect(m.records).toEqual({});
+    expect(m.loadouts).toEqual([]);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(v2));
+    expect(loadProgress().favorites).toEqual(['a']);
+  });
+
+  it('valida registros, contadores y equipamientos de v3', () => {
+    const ok = {
+      ...emptyProgress(),
+      records: { 'col-orca': { state: 'revisar', date: '2026-11-21', platform: 'ps5_pro', rating: 4 } },
+      counters: { 'col-tarjetas': 37 },
+      loadouts: [{ id: 'l1', name: 'Sigilo', sidearm: ['arm-klose-k17', null], longarm: [null, null], melee: [null], attachments: { 'arm-klose-k17': ['suppressor'] }, updatedAt: '2026-11-22' }],
+    };
+    expect(migrate(ok)?.records['col-orca'].platform).toBe('ps5_pro');
+    expect(migrate({ ...ok, records: { x: { state: 'robado' } } })).toBeNull();
+    expect(migrate({ ...ok, records: { x: { rating: 9 } } })).toBeNull();
+    expect(migrate({ ...ok, counters: { x: -1 } })).toBeNull();
+    expect(migrate({ ...ok, loadouts: [{ id: 'l', name: 'x', sidearm: 'no' }] })).toBeNull();
+    expect(migrate({ ...ok, profile: { name: 'Yo', avatar: 'desconocido', platform: null } })).toBeNull();
+  });
+
+  it('importa fotos opcionales solo si son imágenes válidas', () => {
+    const photo = { id: 'p1', entryId: 'din-moses', caption: 'Aquí', createdAt: '2026-11-22', dataUrl: 'data:image/jpeg;base64,AAAA' };
+    const good = parseImport(JSON.stringify(makeExport(emptyProgress(), [photo])), known);
+    expect(good.ok && good.photos.length).toBe(1);
+    const bad = parseImport(JSON.stringify(makeExport(emptyProgress(), [{ ...photo, dataUrl: 'data:text/html;base64,AAAA' }])), known);
+    expect(bad.ok).toBe(false);
+    const none = parseImport(JSON.stringify(makeExport(emptyProgress())), known);
+    expect(none.ok && none.photos).toEqual([]);
+  });
+
+  it('al combinar conserva el contador mayor y el equipamiento más reciente', () => {
+    const l = { id: 'l1', name: 'A', sidearm: [null, null], longarm: [null, null], melee: [null], attachments: {}, updatedAt: '2026-11-01' };
+    const a = { ...emptyProgress(), counters: { c: 3 }, loadouts: [l] };
+    const b = { ...emptyProgress(), counters: { c: 9 }, loadouts: [{ ...l, name: 'B', updatedAt: '2026-11-20' }] };
+    const m = mergeProgress(a, b);
+    expect(m.counters.c).toBe(9);
+    expect(m.loadouts[0].name).toBe('B');
   });
 });

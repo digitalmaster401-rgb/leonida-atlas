@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, type ReactNode } from 'react';
 import { Route, Routes } from 'react-router';
 import { AppShell } from './components/AppShell';
 import { Home } from './pages/Home';
@@ -18,7 +18,12 @@ import type { Category } from './data/schema';
 const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ default: m.EditorPage })));
 
 const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
+const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
+const CollectiblesPage = lazy(() => import('./pages/CollectiblesPage').then((m) => ({ default: m.CollectiblesPage })));
+const ConsolePage = lazy(() => import('./pages/ConsolePage').then((m) => ({ default: m.ConsolePage })));
+const LoadoutPage = lazy(() => import('./pages/LoadoutPage').then((m) => ({ default: m.LoadoutPage })));
 const loading = <p className="page muted">Cargando…</p>;
+const lazyEl = (el: ReactNode) => <Suspense fallback={loading}>{el}</Suspense>;
 
 const LISTS: Category[] = ['lugares', 'personajes', 'armas', 'vehiculos', 'negocios', 'rutas'];
 
@@ -52,6 +57,11 @@ export function App() {
           }
         />
         <Route path="/buscar" element={<SearchPage />} />
+        <Route path="/coleccionables" element={lazyEl(<CollectiblesPage />)} />
+        <Route path="/trucos" element={lazyEl(<CheatsPage />)} />
+        <Route path="/consola" element={lazyEl(<ConsolePage />)} />
+        <Route path="/equipamiento" element={lazyEl(<LoadoutPage />)} />
+        <Route path="/mi-espacio" element={<MyGamePage />} />
         <Route path="/mi-partida" element={<MyGamePage />} />
         <Route path="/fuentes" element={<SourcesPage />} />
         <Route path="/galeria" element={<GalleryPage />} />

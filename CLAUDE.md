@@ -11,7 +11,9 @@ LEONIDA ATLAS: guía de GTA VI (es-MX), Vite + React + TS, PWA, hosting estátic
 - Imágenes: solo oficiales de rockstargames.com/VI (registradas en `public/media/media-manifest.json` vía `npm run images`) o ilustraciones propias rotuladas «Ilustración editorial». No recortar/ocultar marcas.
 
 ## Flujo
-- Contenido: `content/entries.json` (fuente de verdad), `content/sources.json`, `content/changelog.json`. `scripts/seed_content.py` fue la siembra inicial; ya no es la fuente de verdad.
+- Contenido: `content/entries.json` (fuente de verdad), `content/sources.json`, `content/changelog.json`, y de la fase 2 `content/cheats.json`, `content/console.json`, `content/loadout.json` (esquemas en `src/data/schema-fase2.ts`). `scripts/seed_content.py` y `scripts/seed_fase2.py` fueron siembras; ya no son la fuente de verdad.
+- Cada fuente puede llevar `group` (grupo editorial). «Contrastado» cuenta grupos, no URLs: un medio que reutiliza datos de otro no suma.
+- Trucos: si ninguna fuente publica la secuencia, `sequenceStatus: desconocida` y `sequence: null`. Nunca trasladar códigos de GTA V.
 - Validación: `npm run validate:data` (Vitest + Zod, integridad referencial). Corre dentro de `npm run build`.
 - Tras cambiar fichas: `python3 scripts/gen_audit.py` para regenerar AUDITORIA_DATOS.md.
 - Calidad: `npm run lint && npm run typecheck && npm run test && npm run build && npm run test:e2e`.
@@ -20,7 +22,7 @@ LEONIDA ATLAS: guía de GTA VI (es-MX), Vite + React + TS, PWA, hosting estátic
 
 ## Código
 - Componentes en `src/components`, páginas en `src/pages`, lógica pura testeable en `src/lib`.
-- El navegador no carga Zod (excepto /editor, diferido). El progreso usa validación manual en `src/lib/storage.ts` con `schemaVersion` y migraciones.
+- El navegador no carga Zod (excepto /editor, diferido). El progreso usa validación manual en `src/lib/storage.ts` con `schemaVersion` (v3) y migraciones v1/v2→v3. Las fotos personales viven en IndexedDB (`src/lib/photos.ts`), nunca en localStorage ni en un servidor.
 - Accesibilidad: objetivos táctiles ≥ 44 px, foco visible, `prefers-reduced-motion`, sin errores serios de axe.
 
 ## ATLAS INTELLIGENCE

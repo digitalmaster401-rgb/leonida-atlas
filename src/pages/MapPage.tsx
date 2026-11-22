@@ -6,6 +6,7 @@ import { groupPins, MapLegend, MapView, PinPanel } from '../components/MapView';
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
 import { setQueryParam } from '../lib/query';
+import { useProgress } from '../hooks/progress';
 
 export function MapPage() {
   const [params, setParams] = useSearchParams();
@@ -13,7 +14,12 @@ export function MapPage() {
   const located = entries.filter((e) => e.mapPosition);
   const cats = [...new Set(located.map((e) => e.category))] as Category[];
   const [active, setActive] = useState<Set<Category>>(() => new Set(cats));
-  const list = useMemo(() => located.filter((e) => active.has(e.category) || e.id === selectedId), [located, active, selectedId]);
+  const { progress, setHideFound } = useProgress();
+  const hide = progress.settings.hideFound;
+  const list = useMemo(
+    () => located.filter((e) => e.id === selectedId || (active.has(e.category) && !(hide && progress.completed.includes(e.id)))),
+    [located, active, selectedId, hide, progress.completed],
+  );
   const group = groupPins(list).find((g) => g.entries.some((e) => e.id === selectedId));
   const select = (id: string | null) => setQueryParam(setParams, 'id', id);
   return (
@@ -39,6 +45,9 @@ export function MapPage() {
           })
         }
       />
+      <label className="check">
+        <input type="checkbox" checked={hide} onChange={(e) => setHideFound(e.target.checked)} data-testid="map-hide-found" /> Ocultar lo que ya encontré o completé
+      </label>
       <div className="map-area">
         <MapView list={list} selectedId={selectedId} onSelect={select} />
         <PinPanel group={group} onClose={() => select(null)} />

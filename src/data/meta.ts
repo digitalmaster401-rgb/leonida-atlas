@@ -24,9 +24,17 @@ export const CATEGORY_META: Record<Category, CategoryMeta> = {
   vehiculos: { id: 'vehiculos', label: 'Vehículos', singular: 'Vehículo', path: '/vehiculos', description: 'Vehículos confirmados y dónde encontrarlos.', icon: 'car' },
   negocios: { id: 'negocios', label: 'Negocios y propiedades', singular: 'Negocio', path: '/negocios', description: 'Tiendas, talleres, garajes y propiedades.', icon: 'store' },
   rutas: { id: 'rutas', label: 'Rutas y tutoriales', singular: 'Tutorial', path: '/rutas', description: 'Recorridos y guías elaboradas para LEONIDA ATLAS.', icon: 'route' },
+  coleccionables: {
+    id: 'coleccionables',
+    label: 'Coleccionables',
+    singular: 'Coleccionable',
+    path: '/coleccionables',
+    description: 'Tarjetas, revistas, libros y otras colecciones con seguimiento individual.',
+    icon: 'grid',
+  },
 };
 
-export const CATEGORY_ORDER: Category[] = ['lugares', 'dinero', 'armas', 'vehiculos', 'negocios', 'rutas', 'personajes'];
+export const CATEGORY_ORDER: Category[] = ['lugares', 'dinero', 'armas', 'vehiculos', 'negocios', 'coleccionables', 'rutas', 'personajes'];
 
 export const REGION_LABEL: Record<RegionId, string> = {
   leonida: 'Todo Leonida',

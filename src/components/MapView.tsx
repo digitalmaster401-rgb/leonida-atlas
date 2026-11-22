@@ -5,6 +5,7 @@ import { entryPath, imageOf, MAP_MEDIA_ID } from '../data';
 import { CATEGORY_META, PRECISION_LABEL } from '../data/meta';
 import { EvidenceBadge } from './EvidenceBadge';
 import { Icon } from './Icon';
+import { useProgress } from '../hooks/progress';
 
 const RATIO = 2805 / 3840; // ancho / alto del póster oficial
 const MIN = 1;
@@ -237,6 +238,7 @@ export function MapView({ list, selectedId, onSelect }: { list: Entry[]; selecte
 }
 
 export function PinPanel({ group, onClose }: { group: PinGroup | undefined; onClose: () => void }) {
+  const { progress } = useProgress();
   if (!group) return null;
   return (
     <aside className="pin-panel" aria-live="polite" data-testid="pin-panel">
@@ -252,8 +254,9 @@ export function PinPanel({ group, onClose }: { group: PinGroup | undefined; onCl
             <Link to={entryPath(e)} className="pin-entry">
               <span className={`dot dot-${e.category}`} aria-hidden="true" />
               <span>
-                <strong>{e.name}</strong>
+                <strong>{e.spoilerLevel > progress.settings.spoilerLevel ? `${CATEGORY_META[e.category].singular} con spoilers ${e.spoilerLevel === 2 ? 'avanzados' : 'leves'}` : e.name}</strong>
                 <span className="muted small"> · {CATEGORY_META[e.category].singular}</span>
+                {progress.completed.includes(e.id) && <span className="chip chip-static">Encontrado/completado</span>}
               </span>
             </Link>
             <div className="pin-entry-meta">
@@ -294,7 +297,7 @@ export function MiniMap({ entry }: { entry: Entry }) {
   const m = imageOf(MAP_MEDIA_ID)!;
   const zoom = 3;
   return (
-    <Link to={`/mapa?id=${entry.id}`} className="minimap" aria-label={`Ver ${entry.name} en el mapa interactivo`}>
+    <Link to={`/mapa?id=${entry.id}`} className="minimap" aria-label={`${PRECISION_LABEL[p.precision]} · Ver en el mapa: ${entry.name}`}>
       <div className="minimap-frame">
         <img
           src={m.files['1200'].src}

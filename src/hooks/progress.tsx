@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { loadProgress, saveProgress, STORAGE_KEY, type Progress, migrate } from '../lib/storage';
+import { loadProgress, saveProgress, STORAGE_KEY, type EntryRecord, type Loadout, type Progress, migrate } from '../lib/storage';
 
 interface ProgressApi {
   progress: Progress;
@@ -11,6 +11,30 @@ interface ProgressApi {
   setNote: (id: string, text: string) => void;
   setSpoilerLevel: (lvl: 0 | 1 | 2) => void;
   replace: (p: Progress) => void;
+  /** Marca como encontrado/completado (o lo desmarca) y registra la fecha. */
+  setFound: (id: string, found: boolean) => void;
+  setRecord: (id: string, patch: Partial<EntryRecord>) => void;
+  setCounter: (id: string, n: number) => void;
+  toggleToday: (id: string) => void;
+  saveLoadout: (l: Loadout) => void;
+  deleteLoadout: (id: string) => void;
+  setProfile: (patch: Partial<Progress['profile']>) => void;
+  setHideFound: (v: boolean) => void;
+}
+
+const today = () => new Date().toISOString().slice(0, 10);
+function withRecord(p: Progress, id: string, patch: Partial<EntryRecord>): Progress {
+  const rec: EntryRecord = { ...p.records[id], ...patch };
+  for (const k of Object.keys(rec) as (keyof EntryRecord)[]) if (rec[k] === undefined) delete rec[k];
+  const records = { ...p.records };
+  if (Object.keys(rec).length) records[id] = rec;
+  else delete records[id];
+  return { ...p, records };
+}
+function withFound(p: Progress, id: string, found: boolean): Progress {
+  const completed = found ? [...new Set([...p.completed, id])] : p.completed.filter((x) => x !== id);
+  const rec = p.records[id] ?? {};
+  return withRecord({ ...p, completed }, id, found ? { state: undefined, date: rec.date ?? today(), platform: rec.platform ?? p.profile.platform ?? undefined } : { date: undefined });
 }
 
 const Ctx = createContext<ProgressApi | null>(null);
@@ -50,7 +74,21 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       isFavorite: (id) => progress.favorites.includes(id),
       isCompleted: (id) => progress.completed.includes(id),
       toggleFavorite: (id) => update((p) => ({ ...p, favorites: toggle(p.favorites, id) })),
-      toggleCompleted: (id) => update((p) => ({ ...p, completed: toggle(p.completed, id) })),
+      toggleCompleted: (id) => update((p) => withFound(p, id, !p.completed.includes(id))),
+      setFound: (id, found) => update((p) => withFound(p, id, found)),
+      setRecord: (id, patch) => update((p) => withRecord(p, id, patch)),
+      setCounter: (id, n) => update((p) => ({ ...p, counters: { ...p.counters, [id]: Math.max(0, Math.min(10000, Math.round(n) || 0)) } })),
+      toggleToday: (id) => update((p) => ({ ...p, today: toggle(p.today, id) })),
+      saveLoadout: (l) =>
+        update((p) => {
+          const next = { ...l, updatedAt: new Date().toISOString() };
+          const i = p.loadouts.findIndex((x) => x.id === l.id);
+          const loadouts = i < 0 ? [...p.loadouts, next].slice(-30) : p.loadouts.map((x, j) => (j === i ? next : x));
+          return { ...p, loadouts };
+        }),
+      deleteLoadout: (id) => update((p) => ({ ...p, loadouts: p.loadouts.filter((x) => x.id !== id) })),
+      setProfile: (patch) => update((p) => ({ ...p, profile: { ...p.profile, ...patch, name: (patch.name ?? p.profile.name).slice(0, 40) } })),
+      setHideFound: (v) => update((p) => ({ ...p, settings: { ...p.settings, hideFound: v } })),
       setNote: (id, text) =>
         update((p) => {
           const notes = { ...p.notes };
