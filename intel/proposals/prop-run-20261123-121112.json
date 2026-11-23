@@ -1,0 +1,491 @@
+{
+ "id": "prop-run-20261123-121112",
+ "runId": "run-20261123-121112",
+ "createdAt": "2026-11-23T12:11:13.347Z",
+ "title": "ATLAS INTELLIGENCE: 42 nuevos, 1 actualizaciones",
+ "requiresHumanReview": true,
+ "changes": [
+  {
+   "findingId": "fnd-gta-6-s-leads-and-phil-collins-are-all-repping-t",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6s-leads-and-phil-collins-are-all-repping-their-characters-on-instagram-b8ea"
+   ]
+  },
+  {
+   "findingId": "fnd-no-the-xbox-quick-resume-glitch-does-not-give-yo",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/no-the-xbox-quick-resume-glitch-does-not-give-you-a-60-fps-gta-6-d0b0"
+   ]
+  },
+  {
+   "findingId": "fnd-the-gta-6-jason-arrest-video-going-viral-is-real",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-gta-6-jason-arrest-video-going-viral-is-real-footage-c5e5"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-find-and-keep-dom-s-charger-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-find-and-keep-doms-charger-in-gta-6-0143"
+   ]
+  },
+  {
+   "findingId": "fnd-the-gta-6-review-bombing-is-mostly-ai-noise-but",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-gta-6-review-bombing-is-mostly-ai-noise-but-it-is-not-perfect-2507"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-the-safe-code-and-disarm-the-alarm-at",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-donovan-banks-robbery-guide-e5bb"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-strip-club-locations-unlock-chapters-and-p",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-strip-clubs-locations-prices-and-private-dances-d5b0"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-the-crabshack-vf5-smg-for-free-in-gta",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-crabshack-vf5-location-5a19"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-safe-door-and-garage-codes-and-where-to-fi",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+   ]
+  },
+  {
+   "findingId": "fnd-ishowspeed-rushed-gta-6-and-got-a-bad-ending",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/ishowspeed-rushed-gta-6-and-got-a-bad-ending-cb52"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-unlock-vanessa-s-free-garage-and-get-her",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-vanessas-garage-and-pink-growler-7339"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-buck-s-pawn-shop-walkthrough-with-gold-car",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-bucks-pawn-shop-walkthrough-4cf3"
+   ]
+  },
+  {
+   "findingId": "fnd-creators-report-youtube-copyright-claims-with-gt",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-mute-licensed-music-setting-in-gta-6-does-not-prevent-copyright-claims-2319"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-claim-the-vintage-vice-city-pack-rewards",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-vintage-vice-city-pack-claim-guide-3ca6"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-vehicle-menu-and-controller-shortcuts",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-hidden-controls-guide-2f6c"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-aiming-the-complete-guide-to-better-aim-on",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-aiming-the-complete-guide-to-better-aim-on-ps5-and-xbox-19ba"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-find-all-three-kolt-associates-businesses",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-kolt-associates-illegal-businesses-guide-e882"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-dealer-s-choice-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-dealers-choice-walkthrough-e50a"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-welcome-to-vice-city-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-welcome-to-vice-city-walkthrough-d7e5"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-checking-out-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-checking-out-walkthrough-529a"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-afternoon-delight-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-afternoon-delight-walkthrough-25b8"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-slam-dunk-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-slam-dunk-walkthrough-db1e"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-daily-driver-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-daily-driver-walkthrough-d470"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-ambulance-chaser-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-ambulance-chaser-walkthrough-60e8"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-complete-prepare-for-vice-city-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-prepare-for-vice-city-walkthrough-1e7b"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-robbery-types",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-robbery-types/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-stunt-jump-locations",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-stunt-jump-locations/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-the-unknown-stuntman-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-peewees-billboard-locations",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-peewees-billboard-locations/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-retest-freddie-s-defenses-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-retest-freddies-defenses-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-the-final-flush-meet-at-frank-s-waffles-wa",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-the-final-flush-meet-at-franks-waffles-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-1010-mural-locations",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-all-1010-mural-locations/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-the-end-of-the-road-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-the-end-of-the-road-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-protective-custody-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-protective-custody-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-ocean-view-hotel-gta-6-location-guide-where-to-f",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/ocean-view-hotel-gta-6-location-guide-where-to-find-the-vapid-55-stainer/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-find-and-break-into-freddie-gibbs-doomsday",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-find-break-in-freddie-doomsday-compound-grand-theft-auto/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-chapter-3-mission-list-every-mission-in-or",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-chapter-3-mission-list/"
+   ]
+  },
+  {
+   "findingId": "fnd-as-gta-6-gets-review-bombed-on-metacritic-gta-fa",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/news/as-gta-6-gets-review-bombed-on-metacritic-gta-fans-have-started-review-bombing-ocarina-of-time-in-response/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-chapter-3-mission-list-every-mission-in-or",
+   "kind": "fuente_agregada",
+   "before": null,
+   "after": "https://videogameschronicle.com/guide/gta-6-chapter-2-mission-list",
+   "sensitive": false,
+   "reason": "Video Games Chronicle también lo describe",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-chapter-2-mission-list/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-ride-or-die-walkthrough-where-to-find-the",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-ride-or-die-walkthrough-where-to-find-the-dwnply-sneakers-and-get-them-for-free/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-mami-knows-best-mission-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-mami-knows-best-mission-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-top-billing-walkthrough-how-to-complete-th",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-top-billing-walkthrough-how-to-complete-the-mission-and-rewards/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-boobie-time-walkthrough-how-to-complete-th",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-boobie-time-walkthrough-how-to-complete-the-mission-and-rewards/"
+   ]
+  }
+ ],
+ "risks": [
+  "Los hallazgos provienen de titulares y resúmenes de feeds: verifica la fuente antes de convertirlos en fichas públicas.",
+  "Incluye cambios de estado, cifras o glitches/trucos: requieren revisión humana o prueba documentada."
+ ],
+ "tests": [
+  "npm run validate:data",
+  "npx vitest run tests/intel",
+  "npm run build"
+ ]
+}
