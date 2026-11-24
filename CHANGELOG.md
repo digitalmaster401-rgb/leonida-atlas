@@ -2,9 +2,9 @@
 
 ## 1.3.2 — 2026-11-24 — Paso 21D: auditoría de material ajeno sin falsos positivos
 
-- `npm run audit:legacy` fallaba en el PR #10 (ejecución 45443731080) porque el titular real «Creators Report YouTube Copyright Claims…» (GTA BOOM) contiene «creator».
-- La lógica pasa a `scripts/audit-legacy-lib.mjs`. Una palabra común («creator», «tiktok», «watermark») solo se acepta dentro del **titular exacto** (o su id `fnd-…`) de una noticia externa cuya URL pertenece a una fuente registrada en `intel/sources.json`, y solo en datos de ATLAS INTELLIGENCE o en el build que los incluye. Cada aceptación se informa con su motivo.
-- Siguen bloqueados: la palabra fuera de un titular registrado, los dominios no registrados, cualquier titular con rutas del prototipo anterior, y los archivos y rutas prohibidos (video, fotogramas, portada).
+- `npm run audit:legacy` fallaba en el PR #10 (ejecución 45443731080) porque un titular real de GTA BOOM sobre reclamaciones de copyright en YouTube contiene la palabra inglesa equivalente a «creadores», que es uno de los términos vigilados.
+- La lógica pasa a `scripts/audit-legacy-lib.mjs`. Las tres palabras comunes de la lista (`WORD_TERMS`) solo se aceptan dentro del **titular exacto** de una noticia externa (o de su id `fnd-…`) cuya URL pertenece a una fuente registrada en `intel/sources.json`, y solo en datos de ATLAS INTELLIGENCE o en el build que los incluye. Cada aceptación se informa con su motivo.
+- Siguen bloqueados: esas palabras fuera de un titular registrado, los dominios no registrados, cualquier titular con rutas del prototipo anterior, y los archivos y rutas prohibidos (video, fotogramas, portada).
 - Pruebas: `tests/audit-legacy.test.ts`; reproducción del fallo sobre la rama del PR #10 (antes 7 coincidencias, ahora 0).
 
 ## 1.3.1 — 2026-11-24 — Paso 21A: estabilización de ATLAS INTELLIGENCE y entorno
