@@ -21,6 +21,11 @@ describe('resguardos del repositorio', () => {
     expect(wf).toContain('workflow_dispatch');
     // la PR automática necesita que el workflow lance el CI (si no, GitHub lo deja en «action_required»)
     expect(wf).toMatch(/gh workflow run ci\.yml --ref "\$BRANCH"/);
+    // una sola PR acumulada que arrastra las propuestas abiertas (sin duplicar entre corridas)
+    expect(wf).toContain('BRANCH="atlas-intelligence/propuestas"');
+    expect(wf).toMatch(/gh pr edit "\$NUM"/);
+    expect(wf).toMatch(/--pending=\$PENDING/);
+    expect(wf).toMatch(/--label atlas-intelligence --json headRefName/);
     expect(wf).toMatch(/actions: write/);
     expect(readFileSync('.github/workflows/ci.yml', 'utf8')).toMatch(/^\s+workflow_dispatch:/m);
     expect(wf).toMatch(/timeout-minutes: \d+/);

@@ -96,6 +96,46 @@ export function titleSimilarity(a: string, b: string): number {
   return inter / (wa.size + wb.size - inter);
 }
 
+const STOP = new Set(
+  'the a an and or of in on to for with how find where get all guide walkthrough complete completing location locations what you your is are it its this that here new just has have after from about why who will can does not no be game games his her he she they their at by as now every should best way ways tips which there'.split(' '),
+);
+/** Palabras «de tema» de un titular: sin nombre del juego, sin palabras genéricas de guía y con raíz corta. */
+export function topicTokens(title: string): string[] {
+  const t = normText(title.replace(/grand theft auto (vi|6)|\bgta ?(vi|6)\b/gi, ' '));
+  const out = new Set<string>();
+  for (const w of t.split(' ')) {
+    if (!w || STOP.has(w)) continue;
+    if (/^\d+$/.test(w)) out.add(w);
+    else if (w.length >= 3) out.add(w.slice(0, 4));
+  }
+  return [...out];
+}
+/**
+ * Similitud de tema entre dos titulares (0–1). Si ambos citan números distintos (capítulo 3 vs 4,
+ * versión 1.002 vs 1.003) devuelve 0: nunca se fusionan.
+ */
+export function topicSimilarity(a: string, b: string): number {
+  const ta = topicTokens(a);
+  const tb = topicTokens(b);
+  if (!ta.length || !tb.length) return 0;
+  const na = ta.filter((w) => /^\d+$/.test(w)).sort().join(',');
+  const nb = tb.filter((w) => /^\d+$/.test(w)).sort().join(',');
+  if (na && nb && na !== nb) return 0;
+  const sb = new Set(tb);
+  const inter = ta.filter((w) => sb.has(w)).length;
+  // Con una sola palabra en común no basta («New Look» ≠ «How Do I Look?», «Checking Out» ≠ «Out Now»).
+  if (inter < 2) return 0;
+  return inter / (ta.length + tb.length - inter);
+}
+
+/** true si ambos titulares citan números y no son los mismos (capítulo 3 ≠ capítulo 4). */
+export function numbersConflict(a: string, b: string): boolean {
+  const nums = (s: string) => (normText(s.replace(/grand theft auto (vi|6)|\bgta ?(vi|6)\b/gi, ' ')).match(/\d+/g) ?? []).sort().join(',');
+  const na = nums(a);
+  const nb = nums(b);
+  return !!na && !!nb && na !== nb;
+}
+
 export function slugify(s: string, max = 60): string {
   return normText(s).replace(/\s+/g, '-').replace(/\$/g, '').slice(0, max).replace(/-+$/g, '') || 'hallazgo';
 }

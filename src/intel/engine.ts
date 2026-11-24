@@ -4,8 +4,8 @@ import type { Finding, FindingStatus, IntelSource, Patch, Platform, ReviewPropos
 import { PLATFORMS } from './schema';
 import type { FeedItem } from './feeds';
 import type { Extraction } from './classify';
-import { canonicalUrl, contentHash, dedupKey, originId, slugify, titleSimilarity } from './normalize';
-import { REVALIDATABLE, STATUS_RANK, addHistory, independentCount, overallStatus, setPlatformStatus, statusFromEvidence, statusFromSources } from './status';
+import { canonicalUrl, contentHash, dedupKey, numbersConflict, originId, slugify, titleSimilarity, topicSimilarity } from './normalize';
+import { REVALIDATABLE, STATUS_RANK, addHistory, enforceIndependence, independentCount, overallStatus, setPlatformStatus, statusFromEvidence, statusFromSources } from './status';
 import { tagsFor } from './heuristics';
 
 export interface Change {
@@ -39,18 +39,45 @@ export function buildSourceRef(item: FeedItem, src: IntelSource, accessedAt: str
 function sourceStatus(f: Pick<Finding, 'sources' | 'claims' | 'category' | 'flags'>): FindingStatus {
   const concrete = f.claims.length > 0 || !['noticia', 'otro', 'parche'].includes(f.category);
   let st = statusFromSources(f.sources, concrete);
+  // Un titular que desmiente («No, el glitch… no funciona») no es un reporte de que funcione.
+  if (f.flags.includes('desmentido_en_titular') && STATUS_RANK[st] > STATUS_RANK.nuevo_sin_verificar && st !== 'anuncio_oficial') st = 'nuevo_sin_verificar';
   // Promesas extraordinarias (p. ej. «dinero infinito») nunca pasan de «reportado» sin prueba.
   if (f.flags.includes('promesa_extraordinaria') && STATUS_RANK[st] > STATUS_RANK.reportado) st = 'reportado';
   return st;
 }
 
-/** Busca un hallazgo existente que represente lo mismo. */
-export function findMatch(findings: Finding[], ref: SourceRef, title: string, category: string, hint?: string): Finding | undefined {
+/** Umbrales de fusión por tema (ver tests/intel/dedup.test.ts con titulares reales). */
+export const TOPIC_MATCH = { guide: 0.6, news: 0.5, newsWindowDays: 4 };
+
+const daysApart = (a: string | null | undefined, b: string | null | undefined) =>
+  a && b ? Math.abs(Date.parse(a) - Date.parse(b)) / 86400000 : Infinity;
+
+/** Busca un hallazgo existente que represente lo mismo (misma URL/contenido, o el mismo tema en otra fuente). */
+export function findMatch(findings: Finding[], ref: SourceRef, title: string, category: string, hint?: string, publishedAt?: string | null): Finding | undefined {
   const key = hint ?? dedupKey(ref.url);
   return (
     findings.find((f) => f.dedupKey === key) ??
     (hint ? undefined : findings.find((f) => f.sources.some((s) => s.canonicalUrl === ref.canonicalUrl || (ref.originId && s.originId === ref.originId) || s.contentHash === ref.contentHash))) ??
-    findings.find((f) => f.category === category && category !== 'noticia' && titleSimilarity(f.title, title) >= 0.75)
+    findings.find(
+      (f) =>
+        f.category === category &&
+        category !== 'noticia' &&
+        !numbersConflict(f.title, title) &&
+        // la similitud de palabras sola contaba «how», «complete»…; ahora siempre se exigen ≥2 palabras de tema en común
+        topicSimilarity(f.title, title) > 0 &&
+        (titleSimilarity(f.title, title) >= 0.75 || topicSimilarity(f.title, title) >= TOPIC_MATCH.guide),
+    ) ??
+    // Noticias: la misma historia contada por otro medio en pocos días (p. ej. tres medios sobre la misma broma de un director).
+    (hint
+      ? undefined
+      : findings.find(
+          (f) =>
+            f.category === 'noticia' &&
+            category === 'noticia' &&
+            !f.sources.some((s) => s.independenceGroup === ref.independenceGroup) &&
+            daysApart(f.sourcePublishedAt, publishedAt ?? ref.publishedAt) <= TOPIC_MATCH.newsWindowDays &&
+            topicSimilarity(f.title, title) >= TOPIC_MATCH.news,
+        ))
   );
 }
 
@@ -63,7 +90,7 @@ export function ingest(
   now: string,
 ): { findings: Finding[]; changes: Change[] } {
   const ref = buildSourceRef(item, src, now);
-  const existing = findMatch(findings, ref, item.title, ex.category, item.dedupHint);
+  const existing = findMatch(findings, ref, item.title, ex.category, item.dedupHint, item.publishedAt);
   const changes: Change[] = [];
   if (existing) {
     const already = existing.sources.some((s) => s.canonicalUrl === ref.canonicalUrl && (!item.dedupHint || s.contentHash === ref.contentHash || s.title === ref.title));
@@ -121,6 +148,111 @@ export function ingest(
   const f: Finding = { ...draft, status: st, nextCheckAt: REVALIDATABLE.has(draft.category) ? addDays(now, 7) : null };
   changes.push({ findingId: id, kind: 'nuevo', before: null, after: st, sensitive: ['glitch', 'truco'].includes(f.category) || f.claims.some((c) => c.amount !== null), reason: `Nuevo hallazgo de ${src.name}`, sources: [ref.url] });
   return { findings: [...findings, f], changes };
+}
+
+/**
+ * Aplica la regla de independencia a hallazgos ya guardados (incluidos los arrastrados de propuestas abiertas):
+ * un «contrastado» sin dos fuentes independientes baja a su estado correcto y queda en el historial.
+ */
+export function enforceIndependenceAll(findings: Finding[], runId: string, now: string): { findings: Finding[]; changes: Change[] } {
+  const changes: Change[] = [];
+  const out = findings.map((f) => {
+    const concrete = f.claims.length > 0 || !['noticia', 'otro', 'parche'].includes(f.category);
+    const next = enforceIndependence(f, concrete);
+    if (!next) return f;
+    changes.push({ findingId: f.id, kind: 'estado', before: f.status, after: next, sensitive: false, reason: 'Corrección: «contrastado» exige dos fuentes independientes', sources: f.sources.map((s) => s.url) });
+    return addHistory({ ...f, status: next }, { type: 'estado', from: f.status, to: next, platform: null, reason: `Regla de independencia: ${independentCount(f.sources)} fuente(s) independiente(s) no oficiales`, runId, at: now });
+  });
+  return { findings: out, changes };
+}
+
+/**
+ * Arrastra hallazgos de propuestas abiertas (aún no fusionadas en main) para que una corrida nueva no los
+ * vuelva a proponer como «nuevos». Deduplica con las mismas reglas que la ingesta, reclasifica los heurísticos
+ * con el clasificador actual y conserva fuentes e historial. main manda: nunca pisa un hallazgo que ya está ahí.
+ */
+export function carryPending(
+  base: Finding[],
+  pendingLists: Finding[][],
+  reclassify: (title: string) => { category: Finding['category']; flags: string[] },
+  runId: string,
+  now: string,
+): { findings: Finding[]; changes: Change[]; carried: number; merged: number } {
+  let findings = [...base];
+  const changes: Change[] = [];
+  let carried = 0;
+  let merged = 0;
+  const seen = new Set(base.map((f) => f.id));
+  for (const list of pendingLists)
+    for (const p0 of list) {
+      if (seen.has(p0.id)) continue;
+      seen.add(p0.id);
+      let p = p0;
+      if (p.classifier === 'heuristico') {
+        const rc = reclassify(p.title);
+        const flags = [...new Set([...p.flags, ...rc.flags])];
+        if (rc.category !== p.category) {
+          p = addHistory({ ...p, category: rc.category, flags }, { type: 'nota', from: p.category, to: rc.category, platform: null, reason: 'Reclasificado con el clasificador actual', runId, at: now });
+        } else p = { ...p, flags };
+      }
+      const first = p.sources[0];
+      const match = findMatch(findings, first, p.title, p.category, p.dedupKey.startsWith('page:') ? p.dedupKey : undefined, p.sourcePublishedAt) ?? findings.find((f) => f.dedupKey === p.dedupKey);
+      if (match) {
+        const extra = p.sources.filter((s) => !match.sources.some((m) => m.canonicalUrl === s.canonicalUrl));
+        if (!extra.length) {
+          merged++;
+          continue;
+        }
+        let f: Finding = { ...match, sources: [...match.sources, ...extra] };
+        f = addHistory(f, { type: 'fuente_agregada', from: null, to: extra.map((s) => s.canonicalUrl).join(' '), platform: null, reason: `Consolidado desde una propuesta abierta (${p.id})`, runId, at: now });
+        if (!LOCKED.includes(f.status)) {
+          const next = sourceStatus(f);
+          if (next !== f.status) f = addHistory({ ...f, status: next }, { type: 'estado', from: f.status, to: next, platform: null, reason: `Fuentes independientes: ${independentCount(f.sources)}`, runId, at: now });
+        }
+        changes.push({ findingId: f.id, kind: 'fuente_agregada', before: null, after: extra[0].canonicalUrl, sensitive: false, reason: 'Misma historia en otra fuente (consolidación)', sources: extra.map((s) => s.url) });
+        findings = findings.map((x) => (x.id === match.id ? f : x));
+        merged++;
+        continue;
+      }
+      // recalcula el estado con las reglas actuales (independencia, desmentidos); nunca toca estados con evidencia
+      if (!LOCKED.includes(p.status)) {
+        const st = sourceStatus(p);
+        if (st !== p.status) p = addHistory({ ...p, status: st }, { type: 'estado', from: p.status, to: st, platform: null, reason: 'Estado recalculado con las reglas actuales', runId, at: now });
+      }
+      findings.push(p);
+      carried++;
+    }
+  return { findings, changes, carried, merged };
+}
+
+/** Cuerpo acumulado de la propuesta: todo lo que aún no está en main, agrupado y sin repetir. */
+export function pendingMarkdown(base: Finding[], final: Finding[], runId: string, now: string): string {
+  const inBase = new Map(base.map((f) => [f.id, f]));
+  const fresh = final.filter((f) => !inBase.has(f.id));
+  const changed = final.filter((f) => inBase.has(f.id) && (inBase.get(f.id)!.status !== f.status || inBase.get(f.id)!.sources.length !== f.sources.length));
+  const esc = (s: string) => s.replace(/\|/g, '\\|').replace(/\n/g, ' ');
+  const byCat = new Map<string, Finding[]>();
+  for (const f of fresh) byCat.set(f.category, [...(byCat.get(f.category) ?? []), f]);
+  const lines = [
+    `# ATLAS INTELLIGENCE: propuesta acumulada (${fresh.length} nuevos, ${changed.length} actualizados)`,
+    '',
+    `Última corrida \`${runId}\` · ${now}. Esta PR se actualiza en cada corrida: reúne todo lo pendiente de revisar, sin repetir hallazgos.`,
+    '',
+    '> Revisión humana obligatoria. Nada pasa a «comprobado» o «parcheado» sin evidencia con fecha, plataforma y versión registrada por una persona. «Contrastado» exige dos fuentes independientes; un anuncio de Rockstar solo es «anuncio oficial».',
+    '',
+  ];
+  for (const [cat, list] of [...byCat.entries()].sort()) {
+    lines.push(`## ${cat} (${list.length})`, '', '| Hallazgo | Estado | Fuentes |', '|---|---|---|');
+    for (const f of list) lines.push(`| ${esc(f.title)}${f.flags.includes('desmentido_en_titular') ? ' (desmentido)' : ''} | ${f.status} | ${f.sources.map((s, i) => `[${i + 1}](${s.url})`).join(' ')} |`);
+    lines.push('');
+  }
+  if (changed.length) {
+    lines.push('## Hallazgos ya publicados que cambian', '', '| Hallazgo | Antes → después | Fuentes |', '|---|---|---|');
+    for (const f of changed) lines.push(`| ${esc(f.title)} | ${inBase.get(f.id)!.status} → ${f.status} | ${f.sources.length} |`);
+    lines.push('');
+  }
+  lines.push('## Pruebas ejecutadas por el workflow', '- `npx vitest run tests/intel tests/data.test.ts`', '- `npm run build`', '');
+  return lines.join('\n');
 }
 
 export function addDays(iso: string, days: number): string {

@@ -6,6 +6,8 @@ export const PLATFORMS = ['ps5', 'ps5_pro', 'xbox_series_x', 'xbox_series_s'] as
 export const FINDING_STATUSES = [
   'nuevo_sin_verificar',
   'reportado',
+  /** Publicado por Rockstar Games o Take-Two: es el anuncio, no una prueba en el juego ni un contraste. */
+  'anuncio_oficial',
   'contrastado',
   'comprobado_en_version',
   'pendiente_revalidacion',
@@ -135,7 +137,18 @@ export const findingSchema = z.object({
   classifier: z.enum(['heuristico', 'ia', 'humano', 'migracion']),
   flags: z.array(z.string()),
   rights: z.string(),
+}).superRefine((f, ctx) => {
+  // «Comprobado» solo con una prueba en juego registrada por una persona (fecha, plataforma y versión).
+  const tested = f.evidence.some((e) => e.type === 'prueba_en_juego' && e.result === 'funciona' && e.testedAt && e.gameVersion && e.platform && !AUTOMATED.has(e.recordedBy));
+  const statuses = [f.status, ...Object.values(f.platformStatus)];
+  if (statuses.includes('comprobado_en_version') && !tested)
+    ctx.addIssue({ code: 'custom', path: ['status'], message: 'comprobado_en_version exige una prueba en juego con fecha, plataforma y versión registrada por una persona' });
+  // «Parcheado» exige prueba posterior o nota oficial.
+  const patched = f.evidence.some((e) => (e.type === 'nota_oficial' || (e.type === 'prueba_en_juego' && e.gameVersion)) && e.result === 'no_funciona' && !AUTOMATED.has(e.recordedBy));
+  if (statuses.includes('parcheado') && !patched) ctx.addIssue({ code: 'custom', path: ['status'], message: 'parcheado exige prueba posterior o nota oficial registrada por una persona' });
 });
+/** Autores automáticos: nunca cuentan como prueba humana. */
+export const AUTOMATED = new Set(['atlas-intelligence', 'atlas-intelligence[bot]', 'pipeline', 'ia', 'heuristico', 'github-actions[bot]']);
 
 export const patchSchema = z.object({
   id: z.string(),

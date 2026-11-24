@@ -6,7 +6,8 @@ import { z } from 'zod';
 import { findingSchema, intelSourceSchema, patchSchema, runReportSchema, submissionSchema, reviewProposalSchema, type RunReport } from '../../src/intel/schema';
 import { runPipeline, type FetchLike } from '../../src/intel/pipeline';
 import { aiExtractionSchema } from '../../src/intel/classify';
-import { proposalMarkdown } from '../../src/intel/engine';
+import { carryPending, pendingMarkdown, proposalMarkdown } from '../../src/intel/engine';
+import { heuristicExtract } from '../../src/intel/classify';
 import { redact, secretValuesFromEnv } from '../../src/intel/redact';
 
 const args = new Map(process.argv.slice(2).map((a) => a.replace(/^--/, '').split('=') as [string, string]));
@@ -22,6 +23,22 @@ const state = {
   patches: read('intel/patches.json', z.array(patchSchema), []),
   submissions: read('intel/submissions.json', z.array(submissionSchema), []),
 };
+// Propuestas abiertas (no fusionadas): --pending=archivo1.json,archivo2.json (findings.json de cada rama abierta).
+// Se arrastran para no volver a proponer lo mismo en cada corrida (ver docs/ATLAS_INTELLIGENCE_QA.md).
+const baseFindings = state.findings;
+const pendingFiles = (args.get('pending') ?? '').split(',').filter(Boolean);
+let carryChanges: import('../../src/intel/engine').Change[] = [];
+if (pendingFiles.length) {
+  const lists = pendingFiles.filter((p) => existsSync(p)).map((p) => z.array(findingSchema).parse(JSON.parse(readFileSync(p, 'utf8'))));
+  const runIdHint = `carry-${new Date().toISOString().slice(0, 10)}`;
+  const c = carryPending(state.findings, lists, (t) => {
+    const ex = heuristicExtract(t, '', 'https://example.invalid/');
+    return { category: ex.category, flags: ex.flags };
+  }, runIdHint, new Date().toISOString());
+  state.findings = c.findings;
+  carryChanges = c.changes;
+  console.log(`Propuestas abiertas: ${lists.length} · ${c.carried} hallazgos arrastrados · ${c.merged} duplicados consolidados`);
+}
 // YouTube API solo si hay clave
 for (const s of sources) if (s.id === 'youtube-busqueda' && env.YOUTUBE_API_KEY) s.enabled = true;
 
@@ -79,6 +96,7 @@ if (!dryRun) {
   w(`intel/runs/${result.report.id}.json`, result.report);
   const index = existsSync('intel/runs/index.json') ? (JSON.parse(readFileSync('intel/runs/index.json', 'utf8')) as RunReport[]) : [];
   w('intel/runs/index.json', [result.report, ...index.filter((r) => r.id !== result.report.id)].slice(0, 60));
+  writeFileSync('intel/proposals/PENDIENTES.md', redact(pendingMarkdown(baseFindings, result.state.findings, result.report.id, result.report.finishedAt), secrets));
   if (result.proposal) {
     w(`intel/proposals/${result.proposal.id}.json`, result.proposal);
     writeFileSync(`intel/proposals/${result.proposal.id}.md`, redact(proposalMarkdown(result.proposal, result.state.findings), secrets));
@@ -88,5 +106,7 @@ if (!dryRun) {
 if (env.GITHUB_STEP_SUMMARY) {
   appendFileSync(env.GITHUB_STEP_SUMMARY, redact(`## ATLAS INTELLIGENCE\n\n${summaryLine}\n\n` + result.report.sources.map((s) => `- ${s.ok ? '✅' : '❌'} **${s.sourceId}**: ${s.items} elementos, ${s.relevant} relevantes, ${s.newFindings} nuevos${s.error ? ` — ${s.error}` : ''}`).join('\n') + '\n', secrets));
 }
-if (env.GITHUB_OUTPUT) appendFileSync(env.GITHUB_OUTPUT, `changes=${result.changes.length}\nrun_id=${result.report.id}\nstatus=${result.report.status}\n`);
+// «pending» = hay algo que no está en main (aunque esta corrida no haya traído nada nuevo)
+const pendingCount = result.state.findings.filter((f) => !baseFindings.some((b) => b.id === f.id)).length + carryChanges.length;
+if (env.GITHUB_OUTPUT) appendFileSync(env.GITHUB_OUTPUT, `changes=${result.changes.length}\npending=${pendingCount}\nrun_id=${result.report.id}\nstatus=${result.report.status}\n`);
 process.exitCode = result.report.status === 'error' ? 1 : 0;

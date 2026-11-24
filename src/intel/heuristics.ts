@@ -38,10 +38,24 @@ function stripGameName(s: string): string {
 /** Señales de noticia de industria (ventas, ejecutivos, prensa): no son guías del juego. */
 const NEWS = /\b(copies sold|sales|revenue|billion|ceo|minister|records?|review|reacts?|reacted|interview|lawsuit|leak|hacker|banned|ban|stock|circana|black friday|discount|cameo|cast)\b/i;
 
+/** Titulares que desmienten algo («No, el glitch… no da dinero», «es falso», «doesn't work»). */
+export function debunkHeadline(title: string): boolean {
+  return /^\s*no[,:]\s|\b(does not|doesn'?t|won'?t|isn'?t|is not) (work|give|exist|real)|\b(fake|hoax|debunk(ed)?|myth|falso|bulo)\b/i.test(title);
+}
+
+/** Categorías que, en el titular, mandan sobre «misión» (un recorrido de un robo sigue siendo dinero). */
+const STRONG: FindingCategory[] = ['parche', 'glitch', 'truco', 'dinero'];
+
 export function classifyCategory(title: string, summary: string): FindingCategory {
   const t = stripGameName(title);
   const sm = stripGameName(summary);
   if (NEWS.test(t) && !/\b(guide|walkthrough|location|how to|where to)\b/i.test(t)) return 'noticia';
+  // «How to complete X» / «X walkthrough» / «mission»: es una misión, salvo que el titular sea de dinero, truco, glitch o parche.
+  // (Antes el resumen decidía y una misión llamada «Checking Out» acababa como «arma».)
+  if (/\b(how to complete|walkthrough|mission|misi[oó]n)\b/i.test(t)) {
+    for (const [c, re] of CATS) if (STRONG.includes(c) && re.test(t)) return c;
+    return 'mision';
+  }
   for (const [c, re] of CATS) if (re.test(t)) return c;
   if (/\b(guide|walkthrough|location|how to|where to)\b/i.test(t)) for (const [c, re] of CATS) if (re.test(sm)) return c;
   return 'noticia';
