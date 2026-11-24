@@ -1,0 +1,656 @@
+{
+ "id": "prop-run-20261124-121340",
+ "runId": "run-20261124-121340",
+ "createdAt": "2026-11-24T12:13:41.920Z",
+ "title": "ATLAS INTELLIGENCE: 58 nuevos, 0 actualizaciones",
+ "requiresHumanReview": true,
+ "changes": [
+  {
+   "findingId": "fnd-grand-theft-auto-vi-the-album-deluxe-edition",
+   "kind": "nuevo",
+   "before": null,
+   "after": "contrastado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas)",
+   "sources": [
+    "https://www.rockstargames.com/VI"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-leaker-arion-kurtaj-released-the-day-he-wa",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/hacker-arion-kurtaj-is-a-free-man-after-a-seven-year-sentence-for-the-gta-6-leak-a802"
+   ]
+  },
+  {
+   "findingId": "fnd-the-australian-and-new-zealand-version-of-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-australian-and-new-zealand-version-of-gta-6-really-is-censored-after-all-f418"
+   ]
+  },
+  {
+   "findingId": "fnd-exclusive-how-issa-lopez-gives-gta-6-s-cocoteo-f",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-cocoteo-fm-issa-lopez-radio-imaging-56fe"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-tommy-vercetti-s-shirt-and-angel-moto",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-get-tommy-vercettis-shirt-and-bike-in-gta-6-3313"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-update-1-002-002-fixes-failed-autosaves-an",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-update-1-002-002-autosave-story-call-fixes-1b03"
+   ]
+  },
+  {
+   "findingId": "fnd-the-fort-lauderdale-tattoo-studio-that-shares-it",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-hyper-ink-tattoo-shop-fort-lauderdale-8069"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-biker-hideout-robbery-safe-code-and-where",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-biker-hideout-safe-code-walkthrough-dab6"
+   ]
+  },
+  {
+   "findingId": "fnd-cyberpunk-2-director-jokes-his-game-is-cancelled",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/a-cyberpunk-2-director-joked-his-game-was-cancelled-after-seeing-gta-6-c8d2"
+   ]
+  },
+  {
+   "findingId": "fnd-where-to-find-arthur-morgan-s-hat-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-arthur-morgan-hat-location-2fba"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-alien-encounter-walkthrough-for-all-3-part",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-alien-encounter-walkthrough-86de"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-find-and-beat-satan-the-pretender-in-gta",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-find-and-beat-satan-in-gta-6-for-the-hellspawn-shotgun-98d3"
+   ]
+  },
+  {
+   "findingId": "fnd-the-greek-prime-minister-pitched-gta-6-as-a-kids",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-greek-prime-minister-pitched-gta-6-as-a-kids-christmas-gift-and-it-backfired-8aa1"
+   ]
+  },
+  {
+   "findingId": "fnd-rockstar-just-dropped-a-gta-6-deluxe-album-with",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/rockstar-just-dropped-a-gta-6-deluxe-album-with-23-new-tracks-e16c"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-play-gta-6-in-first-person-on-ps5-with-th",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-play-gta-6-in-first-person-with-the-camera-glitch-976b"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-leads-and-phil-collins-are-all-repping-t",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6s-leads-and-phil-collins-are-all-repping-their-characters-on-instagram-b8ea"
+   ]
+  },
+  {
+   "findingId": "fnd-no-the-xbox-quick-resume-glitch-does-not-give-yo",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/no-the-xbox-quick-resume-glitch-does-not-give-you-a-60-fps-gta-6-d0b0"
+   ]
+  },
+  {
+   "findingId": "fnd-the-gta-6-jason-arrest-video-going-viral-is-real",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-gta-6-jason-arrest-video-going-viral-is-real-footage-c5e5"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-find-and-keep-dom-s-charger-in-gta-6",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/how-to-find-and-keep-doms-charger-in-gta-6-0143"
+   ]
+  },
+  {
+   "findingId": "fnd-the-gta-6-review-bombing-is-mostly-ai-noise-but",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/the-gta-6-review-bombing-is-mostly-ai-noise-but-it-is-not-perfect-2507"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-the-safe-code-and-disarm-the-alarm-at",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-donovan-banks-robbery-guide-e5bb"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-strip-club-locations-unlock-chapters-and-p",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-strip-clubs-locations-prices-and-private-dances-d5b0"
+   ]
+  },
+  {
+   "findingId": "fnd-how-to-get-the-crabshack-vf5-smg-for-free-in-gta",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-crabshack-vf5-location-5a19"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-safe-door-and-garage-codes-and-where-to-fi",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af"
+   ]
+  },
+  {
+   "findingId": "fnd-ishowspeed-rushed-gta-6-and-got-a-bad-ending",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/ishowspeed-rushed-gta-6-and-got-a-bad-ending-cb52"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-pay-abe-s-fee-walkthrough-chapter-5",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-pay-abes-fee-walkthrough-chapter-5/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-unfinished-business-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-unfinished-business-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-heist-plans-in-place-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-heist-plans-in-place-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-rafa-s-kidnapping-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-rafas-kidnapping-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-nate-will-be-in-touch-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-nate-will-be-in-touch-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-call-nate-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-call-nate-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-quit-your-job-sell-your-house-help-papa-au",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-trial-by-tire-meet-the-audacity-engineer-w",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-hyde-island-kidnapping-easter-egg",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-hyde-island-kidnapping-easter-egg/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-mushroom-easter-egg",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de PowerPyx",
+   "sources": [
+    "https://www.powerpyx.com/gta-6-mushroom-easter-egg/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-first-impressions-mission-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-first-impressions-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-where-to-find-the-mario-luigi-hats",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-where-to-find-the-mario-luigi-hats/"
+   ]
+  },
+  {
+   "findingId": "fnd-cyberpunk-2-creative-director-jokes-that-he-s-ca",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/news/cyberpunk-2-creative-director-jokes-that-hes-cancelling-the-game-after-playing-gta-6/"
+   ]
+  },
+  {
+   "findingId": "fnd-where-to-find-cut-off-tool-in-gta-6-to-open-cont",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-cut-off-tool/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-car-service-walkthrough-how-to-steal-the-s",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-car-service-walkthrough-how-to-steal-the-schafter-v12/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-was-the-biggest-launch-in-playstation-hist",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/news/gta-6-was-the-biggest-launch-in-playstation-history-with-over-39-million-players/"
+   ]
+  },
+  {
+   "findingId": "fnd-one-of-gta-6-s-most-elaborate-easter-eggs-has-be",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-crosstown-traffic-walkthrough",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-crosstown-traffic-walkthrough/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-chapter-4-mission-list-every-mission-in-or",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de Video Games Chronicle",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-chapter-4-mission-list-every-mission-in-order-point-of-no-return/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-hacker-releases-full-xbox-build-and-pc-mod",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-hacker-releases-full-xbox-build-and-pc-modders-are-already-trying-to-get-it-running/"
+   ]
+  },
+  {
+   "findingId": "fnd-this-gta-6-glitch-almost-ruined-the-game-s-most",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/this-gta-6-glitch-almost-ruined-the-games-most-iconic-scene/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-online-could-be-bigger-than-fortnite-bank",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-online-could-be-bigger-than-fortnite-bank-of-america-stock-analyst-says/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-donnie-actor-underwent-brain-surgery-whi",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6s-donnie-actor-underwent-brain-surgery-while-he-was-awake-and-playing-guitar/"
+   ]
+  },
+  {
+   "findingId": "fnd-grand-theft-auto-6-s-hdr-is-broken-but-these-twe",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/grand-theft-auto-6s-hdr-is-broken-but-these-tweaks-can-fix-it/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-all-the-secret-controls-and-gameplay-featu",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-all-the-secret-controls-and-gameplay-features-you-might-have-missed/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-has-a-super-mario-bros-easter-egg-and-it-s",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-has-a-super-mario-bros-easter-egg-and-its-a-trip/"
+   ]
+  },
+  {
+   "findingId": "fnd-this-terrifying-gta-6-easter-egg-will-give-you-n",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/this-terrifying-gta-6-easter-egg-will-give-you-nightmares/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-preorder-dlc-is-now-available-by-itself",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6s-preorder-dlc-is-now-available-by-itself-for-5/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-s-first-patch-is-rolling-out-here-s-what-i",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-first-patch-is-rolling-out/"
+   ]
+  },
+  {
+   "findingId": "fnd-new-hunger-games-movie-blows-past-expectations-a",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/new-hunger-games-movie-blows-past-expectations-after-some-feared-gta-6-could-limit-its-reach/"
+   ]
+  },
+  {
+   "findingId": "fnd-cyberpunk-2-is-canceled-director-jokes-after-gta",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/cyberpunk-2-is-canceled-director-jokes-after-gta-6-raises-the-bar/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-is-approaching-an-absurd-new-sales-milesto",
+   "kind": "nuevo",
+   "before": null,
+   "after": "nuevo_sin_verificar",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-is-approaching-an-absurd-new-sales-milestone-report-says/"
+   ]
+  },
+  {
+   "findingId": "fnd-gta-6-don-t-finish-chapter-2-before-doing-these",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": false,
+   "reason": "Nuevo hallazgo de GameSpot",
+   "sources": [
+    "https://www.gamespot.com/articles/gta-6-dont-finish-chapter-2-before-doing-these-things/"
+   ]
+  }
+ ],
+ "risks": [
+  "Los hallazgos provienen de titulares y resúmenes de feeds: verifica la fuente antes de convertirlos en fichas públicas.",
+  "Incluye cambios de estado, cifras o glitches/trucos: requieren revisión humana o prueba documentada."
+ ],
+ "tests": [
+  "npm run validate:data",
+  "npx vitest run tests/intel",
+  "npm run build"
+ ]
+}
