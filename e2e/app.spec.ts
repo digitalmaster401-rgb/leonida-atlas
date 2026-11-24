@@ -9,9 +9,10 @@ test.describe('LEONIDA ATLAS', () => {
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Leonida');
     await expect(page.getByText('Guía independiente de fans. Sin afiliación con Rockstar Games.')).toBeVisible();
     // Fase 4A: la portada usa una imagen oficial del manifiesto (rockstargames.com/VI) con crédito visible.
-    await expect(page.locator('.hero img')).toHaveCount(1);
-    await expect(page.locator('.hero img')).toHaveAttribute('src', /^\/media\/official\//);
-    await expect(page.locator('.hero-credit')).toHaveText('Imagen oficial © Rockstar Games');
+    // Fase 4A.2: banner con ciudad y protagonistas, solo imágenes oficiales del manifiesto y crédito visible.
+    await expect(page.locator('.cine img')).toHaveCount(3);
+    for (const img of await page.locator('.cine img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
+    await expect(page.locator('.cine .hero-credit')).toHaveText('Imágenes oficiales © Rockstar Games');
     await noHorizontalOverflow(page);
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.waitForLoadState('networkidle');

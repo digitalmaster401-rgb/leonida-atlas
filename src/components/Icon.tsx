@@ -50,6 +50,7 @@ const PATHS: Record<string, string> = {
   shield: 'M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6zm-3.5 9 2.5 2.5 4.5-5',
   edit: 'M4 20h4L19 9l-4-4L4 16zm9-13 4 4',
   scan: 'M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zM20 20l-4.8-4.8',
+  bell: 'M6 16V11a6 6 0 1 1 12 0v5l2 2H4zm4 4a2 2 0 0 0 4 0',
   doc: 'M6 3h9l4 4v14H6zm9 0v4h4M9 12h7M9 16h5',
 };
 

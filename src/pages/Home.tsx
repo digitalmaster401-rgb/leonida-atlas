@@ -4,10 +4,9 @@ import { CATEGORY_META, CATEGORY_ORDER, GAME_RELEASE, STATUS_META } from '../dat
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
 import { ItemCard } from '../components/ItemCard';
-import { Media } from '../components/Media';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { formatDate, money } from '../lib/calc';
-import { ExploreHero, ExplorerBar, ExplorerSearch, FeatureCarousel, QuickAccess } from '../components/ExploreHero';
+import { CineBanner, ExplorerSearch, NewsPhotos, ProgressPanel, RegionCarousel, VisualCards } from '../components/ExploreHero';
 import { NAV_GROUPS } from '../lib/nav';
 import { LatestIntel } from '../components/LatestIntel';
 import type { Status } from '../data/schema';
@@ -15,7 +14,6 @@ import type { Status } from '../data/schema';
 const EVIDENCE_ORDER: Status[] = ['oficial', 'comprobado', 'contrastado', 'reportado', 'pendiente', 'obsoleto'];
 
 export function Home() {
-  const regions = entriesBy('lugares').filter((e) => !e.subzone);
   const bestMoney = entriesBy('dinero')
     .filter((e) => e.reward?.amount && e.status === 'contrastado')
     .sort((a, b) => (b.reward!.amount!.max ?? 0) - (a.reward!.amount!.max ?? 0));
@@ -25,10 +23,11 @@ export function Home() {
   return (
     <>
       <Seo title="LEONIDA ATLAS" description="Guía independiente de GTA VI en español de México: mapa oficial, dinero, armas, vehículos y negocios con fuentes verificables." />
-      <ExploreHero />
-      <ExplorerBar />
-      <FeatureCarousel />
-      <QuickAccess />
+      <CineBanner />
+      <RegionCarousel />
+      <VisualCards />
+      <NewsPhotos />
+      <ProgressPanel />
       <ExplorerSearch />
 
       <section className="section" aria-labelledby="cat-h">
@@ -108,24 +107,6 @@ export function Home() {
         </nav>
       </section>
 
-      <section className="section" aria-labelledby="reg-h">
-        <div className="section-head">
-          <h2 id="reg-h" className="section-title">
-            Las 6 regiones de Leonida
-          </h2>
-          <Link to="/lugares" className="link-more">
-            Ver todos los lugares →
-          </Link>
-        </div>
-        <div className="region-strip">
-          {regions.map((r, i) => (
-            <Link key={r.id} to={entryPath(r)} className="region-tile">
-              <Media id={r.images[0]} category="lugares" label={r.name} sizes="(min-width: 1024px) 30vw, 80vw" eager={i < 2} />
-              <span className="region-name">{r.name}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
 
       <section className="section two-col">
         <div className="panel" aria-labelledby="best-h">

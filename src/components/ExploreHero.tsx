@@ -1,70 +1,223 @@
-import { useRef, useState, type PointerEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router';
+import { entries, entriesBy, entryPath } from '../data';
 import { GAME_RELEASE, LAST_REVIEW } from '../data/meta';
 import { formatDate } from '../lib/calc';
+import { progressSummary } from '../lib/progressSummary';
+import { useProgress } from '../hooks/progress';
+import type { Finding } from '../intel/schema';
 import { Icon } from './Icon';
 import { Media } from './Media';
-import { LogoMark } from './Logo';
 import { InstallButton } from './PwaControls';
+import { StatusBadge } from './IntelStatus';
+import { findingDate } from './LatestIntel';
 
-/** Palmeras en silueta: ilustración original para dar profundidad al primer plano de la portada. */
-function Palms({ className }: { className: string }) {
-  return (
-    <svg className={className} viewBox="-4 0 238 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
-      <g fill="none" stroke="currentColor" strokeLinecap="round">
-        <path d="M120 300c-4-70 2-140 22-205" strokeWidth="9" />
-        <path d="M142 95c-30-26-70-30-104-12M142 95c-8-34-34-58-66-66M142 95c18-30 52-44 88-38M142 95c34-6 62 8 78 36M142 95c-34 4-62 24-74 52M142 95c4-36 22-62 50-76" strokeWidth="7" />
-        <path d="M40 300c2-50 10-96 28-140" strokeWidth="6" />
-        <path d="M68 160c-22-16-50-16-70-4M68 160c-4-24-20-40-42-46M68 160c14-20 38-28 60-22M68 160c22 0 40 12 48 30M68 160c-22 6-38 22-44 40" strokeWidth="5" />
-      </g>
-    </svg>
-  );
-}
+/* Sistema visual de la portada Explorar (Fase 4A.2). Todas las fotografías son oficiales (public/media/media-manifest.json)
+   y todos los números salen de content/*.json, intel/*.json o del progreso local. */
 
-/** Portada cinematográfica: imagen oficial nocturna de Vice City, degradados neón y palmeras propias en primer plano. */
-export function ExploreHero() {
+/** Banner cinematográfico: ciudad nocturna oficial + paneles oficiales de Lucia y Jason + título y llamada a la acción. */
+export function CineBanner() {
   return (
-    <section className="hero hero-cine" aria-labelledby="hero-h">
-      <div className="hero-photo-wrap">
-        <Media id="vc-skyline-noche" category="lugares" label="Vice City de noche" className="hero-photo" sizes="(min-width: 1024px) 80vw, 100vw" eager />
+    <section className="cine" aria-labelledby="hero-h">
+      <div className="cine-bg">
+        <Media id="vc-skyline-noche" category="lugares" label="Vice City de noche" className="cine-city" sizes="100vw" eager />
       </div>
-      <Palms className="hero-palms hero-palms-l" />
-      <Palms className="hero-palms hero-palms-r" />
-      <div className="hero-inner">
-        <p className="eyebrow">
-          <LogoMark size={22} /> Explorar · Guía independiente de GTA VI
-        </p>
-        <h1 id="hero-h">
-          Leonida, <span className="grad">con fuentes</span>.
+      <div className="cine-people" aria-hidden="true">
+        <div className="cine-panel cine-panel-a">
+          <Media id="p-lucia" category="personajes" label="Lucia" className="cine-person cine-lucia" sizes="(min-width: 1024px) 30vw, 45vw" eager />
+        </div>
+        <div className="cine-panel cine-panel-b">
+          <Media id="p-jason" category="personajes" label="Jason" className="cine-person cine-jason" sizes="(min-width: 1024px) 30vw, 45vw" eager />
+        </div>
+      </div>
+      <div className="cine-copy">
+        <p className="cine-kicker">Guía independiente · GTA VI</p>
+        <h1 id="hero-h" className="cine-title">
+          Explora <span>Leonida</span>
         </h1>
-        <p className="hero-lead">Mapa oficial, dinero, armas, vehículos y negocios. Cada dato dice de dónde sale.</p>
+        <p className="cine-lead">Mapa oficial, rutas, coleccionables y descubrimientos con fuentes, en una misma guía.</p>
+        <div className="cine-ctas">
+          <Link to="/mapa" className="btn btn-glow">
+            <Icon name="compass" size={20} /> Comenzar exploración
+          </Link>
+        </div>
       </div>
-      <p className="hero-credit">Imagen oficial © Rockstar Games</p>
+      <p className="hero-credit">Imágenes oficiales © Rockstar Games</p>
     </section>
   );
 }
 
-/** Barra «ATLAS EXPLORER»: título de sección y botón que lleva al buscador principal. */
-export function ExplorerBar() {
+/** Encabezado de sección con barra neón y enlace «Ver todo». */
+export function SectionHead({ id, title, accent, to, more = 'Ver todo' }: { id: string; title: string; accent?: string; to?: string; more?: string }) {
   return (
-    <div className="explorer-bar">
-      <span className="explorer-ico" aria-hidden="true">
-        <Icon name="compass" size={22} />
-      </span>
-      <p className="explorer-title">ATLAS Explorer</p>
-      <button
-        type="button"
-        className="explorer-action"
-        aria-label="Ir al buscador principal"
-        onClick={() => {
-          const el = document.getElementById('hero-q');
-          el?.scrollIntoView({ block: 'center' });
-          el?.focus({ preventScroll: true });
-        }}
-      >
-        <Icon name="search" size={22} />
-      </button>
+    <div className="neo-head">
+      <h2 id={id} className="neo-title">
+        {title} {accent && <span>{accent}</span>}
+      </h2>
+      {to && (
+        <Link to={to} className="neo-more">
+          {more} <Icon name="arrow_right" size={16} />
+        </Link>
+      )}
     </div>
+  );
+}
+
+/** Carrusel fotográfico de las 6 regiones oficiales (desplazamiento horizontal con imán). */
+export function RegionCarousel() {
+  const regions = entriesBy('lugares').filter((e) => !e.subzone);
+  return (
+    <section className="section" aria-labelledby="reg-h">
+      <SectionHead id="reg-h" title="Regiones de" accent="Leonida" to="/lugares" />
+      <ul className="region-strip neo-regions">
+        {regions.map((r, i) => (
+          <li key={r.id}>
+            <Link to={entryPath(r)} className="region-tile neo-region">
+              <Media id={r.images[0]} category="lugares" label={r.name} sizes="(min-width: 1024px) 26vw, 72vw" eager={i < 2} />
+              <span className="region-name">{r.name}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+const CARDS = [
+  { cat: 'vehiculos', to: '/vehiculos', title: 'Vehículos', media: 'ue-cheetah', icon: 'car', tone: 'cyan' },
+  { cat: 'armas', to: '/armas', title: 'Armas', media: 'ue-revolveres', icon: 'target', tone: 'magenta' },
+  { cat: 'coleccionables', to: '/coleccionables', title: 'Secretos y coleccionables', media: 'keys-buceo', icon: 'grid', tone: 'cyan' },
+  { cat: 'dinero', to: '/dinero', title: 'Dinero', media: 'jl-banco', icon: 'coins', tone: 'magenta' },
+] as const;
+
+/** Tarjetas fotográficas de las cuatro áreas más consultadas, con el número real de fichas. */
+export function VisualCards() {
+  return (
+    <section className="section" aria-labelledby="vis-h">
+      <SectionHead id="vis-h" title="Descubre" accent="Leonida" />
+      <ul className="neo-cards">
+        {CARDS.map((c) => (
+          <li key={c.cat}>
+            <Link to={c.to} className={`neo-card neo-${c.tone}`} data-testid="visual-card">
+              <Media id={c.media} category={c.cat} label={c.title} className="neo-card-img" sizes="(min-width: 1024px) 25vw, 50vw" />
+              <span className="neo-card-ico" aria-hidden="true">
+                <Icon name={c.icon} size={26} />
+              </span>
+              <span className="neo-card-title">{c.title}</span>
+              <span className="neo-card-count">{entriesBy(c.cat).length} fichas</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/** Novedades con fotografía: se usa la imagen oficial de la ficha relacionada; si no hay, una miniatura ilustrada rotulada. */
+export function NewsPhotos() {
+  const [list, setList] = useState<Finding[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    import('../data/intel').then(({ findings }) => {
+      if (!alive) return;
+      setList(
+        findings
+          .filter((f) => f.classifier !== 'migracion')
+          .sort((a, b) => findingDate(b).localeCompare(findingDate(a)))
+          .slice(0, 3),
+      );
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
+  return (
+    <section className="section" aria-labelledby="news-h">
+      <SectionHead id="news-h" title="Últimas" accent="novedades" to="/novedades" />
+      <ul className="neo-news" aria-busy={!list}>
+        {(list ?? []).map((f) => {
+          const rel = f.entryIds.map((id) => entries.find((e) => e.id === id)).find((e) => e?.images[0]);
+          return (
+            <li key={f.id} className="neo-news-item" data-testid="news-photo">
+              <span className="neo-news-media">
+                {rel ? (
+                  <Media id={rel.images[0]} category={rel.category} label={rel.name} className="neo-news-img" sizes="160px" />
+                ) : (
+                  <span className="neo-news-illus" aria-hidden="true">
+                    <Icon name="news" size={30} />
+                  </span>
+                )}
+                <span className="neo-news-tag">{rel ? 'Imagen de la ficha' : 'Ilustración'}</span>
+              </span>
+              <span className="neo-news-body">
+                <span className="neo-news-meta">
+                  <StatusBadge status={f.status} />
+                  <time dateTime={findingDate(f).slice(0, 10)}>{formatDate(findingDate(f).slice(0, 10))}</time>
+                </span>
+                <span className="neo-news-title">{f.title}</span>
+                <a href={f.sources[0].url} target="_blank" rel="noopener noreferrer nofollow" className="small">
+                  {f.sources[0].publisher} <Icon name="external" size={13} />
+                </a>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+/** Progreso personal calculado del progreso guardado en este dispositivo. */
+export function ProgressPanel() {
+  const { progress } = useProgress();
+  const s = progressSummary(progress, entries);
+  const r = 34;
+  const c = 2 * Math.PI * r;
+  return (
+    <section className="section" aria-labelledby="prog-h">
+      <SectionHead id="prog-h" title="Tu" accent="progreso" to="/mi-espacio" more="Mi espacio" />
+      <div className="neo-progress" data-testid="progress-panel">
+        <div className="neo-ring">
+          <svg viewBox="0 0 80 80" width="96" height="96" aria-hidden="true" focusable="false">
+            <circle cx="40" cy="40" r={r} fill="none" stroke="#232a41" strokeWidth="8" />
+            <circle cx="40" cy="40" r={r} fill="none" stroke="url(#ring-g)" strokeWidth="8" strokeLinecap="round" strokeDasharray={`${(s.collectiblesPct / 100) * c} ${c}`} transform="rotate(-90 40 40)" />
+            <defs>
+              <linearGradient id="ring-g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stopColor="#ff3ea5" />
+                <stop offset="1" stopColor="#22d3ee" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span className="neo-ring-value">{s.collectiblesPct}%</span>
+        </div>
+        <div className="neo-progress-body">
+          <p className="neo-progress-main">
+            <strong>
+              {s.collectiblesFound} / {s.collectiblesTotal}
+            </strong>{' '}
+            coleccionables encontrados
+          </p>
+          <ul className="neo-stats">
+            <li>
+              <Icon name="route" size={18} /> <strong>{s.routes}</strong> rutas
+              {s.stopsTotal > 0 && (
+                <span className="muted">
+                  {' '}
+                  ({s.stopsVisited}/{s.stopsTotal} paradas)
+                </span>
+              )}
+            </li>
+            <li>
+              <Icon name="car" size={18} /> <strong>{s.garage}</strong> en tu garaje
+            </li>
+            <li>
+              <Icon name="check" size={18} /> <strong>{s.completed}</strong> fichas marcadas
+            </li>
+          </ul>
+          {!s.hasAny && <p className="small muted">Aún no marcas nada. Tu progreso se guarda solo en este dispositivo.</p>}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -74,9 +227,7 @@ export function ExplorerSearch() {
   const [q, setQ] = useState('');
   return (
     <section className="explorer section" aria-labelledby="explorer-h">
-      <h2 id="explorer-h" className="section-title">
-        Busca en la guía
-      </h2>
+      <SectionHead id="explorer-h" title="Busca en la" accent="guía" />
       <form
         className="hero-search"
         role="search"
@@ -103,115 +254,5 @@ export function ExplorerSearch() {
         Disponible desde el {formatDate(GAME_RELEASE)} en PS5 y Xbox Series X|S · Última revisión de la guía: {formatDate(LAST_REVIEW)}
       </p>
     </section>
-  );
-}
-
-const SLIDES = [
-  {
-    id: 'explora',
-    media: 'jl-mirador',
-    kicker: 'Mapa oficial',
-    title: ['Explora', 'Leonida'],
-    text: 'Puntos con precisión declarada sobre el póster oficial, capas y rutas personales.',
-    to: '/mapa',
-    cta: 'Abrir el mapa',
-  },
-  {
-    id: 'personajes',
-    media: 'p-lucia',
-    kicker: 'Personajes',
-    title: ['Conoce a', 'Lucia y Jason'],
-    text: 'Protagonistas y personajes presentados por Rockstar, con sus fuentes.',
-    to: '/personajes',
-    cta: 'Ver personajes',
-  },
-  {
-    id: 'novedades',
-    media: 'vc-letrero',
-    kicker: 'ATLAS Intelligence',
-    title: ['Lo último', 'con fuentes'],
-    text: 'Hallazgos con fecha, enlace a la fuente original y estado de verificación.',
-    to: '/novedades',
-    cta: 'Ver novedades',
-  },
-] as const;
-
-/** Tarjeta editorial con tres destacados reales. Sin reproducción automática; se cambia con los puntos, las flechas o deslizando. */
-export function FeatureCarousel() {
-  const [i, setI] = useState(0);
-  const start = useRef<number | null>(null);
-  const go = (n: number) => setI((n + SLIDES.length) % SLIDES.length);
-  const down = (e: PointerEvent) => {
-    start.current = e.clientX;
-  };
-  const up = (e: PointerEvent) => {
-    if (start.current === null) return;
-    const dx = e.clientX - start.current;
-    start.current = null;
-    if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1));
-  };
-  return (
-    <section className="feature" aria-roledescription="carrusel" aria-label="Destacados">
-      <div className="feature-stage" onPointerDown={down} onPointerUp={up} onPointerCancel={() => (start.current = null)}>
-        {SLIDES.map((s, n) => (
-          <article
-            key={s.id}
-            className={`feature-slide${n === i ? ' is-on' : ''}`}
-            aria-roledescription="diapositiva"
-            aria-label={`${n + 1} de ${SLIDES.length}`}
-            data-testid="feature-slide"
-          >
-            <Media id={s.media} category="lugares" label={s.kicker} className="feature-img" sizes="(min-width: 1024px) 60vw, 100vw" eager={n === 0} />
-            <div className="feature-copy">
-              <p className="feature-kicker">{s.kicker}</p>
-              <h3 className="feature-title">
-                {s.title[0]} <span>{s.title[1]}</span>
-              </h3>
-              <p className="feature-text">{s.text}</p>
-              <Link to={s.to} className="btn btn-sm btn-neon">
-                {s.cta} <Icon name="arrow_right" size={16} />
-              </Link>
-            </div>
-          </article>
-        ))}
-      </div>
-      <div className="feature-nav">
-        <button type="button" className="feature-arrow" aria-label="Destacado anterior" onClick={() => go(i - 1)}>
-          <Icon name="arrow_left" size={20} />
-        </button>
-        <div className="feature-dots">
-          {SLIDES.map((s, n) => (
-            <button key={s.id} type="button" className={`feature-dot${n === i ? ' is-on' : ''}`} aria-label={`Ver destacado ${n + 1}: ${s.kicker}`} aria-current={n === i ? 'true' : undefined} onClick={() => go(n)} />
-          ))}
-        </div>
-        <button type="button" className="feature-arrow" aria-label="Destacado siguiente" onClick={() => go(i + 1)}>
-          <Icon name="arrow_right" size={20} />
-        </button>
-      </div>
-    </section>
-  );
-}
-
-const QUICK = [
-  { to: '/mapa', label: 'Mapa', icon: 'map', media: 'vc-marina', tone: 'cyan' },
-  { to: '/vehiculos', label: 'Vehículos', icon: 'car', media: 'vc-car-meet', tone: 'magenta' },
-  { to: '/mis-rutas', label: 'Mis rutas', icon: 'route', media: 'mk-carretera', tone: 'cyan' },
-  { to: '/mi-espacio', label: 'Mi espacio', icon: 'user', media: 'ue-safehouse', tone: 'magenta' },
-];
-
-/** Cuatro accesos visuales con imágenes oficiales. */
-export function QuickAccess() {
-  return (
-    <nav className="quick" aria-label="Accesos rápidos">
-      {QUICK.map((q) => (
-        <Link key={q.to} to={q.to} className={`quick-card quick-${q.tone}`}>
-          <Media id={q.media} category="lugares" label={q.label} className="quick-img" sizes="(min-width: 1024px) 25vw, 50vw" />
-          <span className="quick-ico" aria-hidden="true">
-            <Icon name={q.icon} size={30} />
-          </span>
-          <span className="quick-label">{q.label}</span>
-        </Link>
-      ))}
-    </nav>
   );
 }

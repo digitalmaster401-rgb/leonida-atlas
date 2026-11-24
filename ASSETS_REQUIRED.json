@@ -1,0 +1,166 @@
+{
+  "version": "4A.2",
+  "fecha": "2026-11-24",
+  "reglas": [
+    "Solo dos orígenes permitidos en la app: imágenes oficiales de rockstargames.com/VI registradas en public/media/media-manifest.json, o «Ilustración editorial» original.",
+    "Las ilustraciones generadas NO son evidencia del juego: se rotulan como ilustración y nunca sustituyen una imagen oficial en fichas.",
+    "No generar personajes reales del juego (Lucia, Jason u otros), logotipos de Rockstar/GTA VI, el numeral «VI» con su tipografía, marcas de vehículos ni armas reales con nombre comercial.",
+    "Entregar en las dimensiones exactas; WebP calidad 82 para fotos/fondos, SVG o PNG con transparencia para recortes. Peso objetivo: ≤ 120 kB por imagen de 1280 px.",
+    "Colocar los archivos en public/media/editorial/ y registrarlos (archivo, autor/herramienta, fecha, licencia) antes de usarlos."
+  ],
+  "existentes_reutilizados": [
+    {
+      "recurso": "Logotipo",
+      "archivo": "public/brand/leonida-atlas-logo.svg + src/components/BrandLogo.tsx",
+      "estado": "creado en código (original)",
+      "uso": "cabecera, menú lateral"
+    },
+    {
+      "recurso": "Ciudad panorámica nocturna",
+      "id_manifiesto": "vc-skyline-noche",
+      "uso": "fondo del banner de Explorar"
+    },
+    {
+      "recurso": "Personajes protagonistas",
+      "id_manifiesto": [
+        "p-lucia",
+        "p-jason"
+      ],
+      "uso": "paneles inclinados del banner (fotogramas oficiales recortados con object-fit, sin quitar marcas)"
+    },
+    {
+      "recurso": "Regiones",
+      "id_manifiesto": [
+        "vc-skyline-noche",
+        "keys-hidroavion",
+        "gr-aerodeslizador",
+        "pg-motel",
+        "amb-skyline",
+        "mk-carretera"
+      ],
+      "uso": "carrusel de regiones"
+    },
+    {
+      "recurso": "Vehículos",
+      "id_manifiesto": "ue-cheetah",
+      "uso": "tarjeta Vehículos"
+    },
+    {
+      "recurso": "Armas",
+      "id_manifiesto": "ue-revolveres",
+      "uso": "tarjeta Armas"
+    },
+    {
+      "recurso": "Secretos y coleccionables",
+      "id_manifiesto": "keys-buceo",
+      "uso": "tarjeta Secretos y coleccionables"
+    },
+    {
+      "recurso": "Dinero",
+      "id_manifiesto": "jl-banco",
+      "uso": "tarjeta Dinero"
+    },
+    {
+      "recurso": "Novedades",
+      "origen": "imagen oficial de la ficha relacionada (entryIds) o miniatura ilustrada rotulada",
+      "uso": "Últimas novedades"
+    },
+    {
+      "recurso": "Iconografía",
+      "archivo": "src/components/Icon.tsx",
+      "estado": "trazos SVG propios (brújula, monedas, periódico, campana, etc.)"
+    }
+  ],
+  "faltantes": [
+    {
+      "archivo": "public/media/editorial/hero-personajes-oficial-recorte.png",
+      "recurso": "Personajes protagonistas recortados (como en la referencia 01)",
+      "dimensiones": "1200×1400 px",
+      "formato": "PNG",
+      "transparencia": true,
+      "composicion": "Lucia y Jason de medio cuerpo, espalda con espalda, fondo transparente.",
+      "posicion_ui": "Banner de Explorar, mitad derecha, sobre la ciudad nocturna.",
+      "descripcion_visual": "Arte clave oficial de los protagonistas sin fondo.",
+      "prompt": null,
+      "origen_requerido": "NO generar con IA (son personajes protegidos de Rockstar Games). Debe salir de un arte oficial publicado en rockstargames.com/VI; el propietario verifica que el recorte respete marcas y créditos. Mientras no exista, se usan los fotogramas oficiales p-lucia y p-jason."
+    },
+    {
+      "archivo": "public/media/editorial/fondo-tropical-noche-1280.webp",
+      "recurso": "Fondo tropical nocturno",
+      "dimensiones": "1280×720 px (y 640×360)",
+      "formato": "WebP",
+      "transparencia": false,
+      "composicion": "Horizonte bajo; cielo ocupa 60 %; palmeras en silueta en ambos bordes; centro despejado para texto.",
+      "posicion_ui": "Fondos de encabezados de sección y estados vacíos.",
+      "descripcion_visual": "Bahía tropical de noche, cielo degradado de violeta profundo a magenta, reflejos cian en el agua, sin edificios reconocibles.",
+      "prompt": "Ilustración digital cinematográfica, formato 16:9, bahía tropical de noche, cielo degradado de violeta oscuro (#140a2e) a magenta (#ff3ea5) cerca del horizonte, agua tranquila con reflejos cian (#22d3ee), siluetas negras de palmeras en los bordes izquierdo y derecho, centro despejado, sin personas, sin texto, sin logotipos, sin edificios reales reconocibles, estilo synthwave elegante, alto contraste, grano fino."
+    },
+    {
+      "archivo": "public/media/editorial/palmeras-primer-plano.png",
+      "recurso": "Palmeras de primer plano",
+      "dimensiones": "800×1200 px",
+      "formato": "PNG",
+      "transparencia": true,
+      "composicion": "Dos palmeras inclinadas hacia la derecha, tronco desde la esquina inferior izquierda.",
+      "posicion_ui": "Bordes del banner de Explorar y de la cabecera de Mi espacio (capa sobre la foto).",
+      "descripcion_visual": "Siluetas casi negras con un leve borde de luz magenta.",
+      "prompt": "Dos palmeras tropicales en silueta casi negra (#06070c) con un borde de luz magenta (#ff3ea5) muy fino, troncos curvos que nacen en la esquina inferior izquierda, hojas detalladas, fondo totalmente transparente, sin suelo, sin texto, vista frontal, PNG de alta resolución."
+    },
+    {
+      "archivo": "public/media/editorial/textura-neon-grid.webp",
+      "recurso": "Textura de profundidad",
+      "dimensiones": "1440×900 px",
+      "formato": "WebP",
+      "transparencia": false,
+      "composicion": "Rejilla en perspectiva que se pierde en el horizonte, muy oscura.",
+      "posicion_ui": "Fondo general del cuerpo en escritorio (opacidad 15 %).",
+      "descripcion_visual": "Rejilla fina cian y magenta sobre azul noche, con viñeta fuerte.",
+      "prompt": "Fondo abstracto azul noche (#0d1430) con rejilla en perspectiva de líneas finas cian y magenta que convergen al horizonte, viñeta negra intensa en los bordes, muy oscuro y sutil, sin texto ni objetos, 1440×900."
+    },
+    {
+      "archivo": "public/media/editorial/ilus-noticia.webp",
+      "recurso": "Miniatura de noticia sin imagen",
+      "dimensiones": "480×360 px",
+      "formato": "WebP",
+      "transparencia": false,
+      "composicion": "Icono de periódico estilizado centrado sobre degradado.",
+      "posicion_ui": "Últimas novedades y Novedades cuando el hallazgo no tiene ficha con imagen oficial (se rotula «Ilustración»).",
+      "descripcion_visual": "Periódico doblado en trazo neón magenta sobre degradado violeta-azul, brillo suave.",
+      "prompt": "Icono de periódico doblado en trazo de neón magenta (#ff3ea5) con brillo suave, centrado, sobre degradado de violeta oscuro (#2a1240) a azul noche (#0e1a2e), estilo minimalista, sin texto legible, sin marcas, 4:3."
+    },
+    {
+      "archivo": "public/media/editorial/ilus-secretos.webp",
+      "recurso": "Secretos (alternativa ilustrada)",
+      "dimensiones": "800×840 px",
+      "formato": "WebP",
+      "transparencia": false,
+      "composicion": "Objeto misterioso iluminado en el centro inferior; espacio arriba para el icono.",
+      "posicion_ui": "Tarjeta «Secretos y coleccionables» si el propietario prefiere una ilustración en lugar de keys-buceo.",
+      "descripcion_visual": "Cofre tropical entreabierto bajo el agua con luz cian que sale de dentro.",
+      "prompt": "Ilustración cinematográfica de un cofre de madera tropical entreabierto en el fondo marino de noche, luz cian intensa saliendo del interior, burbujas, corales en siluetas magenta, encuadre vertical casi cuadrado, sin personas, sin texto, sin logotipos."
+    },
+    {
+      "archivo": "public/media/editorial/avatar-explorador.png",
+      "recurso": "Avatar genérico de perfil",
+      "dimensiones": "256×256 px",
+      "formato": "PNG",
+      "transparencia": true,
+      "composicion": "Busto de frente, recorte circular.",
+      "posicion_ui": "Botón de perfil de la cabecera y Mi espacio (si no hay foto propia).",
+      "descripcion_visual": "Silueta neutra de explorador con gorra y lentes, sin rasgos identificables.",
+      "prompt": "Avatar circular minimalista de una silueta humana neutra con gorra y lentes de sol, sin rasgos faciales detallados, relleno azul noche (#1a1f31) con contorno cian (#22d3ee) brillante, fondo transparente, estilo icono plano con brillo neón, sin texto."
+    },
+    {
+      "archivo": "public/brand/leonida-atlas-logo-1024.png",
+      "recurso": "Logotipo rasterizado para redes y tienda",
+      "dimensiones": "1024×273 px",
+      "formato": "PNG",
+      "transparencia": true,
+      "composicion": "Igual que public/brand/leonida-atlas-logo.svg.",
+      "posicion_ui": "og:image, materiales de difusión.",
+      "descripcion_visual": "Palmera neón magenta, LEONIDA cromado en cursiva, ATLAS magenta con brillo y línea cian.",
+      "prompt": null,
+      "origen_requerido": "Exportar desde el SVG del repositorio (no regenerar con IA para mantener un único logotipo)."
+    }
+  ]
+}

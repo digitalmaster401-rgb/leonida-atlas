@@ -70,56 +70,81 @@ test.describe('Fase 4A · navegación de 5 pestañas', () => {
 });
 
 test.describe('Fase 4A · Explorar', () => {
-  test('buscador principal, categorías visuales y catálogo de secciones', async ({ page }, info) => {
+  test('portada: cabecera, menú lateral, banner, regiones, tarjetas, novedades, progreso y catálogo', async ({ page }, info) => {
     const errors = watchConsole(page);
     await page.goto('/');
-    await expect(page.getByText(/Explorar · Guía independiente/)).toBeVisible();
-    // Versión real en la cabecera, enlazada al registro de cambios.
-    await expect(page.locator('.version-chip')).toHaveAttribute('href', '/fuentes');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Explora\s*Leonida/i);
+    await expect(page.getByRole('link', { name: /LEONIDA ATLAS/ }).first()).toHaveAttribute('href', '/');
+    await expect(page.getByRole('link', { name: 'Novedades', exact: true }).first()).toBeVisible();
+    // Regiones: las 6 regiones oficiales con foto.
+    const regions = page.locator('.neo-regions li');
+    await expect(regions).toHaveCount(6);
+    // Tarjetas con foto oficial y número real de fichas.
+    const cards = page.getByTestId('visual-card');
+    await expect(cards).toHaveCount(4);
+    await expect(cards.first()).toContainText(/\d+ fichas/);
+    for (const img of await cards.locator('img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
+    // Novedades con fuente original; la imagen se rotula (ficha relacionada o ilustración).
+    await expect(page.getByTestId('news-photo')).toHaveCount(3);
+    await expect(page.getByTestId('news-photo').first().locator('.neo-news-tag')).toHaveText(/Imagen de la ficha|Ilustración/);
+    // Progreso calculado del almacenamiento local (vacío en un perfil nuevo).
+    await expect(page.getByTestId('progress-panel')).toContainText(/0 \/ \d+/);
+    await expect(page.getByTestId('progress-panel')).toContainText('Aún no marcas nada');
     const cats = page.locator('.cat-grid-visual .cat-tile');
     await expect(cats).toHaveCount(8);
-    await expect(cats.first()).toContainText(/\d+ fichas/);
     await expect(cats.first()).toContainText(/Evidencia: \d+ /);
     const all = page.getByRole('navigation', { name: 'Todas las secciones' });
     await expect(all.getByRole('link', { name: 'Galería', exact: true })).toBeVisible();
     await noHorizontalOverflow(page);
     expect(errors).toEqual([]);
     await shot(page, info, '4a-01-explorar');
-    await page.locator('.cat-grid-visual').scrollIntoViewIfNeeded();
+    await cards.first().scrollIntoViewIfNeeded();
+    await shot(page, info, '4a-05-explorar-tarjetas');
+    await page.getByRole('heading', { name: /Explora la guía/i }).scrollIntoViewIfNeeded();
     await shot(page, info, '4a-02-explorar-categorias');
-    await page.getByRole('navigation', { name: 'Accesos rápidos' }).scrollIntoViewIfNeeded();
-    await shot(page, info, '4a-05-explorar-accesos');
+
+    // Navegación real desde cada bloque.
+    await page.getByRole('link', { name: /Comenzar exploración/ }).click();
+    await expect(page).toHaveURL('/mapa');
+    await page.goBack();
+    await regions.first().getByRole('link').click();
+    await expect(page).toHaveURL(/\/lugares\//);
+    await page.goBack();
+    await cards.filter({ hasText: 'Armas' }).click();
+    await expect(page).toHaveURL('/armas');
+    await page.goBack();
     await page.getByRole('searchbox', { name: 'Buscar', exact: true }).fill('stockyard');
     await page.getByRole('button', { name: 'Buscar', exact: true }).click();
     await expect(page).toHaveURL(/\/buscar\?q=stockyard/);
     await page.goto('/');
-    // Tarjeta editorial: una sola diapositiva visible; los puntos y las flechas cambian el destacado real.
-    const slides = page.getByTestId('feature-slide');
-    await expect(slides).toHaveCount(3);
-    await expect(slides.filter({ visible: true })).toHaveCount(1);
-    await page.getByRole('button', { name: /Ver destacado 3/ }).click();
-    await expect(slides.nth(2)).toBeVisible();
-    await expect(slides.nth(0)).toBeHidden();
-    await page.getByRole('button', { name: 'Destacado siguiente' }).click();
-    await expect(slides.nth(0)).toBeVisible();
-    // Cuatro accesos visuales con imagen oficial del manifiesto.
-    const quick = page.getByRole('navigation', { name: 'Accesos rápidos' }).getByRole('link');
-    await expect(quick).toHaveText(['Mapa', 'Vehículos', 'Mis rutas', 'Mi espacio']);
-    for (const img of await quick.locator('img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
-    await quick.filter({ hasText: 'Mis rutas' }).click();
-    await expect(page).toHaveURL('/mis-rutas');
-    await page.goBack();
-    await slides.nth(0).getByRole('link', { name: /Abrir el mapa/ }).click();
-    await expect(page).toHaveURL('/mapa');
-    await page.goBack();
-    // El botón de búsqueda de la barra ATLAS EXPLORER lleva el foco al buscador principal.
-    await page.getByRole('button', { name: 'Ir al buscador principal' }).click();
-    await expect(page.getByRole('searchbox', { name: 'Buscar', exact: true })).toBeFocused();
-    await cats.filter({ hasText: 'Vehículos' }).click();
-    await expect(page).toHaveURL('/vehiculos');
-    await page.goBack();
     await all.getByRole('link', { name: 'Comparar vehículos', exact: true }).click();
     await expect(page).toHaveURL('/comparar-vehiculos');
+  });
+
+  test('progreso real: refleja lo marcado en el dispositivo', async ({ page }) => {
+    await page.goto('/coleccionables');
+    const first = page.getByRole('button', { name: /^Marcar / }).first();
+    await first.click();
+    await page.goto('/');
+    await expect(page.getByTestId('progress-panel')).toContainText(/1 \/ \d+/);
+    await expect(page.getByTestId('progress-panel')).not.toContainText('Aún no marcas nada');
+  });
+
+  test('menú lateral accesible: abre, navega y se cierra con Escape', async ({ page }) => {
+    test.skip(!isMobile(page), 'en escritorio el menú es la barra lateral fija');
+    await page.goto('/');
+    const open = page.getByRole('button', { name: 'Abrir menú' });
+    await open.click();
+    const dialog = page.getByRole('dialog', { name: 'Menú' });
+    await expect(dialog).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Cerrar menú' })).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(dialog).toBeHidden();
+    await expect(open).toBeFocused();
+    await open.click();
+    await dialog.getByRole('link', { name: 'Trucos y códigos' }).click();
+    await expect(page).toHaveURL('/trucos');
+    await expect(dialog).toBeHidden();
   });
 });
 
