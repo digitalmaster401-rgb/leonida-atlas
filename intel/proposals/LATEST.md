@@ -1,25 +1,72 @@
-# ATLAS INTELLIGENCE: 7 nuevos, 0 actualizaciones
+# ATLAS INTELLIGENCE: 57 nuevos, 0 actualizaciones
 
-Corrida `run-20261122-115556` · 2026-11-22T11:55:57.965Z
+Corrida `run-20261124-000203` · 2026-11-24T00:02:06.576Z
 
 > Propuesta automática para **revisión humana**. Nada de esto se publica como confirmado sin aprobar este PR; los cambios a «comprobado» o «parcheado» exigen evidencia con fecha, plataforma y versión.
 
 | Hallazgo | Cambio | Antes → después | Sensible | Motivo | Fuentes |
 |---|---|---|---|---|---|
-| How to Find the Vercetti Estate in GTA 6 | nuevo | — → reportado (ubicación) | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/how-to-find-the-vercetti-estate-in-gta-6-a2d6) |
-| Janelle James Bullied Her Way Into GTA 6, Then Rockstar Sent Her a Custom PS5 Pro | nuevo | — → nuevo_sin_verificar (noticia) | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/janelle-james-bullied-her-way-into-gta-6-then-rockstar-sent-her-a-custom-ps5-pro-ad55) |
-| How to Find Dexter's Apartment in GTA 6 | nuevo | — → reportado (ubicación) | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/how-to-find-dexters-apartment-in-gta-6-23b7) |
-| GTA 6 All Characters | nuevo | — → reportado (personaje) | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-all-characters/) |
-| GTA 6 Ian (Character) | nuevo | — → reportado (personaje) | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-ian-character/) |
-| GTA 6 Joey (Character) | nuevo | — → reportado (personaje) | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-joey-character/) |
-| GTA 6 Celine (Character) | nuevo | — → reportado (personaje) | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-celine-character/) |
-
-## Revisión humana asistida (22-nov-2026)
-- Se leyeron las 7 fuentes originales (cargan y la fecha coincide). Se corrigieron categoría y estado: el clasificador había marcado una noticia de celebridad como «configuración/reportado» por mencionar «PS5 Pro», y las guías de ubicación y de personajes como «noticia». Detalle: `docs/AUDITORIA_PR3.md`.
-- Ningún hallazgo pasa a dato confirmado: todos son de una sola fuente y sin prueba en juego.
+| Grand Theft Auto VI: The Album (Deluxe Edition) | nuevo | — → contrastado | no | Nuevo hallazgo de Rockstar Games: página oficial de GTA VI (noticias destacadas) | [1](https://www.rockstargames.com/VI) |
+| GTA 6 Update 1.002.002 Fixes Failed Autosaves and Missing Story Calls | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-update-1-002-002-autosave-story-call-fixes-1b03) |
+| The Fort Lauderdale Tattoo Studio That Shares its Name with GTA 6’s Hyper Ink | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-hyper-ink-tattoo-shop-fort-lauderdale-8069) |
+| GTA 6 Biker Hideout Robbery: Safe Code and Where to Find the Gun and Bike | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-biker-hideout-safe-code-walkthrough-dab6) |
+| A Cyberpunk 2 Director Joked His Game Was Cancelled After Seeing GTA 6 | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/a-cyberpunk-2-director-joked-his-game-was-cancelled-after-seeing-gta-6-c8d2) |
+| Where to Find Arthur Morgan's Hat in GTA 6 | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-arthur-morgan-hat-location-2fba) |
+| GTA 6 Alien Encounter Walkthrough for All 3 Parts | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-alien-encounter-walkthrough-86de) |
+| How to Find and Beat Satan (The Pretender) in GTA 6 for the Hellspawn Shotgun | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/how-to-find-and-beat-satan-in-gta-6-for-the-hellspawn-shotgun-98d3) |
+| The Greek Prime Minister Pitched GTA 6 as a Kids' Christmas Gift and It Backfired | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/the-greek-prime-minister-pitched-gta-6-as-a-kids-christmas-gift-and-it-backfired-8aa1) |
+| Rockstar Just Dropped a GTA 6 Deluxe Album With 23 New Tracks | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/rockstar-just-dropped-a-gta-6-deluxe-album-with-23-new-tracks-e16c) |
+| How to Play GTA 6 in First Person With the Camera Glitch | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/how-to-play-gta-6-in-first-person-with-the-camera-glitch-976b) |
+| GTA 6's Leads and Phil Collins Are All Repping Their Characters on Instagram | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6s-leads-and-phil-collins-are-all-repping-their-characters-on-instagram-b8ea) |
+| No, the Xbox Quick Resume Glitch Does Not Give You a 60 FPS GTA 6 | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/no-the-xbox-quick-resume-glitch-does-not-give-you-a-60-fps-gta-6-d0b0) |
+| The GTA 6 Jason Arrest Video Going Viral Is Real Footage | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/the-gta-6-jason-arrest-video-going-viral-is-real-footage-c5e5) |
+| How to Find and Keep Dom's Charger in GTA 6 | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/how-to-find-and-keep-doms-charger-in-gta-6-0143) |
+| The GTA 6 Review Bombing Is Mostly AI Noise, but It is Not Perfect | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/the-gta-6-review-bombing-is-mostly-ai-noise-but-it-is-not-perfect-2507) |
+| How to Get the Safe Code and Disarm the Alarm at Donovan Banks & Co. in GTA 6 | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-donovan-banks-robbery-guide-e5bb) |
+| GTA 6 Strip Club Locations, Unlock Chapters and Private Dance Prices | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-strip-clubs-locations-prices-and-private-dances-d5b0) |
+| How to Get the Crabshack VF5 SMG for Free in GTA 6 | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-crabshack-vf5-location-5a19) |
+| GTA 6 Safe, Door and Garage Codes and Where to Find the Clues | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-safe-door-garage-codes-43af) |
+| iShowSpeed Rushed GTA 6 and Got a Bad Ending | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/ishowspeed-rushed-gta-6-and-got-a-bad-ending-cb52) |
+| How to Unlock Vanessa's Free Garage and Get Her Pink Growler in GTA 6 | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-vanessas-garage-and-pink-growler-7339) |
+| GTA 6 Buck’s Pawn Shop Walkthrough With Gold Card Location and Escape Route | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-bucks-pawn-shop-walkthrough-4cf3) |
+| Creators Report YouTube Copyright Claims With GTA 6’s Music Mute On | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/the-mute-licensed-music-setting-in-gta-6-does-not-prevent-copyright-claims-2319) |
+| How to Claim the Vintage Vice City Pack Rewards in GTA 6 | nuevo | — → reportado | no | Nuevo hallazgo de GTA BOOM | [1](https://www.gtaboom.com/gta-6-vintage-vice-city-pack-claim-guide-3ca6) |
+| GTA 6 Quit Your Job, Sell Your House (Help Papa Audacity) Walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/) |
+| GTA 6 Trial by Tire (Meet the AudaCity Engineer) Walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/) |
+| GTA 6 Hyde Island Kidnapping Easter Egg | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-hyde-island-kidnapping-easter-egg/) |
+| GTA 6 Mushroom Easter Egg | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-mushroom-easter-egg/) |
+| GTA 6 Missing Person (Return to the Trophy Room) Walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-missing-person-return-to-the-trophy-room-walkthrough/) |
+| GTA 6 Gellhorn’s Missing Tourists Walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-gellhorns-missing-tourists-walkthrough/) |
+| GTA 6 All Basketball Hoop Locations | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-all-basketball-hoop-locations/) |
+| GTA 6 All Robbery Types | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-all-robbery-types/) |
+| GTA 6 All Stunt Jump Locations | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-all-stunt-jump-locations/) |
+| GTA 6 The Unknown Stuntman Walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de PowerPyx | [1](https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/) |
+| GTA 6 was the ‘biggest launch in PlayStation history’ with over 39 million players | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/news/gta-6-was-the-biggest-launch-in-playstation-history-with-over-39-million-players/) |
+| One of GTA 6’s most elaborate Easter eggs has been solved | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/) |
+| GTA 6 Crosstown Traffic walkthrough | nuevo | — → reportado | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/guide/gta-6-crosstown-traffic-walkthrough/) |
+| GTA 6 Chapter 4 Mission List: Every Mission in Order & Point of No Return | nuevo | — → reportado | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/guide/gta-6-chapter-4-mission-list-every-mission-in-order-point-of-no-return/) |
+| GTA 6 Tyrone Mission Walkthrough: Where to Find Tyrone | nuevo | — → reportado | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/guide/gta-6-tyrone-mission-walkthrough-where-to-find-tyrone/) |
+| GTA 6 Here Kitty Kitty mission walkthrough: How to find Charles | nuevo | — → reportado | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/guide/gta-6-here-kitty-kitty-mission-walkthrough-how-to-find-charles/) |
+| Who Plays Mandy in GTA 6? | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/guide/who-plays-mandy-in-gta-6/) |
+| GTA 6 hacker who leaked footage in 2022 has been released on licence and told not to do it again | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/news/gta-6-hacker-who-leaked-footage-in-2022-has-been-released-on-licence-and-told-not-to-do-it-again/) |
+| Grand Theft Auto 6 has received a new update which fixes autosaving | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de Video Games Chronicle | [1](https://www.videogameschronicle.com/news/grand-theft-auto-6-has-received-a-new-patch-which-fixes-autosaving/) |
+| This GTA 6 Glitch (Almost) Ruined The Game’s Most Iconic Scene | nuevo | — → reportado | ⚠️ sí | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/this-gta-6-glitch-almost-ruined-the-games-most-iconic-scene/) |
+| GTA 6 Online Could Be Bigger Than Fortnite, Bank Of America Stock Analyst Says | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-online-could-be-bigger-than-fortnite-bank-of-america-stock-analyst-says/) |
+| GTA 6’s Donnie Actor Underwent Brain Surgery While He Was Awake And Playing Guitar | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6s-donnie-actor-underwent-brain-surgery-while-he-was-awake-and-playing-guitar/) |
+| Grand Theft Auto 6’s HDR Is Broken, But These Tweaks Can Fix It | nuevo | — → reportado | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/grand-theft-auto-6s-hdr-is-broken-but-these-tweaks-can-fix-it/) |
+| GTA 6: All The Secret Controls And Gameplay Features You Might Have Missed | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-all-the-secret-controls-and-gameplay-features-you-might-have-missed/) |
+| GTA 6 Has A Super Mario Bros. Easter Egg, And It’s A Trip | nuevo | — → reportado | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-has-a-super-mario-bros-easter-egg-and-its-a-trip/) |
+| This Terrifying GTA 6 Easter Egg Will Give You Nightmares | nuevo | — → reportado | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/this-terrifying-gta-6-easter-egg-will-give-you-nightmares/) |
+| GTA 6’s Preorder DLC Is Now Available By Itself For $5 | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6s-preorder-dlc-is-now-available-by-itself-for-5/) |
+| GTA 6’s First Patch Is Rolling Out, Here’s What It Does | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-first-patch-is-rolling-out/) |
+| New Hunger Games Movie Blows Past Expectations After Some Feared GTA 6 Could Limit Its Reach | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/new-hunger-games-movie-blows-past-expectations-after-some-feared-gta-6-could-limit-its-reach/) |
+| Cyberpunk 2 Is Canceled, Director Jokes, After GTA 6 Raises The Bar | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/cyberpunk-2-is-canceled-director-jokes-after-gta-6-raises-the-bar/) |
+| GTA 6 Is Approaching An Absurd New Sales Milestone, Report Says | nuevo | — → nuevo_sin_verificar | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-is-approaching-an-absurd-new-sales-milestone-report-says/) |
+| GTA 6: Don’t Finish Chapter 2 Before Doing These Things | nuevo | — → reportado | no | Nuevo hallazgo de GameSpot | [1](https://www.gamespot.com/articles/gta-6-dont-finish-chapter-2-before-doing-these-things/) |
 
 ## Riesgos
 - Los hallazgos provienen de titulares y resúmenes de feeds: verifica la fuente antes de convertirlos en fichas públicas.
+- Incluye cambios de estado, cifras o glitches/trucos: requieren revisión humana o prueba documentada.
 
 ## Pruebas ejecutadas por el workflow
 - `npm run validate:data`

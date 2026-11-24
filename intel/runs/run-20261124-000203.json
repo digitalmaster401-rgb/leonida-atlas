@@ -1,0 +1,100 @@
+{
+ "id": "run-20261124-000203",
+ "startedAt": "2026-11-24T00:02:03.978Z",
+ "finishedAt": "2026-11-24T00:02:06.576Z",
+ "trigger": "schedule",
+ "environment": "github-actions (digitalmaster401-rgb/leonida-atlas)",
+ "status": "ok",
+ "classifierMode": "heuristico",
+ "sources": [
+  {
+   "sourceId": "rockstar-vi-pagina",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 8,
+   "relevant": 8,
+   "newFindings": 1,
+   "updatedFindings": 0,
+   "skipped": 0,
+   "attempts": 1,
+   "durationMs": 350,
+   "error": null
+  },
+  {
+   "sourceId": "gtaboom",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 25,
+   "relevant": 24,
+   "newFindings": 24,
+   "updatedFindings": 0,
+   "skipped": 1,
+   "attempts": 1,
+   "durationMs": 266,
+   "error": null
+  },
+  {
+   "sourceId": "powerpyx",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 10,
+   "relevant": 10,
+   "newFindings": 10,
+   "updatedFindings": 0,
+   "skipped": 0,
+   "attempts": 1,
+   "durationMs": 1104,
+   "error": null
+  },
+  {
+   "sourceId": "vgc",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 10,
+   "relevant": 9,
+   "newFindings": 9,
+   "updatedFindings": 0,
+   "skipped": 1,
+   "attempts": 1,
+   "durationMs": 284,
+   "error": null
+  },
+  {
+   "sourceId": "gamespot",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 25,
+   "relevant": 21,
+   "newFindings": 13,
+   "updatedFindings": 0,
+   "skipped": 4,
+   "attempts": 1,
+   "durationMs": 218,
+   "error": null
+  }
+ ],
+ "totals": {
+  "itemsSeen": 78,
+  "relevant": 72,
+  "newFindings": 57,
+  "updatedFindings": 0,
+  "statusChanges": 0,
+  "patchesDetected": 0,
+  "submissionsIngested": 0
+ },
+ "budget": {
+  "aiCalls": 0,
+  "aiCallsLimit": 40,
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "estimatedCostUsd": 0,
+  "costLimitUsd": 0.25,
+  "stoppedByBudget": false
+ },
+ "errors": [],
+ "proposalId": "prop-run-20261124-000203",
+ "nextScheduledHintUtc": [
+  "11:17",
+  "23:17"
+ ]
+}
