@@ -5,7 +5,7 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **42** · 🟡 parcial **18** · ⬜ pendiente **0** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **3** · total 63
+Resumen: ✅ implementado y probado **45** · 🟡 parcial **18** · ⬜ pendiente **0** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **3** · total 66
 
 
 ## A. Conservación y proceso
@@ -120,8 +120,11 @@ Resumen: ✅ implementado y probado **42** · 🟡 parcial **18** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | AX2.1 | Analizar UX pública de vicerepere.com sin copiar | ✅ implementado_testeado | sources/INVESTIGACION_FASE3.md | revisión editorial | Análisis de usabilidad sin copiar diseño, textos ni datos |
-| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | 🟡 parcial | AppShell | e2e navegación | Inferior: Inicio · Mapa · Dinero · Mi espacio · Menú; Mis rutas y Novedades en el menú |
+| AX2.2 | Navegación inferior Mapa · Explorar · Dinero · Mi espacio · Novedades | ✅ implementado_testeado | AppShell + src/lib/nav.ts | tests/nav.test.ts + e2e/fase4a.spec.ts + e2e/app.spec.ts | Fase 4A: barra inferior de 5 pestañas con sección activa (aria-current); lateral agrupado en escritorio; todas las URL anteriores conservadas y probadas |
 | AX2.3 | Comunidad: proponer marcadores, votos, reputación, historial | 🟡 parcial | Enviar hallazgo → cola de revisión | tests/intel/submissions.test.ts | Envío y cola real vía GitHub Issues; sin votos ni reputación |
+| AX2.3 | Explorar: buscador principal, categorías visuales con evidencia y catálogo de todas las secciones | ✅ implementado_testeado | src/pages/Home.tsx (/ y /explorar) | e2e/fase4a.spec.ts | Fase 4A; contadores y barra de evidencia calculados de content/*.json, sin datos nuevos |
+| AX2.4 | Novedades: línea de tiempo de ATLAS INTELLIGENCE con fuente original, fecha y estado; filtros por estado y plataforma; aviso «sin verificar» | ✅ implementado_testeado | src/pages/NewsPage.tsx (/novedades) | e2e/fase4a.spec.ts + axe | Fase 4A; /novedades?seccion=… conserva el panel anterior |
+| AX2.5 | Diseño premium (fase 4A): tarjetas vidrio, encabezados de sección, transiciones discretas con prefers-reduced-motion | 🟡 parcial | src/styles/global.css | e2e (360/390/768/1280/1920, WebKit en CI) | Pendiente: hoja inferior del mapa, tablero de Mi espacio, alto contraste y tamaño de texto (fases 4B–4D) |
 
 ## ATLAS INTELLIGENCE
 

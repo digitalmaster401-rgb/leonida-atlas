@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.4.0 — 2026-11-24 — Fase 4A: experiencia visual premium (primera etapa)
+
+- **Navegación de 5 pestañas** (`src/lib/nav.ts`): Mapa · Explorar · Dinero · Mi espacio · Novedades en la barra inferior, con indicador de sección activa (`aria-current`) y objetivos táctiles ≥ 44 px. En escritorio, el menú lateral se agrupa por pestaña. Se retira el botón «Menú»: todas sus secciones están en «Todas las secciones» de Explorar.
+- **Explorar** (`/` y alias nuevo `/explorar`, sin indexar): buscador principal, categorías visuales con contador y barra de evidencia (calculada de `content/*.json`), herramientas, catálogo de secciones, regiones y últimas novedades (los datos de ATLAS se cargan aparte para no engordar el paquete principal).
+- **Novedades** (`/novedades`, página nueva y diferida): línea de tiempo por día con insignia de estado, fuente original enlazada con su fecha, plataformas, fecha de detección y prueba en juego; filtros por estado y plataforma en la URL; aviso de hallazgos sin verificar; accesos al panel de ATLAS INTELLIGENCE y cambios de la guía. `/novedades?seccion=…` sigue abriendo el panel anterior.
+- **Diseño:** fondo con brillo sutil magenta/cian, tarjetas «vidrio» con acento por categoría y brillo cian al enfocar, encabezado de sección con línea lima, transición de entrada solo con opacidad (se apaga con `prefers-reduced-motion`).
+- Sin cambios en datos, esquemas, progreso local (v4), CSP ni controles de calidad. QA: `docs/FASE4A_QA.md`.
+
 ## 1.3.2 — 2026-11-24 — Paso 21D: auditoría de material ajeno sin falsos positivos
 
 - `npm run audit:legacy` fallaba en el PR #10 (ejecución 45443731080) porque un titular real de GTA BOOM sobre reclamaciones de copyright en YouTube contiene la palabra inglesa equivalente a «creadores», que es uno de los términos vigilados.

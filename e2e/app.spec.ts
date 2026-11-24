@@ -34,7 +34,8 @@ test.describe('LEONIDA ATLAS', () => {
       ['Trucos y códigos', /Trucos y códigos/i],
       ['Coleccionables', /Coleccionables/i],
       ['Fuentes y cambios', /Fuentes y cambios/i],
-      ['Inicio', /Leonida/i],
+      ['Novedades', /Novedades/i],
+      ['Explorar', /Leonida/i],
     ];
     for (const [label, h1] of sections) {
       const target = isMobile(page) && label === 'Dinero y glitches' ? 'Dinero' : label;
@@ -230,7 +231,7 @@ test.describe('LEONIDA ATLAS', () => {
 
   test('accesibilidad automática (axe, WCAG 2 AA) en páginas clave', async ({ page }) => {
     test.skip(!['chromium-390', 'chromium-1280'].includes(test.info().project.name), 'se ejecuta en dos anchos representativos');
-    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio', '/mis-rutas', '/comparar-vehiculos', '/vehiculos/pegassi-infernus-96']) {
+    for (const path of ['/', '/novedades', '/novedades?estado=reportado', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio', '/mis-rutas', '/comparar-vehiculos', '/vehiculos/pegassi-infernus-96']) {
       await page.goto(path);
       await page.waitForLoadState('networkidle');
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();

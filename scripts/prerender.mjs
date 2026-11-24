@@ -15,6 +15,7 @@ const DEFAULT_DESC = 'Guía independiente de GTA VI en español de México: mapa
 
 const pages = [
   { path: '/', title: `${NAME} — Guía de GTA VI`, desc: DEFAULT_DESC },
+  { path: '/explorar', title: `Explorar · ${NAME}`, desc: 'Buscador y categorías de LEONIDA ATLAS: lugares, armas, vehículos, negocios, coleccionables, trucos y más, con fuentes.', noindex: true },
   { path: '/mapa', title: `Mapa de Leonida · ${NAME}`, desc: 'Visor del mapa oficial de Leonida con puntos de precisión declarada enlazados a cada ficha.' },
   { path: '/dinero', title: `Dinero y glitches · ${NAME}`, desc: 'Métodos para ganar dinero en GTA VI con pago, requisitos, riesgos y nivel de evidencia. Calculadora incluida.' },
   { path: '/armas', title: `Armas · ${NAME}`, desc: 'Armas oficiales, Ammu-Nation y armas únicas reportadas en GTA VI.' },

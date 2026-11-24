@@ -9,6 +9,12 @@ import { Media } from '../components/Media';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { formatDate, money } from '../lib/calc';
 import { LogoMark } from '../components/Logo';
+import { InstallButton } from '../components/PwaControls';
+import { NAV_GROUPS } from '../lib/nav';
+import { LatestIntel } from '../components/LatestIntel';
+import type { Status } from '../data/schema';
+
+const EVIDENCE_ORDER: Status[] = ['oficial', 'comprobado', 'contrastado', 'reportado', 'pendiente', 'obsoleto'];
 
 function Hero() {
   const nav = useNavigate();
@@ -48,7 +54,7 @@ function Hero() {
       </svg>
       <div className="hero-inner">
         <p className="eyebrow">
-          <LogoMark size={22} /> Guía independiente · GTA VI · Español de México
+          <LogoMark size={22} /> Explorar · Guía independiente · GTA VI · Español de México
         </p>
         <h1 id="hero-h">
           Leonida, <span className="grad">con fuentes</span>.
@@ -79,6 +85,7 @@ function Hero() {
           <Link to="/mapa" className="btn btn-ghost">
             <Icon name="map" size={18} /> Abrir mapa
           </Link>
+          <InstallButton className="btn btn-ghost" />
         </div>
         <p className="hero-facts small">
           Disponible desde el {formatDate(GAME_RELEASE)} en PS5 y Xbox Series X|S · Última revisión de la guía: {formatDate(LAST_REVIEW)}
@@ -95,6 +102,7 @@ export function Home() {
     .sort((a, b) => (b.reward!.amount!.max ?? 0) - (a.reward!.amount!.max ?? 0));
   const counts = entries.reduce<Record<string, number>>((acc, e) => ((acc[e.status] = (acc[e.status] ?? 0) + 1), acc), {});
   const latest = changelog[0];
+
   return (
     <>
       <Seo title="LEONIDA ATLAS" description="Guía independiente de GTA VI en español de México: mapa oficial, dinero, armas, vehículos y negocios con fuentes verificables." />
@@ -104,15 +112,30 @@ export function Home() {
         <h2 id="cat-h" className="section-title">
           Explora la guía
         </h2>
-        <div className="cat-grid">
-          {CATEGORY_ORDER.map((c) => (
-            <Link key={c} to={CATEGORY_META[c].path} className="cat-tile">
-              <Icon name={CATEGORY_META[c].icon} size={26} />
-              <span className="cat-name">{CATEGORY_META[c].label}</span>
-              <span className="cat-desc">{CATEGORY_META[c].description}</span>
-              <span className="cat-count">{entriesBy(c).length} fichas</span>
-            </Link>
-          ))}
+        <p className="muted small">Cada categoría muestra cuántas fichas tiene y cómo se reparte su evidencia, de oficial a pendiente.</p>
+        <div className="cat-grid cat-grid-visual">
+          {CATEGORY_ORDER.map((c) => {
+            const list = entriesBy(c);
+            const parts = EVIDENCE_ORDER.map((st) => [st, list.filter((e) => e.status === st).length] as const).filter(([, n]) => n > 0);
+            return (
+              <Link key={c} to={CATEGORY_META[c].path} className={`cat-tile cat-${c}`}>
+                <span className="cat-ico" aria-hidden="true">
+                  <Icon name={CATEGORY_META[c].icon} size={24} />
+                </span>
+                <span className="cat-name">{CATEGORY_META[c].label}</span>
+                <span className="cat-desc">{CATEGORY_META[c].description}</span>
+                <span className="cat-count">{list.length} fichas</span>
+                {parts.length > 0 && (
+                  <span className="ev-bar" aria-hidden="true">
+                    {parts.map(([st, n]) => (
+                      <span key={st} className={`ev-seg ev-${st}`} style={{ flexGrow: n }} />
+                    ))}
+                  </span>
+                )}
+                <span className="sr-only">Evidencia: {parts.map(([st, n]) => `${n} ${STATUS_META[st].label.toLowerCase()}`).join(', ')}.</span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -136,6 +159,30 @@ export function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="section" aria-labelledby="all-h">
+        <h2 id="all-h" className="section-title">
+          Todas las secciones
+        </h2>
+        <nav aria-label="Todas las secciones" className="all-sections">
+          {NAV_GROUPS.map((g) => (
+            <div key={g.tab} className={`all-group all-${g.tab}`}>
+              <h3 className="all-title">{g.title}</h3>
+              <ul>
+                {g.links
+                  .filter((l) => l.to !== '/')
+                  .map((l) => (
+                    <li key={l.to}>
+                      <Link to={l.to} className="all-link">
+                        <Icon name={l.icon} size={18} /> {l.label}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
       </section>
 
       <section className="section" aria-labelledby="reg-h">
@@ -176,7 +223,7 @@ export function Home() {
           </Link>
         </div>
         <div className="panel" aria-labelledby="news-h">
-          <h2 id="news-h">Novedades verificadas</h2>
+          <h2 id="news-h">Novedades</h2>
           <ul className="news-list">
             <li>
               <strong>{formatDate(GAME_RELEASE)}</strong> — Rockstar confirma el lanzamiento mundial en PS5 y Xbox Series X|S. <EvidenceBadge status="oficial" compact />
@@ -184,7 +231,13 @@ export function Home() {
             <li>
               <strong>{formatDate(latest.date)}</strong> — {latest.title}: {latest.items[0]}
             </li>
+            <LatestIntel />
           </ul>
+          <p>
+            <Link to="/novedades" className="btn btn-sm">
+              <Icon name="eye" size={16} /> Ver todas las novedades
+            </Link>
+          </p>
           <h3 className="h-sub">Estado de la evidencia</h3>
           <ul className="evidence-counts">
             {Object.entries(counts).map(([s, n]) => (
@@ -197,8 +250,8 @@ export function Home() {
             Ver fuentes y registro de cambios →
           </Link>
           <p>
-            <Link to="/intel" className="btn btn-sm">
-              Novedades de ATLAS INTELLIGENCE
+            <Link to="/intel" className="link-more">
+              Panel completo de ATLAS INTELLIGENCE →
             </Link>
           </p>
         </div>

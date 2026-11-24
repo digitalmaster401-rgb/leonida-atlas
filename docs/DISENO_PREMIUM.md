@@ -1,6 +1,6 @@
 # Siguiente etapa: diseño premium de LEONIDA ATLAS (plan)
 
-Estado: **plan documentado, sin implementar** (Paso 21A, 24-nov-2026). Se conserva la identidad actual y todas las funciones.
+Estado: **etapa 1 (Fase 4A) implementada** — barra de 5 pestañas, Explorar y Novedades (Paso 22, 24-nov-2026). Plan original del Paso 21A. Se conserva la identidad actual y todas las funciones.
 
 ## Identidad que se mantiene
 - Fondo negro azulado `#0b0d14`, superficies `#121624 / #1a1f31 / #232a41`.

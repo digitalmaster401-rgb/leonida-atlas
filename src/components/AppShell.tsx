@@ -4,34 +4,7 @@ import { Wordmark } from './Logo';
 import { Icon } from './Icon';
 import { InstallButton, OfflineBanner, UpdatePrompt } from './PwaControls';
 import { usingOverride } from '../data';
-
-const NAV = [
-  { to: '/', label: 'Inicio', icon: 'home', end: true },
-  { to: '/mapa', label: 'Mapa', icon: 'map' },
-  { to: '/mis-rutas', label: 'Mis rutas', icon: 'flag' },
-  { to: '/dinero', label: 'Dinero y glitches', icon: 'cash' },
-  { to: '/trucos', label: 'Trucos y códigos', icon: 'gamepad' },
-  { to: '/coleccionables', label: 'Coleccionables', icon: 'grid' },
-  { to: '/armas', label: 'Armas', icon: 'target' },
-  { to: '/equipamiento', label: 'Equipamiento', icon: 'layers' },
-  { to: '/vehiculos', label: 'Vehículos', icon: 'car' },
-  { to: '/negocios', label: 'Negocios y propiedades', icon: 'store' },
-  { to: '/rutas', label: 'Rutas y tutoriales', icon: 'route' },
-  { to: '/lugares', label: 'Lugares', icon: 'pin' },
-  { to: '/personajes', label: 'Personajes', icon: 'user' },
-  { to: '/consola', label: 'Ajustes de consola', icon: 'sliders' },
-  { to: '/intel', label: 'ATLAS Intelligence', icon: 'eye' },
-  { to: '/galeria', label: 'Galería', icon: 'image' },
-  { to: '/mi-espacio', label: 'Mi espacio', icon: 'star' },
-  { to: '/fuentes', label: 'Fuentes y cambios', icon: 'book' },
-];
-
-const BOTTOM = [
-  { to: '/', label: 'Inicio', icon: 'home', end: true },
-  { to: '/mapa', label: 'Mapa', icon: 'map' },
-  { to: '/dinero', label: 'Dinero', icon: 'cash' },
-  { to: '/mi-espacio', label: 'Mi espacio', icon: 'star' },
-];
+import { NAV_GROUPS, TABS, tabOf } from '../lib/nav';
 
 function HeaderSearch() {
   const nav = useNavigate();
@@ -68,13 +41,12 @@ function HeaderSearch() {
 }
 
 export function AppShell({ children }: { children: ReactNode }) {
-  const [menu, setMenu] = useState(false);
   const loc = useLocation();
+  const active = tabOf(loc.pathname);
   const mainRef = useRef<HTMLElement>(null);
   const first = useRef(true);
 
   useEffect(() => {
-    setMenu(false);
     if (first.current) {
       first.current = false;
       return;
@@ -82,13 +54,6 @@ export function AppShell({ children }: { children: ReactNode }) {
     window.scrollTo({ top: 0 });
     mainRef.current?.focus({ preventScroll: true });
   }, [loc.pathname]);
-
-  useEffect(() => {
-    if (!menu) return;
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMenu(false);
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [menu]);
 
   return (
     <div className="shell">
@@ -112,15 +77,20 @@ export function AppShell({ children }: { children: ReactNode }) {
       )}
       <div className="layout">
         <nav className="sidebar" aria-label="Secciones">
-          <ul>
-            {NAV.map((n) => (
-              <li key={n.to}>
-                <NavLink to={n.to} end={n.end} className="side-link">
-                  <Icon name={n.icon} size={18} /> {n.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+          {NAV_GROUPS.map((g) => (
+            <div key={g.tab} className={`side-group${g.tab === active ? ' is-current' : ''}`}>
+              <p className="side-title">{g.title}</p>
+              <ul>
+                {g.links.map((n) => (
+                  <li key={n.to}>
+                    <NavLink to={n.to} end={n.end} className="side-link">
+                      <Icon name={n.icon} size={18} /> {n.label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </nav>
         <main id="contenido" ref={mainRef} tabIndex={-1} className="main">
           {children}
@@ -136,33 +106,18 @@ export function AppShell({ children }: { children: ReactNode }) {
         </main>
       </div>
       <nav className="bottombar" aria-label="Navegación principal">
-        {BOTTOM.map((n) => (
-          <NavLink key={n.to} to={n.to} end={n.end} className="bottom-link">
-            <Icon name={n.icon} size={22} />
-            <span>{n.label}</span>
-          </NavLink>
-        ))}
-        <button type="button" className="bottom-link" aria-expanded={menu} aria-controls="menu-sheet" onClick={() => setMenu((m) => !m)}>
-          <Icon name={menu ? 'close' : 'menu'} size={22} />
-          <span>Menú</span>
-        </button>
+        {TABS.map((t) => {
+          const on = t.id === active;
+          return (
+            <Link key={t.id} to={t.to} className={`bottom-link${on ? ' active' : ''}`} aria-current={on ? (loc.pathname === t.to ? 'page' : 'true') : undefined} data-tab={t.id}>
+              <span className="bottom-ico" aria-hidden="true">
+                <Icon name={t.icon} size={22} />
+              </span>
+              <span>{t.label}</span>
+            </Link>
+          );
+        })}
       </nav>
-      {menu && (
-        <div className="sheet-backdrop" onClick={() => setMenu(false)}>
-          <nav id="menu-sheet" className="sheet" aria-label="Todas las secciones" onClick={(e) => e.stopPropagation()}>
-            <ul>
-              {NAV.map((n) => (
-                <li key={n.to}>
-                  <NavLink to={n.to} end={n.end} className="sheet-link">
-                    <Icon name={n.icon} size={20} /> {n.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-            <InstallButton className="btn btn-cta" />
-          </nav>
-        </div>
-      )}
       <UpdatePrompt />
     </div>
   );

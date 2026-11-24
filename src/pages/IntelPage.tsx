@@ -3,7 +3,8 @@ import { Link, useSearchParams } from 'react-router';
 import { findings, intelSources, lastRun, patches, runs, submissions } from '../data/intel';
 import { entries, entryPath } from '../data';
 import type { Finding, FindingCategory, FindingStatus, Platform } from '../intel/schema';
-import { STATUS_HELP, STATUS_LABEL } from '../intel/status';
+import { STATUS_LABEL } from '../intel/status';
+import { StatusBadge } from '../components/IntelStatus';
 import { ask, PLATFORM_LABEL, type AskAnswer } from '../intel/ask';
 import { REPORT_URL } from '../data/meta';
 import { Seo } from '../components/Seo';
@@ -42,15 +43,7 @@ const PLATFORMS: Platform[] = ['ps5', 'ps5_pro', 'xbox_series_x', 'xbox_series_s
 
 const dt = (iso: string | null | undefined) => (iso ? `${formatDate(iso.slice(0, 10))} ${iso.slice(11, 16)} UTC` : '—');
 
-export function StatusBadge({ status }: { status: FindingStatus }) {
-  return (
-    <span className={`badge intel-${status}`} title={STATUS_HELP[status]}>
-      <span className="badge-dot" aria-hidden="true" />
-      {STATUS_LABEL[status]}
-      <span className="sr-only">. {STATUS_HELP[status]}</span>
-    </span>
-  );
-}
+export { StatusBadge };
 
 function FindingCard({ f }: { f: Finding }) {
   const s = f.sources[0];

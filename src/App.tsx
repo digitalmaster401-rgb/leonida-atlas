@@ -17,6 +17,7 @@ import type { Category } from './data/schema';
 
 const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ default: m.EditorPage })));
 
+const NewsPage = lazy(() => import('./pages/NewsPage').then((m) => ({ default: m.NewsPage })));
 const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
 const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
 const CollectiblesPage = lazy(() => import('./pages/CollectiblesPage').then((m) => ({ default: m.CollectiblesPage })));
@@ -34,6 +35,7 @@ export function App() {
     <AppShell>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/explorar" element={<Home />} />
         <Route path="/mapa" element={<MapPage />} />
         <Route path="/dinero" element={<MoneyPage />} />
         {LISTS.map((c) => (
@@ -54,7 +56,7 @@ export function App() {
           path="/novedades"
           element={
             <Suspense fallback={loading}>
-              <IntelPage initial="novedades" />
+              <NewsPage />
             </Suspense>
           }
         />
