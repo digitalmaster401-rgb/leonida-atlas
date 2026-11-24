@@ -990,7 +990,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.907Z",
   "sourcePublishedAt": "2026-11-19T12:00:00.000Z",
@@ -1028,6 +1028,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1046,7 +1055,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
   "sourcePublishedAt": "2026-11-10T12:00:00.000Z",
@@ -1084,6 +1093,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1102,7 +1120,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
   "sourcePublishedAt": "2026-11-05T12:00:00.000Z",
@@ -1140,6 +1158,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1158,7 +1185,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.909Z",
   "sourcePublishedAt": "2026-11-19T12:00:00.000Z",
@@ -1196,6 +1223,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1214,7 +1250,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
   "sourcePublishedAt": "2026-10-15T12:00:00.000Z",
@@ -1252,6 +1288,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1270,7 +1315,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
   "sourcePublishedAt": "2026-08-27T12:00:00.000Z",
@@ -1308,6 +1353,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1326,7 +1380,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
   "sourcePublishedAt": "2025-05-06T12:00:00.000Z",
@@ -1364,6 +1418,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",
@@ -1382,7 +1445,7 @@
   "mode": "sin_confirmar",
   "platforms": [],
   "gameVersion": null,
-  "status": "contrastado",
+  "status": "anuncio_oficial",
   "platformStatus": {},
   "firstDiscoveredAt": "2026-11-22T04:08:59.910Z",
   "sourcePublishedAt": "2023-12-04T12:00:00.000Z",
@@ -1420,6 +1483,15 @@
     "platform": null,
     "reason": "Descubierto en Rockstar Games: página oficial de GTA VI (noticias destacadas)",
     "runId": "run-20261122-040859"
+   },
+   {
+    "type": "estado",
+    "from": "contrastado",
+    "to": "anuncio_oficial",
+    "platform": null,
+    "reason": "Regla de independencia: 0 fuente(s) independiente(s) no oficiales",
+    "runId": "manual-local-2026-11-24",
+    "at": "2026-11-24T12:00:00.000Z"
    }
   ],
   "classifier": "heuristico",

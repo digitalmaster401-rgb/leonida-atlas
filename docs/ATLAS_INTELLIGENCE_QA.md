@@ -126,3 +126,30 @@ Notas de GitHub:
 - La clasificación heurística es por palabras clave y puede equivocarse de categoría. Por eso todo pasa por revisión.
 - La vigilancia de la página oficial depende de su estructura actual; si cambia, la fuente fallará y la corrida quedará como «parcial», sin perder datos.
 - La Research API de TikTok, la API de Reddit y las notificaciones push no están implementadas: requieren aprobación o autorización explícita.
+
+
+## Paso 21A (24-nov-2026): estabilización
+
+Revisión de los PR automáticos #5, #6, #7 y #8. Todos parten de main en a445125, no borran ni alteran hallazgos existentes y solo cambian su `lastSourceCheckedAt`.
+
+| | #5 | #6 | #7 | #8 |
+|---|---|---|---|---|
+| Hallazgos «nuevos» | 42 | 42 | 57 | 58 |
+
+**Problemas verificados:**
+1. **Repetición entre PR.** Cada corrida parte de main, que no tiene las propuestas sin fusionar, así que vuelve a proponerlas.
+   - Las 4 PR suman 199 propuestas, pero solo 115 hallazgos distintos.
+   - Fusionar una PR deja a las demás en conflicto sobre los mismos archivos.
+2. **Misma historia en varios medios sin fusionar.** Por ejemplo, la broma sobre la cancelación de Cyberpunk 2 aparece en 4 artículos y la misma guía tiene dos títulos. Además, la regla anterior **fusionaba «Chapter 3» con «Chapter 4»** porque ignoraba los números.
+3. **Clasificación.** Misiones con nombres genéricos quedaban como «arma», «dinero», «noticia» o «ropa» (por ejemplo, «Checking Out» o «Afternoon Delight»). Un desmentido («No, the Xbox Quick Resume glitch does NOT…») quedaba como glitch «reportado».
+4. **Estados.** 8 anuncios de Rockstar estaban como «contrastado» con una sola fuente. «Comprobado» estaba bien protegido por el motor, pero el esquema no lo exigía.
+
+**Correcciones** (pruebas en `tests/intel/stabilization.test.ts`, con titulares reales):
+- **Una sola PR acumulada.** El workflow arrastra las propuestas abiertas con la etiqueta `atlas-intelligence` y actualiza la PR existente.
+  - Simulación con los datos reales: 199 propuestas → **109 hallazgos únicos**, con 6 duplicados entre medios consolidados.
+  - No se pierde ningún hallazgo válido ni su historial: las fuentes extra se suman y queda una entrada en `history`.
+- **`findMatch`.** Fusiona por tema solo si coinciden ≥2 palabras de tema y los números no difieren. Las noticias solo se fusionan con otras noticias, de otro medio y con ≤4 días de diferencia.
+- **Clasificación.** «How to complete / walkthrough / mission» se clasifica como misión, salvo que el titular sea de dinero, truco, glitch o parche. Los desmentidos llevan la marca `desmentido_en_titular` y su estado máximo es `nuevo_sin_verificar`.
+- **Estados.** Nuevo `anuncio_oficial`. `enforceIndependenceAll` corrige cualquier «contrastado» que no cumpla la regla y lo registra en el historial. El esquema exige evidencia humana completa para «comprobado» y «parcheado».
+
+**Límite:** la deduplicación es por palabras, no por significado. Dos artículos sobre el mismo parche con titulares muy distintos («first patch is rolling out» y «Update 1.002.002 fixes autosaves») siguen como hallazgos separados y se unen en la revisión humana.

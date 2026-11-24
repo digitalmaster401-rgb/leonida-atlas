@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.3.1 — 2026-11-24 — Paso 21A: estabilización de ATLAS INTELLIGENCE y entorno
+
+- **Propuestas repetidas:** cada corrida partía de main sin las propuestas abiertas y volvía a proponer lo mismo (PR #5–#8: 199 propuestas para 115 hallazgos distintos). Ahora hay una sola PR acumulada (`atlas-intelligence/propuestas`) que se actualiza y arrastra las propuestas abiertas (`carryPending`, `--pending`).
+- **Deduplicación por tema:** la misma noticia de varios medios se fusiona; los números distintos («capítulo 3» y «capítulo 4») nunca se fusionan (antes sí); hace falta coincidir en ≥2 palabras de tema.
+- **Clasificación:** «How to complete <misión>» y «walkthrough» se clasifican como misión; los titulares que desmienten quedan marcados y no como «reportado».
+- **Estados:** nuevo `anuncio_oficial`; «contrastado» exige dos fuentes independientes (8 anuncios de Rockstar corregidos, con historial); el esquema rechaza «comprobado» o «parcheado» sin evidencia humana.
+- **Entorno:** CLAUDE.md más corto y 4 skills del proyecto (`investigacion`, `desarrollo`, `diseno-visual`, `auditoria-calidad`); plan de diseño premium en `docs/DISENO_PREMIUM.md`.
+
 ## 1.3.0 — 2026-11-22 — Fase 3: ATLAS EXPLORER + mapa oficial v2
 
 - Póster oficial v2 (5775×7900, «print-ready» de rockstargames.com/VI/media) en WebP 1200/2400/3840 con nombres `-v2-`; encuadre idéntico verificado (desplazamiento 0 px, escala 1.000); proporción derivada del archivo; carga por niveles y respaldo al póster anterior (`docs/MAPA_OFICIAL_V2.md`).

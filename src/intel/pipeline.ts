@@ -3,7 +3,7 @@
 import type { Finding, IntelSource, Patch, RunReport, RunSourceResult, Submission } from './schema';
 import { parseFeed, stripHtml, type FeedItem } from './feeds';
 import { extract, type AiOptions } from './classify';
-import { applyPatch, buildProposal, ingest, latestPatchAt, reconcileEvidence, type Change } from './engine';
+import { applyPatch, buildProposal, enforceIndependenceAll, ingest, latestPatchAt, reconcileEvidence, type Change } from './engine';
 import { isRelevant } from './heuristics';
 import { Budget, DEFAULT_BUDGET, type BudgetConfig } from './budget';
 import { robotsAllows, USER_AGENT } from './robots';
@@ -307,6 +307,10 @@ export async function runPipeline(o: PipelineOptions): Promise<PipelineResult> {
     // Evidencias registradas por personas
     const lp = latestPatchAt(patches);
     findings = findings.map((f) => (f.evidence.length ? reconcileEvidence(f, lp, runId, now().toISOString()) : f));
+    // Regla de independencia sobre todo lo guardado
+    const ind = enforceIndependenceAll(findings, runId, now().toISOString());
+    findings = ind.findings;
+    changes.push(...ind.changes);
   } finally {
     clearTimeout(runTimer);
     o.signal?.removeEventListener('abort', onExternal);

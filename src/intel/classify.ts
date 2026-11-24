@@ -3,7 +3,7 @@
 import { z } from 'zod';
 import type { Claim, FindingCategory, Platform } from './schema';
 import { FINDING_CATEGORIES, PLATFORMS } from './schema';
-import { classifyCategory, detectMode, detectPatch, detectPlatforms, extractMoneyClaims, extraordinaryClaim } from './heuristics';
+import { classifyCategory, debunkHeadline, detectMode, detectPatch, detectPlatforms, extractMoneyClaims, extraordinaryClaim } from './heuristics';
 import { normText } from './normalize';
 import type { Budget } from './budget';
 
@@ -82,6 +82,7 @@ export function heuristicExtract(title: string, summary: string, url: string): E
   const patch = detectPatch(title, summary);
   const flags: string[] = [];
   if (extraordinaryClaim(text)) flags.push('promesa_extraordinaria');
+  if (debunkHeadline(title)) flags.push('desmentido_en_titular');
   const category = patch.isPatch ? 'parche' : classifyCategory(title, summary);
   const gameEconomy = !['noticia', 'parche', 'otro', 'configuracion'].includes(category);
   return {

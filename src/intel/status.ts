@@ -7,6 +7,7 @@ export const STATUS_RANK: Record<FindingStatus, number> = {
   nuevo_sin_verificar: 1,
   pendiente_revalidacion: 2,
   reportado: 3,
+  anuncio_oficial: 4,
   contrastado: 4,
   parcheado: 5,
   comprobado_en_version: 6,
@@ -15,6 +16,7 @@ export const STATUS_RANK: Record<FindingStatus, number> = {
 export const STATUS_LABEL: Record<FindingStatus, string> = {
   nuevo_sin_verificar: 'Nuevo sin verificar',
   reportado: 'Reportado',
+  anuncio_oficial: 'Anuncio oficial',
   contrastado: 'Contrastado',
   comprobado_en_version: 'Comprobado en versión',
   pendiente_revalidacion: 'Pendiente de revalidación',
@@ -25,6 +27,7 @@ export const STATUS_LABEL: Record<FindingStatus, string> = {
 export const STATUS_HELP: Record<FindingStatus, string> = {
   nuevo_sin_verificar: 'Hallazgo inicial sin ejecución demostrada ni fuente que lo describa con detalle.',
   reportado: 'Una fuente (video, artículo o tutorial) lo describe; falta prueba reproducible.',
+  anuncio_oficial: 'Lo publicó Rockstar Games o Take-Two. Es el anuncio oficial, no una prueba en el juego ni dos fuentes independientes.',
   contrastado: 'Dos o más fuentes independientes coinciden; nadie lo ha comprobado aquí.',
   comprobado_en_version: 'Prueba documentada con fecha, plataforma y versión del juego.',
   pendiente_revalidacion: 'Salió un parche posterior o hay dudas: hay que volver a probarlo.',
@@ -53,11 +56,23 @@ export function independentCount(sources: SourceRef[]): number {
 
 /** Estado derivado solo de fuentes (sin pruebas en juego). Nunca devuelve comprobado/parcheado. */
 export function statusFromSources(sources: SourceRef[], hasConcreteClaim: boolean): FindingStatus {
-  if (sources.some((s) => s.tier === 'oficial')) return 'contrastado';
   const n = independentCount(sources);
-  if (n >= 2) return 'contrastado';
+  const official = sources.some((s) => s.tier === 'oficial');
+  // «Contrastado» = dos fuentes realmente independientes. La oficial cuenta como una, nunca como dos.
+  if (n >= 2 || (official && n >= 1)) return 'contrastado';
+  if (official) return 'anuncio_oficial';
   if (n === 1 && hasConcreteClaim) return 'reportado';
   return 'nuevo_sin_verificar';
+}
+
+/**
+ * Corrige estados que violan la regla de independencia (p. ej. «contrastado» con una sola fuente).
+ * Solo baja estados; nunca sube a comprobado/parcheado. Devuelve el estado correcto o null si no cambia.
+ */
+export function enforceIndependence(f: Pick<Finding, 'status' | 'sources'>, hasConcreteClaim: boolean): FindingStatus | null {
+  if (f.status !== 'contrastado') return null;
+  const st = statusFromSources(f.sources, hasConcreteClaim);
+  return st === 'contrastado' ? null : st;
 }
 
 /** Estado por evidencia para una plataforma concreta; null si no hay evidencia aplicable. */
