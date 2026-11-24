@@ -45,3 +45,36 @@ Estado: **etapa 1 (Fase 4A) implementada** — barra de 5 pestañas, Explorar y 
 3. Tablero de Mi espacio.
 4. Pulido visual (tokens, tarjetas, encabezados) y modo alto contraste.
 5. Auditoría completa (Lighthouse, axe, WebKit) y actualización de la matriz.
+
+---
+
+## Referencias visuales aprobadas (24-nov-2026)
+
+El propietario aprobó cuatro maquetas como dirección estética definitiva (`LEONIDA_ATLAS_BRIEF_VISUAL_OFICIAL.zip`, con `BRIEF_DISENO_REFERENCIA.md`). **Son maquetas, no capturas de la app** ni recursos para publicar: no se incluyen en el repositorio ni en el build. Sus datos (perfiles, niveles, EXP, km, «Monitoreo activo», canales conectados, marcadores del mapa) son ficticios y no se reproducen.
+
+Lenguaje común: noche tropical cinematográfica, degradados magenta → azul, bordes neón dosificados (magenta para la selección, cian para la información), tarjetas con imagen y degradado oscuro para la legibilidad, títulos en cursiva y mayúsculas, una sola barra inferior **Mapa · Explorar · Dinero · Mi espacio · Novedades**. Se conserva el logotipo L/brújula del proyecto (las maquetas usan logotipos distintos y no se copian).
+
+### Ya implementado en la Fase 4A (PR #12)
+| Referencia | Implementación real |
+|---|---|
+| 01 Explorar | Portada panorámica con imagen oficial nocturna (`vc-skyline-noche`, con crédito), palmeras en silueta propias, barra «ATLAS EXPLORER» con buscador real, tarjeta editorial de 3 destacados (puntos, flechas y deslizamiento; sin reproducción automática), 4 accesos con imagen oficial (Mapa, Vehículos, Mis rutas, Mi espacio) y chip de versión enlazado al registro de cambios. |
+| 04 Novedades | Bloques «Fuentes consultadas» (estado real de cada canal según `intel/sources.json` y la última corrida), «ATLAS Intelligence» (los 4 pasos reales del proceso), «Por verificar», «Novedades de LEONIDA ATLAS» (registro de cambios con imagen oficial) y línea de tiempo con miniaturas ilustradas. ATLAS WATCH se describe como propuesta, sin «Monitoreo activo». |
+| Navegación | Barra inferior flotante con pestaña activa iluminada (borde y halo magenta), iconos brújula, monedas, persona y periódico. |
+
+### Fase 4B — Mapa (referencia 03), plan
+- **Pantalla inmersiva en móvil:** el visor ocupa el alto disponible entre la cabecera y la barra inferior; buscador «Buscar en Leonida» arriba (filtra fichas con punto, `src/lib/search.ts`).
+- **Chips de capa** desplazables (Todo · Vehículos · Coleccionables · Rutas · Lugares…) conectados a las capas existentes de `mapprefs` (persisten).
+- **Botones flotantes** de 48 px a la derecha: capas, centrar, ruta activa, acercar y alejar (los controles actuales, restilizados).
+- **Marcadores categorizados** con forma + icono + color (el color nunca es la única señal) y un anillo según la precisión (`region` / `zona` / `barrio` / `exacta`). Solo fichas con `mapPosition`; sin nombres de lugares, vías, escala en km ni pins que no estén en los datos.
+- **Hoja inferior** de 3 alturas con la ficha del punto: imagen oficial o ilustración rotulada, categoría, estado de evidencia, precisión declarada y acciones reales (abrir ficha, añadir a ruta, marcar encontrado). Arrastrable, con cierre por teclado y foco gestionado; varias fichas se recorren con puntos como en la referencia.
+- Base cartográfica: únicamente el póster oficial v2 ya incluido (`docs/MAPA_OFICIAL_V2.md`).
+
+### Fase 4B — Mi espacio (referencia 02), plan
+- **Cabecera personal** con panorámica oficial nocturna y avatar opcional elegido por la persona (foto local en IndexedDB, nunca subida). Nombre editable guardado en el progreso local **solo si se acepta ampliar el esquema** (subir `SCHEMA_VERSION` con migración); si no, se omite.
+- **Tarjetas con imagen** y cifras calculadas de datos reales: rutas guardadas, coleccionables encontrados / total (`content/collectibles`), vehículos en el garaje, fotos. **Progreso general** en anillo SVG = proporción real de encontrados.
+- **Sin** niveles, EXP, km recorridos, zonas visitadas, eventos, desafíos ni amigos: no existen datos para calcularlos. Si se muestran, como «Próximamente» y sin cifras.
+- **Actividad reciente** solo si se registran fechas reales en el progreso (requiere cambio de esquema aprobado); mientras tanto, accesos directos a cada lista.
+- Se conservan respaldo, importación/exportación, migraciones v1→v4 y fotos.
+
+### Fase 4C — ATLAS WATCH, plan
+Canales de video y redes sociales solo con APIs autorizadas y gratuitas aprobadas por el propietario; estado mostrado = estado real de la última corrida; revisión humana obligatoria antes de publicar.

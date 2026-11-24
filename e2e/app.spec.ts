@@ -3,12 +3,15 @@ import AxeBuilder from '@axe-core/playwright';
 import { goSection, noHorizontalOverflow, shot, watchConsole, isMobile } from './helpers';
 
 test.describe('LEONIDA ATLAS', () => {
-  test('inicio: portada original, sin errores ni desbordamiento', async ({ page }, info) => {
+  test('inicio: portada cinematográfica, sin errores ni desbordamiento', async ({ page }, info) => {
     const errors = watchConsole(page);
     await page.goto('/');
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Leonida');
     await expect(page.getByText('Guía independiente de fans. Sin afiliación con Rockstar Games.')).toBeVisible();
-    await expect(page.locator('.hero img')).toHaveCount(0); // la portada es una composición SVG propia
+    // Fase 4A: la portada usa una imagen oficial del manifiesto (rockstargames.com/VI) con crédito visible.
+    await expect(page.locator('.hero img')).toHaveCount(1);
+    await expect(page.locator('.hero img')).toHaveAttribute('src', /^\/media\/official\//);
+    await expect(page.locator('.hero-credit')).toHaveText('Imagen oficial © Rockstar Games');
     await noHorizontalOverflow(page);
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.waitForLoadState('networkidle');

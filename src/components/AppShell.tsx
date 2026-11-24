@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation, useNavigate, useSearchParams } from 'react-
 import { Wordmark } from './Logo';
 import { Icon } from './Icon';
 import { InstallButton, OfflineBanner, UpdatePrompt } from './PwaControls';
-import { usingOverride } from '../data';
+import { changelog, usingOverride } from '../data';
 import { NAV_GROUPS, TABS, tabOf } from '../lib/nav';
 
 function HeaderSearch() {
@@ -65,6 +65,9 @@ export function AppShell({ children }: { children: ReactNode }) {
           <Wordmark />
         </Link>
         <HeaderSearch />
+        <Link to="/fuentes" className="version-chip" aria-label={`v${changelog[0].version}, ver registro de cambios`}>
+          v{changelog[0].version}
+        </Link>
         <div className="topbar-actions">
           <InstallButton />
         </div>

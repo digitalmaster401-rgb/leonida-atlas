@@ -1,99 +1,18 @@
-import { Link, useNavigate } from 'react-router';
-import { useState } from 'react';
+import { Link } from 'react-router';
 import { changelog, entries, entriesBy, entryPath } from '../data';
-import { CATEGORY_META, CATEGORY_ORDER, GAME_RELEASE, LAST_REVIEW, STATUS_META } from '../data/meta';
+import { CATEGORY_META, CATEGORY_ORDER, GAME_RELEASE, STATUS_META } from '../data/meta';
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
 import { ItemCard } from '../components/ItemCard';
 import { Media } from '../components/Media';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { formatDate, money } from '../lib/calc';
-import { LogoMark } from '../components/Logo';
-import { InstallButton } from '../components/PwaControls';
+import { ExploreHero, ExplorerBar, ExplorerSearch, FeatureCarousel, QuickAccess } from '../components/ExploreHero';
 import { NAV_GROUPS } from '../lib/nav';
 import { LatestIntel } from '../components/LatestIntel';
 import type { Status } from '../data/schema';
 
 const EVIDENCE_ORDER: Status[] = ['oficial', 'comprobado', 'contrastado', 'reportado', 'pendiente', 'obsoleto'];
-
-function Hero() {
-  const nav = useNavigate();
-  const [q, setQ] = useState('');
-  return (
-    <section className="hero" aria-labelledby="hero-h">
-      <svg className="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#140a2e" />
-            <stop offset=".55" stopColor="#5b1a5e" />
-            <stop offset=".8" stopColor="#ff3ea5" />
-            <stop offset="1" stopColor="#ffb86b" />
-          </linearGradient>
-          <linearGradient id="h-sun" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#ffe08a" />
-            <stop offset="1" stopColor="#ff3ea5" />
-          </linearGradient>
-          <linearGradient id="h-sea" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#0e3a52" />
-            <stop offset="1" stopColor="#0b0d14" />
-          </linearGradient>
-        </defs>
-        <rect width="1200" height="600" fill="url(#h-sky)" />
-        <circle cx="820" cy="380" r="150" fill="url(#h-sun)" />
-        {[0, 1, 2, 3, 4, 5].map((i) => (
-          <rect key={i} x="600" y={330 + i * 16} width="460" height={4 + i} fill="#5b1a5e" opacity=".9" />
-        ))}
-        <g fill="#0b0d14">
-          <path d="M0 430h60v-90h30v-40h40v130h30v-160h50v160h20v-110h45v110h30v-60h25v60h35v-200h55v200h25v-130h40v130h30v-80h30v80h40v-150h45v150h40v-60h40v60h35v-120h35v120h40v-90h30v90h50v-40h60v40h45v-170h40v170h55v-70h45v70h60V600H0z" />
-          <path d="M1015 430c-6-70-2-130 12-190M1010 300c-30-20-60-18-85-6M1022 260c20-28 52-38 84-30M1016 280c-34-4-58 10-70 30M1024 250c-6-26 4-50 26-64" stroke="#0b0d14" strokeWidth="9" fill="none" strokeLinecap="round" />
-        </g>
-        <rect y="430" width="1200" height="170" fill="url(#h-sea)" />
-        {[0, 1, 2, 3, 4, 5, 6].map((i) => (
-          <rect key={i} x={680 + (i % 2) * 40} y={450 + i * 18} width={300 - i * 30} height="3" fill="#ff3ea5" opacity={0.5 - i * 0.06} />
-        ))}
-      </svg>
-      <div className="hero-inner">
-        <p className="eyebrow">
-          <LogoMark size={22} /> Explorar · Guía independiente · GTA VI · Español de México
-        </p>
-        <h1 id="hero-h">
-          Leonida, <span className="grad">con fuentes</span>.
-        </h1>
-        <p className="hero-lead">
-          Mapa oficial con puntos de precisión declarada, métodos de dinero con pago y evidencia separados, armas, vehículos y negocios. Cada dato dice de dónde sale.
-        </p>
-        <form
-          className="hero-search"
-          role="search"
-          onSubmit={(e) => {
-            e.preventDefault();
-            nav(`/buscar?q=${encodeURIComponent(q.trim())}`);
-          }}
-        >
-          <label htmlFor="hero-q" className="sr-only">
-            Buscar
-          </label>
-          <input id="hero-q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Prueba: «Moses», «Duke 556», «Stockyard»…" enterKeyHint="search" />
-          <button type="submit" className="btn btn-cta">
-            <Icon name="search" size={18} /> Buscar
-          </button>
-        </form>
-        <div className="hero-ctas">
-          <Link to="/rutas/empieza-aqui" className="btn">
-            Empieza aquí
-          </Link>
-          <Link to="/mapa" className="btn btn-ghost">
-            <Icon name="map" size={18} /> Abrir mapa
-          </Link>
-          <InstallButton className="btn btn-ghost" />
-        </div>
-        <p className="hero-facts small">
-          Disponible desde el {formatDate(GAME_RELEASE)} en PS5 y Xbox Series X|S · Última revisión de la guía: {formatDate(LAST_REVIEW)}
-        </p>
-      </div>
-    </section>
-  );
-}
 
 export function Home() {
   const regions = entriesBy('lugares').filter((e) => !e.subzone);
@@ -106,7 +25,11 @@ export function Home() {
   return (
     <>
       <Seo title="LEONIDA ATLAS" description="Guía independiente de GTA VI en español de México: mapa oficial, dinero, armas, vehículos y negocios con fuentes verificables." />
-      <Hero />
+      <ExploreHero />
+      <ExplorerBar />
+      <FeatureCarousel />
+      <QuickAccess />
+      <ExplorerSearch />
 
       <section className="section" aria-labelledby="cat-h">
         <h2 id="cat-h" className="section-title">

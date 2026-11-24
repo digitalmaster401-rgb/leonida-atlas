@@ -1,8 +1,9 @@
 import { useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router';
 import { findings, intelSources, lastRun } from '../data/intel';
+import { Media } from '../components/Media';
 import { changelog } from '../data';
-import type { FindingStatus, Platform } from '../intel/schema';
+import type { Finding, FindingCategory, FindingStatus, IntelSource, Platform } from '../intel/schema';
 import { STATUS_HELP, STATUS_LABEL } from '../intel/status';
 import { PLATFORM_LABEL } from '../intel/ask';
 import { Seo } from '../components/Seo';
@@ -36,6 +37,40 @@ const ACCESS = [
 
 const day = (iso: string) => formatDate(iso.slice(0, 10));
 
+const CAT_ICON: Partial<Record<FindingCategory, string>> = {
+  glitch: 'alert',
+  dinero: 'cash',
+  truco: 'gamepad',
+  arma: 'target',
+  vehiculo: 'car',
+  coleccionable: 'grid',
+  ropa_joyeria: 'star',
+  mision: 'flag',
+  parche: 'layers',
+  noticia: 'news',
+  configuracion: 'sliders',
+  ubicacion: 'pin',
+  personaje: 'user',
+};
+
+/** Miniatura ilustrada (original) por categoría: los hallazgos externos no tienen imagen con derechos de uso. */
+function Thumb({ f }: { f: Finding }) {
+  return (
+    <span className={`thumb thumb-${f.category}`} aria-hidden="true">
+      <Icon name={CAT_ICON[f.category] ?? 'note'} size={26} />
+    </span>
+  );
+}
+
+// Canales de ATLAS WATCH: agrupan las fuentes registradas por tipo. El estado sale de intel/sources.json y de la última corrida real.
+const CHANNELS: { id: string; icon: string; name: string; desc: string; match: (s: IntelSource) => boolean }[] = [
+  { id: 'web', icon: 'globe', name: 'Web y medios', desc: 'Página oficial, guías y medios', match: (s) => s.kind === 'rss' && s.tier !== 'comunidad' },
+  { id: 'oficial', icon: 'shield', name: 'Rockstar Games', desc: 'Página oficial de GTA VI', match: (s) => s.kind === 'page_watch' },
+  { id: 'video', icon: 'play', name: 'Video', desc: 'YouTube (canal oficial y búsqueda)', match: (s) => s.kind === 'youtube_rss' || s.kind === 'api' },
+  { id: 'comunidad', icon: 'people', name: 'Comunidad', desc: 'Foros y redes sociales', match: (s) => s.tier === 'comunidad' },
+];
+const IMAGES = ['vc-skyline-noche', 'jl-mirador', 'vc-marina', 'keys-bar'];
+
 /** Portada de la pestaña Novedades: línea de tiempo de ATLAS INTELLIGENCE con fuente original, fecha y estado. */
 export function NewsPage() {
   const [params, setParams] = useSearchParams();
@@ -49,6 +84,7 @@ export function NewsPage() {
   const counts = useMemo(() => base.reduce<Partial<Record<FindingStatus, number>>>((acc, f) => ((acc[f.status] = (acc[f.status] ?? 0) + 1), acc), {}), [base]);
   const list = base.filter((f) => (!estado || f.status === estado) && (!plataforma || f.platforms.includes(plataforma)));
   const unverified = (counts.nuevo_sin_verificar ?? 0) + (counts.reportado ?? 0);
+  const pending = base.filter((f) => f.status === 'nuevo_sin_verificar' || f.status === 'reportado').slice(0, 3);
 
   if (legacy) return <IntelPage />;
 
@@ -113,6 +149,154 @@ export function NewsPage() {
         </span>
       </p>
 
+      <section className="section watch" aria-labelledby="watch-h">
+        <div className="block-head">
+          <span className="block-ico" aria-hidden="true">
+            <Icon name="eye" size={26} />
+          </span>
+          <div>
+            <h2 id="watch-h" className="block-title">
+              Fuentes <span>consultadas</span>
+            </h2>
+            <p className="block-sub">Estado real de cada canal en la última investigación ({lastRun ? day(lastRun.finishedAt) : 'sin corridas'}).</p>
+          </div>
+        </div>
+        <ul className="watch-grid">
+          {CHANNELS.map((c) => {
+            const list = intelSources.filter(c.match);
+            const active = list.filter((s) => s.enabled);
+            const ok = active.filter((s) => lastRun?.sources.find((r) => r.sourceId === s.id)?.ok);
+            return (
+              <li key={c.id} className={`watch-card${active.length ? ' is-on' : ''}`} data-testid="watch-channel">
+                <Icon name={c.icon} size={28} />
+                <span className="watch-name">{c.name}</span>
+                <span className="watch-desc">{c.desc}</span>
+                <span className={`watch-state${active.length ? ' on' : ''}`}>
+                  {active.length ? `${ok.length} de ${list.length} consultadas` : list.length ? 'Desactivado' : 'Sin conectar'}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+        <details className="watch-details small">
+          <summary>Ver las {intelSources.length} fuentes y por qué algunas están desactivadas</summary>
+          <ul>
+            {intelSources.map((s) => {
+              const r = lastRun?.sources.find((x) => x.sourceId === s.id);
+              return (
+                <li key={s.id}>
+                  <strong>{s.name}</strong> — {s.enabled ? (r ? (r.ok ? `consultada: HTTP ${r.httpStatus}, ${r.items} elementos` : `error: ${r.error ?? 'sin respuesta'}`) : 'activa, sin resultado en la última corrida') : `desactivada. ${s.disabledReason ?? ''}`}
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+        <p className="small muted">
+          <strong>ATLAS WATCH</strong> (vigilancia de canales de video y redes sociales) es una propuesta para una entrega posterior: hoy no hay canales de video ni cuentas de redes sociales conectados.
+        </p>
+      </section>
+
+      <section className="section pipeline" aria-labelledby="pipe-h">
+        <div className="pipeline-head">
+          <span className="block-ico block-ico-cyan" aria-hidden="true">
+            <Icon name="scan" size={26} />
+          </span>
+          <div>
+            <h2 id="pipe-h" className="block-title">
+              ATLAS <span>Intelligence</span>
+            </h2>
+            <p className="block-sub">Cómo llega un hallazgo a esta página. Nada se publica sin revisión humana.</p>
+          </div>
+        </div>
+        <ol className="pipeline-steps">
+          <li>
+            <Icon name="search" size={24} />
+            <strong>Detecta</strong>
+            <span>lee las fuentes activas</span>
+          </li>
+          <li>
+            <Icon name="layers" size={24} />
+            <strong>Clasifica</strong>
+            <span>categoría y plataformas</span>
+          </li>
+          <li>
+            <Icon name="shield" size={24} />
+            <strong>Verifica</strong>
+            <span>cuenta fuentes independientes</span>
+          </li>
+          <li>
+            <Icon name="doc" size={24} />
+            <strong>Propone</strong>
+            <span>cola de revisión editorial</span>
+          </li>
+        </ol>
+      </section>
+
+      <section className="section review" aria-labelledby="rev-h">
+        <div className="block-head">
+          <span className="block-ico" aria-hidden="true">
+            <Icon name="edit" size={26} />
+          </span>
+          <div>
+            <h2 id="rev-h" className="block-title">
+              Por <span>verificar</span>
+            </h2>
+            <p className="block-sub">Los hallazgos más recientes que todavía nadie ha comprobado.</p>
+          </div>
+          <Link to="/intel?seccion=observacion" className="btn btn-sm block-more">
+            Ver todo <Icon name="arrow_right" size={16} />
+          </Link>
+        </div>
+        <ul className="review-list">
+          {pending.map((f) => (
+            <li key={f.id} className="review-item" data-testid="review-item">
+              <Thumb f={f} />
+              <div className="review-body">
+                <p className="review-title">{f.title}</p>
+                <p className="small muted review-meta">
+                  <a href={f.sources[0].url} target="_blank" rel="noopener noreferrer nofollow">
+                    {f.sources[0].publisher}
+                  </a>{' '}
+                  · <time dateTime={findingDate(f).slice(0, 10)}>{day(findingDate(f))}</time>
+                </p>
+              </div>
+              <StatusBadge status={f.status} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section" aria-labelledby="chg-h">
+        <div className="block-head">
+          <span className="block-ico" aria-hidden="true">
+            <Icon name="news" size={26} />
+          </span>
+          <div>
+            <h2 id="chg-h" className="block-title">
+              Novedades de <span>LEONIDA ATLAS</span>
+            </h2>
+            <p className="block-sub">Cambios publicados en la guía.</p>
+          </div>
+        </div>
+        <ul className="release-list">
+          {changelog.slice(0, 3).map((c, n) => (
+            <li key={c.version}>
+              <Link to="/fuentes" className="release-card">
+                <Media id={IMAGES[n % IMAGES.length]} category="lugares" label={c.title} className="release-img" sizes="(min-width: 768px) 240px, 40vw" />
+                <span className="release-body">
+                  <span className="release-meta">
+                    <span className="chip chip-static chip-version">v{c.version}</span>
+                    <time dateTime={c.date}>{formatDate(c.date)}</time>
+                  </span>
+                  <span className="release-title">{c.title}</span>
+                </span>
+                <Icon name="arrow_right" size={20} className="release-go" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section aria-labelledby="flt-h" className="news-filters">
         <h2 id="flt-h" className="sr-only">
           Filtros
@@ -158,6 +342,7 @@ export function NewsPage() {
                   {items.map((f) => (
                     <li key={f.id} className={`tl-item tl-${f.status}`} data-testid="news-item">
                       <div className="tl-meta">
+                        <Thumb f={f} />
                         <StatusBadge status={f.status} />
                         {f.platforms.length > 0 && <span className="chip chip-static">{f.platforms.map((p) => PLATFORM_LABEL[p]).join(' · ')}</span>}
                       </div>
@@ -209,24 +394,6 @@ export function NewsPage() {
         </div>
       </section>
 
-      <section aria-labelledby="chg-h" className="section">
-        <h2 id="chg-h" className="section-title">
-          Cambios en la guía
-        </h2>
-        <ul className="news-list">
-          {changelog.slice(0, 3).map((c) => (
-            <li key={c.version}>
-              <strong>
-                <time dateTime={c.date}>{formatDate(c.date)}</time>
-              </strong>{' '}
-              — {c.title} <span className="muted small">(v{c.version})</span>
-            </li>
-          ))}
-        </ul>
-        <Link to="/fuentes" className="link-more">
-          Ver fuentes y registro completo →
-        </Link>
-      </section>
     </div>
   );
 }

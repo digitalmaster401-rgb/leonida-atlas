@@ -74,6 +74,8 @@ test.describe('Fase 4A · Explorar', () => {
     const errors = watchConsole(page);
     await page.goto('/');
     await expect(page.getByText(/Explorar · Guía independiente/)).toBeVisible();
+    // Versión real en la cabecera, enlazada al registro de cambios.
+    await expect(page.locator('.version-chip')).toHaveAttribute('href', '/fuentes');
     const cats = page.locator('.cat-grid-visual .cat-tile');
     await expect(cats).toHaveCount(8);
     await expect(cats.first()).toContainText(/\d+ fichas/);
@@ -85,10 +87,34 @@ test.describe('Fase 4A · Explorar', () => {
     await shot(page, info, '4a-01-explorar');
     await page.locator('.cat-grid-visual').scrollIntoViewIfNeeded();
     await shot(page, info, '4a-02-explorar-categorias');
+    await page.getByRole('navigation', { name: 'Accesos rápidos' }).scrollIntoViewIfNeeded();
+    await shot(page, info, '4a-05-explorar-accesos');
     await page.getByRole('searchbox', { name: 'Buscar', exact: true }).fill('stockyard');
     await page.getByRole('button', { name: 'Buscar', exact: true }).click();
     await expect(page).toHaveURL(/\/buscar\?q=stockyard/);
     await page.goto('/');
+    // Tarjeta editorial: una sola diapositiva visible; los puntos y las flechas cambian el destacado real.
+    const slides = page.getByTestId('feature-slide');
+    await expect(slides).toHaveCount(3);
+    await expect(slides.filter({ visible: true })).toHaveCount(1);
+    await page.getByRole('button', { name: /Ver destacado 3/ }).click();
+    await expect(slides.nth(2)).toBeVisible();
+    await expect(slides.nth(0)).toBeHidden();
+    await page.getByRole('button', { name: 'Destacado siguiente' }).click();
+    await expect(slides.nth(0)).toBeVisible();
+    // Cuatro accesos visuales con imagen oficial del manifiesto.
+    const quick = page.getByRole('navigation', { name: 'Accesos rápidos' }).getByRole('link');
+    await expect(quick).toHaveText(['Mapa', 'Vehículos', 'Mis rutas', 'Mi espacio']);
+    for (const img of await quick.locator('img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
+    await quick.filter({ hasText: 'Mis rutas' }).click();
+    await expect(page).toHaveURL('/mis-rutas');
+    await page.goBack();
+    await slides.nth(0).getByRole('link', { name: /Abrir el mapa/ }).click();
+    await expect(page).toHaveURL('/mapa');
+    await page.goBack();
+    // El botón de búsqueda de la barra ATLAS EXPLORER lleva el foco al buscador principal.
+    await page.getByRole('button', { name: 'Ir al buscador principal' }).click();
+    await expect(page.getByRole('searchbox', { name: 'Buscar', exact: true })).toBeFocused();
     await cats.filter({ hasText: 'Vehículos' }).click();
     await expect(page).toHaveURL('/vehiculos');
     await page.goBack();
@@ -113,6 +139,18 @@ test.describe('Fase 4A · Novedades', () => {
     await noHorizontalOverflow(page);
     expect(errors).toEqual([]);
     await shot(page, info, '4a-03-novedades');
+    // Fuentes consultadas: estado real (sin «monitoreo activo» ni canales inventados).
+    const channels = page.getByTestId('watch-channel');
+    await expect(channels).toHaveCount(4);
+    await expect(channels.filter({ hasText: 'Video' })).toContainText('Desactivado');
+    await expect(channels.filter({ hasText: 'Web y medios' })).toContainText(/\d+ de \d+ consultadas/);
+    await expect(page.getByText('Monitoreo activo')).toHaveCount(0);
+    await expect(page.getByTestId('review-item')).toHaveCount(3);
+    await expect(page.locator('.release-card').first()).toHaveAttribute('href', '/fuentes');
+    await page.locator('.watch').scrollIntoViewIfNeeded();
+    await shot(page, info, '4a-04-novedades-fuentes');
+    await page.locator('.review').scrollIntoViewIfNeeded();
+    await shot(page, info, '4a-06-novedades-revision');
 
     const total = await page.getByTestId('news-count').textContent();
     const group = page.getByRole('group', { name: 'Estado de verificación' });

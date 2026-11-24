@@ -12,10 +12,10 @@ export interface Tab {
 
 export const TABS: Tab[] = [
   { id: 'mapa', to: '/mapa', label: 'Mapa', icon: 'map' },
-  { id: 'explorar', to: '/', label: 'Explorar', icon: 'search' },
-  { id: 'dinero', to: '/dinero', label: 'Dinero', icon: 'cash' },
-  { id: 'mi-espacio', to: '/mi-espacio', label: 'Mi espacio', icon: 'star' },
-  { id: 'novedades', to: '/novedades', label: 'Novedades', icon: 'eye' },
+  { id: 'explorar', to: '/', label: 'Explorar', icon: 'compass' },
+  { id: 'dinero', to: '/dinero', label: 'Dinero', icon: 'coins' },
+  { id: 'mi-espacio', to: '/mi-espacio', label: 'Mi espacio', icon: 'user' },
+  { id: 'novedades', to: '/novedades', label: 'Novedades', icon: 'news' },
 ];
 
 const PREFIXES: [TabId, string[]][] = [
@@ -53,7 +53,7 @@ export const NAV_GROUPS: { tab: TabId; title: string; links: NavLinkDef[] }[] = 
     tab: 'explorar',
     title: 'Explorar',
     links: [
-      { to: '/', label: 'Explorar', icon: 'search', end: true },
+      { to: '/', label: 'Explorar', icon: 'compass', end: true },
       { to: '/lugares', label: 'Lugares', icon: 'pin' },
       { to: '/personajes', label: 'Personajes', icon: 'user' },
       { to: '/armas', label: 'Armas', icon: 'target' },
@@ -75,7 +75,7 @@ export const NAV_GROUPS: { tab: TabId; title: string; links: NavLinkDef[] }[] = 
     tab: 'novedades',
     title: 'Novedades',
     links: [
-      { to: '/novedades', label: 'Novedades', icon: 'eye' },
+      { to: '/novedades', label: 'Novedades', icon: 'news' },
       { to: '/intel', label: 'ATLAS Intelligence', icon: 'note' },
     ],
   },
