@@ -5,7 +5,7 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendiente **6** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 96
+Resumen: ✅ implementado y probado **58** · 🟡 parcial **33** · ⬜ pendiente **5** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 100
 
 
 ## A. Conservación y proceso
@@ -29,6 +29,7 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 | B1.6 | Ocultar completados y antiespoilers en mapa | ✅ implementado_testeado | MapPage + PinPanel (settings.hideFound, spoilerLevel) | e2e/fase2.spec.ts | «Ocultar encontrados» compartido con Coleccionables; el panel del punto vela nombres con spoilers |
 | B1.7 | Mis rutas / rutas temáticas sobre el mapa | ✅ implementado_testeado | /mis-rutas + /mapa?ruta= (src/lib/routes.ts) | tests/routes.test.ts + e2e/fase3.spec.ts | Rutas personales con paradas documentadas, orden, objetivos y visitados; líneas solo de orden, sin caminos ni distancias |
 | B1.8 | URL compartible por lugar (/mapa?id=) | ✅ implementado_testeado | MapPage | e2e mapa |  |
+| B1.4B-1 | Marcadores personales con nota privada y leyenda desplegable | ✅ implementado_testeado | MapView + MapSheet | e2e/fase4b.spec.ts | Posición elegida por la persona, nunca presentada como dato del juego |
 
 ## B2. Dinero
 
@@ -96,6 +97,9 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 | B10.5 | Sincronización multi-dispositivo con cuentas | ⛔ bloqueado | — | — | Requiere infraestructura autorizada (auth/BD) |
 | B10.6 | Compartir ficha sin exponer notas privadas | ✅ implementado_testeado | ShareAction | e2e compartir | Solo comparte URL |
 | B10.7 | Reporte de errores con moderación y antispam | 🟡 parcial | ReportError → GitHub Issues | e2e (enlace) | Moderación = revisión humana del issue; antispam lo aporta GitHub |
+| B10.4B-1 | Mi espacio premium: perfil editable, color de perfil, tarjetas con foto, anillos de progreso | ✅ implementado_testeado | MySpaceDashboard | e2e/fase4b.spec.ts | Cifras calculadas solo del progreso local; sin niveles, EXP ni km |
+| B10.4B-2 | Lugares visitados, objetivos personales, logros de Atlas y actividad reciente | ✅ implementado_testeado | progreso v5 + src/lib/mySpace.ts | tests/mySpace.test.ts + tests/storage.test.ts + e2e/fase4b.spec.ts | Actividad registrada desde v5 en el dispositivo |
+| B10.4B-3 | Esquema de progreso v5 con migración v1–v4, respaldo automático y copia de datos ilegibles | ✅ implementado_testeado | src/lib/storage.ts | tests/storage.test.ts + e2e/fase4b.spec.ts (v4→v5) | BACKUP_KEY al migrar; CORRUPT_KEY si no se puede leer; import/export y combinación incluyen v5 |
 
 ## B11. Motor editorial
 
@@ -161,18 +165,18 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-FUENTES-01 | Investigar GTABase web/blog/mapa, GTADB API/repo, Rockstar VI/Newswire | 🟡 parcial | intel/sources.json + docs/v4/AMPLIACION_V4.md | tests/intel/* | Rockstar VI vigilada; GTABase sin API pública autorizada (pedir permiso); GTADB documentada, sin comprobar en vivo |
-| V4-FUENTES-02 | Evaluar APIs, JSON, GeoJSON, tiles, licencias, autenticación, frecuencia y límites; permisos y colaboración | 🟡 parcial | docs/v4/AMPLIACION_V4.md | — | Licencias declaradas registradas (GTADB/FullSweep CC BY 4.0); endpoints sin comprobar |
+| V4-FUENTES-01 | Investigar GTABase web/blog/mapa, GTADB API/repo, Rockstar VI/Newswire | 🟡 parcial | docs/v4/INVESTIGACION_GTADB_FULLSWEEP.md | research/gtadb/test_contrato.py | GTADB y FullSweep probadas en vivo (CC BY 4.0); GTABase sin API ni licencia: permiso pendiente |
+| V4-FUENTES-02 | Evaluar APIs, JSON, GeoJSON, tiles, licencias, autenticación, frecuencia y límites; permisos y colaboración | ✅ implementado_testeado | docs/v4/INVESTIGACION_GTADB_FULLSWEEP.md | research/gtadb (8 pruebas, contrato con respuesta real) | Endpoints, conteos, licencias, límites y sistema de coordenadas documentados |
 | V4-FUENTES-03 | Investigar YouTube, Instagram, TikTok, X, Reddit y comunidades; traducir al español manteniendo nombres originales | ⛔ bloqueado | intel/sources.json | — | YouTube requiere clave de API como secreto; resto de redes requieren acceso aprobado (ver AI.17) |
 
 ## V4. Ampliación integral (mapa)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-MAPA-01 | Mapa completo autorizado de máxima resolución; zoom/pan táctil, pantalla completa, iconos, clustering | 🟡 parcial | MapView + póster oficial v2 | e2e/fase3.spec.ts | Zoom/pan táctil y agrupación existentes; pantalla completa e iconos 4B |
-| V4-MAPA-02 | Filtros individuales/grupales, mostrar/ocultar todo y encontrados, búsqueda ES y nombres originales | 🟡 parcial | MapPage + mapprefs | e2e/fase3.spec.ts | Capas por categoría/precisión persistentes; búsqueda en el mapa y nombres originales: 4B |
-| V4-MAPA-03 | Progreso por categoría, favoritos, marcadores propios, notas privadas, fotos, coordenadas con precisión, descripción e instrucciones de juego | 🟡 parcial | progreso local v4 + fotos IndexedDB | e2e/fase2.spec.ts | Favoritos, notas, fotos y registro existen; marcadores propios y progreso por categoría en el mapa: pendiente |
-| V4-MAPA-04 | Siguiente pendiente, rutas de recolección, perfiles por partida, sincronización, autoguardado, offline, compartir, reportar y sugerir | 🟡 parcial | /mis-rutas + PWA | e2e/fase3.spec.ts + offline.spec.ts | Rutas personales, autoguardado, offline y compartir existen; perfiles por partida y sincronización: fase 5 |
+| V4-MAPA-01 | Mapa completo autorizado de máxima resolución; zoom/pan táctil, pantalla completa, iconos, clustering | 🟡 parcial | MapPage inmersivo + MapView (póster oficial v2) | e2e/fase4b.spec.ts + fase3 | Fase 4B: pantalla inmersiva, controles flotantes, marcadores luminosos y agrupación; pantalla completa del navegador y tiles de mayor resolución pendientes |
+| V4-MAPA-02 | Filtros individuales/grupales, mostrar/ocultar todo y encontrados, búsqueda ES y nombres originales | ✅ implementado_testeado | MapPage (chips rápidos, filtros agrupados, capas, buscador) | e2e/fase4b.spec.ts | Filtros individuales y agrupados, mostrar todo, ocultar encontrados y búsqueda por nombre (nombres originales de las fichas) |
+| V4-MAPA-03 | Progreso por categoría, favoritos, marcadores propios, notas privadas, fotos, coordenadas con precisión, descripción e instrucciones de juego | 🟡 parcial | MapSheet + progreso v5 | e2e/fase4b.spec.ts + tests/storage.test.ts | Favoritos, encontrados, visitados, marcadores personales con nota privada y contadores reales por categoría; fotos personales siguen en la ficha |
+| V4-MAPA-04 | Siguiente pendiente, rutas de recolección, perfiles por partida, sincronización, autoguardado, offline, compartir, reportar y sugerir | 🟡 parcial | AddToRoute en el panel del mapa + /mis-rutas | e2e/fase3 + fase4b | Crear rutas desde el panel del mapa; perfiles por partida y sincronización: fase 5 |
 | V4-MAPA-05 | Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales | ⬜ pendiente | docs/v4/REQUISITOS_V4.json (mapTaxonomyCandidates) | — | Taxonomía candidata sin verificar; no se infieren totales |
 
 ## V4. Ampliación integral (vehiculos)
@@ -200,7 +204,7 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-LOGROS-01 | PS/Xbox y futuras plataformas; nombre, icono autorizado, descripción, rareza, requisitos, guía, ubicaciones, progreso y estado | ⬜ pendiente | — | — | Fase 4D; iconos solo autorizados |
-| V4-LOGROS-02 | Separar porcentaje oficial de finalización (reglas verificadas) del porcentaje de elementos registrados en Atlas | ⬜ pendiente | — | — | Fase 4D; el progreso de la portada ya es «elementos registrados en Atlas», no porcentaje oficial |
+| V4-LOGROS-02 | Separar porcentaje oficial de finalización (reglas verificadas) del porcentaje de elementos registrados en Atlas | ✅ implementado_testeado | src/lib/mySpace.ts + MySpaceDashboard | tests/mySpace.test.ts + e2e/fase4b.spec.ts | «Progreso registrado en Atlas» y «Logros de Atlas» rotulados como no oficiales; el porcentaje oficial queda para 4D |
 
 ## V4. Ampliación integral (ia)
 
@@ -222,7 +226,7 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-VISUAL-01 | Mantener referencias existentes, fotografías específicas de calidad y licencias; IA solo como recreación rotulada | 🟡 parcial | media-manifest + ASSETS_REQUIRED.json | e2e/fase4a.spec.ts | Solo imágenes oficiales o ilustración rotulada; faltan recursos listados |
-| V4-VISUAL-02 | Interfaz cinematográfica Vice City/Leonida, oscura, degradados, transparencia, tarjetas, tipografía, iconos, animaciones, gráficos, adaptable y rápida; no botones falsos | 🟡 parcial | Fase 4A/4A.2 | e2e/fase4a.spec.ts + axe | Explorar, Novedades y navegación; resto en 4B–4D |
+| V4-VISUAL-02 | Interfaz cinematográfica Vice City/Leonida, oscura, degradados, transparencia, tarjetas, tipografía, iconos, animaciones, gráficos, adaptable y rápida; no botones falsos | 🟡 parcial | Fases 4A, 4A.2 y 4B | e2e/fase4a + fase4b + axe | Explorar, Novedades, Mapa y Mi espacio con el sistema visual; Dinero y fichas pendientes |
 
 ## V4. Ampliación integral (admin)
 
@@ -242,4 +246,4 @@ Resumen: ✅ implementado y probado **51** · 🟡 parcial **35** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-GTADB-01 | Importador de GTADB solo a staging (sin producción, sin calibración, sin fotos) | ✅ implementado_testeado | research/gtadb/importar_gtadb.py | research/gtadb/test_importar_gtadb.py (npm run test:research, CI) | 6 pruebas sintéticas; sin --fetch hasta verificar licencia, esquema real y calibración |
+| V4-GTADB-01 | Importador de GTADB solo a staging (sin producción, sin calibración, sin fotos) | ✅ implementado_testeado | research/gtadb/importar_gtadb.py | research/gtadb/test_importar_gtadb.py + test_contrato.py (CI) | Ejecutado en vivo: 4380 recibidos, 4286 a staging, 94 rechazados; nada en producción; calibración pendiente (bloquea el uso en el mapa) |

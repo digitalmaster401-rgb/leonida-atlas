@@ -14,7 +14,7 @@ Guía de GTA VI (es-MX) · Vite + React + TS · PWA estática (Netlify). Propiet
 ## Dónde está cada cosa
 - Contenido: `content/*.json` (fuente de verdad; esquemas en `src/data/schema.ts` y `schema-fase2.ts`).
 - Lógica pura: `src/lib`. Componentes: `src/components`. Páginas: `src/pages` (las pesadas, con `lazy`).
-- Progreso local: `src/lib/storage.ts` (schemaVersion 4, migraciones v1→v4; sin Zod en el navegador). Fotos en IndexedDB (`src/lib/photos.ts`). Preferencias del mapa en `leonida-atlas:map-prefs`.
+- Progreso local: `src/lib/storage.ts` (schemaVersion 5, migraciones v1→v5 con respaldo en `progress-backup` y copia de datos ilegibles; sin Zod en el navegador). Fotos en IndexedDB (`src/lib/photos.ts`). Preferencias del mapa en `leonida-atlas:map-prefs`.
 - ATLAS INTELLIGENCE: `intel/` (datos) y `src/intel/` (motor). Ver la skill `investigacion` y `docs/ATLAS_INTELLIGENCE_QA.md`.
 - Requisitos: `docs/MATRIZ_FUNCIONAL.csv` → `python3 scripts/gen_matrix.py` (incluye la ampliación V4: `docs/v4/`).
 - Investigación cartográfica aislada: `research/gtadb/` (`npm run test:research`); nunca escribe en `content/` ni proyecta coordenadas sin calibración.

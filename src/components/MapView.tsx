@@ -20,6 +20,14 @@ export function posterOf(id: PosterId) {
 }
 
 /** Paradas de una ruta personal: se dibujan en orden con líneas rectas (no son caminos reales). */
+export interface MapMarker {
+  id: string;
+  x: number;
+  y: number;
+  name: string;
+  icon: string;
+}
+
 export interface RouteOverlay {
   name: string;
   stops: { x: number; y: number; label: string; visited: boolean }[];
@@ -67,6 +75,11 @@ export function MapView({
   cluster = true,
   route = null,
   onPosterError,
+  markers = [],
+  selectedMarker = null,
+  onMarkerSelect,
+  addMode = false,
+  onMapTap,
 }: {
   list: Entry[];
   selectedId: string | null;
@@ -75,6 +88,13 @@ export function MapView({
   cluster?: boolean;
   route?: RouteOverlay | null;
   onPosterError?: () => void;
+  /** Marcadores personales (posición elegida por la persona; nunca datos del juego). */
+  markers?: MapMarker[];
+  selectedMarker?: string | null;
+  onMarkerSelect?: (id: string | null) => void;
+  /** Con addMode, un toque sin arrastrar devuelve la posición normalizada (0–1) sobre el póster. */
+  addMode?: boolean;
+  onMapTap?: (x: number, y: number) => void;
 }) {
   const wrap = useRef<HTMLDivElement>(null);
   const [box, setBox] = useState({ w: 360, h: 480 });
@@ -155,12 +175,14 @@ export function MapView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [routeKey, base.w, base.h]);
 
-  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin, .map-cluster');
+  const isPin = (t: EventTarget | null) => !!(t as Element | null)?.closest?.('.map-pin, .map-cluster, .map-marker');
+  const tapStart = useRef<{ x: number; y: number; multi: boolean } | null>(null);
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (isPin(e.target)) return;
     (e.currentTarget as Element).setPointerCapture?.(e.pointerId);
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    tapStart.current = pointers.current.size === 1 ? { x: e.clientX, y: e.clientY, multi: false } : tapStart.current && { ...tapStart.current, multi: true };
     startGesture();
   };
   const startGesture = () => {
@@ -188,6 +210,14 @@ export function MapView({
     }
   };
   const onPointerUp = (e: React.PointerEvent) => {
+    const t = tapStart.current;
+    if (addMode && onMapTap && t && !t.multi && pointers.current.size === 1 && Math.hypot(e.clientX - t.x, e.clientY - t.y) < 8) {
+      const rect = wrap.current!.getBoundingClientRect();
+      const x = (e.clientX - rect.left - view.tx) / (base.w * view.s);
+      const y = (e.clientY - rect.top - view.ty) / (base.h * view.s);
+      if (x >= 0 && x <= 1 && y >= 0 && y <= 1) onMapTap(Math.round(x * 10000) / 10000, Math.round(y * 10000) / 10000);
+    }
+    if (pointers.current.size <= 1) tapStart.current = null;
     pointers.current.delete(e.pointerId);
     if (pointers.current.size > 0) startGesture();
     else gesture.current = null;
@@ -241,7 +271,7 @@ export function MapView({
     <div className="map-shell">
       <div
         ref={wrap}
-        className="map-viewport"
+        className={`map-viewport${addMode ? ' is-adding' : ''}`}
         tabIndex={0}
         role="application"
         aria-roledescription="mapa interactivo"
@@ -296,6 +326,20 @@ export function MapView({
             >
               {g.nums.join('·')}
             </span>
+          ))}
+          {markers.map((m) => (
+            <button
+              key={m.id}
+              type="button"
+              className={`map-marker${selectedMarker === m.id ? ' is-selected' : ''}`}
+              style={{ left: `${m.x * 100}%`, top: `${m.y * 100}%`, transform: `translate(-50%, -100%) scale(${Math.max(pinScale, 0.3 / view.s)})` }}
+              aria-label={`Marcador personal: ${m.name}`}
+              aria-pressed={selectedMarker === m.id}
+              onClick={() => onMarkerSelect?.(selectedMarker === m.id ? null : m.id)}
+              data-testid="map-marker"
+            >
+              <Icon name={m.icon} size={16} />
+            </button>
           ))}
           {clusters.map((c) => {
             if (c.items.length > 1) {

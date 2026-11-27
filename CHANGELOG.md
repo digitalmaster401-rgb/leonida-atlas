@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 1.5.0 — 2026-11-27 — Fase 4B: ATLAS EXPLORER (mapa inmersivo) y Mi espacio premium
+
+- **Mapa inmersivo** (referencia 03): pantalla completa con título, buscador por nombre, chips rápidos con contadores reales (encontrados o visitados / total ubicado), filtros agrupados, panel de capas flotante, leyenda desplegable, controles flotantes, marcadores luminosos y panel inferior deslizable (dos alturas, asa táctil y botón accesible) con foto oficial o ilustración, evidencia, precisión, favoritos, encontrado/visitado, «Ver ficha» y «Añadir a una ruta». Se conservan póster v2/v1, agrupación, ocultar encontrados, rutas en el mapa y la lista sin ubicación.
+- **Marcadores personales** con nombre, icono y nota privada (posición elegida por la persona; nunca presentada como dato del juego).
+- **Mi espacio** (referencia 02): portada con imagen oficial, perfil con color, tarjetas con foto (rutas, coleccionables, vehículos favoritos, lugares visitados), anillo «Progreso registrado en Atlas» (no oficial), estadísticas, logros de Atlas (no son trofeos oficiales), objetivos personales, actividad reciente y acceso a ATLAS Intelligence. Sin niveles, EXP ni distancias.
+- **Progreso v5:** visitados, marcadores, objetivos, actividad y color de perfil; migración desde v1–v4, respaldo automático antes de migrar y copia de datos ilegibles; exportar/importar y combinar incluyen v5.
+- **Investigación:** GTADB probada en vivo (4380 registros, 4286 a staging, 94 rechazados; CC BY 4.0; coordenadas del mundo en metros sin calibración al póster), FullSweep (75 ubicaciones, CC BY 4.0, píxeles de su propio mapa) y GTABase (sin API ni licencia). Nada se importó a producción. Prueba de contrato con un extracto real. `docs/v4/INVESTIGACION_GTADB_FULLSWEEP.md`.
+- Mapa y Mi espacio se cargan bajo demanda: paquete principal 289 kB (antes 428 kB). Se retiraron los `__pycache__` versionados y se ignoran en `.gitignore`.
+- Corrección: la panorámica de la cabecera de Explorar ya no se cancela al navegar rápido.
+
 ## 1.4.0 — 2026-11-24 — Fase 4A: experiencia visual premium (primera etapa)
 
 - **Navegación de 5 pestañas** (`src/lib/nav.ts`): Mapa · Explorar · Dinero · Mi espacio · Novedades en la barra inferior, con indicador de sección activa (`aria-current`) y objetivos táctiles ≥ 44 px. En escritorio, el menú lateral se agrupa por pestaña. Se retira el botón «Menú»: todas sus secciones están en «Todas las secciones» de Explorar.

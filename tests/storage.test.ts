@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { BACKUP_KEY, backupCurrent, emptyProgress, loadProgress, makeExport, mergeProgress, migrate, parseImport, restoreBackup, saveProgress, STORAGE_KEY } from '../src/lib/storage';
+import { BACKUP_KEY, backupCurrent, CORRUPT_KEY, emptyProgress, loadProgress, makeExport, mergeProgress, migrate, parseImport, restoreBackup, saveProgress, STORAGE_KEY } from '../src/lib/storage';
 
 const known = new Set(['din-moses', 'arm-duke-556']);
 
@@ -9,7 +9,7 @@ describe('almacenamiento del progreso', () => {
   it('devuelve progreso vacío sin datos o con datos corruptos', () => {
     expect(loadProgress().favorites).toEqual([]);
     localStorage.setItem(STORAGE_KEY, '{no json');
-    expect(loadProgress().schemaVersion).toBe(4);
+    expect(loadProgress().schemaVersion).toBe(5);
   });
 
   it('guarda y restaura', () => {
@@ -18,9 +18,9 @@ describe('almacenamiento del progreso', () => {
     expect(loadProgress().favorites).toEqual(['din-moses']);
   });
 
-  it('migra el esquema v1 a v4', () => {
+  it('migra el esquema v1 a la versión actual (v5)', () => {
     const m = migrate({ version: 1, favorites: ['a', 'a'], completed: [], notes: { a: 'hola', b: '  ' } });
-    expect(m?.schemaVersion).toBe(4);
+    expect(m?.schemaVersion).toBe(5);
     expect(m?.favorites).toEqual(['a']);
     expect(m?.notes.a.text).toBe('hola');
     expect(m?.notes.b).toBeUndefined();
@@ -60,10 +60,10 @@ describe('almacenamiento del progreso', () => {
     expect(restoreBackup()?.completed).toEqual(['arm-duke-556']);
   });
 
-  it('migra el esquema v2 a v4 sin perder datos', () => {
+  it('migra el esquema v2 a la versión actual sin perder datos', () => {
     const v2 = { schemaVersion: 2, favorites: ['a'], completed: ['b', 'b'], notes: { a: { text: 'x', updatedAt: '2026-11-20' } }, settings: { spoilerLevel: 2 }, updatedAt: '2026-11-20' };
     const m = migrate(v2)!;
-    expect(m.schemaVersion).toBe(4);
+    expect(m.schemaVersion).toBe(5);
     expect(m.completed).toEqual(['b']);
     expect(m.notes.a.text).toBe('x');
     expect(m.settings).toEqual({ spoilerLevel: 2, hideFound: false });
@@ -107,7 +107,7 @@ describe('almacenamiento del progreso', () => {
     expect(m.loadouts[0].name).toBe('B');
   });
 
-  it('migra v3 a v4 conservando fotos-ref, registros, contadores y equipamientos', () => {
+  it('migra v3 a la versión actual conservando fotos-ref, registros, contadores y equipamientos', () => {
     const v3 = {
       ...emptyProgress(),
       schemaVersion: 3,
@@ -118,7 +118,7 @@ describe('almacenamiento del progreso', () => {
     delete v3.routes;
     delete v3.garage;
     const m = migrate(v3)!;
-    expect(m.schemaVersion).toBe(4);
+    expect(m.schemaVersion).toBe(5);
     expect(m.records['col-orca'].rating).toBe(4);
     expect(m.counters['col-tarjetas']).toBe(12);
     expect(m.loadouts).toHaveLength(1);
@@ -145,5 +145,49 @@ describe('almacenamiento del progreso', () => {
     const m = mergeProgress({ ...emptyProgress(), routes: [r], garage: ['a'] }, { ...emptyProgress(), routes: [{ ...r, name: 'nueva', updatedAt: '2026-11-20' }], garage: ['b'] });
     expect(m.routes[0].name).toBe('nueva');
     expect(m.garage.sort()).toEqual(['a', 'b']);
+  });
+
+  it('v4 → v5: conserva todo y añade visitados, marcadores, objetivos, actividad y color de perfil', () => {
+    const v4 = { ...emptyProgress(), schemaVersion: 4, favorites: ['a'], routes: [{ id: 'r1', name: 'R', objective: '', stops: [{ entryId: 'a', note: '', visited: true }], updatedAt: '2026-11-20' }], garage: ['v'], profile: { name: 'Lu', avatar: 'ola', platform: 'ps5' } } as Record<string, unknown>;
+    delete v4.visited;
+    delete v4.markers;
+    delete v4.goals;
+    delete v4.activity;
+    const m = migrate(v4)!;
+    expect(m.schemaVersion).toBe(5);
+    expect(m.favorites).toEqual(['a']);
+    expect(m.routes[0].stops[0].visited).toBe(true);
+    expect(m.garage).toEqual(['v']);
+    expect(m.profile).toEqual({ name: 'Lu', avatar: 'ola', platform: 'ps5', accent: 'magenta' });
+    expect([m.visited, m.markers, m.goals, m.activity]).toEqual([[], [], [], []]);
+  });
+
+  it('v5: valida marcadores (coordenadas 0–1), objetivos y actividad; rechaza valores inventados', () => {
+    const ok = { ...emptyProgress(), visited: ['lug-vice-city'], markers: [{ id: 'mk-1', name: 'Mi spot', note: 'nota', x: 0.5, y: 0.25, icon: 'estrella', createdAt: 't', updatedAt: 't' }], goals: [{ id: 'g1', text: 'Ver todo', done: true, createdAt: 't', doneAt: 't' }], activity: [{ type: 'visitado', ref: 'lug-vice-city', at: 't' }] };
+    expect(migrate(ok)?.markers[0].x).toBe(0.5);
+    expect(migrate({ ...ok, markers: [{ ...ok.markers[0], x: 1.5 }] })).toBeNull();
+    expect(migrate({ ...ok, markers: [{ ...ok.markers[0], icon: 'nivel' }] })).toBeNull();
+    expect(migrate({ ...ok, activity: [{ type: 'experiencia', ref: 'x', at: 't' }] })).toBeNull();
+    expect(migrate({ ...ok, profile: { ...ok.profile, accent: 'oro' } })).toBeNull();
+    const res = parseImport(JSON.stringify(makeExport(ok as unknown as Parameters<typeof makeExport>[0])), new Set());
+    expect(res.ok && res.unknownIds).toEqual(['lug-vice-city']);
+  });
+
+  it('al cargar una versión anterior guarda un respaldo; si no se puede leer, conserva una copia', () => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 1, favorites: ['a'] }));
+    expect(loadProgress().favorites).toEqual(['a']);
+    expect(JSON.parse(localStorage.getItem(BACKUP_KEY)!).version).toBe(1);
+    localStorage.setItem(STORAGE_KEY, '{roto');
+    expect(loadProgress().favorites).toEqual([]);
+    expect(localStorage.getItem(CORRUPT_KEY)).toBe('{roto');
+  });
+
+  it('al combinar v5 une visitados y marcadores y ordena la actividad', () => {
+    const a = { ...emptyProgress(), visited: ['x'], activity: [{ type: 'visitado' as const, ref: 'x', at: '2026-11-20' }] };
+    const b = { ...emptyProgress(), visited: ['y'], markers: [{ id: 'm', name: 'M', note: '', x: 0.1, y: 0.1, icon: 'bandera' as const, createdAt: 't', updatedAt: 't' }], activity: [{ type: 'marcador' as const, ref: 'm', at: '2026-11-21' }] };
+    const m = mergeProgress(a, b);
+    expect(m.visited.sort()).toEqual(['x', 'y']);
+    expect(m.markers).toHaveLength(1);
+    expect(m.activity.map((e) => e.ref)).toEqual(['m', 'x']);
   });
 });

@@ -148,7 +148,7 @@ test.describe('Fase 3: mapa oficial v2, rutas, vehículos', () => {
     await expect(page.getByTestId('my-garage')).toContainText('$17,160');
   });
 
-  test('migración: un progreso v3 se convierte a v4 conservando todo', async ({ page }) => {
+  test('migración: un progreso v3 se convierte a la versión actual (v5) conservando todo', async ({ page }) => {
     await page.addInitScript(() => {
       if (sessionStorage.getItem('seeded3')) return;
       sessionStorage.setItem('seeded3', '1');
@@ -176,7 +176,7 @@ test.describe('Fase 3: mapa oficial v2, rutas, vehículos', () => {
     await expect(page.getByTestId('my-routes')).toContainText('Mis rutas (0)');
     await page.locator('#prof-name').fill('Lu2');
     const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('leonida-atlas:progress')!));
-    expect(saved.schemaVersion).toBe(4);
+    expect(saved.schemaVersion).toBe(5);
     expect(saved.loadouts[0].name).toBe('Asalto');
     expect(saved.records['col-orca'].rating).toBe(5);
     expect(saved.routes).toEqual([]);

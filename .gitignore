@@ -18,3 +18,7 @@ referencias-privadas/
 
 # Salidas del importador de investigación: nunca se versionan ni llegan a producción
 research/**/*staging*.json
+
+# Python: cachés y bytecode
+__pycache__/
+*.py[cod]

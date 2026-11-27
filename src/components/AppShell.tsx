@@ -53,6 +53,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   // Menú lateral accesible: foco al abrir, Escape para cerrar y foco de vuelta al botón.
   useEffect(() => {
     if (!drawer) return;
+    const trigger = menuBtn.current;
     closeBtn.current?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setDrawer(false);
@@ -60,7 +61,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     window.addEventListener('keydown', onKey);
     return () => {
       window.removeEventListener('keydown', onKey);
-      menuBtn.current?.focus({ preventScroll: true });
+      trigger?.focus({ preventScroll: true });
     };
   }, [drawer]);
 

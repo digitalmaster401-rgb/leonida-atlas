@@ -12,6 +12,9 @@ const widths = [360, 390, 430, 1440];
 const pages = [
   ['/', 'explorar'],
   ['/novedades', 'novedades'],
+  ['/mapa', 'mapa'],
+  ['/mapa?id=lug-ambrosia', 'mapa-panel'],
+  ['/mi-espacio', 'mi-espacio'],
 ];
 
 const browser = await chromium.launch();

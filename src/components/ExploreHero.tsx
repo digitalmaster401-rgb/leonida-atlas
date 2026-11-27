@@ -180,7 +180,7 @@ export function ProgressPanel() {
         <div className="neo-ring">
           <svg viewBox="0 0 80 80" width="96" height="96" aria-hidden="true" focusable="false">
             <circle cx="40" cy="40" r={r} fill="none" stroke="#232a41" strokeWidth="8" />
-            <circle cx="40" cy="40" r={r} fill="none" stroke="url(#ring-g)" strokeWidth="8" strokeLinecap="round" strokeDasharray={`${(s.collectiblesPct / 100) * c} ${c}`} transform="rotate(-90 40 40)" />
+            {s.collectiblesPct > 0 && <circle cx="40" cy="40" r={r} fill="none" stroke="url(#ring-g)" strokeWidth="8" strokeLinecap="round" strokeDasharray={`${(s.collectiblesPct / 100) * c} ${c}`} transform="rotate(-90 40 40)" />}
             <defs>
               <linearGradient id="ring-g" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stopColor="#ff3ea5" />

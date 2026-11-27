@@ -61,7 +61,7 @@ Lenguaje común: noche tropical cinematográfica, degradados magenta → azul, b
 | 04 Novedades | Bloques «Fuentes consultadas» (estado real de cada canal según `intel/sources.json` y la última corrida), «ATLAS Intelligence» (los 4 pasos reales del proceso), «Por verificar», «Novedades de LEONIDA ATLAS» (registro de cambios con imagen oficial) y línea de tiempo con miniaturas ilustradas. ATLAS WATCH se describe como propuesta, sin «Monitoreo activo». |
 | Navegación | Barra inferior flotante con pestaña activa iluminada (borde y halo magenta), iconos brújula, monedas, persona y periódico. |
 
-### Fase 4B — Mapa (referencia 03), plan
+### Fase 4B — Mapa (referencia 03): implementado en el PR #12 (ver docs/FASE4B_QA.md)
 - **Pantalla inmersiva en móvil:** el visor ocupa el alto disponible entre la cabecera y la barra inferior; buscador «Buscar en Leonida» arriba (filtra fichas con punto, `src/lib/search.ts`).
 - **Chips de capa** desplazables (Todo · Vehículos · Coleccionables · Rutas · Lugares…) conectados a las capas existentes de `mapprefs` (persisten).
 - **Botones flotantes** de 48 px a la derecha: capas, centrar, ruta activa, acercar y alejar (los controles actuales, restilizados).
@@ -69,7 +69,7 @@ Lenguaje común: noche tropical cinematográfica, degradados magenta → azul, b
 - **Hoja inferior** de 3 alturas con la ficha del punto: imagen oficial o ilustración rotulada, categoría, estado de evidencia, precisión declarada y acciones reales (abrir ficha, añadir a ruta, marcar encontrado). Arrastrable, con cierre por teclado y foco gestionado; varias fichas se recorren con puntos como en la referencia.
 - Base cartográfica: únicamente el póster oficial v2 ya incluido (`docs/MAPA_OFICIAL_V2.md`).
 
-### Fase 4B — Mi espacio (referencia 02), plan
+### Fase 4B — Mi espacio (referencia 02): implementado en el PR #12 (progreso v5 aprobado por el propietario)
 - **Cabecera personal** con panorámica oficial nocturna y avatar opcional elegido por la persona (foto local en IndexedDB, nunca subida). Nombre editable guardado en el progreso local **solo si se acepta ampliar el esquema** (subir `SCHEMA_VERSION` con migración); si no, se omite.
 - **Tarjetas con imagen** y cifras calculadas de datos reales: rutas guardadas, coleccionables encontrados / total (`content/collectibles`), vehículos en el garaje, fotos. **Progreso general** en anillo SVG = proporción real de encontrados.
 - **Sin** niveles, EXP, km recorridos, zonas visitadas, eventos, desafíos ni amigos: no existen datos para calcularlos. Si se muestran, como «Próximamente» y sin cifras.

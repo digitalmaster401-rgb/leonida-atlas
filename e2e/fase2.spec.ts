@@ -115,7 +115,7 @@ test.describe('Fase 2: trucos, coleccionables, consola, equipamiento y Mi espaci
     const fs = await import('node:fs');
     const text = fs.readFileSync((await download.path())!, 'utf8');
     const exported = JSON.parse(text);
-    expect(exported.data.schemaVersion).toBe(4);
+    expect(exported.data.schemaVersion).toBe(5);
     expect(exported.data.records['col-peche']).toMatchObject({ date: '2026-11-21', platform: 'ps5_pro', rating: 4 });
     expect(exported.photos).toHaveLength(1);
     expect(exported.photos[0].dataUrl).toMatch(/^data:image\/png;base64,/);
@@ -146,7 +146,7 @@ test.describe('Fase 2: trucos, coleccionables, consola, equipamiento y Mi espaci
     await expect(page.getByLabel(/Todos \(incluye etapas avanzadas\)/)).toBeChecked();
     await page.locator('#prof-name').fill('X');
     const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('leonida-atlas:progress')!));
-    expect(saved.schemaVersion).toBe(4);
+    expect(saved.schemaVersion).toBe(5);
     expect(saved.favorites).toEqual(['arm-duke-556']);
     expect(saved.settings).toEqual({ spoilerLevel: 2, hideFound: false });
     expect(errors).toEqual([]);

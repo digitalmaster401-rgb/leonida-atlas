@@ -13,9 +13,10 @@ import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
 import { formatDate, money } from '../lib/calc';
 import { routeProgress } from '../lib/routes';
-import { AVATARS, PLATFORM_LABEL, PLATFORMS, type Avatar, type Platform, type Progress } from '../lib/storage';
+import { AVATARS, PLATFORM_LABEL, PLATFORMS, type Platform, type Progress } from '../lib/storage';
 
-const AVATAR_LABEL: Record<Avatar, string> = { flamenco: 'Flamenco', palmera: 'Palmera', ola: 'Ola', sol: 'Sol', estrella: 'Estrella', rayo: 'Rayo' };
+import { AvatarBadge, AVATAR_LABEL } from '../components/Avatar';
+import { MySpaceDashboard } from '../components/MySpaceDashboard';
 type ListKey = 'encontrado' | 'pendiente' | 'revisar' | 'no_disponible';
 const LISTS: ListKey[] = ['encontrado', 'pendiente', 'revisar', 'no_disponible'];
 
@@ -31,13 +32,7 @@ export function personalLists(p: Progress, list: Entry[]): Record<ListKey, Entry
   return out;
 }
 
-export function AvatarBadge({ avatar, name, size = 56 }: { avatar: Avatar; name: string; size?: number }) {
-  return (
-    <span className={`avatar avatar-${avatar}${size > 40 ? ' avatar-lg' : ''}`} aria-hidden="true">
-      {(name.trim()[0] ?? AVATAR_LABEL[avatar][0]).toUpperCase()}
-    </span>
-  );
-}
+export { AvatarBadge };
 
 function Profile() {
   const { progress, setProfile } = useProgress();
@@ -123,17 +118,11 @@ export function MyGamePage() {
   const lists = personalLists(progress, entries);
   const today = progress.today.map((id) => entryById.get(id)).filter((e): e is Entry => !!e);
   const cols = entries.filter((e) => e.tracking);
-  const name = progress.profile.name.trim();
   const garage = progress.garage.map((id) => entryById.get(id)).filter((e): e is Entry => !!e);
   return (
     <div className="page">
       <Seo title="Mi espacio" description="Tu progreso, fotos, encontrados y pendientes, guardados solo en tu dispositivo." />
-      <header className="page-head">
-        <h1>
-          <Icon name="star" size={28} /> Mi espacio{name ? `: ${name}` : ''}
-        </h1>
-        <p className="lead">Tu progreso, fotos y listas. Todo se guarda solo en este dispositivo; vuelve otro día y lo encontrarás aquí.</p>
-      </header>
+      <MySpaceDashboard />
 
       <Profile />
 
