@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.7.0 — 2026-11-27 — Base de datos completa (primera integración real)
+
+- **GTA Atlas (CC BY-SA 4.0):** importador `research/atlasgta/importar_atlasgta.py` para los 12 conjuntos (1964 filas): 1845 publicados, 118 pendientes de verificar, 1 rechazado (sin fuentes), 0 duplicados reales (los 346 «duplicados» aparentes eran lugares distintos con el mismo nombre), 59 trucos y 60 registros más enlazados con fichas curadas. Solo hechos y fuentes; resúmenes propios en español; sin prosa, calificaciones de terceros ni imágenes; evidencia reclasificada; revisión incremental (lo nuevo o cambiado queda pendiente hasta aprobarlo).
+- **Enciclopedia** (`/enciclopedia`): 12 catálogos con búsqueda, filtros por tipo y evidencia, paginación, fichas con hechos, relaciones, fuentes, licencia y aviso de foto oficial pendiente; carga bajo demanda (paquete principal 242 kB); enlaces desde Vehículos, Armas, Personajes y Lugares.
+- **Cobertura:** `docs/v4/COBERTURA.md` y tabla en la Enciclopedia (qué tenemos y qué falta frente a los totales de las fuentes).
+- **Fuentes:** GTA Town no se integra (conflicto de licencias); GTADB pide usar su repositorio y no la API en vivo; sus mosaicos comparten sistema de coordenadas (pendiente de decisión del propietario). `docs/v4/FUENTES_DATOS_4D.md`.
+
 ## 1.6.0 — 2026-11-27 — Fase 4C: cartografía (investigación) y enciclopedia visual
 
 - **Calibración:** `src/lib/calibration.ts` (similaridad y afín por mínimos cuadrados, validación reservada y «dejando uno fuera», decisión por umbrales, rechazo fuera del póster); herramienta interna `/editor/calibracion` (roles de puntos, desviaciones sobre el póster, prueba de coordenadas, exportar JSON); versión guardada `research/calibracion/transformacion-v1.json`. Resultado real: 11 pares documentados, peor error independiente 262 px → solo precisión «zona». Nada se publica.

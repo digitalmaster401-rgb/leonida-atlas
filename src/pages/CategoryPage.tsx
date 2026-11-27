@@ -53,6 +53,11 @@ export function CategoryPage({ category }: { category: Category }) {
               <Icon name="layers" size={18} /> Constructor de equipamiento
             </Link>
           )}
+          {(category === 'vehiculos' || category === 'armas' || category === 'personajes' || category === 'lugares') && (
+            <Link to={`/enciclopedia/${category}`} className="btn btn-neon" data-testid="link-enciclopedia">
+              <Icon name="book" size={18} /> Catálogo completo
+            </Link>
+          )}
           <Link to={`/mapa`} className="btn btn-neon">
             <Icon name="map" size={18} /> Ver en el mapa
           </Link>

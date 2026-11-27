@@ -54,6 +54,7 @@ export const NAV_GROUPS: { tab: TabId; title: string; links: NavLinkDef[] }[] = 
     title: 'Explorar',
     links: [
       { to: '/', label: 'Explorar', icon: 'compass', end: true },
+      { to: '/enciclopedia', label: 'Enciclopedia', icon: 'book' },
       { to: '/lugares', label: 'Lugares', icon: 'pin' },
       { to: '/personajes', label: 'Personajes', icon: 'user' },
       { to: '/armas', label: 'Armas', icon: 'target' },

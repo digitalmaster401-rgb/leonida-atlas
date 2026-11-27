@@ -20,6 +20,9 @@ const pages = [
   ['/armas', 'armas'],
   ['/dinero', 'dinero'],
   ['/editor/calibracion', 'calibracion'],
+  ['/enciclopedia', 'enciclopedia'],
+  ['/enciclopedia/vehiculos', 'enciclopedia-vehiculos'],
+  ['/enciclopedia/armas/girardi-es9', 'enciclopedia-ficha'],
 ];
 
 const browser = await chromium.launch();

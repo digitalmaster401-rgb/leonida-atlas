@@ -21,3 +21,10 @@
 ## Obra propia de LEONIDA ATLAS
 
 Logotipo e isotipo (monograma «L» con rosa de los vientos), iconos de interfaz, portada SVG, imagen Open Graph, ilustraciones rotuladas «Ilustración editorial», diseño de la interfaz, código y redacción de las fichas.
+
+## Catálogo ampliado (`content/catalog/`) — GTA Atlas, CC BY-SA 4.0
+- Datos: **GTA Atlas (https://atlasgta.com), CC BY-SA 4.0** — https://creativecommons.org/licenses/by-sa/4.0/
+- Coordenadas y landmarks citados por GTA Atlas: **GTA VI Landmarks Data (CC BY 4.0), map.gtadb.org**.
+- Cambios realizados: se tomaron solo hechos (nombres, clases, fabricantes, precios, cargadores, adquisición, relaciones y fuentes); se redactaron resúmenes propios en español; se omitieron la prosa original, las calificaciones de terceros y todas las imágenes; se reclasificó la evidencia con las reglas de LEONIDA ATLAS.
+- **Licencia compartida:** los archivos de `content/catalog/` y las páginas de la Enciclopedia que los muestran se ofrecen bajo **CC BY-SA 4.0**. El resto del proyecto conserva su licencia.
+- GTA Town no se integró: su licencia para sitios (versión 1, 25-nov-2026) prohíbe incorporar sus datos a otras bases y exige una clave revocable.

@@ -5,7 +5,7 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendiente **5** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **5** · total 105
+Resumen: ✅ implementado y probado **65** · 🟡 parcial **37** · ⬜ pendiente **2** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **7** · total 111
 
 
 ## A. Conservación y proceso
@@ -177,13 +177,13 @@ Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendien
 | V4-MAPA-02 | Filtros individuales/grupales, mostrar/ocultar todo y encontrados, búsqueda ES y nombres originales | ✅ implementado_testeado | MapPage (chips rápidos, filtros agrupados, capas, buscador) | e2e/fase4b.spec.ts | Filtros individuales y agrupados, mostrar todo, ocultar encontrados y búsqueda por nombre (nombres originales de las fichas) |
 | V4-MAPA-03 | Progreso por categoría, favoritos, marcadores propios, notas privadas, fotos, coordenadas con precisión, descripción e instrucciones de juego | 🟡 parcial | MapSheet + progreso v5 | e2e/fase4b.spec.ts + tests/storage.test.ts | Favoritos, encontrados, visitados, marcadores personales con nota privada y contadores reales por categoría; fotos personales siguen en la ficha |
 | V4-MAPA-04 | Siguiente pendiente, rutas de recolección, perfiles por partida, sincronización, autoguardado, offline, compartir, reportar y sugerir | 🟡 parcial | AddToRoute en el panel del mapa + /mis-rutas | e2e/fase3 + fase4b | Crear rutas desde el panel del mapa; perfiles por partida y sincronización: fase 5 |
-| V4-MAPA-05 | Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales | ⬜ pendiente | docs/v4 (taxonomía candidata) + FullSweep 8 categorías | — | Taxonomía de FullSweep documentada; sin publicar hasta verificar |
+| V4-MAPA-05 | Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales | 🟡 parcial | content/catalog (12 entidades) + docs/v4/COBERTURA.md | tests/catalog.test.ts | Categorías documentadas por las fuentes integradas como catálogos; coleccionables individuales pendientes |
 
 ## V4. Ampliación integral (vehiculos)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-VEHICULOS-01 | Autos, motos, camionetas, todoterrenos, superdeportivos, clásicos, especiales, ocultos, únicos, emergencia, militares del juego, helicópteros, aviones, barcos, comerciales, variantes | 🟡 parcial | content (vehiculos) | tests/fase3 | Solo vehículos con fuente; categorías ampliadas pendientes de evidencia |
+| V4-VEHICULOS-01 | Autos, motos, camionetas, todoterrenos, superdeportivos, clásicos, especiales, ocultos, únicos, emergencia, militares del juego, helicópteros, aviones, barcos, comerciales, variantes | 🟡 parcial | content/catalog/vehicles.json + /enciclopedia/vehiculos | tests/catalog.test.ts + e2e/fase4c.spec.ts | 324 vehículos de GTA Atlas (clases, fabricantes, precios con evidencia); el juego registra 557: faltan variantes; 318 sin foto oficial |
 | V4-VEHICULOS-02 | Ficha: nombre original, fabricante, clase, modelo, inspiración real, galería exterior/interior, velocidad, aceleración, manejo, todoterreno, resistencia, tracción, plazas, precio, personalización, rareza, ubicación, desbloqueo, misiones, adquisición, guardado, variantes, fuentes, fecha | 🟡 parcial | DetailPage + StatBars + ItemCard | e2e/fase4c.spec.ts | Fabricante, clase, valores de registro/venta con evidencia y barras comparativas; galería oficial; velocidad/manejo sin fuente: no se muestran |
 | V4-VEHICULOS-03 | Comparador de dos o más, gráficos de estadísticas, botón de mapa con ubicación documentada | 🟡 parcial | /comparar-vehiculos + StatBars | e2e/fase3 + fase4c | Comparador, favoritos, garaje y botón de mapa; gráficos solo de valores con fuente |
 
@@ -191,19 +191,19 @@ Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-ARMAS-01 | Catálogo exclusivamente de GTA VI: fotos, nombres originales, fabricantes, clases, daño, precisión, alcance, cadencia, capacidad, compatibilidad, personalización, precio, ubicación, desbloqueo, variantes y comparación | 🟡 parcial | CatalogHero + /equipamiento | e2e/fase4c.spec.ts | Fichas fotográficas, filtros por tipo y constructor; estadísticas numéricas sin fuente verificable (se indica en la ficha) |
+| V4-ARMAS-01 | Catálogo exclusivamente de GTA VI: fotos, nombres originales, fabricantes, clases, daño, precisión, alcance, cadencia, capacidad, compatibilidad, personalización, precio, ubicación, desbloqueo, variantes y comparación | 🟡 parcial | content/catalog/weapons.json + /enciclopedia/armas | tests/catalog.test.ts + e2e/fase4c.spec.ts | 198 armas (clase, fabricante, precio, cargador, accesorios); calificaciones de terceros excluidas; 196 sin foto oficial |
 
 ## V4. Ampliación integral (misiones)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-MISIONES-01 | Historia, capítulos, secundarias, eventos y actividades; personajes, desbloqueo, recompensa, ubicación inicial, guías, fotos y vídeos, decisiones/consecuencias, seguimiento y protección de spoilers | ⬜ pendiente | — | — | Fase 4D |
+| V4-MISIONES-01 | Historia, capítulos, secundarias, eventos y actividades; personajes, desbloqueo, recompensa, ubicación inicial, guías, fotos y vídeos, decisiones/consecuencias, seguimiento y protección de spoilers | 🟡 parcial | content/catalog/missions.json | tests/catalog.test.ts | 88 misiones con capítulo y orden (reportado, PC Gamer); seguimiento y guías pendientes (4D) |
 
 ## V4. Ampliación integral (logros)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-LOGROS-01 | PS/Xbox y futuras plataformas; nombre, icono autorizado, descripción, rareza, requisitos, guía, ubicaciones, progreso y estado | ⬜ pendiente | — | — | Fase 4D; iconos solo autorizados |
+| V4-LOGROS-01 | PS/Xbox y futuras plataformas; nombre, icono autorizado, descripción, rareza, requisitos, guía, ubicaciones, progreso y estado | 🟡 parcial | content/catalog/trophies.json + completion.json | tests/catalog.test.ts | 55 trofeos y 35 líneas del 100 %; sin iconos (no autorizados); progreso pendiente (4D) |
 | V4-LOGROS-02 | Separar porcentaje oficial de finalización (reglas verificadas) del porcentaje de elementos registrados en Atlas | ✅ implementado_testeado | src/lib/mySpace.ts + MySpaceDashboard | tests/mySpace.test.ts + e2e/fase4b.spec.ts | «Progreso registrado en Atlas» y «Logros de Atlas» rotulados como no oficiales; el porcentaje oficial queda para 4D |
 
 ## V4. Ampliación integral (ia)
@@ -218,7 +218,7 @@ Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendien
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-ACTUALIZACION-01 | APIs, RSS, webhooks, repos, fuentes oficiales y comunidad autorizados; detectar vehículos, armas, ubicaciones, misiones, glitches, secretos, parches, mecánicas y correcciones | 🟡 parcial | ATLAS INTELLIGENCE (RSS + página oficial) | tests/intel/* | Fuentes autorizadas activas; webhooks y repos de comunidad pendientes |
+| V4-ACTUALIZACION-01 | APIs, RSS, webhooks, repos, fuentes oficiales y comunidad autorizados; detectar vehículos, armas, ubicaciones, misiones, glitches, secretos, parches, mecánicas y correcciones | 🟡 parcial | ATLAS INTELLIGENCE + importador incremental de GTA Atlas | tests/intel + research/atlasgta | Cambios de la fuente quedan «pendiente_revision» hasta aprobarlos |
 | V4-ACTUALIZACION-02 | Fuente, fechas, versión y estado por registro; glitches por plataforma y versión; revisión antes de publicar; revalidación al cambiar parche | ✅ implementado_testeado | intel/schema + status.ts | tests/intel/* | Fuente, fechas, versión y estado por plataforma; revalidación por parche; revisión humana |
 
 ## V4. Ampliación integral (visual)
@@ -233,7 +233,7 @@ Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-ADMIN-01 | Panel sin programación para crear/editar vehículos, armas, ubicaciones, imágenes, estadísticas, categorías, fuentes, guías, contenido IA, moderación y aprobación | ⬜ pendiente | /editor (validación local) | — | Fase 5 |
-| V4-ADMIN-02 | Importar CSV/JSON/GeoJSON, exportar, respaldo, duplicados, errores, pendientes | 🟡 parcial | export/import de progreso + /editor | tests/storage + e2e | Progreso local; importación de catálogo CSV/GeoJSON pendiente |
+| V4-ADMIN-02 | Importar CSV/JSON/GeoJSON, exportar, respaldo, duplicados, errores, pendientes | 🟡 parcial | research/atlasgta/importar_atlasgta.py | research/atlasgta/test_importar_atlasgta.py | Importación JSON con validación, duplicados, rechazos, pendientes y revisión incremental; panel sin código: fase 5 |
 
 ## V4. Ampliación integral (escalabilidad)
 
@@ -257,3 +257,14 @@ Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-CAT-01 | Catálogos con portada fotográfica, filtros por tipo, tarjetas premium y acceso al mapa (vehículos, armas, dinero y resto) | ✅ implementado_testeado | CatalogHero + CategoryPage + ItemCard | e2e/fase4c.spec.ts | Tipos derivados de los datos (clase del vehículo, etiqueta del arma) |
+
+## V4. Ampliación integral (datos)
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| V4-DB-01 | Importador funcional de GTA Atlas (12 conjuntos, CC BY-SA 4.0): esquemas, licencia, evidencia, duplicados, rechazos y pendientes | ✅ implementado_testeado | research/atlasgta/importar_atlasgta.py | research/atlasgta/test_importar_atlasgta.py + tests/catalog.test.ts | 1964 recibidos · 1845 publicados · 118 por verificar · 1 rechazado · 0 duplicados |
+| V4-DB-02 | Enciclopedia en la app: 12 catálogos con búsqueda, filtros por tipo y evidencia, fichas con hechos, relaciones, fuentes y licencia | ✅ implementado_testeado | src/pages/EncyclopediaPages.tsx + src/data/catalog.ts | e2e/fase4c.spec.ts | Carga bajo demanda por catálogo; crédito CC BY-SA en cada página |
+| V4-DB-03 | Informe de cobertura (tenemos / faltan) frente a totales de las fuentes | ✅ implementado_testeado | research/atlasgta/cobertura.py → docs/v4/COBERTURA.md + /enciclopedia | e2e/fase4c.spec.ts |  |
+| V4-DB-04 | Imágenes individuales autorizadas para cada ficha | ⛔ bloqueado | — | tests/catalog.test.ts (solo fotos oficiales) | 37 con foto oficial; 1808 pendientes: las imágenes de las fuentes son fotogramas de terceros o capturas sin licencia |
+| V4-DB-05 | GTA Town: integrar datos | ⛔ bloqueado | docs/v4/FUENTES_DATOS_4D.md | — | Licencia pública CC BY 4.0 vs licencia para sitios v1 (clave revocable, prohíbe incorporar a otras bases): pendiente de aclaración con GTA Town |
+| V4-DB-06 | Descripciones en español | 🟡 parcial | resúmenes propios desde los hechos | tests (sin prosa original) | Traducción de la prosa original no realizada para no copiar texto; resúmenes generados a partir de datos |

@@ -18,6 +18,9 @@ const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ defaul
 const MapPage = lazy(() => import('./pages/MapPage').then((m) => ({ default: m.MapPage })));
 const MyGamePage = lazy(() => import('./pages/MyGamePage').then((m) => ({ default: m.MyGamePage })));
 const CalibrationPage = lazy(() => import('./pages/CalibrationPage').then((m) => ({ default: m.CalibrationPage })));
+const EncyclopediaHub = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaHub })));
+const EncyclopediaList = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaList })));
+const EncyclopediaDetail = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaDetail })));
 const NewsPage = lazy(() => import('./pages/NewsPage').then((m) => ({ default: m.NewsPage })));
 const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
 const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
@@ -81,6 +84,9 @@ export function App() {
           }
         />
         <Route path="/editor/calibracion" element={lazyEl(<CalibrationPage />)} />
+        <Route path="/enciclopedia" element={lazyEl(<EncyclopediaHub />)} />
+        <Route path="/enciclopedia/:entidad" element={lazyEl(<EncyclopediaList />)} />
+        <Route path="/enciclopedia/:entidad/:slug" element={lazyEl(<EncyclopediaDetail />)} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
