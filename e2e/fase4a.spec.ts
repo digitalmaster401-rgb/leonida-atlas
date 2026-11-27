@@ -85,6 +85,8 @@ test.describe('Fase 4A · Explorar', () => {
     await expect(cards.first()).toContainText(/\d+ fichas/);
     for (const img of await cards.locator('img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
     // Novedades con fuente original; la imagen se rotula (ficha relacionada o ilustración).
+    // Las novedades se cargan cuando el bloque entra en pantalla.
+    await page.getByRole('heading', { name: /Últimas\s*novedades/i }).scrollIntoViewIfNeeded();
     await expect(page.getByTestId('news-photo')).toHaveCount(3);
     await expect(page.getByTestId('news-photo').first().locator('.neo-news-tag')).toHaveText(/Imagen de la ficha|Ilustración/);
     // Progreso calculado del almacenamiento local (vacío en un perfil nuevo).

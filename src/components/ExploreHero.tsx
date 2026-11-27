@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useIntelWhenVisible } from '../hooks/useIntelWhenVisible';
 import { Link, useNavigate } from 'react-router';
 import { entries, entriesBy, entryPath } from '../data';
 import { GAME_RELEASE, LAST_REVIEW } from '../data/meta';
 import { formatDate } from '../lib/calc';
 import { progressSummary } from '../lib/progressSummary';
 import { useProgress } from '../hooks/progress';
-import type { Finding } from '../intel/schema';
 import { Icon } from './Icon';
 import { Media } from './Media';
 import { InstallButton } from './PwaControls';
@@ -115,24 +115,14 @@ export function VisualCards() {
 
 /** Novedades con fotografía: se usa la imagen oficial de la ficha relacionada; si no hay, una miniatura ilustrada rotulada. */
 export function NewsPhotos() {
-  const [list, setList] = useState<Finding[] | null>(null);
-  useEffect(() => {
-    let alive = true;
-    import('../data/intel').then(({ findings }) => {
-      if (!alive) return;
-      setList(
-        findings
-          .filter((f) => f.classifier !== 'migracion')
-          .sort((a, b) => findingDate(b).localeCompare(findingDate(a)))
-          .slice(0, 3),
-      );
-    });
-    return () => {
-      alive = false;
-    };
-  }, []);
+  const { ref, list } = useIntelWhenVisible<HTMLElement>((findings) =>
+    findings
+      .filter((f) => f.classifier !== 'migracion')
+      .sort((a, b) => findingDate(b).localeCompare(findingDate(a)))
+      .slice(0, 3),
+  );
   return (
-    <section className="section" aria-labelledby="news-h">
+    <section className="section" aria-labelledby="news-h" ref={ref}>
       <SectionHead id="news-h" title="Últimas" accent="novedades" to="/novedades" />
       <ul className="neo-news" aria-busy={!list}>
         {(list ?? []).map((f) => {
