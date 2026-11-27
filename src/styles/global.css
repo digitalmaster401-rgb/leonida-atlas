@@ -5479,3 +5479,42 @@ a.ms-card:focus-visible {
   text-transform: uppercase;
   color: var(--cyan);
 }
+
+/* 4B · corrección (WebKit/iPhone 14): el mapa cabe entre la cabecera y la barra inferior, y el panel de capas
+   se abre a la izquierda de la columna de controles para no taparlos. */
+.map-stage {
+  height: calc(100svh - 220px - env(safe-area-inset-bottom));
+  min-height: 400px;
+}
+@media (min-width: 1024px) {
+  .map-stage {
+    height: calc(100vh - 120px);
+    min-height: 620px;
+  }
+}
+.map-stage .map-filters {
+  position: absolute;
+}
+.map-stage .map-filters-body {
+  position: absolute;
+  top: 0;
+  right: 58px;
+  margin-top: 0;
+  width: min(340px, calc(100vw - 96px));
+  max-height: min(440px, calc(100svh - 380px));
+  min-height: 160px;
+}
+@media (min-width: 1024px) {
+  .map-stage .map-filters-body {
+    max-height: min(480px, calc(100vh - 300px));
+  }
+}
+/* Zoom a la izquierda y herramientas a la derecha: en pantallas bajas (iPhone 14) ya no se encima ninguna. */
+.map-stage .map-controls {
+  left: 10px;
+  right: auto;
+  bottom: 16px;
+}
+.map-stage .map-filters-body {
+  width: min(340px, calc(100vw - 130px));
+}

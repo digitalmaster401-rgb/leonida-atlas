@@ -20,6 +20,8 @@ test.describe('Fase 4B · Mapa inmersivo', () => {
     await page.getByTestId('map-filters').locator('summary').click();
     await page.getByRole('group', { name: 'Filtros agrupados' }).getByRole('button').first().click();
     await expect(page.getByTestId('map-count')).not.toContainText(`${total} puntos visibles`);
+    // Con el panel de capas abierto, los controles flotantes siguen accesibles (no quedan tapados).
+    for (const name of ['Acercar', 'Alejar', 'Restablecer vista', 'Leyenda']) await page.getByRole('button', { name, exact: true }).click({ trial: true });
     await page.getByRole('button', { name: 'Mostrar todo' }).click();
     await page.getByTestId('map-filters').locator('summary').click();
     // Leyenda desplegable.
