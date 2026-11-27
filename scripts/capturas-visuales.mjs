@@ -15,6 +15,11 @@ const pages = [
   ['/mapa', 'mapa'],
   ['/mapa?id=lug-ambrosia', 'mapa-panel'],
   ['/mi-espacio', 'mi-espacio'],
+  ['/vehiculos', 'vehiculos'],
+  ['/vehiculos/grotti-cheetah-95', 'vehiculo-ficha'],
+  ['/armas', 'armas'],
+  ['/dinero', 'dinero'],
+  ['/editor/calibracion', 'calibracion'],
 ];
 
 const browser = await chromium.launch();

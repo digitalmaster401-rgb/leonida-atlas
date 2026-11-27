@@ -1,0 +1,407 @@
+{
+ "version": 1,
+ "fecha": "2026-11-27",
+ "origen": "gtadb6-world-m (x, y en metros del mundo del juego, estimación de la comunidad)",
+ "destino": "poster-v2-norm (x, y normalizados 0–1 sobre el póster oficial v2)",
+ "unidadesError": "píxeles del póster oficial v2 (5775 × 7900)",
+ "umbralMaxPx": 150,
+ "puntos": {
+  "total": 11,
+  "entrenamiento": [
+   "Bayside",
+   "Crosstown",
+   "Lake Leonida",
+   "Little Cuba",
+   "Port Gellhorn",
+   "Southside",
+   "Washington Beach",
+   "Watson Bay"
+  ],
+  "validacion": [
+   "Key Lento",
+   "Ocean Beach",
+   "Stockyard"
+  ],
+  "sinEquivalente": [
+   "Riquezas Keys",
+   "Permit Keys",
+   "Saint Attaway Islands",
+   "Pelican Valley",
+   "Oldby Island",
+   "Moreau"
+  ]
+ },
+ "modelos": [
+  {
+   "model": "similaridad",
+   "params": [
+    0.00005809004444517907,
+    0.0000032046594212747636,
+    0.7259504820762539,
+    0.0000032046594212747636,
+    -0.00005809004444517907,
+    0.5525545310025098
+   ],
+   "entrenamiento": {
+    "n": 8,
+    "media": 216,
+    "mediana": 236.5,
+    "p90": 330,
+    "max": 353.3,
+    "rmse": 233,
+    "residuos": [
+     {
+      "id": "Bayside",
+      "dx": -92.8,
+      "dy": 122.7,
+      "error": 153.9
+     },
+     {
+      "id": "Crosstown",
+      "dx": -38.7,
+      "dy": -143.8,
+      "error": 148.9
+     },
+     {
+      "id": "Lake Leonida",
+      "dx": 106.1,
+      "dy": -337,
+      "error": 353.3
+     },
+     {
+      "id": "Little Cuba",
+      "dx": -12,
+      "dy": 101.2,
+      "error": 101.9
+     },
+     {
+      "id": "Port Gellhorn",
+      "dx": 322.8,
+      "dy": 68.7,
+      "error": 330
+     },
+     {
+      "id": "Southside",
+      "dx": -9.4,
+      "dy": 141.3,
+      "error": 141.6
+     },
+     {
+      "id": "Washington Beach",
+      "dx": -194.7,
+      "dy": -175.2,
+      "error": 261.9
+     },
+     {
+      "id": "Watson Bay",
+      "dx": -81.3,
+      "dy": 222.1,
+      "error": 236.5
+     }
+    ]
+   },
+   "validacion": {
+    "n": 3,
+    "media": 273,
+    "mediana": 238.7,
+    "p90": 499.4,
+    "max": 499.4,
+    "rmse": 323,
+    "residuos": [
+     {
+      "id": "Key Lento",
+      "dx": -119.2,
+      "dy": 485,
+      "error": 499.4
+     },
+     {
+      "id": "Ocean Beach",
+      "dx": -107.8,
+      "dy": -213,
+      "error": 238.7
+     },
+     {
+      "id": "Stockyard",
+      "dx": -80.7,
+      "dy": 1.8,
+      "error": 80.8
+     }
+    ]
+   },
+   "dejandoUnoFuera": {
+    "n": 11,
+    "media": 262.6,
+    "mediana": 167.6,
+    "p90": 552,
+    "max": 594.4,
+    "rmse": 317.6,
+    "residuos": [
+     {
+      "id": "Ocean Beach",
+      "dx": -148.5,
+      "dy": -256.3,
+      "error": 296.2
+     },
+     {
+      "id": "Little Cuba",
+      "dx": 11.4,
+      "dy": 80,
+      "error": 80.8
+     },
+     {
+      "id": "Stockyard",
+      "dx": -72.3,
+      "dy": 6.7,
+      "error": 72.6
+     },
+     {
+      "id": "Washington Beach",
+      "dx": -248.2,
+      "dy": -187.5,
+      "error": 311.1
+     },
+     {
+      "id": "Watson Bay",
+      "dx": -22.2,
+      "dy": 160.9,
+      "error": 162.4
+     },
+     {
+      "id": "Lake Leonida",
+      "dx": 192.2,
+      "dy": -363.5,
+      "error": 411.2
+     },
+     {
+      "id": "Southside",
+      "dx": 16.4,
+      "dy": 84,
+      "error": 85.5
+     },
+     {
+      "id": "Key Lento",
+      "dx": -142.9,
+      "dy": 533.2,
+      "error": 552
+     },
+     {
+      "id": "Port Gellhorn",
+      "dx": 586.2,
+      "dy": 99,
+      "error": 594.4
+     },
+     {
+      "id": "Bayside",
+      "dx": -86.8,
+      "dy": 128.7,
+      "error": 155.2
+     },
+     {
+      "id": "Crosstown",
+      "dx": -21.8,
+      "dy": -166.2,
+      "error": 167.6
+     }
+    ]
+   },
+   "decision": {
+    "ok": false,
+    "reason": "Error máximo de validación 499.4 > umbral 150."
+   }
+  },
+  {
+   "model": "afin",
+   "params": [
+    0.00006672842126335874,
+    -0.000002395018911913803,
+    0.7477531797050948,
+    0.000005838206821305396,
+    -0.00005103560974483266,
+    0.5516691622689553
+   ],
+   "entrenamiento": {
+    "n": 8,
+    "media": 108.2,
+    "mediana": 101,
+    "p90": 128.8,
+    "max": 170.5,
+    "rmse": 112.4,
+    "residuos": [
+     {
+      "id": "Bayside",
+      "dx": -21.1,
+      "dy": 169.1,
+      "error": 170.5
+     },
+     {
+      "id": "Crosstown",
+      "dx": 13.6,
+      "dy": -94.9,
+      "error": 95.9
+     },
+     {
+      "id": "Lake Leonida",
+      "dx": -19.5,
+      "dy": -121.3,
+      "error": 122.9
+     },
+     {
+      "id": "Little Cuba",
+      "dx": 54.5,
+      "dy": 73,
+      "error": 91.1
+     },
+     {
+      "id": "Port Gellhorn",
+      "dx": 35.4,
+      "dy": 86.2,
+      "error": 93.2
+     },
+     {
+      "id": "Southside",
+      "dx": 99.6,
+      "dy": -16.6,
+      "error": 101
+     },
+     {
+      "id": "Washington Beach",
+      "dx": -60.2,
+      "dy": -17.1,
+      "error": 62.6
+     },
+     {
+      "id": "Watson Bay",
+      "dx": -102.1,
+      "dy": -78.4,
+      "error": 128.8
+     }
+    ]
+   },
+   "validacion": {
+    "n": 3,
+    "media": 113.2,
+    "mediana": 106.7,
+    "p90": 143.4,
+    "max": 143.4,
+    "rmse": 115.4,
+    "residuos": [
+     {
+      "id": "Key Lento",
+      "dx": 65.1,
+      "dy": 84.6,
+      "error": 106.7
+     },
+     {
+      "id": "Ocean Beach",
+      "dx": 80.7,
+      "dy": -118.5,
+      "error": 143.4
+     },
+     {
+      "id": "Stockyard",
+      "dx": -29.8,
+      "dy": 84.4,
+      "error": 89.5
+     }
+    ]
+   },
+   "dejandoUnoFuera": {
+    "n": 11,
+    "media": 150.2,
+    "mediana": 113.7,
+    "p90": 247.9,
+    "max": 261.8,
+    "rmse": 161.5,
+    "residuos": [
+     {
+      "id": "Ocean Beach",
+      "dx": 82.8,
+      "dy": -141.5,
+      "error": 163.9
+     },
+     {
+      "id": "Little Cuba",
+      "dx": 45.2,
+      "dy": 76.4,
+      "error": 88.8
+     },
+     {
+      "id": "Stockyard",
+      "dx": -43.4,
+      "dy": 105.1,
+      "error": 113.7
+     },
+     {
+      "id": "Washington Beach",
+      "dx": -100.3,
+      "dy": 5,
+      "error": 100.4
+     },
+     {
+      "id": "Watson Bay",
+      "dx": -184.3,
+      "dy": -185.9,
+      "error": 261.8
+     },
+     {
+      "id": "Lake Leonida",
+      "dx": -8.8,
+      "dy": -161.9,
+      "error": 162.2
+     },
+     {
+      "id": "Southside",
+      "dx": 91.6,
+      "dy": -38.5,
+      "error": 99.4
+     },
+     {
+      "id": "Key Lento",
+      "dx": 57.2,
+      "dy": 96.5,
+      "error": 112.2
+     },
+     {
+      "id": "Port Gellhorn",
+      "dx": 161.4,
+      "dy": 188.2,
+      "error": 247.9
+     },
+     {
+      "id": "Bayside",
+      "dx": -36.8,
+      "dy": 196.1,
+      "error": 199.6
+     },
+     {
+      "id": "Crosstown",
+      "dx": 4.6,
+      "dy": -102,
+      "error": 102.1
+     }
+    ]
+   },
+   "decision": {
+    "ok": true,
+    "reason": "Error máximo de validación 143.4 ≤ umbral 150."
+   }
+  }
+ ],
+ "elegido": "afin",
+ "peorErrorPx": 261.8,
+ "precisionMaximaPermitida": "zona",
+ "aceptada": true,
+ "motivo": "Peor error independiente 261.8 px (reservados y dejando uno fuera): válida como mucho para precisión «zona» (≤ 400 px). No sirve para precisión de barrio.",
+ "umbrales": [
+  {
+   "precision": "barrio",
+   "maxPx": 150
+  },
+  {
+   "precision": "zona",
+   "maxPx": 400
+  }
+ ],
+ "nota": "Los pares unen el rótulo del póster con el centroide de landmarks de GTADB del mismo barrio: ninguno es un punto exacto. La transformación solo propone candidatos para revisión humana; nunca publica.",
+ "atribucion": "GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org"
+}

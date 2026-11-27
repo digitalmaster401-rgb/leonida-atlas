@@ -22,3 +22,6 @@ research/**/*staging*.json
 # Python: cachés y bytecode
 __pycache__/
 *.py[cod]
+
+# Caché de investigación (respuestas de APIs externas)
+research/.cache/

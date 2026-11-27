@@ -5,7 +5,7 @@ Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Ane
 
 **Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.
 
-Resumen: ✅ implementado y probado **58** · 🟡 parcial **33** · ⬜ pendiente **5** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **4** · total 100
+Resumen: ✅ implementado y probado **62** · 🟡 parcial **33** · ⬜ pendiente **5** · ⛔ bloqueado (requiere cuenta/permiso/prueba física) **5** · total 105
 
 
 ## A. Conservación y proceso
@@ -177,21 +177,21 @@ Resumen: ✅ implementado y probado **58** · 🟡 parcial **33** · ⬜ pendien
 | V4-MAPA-02 | Filtros individuales/grupales, mostrar/ocultar todo y encontrados, búsqueda ES y nombres originales | ✅ implementado_testeado | MapPage (chips rápidos, filtros agrupados, capas, buscador) | e2e/fase4b.spec.ts | Filtros individuales y agrupados, mostrar todo, ocultar encontrados y búsqueda por nombre (nombres originales de las fichas) |
 | V4-MAPA-03 | Progreso por categoría, favoritos, marcadores propios, notas privadas, fotos, coordenadas con precisión, descripción e instrucciones de juego | 🟡 parcial | MapSheet + progreso v5 | e2e/fase4b.spec.ts + tests/storage.test.ts | Favoritos, encontrados, visitados, marcadores personales con nota privada y contadores reales por categoría; fotos personales siguen en la ficha |
 | V4-MAPA-04 | Siguiente pendiente, rutas de recolección, perfiles por partida, sincronización, autoguardado, offline, compartir, reportar y sugerir | 🟡 parcial | AddToRoute en el panel del mapa + /mis-rutas | e2e/fase3 + fase4b | Crear rutas desde el panel del mapa; perfiles por partida y sincronización: fase 5 |
-| V4-MAPA-05 | Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales | ⬜ pendiente | docs/v4/REQUISITOS_V4.json (mapTaxonomyCandidates) | — | Taxonomía candidata sin verificar; no se infieren totales |
+| V4-MAPA-05 | Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales | ⬜ pendiente | docs/v4 (taxonomía candidata) + FullSweep 8 categorías | — | Taxonomía de FullSweep documentada; sin publicar hasta verificar |
 
 ## V4. Ampliación integral (vehiculos)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-VEHICULOS-01 | Autos, motos, camionetas, todoterrenos, superdeportivos, clásicos, especiales, ocultos, únicos, emergencia, militares del juego, helicópteros, aviones, barcos, comerciales, variantes | 🟡 parcial | content (vehiculos) | tests/fase3 | Solo vehículos con fuente; categorías ampliadas pendientes de evidencia |
-| V4-VEHICULOS-02 | Ficha: nombre original, fabricante, clase, modelo, inspiración real, galería exterior/interior, velocidad, aceleración, manejo, todoterreno, resistencia, tracción, plazas, precio, personalización, rareza, ubicación, desbloqueo, misiones, adquisición, guardado, variantes, fuentes, fecha | 🟡 parcial | schema vehicle | tests/fase3 | Clase, registro, venta, rastreador y evidencia; estadísticas y galería interior sin fuente |
-| V4-VEHICULOS-03 | Comparador de dos o más, gráficos de estadísticas, botón de mapa con ubicación documentada | 🟡 parcial | /comparar-vehiculos | e2e/fase3.spec.ts | Comparador y botón de mapa existentes; gráficos de estadísticas pendientes (sin datos) |
+| V4-VEHICULOS-02 | Ficha: nombre original, fabricante, clase, modelo, inspiración real, galería exterior/interior, velocidad, aceleración, manejo, todoterreno, resistencia, tracción, plazas, precio, personalización, rareza, ubicación, desbloqueo, misiones, adquisición, guardado, variantes, fuentes, fecha | 🟡 parcial | DetailPage + StatBars + ItemCard | e2e/fase4c.spec.ts | Fabricante, clase, valores de registro/venta con evidencia y barras comparativas; galería oficial; velocidad/manejo sin fuente: no se muestran |
+| V4-VEHICULOS-03 | Comparador de dos o más, gráficos de estadísticas, botón de mapa con ubicación documentada | 🟡 parcial | /comparar-vehiculos + StatBars | e2e/fase3 + fase4c | Comparador, favoritos, garaje y botón de mapa; gráficos solo de valores con fuente |
 
 ## V4. Ampliación integral (armas)
 
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
-| V4-ARMAS-01 | Catálogo exclusivamente de GTA VI: fotos, nombres originales, fabricantes, clases, daño, precisión, alcance, cadencia, capacidad, compatibilidad, personalización, precio, ubicación, desbloqueo, variantes y comparación | 🟡 parcial | content (armas) + /equipamiento | e2e | Catálogo con fuentes; estadísticas numéricas sin fuente verificada |
+| V4-ARMAS-01 | Catálogo exclusivamente de GTA VI: fotos, nombres originales, fabricantes, clases, daño, precisión, alcance, cadencia, capacidad, compatibilidad, personalización, precio, ubicación, desbloqueo, variantes y comparación | 🟡 parcial | CatalogHero + /equipamiento | e2e/fase4c.spec.ts | Fichas fotográficas, filtros por tipo y constructor; estadísticas numéricas sin fuente verificable (se indica en la ficha) |
 
 ## V4. Ampliación integral (misiones)
 
@@ -226,7 +226,7 @@ Resumen: ✅ implementado y probado **58** · 🟡 parcial **33** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-VISUAL-01 | Mantener referencias existentes, fotografías específicas de calidad y licencias; IA solo como recreación rotulada | 🟡 parcial | media-manifest + ASSETS_REQUIRED.json | e2e/fase4a.spec.ts | Solo imágenes oficiales o ilustración rotulada; faltan recursos listados |
-| V4-VISUAL-02 | Interfaz cinematográfica Vice City/Leonida, oscura, degradados, transparencia, tarjetas, tipografía, iconos, animaciones, gráficos, adaptable y rápida; no botones falsos | 🟡 parcial | Fases 4A, 4A.2 y 4B | e2e/fase4a + fase4b + axe | Explorar, Novedades, Mapa y Mi espacio con el sistema visual; Dinero y fichas pendientes |
+| V4-VISUAL-02 | Interfaz cinematográfica Vice City/Leonida, oscura, degradados, transparencia, tarjetas, tipografía, iconos, animaciones, gráficos, adaptable y rápida; no botones falsos | 🟡 parcial | 4A, 4A.2, 4B, 4C | e2e/fase4a/4b/4c + axe | Explorar, Novedades, Mapa, Mi espacio y catálogos con el sistema visual |
 
 ## V4. Ampliación integral (admin)
 
@@ -247,3 +247,13 @@ Resumen: ✅ implementado y probado **58** · 🟡 parcial **33** · ⬜ pendien
 | ID | Requisito | Estado | Módulo | Prueba | Comentario |
 |---|---|---|---|---|---|
 | V4-GTADB-01 | Importador de GTADB solo a staging (sin producción, sin calibración, sin fotos) | ✅ implementado_testeado | research/gtadb/importar_gtadb.py | research/gtadb/test_importar_gtadb.py + test_contrato.py (CI) | Ejecutado en vivo: 4380 recibidos, 4286 a staging, 94 rechazados; nada en producción; calibración pendiente (bloquea el uso en el mapa) |
+| V4-CAL-01 | Herramienta interna de calibración: pares de control, modelos similaridad/afín, validación reservada y dejando uno fuera, desviaciones sobre el póster, exportar y versionar | ✅ implementado_testeado | src/lib/calibration.ts + /editor/calibracion + scripts/calibracion.ts | tests/calibration.test.ts + e2e/fase4c.spec.ts | Sin puntos inventados; rechaza fuera del póster |
+| V4-CAL-02 | Calibración GTADB → póster oficial con precisión suficiente para publicar | ⛔ bloqueado | research/calibracion/transformacion-v1.json | — | 11 pares (rótulos ↔ centroides): peor error independiente 262 px → solo «zona»; no basta para barrio. Faltan puntos puntuales verificables o cartografía autorizada |
+| V4-GTADB-02 | Piloto del detalle de GTADB con caché, límite y reintentos | ✅ implementado_testeado | research/gtadb/piloto_detalle.py + research/cliente_http.py | research/gtadb/test_piloto.py | 25 ids: 4 con nombre, 25 con dirección, 13 con tipo; sin descargar imágenes |
+| V4-FS-01 | Adaptador FullSweep independiente y verificación de independencia GTADB↔FullSweep | ✅ implementado_testeado | research/fullsweep/importar_fullsweep.py | research/fullsweep/test_importar_fullsweep.py | 75 ubicaciones a staging; landmarks = copia de GTADB (mediana 0,2 px): no suman como segunda fuente |
+
+## V4. Ampliación integral (vehiculos)
+
+| ID | Requisito | Estado | Módulo | Prueba | Comentario |
+|---|---|---|---|---|---|
+| V4-CAT-01 | Catálogos con portada fotográfica, filtros por tipo, tarjetas premium y acceso al mapa (vehículos, armas, dinero y resto) | ✅ implementado_testeado | CatalogHero + CategoryPage + ItemCard | e2e/fase4c.spec.ts | Tipos derivados de los datos (clase del vehículo, etiqueta del arma) |

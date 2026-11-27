@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.6.0 — 2026-11-27 — Fase 4C: cartografía (investigación) y enciclopedia visual
+
+- **Calibración:** `src/lib/calibration.ts` (similaridad y afín por mínimos cuadrados, validación reservada y «dejando uno fuera», decisión por umbrales, rechazo fuera del póster); herramienta interna `/editor/calibracion` (roles de puntos, desviaciones sobre el póster, prueba de coordenadas, exportar JSON); versión guardada `research/calibracion/transformacion-v1.json`. Resultado real: 11 pares documentados, peor error independiente 262 px → solo precisión «zona». Nada se publica.
+- **GTADB:** cliente de investigación con caché, 1 petición/1,2 s, reintentos limitados y tope por ejecución; piloto de 25 detalles (4 con nombre, 25 con dirección, 13 con tipo; imágenes no usadas).
+- **FullSweep:** adaptador independiente (75 ubicaciones a staging) y prueba de que sus landmarks son copia de GTADB (1523 correspondencias, mediana 0,2 px).
+- **Catálogos:** portada fotográfica con reparto de evidencia, filtros por tipo (clase de vehículo, etiqueta de arma), tarjetas premium con fabricante/clase, precio con su estado y acceso al mapa; fichas con «Valores del juego» (barras solo con datos con fuente) y aviso explícito de estadísticas sin fuente; Dinero con la misma portada.
+- Informe: `docs/v4/INFORME_CALIBRACION_4C.md`.
+
 ## 1.5.0 — 2026-11-27 — Fase 4B: ATLAS EXPLORER (mapa inmersivo) y Mi espacio premium
 
 - **Mapa inmersivo** (referencia 03): pantalla completa con título, buscador por nombre, chips rápidos con contadores reales (encontrados o visitados / total ubicado), filtros agrupados, panel de capas flotante, leyenda desplegable, controles flotantes, marcadores luminosos y panel inferior deslizable (dos alturas, asa táctil y botón accesible) con foto oficial o ilustración, evidencia, precisión, favoritos, encontrado/visitado, «Ver ficha» y «Añadir a una ruta». Se conservan póster v2/v1, agrupación, ocultar encontrados, rutas en el mapa y la lista sin ubicación.

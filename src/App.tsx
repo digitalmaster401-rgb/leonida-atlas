@@ -17,6 +17,7 @@ const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ defaul
 
 const MapPage = lazy(() => import('./pages/MapPage').then((m) => ({ default: m.MapPage })));
 const MyGamePage = lazy(() => import('./pages/MyGamePage').then((m) => ({ default: m.MyGamePage })));
+const CalibrationPage = lazy(() => import('./pages/CalibrationPage').then((m) => ({ default: m.CalibrationPage })));
 const NewsPage = lazy(() => import('./pages/NewsPage').then((m) => ({ default: m.NewsPage })));
 const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
 const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
@@ -79,6 +80,7 @@ export function App() {
             </Suspense>
           }
         />
+        <Route path="/editor/calibracion" element={lazyEl(<CalibrationPage />)} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

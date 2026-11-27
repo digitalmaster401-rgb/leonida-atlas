@@ -38,6 +38,7 @@ const pages = [
   { path: '/fuentes', title: `Fuentes y cambios · ${NAME}`, desc: 'Fuentes, criterios de evidencia y registro de cambios.' },
   { path: '/buscar', title: `Buscar · ${NAME}`, desc: DEFAULT_DESC },
   { path: '/legal', title: `Aviso legal y créditos · ${NAME}`, desc: 'Aviso legal, derechos de imágenes y privacidad.' },
+  { path: '/editor/calibracion', title: `Calibración cartográfica · ${NAME}`, desc: 'Herramienta interna de calibración.', noindex: true },
   { path: '/editor', title: `Herramientas del editor · ${NAME}`, desc: 'Validación local del contenido.', noindex: true },
   ...entries.map((e) => ({ path: `${CAT_PATH[e.category]}/${e.slug}`, title: `${e.name} · ${NAME}`, desc: e.summary })),
 ];

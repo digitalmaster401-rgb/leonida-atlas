@@ -13,6 +13,7 @@ import { MiniMap } from '../components/MapView';
 import { MyRecord } from '../components/MyRecord';
 import { AddToRoute } from '../components/AddToRoute';
 import { PhotoGallery } from '../components/PhotoGallery';
+import { StatBars } from '../components/StatBars';
 import { ReportError } from '../components/ReportError';
 import { Seo } from '../components/Seo';
 import { ShareAction } from '../components/ShareAction';
@@ -135,6 +136,7 @@ export function DetailPage({ category }: { category: Category }) {
               <h2>Descripción</h2>
               <p>{entry.description}</p>
             </section>
+            <StatBars entry={entry} />
             {entry.howTo.length > 0 && (
               <section className="panel">
                 <h2>{entry.category === 'rutas' ? 'Paso a paso' : entry.category === 'negocios' && entry.status === 'reportado' ? 'Detalle' : 'Cómo hacerlo'}</h2>
