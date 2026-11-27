@@ -1,0 +1,1118 @@
+{
+ "generado": "2026-11-27T20:54:57+00:00",
+ "pendientes": [
+  {
+   "id": "locations:parsons-hotel",
+   "nombre": "Parsons Hotel",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L42"
+   ]
+  },
+  {
+   "id": "locations:pegassi-residences-south-tower",
+   "nombre": "Pegassi Residences South Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L130"
+   ]
+  },
+  {
+   "id": "locations:pegassi-residences-north-tower",
+   "nombre": "Pegassi Residences North Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L131"
+   ]
+  },
+  {
+   "id": "locations:arrow-gas-station-belville",
+   "nombre": "Arrow Gas Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L165"
+   ]
+  },
+  {
+   "id": "locations:construction-site-vice-decor-district",
+   "nombre": "Construction Site",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L168"
+   ]
+  },
+  {
+   "id": "locations:park",
+   "nombre": "Park",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L174",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2989s",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=1235s"
+   ]
+  },
+  {
+   "id": "locations:the-celtica-hotel",
+   "nombre": "The Celtica Hotel",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L188"
+   ]
+  },
+  {
+   "id": "locations:gico-huxley-hotels",
+   "nombre": "Gico? Huxley Hotels",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L223"
+   ]
+  },
+  {
+   "id": "locations:vice-tower",
+   "nombre": "Vice Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L229"
+   ]
+  },
+  {
+   "id": "locations:stiltsville-bridge",
+   "nombre": "\"Stiltsville Bridge\"",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L255"
+   ]
+  },
+  {
+   "id": "locations:sunrise-rv-park",
+   "nombre": "Sunrise RV Park",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L265"
+   ]
+  },
+  {
+   "id": "locations:air-force-radar-station",
+   "nombre": "Air Force Radar Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L273"
+   ]
+  },
+  {
+   "id": "locations:starlet-motel-sign",
+   "nombre": "Starlet Motel Sign",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L307"
+   ]
+  },
+  {
+   "id": "locations:tank",
+   "nombre": "Tank",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L311",
+    "https://www.youtube.com/watch?v=ys_3h2nuNCY&t=2010s",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=1695s",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=7080s"
+   ]
+  },
+  {
+   "id": "locations:pegassi-residences-west-tower",
+   "nombre": "Pegassi Residences West Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L383"
+   ]
+  },
+  {
+   "id": "locations:tuckers-tower",
+   "nombre": "Tucker's Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L402"
+   ]
+  },
+  {
+   "id": "locations:leaf-links-golf-club",
+   "nombre": "Leaf Links Golf Club",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L431"
+   ]
+  },
+  {
+   "id": "locations:concert-hall",
+   "nombre": "Concert Hall",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L436"
+   ]
+  },
+  {
+   "id": "locations:presidential-bunker",
+   "nombre": "Presidential Bunker",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L445"
+   ]
+  },
+  {
+   "id": "locations:goliath",
+   "nombre": "Goliath",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L485"
+   ]
+  },
+  {
+   "id": "locations:house-d",
+   "nombre": "\"House D\"",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L506"
+   ]
+  },
+  {
+   "id": "locations:hoodwinks-bar",
+   "nombre": "Hoodwinks Bar",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L511"
+   ]
+  },
+  {
+   "id": "locations:refinery",
+   "nombre": "Refinery",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L535"
+   ]
+  },
+  {
+   "id": "locations:factory",
+   "nombre": "Factory",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L536"
+   ]
+  },
+  {
+   "id": "locations:xero-gas-station-crosstown",
+   "nombre": "Xero Gas Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L553"
+   ]
+  },
+  {
+   "id": "locations:ambrosia-raceway-park",
+   "nombre": "Ambrosia Raceway Park",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L590"
+   ]
+  },
+  {
+   "id": "locations:ambrosia-station",
+   "nombre": "Ambrosia Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L591"
+   ]
+  },
+  {
+   "id": "locations:train-bridge",
+   "nombre": "Train Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L597"
+   ]
+  },
+  {
+   "id": "locations:spaceship-house",
+   "nombre": "Spaceship House",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L631"
+   ]
+  },
+  {
+   "id": "locations:bridge-vice-dale-county",
+   "nombre": "Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L653"
+   ]
+  },
+  {
+   "id": "locations:construction-site-downtown",
+   "nombre": "Construction Site",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L685"
+   ]
+  },
+  {
+   "id": "locations:judiths",
+   "nombre": "Judith's",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L704"
+   ]
+  },
+  {
+   "id": "locations:metro-station-catalan-blvd",
+   "nombre": "Metro Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L746"
+   ]
+  },
+  {
+   "id": "locations:water-tower-port-gellhorn-l803",
+   "nombre": "Water Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L803"
+   ]
+  },
+  {
+   "id": "locations:soccer-field",
+   "nombre": "Soccer Field",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L805"
+   ]
+  },
+  {
+   "id": "locations:shoreline-park",
+   "nombre": "Shoreline Park",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L824"
+   ]
+  },
+  {
+   "id": "locations:domed-hills",
+   "nombre": "Domed Hills",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L844"
+   ]
+  },
+  {
+   "id": "locations:sculpture",
+   "nombre": "Sculpture",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L883"
+   ]
+  },
+  {
+   "id": "locations:water-tower-leonard-county",
+   "nombre": "Water Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L884"
+   ]
+  },
+  {
+   "id": "locations:bridge-ambrosia",
+   "nombre": "Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L886",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2146s",
+    "https://www.youtube.com/watch?v=jqkhD_E_WnA&t=656s",
+    "https://www.youtube.com/watch?v=rQLEb0W7REo&t=1988s",
+    "https://www.youtube.com/watch?v=ys_3h2nuNCY&t=2298s"
+   ]
+  },
+  {
+   "id": "locations:radio-tower-ambrosia",
+   "nombre": "Radio Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L888"
+   ]
+  },
+  {
+   "id": "locations:outdoor-movie-screen",
+   "nombre": "Outdoor Movie Screen",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L902"
+   ]
+  },
+  {
+   "id": "locations:train-bridge-leonida",
+   "nombre": "Train Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L905"
+   ]
+  },
+  {
+   "id": "locations:river",
+   "nombre": "River",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L906",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=4081s",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=4939s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2259s",
+    "https://www.youtube.com/watch?v=rQLEb0W7REo&t=2101s"
+   ]
+  },
+  {
+   "id": "locations:football-stadium",
+   "nombre": "Football Stadium",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L926"
+   ]
+  },
+  {
+   "id": "locations:masons-shrimp-shack",
+   "nombre": "Mason's Shrimp Shack",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L943"
+   ]
+  },
+  {
+   "id": "locations:macalister-gold-mine",
+   "nombre": "MacAlister Gold Mine",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L996"
+   ]
+  },
+  {
+   "id": "locations:wonder-whale-route-1",
+   "nombre": "Wonder Whale",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1039",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=3005s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=3710s"
+   ]
+  },
+  {
+   "id": "locations:underwater-ruins",
+   "nombre": "Underwater Ruins",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1063"
+   ]
+  },
+  {
+   "id": "locations:sugar-fields",
+   "nombre": "Sugar Fields",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1065"
+   ]
+  },
+  {
+   "id": "locations:flare",
+   "nombre": "Flare",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1103"
+   ]
+  },
+  {
+   "id": "locations:pawn-shop-port-gellhorn",
+   "nombre": "Pawn Shop",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1104",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=1336s"
+   ]
+  },
+  {
+   "id": "locations:pool",
+   "nombre": "Pool",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1159"
+   ]
+  },
+  {
+   "id": "locations:gas-station-mariana-county",
+   "nombre": "Gas Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1188",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=2785s",
+    "https://www.youtube.com/watch?v=jqkhD_E_WnA&t=972s"
+   ]
+  },
+  {
+   "id": "locations:water-tower-mariana-county",
+   "nombre": "Water Tower",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1203"
+   ]
+  },
+  {
+   "id": "locations:canal-leonard-county",
+   "nombre": "Canal",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1310"
+   ]
+  },
+  {
+   "id": "locations:bridge-vice-beach",
+   "nombre": "Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1312"
+   ]
+  },
+  {
+   "id": "locations:bridge-mariana-county-l1316",
+   "nombre": "Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1316"
+   ]
+  },
+  {
+   "id": "locations:boat-ramp",
+   "nombre": "Boat Ramp",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1328"
+   ]
+  },
+  {
+   "id": "locations:baseball-field",
+   "nombre": "Baseball Field",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1338"
+   ]
+  },
+  {
+   "id": "locations:river-kelly-county",
+   "nombre": "River",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1350",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=4081s",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=4939s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2259s",
+    "https://www.youtube.com/watch?v=rQLEb0W7REo&t=2101s",
+    "https://www.youtube.com/watch?v=ys_3h2nuNCY&t=2412s"
+   ]
+  },
+  {
+   "id": "locations:piano",
+   "nombre": "Piano",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1377"
+   ]
+  },
+  {
+   "id": "locations:airfield",
+   "nombre": "Airfield",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1391"
+   ]
+  },
+  {
+   "id": "locations:bridge-watson-bay",
+   "nombre": "Bridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1409"
+   ]
+  },
+  {
+   "id": "locations:parking-lot-port-gellhorn",
+   "nombre": "Parking Lot",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1432"
+   ]
+  },
+  {
+   "id": "locations:fake-tunnel-mural",
+   "nombre": "Fake Tunnel Mural",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1507"
+   ]
+  },
+  {
+   "id": "locations:airfield-lummox-county",
+   "nombre": "Airfield",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1560"
+   ]
+  },
+  {
+   "id": "locations:southpoint-airfield",
+   "nombre": "Southpoint Airfield",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1562"
+   ]
+  },
+  {
+   "id": "locations:airfield-leonard-county",
+   "nombre": "Airfield",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1565"
+   ]
+  },
+  {
+   "id": "locations:vice-city-casino-racetrack",
+   "nombre": "Vice City Casino Racetrack",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1604"
+   ]
+  },
+  {
+   "id": "locations:motorcycle-customs-shop",
+   "nombre": "Motorcycle Customs Shop",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1608"
+   ]
+  },
+  {
+   "id": "locations:orion-k",
+   "nombre": "Orion K",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1673"
+   ]
+  },
+  {
+   "id": "locations:park-el-joven-blvd",
+   "nombre": "Park",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1742",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2989s",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=1235s"
+   ]
+  },
+  {
+   "id": "locations:sandbars",
+   "nombre": "Sandbars",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1817"
+   ]
+  },
+  {
+   "id": "locations:dam",
+   "nombre": "Dam",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1831"
+   ]
+  },
+  {
+   "id": "locations:turn-2",
+   "nombre": "Turn 2",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1847"
+   ]
+  },
+  {
+   "id": "locations:train-station",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1878"
+   ]
+  },
+  {
+   "id": "locations:breakwater",
+   "nombre": "Breakwater",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1892"
+   ]
+  },
+  {
+   "id": "locations:train-station-waning-sands",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1915"
+   ]
+  },
+  {
+   "id": "locations:train-station-millport",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1916"
+   ]
+  },
+  {
+   "id": "locations:train-station-redhill",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1917"
+   ]
+  },
+  {
+   "id": "locations:bruiser-skate-shop",
+   "nombre": "Bruiser? Skate Shop",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1934"
+   ]
+  },
+  {
+   "id": "locations:port",
+   "nombre": "Port",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L1984",
+    "https://www.youtube.com/watch?v=FTGacY-ntXg&t=2555s",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=401s",
+    "https://www.youtube.com/watch?v=k1l1J2KQpWc&t=6170s",
+    "https://www.youtube.com/watch?v=rQLEb0W7REo&t=3625s",
+    "https://www.youtube.com/watch?v=WxPHmJccWB4&t=2705s",
+    "https://www.youtube.com/watch?v=ys_3h2nuNCY&t=1218s"
+   ]
+  },
+  {
+   "id": "locations:train-station-belville",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2028"
+   ]
+  },
+  {
+   "id": "locations:train-station-vice-dale-county",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2029"
+   ]
+  },
+  {
+   "id": "locations:parlor-wo13",
+   "nombre": "Parlor WO13",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2034"
+   ]
+  },
+  {
+   "id": "locations:train-station-lummox-county",
+   "nombre": "Train Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2104"
+   ]
+  },
+  {
+   "id": "locations:electric-substation",
+   "nombre": "Electric Substation",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2436"
+   ]
+  },
+  {
+   "id": "locations:gators-piano-bar",
+   "nombre": "Gator's Piano Bar",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2444"
+   ]
+  },
+  {
+   "id": "locations:lake-mariana-county",
+   "nombre": "Lake",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2487"
+   ]
+  },
+  {
+   "id": "locations:lake-tallaloko",
+   "nombre": "Lake Tallaloko",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2490"
+   ]
+  },
+  {
+   "id": "locations:bus-loop",
+   "nombre": "Bus Loop",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2495"
+   ]
+  },
+  {
+   "id": "locations:bus-station",
+   "nombre": "Bus Station",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2591"
+   ]
+  },
+  {
+   "id": "locations:overkeel",
+   "nombre": "Overkeel",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2598"
+   ]
+  },
+  {
+   "id": "locations:adelphila-jewelry",
+   "nombre": "Adelphila? Jewelry",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2599"
+   ]
+  },
+  {
+   "id": "locations:key-lento-sign",
+   "nombre": "Key Lento Sign",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2600"
+   ]
+  },
+  {
+   "id": "locations:hamlet-platinum-plaza",
+   "nombre": "Hamlet Platinum(?) Plaza",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2607"
+   ]
+  },
+  {
+   "id": "locations:binco",
+   "nombre": "Binco",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2609"
+   ]
+  },
+  {
+   "id": "locations:mio",
+   "nombre": "Mio",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2611"
+   ]
+  },
+  {
+   "id": "locations:fleeca-hamlet",
+   "nombre": "Fleeca",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2612"
+   ]
+  },
+  {
+   "id": "locations:cash",
+   "nombre": "Cash...",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2613",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=701s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=710s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2890s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=3067s"
+   ]
+  },
+  {
+   "id": "locations:paperclips",
+   "nombre": "Paperclips",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2615"
+   ]
+  },
+  {
+   "id": "locations:turn-6b",
+   "nombre": "Turn 6B",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2664"
+   ]
+  },
+  {
+   "id": "locations:turn",
+   "nombre": "Turn",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2677",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2305s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2325s"
+   ]
+  },
+  {
+   "id": "locations:turn-gellhorn-international-raceway",
+   "nombre": "Turn",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2699",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=860s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2305s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2325s"
+   ]
+  },
+  {
+   "id": "locations:turn-gellhorn-international-raceway-l2700",
+   "nombre": "Turn",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2700",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=860s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=1317s",
+    "https://www.youtube.com/watch?v=Cz8u5zljQ1s&t=2305s"
+   ]
+  },
+  {
+   "id": "locations:vice-city-hospital",
+   "nombre": "Vice City Hospital",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2760"
+   ]
+  },
+  {
+   "id": "locations:crude-islands",
+   "nombre": "Crude Islands",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2852"
+   ]
+  },
+  {
+   "id": "locations:footbridge-lummox-county",
+   "nombre": "Footbridge",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2937"
+   ]
+  },
+  {
+   "id": "locations:waterfall",
+   "nombre": "Waterfall",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2941"
+   ]
+  },
+  {
+   "id": "locations:lighthouse-lummox-county",
+   "nombre": "Lighthouse",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L2942"
+   ]
+  },
+  {
+   "id": "locations:lake-belville",
+   "nombre": "Lake",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L3103"
+   ]
+  },
+  {
+   "id": "locations:leonard-county-sheriffs-office",
+   "nombre": "Leonard County Sheriff's Office",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L3104"
+   ]
+  },
+  {
+   "id": "locations:hamlet-police-department",
+   "nombre": "Hamlet Police Department",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L3252"
+   ]
+  },
+  {
+   "id": "locations:peninsula",
+   "nombre": "Peninsula",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://map.gtadb.org/#VI,L3264"
+   ]
+  },
+  {
+   "id": "collectibles:meteorite-chunks",
+   "nombre": "Meteorite Chunks",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://vicecitydb.org/collectibles"
+   ]
+  },
+  {
+   "id": "collectibles:space-debris",
+   "nombre": "Space Debris",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://vicecitydb.org/collectibles"
+   ]
+  },
+  {
+   "id": "collectibles:gold-doubloons",
+   "nombre": "Gold Doubloons",
+   "estado": "pendiente",
+   "motivoPendiente": "sin_verificar_en_la_fuente",
+   "fuentes": [
+    "https://vicecitydb.org/collectibles"
+   ]
+  }
+ ],
+ "rechazados": [
+  {
+   "entidad": "locations",
+   "slug": "downtown",
+   "motivo": "sin_fuentes"
+  }
+ ],
+ "duplicados": []
+}

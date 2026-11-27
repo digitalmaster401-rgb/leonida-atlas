@@ -1,0 +1,50 @@
+{
+ "_fuente": "Extracto real de https://api.gtadb.org/landmarks?gta=6 (27-nov-2026). GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org",
+ "status": "OK",
+ "results": [
+  {
+   "id": "L1",
+   "ig_coordinates": [
+    1409.401,
+    2803.214
+   ],
+   "types": [
+    "hotel"
+   ]
+  },
+  {
+   "id": "L2",
+   "ig_coordinates": [
+    1491.645,
+    2633.302
+   ],
+   "types": [
+    "residential"
+   ]
+  },
+  {
+   "id": "L11",
+   "ig_coordinates": [
+    1979.455,
+    1926.542
+   ],
+   "types": []
+  },
+  {
+   "id": "L100",
+   "ig_coordinates": null,
+   "types": []
+  },
+  {
+   "id": "L91",
+   "ig_coordinates": [
+    -6350.934,
+    2735.628
+   ],
+   "types": [
+    "demolished",
+    "retail"
+   ]
+  }
+ ]
+}

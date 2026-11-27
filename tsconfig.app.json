@@ -20,5 +20,5 @@
     "noUncheckedSideEffectImports": true,
     "types": ["vite/client", "vite-plugin-pwa/react", "vite-plugin-pwa/info"]
   },
-  "include": ["src", "content"]
+  "include": ["src", "content", "research/calibracion/*.json"]
 }

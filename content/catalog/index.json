@@ -1,0 +1,210 @@
+{
+ "proveedor": "GTA Atlas",
+ "manifiesto": "https://atlasgta.com/data/index.json",
+ "importado": "2026-11-27T20:54:57+00:00",
+ "licencia": {
+  "nombre": "CC BY-SA 4.0",
+  "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "atribucion": "GTA Atlas (https://atlasgta.com), CC BY-SA 4.0",
+  "obligaciones": "Atribución en cada página del catálogo y misma licencia (CC BY-SA 4.0) para este catálogo derivado."
+ },
+ "creditosRequeridos": [
+  "GTA Atlas (https://atlasgta.com), CC BY-SA 4.0",
+  "GTA VI Map Tiles (CC BY 4.0), map.gtadb.org",
+  "GTA VI Landmarks Data (CC BY 4.0), map.gtadb.org"
+ ],
+ "resumen": {
+  "vehicles": {
+   "recibidos": 324,
+   "publicados": 324,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 14,
+   "conFoto": 6,
+   "sinFoto": 318,
+   "porEvidencia": {
+    "oficial": 7,
+    "reportado": 140,
+    "contrastado": 177
+   }
+  },
+  "weapons": {
+   "recibidos": 198,
+   "publicados": 198,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 10,
+   "conFoto": 2,
+   "sinFoto": 196,
+   "porEvidencia": {
+    "oficial": 3,
+    "reportado": 10,
+    "contrastado": 185
+   }
+  },
+  "properties": {
+   "recibidos": 19,
+   "publicados": 19,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 1,
+   "conFoto": 1,
+   "sinFoto": 18,
+   "porEvidencia": {
+    "contrastado": 12,
+    "oficial": 1,
+    "reportado": 6
+   }
+  },
+  "locations": {
+   "recibidos": 1005,
+   "publicados": 889,
+   "pendientesVerificar": 115,
+   "pendientesRevision": 0,
+   "rechazados": 1,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 19,
+   "conFoto": 13,
+   "sinFoto": 876,
+   "porEvidencia": {
+    "oficial": 30,
+    "reportado": 859
+   }
+  },
+  "collectibles": {
+   "recibidos": 39,
+   "publicados": 36,
+   "pendientesVerificar": 3,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 0,
+   "conFoto": 0,
+   "sinFoto": 36,
+   "porEvidencia": {
+    "contrastado": 29,
+    "reportado": 7
+   }
+  },
+  "missions": {
+   "recibidos": 88,
+   "publicados": 88,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 1,
+   "conFoto": 0,
+   "sinFoto": 88,
+   "porEvidencia": {
+    "reportado": 88
+   }
+  },
+  "trophies": {
+   "recibidos": 55,
+   "publicados": 55,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 0,
+   "conFoto": 0,
+   "sinFoto": 55,
+   "porEvidencia": {
+    "reportado": 53,
+    "contrastado": 2
+   }
+  },
+  "completion": {
+   "recibidos": 35,
+   "publicados": 35,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 0,
+   "conFoto": 0,
+   "sinFoto": 35,
+   "porEvidencia": {
+    "contrastado": 35
+   }
+  },
+  "cheats": {
+   "recibidos": 61,
+   "publicados": 61,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 59,
+   "conFoto": 0,
+   "sinFoto": 61,
+   "porEvidencia": {
+    "reportado": 61
+   }
+  },
+  "characters": {
+   "recibidos": 46,
+   "publicados": 46,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 8,
+   "conFoto": 8,
+   "sinFoto": 38,
+   "porEvidencia": {
+    "oficial": 10,
+    "contrastado": 22,
+    "reportado": 14
+   }
+  },
+  "animals": {
+   "recibidos": 57,
+   "publicados": 57,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 0,
+   "conFoto": 0,
+   "sinFoto": 57,
+   "porEvidencia": {
+    "contrastado": 45,
+    "reportado": 12
+   }
+  },
+  "interiors": {
+   "recibidos": 37,
+   "publicados": 37,
+   "pendientesVerificar": 0,
+   "pendientesRevision": 0,
+   "rechazados": 0,
+   "duplicados": 0,
+   "enlazadosConFichaCurada": 7,
+   "conFoto": 7,
+   "sinFoto": 30,
+   "porEvidencia": {
+    "reportado": 26,
+    "contrastado": 2,
+    "oficial": 9
+   }
+  }
+ },
+ "totales": {
+  "recibidos": 1964,
+  "publicados": 1845,
+  "pendientesVerificar": 118,
+  "pendientesRevision": 0,
+  "rechazados": 1,
+  "duplicados": 0,
+  "conFoto": 37,
+  "sinFoto": 1808
+ }
+}

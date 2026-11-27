@@ -1,0 +1,68 @@
+{
+ "version": 1,
+ "fecha": "2026-11-27",
+ "origen": "gtadb6-world-m",
+ "destino": "fullsweep-basemap-px-3344x4820",
+ "unidadesError": "píxeles del mapa base de FullSweep",
+ "pares": 1532,
+ "incoherentes": {
+  "umbralPx": 50,
+  "n": 9,
+  "ids": [
+   "L285",
+   "L510",
+   "L827",
+   "L1348",
+   "L1553",
+   "L3261",
+   "L3262",
+   "L3263",
+   "L3265"
+  ]
+ },
+ "paresUsados": 1523,
+ "modelos": [
+  {
+   "model": "similaridad",
+   "params": [
+    0.2500285716195164,
+    0.000019481915502980597,
+    2589.1612093366552,
+    0.000019481915502980597,
+    -0.2500285716195164,
+    2890.061641710037
+   ],
+   "entrenamiento": 1219,
+   "validacion": {
+    "n": 304,
+    "media": 1.16,
+    "mediana": 0.21,
+    "p90": 1.7,
+    "max": 48.58,
+    "rmse": 4.31
+   }
+  },
+  {
+   "model": "afin",
+   "params": [
+    0.2500097580366944,
+    0.0000021904197646381787,
+    2589.147917752515,
+    0.0000374698199221327,
+    -0.25004631909635583,
+    2890.0965764358284
+   ],
+   "entrenamiento": 1219,
+   "validacion": {
+    "n": 304,
+    "media": 1.18,
+    "mediana": 0.2,
+    "p90": 1.72,
+    "max": 48.47,
+    "rmse": 4.31
+   }
+  }
+ ],
+ "conclusion": "FullSweep deriva sus landmarks de GTADB con una transformación casi exacta: las dos fuentes NO son independientes para posiciones de landmarks. Sus 75 ubicaciones propias sí son un aporte distinto, pero requieren calibrar FullSweep → póster con los mismos puntos de control.",
+ "atribucion": "GTA VI Landmarks Data (CC BY 4.0) — https://map.gtadb.org; FullSweep data CC BY 4.0, https://fullsweepmap.com"
+}

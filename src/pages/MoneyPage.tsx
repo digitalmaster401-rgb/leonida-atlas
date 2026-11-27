@@ -6,7 +6,7 @@ import { CardGrid } from '../components/ItemCard';
 import { EmptyState } from '../components/EmptyState';
 import { MoneyCalculator } from '../components/MoneyCalculator';
 import { Seo } from '../components/Seo';
-import { Icon } from '../components/Icon';
+import { CatalogHero } from '../components/CatalogHero';
 
 const TABS = [
   { id: 'historia', label: 'Modo historia' },
@@ -27,15 +27,18 @@ export function MoneyPage() {
   return (
     <div className="page">
       <Seo title="Dinero y glitches" description="Métodos para ganar dinero en GTA VI separados por modo, con pago, requisitos, riesgos y nivel de evidencia. Calculadora incluida." />
-      <header className="page-head">
-        <h1>
-          <Icon name="cash" size={28} /> Dinero y glitches
-        </h1>
-        <p className="lead">
-          Separamos modo historia, modo online y glitches. Las cifras son las publicadas por las fuentes (valor del botín o pago); no prometemos dinero infinito ni publicamos trucos que
-          vulneren servicios en línea.
-        </p>
-      </header>
+      <CatalogHero
+        category="dinero"
+        title="Dinero y glitches"
+        icon="coins"
+        list={entriesBy('dinero')}
+        intro={
+          <p>
+            Separamos modo historia, modo online y glitches. Las cifras son las publicadas por las fuentes (valor del botín o pago); no prometemos dinero infinito ni publicamos trucos que
+            vulneren servicios en línea.
+          </p>
+        }
+      />
       <div className="tabs" role="tablist" aria-label="Modo de juego">
         {TABS.map((t) => (
           <button key={t.id} type="button" role="tab" id={`tab-${t.id}`} aria-selected={tab === t.id} aria-controls={`panel-${t.id}`} className="tab" onClick={() => setTab(t.id)}>

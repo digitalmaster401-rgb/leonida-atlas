@@ -141,9 +141,15 @@ export async function listPhotos(entryId?: string): Promise<Photo[]> {
   return all.map(toPhoto).sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
 }
 
+/** Lee y escribe en UNA sola transacción: antes eran dos y una recarga entre ambas perdía la descripción. */
 export async function updateCaption(id: string, caption: string): Promise<void> {
-  const rec = await tx<StoredPhoto>('readonly', (s) => s.get(id));
-  if (rec) await tx('readwrite', (s) => s.put({ ...rec, caption: caption.slice(0, 200) }));
+  await tx<StoredPhoto>('readwrite', (s) => {
+    const req = s.get(id) as IDBRequest<StoredPhoto>;
+    req.onsuccess = () => {
+      if (req.result) s.put({ ...req.result, caption: caption.slice(0, 200) });
+    };
+    return req;
+  });
 }
 
 export async function deletePhoto(id: string): Promise<void> {

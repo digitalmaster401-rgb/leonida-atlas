@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { useState } from 'react';
 import { baseEntries, entries, mediaById, OVERRIDE_KEY, sources, usingOverride } from '../data';
 import { validateDataset } from '../data/schema';
@@ -32,6 +33,11 @@ export function EditorPage() {
         <p className="lead">
           Para el dueño de la guía. Valida un archivo de fichas contra el esquema (campos obligatorios, fuentes existentes, «contrastado» con dos fuentes, imágenes del manifiesto) y
           previsualízalo en este dispositivo. Para publicar cambios, reemplaza <code>content/entries.json</code> en el repositorio y vuelve a desplegar.
+        </p>
+        <p>
+          <Link to="/editor/calibracion" className="btn btn-sm">
+            Calibración cartográfica (interna)
+          </Link>
         </p>
       </header>
       <section className="panel">

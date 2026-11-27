@@ -5,9 +5,7 @@ import { Home } from './pages/Home';
 import { CategoryPage } from './pages/CategoryPage';
 import { MoneyPage } from './pages/MoneyPage';
 import { DetailPage } from './pages/DetailPage';
-import { MapPage } from './pages/MapPage';
 import { SearchPage } from './pages/SearchPage';
-import { MyGamePage } from './pages/MyGamePage';
 import { SourcesPage } from './pages/SourcesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { LegalPage } from './pages/LegalPage';
@@ -17,6 +15,13 @@ import type { Category } from './data/schema';
 
 const EditorPage = lazy(() => import('./pages/EditorPage').then((m) => ({ default: m.EditorPage })));
 
+const MapPage = lazy(() => import('./pages/MapPage').then((m) => ({ default: m.MapPage })));
+const MyGamePage = lazy(() => import('./pages/MyGamePage').then((m) => ({ default: m.MyGamePage })));
+const CalibrationPage = lazy(() => import('./pages/CalibrationPage').then((m) => ({ default: m.CalibrationPage })));
+const EncyclopediaHub = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaHub })));
+const EncyclopediaList = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaList })));
+const EncyclopediaDetail = lazy(() => import('./pages/EncyclopediaPages').then((m) => ({ default: m.EncyclopediaDetail })));
+const NewsPage = lazy(() => import('./pages/NewsPage').then((m) => ({ default: m.NewsPage })));
 const IntelPage = lazy(() => import('./pages/IntelPage').then((m) => ({ default: m.IntelPage })));
 const CheatsPage = lazy(() => import('./pages/CheatsPage').then((m) => ({ default: m.CheatsPage })));
 const CollectiblesPage = lazy(() => import('./pages/CollectiblesPage').then((m) => ({ default: m.CollectiblesPage })));
@@ -34,7 +39,8 @@ export function App() {
     <AppShell>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mapa" element={<MapPage />} />
+        <Route path="/explorar" element={<Home />} />
+        <Route path="/mapa" element={lazyEl(<MapPage />)} />
         <Route path="/dinero" element={<MoneyPage />} />
         {LISTS.map((c) => (
           <Route key={c} path={CATEGORY_META[c].path} element={<CategoryPage category={c} />} />
@@ -54,7 +60,7 @@ export function App() {
           path="/novedades"
           element={
             <Suspense fallback={loading}>
-              <IntelPage initial="novedades" />
+              <NewsPage />
             </Suspense>
           }
         />
@@ -65,8 +71,8 @@ export function App() {
         <Route path="/equipamiento" element={lazyEl(<LoadoutPage />)} />
         <Route path="/mis-rutas" element={lazyEl(<RoutesPage />)} />
         <Route path="/comparar-vehiculos" element={lazyEl(<VehicleComparePage />)} />
-        <Route path="/mi-espacio" element={<MyGamePage />} />
-        <Route path="/mi-partida" element={<MyGamePage />} />
+        <Route path="/mi-espacio" element={lazyEl(<MyGamePage />)} />
+        <Route path="/mi-partida" element={lazyEl(<MyGamePage />)} />
         <Route path="/fuentes" element={<SourcesPage />} />
         <Route path="/galeria" element={<GalleryPage />} />
         <Route
@@ -77,6 +83,10 @@ export function App() {
             </Suspense>
           }
         />
+        <Route path="/editor/calibracion" element={lazyEl(<CalibrationPage />)} />
+        <Route path="/enciclopedia" element={lazyEl(<EncyclopediaHub />)} />
+        <Route path="/enciclopedia/:entidad" element={lazyEl(<EncyclopediaList />)} />
+        <Route path="/enciclopedia/:entidad/:slug" element={lazyEl(<EncyclopediaDetail />)} />
         <Route path="/legal" element={<LegalPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

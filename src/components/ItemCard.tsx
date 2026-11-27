@@ -32,11 +32,21 @@ export function ItemCard({ entry, eager = false }: { entry: Entry; eager?: boole
           <span aria-hidden="true">·</span>
           <span>{entry.subzone ?? REGION_LABEL[entry.region]}</span>
         </div>
-        <h3 className="card-title">
+        <h3 className="card-title" id={`card-title-${entry.id}`}>
           <Link to={entryPath(entry)} className="card-link">
             {entry.name}
           </Link>
         </h3>
+        {entry.vehicle && (
+          <p className="card-spec">
+            {[entry.vehicle.manufacturer, entry.vehicle.class].filter(Boolean).join(' · ')}
+            {entry.vehicle.sellValue ? (
+              <span className="card-price">
+                Venta {money(entry.vehicle.sellValue)} <span className="muted">({entry.vehicle.priceStatus ?? 'sin estado'})</span>
+              </span>
+            ) : null}
+          </p>
+        )}
         {hidden ? (
           <p className="card-summary spoiler-note">
             Contiene spoilers {entry.spoilerLevel === 2 ? 'de etapas avanzadas' : 'leves'}.{' '}
@@ -51,6 +61,11 @@ export function ItemCard({ entry, eager = false }: { entry: Entry; eager?: boole
           <EvidenceBadge status={entry.status} compact />
           {entry.edition !== 'base' && <span className="chip chip-static">{EDITION_LABEL[entry.edition]}</span>}
           {amount && !hidden && <span className="chip chip-static chip-money">{amount.min === amount.max ? money(amount.min) : `${money(amount.min)}–${money(amount.max)}`}</span>}
+          {entry.mapPosition && (
+            <Link to={`/mapa?id=${entry.id}`} className="icon-btn card-map" aria-label="Ver en el mapa" aria-describedby={`card-title-${entry.id}`}>
+              <Icon name="map" size={18} />
+            </Link>
+          )}
           <button
             type="button"
             className={`icon-btn fav-btn${fav ? ' is-on' : ''}`}

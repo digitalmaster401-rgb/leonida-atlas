@@ -3,12 +3,50 @@
 
 export const STORAGE_KEY = 'leonida-atlas:progress';
 export const BACKUP_KEY = 'leonida-atlas:progress-backup';
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
+/** Copia del valor que no se pudo leer (nunca se borra en silencio el progreso de una persona). */
+export const CORRUPT_KEY = 'leonida-atlas:progress-unreadable';
 const MAX_IDS = 2000;
 const MAX_NOTE = 5000;
 const MAX_LOADOUTS = 30;
 export const MAX_ROUTES = 30;
 export const MAX_STOPS = 40;
+export const MAX_MARKERS = 200;
+export const MAX_GOALS = 50;
+export const MAX_ACTIVITY = 60;
+export const ACCENTS = ['magenta', 'cian', 'lima', 'violeta'] as const;
+export type Accent = (typeof ACCENTS)[number];
+export const MARKER_ICONS = ['estrella', 'bandera', 'camara', 'dinero', 'alerta'] as const;
+export type MarkerIcon = (typeof MARKER_ICONS)[number];
+export const ACTIVITY_TYPES = ['encontrado', 'favorito', 'visitado', 'ruta', 'garaje', 'marcador', 'objetivo'] as const;
+export type ActivityType = (typeof ACTIVITY_TYPES)[number];
+
+/** Marcador personal sobre el póster (v5): posición elegida por la persona, privada y nunca presentada como dato del juego. */
+export interface CustomMarker {
+  id: string;
+  name: string;
+  note: string;
+  /** Coordenadas normalizadas 0–1 sobre el póster oficial. */
+  x: number;
+  y: number;
+  icon: MarkerIcon;
+  createdAt: string;
+  updatedAt: string;
+}
+/** Objetivo personal escrito por la persona (v5). */
+export interface Goal {
+  id: string;
+  text: string;
+  done: boolean;
+  createdAt: string;
+  doneAt: string | null;
+}
+/** Evento de actividad registrado en este dispositivo (v5). */
+export interface ActivityEvent {
+  type: ActivityType;
+  ref: string;
+  at: string;
+}
 
 export interface Note {
   text: string;
@@ -53,7 +91,7 @@ export interface PersonalRoute {
   updatedAt: string;
 }
 export interface Progress {
-  schemaVersion: 4;
+  schemaVersion: 5;
   favorites: string[];
   completed: string[];
   notes: Record<string, Note>;
@@ -67,7 +105,15 @@ export interface Progress {
   routes: PersonalRoute[];
   /** Colección personal de vehículos: ids de fichas de vehículos (v4). */
   garage: string[];
-  profile: { name: string; avatar: Avatar; platform: Platform | null };
+  /** Lugares marcados como visitados (v5). */
+  visited: string[];
+  /** Marcadores personales del mapa (v5). */
+  markers: CustomMarker[];
+  /** Objetivos personales (v5). */
+  goals: Goal[];
+  /** Actividad reciente, del más nuevo al más antiguo (v5). */
+  activity: ActivityEvent[];
+  profile: { name: string; avatar: Avatar; platform: Platform | null; accent: Accent };
   settings: { spoilerLevel: 0 | 1 | 2; hideFound: boolean };
   updatedAt: string;
 }
@@ -91,7 +137,11 @@ export function emptyProgress(): Progress {
     loadouts: [],
     routes: [],
     garage: [],
-    profile: { name: '', avatar: 'flamenco', platform: null },
+    visited: [],
+    markers: [],
+    goals: [],
+    activity: [],
+    profile: { name: '', avatar: 'flamenco', platform: null, accent: 'magenta' },
     settings: { spoilerLevel: 1, hideFound: false },
     updatedAt: new Date(0).toISOString(),
   };
@@ -162,6 +212,47 @@ function cleanRoute(r: unknown): PersonalRoute | null {
   return { id: r.id, name: r.name, objective: r.objective, stops, updatedAt: r.updatedAt };
 }
 
+const isFiniteUnit = (n: unknown): n is number => typeof n === 'number' && Number.isFinite(n) && n >= 0 && n <= 1;
+
+function cleanMarker(m: unknown): CustomMarker | null {
+  if (!isObj(m) || !isId(m.id) || typeof m.name !== 'string' || m.name.length > 60 || typeof m.note !== 'string' || m.note.length > 500) return null;
+  if (!isFiniteUnit(m.x) || !isFiniteUnit(m.y) || !(MARKER_ICONS as readonly unknown[]).includes(m.icon)) return null;
+  if (typeof m.createdAt !== 'string' || typeof m.updatedAt !== 'string') return null;
+  return { id: m.id, name: m.name, note: m.note, x: m.x, y: m.y, icon: m.icon as MarkerIcon, createdAt: m.createdAt, updatedAt: m.updatedAt };
+}
+function cleanGoal(g: unknown): Goal | null {
+  if (!isObj(g) || !isId(g.id) || typeof g.text !== 'string' || g.text.length > 120 || typeof g.done !== 'boolean' || typeof g.createdAt !== 'string') return null;
+  if (!(g.doneAt === null || typeof g.doneAt === 'string')) return null;
+  return { id: g.id, text: g.text, done: g.done, createdAt: g.createdAt, doneAt: g.doneAt as string | null };
+}
+function cleanActivity(a: unknown): ActivityEvent | null {
+  if (!isObj(a) || !(ACTIVITY_TYPES as readonly unknown[]).includes(a.type) || !isId(a.ref) || typeof a.at !== 'string') return null;
+  return { type: a.type as ActivityType, ref: a.ref, at: a.at };
+}
+function cleanList<T>(v: unknown, max: number, fn: (x: unknown) => T | null): T[] | null {
+  if (!Array.isArray(v) || v.length > max) return null;
+  const out: T[] = [];
+  for (const x of v) {
+    const c = fn(x);
+    if (!c) return null;
+    out.push(c);
+  }
+  return out;
+}
+
+/** v5 = v4 + lugares visitados, marcadores personales, objetivos, actividad y color de perfil. */
+function cleanV5(v: unknown): Progress | null {
+  if (!isObj(v) || v.schemaVersion !== 5 || !isObj(v.profile)) return null;
+  const { accent, ...profile } = v.profile;
+  const core = cleanV4({ ...v, schemaVersion: 4, profile });
+  if (!core || !isIdList(v.visited) || !(ACCENTS as readonly unknown[]).includes(accent)) return null;
+  const markers = cleanList(v.markers, MAX_MARKERS, cleanMarker);
+  const goals = cleanList(v.goals, MAX_GOALS, cleanGoal);
+  const activity = cleanList(v.activity, MAX_ACTIVITY, cleanActivity);
+  if (!markers || !goals || !activity) return null;
+  return { ...core, visited: [...new Set(v.visited)], markers, goals, activity, profile: { ...core.profile, accent: accent as Accent } };
+}
+
 /** v4 = v3 + rutas personales + colección de vehículos. */
 function cleanV4(v: unknown): Progress | null {
   if (!isObj(v) || v.schemaVersion !== 4) return null;
@@ -203,7 +294,7 @@ function cleanV3(v: unknown): Progress | null {
     loadouts.push(c);
   }
   return {
-    schemaVersion: 4,
+    schemaVersion: 5,
     favorites: [...new Set(v.favorites)],
     completed: [...new Set(v.completed)],
     notes: Object.fromEntries(Object.entries(v.notes).map(([k, n]) => [k, { text: n.text, updatedAt: n.updatedAt }])),
@@ -213,7 +304,11 @@ function cleanV3(v: unknown): Progress | null {
     loadouts,
     routes: [],
     garage: [],
-    profile: { name: v.profile.name, avatar: v.profile.avatar as Avatar, platform: v.profile.platform as Platform | null },
+    visited: [],
+    markers: [],
+    goals: [],
+    activity: [],
+    profile: { name: v.profile.name, avatar: v.profile.avatar as Avatar, platform: v.profile.platform as Platform | null, accent: 'magenta' },
     settings: { spoilerLevel: v.settings.spoilerLevel, hideFound: v.settings.hideFound },
     updatedAt: v.updatedAt,
   };
@@ -228,8 +323,10 @@ function validV1(v: unknown): v is { version: 1; favorites?: string[]; completed
   return true;
 }
 
-/** Acepta cualquier versión conocida (v1, v2, v3, v4) y devuelve el esquema actual, o null si no es válido. */
+/** Acepta cualquier versión conocida (v1–v5) y devuelve el esquema actual (v5), o null si no es válido. */
 export function migrate(input: unknown): Progress | null {
+  const v5 = cleanV5(input);
+  if (v5) return v5;
   const v4 = cleanV4(input);
   if (v4) return v4;
   const v3 = cleanV3(input);
@@ -273,15 +370,28 @@ function safeStorage(): Storage | null {
   }
 }
 
+/**
+ * Lee el progreso. Antes de migrar una versión anterior guarda el original en BACKUP_KEY; si el valor no se puede
+ * leer, lo copia en CORRUPT_KEY para que el siguiente guardado no lo destruya sin rastro.
+ */
 export function loadProgress(): Progress {
   const s = safeStorage();
   const raw = s?.getItem(STORAGE_KEY);
   if (!raw) return emptyProgress();
+  let parsed: unknown;
   try {
-    return migrate(JSON.parse(raw)) ?? emptyProgress();
+    parsed = JSON.parse(raw);
   } catch {
-    return emptyProgress();
+    parsed = undefined;
   }
+  const p = parsed === undefined ? null : migrate(parsed);
+  try {
+    if (!p) s?.setItem(CORRUPT_KEY, raw);
+    else if (!(isObj(parsed) && parsed.schemaVersion === SCHEMA_VERSION)) s?.setItem(BACKUP_KEY, raw);
+  } catch {
+    /* sin espacio: no se bloquea la carga */
+  }
+  return p ?? emptyProgress();
 }
 
 export function saveProgress(p: Progress): boolean {
@@ -355,6 +465,7 @@ export function parseImport(text: string, knownIds: Set<string>): ImportResult {
     ...Object.keys(data.records),
     ...data.today,
     ...data.garage,
+    ...data.visited,
     ...data.routes.flatMap((r) => r.stops.map((st) => st.entryId)),
   ]);
   return { ok: true, data, unknownIds: [...ids].filter((id) => !knownIds.has(id)), photos: rawPhotos };
@@ -368,6 +479,16 @@ function mergeById<T extends { id: string; updatedAt: string }>(a: T[], b: T[]):
     else if (out[i].updatedAt < x.updatedAt) out[i] = x;
   }
   return out;
+}
+
+function mergeGoals(a: Goal[], b: Goal[]): Goal[] {
+  const out = [...a];
+  for (const g of b) {
+    const i = out.findIndex((x) => x.id === g.id);
+    if (i < 0) out.push(g);
+    else if ((out[i].doneAt ?? out[i].createdAt) < (g.doneAt ?? g.createdAt)) out[i] = g;
+  }
+  return out.slice(0, MAX_GOALS);
 }
 
 export function mergeProgress(a: Progress, b: Progress): Progress {
@@ -392,6 +513,13 @@ export function mergeProgress(a: Progress, b: Progress): Progress {
     loadouts: loadouts.slice(0, MAX_LOADOUTS),
     routes: mergeById(a.routes, b.routes).slice(0, MAX_ROUTES),
     garage: [...new Set([...a.garage, ...b.garage])],
+    visited: [...new Set([...a.visited, ...b.visited])],
+    markers: mergeById(a.markers, b.markers).slice(0, MAX_MARKERS),
+    goals: mergeGoals(a.goals, b.goals),
+    activity: [...a.activity, ...b.activity]
+      .filter((x, i, arr) => arr.findIndex((y) => y.type === x.type && y.ref === x.ref && y.at === x.at) === i)
+      .sort((x, y) => (x.at < y.at ? 1 : -1))
+      .slice(0, MAX_ACTIVITY),
     profile: a.profile,
     settings: a.settings,
     updatedAt: new Date().toISOString(),

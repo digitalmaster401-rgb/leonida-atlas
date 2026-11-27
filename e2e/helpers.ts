@@ -41,6 +41,8 @@ export async function noHorizontalOverflow(page: Page) {
 export async function shot(page: Page, info: TestInfo, name: string) {
   const dir = `qa/screenshots/${info.project.name}`;
   mkdirSync(dir, { recursive: true });
+  // Espera a que termine la transición de entrada (solo opacidad) para no capturar la pantalla a medio aparecer.
+  await page.waitForFunction(() => document.getAnimations().every((a) => a.playState !== 'running'));
   await page.screenshot({ path: `${dir}/${name}.png`, caret: 'initial', animations: 'allow' });
 }
 
@@ -52,10 +54,11 @@ export async function goSection(page: Page, label: string) {
     const direct = bottom.getByRole('link', { name: label, exact: true });
     if (await direct.count()) await direct.click();
     else {
-      await bottom.getByRole('button', { name: 'Menú' }).click();
-      await page.getByRole('navigation', { name: 'Todas las secciones' }).getByRole('link', { name: label }).click();
+      // Fase 4A: las secciones que no son pestaña se abren desde el catálogo «Todas las secciones» de Explorar.
+      await bottom.getByRole('link', { name: 'Explorar', exact: true }).click();
+      await page.getByRole('navigation', { name: 'Todas las secciones' }).getByRole('link', { name: label, exact: true }).click();
     }
   } else {
-    await page.getByRole('navigation', { name: 'Secciones' }).getByRole('link', { name: label }).click();
+    await page.getByRole('navigation', { name: 'Secciones', exact: true }).getByRole('link', { name: label, exact: true }).click();
   }
 }

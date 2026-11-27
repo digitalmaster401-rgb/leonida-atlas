@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { loadProgress, MAX_ROUTES, saveProgress, STORAGE_KEY, type EntryRecord, type Loadout, type PersonalRoute, type Progress, migrate } from '../lib/storage';
+import { loadProgress, MAX_ACTIVITY, MAX_GOALS, MAX_MARKERS, MAX_ROUTES, saveProgress, STORAGE_KEY, type ActivityType, type CustomMarker, type EntryRecord, type Loadout, type PersonalRoute, type Progress, migrate } from '../lib/storage';
 
 interface ProgressApi {
   progress: Progress;
@@ -24,7 +24,22 @@ interface ProgressApi {
   deleteRoute: (id: string) => void;
   toggleGarage: (id: string) => void;
   inGarage: (id: string) => boolean;
+  /** v5: lugares visitados, marcadores personales y objetivos. */
+  toggleVisited: (id: string) => void;
+  saveMarker: (m: CustomMarker) => void;
+  deleteMarker: (id: string) => void;
+  addGoal: (text: string) => void;
+  toggleGoal: (id: string) => void;
+  deleteGoal: (id: string) => void;
 }
+
+/** Añade un evento a la actividad reciente (máx. MAX_ACTIVITY; sin duplicar el mismo evento seguido). */
+export function logActivity(p: Progress, type: ActivityType, ref: string): Progress {
+  const at = new Date().toISOString();
+  const rest = p.activity.filter((a) => !(a.type === type && a.ref === ref));
+  return { ...p, activity: [{ type, ref, at }, ...rest].slice(0, MAX_ACTIVITY) };
+}
+const uid = (prefix: string) => `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
 
 const today = () => new Date().toISOString().slice(0, 10);
 function withRecord(p: Progress, id: string, patch: Partial<EntryRecord>): Progress {
@@ -77,9 +92,19 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       persisted,
       isFavorite: (id) => progress.favorites.includes(id),
       isCompleted: (id) => progress.completed.includes(id),
-      toggleFavorite: (id) => update((p) => ({ ...p, favorites: toggle(p.favorites, id) })),
-      toggleCompleted: (id) => update((p) => withFound(p, id, !p.completed.includes(id))),
-      setFound: (id, found) => update((p) => withFound(p, id, found)),
+      toggleFavorite: (id) =>
+        update((p) => {
+          const on = !p.favorites.includes(id);
+          const next = { ...p, favorites: toggle(p.favorites, id) };
+          return on ? logActivity(next, 'favorito', id) : next;
+        }),
+      toggleCompleted: (id) =>
+        update((p) => {
+          const on = !p.completed.includes(id);
+          const next = withFound(p, id, on);
+          return on ? logActivity(next, 'encontrado', id) : next;
+        }),
+      setFound: (id, found) => update((p) => (found && !p.completed.includes(id) ? logActivity(withFound(p, id, true), 'encontrado', id) : withFound(p, id, found))),
       setRecord: (id, patch) => update((p) => withRecord(p, id, patch)),
       setCounter: (id, n) => update((p) => ({ ...p, counters: { ...p.counters, [id]: Math.max(0, Math.min(10000, Math.round(n) || 0)) } })),
       toggleToday: (id) => update((p) => ({ ...p, today: toggle(p.today, id) })),
@@ -97,11 +122,47 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         update((p) => {
           const next = { ...r, name: r.name.slice(0, 60), objective: r.objective.slice(0, 300), stops: r.stops.slice(0, 40), updatedAt: new Date().toISOString() };
           const i = p.routes.findIndex((x) => x.id === r.id);
-          return { ...p, routes: i < 0 ? [...p.routes, next].slice(-MAX_ROUTES) : p.routes.map((x, j) => (j === i ? next : x)) };
+          const out = { ...p, routes: i < 0 ? [...p.routes, next].slice(-MAX_ROUTES) : p.routes.map((x, j) => (j === i ? next : x)) };
+          return i < 0 ? logActivity(out, 'ruta', r.id) : out;
         }),
       deleteRoute: (id) => update((p) => ({ ...p, routes: p.routes.filter((x) => x.id !== id) })),
-      toggleGarage: (id) => update((p) => ({ ...p, garage: toggle(p.garage, id) })),
+      toggleGarage: (id) =>
+        update((p) => {
+          const on = !p.garage.includes(id);
+          const next = { ...p, garage: toggle(p.garage, id) };
+          return on ? logActivity(next, 'garaje', id) : next;
+        }),
       inGarage: (id) => progress.garage.includes(id),
+      toggleVisited: (id) =>
+        update((p) => {
+          const on = !p.visited.includes(id);
+          const next = { ...p, visited: toggle(p.visited, id) };
+          return on ? logActivity(next, 'visitado', id) : next;
+        }),
+      saveMarker: (m) =>
+        update((p) => {
+          const now = new Date().toISOString();
+          const clean: CustomMarker = { ...m, id: m.id || uid('mk'), name: m.name.slice(0, 60) || 'Marcador', note: m.note.slice(0, 500), updatedAt: now, createdAt: m.createdAt || now };
+          const i = p.markers.findIndex((x) => x.id === clean.id);
+          const out = { ...p, markers: i < 0 ? [...p.markers, clean].slice(-MAX_MARKERS) : p.markers.map((x, j) => (j === i ? clean : x)) };
+          return i < 0 ? logActivity(out, 'marcador', clean.id) : out;
+        }),
+      deleteMarker: (id) => update((p) => ({ ...p, markers: p.markers.filter((x) => x.id !== id), activity: p.activity.filter((a) => !(a.type === 'marcador' && a.ref === id)) })),
+      addGoal: (text) =>
+        update((p) => {
+          const t = text.trim().slice(0, 120);
+          if (!t || p.goals.length >= MAX_GOALS) return p;
+          return { ...p, goals: [...p.goals, { id: uid('obj'), text: t, done: false, createdAt: new Date().toISOString(), doneAt: null }] };
+        }),
+      toggleGoal: (id) =>
+        update((p) => {
+          const g = p.goals.find((x) => x.id === id);
+          if (!g) return p;
+          const done = !g.done;
+          const next = { ...p, goals: p.goals.map((x) => (x.id === id ? { ...x, done, doneAt: done ? new Date().toISOString() : null } : x)) };
+          return done ? logActivity(next, 'objetivo', id) : next;
+        }),
+      deleteGoal: (id) => update((p) => ({ ...p, goals: p.goals.filter((x) => x.id !== id), activity: p.activity.filter((a) => !(a.type === 'objetivo' && a.ref === id)) })),
       setNote: (id, text) =>
         update((p) => {
           const notes = { ...p.notes };

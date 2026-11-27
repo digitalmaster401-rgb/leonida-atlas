@@ -1,118 +1,63 @@
-import { Link, useNavigate } from 'react-router';
-import { useState } from 'react';
+import { Link } from 'react-router';
 import { changelog, entries, entriesBy, entryPath } from '../data';
-import { CATEGORY_META, CATEGORY_ORDER, GAME_RELEASE, LAST_REVIEW, STATUS_META } from '../data/meta';
+import { CATEGORY_META, CATEGORY_ORDER, GAME_RELEASE, STATUS_META } from '../data/meta';
 import { Seo } from '../components/Seo';
 import { Icon } from '../components/Icon';
 import { ItemCard } from '../components/ItemCard';
-import { Media } from '../components/Media';
 import { EvidenceBadge } from '../components/EvidenceBadge';
 import { formatDate, money } from '../lib/calc';
-import { LogoMark } from '../components/Logo';
+import { CineBanner, ExplorerSearch, NewsPhotos, ProgressPanel, RegionCarousel, VisualCards } from '../components/ExploreHero';
+import { NAV_GROUPS } from '../lib/nav';
+import { LatestIntel } from '../components/LatestIntel';
+import type { Status } from '../data/schema';
 
-function Hero() {
-  const nav = useNavigate();
-  const [q, setQ] = useState('');
-  return (
-    <section className="hero" aria-labelledby="hero-h">
-      <svg className="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-        <defs>
-          <linearGradient id="h-sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#140a2e" />
-            <stop offset=".55" stopColor="#5b1a5e" />
-            <stop offset=".8" stopColor="#ff3ea5" />
-            <stop offset="1" stopColor="#ffb86b" />
-          </linearGradient>
-          <linearGradient id="h-sun" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#ffe08a" />
-            <stop offset="1" stopColor="#ff3ea5" />
-          </linearGradient>
-          <linearGradient id="h-sea" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#0e3a52" />
-            <stop offset="1" stopColor="#0b0d14" />
-          </linearGradient>
-        </defs>
-        <rect width="1200" height="600" fill="url(#h-sky)" />
-        <circle cx="820" cy="380" r="150" fill="url(#h-sun)" />
-        {[0, 1, 2, 3, 4, 5].map((i) => (
-          <rect key={i} x="600" y={330 + i * 16} width="460" height={4 + i} fill="#5b1a5e" opacity=".9" />
-        ))}
-        <g fill="#0b0d14">
-          <path d="M0 430h60v-90h30v-40h40v130h30v-160h50v160h20v-110h45v110h30v-60h25v60h35v-200h55v200h25v-130h40v130h30v-80h30v80h40v-150h45v150h40v-60h40v60h35v-120h35v120h40v-90h30v90h50v-40h60v40h45v-170h40v170h55v-70h45v70h60V600H0z" />
-          <path d="M1015 430c-6-70-2-130 12-190M1010 300c-30-20-60-18-85-6M1022 260c20-28 52-38 84-30M1016 280c-34-4-58 10-70 30M1024 250c-6-26 4-50 26-64" stroke="#0b0d14" strokeWidth="9" fill="none" strokeLinecap="round" />
-        </g>
-        <rect y="430" width="1200" height="170" fill="url(#h-sea)" />
-        {[0, 1, 2, 3, 4, 5, 6].map((i) => (
-          <rect key={i} x={680 + (i % 2) * 40} y={450 + i * 18} width={300 - i * 30} height="3" fill="#ff3ea5" opacity={0.5 - i * 0.06} />
-        ))}
-      </svg>
-      <div className="hero-inner">
-        <p className="eyebrow">
-          <LogoMark size={22} /> Guía independiente · GTA VI · Español de México
-        </p>
-        <h1 id="hero-h">
-          Leonida, <span className="grad">con fuentes</span>.
-        </h1>
-        <p className="hero-lead">
-          Mapa oficial con puntos de precisión declarada, métodos de dinero con pago y evidencia separados, armas, vehículos y negocios. Cada dato dice de dónde sale.
-        </p>
-        <form
-          className="hero-search"
-          role="search"
-          onSubmit={(e) => {
-            e.preventDefault();
-            nav(`/buscar?q=${encodeURIComponent(q.trim())}`);
-          }}
-        >
-          <label htmlFor="hero-q" className="sr-only">
-            Buscar
-          </label>
-          <input id="hero-q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Prueba: «Moses», «Duke 556», «Stockyard»…" enterKeyHint="search" />
-          <button type="submit" className="btn btn-cta">
-            <Icon name="search" size={18} /> Buscar
-          </button>
-        </form>
-        <div className="hero-ctas">
-          <Link to="/rutas/empieza-aqui" className="btn">
-            Empieza aquí
-          </Link>
-          <Link to="/mapa" className="btn btn-ghost">
-            <Icon name="map" size={18} /> Abrir mapa
-          </Link>
-        </div>
-        <p className="hero-facts small">
-          Disponible desde el {formatDate(GAME_RELEASE)} en PS5 y Xbox Series X|S · Última revisión de la guía: {formatDate(LAST_REVIEW)}
-        </p>
-      </div>
-    </section>
-  );
-}
+const EVIDENCE_ORDER: Status[] = ['oficial', 'comprobado', 'contrastado', 'reportado', 'pendiente', 'obsoleto'];
 
 export function Home() {
-  const regions = entriesBy('lugares').filter((e) => !e.subzone);
   const bestMoney = entriesBy('dinero')
     .filter((e) => e.reward?.amount && e.status === 'contrastado')
     .sort((a, b) => (b.reward!.amount!.max ?? 0) - (a.reward!.amount!.max ?? 0));
   const counts = entries.reduce<Record<string, number>>((acc, e) => ((acc[e.status] = (acc[e.status] ?? 0) + 1), acc), {});
   const latest = changelog[0];
+
   return (
     <>
       <Seo title="LEONIDA ATLAS" description="Guía independiente de GTA VI en español de México: mapa oficial, dinero, armas, vehículos y negocios con fuentes verificables." />
-      <Hero />
+      <CineBanner />
+      <RegionCarousel />
+      <VisualCards />
+      <NewsPhotos />
+      <ProgressPanel />
+      <ExplorerSearch />
 
       <section className="section" aria-labelledby="cat-h">
         <h2 id="cat-h" className="section-title">
           Explora la guía
         </h2>
-        <div className="cat-grid">
-          {CATEGORY_ORDER.map((c) => (
-            <Link key={c} to={CATEGORY_META[c].path} className="cat-tile">
-              <Icon name={CATEGORY_META[c].icon} size={26} />
-              <span className="cat-name">{CATEGORY_META[c].label}</span>
-              <span className="cat-desc">{CATEGORY_META[c].description}</span>
-              <span className="cat-count">{entriesBy(c).length} fichas</span>
-            </Link>
-          ))}
+        <p className="muted small">Cada categoría muestra cuántas fichas tiene y cómo se reparte su evidencia, de oficial a pendiente.</p>
+        <div className="cat-grid cat-grid-visual">
+          {CATEGORY_ORDER.map((c) => {
+            const list = entriesBy(c);
+            const parts = EVIDENCE_ORDER.map((st) => [st, list.filter((e) => e.status === st).length] as const).filter(([, n]) => n > 0);
+            return (
+              <Link key={c} to={CATEGORY_META[c].path} className={`cat-tile cat-${c}`}>
+                <span className="cat-ico" aria-hidden="true">
+                  <Icon name={CATEGORY_META[c].icon} size={24} />
+                </span>
+                <span className="cat-name">{CATEGORY_META[c].label}</span>
+                <span className="cat-desc">{CATEGORY_META[c].description}</span>
+                <span className="cat-count">{list.length} fichas</span>
+                {parts.length > 0 && (
+                  <span className="ev-bar" aria-hidden="true">
+                    {parts.map(([st, n]) => (
+                      <span key={st} className={`ev-seg ev-${st}`} style={{ flexGrow: n }} />
+                    ))}
+                  </span>
+                )}
+                <span className="sr-only">Evidencia: {parts.map(([st, n]) => `${n} ${STATUS_META[st].label.toLowerCase()}`).join(', ')}.</span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -138,24 +83,30 @@ export function Home() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="reg-h">
-        <div className="section-head">
-          <h2 id="reg-h" className="section-title">
-            Las 6 regiones de Leonida
-          </h2>
-          <Link to="/lugares" className="link-more">
-            Ver todos los lugares →
-          </Link>
-        </div>
-        <div className="region-strip">
-          {regions.map((r, i) => (
-            <Link key={r.id} to={entryPath(r)} className="region-tile">
-              <Media id={r.images[0]} category="lugares" label={r.name} sizes="(min-width: 1024px) 30vw, 80vw" eager={i < 2} />
-              <span className="region-name">{r.name}</span>
-            </Link>
+      <section className="section" aria-labelledby="all-h">
+        <h2 id="all-h" className="section-title">
+          Todas las secciones
+        </h2>
+        <nav aria-label="Todas las secciones" className="all-sections">
+          {NAV_GROUPS.map((g) => (
+            <div key={g.tab} className={`all-group all-${g.tab}`}>
+              <h3 className="all-title">{g.title}</h3>
+              <ul>
+                {g.links
+                  .filter((l) => l.to !== '/')
+                  .map((l) => (
+                    <li key={l.to}>
+                      <Link to={l.to} className="all-link">
+                        <Icon name={l.icon} size={18} /> {l.label}
+                      </Link>
+                    </li>
+                  ))}
+              </ul>
+            </div>
           ))}
-        </div>
+        </nav>
       </section>
+
 
       <section className="section two-col">
         <div className="panel" aria-labelledby="best-h">
@@ -176,7 +127,7 @@ export function Home() {
           </Link>
         </div>
         <div className="panel" aria-labelledby="news-h">
-          <h2 id="news-h">Novedades verificadas</h2>
+          <h2 id="news-h">Novedades</h2>
           <ul className="news-list">
             <li>
               <strong>{formatDate(GAME_RELEASE)}</strong> — Rockstar confirma el lanzamiento mundial en PS5 y Xbox Series X|S. <EvidenceBadge status="oficial" compact />
@@ -184,7 +135,13 @@ export function Home() {
             <li>
               <strong>{formatDate(latest.date)}</strong> — {latest.title}: {latest.items[0]}
             </li>
+            <LatestIntel />
           </ul>
+          <p>
+            <Link to="/novedades" className="btn btn-sm">
+              <Icon name="eye" size={16} /> Ver todas las novedades
+            </Link>
+          </p>
           <h3 className="h-sub">Estado de la evidencia</h3>
           <ul className="evidence-counts">
             {Object.entries(counts).map(([s, n]) => (
@@ -197,8 +154,8 @@ export function Home() {
             Ver fuentes y registro de cambios →
           </Link>
           <p>
-            <Link to="/intel" className="btn btn-sm">
-              Novedades de ATLAS INTELLIGENCE
+            <Link to="/intel" className="link-more">
+              Panel completo de ATLAS INTELLIGENCE →
             </Link>
           </p>
         </div>

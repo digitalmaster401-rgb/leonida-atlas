@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## 1.7.0 — 2026-11-27 — Base de datos completa (primera integración real)
+
+- **GTA Atlas (CC BY-SA 4.0):** importador `research/atlasgta/importar_atlasgta.py` para los 12 conjuntos (1964 filas): 1845 publicados, 118 pendientes de verificar, 1 rechazado (sin fuentes), 0 duplicados reales (los 346 «duplicados» aparentes eran lugares distintos con el mismo nombre), 59 trucos y 60 registros más enlazados con fichas curadas. Solo hechos y fuentes; resúmenes propios en español; sin prosa, calificaciones de terceros ni imágenes; evidencia reclasificada; revisión incremental (lo nuevo o cambiado queda pendiente hasta aprobarlo).
+- **Enciclopedia** (`/enciclopedia`): 12 catálogos con búsqueda, filtros por tipo y evidencia, paginación, fichas con hechos, relaciones, fuentes, licencia y aviso de foto oficial pendiente; carga bajo demanda (paquete principal 242 kB); enlaces desde Vehículos, Armas, Personajes y Lugares.
+- **Cobertura:** `docs/v4/COBERTURA.md` y tabla en la Enciclopedia (qué tenemos y qué falta frente a los totales de las fuentes).
+- **Fuentes:** GTA Town no se integra (conflicto de licencias); GTADB pide usar su repositorio y no la API en vivo; sus mosaicos comparten sistema de coordenadas (pendiente de decisión del propietario). `docs/v4/FUENTES_DATOS_4D.md`.
+
+## 1.6.0 — 2026-11-27 — Fase 4C: cartografía (investigación) y enciclopedia visual
+
+- **Calibración:** `src/lib/calibration.ts` (similaridad y afín por mínimos cuadrados, validación reservada y «dejando uno fuera», decisión por umbrales, rechazo fuera del póster); herramienta interna `/editor/calibracion` (roles de puntos, desviaciones sobre el póster, prueba de coordenadas, exportar JSON); versión guardada `research/calibracion/transformacion-v1.json`. Resultado real: 11 pares documentados, peor error independiente 262 px → solo precisión «zona». Nada se publica.
+- **GTADB:** cliente de investigación con caché, 1 petición/1,2 s, reintentos limitados y tope por ejecución; piloto de 25 detalles (4 con nombre, 25 con dirección, 13 con tipo; imágenes no usadas).
+- **FullSweep:** adaptador independiente (75 ubicaciones a staging) y prueba de que sus landmarks son copia de GTADB (1523 correspondencias, mediana 0,2 px).
+- **Catálogos:** portada fotográfica con reparto de evidencia, filtros por tipo (clase de vehículo, etiqueta de arma), tarjetas premium con fabricante/clase, precio con su estado y acceso al mapa; fichas con «Valores del juego» (barras solo con datos con fuente) y aviso explícito de estadísticas sin fuente; Dinero con la misma portada.
+- Informe: `docs/v4/INFORME_CALIBRACION_4C.md`.
+
+## 1.5.0 — 2026-11-27 — Fase 4B: ATLAS EXPLORER (mapa inmersivo) y Mi espacio premium
+
+- **Mapa inmersivo** (referencia 03): pantalla completa con título, buscador por nombre, chips rápidos con contadores reales (encontrados o visitados / total ubicado), filtros agrupados, panel de capas flotante, leyenda desplegable, controles flotantes, marcadores luminosos y panel inferior deslizable (dos alturas, asa táctil y botón accesible) con foto oficial o ilustración, evidencia, precisión, favoritos, encontrado/visitado, «Ver ficha» y «Añadir a una ruta». Se conservan póster v2/v1, agrupación, ocultar encontrados, rutas en el mapa y la lista sin ubicación.
+- **Marcadores personales** con nombre, icono y nota privada (posición elegida por la persona; nunca presentada como dato del juego).
+- **Mi espacio** (referencia 02): portada con imagen oficial, perfil con color, tarjetas con foto (rutas, coleccionables, vehículos favoritos, lugares visitados), anillo «Progreso registrado en Atlas» (no oficial), estadísticas, logros de Atlas (no son trofeos oficiales), objetivos personales, actividad reciente y acceso a ATLAS Intelligence. Sin niveles, EXP ni distancias.
+- **Progreso v5:** visitados, marcadores, objetivos, actividad y color de perfil; migración desde v1–v4, respaldo automático antes de migrar y copia de datos ilegibles; exportar/importar y combinar incluyen v5.
+- **Investigación:** GTADB probada en vivo (4380 registros, 4286 a staging, 94 rechazados; CC BY 4.0; coordenadas del mundo en metros sin calibración al póster), FullSweep (75 ubicaciones, CC BY 4.0, píxeles de su propio mapa) y GTABase (sin API ni licencia). Nada se importó a producción. Prueba de contrato con un extracto real. `docs/v4/INVESTIGACION_GTADB_FULLSWEEP.md`.
+- Mapa y Mi espacio se cargan bajo demanda: paquete principal 289 kB (antes 428 kB). Se retiraron los `__pycache__` versionados y se ignoran en `.gitignore`.
+- Corrección: la panorámica de la cabecera de Explorar ya no se cancela al navegar rápido.
+
+## 1.4.0 — 2026-11-24 — Fase 4A: experiencia visual premium (primera etapa)
+
+- **Navegación de 5 pestañas** (`src/lib/nav.ts`): Mapa · Explorar · Dinero · Mi espacio · Novedades en la barra inferior, con indicador de sección activa (`aria-current`) y objetivos táctiles ≥ 44 px. En escritorio, el menú lateral se agrupa por pestaña. Se retira el botón «Menú»: todas sus secciones están en «Todas las secciones» de Explorar.
+- **Explorar** (`/` y alias nuevo `/explorar`, sin indexar): buscador principal, categorías visuales con contador y barra de evidencia (calculada de `content/*.json`), herramientas, catálogo de secciones, regiones y últimas novedades (los datos de ATLAS se cargan aparte para no engordar el paquete principal).
+- **Novedades** (`/novedades`, página nueva y diferida): línea de tiempo por día con insignia de estado, fuente original enlazada con su fecha, plataformas, fecha de detección y prueba en juego; filtros por estado y plataforma en la URL; aviso de hallazgos sin verificar; accesos al panel de ATLAS INTELLIGENCE y cambios de la guía. `/novedades?seccion=…` sigue abriendo el panel anterior.
+- **Diseño:** fondo con brillo sutil magenta/cian, tarjetas «vidrio» con acento por categoría y brillo cian al enfocar, encabezado de sección con línea lima, transición de entrada solo con opacidad (se apaga con `prefers-reduced-motion`).
+- **Dirección visual aprobada (referencias del propietario):** portada panorámica con imagen oficial nocturna y crédito, barra «ATLAS EXPLORER», tarjeta editorial de tres destacados, cuatro accesos con imagen oficial, barra inferior flotante con pestaña iluminada, chip de versión. Novedades con bloques «Fuentes consultadas» (estado real), «ATLAS Intelligence», «Por verificar» y «Novedades de LEONIDA ATLAS». Plan de Mapa y Mi espacio en `docs/DISENO_PREMIUM.md`.
+- **4A.2 (alta fidelidad):** logotipo horizontal original, cabecera con menú lateral accesible, notificaciones y perfil, buscador integrado; banner cinematográfico «EXPLORA LEONIDA» con ciudad y protagonistas (imágenes oficiales); carrusel de regiones; tarjetas fotográficas con conteos reales; novedades con foto de la ficha relacionada; progreso calculado del almacenamiento local; barra inferior flotante. `ASSETS_REQUIRED.json` lista los recursos que faltan; capturas y comparativas en `qa/visual/`.
+- **Ampliación V4:** 30 requisitos nuevos en la matriz (sin borrar ninguno), `docs/v4/`, importador de GTADB solo a staging en `research/gtadb/` con 6 pruebas en CI. Explorar con panorámica tras el logotipo y barra «ATLAS EXPLORER». Corregida la pérdida intermitente de la descripción de fotos (una sola transacción de IndexedDB y confirmación visible).
+- Sin cambios en datos, esquemas, progreso local (v4), CSP ni controles de calidad. QA: `docs/FASE4A_QA.md`.
+
 ## 1.3.2 — 2026-11-24 — Paso 21D: auditoría de material ajeno sin falsos positivos
 
 - `npm run audit:legacy` fallaba en el PR #10 (ejecución 45443731080) porque un titular real de GTA BOOM sobre reclamaciones de copyright en YouTube contiene la palabra inglesa equivalente a «creadores», que es uno de los términos vigilados.

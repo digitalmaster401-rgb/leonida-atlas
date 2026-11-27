@@ -3,12 +3,16 @@ import AxeBuilder from '@axe-core/playwright';
 import { goSection, noHorizontalOverflow, shot, watchConsole, isMobile } from './helpers';
 
 test.describe('LEONIDA ATLAS', () => {
-  test('inicio: portada original, sin errores ni desbordamiento', async ({ page }, info) => {
+  test('inicio: portada cinematográfica, sin errores ni desbordamiento', async ({ page }, info) => {
     const errors = watchConsole(page);
     await page.goto('/');
     await expect(page.getByRole('heading', { level: 1 })).toContainText('Leonida');
     await expect(page.getByText('Guía independiente de fans. Sin afiliación con Rockstar Games.')).toBeVisible();
-    await expect(page.locator('.hero img')).toHaveCount(0); // la portada es una composición SVG propia
+    // Fase 4A: la portada usa una imagen oficial del manifiesto (rockstargames.com/VI) con crédito visible.
+    // Fase 4A.2: banner con ciudad y protagonistas, solo imágenes oficiales del manifiesto y crédito visible.
+    await expect(page.locator('.cine img')).toHaveCount(3);
+    for (const img of await page.locator('.cine img').all()) await expect(img).toHaveAttribute('src', /^\/media\/official\//);
+    await expect(page.locator('.cine .hero-credit')).toHaveText('Imágenes oficiales © Rockstar Games');
     await noHorizontalOverflow(page);
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.waitForLoadState('networkidle');
@@ -34,7 +38,8 @@ test.describe('LEONIDA ATLAS', () => {
       ['Trucos y códigos', /Trucos y códigos/i],
       ['Coleccionables', /Coleccionables/i],
       ['Fuentes y cambios', /Fuentes y cambios/i],
-      ['Inicio', /Leonida/i],
+      ['Novedades', /Novedades/i],
+      ['Explorar', /Leonida/i],
     ];
     for (const [label, h1] of sections) {
       const target = isMobile(page) && label === 'Dinero y glitches' ? 'Dinero' : label;
@@ -230,7 +235,7 @@ test.describe('LEONIDA ATLAS', () => {
 
   test('accesibilidad automática (axe, WCAG 2 AA) en páginas clave', async ({ page }) => {
     test.skip(!['chromium-390', 'chromium-1280'].includes(test.info().project.name), 'se ejecuta en dos anchos representativos');
-    for (const path of ['/', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio', '/mis-rutas', '/comparar-vehiculos', '/vehiculos/pegassi-infernus-96']) {
+    for (const path of ['/', '/novedades', '/novedades?estado=reportado', '/mapa', '/dinero', '/armas', '/armas/duke-556', '/mi-partida', '/fuentes', '/galeria', '/intel', '/intel?seccion=bitacora', '/trucos', '/coleccionables', '/coleccionables/orca', '/consola', '/equipamiento', '/mi-espacio', '/mis-rutas', '/comparar-vehiculos', '/vehiculos/pegassi-infernus-96']) {
       await page.goto(path);
       await page.waitForLoadState('networkidle');
       const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();

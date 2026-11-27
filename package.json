@@ -15,6 +15,7 @@
     "validate:data": "vitest run tests/data.test.ts tests/fase2.test.ts",
     "images": "python3 scripts/fetch_official_images.py",
     "audit:legacy": "node scripts/audit-legacy.mjs",
+    "test:research": "cd research/gtadb && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v && cd ../fullsweep && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v && cd ../atlasgta && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest -v",
     "zip": "python3 scripts/make_zip.py",
     "serve:dist": "node scripts/serve-dist.mjs",
     "icons": "node scripts/make-icons.mjs",

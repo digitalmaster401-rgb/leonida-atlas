@@ -1,0 +1,293 @@
+{
+  "version": "4.0-ampliacion",
+  "date": "2026-11-26",
+  "rules": "Acumulativo; no reemplazar matriz existente ni asumir disponibilidad de categorías; no inventar datos. Las dos categorías Waink adicionales son candidatas observadas en resultado indexado de GTABase en inglés; requieren verificación.",
+  "requirements": [
+    {
+      "id": "V4-CONSERVACION-01",
+      "module": "conservacion",
+      "requirement": "Preservar código, datos, rutas, funciones, seguridad, PWA, referencias definitivas y matriz previa",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-CONSERVACION-02",
+      "module": "conservacion",
+      "requirement": "No fusionar sin revisión; pruebas de regresión y capturas reales por etapa",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-CONSERVACION-03",
+      "module": "conservacion",
+      "requirement": "Dirección técnica autónoma; instrucciones Android simples",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-FUENTES-01",
+      "module": "fuentes",
+      "requirement": "Investigar GTABase web/blog/mapa, GTADB API/repo, Rockstar VI/Newswire",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-FUENTES-02",
+      "module": "fuentes",
+      "requirement": "Evaluar APIs, JSON, GeoJSON, tiles, licencias, autenticación, frecuencia y límites; permisos y colaboración",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-FUENTES-03",
+      "module": "fuentes",
+      "requirement": "Investigar YouTube, Instagram, TikTok, X, Reddit y comunidades; traducir al español manteniendo nombres originales",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MAPA-01",
+      "module": "mapa",
+      "requirement": "Mapa completo autorizado de máxima resolución; zoom/pan táctil, pantalla completa, iconos, clustering",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MAPA-02",
+      "module": "mapa",
+      "requirement": "Filtros individuales/grupales, mostrar/ocultar todo y encontrados, búsqueda ES y nombres originales",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MAPA-03",
+      "module": "mapa",
+      "requirement": "Progreso por categoría, favoritos, marcadores propios, notas privadas, fotos, coordenadas con precisión, descripción e instrucciones de juego",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MAPA-04",
+      "module": "mapa",
+      "requirement": "Siguiente pendiente, rutas de recolección, perfiles por partida, sincronización, autoguardado, offline, compartir, reportar y sugerir",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MAPA-05",
+      "module": "mapa",
+      "requirement": "Taxonomía ampliable; investigar todas las categorías y subcategorías; no inferir totales",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-VEHICULOS-01",
+      "module": "vehiculos",
+      "requirement": "Autos, motos, camionetas, todoterrenos, superdeportivos, clásicos, especiales, ocultos, únicos, emergencia, militares del juego, helicópteros, aviones, barcos, comerciales, variantes",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-VEHICULOS-02",
+      "module": "vehiculos",
+      "requirement": "Ficha: nombre original, fabricante, clase, modelo, inspiración real, galería exterior/interior, velocidad, aceleración, manejo, todoterreno, resistencia, tracción, plazas, precio, personalización, rareza, ubicación, desbloqueo, misiones, adquisición, guardado, variantes, fuentes, fecha",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-VEHICULOS-03",
+      "module": "vehiculos",
+      "requirement": "Comparador de dos o más, gráficos de estadísticas, botón de mapa con ubicación documentada",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ARMAS-01",
+      "module": "armas",
+      "requirement": "Catálogo exclusivamente de GTA VI: fotos, nombres originales, fabricantes, clases, daño, precisión, alcance, cadencia, capacidad, compatibilidad, personalización, precio, ubicación, desbloqueo, variantes y comparación",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-MISIONES-01",
+      "module": "misiones",
+      "requirement": "Historia, capítulos, secundarias, eventos y actividades; personajes, desbloqueo, recompensa, ubicación inicial, guías, fotos y vídeos, decisiones/consecuencias, seguimiento y protección de spoilers",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-LOGROS-01",
+      "module": "logros",
+      "requirement": "PS/Xbox y futuras plataformas; nombre, icono autorizado, descripción, rareza, requisitos, guía, ubicaciones, progreso y estado",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-LOGROS-02",
+      "module": "logros",
+      "requirement": "Separar porcentaje oficial de finalización (reglas verificadas) del porcentaje de elementos registrados en Atlas",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-IA-01",
+      "module": "ia",
+      "requirement": "Asistente GTA VI conectado a catálogo, mapa, progreso del usuario con permisos",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-IA-02",
+      "module": "ia",
+      "requirement": "Respuestas con imágenes, fichas, estadísticas, comparaciones, vídeo, pines, rutas y guías verificadas; acciones profundas en mapa y pendientes del usuario",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-IA-03",
+      "module": "ia",
+      "requirement": "No inventar datos; distinguir oficial, probado, comunidad, rumor y pendiente",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ACTUALIZACION-01",
+      "module": "actualizacion",
+      "requirement": "APIs, RSS, webhooks, repos, fuentes oficiales y comunidad autorizados; detectar vehículos, armas, ubicaciones, misiones, glitches, secretos, parches, mecánicas y correcciones",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ACTUALIZACION-02",
+      "module": "actualizacion",
+      "requirement": "Fuente, fechas, versión y estado por registro; glitches por plataforma y versión; revisión antes de publicar; revalidación al cambiar parche",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-VISUAL-01",
+      "module": "visual",
+      "requirement": "Mantener referencias existentes, fotografías específicas de calidad y licencias; IA solo como recreación rotulada",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-VISUAL-02",
+      "module": "visual",
+      "requirement": "Interfaz cinematográfica Vice City/Leonida, oscura, degradados, transparencia, tarjetas, tipografía, iconos, animaciones, gráficos, adaptable y rápida; no botones falsos",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ADMIN-01",
+      "module": "admin",
+      "requirement": "Panel sin programación para crear/editar vehículos, armas, ubicaciones, imágenes, estadísticas, categorías, fuentes, guías, contenido IA, moderación y aprobación",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ADMIN-02",
+      "module": "admin",
+      "requirement": "Importar CSV/JSON/GeoJSON, exportar, respaldo, duplicados, errores, pendientes",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ESCALABILIDAD-01",
+      "module": "escalabilidad",
+      "requirement": "Miles de puntos, fotos, registros, usuarios; modularidad, BD escalable, imágenes optimizadas, carga progresiva, caché, seguridad, autenticación, persistencia, respaldos, sincronización, CI, PWA y móvil",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    },
+    {
+      "id": "V4-ESCALABILIDAD-02",
+      "module": "escalabilidad",
+      "requirement": "Claves de API privilegiadas solo servidor; aislamiento de datos personales, pruebas y rollback",
+      "status": "pending_mapping_to_existing_matrix",
+      "acceptance": "Código funcional, prueba automatizada relevante y evidencia real; si falta permiso/dato marcar bloqueado o parcial."
+    }
+  ],
+  "mapTaxonomyCandidates": {
+    "personal": [
+      "Garajes",
+      "Pisos francos",
+      "Casas",
+      "Propiedades",
+      "Refugios"
+    ],
+    "actividades_del_juego": [
+      "Bancos",
+      "Cajas fuertes",
+      "Cajeros remolcables",
+      "Operaciones ilegales",
+      "Peristas",
+      "Préstamos rápidos",
+      "Establecimientos y actividades especiales"
+    ],
+    "entretenimiento": [
+      "Gimnasios",
+      "Golf",
+      "Minigolf",
+      "Pesca",
+      "Paracaidismo",
+      "Máquinas recreativas",
+      "Quedadas de coches",
+      "Carreras",
+      "Eventos aleatorios",
+      "Desafíos"
+    ],
+    "coleccionables": [
+      "Ahol Street Art",
+      "Bajo el puente",
+      "Cocaine Flamingos",
+      "Cómics",
+      "Easter Eggs",
+      "Intercambios de libros",
+      "Listas de reproducción únicas",
+      "Luxury Watches",
+      "Meditations",
+      "Mensajes en una botella",
+      "Meteoritos",
+      "Murales 1010",
+      "Paquetes ocultos",
+      "Revistas y libros",
+      "Saltos acrobáticos",
+      "Saltos BASE",
+      "SCOOP Containers",
+      "Style Magazines",
+      "Tesoros",
+      "Vuelos de cuchilla",
+      "Waink: Curiosidades",
+      "Waink: Esculturas",
+      "Waink: Lugares emblemáticos",
+      "Yellow Loot Boxes",
+      "Cartas coleccionables",
+      "Waink: Peewees Billboards",
+      "Waink: No Flusher Tags"
+    ],
+    "otras": [
+      "Vehículos especiales y ocultos",
+      "Armas",
+      "Munición",
+      "Equipamiento",
+      "Ropa",
+      "Accesorios",
+      "Restaurantes",
+      "Tiendas",
+      "Servicios",
+      "Animales",
+      "Misiones",
+      "Lugares secretos",
+      "Puntos de interés"
+    ]
+  },
+  "sequence": [
+    "4A.2 identidad visual y Explorar",
+    "4B mapa y Mi espacio conservando datos",
+    "4C datos y catálogos visuales",
+    "4D misiones, logros y progreso",
+    "5 cuentas, sincronización, panel administrativo",
+    "6 Atlas Intelligence/Watch con permisos y revisión",
+    "7 QA, despliegue y mantenimiento"
+  ]
+}
