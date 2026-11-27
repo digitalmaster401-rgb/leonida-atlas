@@ -43,6 +43,7 @@ function HeaderSearch({ id, className }: { id: string; className: string }) {
 export function AppShell({ children }: { children: ReactNode }) {
   const loc = useLocation();
   const active = tabOf(loc.pathname);
+  const home = loc.pathname === '/' || loc.pathname === '/explorar';
   const mainRef = useRef<HTMLElement>(null);
   const first = useRef(true);
   const [drawer, setDrawer] = useState(false);
@@ -74,7 +75,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   }, [loc.pathname]);
 
   return (
-    <div className="shell">
+    <div className={`shell${home ? ' is-home' : ''}`}>
       <a href="#contenido" className="skip-link">
         Saltar al contenido
       </a>
@@ -101,6 +102,9 @@ export function AppShell({ children }: { children: ReactNode }) {
       </header>
       {/* En móvil el buscador va en su propia franja bajo la cabecera fija (solo uno de los dos es visible). */}
       <div className="search-row">
+        <span className="explorer-ico" aria-hidden="true">
+          <Icon name="compass" size={22} />
+        </span>
         <HeaderSearch id="global-search-m" className="search-mob" />
       </div>
       {drawer && (

@@ -43,3 +43,14 @@ Portada cinematográfica, tarjeta editorial, accesos con imagen, barra flotante 
 4. La maqueta no tiene franja de buscador; aquí se mantiene porque el buscador es una función principal.
 5. Novedades y el resto de pantallas aún no usan la composición 4A.2 completa (solo la cabecera, la barra y los títulos).
 6. Tarjetas de la maqueta incluyen un acceso «Mi espacio» con un edificio con «VI»: se sustituye por tarjetas reales de Vehículos, Armas, Secretos y Dinero.
+
+## Ampliación V4 + cierre visual de Explorar (27-nov-2026)
+
+**Cambios reales:**
+- Explorar: panorámica nocturna oficial detrás del logotipo en la cabecera y barra «ATLAS EXPLORER» (emblema de brújula + buscador) bajo ella, como en la referencia 01. El resto de pantallas conserva la cabecera sólida.
+- Corrección de un fallo real e intermitente: la descripción de una foto se guardaba con dos transacciones de IndexedDB (leer y luego escribir) y una recarga entre ambas la perdía. Ahora es una sola transacción y la galería confirma «Descripción guardada». La prueba E2E espera esa confirmación antes de recargar (no se relajó nada).
+- Matriz: 30 filas nuevas (área «V4. Ampliación integral», 29 de `REQUISITOS_V4.json` + `V4-GTADB-01`), sin eliminar ninguna. Resumen: 51 ✅ · 35 🟡 · 6 ⬜ · 4 ⛔ (96 en total).
+- Investigación: `research/gtadb/` (importador solo a staging + 6 pruebas sintéticas), `npm run test:research`, añadido al CI. No se ejecutó contra la API ni se importó nada.
+- Documentación: `docs/v4/AMPLIACION_V4.md` y `docs/v4/REQUISITOS_V4.json`.
+
+**Pruebas:** lint, tipos, 173 unitarias, 6 de investigación, build, auditoría (0) y 254 E2E en Chromium (todos los anchos, Pixel 7, iPhone emulado, sin conexión). WebKit real en CI.

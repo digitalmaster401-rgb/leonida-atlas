@@ -31,6 +31,8 @@ jobs:
       - run: npm run test
       - run: npm run build
       - run: npm run audit:legacy
+      # Importador de investigación (GTADB): solo pruebas sintéticas, sin red ni datos de producción.
+      - run: npm run test:research
 
   e2e:
     runs-on: ubuntu-latest

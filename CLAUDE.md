@@ -16,7 +16,9 @@ Guía de GTA VI (es-MX) · Vite + React + TS · PWA estática (Netlify). Propiet
 - Lógica pura: `src/lib`. Componentes: `src/components`. Páginas: `src/pages` (las pesadas, con `lazy`).
 - Progreso local: `src/lib/storage.ts` (schemaVersion 4, migraciones v1→v4; sin Zod en el navegador). Fotos en IndexedDB (`src/lib/photos.ts`). Preferencias del mapa en `leonida-atlas:map-prefs`.
 - ATLAS INTELLIGENCE: `intel/` (datos) y `src/intel/` (motor). Ver la skill `investigacion` y `docs/ATLAS_INTELLIGENCE_QA.md`.
-- Requisitos: `docs/MATRIZ_FUNCIONAL.csv` → `python3 scripts/gen_matrix.py`. Tras cambiar fichas: `python3 scripts/gen_audit.py`.
+- Requisitos: `docs/MATRIZ_FUNCIONAL.csv` → `python3 scripts/gen_matrix.py` (incluye la ampliación V4: `docs/v4/`).
+- Investigación cartográfica aislada: `research/gtadb/` (`npm run test:research`); nunca escribe en `content/` ni proyecta coordenadas sin calibración.
+- Diseño: referencias aprobadas descritas en `docs/DISENO_PREMIUM.md`; recursos pendientes en `ASSETS_REQUIRED.json`; capturas con `node scripts/capturas-visuales.mjs`. Tras cambiar fichas: `python3 scripts/gen_audit.py`.
 
 ## Skills del proyecto (`.claude/skills/`)
 - `investigacion`: buscar y clasificar datos de GTA VI con evidencia; ATLAS INTELLIGENCE.

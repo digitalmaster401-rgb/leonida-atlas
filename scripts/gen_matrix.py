@@ -10,7 +10,7 @@ out = [
     "# REQUISITOS ACUMULATIVOS — LEONIDA ATLAS",
     "",
     "Fuente de verdad: `docs/MATRIZ_FUNCIONAL.csv` (este archivo se genera con `python3 scripts/gen_matrix.py`).",
-    "Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Anexo II), la especificación V3 (A–E) y ATLAS INTELLIGENCE.",
+    "Reúne el prompt maestro original (Anexo I), la ampliación de mapa/espacio (Anexo II), la especificación V3 (A–E), ATLAS INTELLIGENCE y la ampliación integral V4 (`docs/v4/REQUISITOS_V4.json`).",
     "",
     "**Regla:** una interfaz visible no cuenta como función terminada. «implementado_testeado» exige código funcional **y** prueba automatizada que lo ejerce.",
     "",

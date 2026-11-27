@@ -23,6 +23,7 @@ export function PhotoGallery({ entryId, title = 'Mis fotos' }: { entryId?: strin
   const [photos, setPhotos] = useState<Photo[] | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  const [saved, setSaved] = useState('');
   const fileRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
   const available = photosAvailable();
@@ -107,8 +108,20 @@ export function PhotoGallery({ entryId, title = 'Mis fotos' }: { entryId?: strin
                       maxLength={200}
                       defaultValue={p.caption}
                       placeholder="Descripción"
-                      onBlur={(ev) => ev.target.value !== p.caption && updateCaption(p.id, ev.target.value).then(reload)}
+                      onBlur={(ev) => {
+                        if (ev.target.value === p.caption) return;
+                        setSaved('');
+                        updateCaption(p.id, ev.target.value)
+                          .then(() => {
+                            setSaved(p.id);
+                            reload();
+                          })
+                          .catch(() => setError('No se pudo guardar la descripción.'));
+                      }}
                     />
+                    <span className="small muted" role="status" data-testid="caption-status">
+                      {saved === p.id ? 'Descripción guardada' : ''}
+                    </span>
                     <div className="photo-meta">
                       {!entryId && e && <Link to={entryPath(e)}>{e.name}</Link>}
                       <span className="muted small">{p.createdAt.slice(0, 10)}</span>

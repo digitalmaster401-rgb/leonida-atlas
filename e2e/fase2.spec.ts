@@ -84,6 +84,8 @@ test.describe('Fase 2: trucos, coleccionables, consola, equipamiento y Mi espaci
     await expect.poll(() => gallery.locator('img').evaluate((i: HTMLImageElement) => i.naturalWidth)).toBe(1);
     await gallery.getByRole('textbox', { name: 'Descripción de la foto' }).fill('Sobre la cama');
     await gallery.getByRole('textbox', { name: 'Descripción de la foto' }).blur();
+    // La descripción se guarda en IndexedDB de forma asíncrona: se espera la confirmación antes de recargar.
+    await expect(gallery.getByTestId('caption-status')).toHaveText('Descripción guardada');
     // formatos no admitidos se rechazan
     await gallery.getByTestId('photo-input').setInputFiles({ name: 'x.svg', mimeType: 'image/svg+xml', buffer: Buffer.from('<svg/>') });
     await expect(gallery.getByRole('alert')).toContainText('Formato no admitido');

@@ -15,3 +15,6 @@ test-results
 referencias-privadas/
 *.mp4
 *.mov
+
+# Salidas del importador de investigación: nunca se versionan ni llegan a producción
+research/**/*staging*.json
