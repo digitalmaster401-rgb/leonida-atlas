@@ -1,0 +1,29 @@
+{
+ "id": "prop-run-20261128-120035",
+ "runId": "run-20261128-120035",
+ "createdAt": "2026-11-28T12:00:36.802Z",
+ "title": "ATLAS INTELLIGENCE: 1 nuevos, 0 actualizaciones",
+ "requiresHumanReview": true,
+ "changes": [
+  {
+   "findingId": "fnd-gta-6-stash-bag-duplication-glitch-how-to-sell-t",
+   "kind": "nuevo",
+   "before": null,
+   "after": "reportado",
+   "sensitive": true,
+   "reason": "Nuevo hallazgo de GTA BOOM",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-stash-bag-duplication-glitch-58e4"
+   ]
+  }
+ ],
+ "risks": [
+  "Los hallazgos provienen de titulares y resúmenes de feeds: verifica la fuente antes de convertirlos en fichas públicas.",
+  "Incluye cambios de estado, cifras o glitches/trucos: requieren revisión humana o prueba documentada."
+ ],
+ "tests": [
+  "npm run validate:data",
+  "npx vitest run tests/intel",
+  "npm run build"
+ ]
+}
