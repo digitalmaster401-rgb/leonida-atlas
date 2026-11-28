@@ -1,0 +1,102 @@
+{
+ "id": "run-20261128-120035",
+ "startedAt": "2026-11-28T12:00:35.213Z",
+ "finishedAt": "2026-11-28T12:00:36.802Z",
+ "trigger": "schedule",
+ "environment": "github-actions (digitalmaster401-rgb/leonida-atlas)",
+ "status": "parcial",
+ "classifierMode": "heuristico",
+ "sources": [
+  {
+   "sourceId": "rockstar-vi-pagina",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 8,
+   "relevant": 8,
+   "newFindings": 0,
+   "updatedFindings": 0,
+   "skipped": 0,
+   "attempts": 1,
+   "durationMs": 323,
+   "error": null
+  },
+  {
+   "sourceId": "gtaboom",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 25,
+   "relevant": 24,
+   "newFindings": 1,
+   "updatedFindings": 0,
+   "skipped": 1,
+   "attempts": 1,
+   "durationMs": 138,
+   "error": null
+  },
+  {
+   "sourceId": "powerpyx",
+   "ok": false,
+   "httpStatus": null,
+   "items": 0,
+   "relevant": 0,
+   "newFindings": 0,
+   "updatedFindings": 0,
+   "skipped": 0,
+   "attempts": 0,
+   "durationMs": 428,
+   "error": "No se pudo leer robots.txt; no se rastrea por prudencia"
+  },
+  {
+   "sourceId": "vgc",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 10,
+   "relevant": 6,
+   "newFindings": 0,
+   "updatedFindings": 0,
+   "skipped": 4,
+   "attempts": 1,
+   "durationMs": 311,
+   "error": null
+  },
+  {
+   "sourceId": "gamespot",
+   "ok": true,
+   "httpStatus": 200,
+   "items": 25,
+   "relevant": 13,
+   "newFindings": 0,
+   "updatedFindings": 0,
+   "skipped": 12,
+   "attempts": 1,
+   "durationMs": 175,
+   "error": null
+  }
+ ],
+ "totals": {
+  "itemsSeen": 68,
+  "relevant": 51,
+  "newFindings": 1,
+  "updatedFindings": 0,
+  "statusChanges": 0,
+  "patchesDetected": 0,
+  "submissionsIngested": 0
+ },
+ "budget": {
+  "aiCalls": 0,
+  "aiCallsLimit": 40,
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "estimatedCostUsd": 0,
+  "costLimitUsd": 0.25,
+  "stoppedByBudget": false
+ },
+ "errors": [
+  "powerpyx: No se pudo leer robots.txt; no se rastrea por prudencia"
+ ],
+ "proposalId": "prop-run-20261128-120035",
+ "nextScheduledHintUtc": [
+  "11:17",
+  "23:17"
+ ]
+}
